@@ -8,7 +8,7 @@ import Container from "./container"
 const ProductsContainer = styled.div`
   background: ${styles.backgroundLight};
   flex-grow: 1;
-  padding-top: 120px;
+  display: flex;
   .container {
     display: flex;
     align-items: center;
