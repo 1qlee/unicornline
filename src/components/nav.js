@@ -2,7 +2,7 @@ import React from "react"
 import styled from "styled-components"
 import Container from "./container"
 
-import UnicornLogo from "../../public/static/logo/unicorn.jpg"
+import UnicornLogo from "./unicorn.jpg"
 
 const Nav = styled.nav`
   padding: 1rem 0;
