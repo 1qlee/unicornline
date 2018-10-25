@@ -11,6 +11,9 @@ import BreadCrumb from "../breadcrumb"
 
 import styles from "../../css/styles"
 
+import "../../css/reset.css"
+import "../../css/master.css"
+
 export default ({ data }) => {
   const category = data.datoCmsCategory
   const products = data.allDatoCmsProduct

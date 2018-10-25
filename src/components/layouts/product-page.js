@@ -11,6 +11,9 @@ import BreadCrumb from "../breadcrumb"
 
 import styles from "../../css/styles"
 
+import "../../css/reset.css"
+import "../../css/master.css"
+
 const ProductContainer = styled.div`
   border-radius: 12px;
   width: 100%;
