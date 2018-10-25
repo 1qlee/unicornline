@@ -33,6 +33,9 @@ const CardImage = styled.div`
 
 const CardContent = styled.div`
   padding: 1rem 2rem;
+  p {
+    text-decoration: none;
+  }
   .label {
     font-size: 1rem;
     text-transform: uppercase;

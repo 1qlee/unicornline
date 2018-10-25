@@ -6,6 +6,16 @@ const Title = styled.h1`
   font-size: 4rem;
   font-weight: 400;
   margin-bottom: 1rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 80%;
+    height: 1rem;
+    background: rgba(255,255,255,0.22);
+    bottom: 0;
+    left: -1rem;
+  }
 `
 
 const Subtitle = styled.p`

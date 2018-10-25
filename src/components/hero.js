@@ -10,7 +10,7 @@ const Hero = styled.div`
   overflow-y: hidden;
   &.is-flex-start {
     justify-content: flex-start;
-    padding: 120px 2rem;
+    padding: 80px 2rem;
   }
 `
 

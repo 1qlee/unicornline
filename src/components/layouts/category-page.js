@@ -7,6 +7,7 @@ import NavBar from "../nav"
 import Hero from "../hero"
 import {Title, Subtitle} from "../title"
 import {CardContainer, Card, CardContent, CardImage} from "../card"
+import BreadCrumb from "../breadcrumb"
 
 import styles from "../../css/styles"
 
@@ -17,8 +18,9 @@ export default ({ data }) => {
   return (
     <Main>
       <NavBar />
-      <Hero>
-        <Content className="has-text-centered">
+      <Hero className="is-flex-start">
+        <Content>
+          <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
           <Title color={styles.white}>{category.name}</Title>
           <Subtitle color={styles.whiteLight} dangerouslySetInnerHTML={{ __html: category.description }}></Subtitle>
         </Content>
