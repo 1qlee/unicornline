@@ -1,21 +1,37 @@
 import React from "react"
+import {graphql, StaticQuery} from "gatsby"
 import styled from "styled-components"
-import Container from "./container"
+import styles from "../css/styles.js"
 
 import UnicornLogo from "./unicorn.jpg"
 
 const Nav = styled.nav`
-  padding: 1rem 0;
+  display: block;
 `
 
 const NavContainer = styled.div`
+  align-items: center;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  padding: 1rem 1.5rem;
+  position: relative;
 `
 
 const NavItem = styled.div`
   padding: 1rem;
+`
+
+const NavLogo = styled.a`
+  display: block;
+  img {
+    display: block;
+    height: 45px;
+    width: 45px;
+    padding: 5px;
+    background: #fff;
+    border-radius: 100%;
+    box-shadow: 0 8px 30px 0 ${styles.shadow};
+  }
 `
 
 const NavLeft = styled.div`
@@ -26,52 +42,119 @@ const NavRight = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  p {
-    text-transform: uppercase;
-    letter-spacing: 1px;
+  a {
     font-size: 0.875rem;
-  }
-  &:hover {
-    cursor: pointer;
-    color: #000;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    &:hover {
+      cursor: pointer;
+      color: #000;
+    }
   }
 `
 
-class NavBar extends React.Component {
+const NavMenu = styled.div`
+  background: ${styles.white};
+  position: absolute;
+  top: 100%;
+  right: 0;
+`
+
+class NavLink extends React.Component {
   constructor(props) {
     super(props)
   }
 
   render() {
     return (
+      <a href={"/" + this.props.name.substring(0).toLowerCase()} title={this.props.name}>{this.props.name}</a>
+    )
+  }
+}
+
+class NavBar extends React.Component {
+  constructor(props) {
+    super(props)
+    // State
+    this.state = {
+      showMenu: false,
+    }
+    // Bind methods
+    this.handleMouseEnter = this.handleMouseEnter.bind(this)
+    this.handleMouseLeave = this.handleMouseLeave.bind(this)
+  }
+
+  handleMouseEnter() {
+    // Set state to show menu
+    console.log("Mouse detected")
+    this.setState({
+      showMenu: true,
+    })
+  }
+
+  handleMouseLeave() {
+    // Set state to hide menu
+    console.log("Mouse left")
+    this.setState({
+      showMenu: false,
+    })
+  }
+
+  render() {
+    return (
       <Nav>
-        <Container>
-          <NavContainer>
-            <NavLeft>
-              <img height="45" width="45" src={UnicornLogo} alt="Logo" />
-            </NavLeft>
-            <NavRight>
-              <NavItem>
-                <p>Accessory</p>
-              </NavItem>
-              <NavItem>
-                <p>Presentation</p>
-              </NavItem>
-              <NavItem>
-                <p>Display</p>
-              </NavItem>
-              <NavItem>
-                <p>Creative</p>
-              </NavItem>
-              <NavItem>
-                <p>Award</p>
-              </NavItem>
-            </NavRight>
-          </NavContainer>
-        </Container>
+        <NavContainer>
+          <NavLeft>
+            <NavLogo href="/">
+              <img src={UnicornLogo} alt="Logo" />
+            </NavLogo>
+          </NavLeft>
+          <NavRight>
+
+          </NavRight>
+          { this.state.showMenu ? (
+            <NavMenu>
+              {this.props.children}
+            </NavMenu>
+          ) : (
+            null
+          )}
+        </NavContainer>
       </Nav>
     )
   }
 }
 
-export default NavBar
+export default () => (
+  <StaticQuery
+    query={graphql`
+      query NavQuery {
+        allDatoCmsProduct(filter: {category: {eq: "Accessory"}}) {
+          edges {
+            node {
+              id
+              name
+            }
+          }
+        }
+        allDatoCmsCategory {
+          edges {
+            node {
+              id
+              name
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <NavBar>
+        {data.allDatoCmsProduct.edges.map(({node}) => (
+          <NavItem key={node.id}>
+            <a href={"/" + node.name}>{node.name}</a>
+          </NavItem>
+        ))}
+      </NavBar>
+    )}
+  />
+)

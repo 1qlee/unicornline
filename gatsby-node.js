@@ -5,12 +5,22 @@ const { createFilePath } = require('gatsby-source-filesystem')
 exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
-  const createProperPage = (type, product) => {
+  const createProductPage = (category, product) => {
     createPage({
-      path: `${type}/${product.slug}`,
+      path: `${category}/${product.slug}`,
       component: path.resolve('./src/components/layouts/product-page.js'),
       context: {
         slug: product.slug,
+      },
+    })
+  }
+
+  const createCategoryPage = (slug, category) => {
+    createPage({
+      path: slug,
+      component: path.resolve('./src/components/layouts/category-page.js'),
+      context: {
+        category: category,
       },
     })
   }
@@ -26,30 +36,60 @@ exports.createPages = ({ graphql, actions }) => {
             }
           }
         }
+        allDatoCmsCategory {
+          edges {
+            node {
+              name
+              description
+            }
+          }
+        }
       }
     `).then(result => {
       result.data.allDatoCmsProduct.edges.map(({ node: product}) => {
         switch(product.category) {
           case "Accessory":
-            createProperPage("accessory", product)
+            createProductPage("accessory", product)
             break;
           case "Presentation":
-            createProperPage("presentation", product)
+            createProductPage("presentation", product)
             break;
           case "Display":
-            createProperPage("display", product)
+            createProductPage("display", product)
             break;
           case "Creative":
-            createProperPage("creative", product)
+            createProductPage("creative", product)
             break;
           case "Award":
-            createProperPage("award", product)
+            createProductPage("award", product)
             break;
           default:
-            createProperPage("product")
+            createProductPage("product")
         }
       })
-      resolve()
+      resolve(result.data.allDatoCmsCategory.edges)
+    })
+  }).then((categories) => {
+    categories.map(({ node: category }) => {
+      switch(category.name) {
+        case "Accessory":
+          createCategoryPage("accessory", category.name)
+          break;
+        case "Presentation":
+          createCategoryPage("presentation", category.name)
+          break;
+        case "Display":
+          createCategoryPage("display", category.name)
+          break;
+        case "Creative":
+          createCategoryPage("creative", category.name)
+          break;
+        case "Award":
+          createCategoryPage("award", category.name)
+          break
+        default:
+          createCategoryPage("category")
+      }
     })
   })
 }

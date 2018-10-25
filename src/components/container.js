@@ -1,9 +1,14 @@
 import styled from "styled-components"
+import styles from "../css/styles"
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 20px;
+  background: ${styles.primary};
+  margin: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow-y: auto;
 `
 
 export default Container

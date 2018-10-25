@@ -1,36 +1,43 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
-import styles from "../css/styles.js"
+import styles from "../css/styles"
 import Content from "./content"
-import Container from "./container"
 
 const ProductsContainer = styled.div`
-  background: ${styles.backgroundLight};
-  flex-grow: 1;
   display: flex;
-  .container {
-    display: flex;
-    align-items: center;
-  }
+  flex-grow: 1;
+  max-width: 1200px;
+  margin-top: 2rem;
+  border: 1px solid ${styles.whiteLight};
 `
 
-const ProductCard = styled.div`
-  &:not(:last-child) {
-    margin-right: 1rem;
-  }
-`
-
-const ProductCardHeader = styled.div`
-  img {
-    display: block;
-    height: auto;
-    width: 200px;
+const ProductCard = styled.a`
+  color: ${styles.white};
+  cursor: pointer;
+  display: block;
+  padding: 2rem 1rem;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  &:hover {
+    background: ${styles.white};
+    box-shadow: 0 12px 20px 0 ${styles.shadow};
+    color: ${styles.text};
+    p {
+      color: ${styles.grey};
+    }
   }
 `
 
 const ProductCardContent = styled.div`
-  padding: 1rem 0;
+  h3 {
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+  }
+  p {
+    color: ${styles.whiteLight};
+  }
 `
 
 export default () => (
@@ -40,6 +47,7 @@ export default () => (
         allDatoCmsCategory(sort: {fields: [id], order: ASC}) {
           edges {
             node {
+              id
               name
               description
             }
@@ -49,12 +57,8 @@ export default () => (
     `}
     render={data => (
       <ProductsContainer>
-        <Container className="container">
-          {data.allDatoCmsCategory.edges.map(({node}) => (
-          <ProductCard key={node.id}>
-            <ProductCardHeader>
-
-            </ProductCardHeader>
+        {data.allDatoCmsCategory.edges.map(({node}) => (
+          <ProductCard key={node.id} href={node.name.substring(0).toLowerCase()}>
             <ProductCardContent>
               <Content>
                 <h3>{node.name}</h3>
@@ -62,8 +66,7 @@ export default () => (
               </Content>
             </ProductCardContent>
           </ProductCard>
-          ))}
-        </Container>
+        ))}
       </ProductsContainer>
     )}
   />
