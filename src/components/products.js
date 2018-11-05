@@ -2,7 +2,7 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import styled from "styled-components"
 import styles from "../css/styles"
-import Content from "./content"
+import {Content} from "./content"
 
 const ProductsContainer = styled.div`
   display: flex;

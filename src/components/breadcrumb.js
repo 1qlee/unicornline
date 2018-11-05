@@ -31,32 +31,26 @@ const BreadCrumbContainer = styled.nav`
   }
 `
 
-class BreadCrumb extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <BreadCrumbContainer >
-        <ul>
+function BreadCrumb(props) {
+  return (
+    <BreadCrumbContainer>
+      <ul>
+        <li>
+          <a className="first" href="/">{props.parent}</a>
+        </li>
+        <li>
+          <a href={"/" + props.category.substring(0).toLowerCase()}>{props.category}</a>
+        </li>
+        { props.product ? (
           <li>
-            <a className="first" href="/">{this.props.parent}</a>
+            <a href={"/" + props.product.substring(0).toLowerCase()}>{props.product}</a>
           </li>
-          <li>
-            <a href={"/" + this.props.category.substring(0).toLowerCase()}>{this.props.category}</a>
-          </li>
-          { this.props.product ? (
-            <li>
-              <a href={"/" + this.props.product.substring(0).toLowerCase()}>{this.props.product}</a>
-            </li>
-          ) : (
-            null
-          )}
-        </ul>
-      </BreadCrumbContainer>
-    )
-  }
+        ) : (
+          null
+        )}
+      </ul>
+    </BreadCrumbContainer>
+  )
 }
 
 export default BreadCrumb

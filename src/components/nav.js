@@ -60,18 +60,6 @@ const NavMenu = styled.div`
   right: 0;
 `
 
-class NavLink extends React.Component {
-  constructor(props) {
-    super(props)
-  }
-
-  render() {
-    return (
-      <a href={"/" + this.props.name.substring(0).toLowerCase()} title={this.props.name}>{this.props.name}</a>
-    )
-  }
-}
-
 class NavBar extends React.Component {
   constructor(props) {
     super(props)

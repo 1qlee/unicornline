@@ -5,10 +5,12 @@ const Main = styled.div`
   background: ${styles.primary};
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   overflow-y: auto;
+  &.is-flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `
 
 export default Main

@@ -2,11 +2,11 @@ import React from "react"
 import { graphql } from "gatsby"
 
 import Main from "../main"
-import Content from "../content"
+import {Content} from "../content"
 import NavBar from "../nav"
 import Hero from "../hero"
 import {Title, Subtitle} from "../title"
-import {CardContainer, Card, CardContent, CardImage} from "../card"
+import {Menu, MenuRow, MenuItem} from "../menu"
 import BreadCrumb from "../breadcrumb"
 
 import styles from "../../css/styles"
@@ -28,21 +28,19 @@ export default ({ data }) => {
           <Subtitle color={styles.whiteLight} dangerouslySetInnerHTML={{ __html: category.description }}></Subtitle>
         </Content>
       </Hero>
-      <CardContainer>
+      <Menu>
         {products.edges.map(({ node: product }) => (
-          <Card key={product.id} href={product.slug}>
-            <CardImage>
-              <img src="https://via.placeholder.com/300x200" alt="Placeholder" />
-            </CardImage>
-            <CardContent>
+          // Slug here is bugged in production
+          <MenuRow key={product.id}>
+            <MenuItem href={product.slug}>
               <Content>
                 <p className="label">{product.name}</p>
                 <p>{product.description}</p>
               </Content>
-            </CardContent>
-          </Card>
+            </MenuItem>
+          </MenuRow>
         ))}
-      </CardContainer>
+      </Menu>
     </Main>
   )
 }
@@ -53,7 +51,10 @@ export const query = graphql`
       name
       description
     }
-    allDatoCmsProduct(filter: {category: {eq: $category}}) {
+    allDatoCmsProduct(
+      filter: {category: {eq: $category}},
+      sort: {fields: [name], order: ASC}
+    ) {
       edges {
         node {
           category

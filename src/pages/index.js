@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import Main from "../components/main"
 import NavBar from "../components/nav"
 import {Title, Subtitle} from "../components/title"
-import Content from "../components/content"
+import {Content} from "../components/content"
 import Hero from "../components/hero"
 import Footer from "../components/footer"
 import Products from "../components/products"
@@ -14,7 +14,7 @@ import "../css/reset.css"
 import "../css/master.css"
 
 export default ({ data }) => (
-  <Main>
+  <Main className="is-flex-center">
     <NavBar />
     <Hero>
       <Content className="has-text-centered">
