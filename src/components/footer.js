@@ -5,10 +5,15 @@ import styles from "../css/styles.js"
 
 const Footer = styled.div`
   align-items: flex-end;
-  color: ${styles.whiteLight};
+  color: ${styles.grey.text};
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 1rem 2rem;
+  @media only screen and (max-width: 665px) {
+    flex-direction: column;
+    padding: 1rem;
+    align-items: flex-start;
+  }
 `
 
 const FooterLeft = styled.div`

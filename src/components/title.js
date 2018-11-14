@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import styles from "../css/styles"
 
 const Title = styled.h1`
   color: ${props => props.color};
@@ -7,20 +8,22 @@ const Title = styled.h1`
   font-weight: 400;
   margin-bottom: 1rem;
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 80%;
-    height: 1rem;
-    background: rgba(255,255,255,0.22);
-    bottom: 0;
-    left: -1rem;
+  &.has-line {
+    &::before {
+      background: ${styles.primary.transparent};
+      bottom: 0;
+      content: "";
+      height: 1.2rem;
+      position: absolute;
+      right: 0;
+      width: 125px;
+    }
   }
 `
 
 const Subtitle = styled.p`
   color: ${props => props.color};
-  font-size: 2rem;
+  font-size: ${props => props.fontSize || "2rem"};
 `
 
 export {Title, Subtitle}

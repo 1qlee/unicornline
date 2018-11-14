@@ -2,9 +2,20 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Menu = styled.div`
+  animation: scaleIn 0.4s forwards ease-in;
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.98);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
 `
 
 const MenuRow = styled.div`
@@ -12,8 +23,13 @@ const MenuRow = styled.div`
 `
 
 const MenuItem = styled.a`
-  border: 1px solid ${styles.white};
-  display: block;
+  align-items: center;
+  border: 1px solid ${styles.grey.text};
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  margin-bottom: -1px;
+  margin-right: -1px;
   padding: 1rem;
   position: relative;
   width: 100%;
@@ -28,13 +44,14 @@ const MenuItem = styled.a`
     width: 0;
   }
   &::after {
+    color: ${styles.white};
     content: "View Item";
+    left: 50%;
+    opacity: 0;
     position: absolute;
     top: 50%;
-    left: 50%;
     transform: translate(-50%,-50%);
-    opacity: 0;
-    color: ${styles.white};
+    transition: opacity 0.2s ease;
   }
   &:hover {
     cursor: pointer;
@@ -46,9 +63,9 @@ const MenuItem = styled.a`
     }
   }
   p {
-    color: ${styles.white};
+    color: ${styles.text};
     &:nth-child(2) {
-      color: ${styles.whiteLight};
+      color: ${styles.grey.text};
     }
   }
 `

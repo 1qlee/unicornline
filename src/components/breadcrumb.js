@@ -8,25 +8,25 @@ const BreadCrumbContainer = styled.nav`
   ul {
     display: flex;
     list-style-type: none;
-    margin: 1rem 0;
+    margin-bottom: 1rem;
   }
   li {
     &:not(:first-child) {
       &::before {
-        color: ${styles.whiteLight};
+        color: ${styles.grey.text};
         content: "\0002f";
       }
     }
   }
   a {
-    color: ${styles.whiteLight};
+    color: ${styles.grey.text};
     position: relative;
     padding: 0 0.75rem;
     &.first {
       padding-left: 0;
     }
     &:hover {
-      color: ${styles.white};
+      color: ${styles.text};
     }
   }
 `

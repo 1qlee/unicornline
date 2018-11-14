@@ -7,23 +7,35 @@ import {Content} from "./content"
 const ProductsContainer = styled.div`
   display: flex;
   flex-grow: 1;
+  margin: 2rem auto 0;
   max-width: 1200px;
-  margin-top: 2rem;
-  border: 1px solid ${styles.whiteLight};
+  border: 1px solid ${styles.grey.text};
+  @media only screen and (max-width: 1270px) {
+    margin: 2rem 2rem 0;
+  }
+  @media only screen and (max-width: 850px) {
+    flex-direction: column;
+    max-width: 580px;
+    margin: 2rem auto 0;
+  }
+  @media only screen and (max-width: 665px) {
+    flex-direction: column;
+    margin: 2rem 1rem 0;
+  }
 `
 
 const ProductCard = styled.a`
-  color: ${styles.white};
+  color: ${styles.text};
   cursor: pointer;
   display: block;
   padding: 2rem 1rem;
   transition: background 0.3s ease, box-shadow 0.3s ease;
   &:hover {
-    background: ${styles.white};
+    background: ${styles.primary.normal};
     box-shadow: 0 12px 20px 0 ${styles.shadow};
-    color: ${styles.text};
+    color: ${styles.white};
     p {
-      color: ${styles.grey};
+      color: ${styles.whiteLight};
     }
   }
 `
@@ -31,12 +43,11 @@ const ProductCard = styled.a`
 const ProductCardContent = styled.div`
   h3 {
     font-weight: 400;
-    text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 1px;
   }
   p {
-    color: ${styles.whiteLight};
+    color: ${styles.grey.text};
   }
 `
 

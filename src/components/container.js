@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Container = styled.div`
-  background: ${styles.primary};
+  background: ${styles.primary.normal};
   margin: 1rem;
   height: 100%;
   display: flex;

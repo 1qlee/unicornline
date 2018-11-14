@@ -15,15 +15,15 @@ import "../css/master.css"
 
 export default ({ data }) => (
   <Main className="is-flex-center">
-    <NavBar />
     <Hero>
+      <NavBar />
       <Content className="has-text-centered">
-        <Title color={styles.white}>{data.datoCmsIndex.title}</Title>
-        <Subtitle color={styles.whiteLight}>{data.datoCmsIndex.subtitle}</Subtitle>
+        <Title className="has-line" color={styles.primary.normal}>{data.datoCmsIndex.title}</Title>
+        <Subtitle color={styles.grey.text}>{data.datoCmsIndex.subtitle}</Subtitle>
         <Products />
       </Content>
+      <Footer />
     </Hero>
-    <Footer />
   </Main>
 )
 

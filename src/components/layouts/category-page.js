@@ -21,11 +21,11 @@ export default ({ data }) => {
   return (
     <Main>
       <NavBar />
-      <Hero className="is-flex-start">
+      <Hero className="is-flex-start has-animation">
         <Content>
           <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
-          <Title color={styles.white}>{category.name}</Title>
-          <Subtitle color={styles.whiteLight} dangerouslySetInnerHTML={{ __html: category.description }}></Subtitle>
+          <Title color={styles.text}>{category.name}</Title>
+          <Subtitle color={styles.grey.text} dangerouslySetInnerHTML={{ __html: category.description }}></Subtitle>
         </Content>
       </Hero>
       <Menu>
@@ -33,9 +33,8 @@ export default ({ data }) => {
           // Slug here is bugged in production
           <MenuRow key={product.id}>
             <MenuItem href={product.slug}>
-              <Content>
+              <Content className="has-text-centered">
                 <p className="label">{product.name}</p>
-                <p>{product.description}</p>
               </Content>
             </MenuItem>
           </MenuRow>
@@ -58,7 +57,6 @@ export const query = graphql`
       edges {
         node {
           category
-          description
           id
           name
           slug
