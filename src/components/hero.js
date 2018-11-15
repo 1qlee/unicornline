@@ -10,13 +10,13 @@ const Hero = styled.div`
   &.is-flex-start {
     justify-content: flex-start;
     height: auto;
-    padding: 2rem;
+    padding: 1rem;
     &.no-side-padding {
-      padding: 2rem 0;
+      padding: 1rem 0;
     }
   }
   &.has-animation {
-    animation: fadeDown 0.4s forwards ease-in;
+    animation: fadeDown 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   .has-text-centered {
     padding: 120px 0;

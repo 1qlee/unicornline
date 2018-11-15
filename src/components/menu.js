@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Menu = styled.div`
-  animation: scaleIn 0.4s forwards ease-in;
+  animation: scaleIn 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
@@ -16,20 +16,26 @@ const Menu = styled.div`
       transform: scale(1);
     }
   }
+  @media only screen and (max-width: 620px) {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
 `
 
 const MenuRow = styled.div`
   width: 25%;
+  @media only screen and (max-width: 620px) {
+    width: 100%;
+  }
 `
 
 const MenuItem = styled.a`
   align-items: center;
   border: 1px solid ${styles.grey.text};
+  margin-bottom: -1px;
   display: flex;
   height: 100px;
   justify-content: center;
-  margin-bottom: -1px;
-  margin-right: -1px;
   padding: 1rem;
   position: relative;
   width: 100%;
@@ -60,12 +66,6 @@ const MenuItem = styled.a`
     }
     &::after {
       opacity: 1;
-    }
-  }
-  p {
-    color: ${styles.text};
-    &:nth-child(2) {
-      color: ${styles.grey.text};
     }
   }
 `

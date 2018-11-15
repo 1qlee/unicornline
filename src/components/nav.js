@@ -14,7 +14,7 @@ const NavContainer = styled.div`
   align-items: center;
   display: flex;
   justify-content: space-between;
-  padding: 1rem 1.5rem;
+  padding: 1rem;
   position: relative;
 `
 
@@ -32,6 +32,7 @@ const NavLogo = styled.a`
   img {
     display: block;
     height: 45px;
+    min-width: 45px;
     width: 45px;
     padding: 5px;
     background: #fff;
@@ -41,7 +42,7 @@ const NavLogo = styled.a`
 `
 
 const NavLeft = styled.div`
-  padding-left: 8px;
+  margin-right: 1rem;
 `
 
 const NavRight = styled.div`
@@ -116,7 +117,7 @@ class NavMenuContainer extends React.Component {
     switch(this.props.category) {
       case "Accessory":
         return (
-          <NavMenu className="menu-col-2" style={{right:"275px"}}>
+          <NavMenu className="menu-col-2" style={{right:"17rem"}}>
             <NavMenuArrow />
             {this.props.accessory.edges.map(({node}) => (
               <a key={node.id} href={"/accessory/" + node.slug}>{node.name}</a>
@@ -125,7 +126,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Presentation":
         return (
-          <NavMenu className="menu-col-2" style={{right:"155px"}}>
+          <NavMenu className="menu-col-2" style={{right:"9rem"}}>
             <NavMenuArrow />
             {this.props.presentation.edges.map(({node}) => (
               <a key={node.id} href={"/presentation/" + node.slug}>{node.name}</a>
@@ -134,7 +135,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Display":
         return (
-          <NavMenu className="menu-col-2" style={{right: "40px"}}>
+          <NavMenu className="menu-col-2" style={{right: "2rem"}}>
             <NavMenuArrow />
             {this.props.display.edges.map(({node}) => (
               <a key={node.id} href={"/display/" + node.slug}>{node.name}</a>
@@ -143,7 +144,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Creative":
         return (
-          <NavMenu style={{right: "2rem"}}>
+          <NavMenu style={{right: "1.5rem"}}>
             <NavMenuArrow />
             {this.props.creative.edges.map(({node}) => (
               <a key={node.id} href={"/creative/" + node.slug}>{node.name}</a>
@@ -152,7 +153,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Award":
         return (
-          <NavMenu className="menu-col-1" style={{right: "2rem"}}>
+          <NavMenu className="menu-col-1" style={{right: "1.5rem"}}>
             <NavMenuArrow className="is-right" />
             {this.props.award.edges.map(({node}) => (
               <a key={node.id} href={"/award/" + node.slug}>{node.name}</a>

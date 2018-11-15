@@ -18,8 +18,8 @@ export default ({ data }) => (
     <Hero>
       <NavBar />
       <Content className="has-text-centered">
-        <Title className="has-line" color={styles.primary.normal}>{data.datoCmsIndex.title}</Title>
-        <Subtitle color={styles.grey.text}>{data.datoCmsIndex.subtitle}</Subtitle>
+        <Title className="has-line fade-in-down" color={styles.primary.normal}>{data.datoCmsIndex.title}</Title>
+        <Subtitle className="fade-in-down" color={styles.grey.text}>{data.datoCmsIndex.subtitle}</Subtitle>
         <Products />
       </Content>
       <Footer />

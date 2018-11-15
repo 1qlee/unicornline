@@ -17,32 +17,6 @@ const Content = styled.div`
     display: flex;
     align-items: center;
   }
-  &.fade-in-down {
-    animation: fadeInDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  &.fade-in-up {
-    animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  }
-  @keyframes fadeInUp {
-    0% {
-      opacity: 0;
-      transform: translateY(50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  @keyframes fadeInDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
 `
 
 const StyledList = styled.ul`

@@ -3,9 +3,11 @@ import styles from "../css/styles"
 
 const Table = styled.table`
   color: ${styles.text};
+  display: block;
+  font-size: 0.75rem;
   overflow-x: auto;
   text-align: left;
-  width: 100%;
+  width: auto;
 `
 
 const TableHead = styled.thead`
