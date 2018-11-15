@@ -72,25 +72,14 @@ const ProductRight = styled.div`
   }
 `
 
-const ProductInfoTab = styled.ul`
-  background: ${styles.primary.normal};
-  display: block;
-  margin-bottom: 2rem;
-  max-width: 750px;
-  padding: 0.5rem;
-  text-align: center;
-  p {
-    color: ${styles.white};
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-  }
-`
-
 const ProductInfo = styled.div`
   position: relative;
   overflow-x: hidden;
+`
+
+const Divider = styled.hr`
+  background-color: ${styles.grey.shadow};
+  height: 3px;
 `
 
 const Columns = styled.div`
@@ -128,9 +117,7 @@ export default ({ data }) => {
             </Content>
           </Hero>
           <ProductInfo>
-            <ProductInfoTab>
-              <p className="is-active">Information</p>
-            </ProductInfoTab>
+            <Divider />
             <Columns>
               <Column>
                 <Content>
@@ -176,29 +163,41 @@ export default ({ data }) => {
                   </ul>
                 </Content>
               </Column>
-              <Column>
-                <Content>
-                  <h3>Pricing</h3>
-                </Content>
-                <Table>
-                  <TableHead>
-                    <tr>
-                      {pricing.headings.map((heading) => (
-                        <th key={heading}>{heading}</th>
-                      ))}
-                    </tr>
-                  </TableHead>
-                  <tbody>
-                    {pricing.values.map((value) => (
-                      <tr key={value}>
-                        {value.map((data) => (
-                          <TableData key={data}>{data}</TableData>
+              {pricing ? (
+                <Column>
+                  <Content>
+                    <h3>Pricing</h3>
+                  </Content>
+                  <Table>
+                    <TableHead>
+                      {pricing.headings ? (
+                        <tr>
+                          {pricing.headings.map((heading) => (
+                            <th key={heading}>{heading}</th>
+                          ))}
+                        </tr>
+                      ) : (
+                        null
+                      )}
+                    </TableHead>
+                    {pricing.values ? (
+                      <tbody>
+                        {pricing.values.map((value) => (
+                          <tr key={value}>
+                            {value.map((data) => (
+                              <TableData key={data}>{data}</TableData>
+                            ))}
+                          </tr>
                         ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </Table>
-              </Column>
+                      </tbody>
+                    ) : (
+                      null
+                    )}
+                  </Table>
+                </Column>
+              ) : (
+                null
+              )}
             </Columns>
           </ProductInfo>
         </ProductRight>
