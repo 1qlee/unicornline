@@ -25,14 +25,14 @@ export default ({ data }) => {
         <Content>
           <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
           <Title color={styles.text}>{category.name}</Title>
-          <Subtitle color={styles.grey.text} dangerouslySetInnerHTML={{ __html: category.description }}></Subtitle>
+          <Subtitle color={styles.grey.text}>{category.description}</Subtitle>
         </Content>
       </Hero>
       <Menu>
         {products.edges.map(({ node: product }) => (
           // Slug here is bugged in production
           <MenuRow key={product.id}>
-            <MenuItem href={product.slug}>
+            <MenuItem href={"/" + category.name.substring(0).toLowerCase() + "/" + product.slug}>
               <Content className="has-text-centered">
                 <p className="label">{product.name}</p>
               </Content>
