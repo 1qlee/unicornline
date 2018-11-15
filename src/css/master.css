@@ -7,8 +7,6 @@ body {
   min-height: 100%;
   text-rendering: optimizeLegibility;
   color: #444;
-  margin: 0 !important;
-  padding: 0 !important;
 }
 
 a {
