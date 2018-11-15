@@ -17,6 +17,9 @@ const Content = styled.div`
     display: flex;
     align-items: center;
   }
+  li {
+    line-height: 1.5;
+  }
 `
 
 const StyledList = styled.ul`

@@ -8,10 +8,9 @@ const Footer = styled.div`
   color: ${styles.grey.text};
   display: flex;
   justify-content: space-between;
-  padding: 1rem 2rem;
+  padding: 1rem;
   @media only screen and (max-width: 665px) {
     flex-direction: column;
-    padding: 1rem;
     align-items: flex-start;
   }
 `

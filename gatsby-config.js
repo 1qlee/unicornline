@@ -26,10 +26,13 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-typography`,
+      resolve: `gatsby-plugin-google-fonts`,
       options: {
-        pathToConfigModule: `src/utils/typography.js`,
-      },
+        fonts: [
+          `Karla\:400,700`,
+          `Lora\:400,700`
+        ]
+      }
     },
     {
       resolve: 'gatsby-plugin-react-svg',

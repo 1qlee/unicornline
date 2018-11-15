@@ -6,7 +6,17 @@ body {
   font-weight: 400;
   min-height: 100%;
   text-rendering: optimizeLegibility;
+  font-family: 'Karla',-apple-system,'BlinkMacSystemFont','Georgia',sans-serif;
+  font-kerning: normal;
   color: #444;
+}
+
+h1,h2,h3 {
+  font-family: 'Lora','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial', serif;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {
