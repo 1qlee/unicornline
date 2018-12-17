@@ -1,6 +1,9 @@
 import React from "react"
 import styled from "styled-components"
 import styles from "../css/styles.js"
+import ImageGallery from "react-image-gallery"
+
+import "react-image-gallery/styles/css/image-gallery.css"
 
 const ImageContainer = styled.figure`
   display: block;
@@ -30,38 +33,16 @@ const Image = styled.img`
 `
 
 class ImageComponent extends React.Component {
-  constructor(props) {
-    super(props)
-    // Bind Methods
-    this.handleClick = this.handleClick.bind(this)
-    // Manage state
-    this.state = {
-      isOpen: false,
-    }
-  }
-
-  handleClick() {
-    this.setState({
-      isOpen: this.state.isOpen ? false : true,
-    })
-  }
 
   render() {
+    const images = this.props.images
+    console.log(images)
+
     return (
-      <Image className={this.state.isOpen ? "max" : null} src={this.props.src} alt={this.props.alt} onClick={this.handleClick}/>
-    )
+      <ImageGallery items={images} showPlayButton={false} />
+    );
   }
 }
 
-const ImageModal = styled.dialog`
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,0.9);
-  width: 100vw;
-  height: 100vh;
-  z-index: 99;
-`
 
-export {ImageContainer, Image, ImageModal, ImageComponent}
+export {ImageContainer, Image, ImageComponent}

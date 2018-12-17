@@ -3,8 +3,7 @@ import { graphql } from "gatsby"
 import {Content} from "../content"
 import {Table, TableHead, TableData} from "../table"
 import {Title, Subtitle} from "../title"
-import {ImageContainer, Image} from "../image"
-import ImageGallery from "react-image-gallery"
+import {ImageContainer, Image, ImageComponent} from "../image"
 import BreadCrumb from "../breadcrumb"
 import Hero from "../hero"
 import Main from "../main"
@@ -13,35 +12,8 @@ import styled from "styled-components"
 
 import styles from "../../css/styles"
 
-import "react-image-gallery/styles/css/image-gallery.css"
 import "../../css/reset.css"
 import "../../css/master.css"
-
-class MyComponent extends React.Component {
-
-  render() {
-
-    const images = [
-      {
-        original: 'https://source.unsplash.com/random',
-        thumbnail: 'https://source.unsplash.com/random/80x80',
-      },
-      {
-        original: 'https://source.unsplash.com/random',
-        thumbnail: 'https://source.unsplash.com/random/80x80'
-      },
-      {
-        original: 'https://source.unsplash.com/random',
-        thumbnail: 'https://source.unsplash.com/random/80x80'
-      }
-    ]
-
-    return (
-      <ImageGallery items={images} showPlayButton={false} />
-    );
-  }
-
-}
 
 const ProductContainer = styled.div`
   display: flex;
@@ -55,7 +27,7 @@ const ProductLeft = styled.div`
 
 const ProductRight = styled.div`
   animation: fadeInRight 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  padding: 0 1rem;
+  padding: 0 1rem 2rem;
   width: 70%;
   li {
     color: ${styles.grey.text};
@@ -78,7 +50,8 @@ const ProductInfo = styled.div`
 `
 
 const Divider = styled.hr`
-  background-color: ${styles.grey.shadow};
+  background: ${styles.grey.normal};
+  margin-bottom: 1.5rem;
   height: 3px;
 `
 
@@ -98,15 +71,21 @@ const Column = styled.div`
 
 export default ({ data }) => {
   const product = data.datoCmsProduct
-  const {specs} = data.datoCmsProduct
-  const {pricing} = data.datoCmsProduct
+  const {specs} = product
+  const {pricing} = product
+  const {images} = product
 
   return (
     <Main>
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <MyComponent />
+          <ImageContainer>
+            {images.map((item) => (
+              <p>{item.url}</p>
+            ))}
+            <ImageComponent images={images.url} />
+          </ImageContainer>
         </ProductLeft>
         <ProductRight>
           <Hero className="is-flex-start no-side-padding">
