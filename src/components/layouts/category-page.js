@@ -24,8 +24,8 @@ export default ({ data }) => {
       <Hero className="is-flex-start has-animation">
         <Content>
           <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
-          <Title color={styles.text}>{category.name}</Title>
-          <Subtitle color={styles.grey.text}>{category.description}</Subtitle>
+          <Title color={styles.grey.text}>{category.name}</Title>
+          <Subtitle color={styles.grey.title}>{category.description}</Subtitle>
         </Content>
       </Hero>
       <Menu>

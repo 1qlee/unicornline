@@ -6,11 +6,12 @@ const styles = {
     dark: "#0e4177"
   },
   grey: {
-    text: "#727579",
+    text: "#4e616c",
     title: "#8d8d8d",
-    light: "#f3f7f9",
+    normal: "#70777d",
+    light: "#f1f3f5",
     dark: "#28242d",
-    hover: "#e4eaec"
+    hover: "#eaedef"
   },
   purple: "#964bf3",
   shadow: "rgba(0,0,0,0.2)",

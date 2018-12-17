@@ -112,8 +112,8 @@ export default ({ data }) => {
           <Hero className="is-flex-start no-side-padding">
             <Content>
               <BreadCrumb parent="Home" category={product.category} product={product.name}></BreadCrumb>
-              <Title color={styles.text}>{product.name}</Title>
-              <Subtitle style={{maxWidth: "750px"}} color={styles.grey.text} fontSize="1.1rem">{product.description}</Subtitle>
+              <Title color={styles.grey.text}>{product.name}</Title>
+              <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.1rem">{product.description}</Subtitle>
             </Content>
           </Hero>
           <ProductInfo>
