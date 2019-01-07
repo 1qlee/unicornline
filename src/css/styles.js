@@ -15,6 +15,8 @@ const styles = {
   },
   purple: "#964bf3",
   shadow: "rgba(0,0,0,0.2)",
+  green: "#489e48",
+  crimson: "#d62d76",
   text: "#444",
   whiteLight: "rgba(255,255,255,0.72)",
   white: "#fff",

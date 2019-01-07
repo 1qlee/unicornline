@@ -43,7 +43,7 @@ function BreadCrumb(props) {
         </li>
         { props.product ? (
           <li>
-            <a href={"/" + props.product.substring(0).toLowerCase()}>{props.product}</a>
+            <a href={"/" + props.category.substring(0).toLowerCase() + "/" + props.slug}>{props.product}</a>
           </li>
         ) : (
           null

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import {Content} from "../content"
 import {Table, TableHead, TableData} from "../table"
 import {Title, Subtitle} from "../title"
-import {ImageContainer, Image, ImageComponent} from "../image"
+import {ImageContainer, ImageComponent} from "../image"
 import BreadCrumb from "../breadcrumb"
 import Hero from "../hero"
 import Main from "../main"
@@ -45,8 +45,16 @@ const ProductRight = styled.div`
 `
 
 const ProductInfo = styled.div`
+  margin-top: 2rem;
   position: relative;
   overflow-x: hidden;
+  h3 {
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: "Karla";
+    font-weight: 700;
+  }
 `
 
 const Divider = styled.hr`
@@ -60,12 +68,9 @@ const Columns = styled.div`
 `
 
 const Column = styled.div`
-  width: 50%;
   &:first-child {
     margin-right: 1rem;
-  }
-  h3 {
-    font-size: 1.1rem;
+    width: 450px;
   }
 `
 
@@ -90,13 +95,12 @@ export default ({ data }) => {
         <ProductRight>
           <Hero className="is-flex-start no-side-padding">
             <Content>
-              <BreadCrumb parent="Home" category={product.category} product={product.name}></BreadCrumb>
+              <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
               <Title color={styles.grey.text}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.1rem">{product.description}</Subtitle>
             </Content>
           </Hero>
           <ProductInfo>
-            <Divider />
             <Columns>
               <Column>
                 <Content>
@@ -149,11 +153,53 @@ export default ({ data }) => {
                   </Content>
                   <Table>
                     <TableHead>
+                      {pricing.legend ? (
+                        <tr>
+                          {pricing.legend.map((value) => {
+                            if (value === "Digital") {
+                              return (
+                                <th key={value} className="digital-legend">Digital</th>
+                              )
+                            }
+                            else if (value === "Offset") {
+                              return (
+                                <th key={value} className="offset-legend">Offset</th>
+                              )
+                            }
+                            else if (value === "Inkjet") {
+                              return (
+                                <th key={value} className="inkjet-legend">Inkjet</th>
+                              )
+                            }
+                            else {
+                              return (
+                                <th key={value}>{value}</th>
+                              )
+                            }
+                          })}
+                        </tr>
+                      ) : (
+                        null
+                      )}
                       {pricing.headings ? (
                         <tr>
-                          {pricing.headings.map((heading) => (
-                            <th key={heading}>{heading}</th>
-                          ))}
+                          {pricing.headings.map((heading) => {
+                            if (heading.substring(0,6) === 'offset') {
+                              return (
+                                <th key={heading} className="offset">{heading.substring(6)}</th>
+                              )
+                            }
+                            else if (heading.substring(0,6) === 'inkjet') {
+                              return (
+                                <th key={heading} className="inkjet">{heading.substring(6)}</th>
+                              )
+                            }
+                            else {
+                              return (
+                                <th key={heading} className="digital">{heading}</th>
+                              )
+                            }
+                          })}
                         </tr>
                       ) : (
                         null
@@ -190,10 +236,11 @@ export const query = graphql`
     datoCmsProduct(slug: { eq: $slug }) {
       name
       category
+      slug
       description
       images {alt, id, title, url}
       specs {list, material, printing, custom, option}
-      pricing {headings, values}
+      pricing {legend, headings, values}
     }
   }
 `
