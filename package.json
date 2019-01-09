@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "babel-plugin-styled-components": "^1.10.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
     "gatsby": "^2.0.68",
     "gatsby-plugin-google-fonts": "0.0.4",
     "gatsby-plugin-react-svg": "^2.0.0",
