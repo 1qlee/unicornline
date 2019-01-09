@@ -33,14 +33,42 @@ const Image = styled.img`
 `
 
 class ImageComponent extends React.Component {
+  constructor(props) {
+    super(props)
+
+    const newImages = []
+
+    for (let i = 0; i < this.props.images.length; i++) {
+      const newObj = {
+        original: this.props.images[i].url,
+        originalAlt: this.props.images[i].alt,
+        thumbnail: this.props.images[i].url
+      }
+
+      newImages.push(newObj)
+    }
+
+    this.state = {
+      images: newImages,
+      newshit: [
+        {
+          original: "https://www.datocms-assets.com/7597/1539729115-unicorncreative.jpg"
+        },
+        {
+          original: "https://www.datocms-assets.com/7597/1539729115-unicorncreative.jpg"
+        },
+        {
+          original: "https://www.datocms-assets.com/7597/1539729115-unicorncreative.jpg"
+        }
+      ]
+    }
+  }
 
   render() {
-    const images = this.props.images
-    console.log(images)
 
     return (
-      <ImageGallery items={images} showPlayButton={false} />
-    );
+      <ImageGallery items={this.state.images} showPlayButton={false} />
+    )
   }
 }
 

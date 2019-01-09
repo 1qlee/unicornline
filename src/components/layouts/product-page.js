@@ -57,12 +57,6 @@ const ProductInfo = styled.div`
   }
 `
 
-const Divider = styled.hr`
-  background: ${styles.grey.normal};
-  margin-bottom: 1.5rem;
-  height: 3px;
-`
-
 const Columns = styled.div`
   display: flex;
 `
@@ -86,10 +80,7 @@ export default ({ data }) => {
       <ProductContainer>
         <ProductLeft>
           <ImageContainer>
-            {images.map((item) => (
-              <p>{item.url}</p>
-            ))}
-            <ImageComponent images={images.url} />
+            <ImageComponent images={images} />
           </ImageContainer>
         </ProductLeft>
         <ProductRight>
@@ -158,22 +149,22 @@ export default ({ data }) => {
                           {pricing.legend.map((value) => {
                             if (value === "Digital") {
                               return (
-                                <th key={value} className="digital-legend">Digital</th>
+                                <td key={value} className="digital-legend">Digital</td>
                               )
                             }
                             else if (value === "Offset") {
                               return (
-                                <th key={value} className="offset-legend">Offset</th>
+                                <td key={value} className="offset-legend">Offset</td>
                               )
                             }
                             else if (value === "Inkjet") {
                               return (
-                                <th key={value} className="inkjet-legend">Inkjet</th>
+                                <td key={value} className="inkjet-legend">Inkjet</td>
                               )
                             }
                             else {
                               return (
-                                <th key={value}>{value}</th>
+                                <td key={value}>{value}</td>
                               )
                             }
                           })}
@@ -184,7 +175,12 @@ export default ({ data }) => {
                       {pricing.headings ? (
                         <tr>
                           {pricing.headings.map((heading) => {
-                            if (heading.substring(0,6) === 'offset') {
+                            if (heading.substring(0,7) === 'digital') {
+                              return (
+                                <th key={heading} className="digital">{heading.substring(7)}</th>
+                              )
+                            }
+                            else if (heading.substring(0,6) === 'offset') {
                               return (
                                 <th key={heading} className="offset">{heading.substring(6)}</th>
                               )
@@ -196,7 +192,7 @@ export default ({ data }) => {
                             }
                             else {
                               return (
-                                <th key={heading} className="digital">{heading}</th>
+                                <th key={heading}>{heading}</th>
                               )
                             }
                           })}

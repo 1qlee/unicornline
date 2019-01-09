@@ -57,7 +57,7 @@ const NavLink = styled.a`
   letter-spacing: 1px;
   text-transform: uppercase;
   &:hover {
-    cursor: default;
+    cursor: pointer;
     color: ${styles.text};
   }
 `
@@ -72,7 +72,7 @@ const NavMenu = styled.div`
   padding: 1rem;
   position: absolute;
   right: 0;
-  top: 70px;
+  top: 65px;
   width: 250px;
   z-index: 99;
   &.menu-col-2 {
@@ -112,7 +112,10 @@ const NavMenuArrow = styled.div`
   }
 `
 
+// Nav dropdown menu component
 class NavMenuContainer extends React.Component {
+  // Pass all categories (graphql nodes) into component as props
+  // Then render every product for each category
   render() {
     switch(this.props.category) {
       case "Accessory":
@@ -166,10 +169,13 @@ class NavMenuContainer extends React.Component {
   }
 }
 
+// Navbar container component
 class NavBar extends React.Component {
   constructor(props) {
     super(props)
     // State
+    // showMenu hides or shows dropdown menu
+    // currentCategory keeps track of which dropdown category was last shown
     this.state = {
       showMenu: false,
       currentCategory: null,
@@ -179,29 +185,33 @@ class NavBar extends React.Component {
     this.handlePointerLeave = this.handlePointerLeave.bind(this)
   }
 
+  // Handle mouse entering a category link
   handlePointerEnter = (event) => {
     // Set state to show menu
+    // Change currentCategory to the category that was hovered on
     this.setState({
       showMenu: true,
       currentCategory: event.target.textContent,
     })
 
-    // Highlight the text
+    // Remove any pre-existing highlights on all category links
     const navItems = document.getElementsByClassName("nav-item")
     for (let item of navItems) {
       item.classList.remove("is-active")
     }
-
+    // Highlight the text of the currently hovered category
     event.target.classList.add("is-active")
   }
 
+  // Handle mouse leaving a category link
   handlePointerLeave = (event) => {
-    // Set state to hide menu
+    // Remove any highlighting from category links
     const navItems = document.querySelector(".nav-item.is-active")
     if (navItems) {
       navItems.classList.remove("is-active")
     }
 
+    // Set state to hide menu
     this.setState({
       showMenu: false,
     })
@@ -219,7 +229,7 @@ class NavBar extends React.Component {
           <NavRight onPointerLeave={this.handlePointerLeave}>
             {this.props.categories.edges.map(({node}) => (
               <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className="nav-item">
-                <NavLink>{node.name}</NavLink>
+                <NavLink href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
               </NavItem>
             ))}
             {this.state.showMenu ? (
@@ -301,13 +311,7 @@ export default () => (
       }
     `}
     render={data => (
-      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward}>
-        {data.allDatoCmsCategory.edges.map(({node}) => (
-          <NavItem key={node.id}>
-            <a href={"/" + node.name}>{node.name}</a>
-          </NavItem>
-        ))}
-      </NavBar>
+      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} />
     )}
   />
 )

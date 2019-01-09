@@ -11,9 +11,43 @@ const Table = styled.table`
 `
 
 const TableHead = styled.thead`
+  td {
+    font-weight: 700;
+    padding: 0.5rem;
+    position: relative;
+    text-transform: uppercase;
+    vertical-align: middle;
+    &::before {
+      position: absolute;
+      left: 0;
+      top: 12px;
+      content: '';
+      border-radius: 100%;
+      height: 5px;
+      width: 5px;
+    }
+    &.digital-legend {
+      color: ${styles.crimson};
+      &::before {
+        background: ${styles.crimson};
+      }
+    }
+    &.offset-legend {
+      color: ${styles.green};
+      &::before {
+        background: ${styles.green};
+      }
+    }
+    &.inkjet-legend {
+      color: ${styles.primary.light};
+      &::before {
+        background: ${styles.primary.light};
+      }
+    }
+  }
   th {
-    padding: 0.5rem !important;
     border-bottom: 1px solid transparent;
+    padding: 0.5rem !important;
     vertical-align: middle;
     &.digital {
       background-color: ${styles.crimson};
@@ -26,51 +60,6 @@ const TableHead = styled.thead`
     &.inkjet {
       background-color: ${styles.primary.light};
       color: ${styles.white};
-    }
-    &.digital-legend {
-      position: relative;
-      color: ${styles.crimson};
-      text-transform: uppercase;
-      &::before {
-        position: absolute;
-        left: 0;
-        top: 12px;
-        content: '';
-        background: ${styles.crimson};
-        border-radius: 100%;
-        height: 5px;
-        width: 5px;
-      }
-    }
-    &.offset-legend {
-      position: relative;
-      color: ${styles.green};
-      text-transform: uppercase;
-      &::before {
-        position: absolute;
-        left: 0;
-        top: 12px;
-        content: '';
-        background: ${styles.green};
-        border-radius: 100%;
-        height: 5px;
-        width: 5px;
-      }
-    }
-    &.inkjet-legend {
-      position: relative;
-      color: ${styles.primary.light};
-      text-transform: uppercase;
-      &::before {
-        position: absolute;
-        left: 0;
-        top: 12px;
-        content: '';
-        background: ${styles.primary.light};
-        border-radius: 100%;
-        height: 5px;
-        width: 5px;
-      }
     }
   }
 `
