@@ -46,6 +46,7 @@ const TableHead = styled.thead`
     }
   }
   th {
+    background-color: ${styles.grey.hover};
     border-bottom: 1px solid transparent;
     padding: 0.5rem !important;
     vertical-align: middle;

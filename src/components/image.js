@@ -49,25 +49,28 @@ class ImageComponent extends React.Component {
     }
 
     this.state = {
-      images: newImages,
-      newshit: [
-        {
-          original: "https://www.datocms-assets.com/7597/1539729115-unicorncreative.jpg"
-        },
-        {
-          original: "https://www.datocms-assets.com/7597/1539729115-unicorncreative.jpg"
-        },
-        {
-          original: "https://www.datocms-assets.com/7597/1539729115-unicorncreative.jpg"
-        }
-      ]
+      images: newImages
     }
   }
 
   render() {
+    const images = [
+      {
+        original: 'https://placekitten.com/600/380',
+        thumbnail: 'https://placekitten.com/250/150',
+      },
+      {
+        original: 'https://placekitten.com/600/380',
+        thumbnail: 'https://placekitten.com/250/150'
+      },
+      {
+        original: 'https://placekitten.com/600/380',
+        thumbnail: 'https://placekitten.com/250/150'
+      }
+    ]
 
     return (
-      <ImageGallery items={this.state.images} showPlayButton={false} />
+      <ImageGallery items={images} showPlayButton={false} useBrowserFullscreen={false} />
     )
   }
 }

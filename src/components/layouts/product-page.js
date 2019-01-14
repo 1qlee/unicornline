@@ -18,17 +18,24 @@ import "../../css/master.css"
 const ProductContainer = styled.div`
   display: flex;
   width: 100%;
+  @media only screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
 `
 
 const ProductLeft = styled.div`
   padding: 1rem;
-  width: 30%;
+  width: 600px;
+  @media only screen and (max-width: 1200px) {
+    margin: 0 auto;
+    width: auto;
+  }
 `
 
 const ProductRight = styled.div`
-  animation: fadeInRight 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  animation: fadeInRight 0.6s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding: 0 1rem 2rem;
-  width: 70%;
+  width: calc(100% - 600px);
   li {
     color: ${styles.grey.text};
   }
@@ -42,10 +49,16 @@ const ProductRight = styled.div`
       transform: translateX(0);
     }
   }
+  @media only screen and (max-width: 1200px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 `
 
 const ProductInfo = styled.div`
-  margin-top: 2rem;
+  padding: 1rem;
   position: relative;
   overflow-x: hidden;
   h3 {
@@ -59,12 +72,27 @@ const ProductInfo = styled.div`
 
 const Columns = styled.div`
   display: flex;
+  @media only screen and (max-width: 1425px) {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 `
 
 const Column = styled.div`
   &:first-child {
-    margin-right: 1rem;
-    width: 450px;
+    margin-right: 2rem;
+    width: 350px;
+    @media only screen and (max-width: 1425px) {
+      width: 100%;
+      margin-top: 1.5rem;
+      margin-right: 0;
+    }
+  }
+  &:nth-child(2) {
+    width: calc(100% - 350px);
+    @media only screen and (max-width: 1425px) {
+      width: 100%;
+    }
   }
 `
 
@@ -84,7 +112,7 @@ export default ({ data }) => {
           </ImageContainer>
         </ProductLeft>
         <ProductRight>
-          <Hero className="is-flex-start no-side-padding">
+          <Hero className="is-flex-start">
             <Content>
               <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
               <Title color={styles.grey.text}>{product.name}</Title>
@@ -205,8 +233,8 @@ export default ({ data }) => {
                       <tbody>
                         {pricing.values.map((value) => (
                           <tr key={value}>
-                            {value.map((data) => (
-                              <TableData key={data}>{data}</TableData>
+                            {value.map((data, index) => (
+                              <TableData key={index}>{data}</TableData>
                             ))}
                           </tr>
                         ))}

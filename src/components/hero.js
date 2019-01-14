@@ -11,9 +11,6 @@ const Hero = styled.div`
     justify-content: flex-start;
     height: auto;
     padding: 1rem;
-    &.no-side-padding {
-      padding: 1rem 0;
-    }
   }
   &.has-animation {
     animation: fadeDown 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);

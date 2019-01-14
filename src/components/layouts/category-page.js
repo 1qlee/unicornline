@@ -6,7 +6,7 @@ import {Content} from "../content"
 import NavBar from "../nav"
 import Hero from "../hero"
 import {Title, Subtitle} from "../title"
-import {Menu, MenuRow, MenuItem} from "../menu"
+import {Menu, MenuItemWrapper, MenuItem} from "../menu"
 import BreadCrumb from "../breadcrumb"
 
 import styles from "../../css/styles"
@@ -31,13 +31,13 @@ export default ({ data }) => {
       <Menu>
         {products.edges.map(({ node: product }) => (
           // Slug here is bugged in production
-          <MenuRow key={product.id}>
+          <MenuItemWrapper key={product.id}>
             <MenuItem href={"/" + category.name.substring(0).toLowerCase() + "/" + product.slug}>
               <Content className="has-text-centered">
                 <p className="label">{product.name}</p>
               </Content>
             </MenuItem>
-          </MenuRow>
+          </MenuItemWrapper>
         ))}
       </Menu>
     </Main>

@@ -22,8 +22,10 @@ const Menu = styled.div`
   }
 `
 
-const MenuRow = styled.div`
+const MenuItemWrapper = styled.div`
   width: 25%;
+  margin-right: -1px;
+  margin-bottom: -1px;
   @media only screen and (max-width: 620px) {
     width: 100%;
   }
@@ -32,7 +34,6 @@ const MenuRow = styled.div`
 const MenuItem = styled.a`
   align-items: center;
   border: 1px solid ${styles.grey.text};
-  margin-bottom: -1px;
   display: flex;
   height: 100px;
   justify-content: center;
@@ -70,4 +71,4 @@ const MenuItem = styled.a`
   }
 `
 
-export {Menu, MenuItem, MenuRow}
+export {Menu, MenuItem, MenuItemWrapper}
