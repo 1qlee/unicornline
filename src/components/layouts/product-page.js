@@ -52,8 +52,17 @@ const ProductRight = styled.div`
   @media only screen and (max-width: 1200px) {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
+    padding: 0 95px;
+    width: auto !important;
+  }
+  @media only screen and (max-width: 845px) {
+    padding: 0 2rem 2rem;
+  }
+  @media only screen and (max-width: 730px) {
+    padding: 0 1rem 2rem;
+  }
+  @media only screen and (max-width: 650px) {
+    padding: 0 0 2rem;
   }
 `
 

@@ -1,4 +1,5 @@
 import React from "react"
+import throttle from "lodash.throttle"
 import {graphql, StaticQuery} from "gatsby"
 import styled from "styled-components"
 import styles from "../css/styles.js"
@@ -171,19 +172,28 @@ class NavMenuContainer extends React.Component {
 
 // Navbar container component
 class NavBar extends React.Component {
-  constructor(props) {
-    super(props)
+  constructor() {
+    super()
     // State
     // showMenu hides or shows dropdown menu
     // currentCategory keeps track of which dropdown category was last shown
     this.state = {
       showMenu: false,
       currentCategory: null,
+      showHamburger: false
     }
     // Bind methods
     this.handlePointerEnter = this.handlePointerEnter.bind(this)
     this.handlePointerLeave = this.handlePointerLeave.bind(this)
+    this.handleWindowResize = this.handleWindowResize.bind(this)
   }
+
+  // Handle small viewport width to toggle hamburger menu
+  handleWindowResize = () => {
+    return throttle(() => {
+      console.log("throttle")
+    }, 200)
+   }
 
   // Handle mouse entering a category link
   handlePointerEnter = (event) => {
@@ -217,6 +227,10 @@ class NavBar extends React.Component {
     })
   }
 
+  componentDidMount() {
+    window.addEventListener('resize', this.handleWindowResize)
+  }
+
   render() {
     return (
       <Nav>
@@ -226,25 +240,29 @@ class NavBar extends React.Component {
               <img src={UnicornLogo} alt="Logo" />
             </NavLogo>
           </NavLeft>
-          <NavRight onPointerLeave={this.handlePointerLeave}>
-            {this.props.categories.edges.map(({node}) => (
-              <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className="nav-item">
-                <NavLink href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
-              </NavItem>
-            ))}
-            {this.state.showMenu ? (
-              <NavMenuContainer
-                category={this.state.currentCategory}
-                accessory={this.props.accessory}
-                presentation={this.props.presentation}
-                display={this.props.display}
-                creative={this.props.creative}
-                award={this.props.award}
-              />
-            ) : (
-              null
-            )}
-          </NavRight>
+          {this.state.showHamburger ? (
+            null
+          ) : (
+            <NavRight onPointerLeave={this.handlePointerLeave}>
+              {this.props.categories.edges.map(({node}) => (
+                <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className="nav-item">
+                  <NavLink href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
+                </NavItem>
+              ))}
+              {this.state.showMenu ? (
+                <NavMenuContainer
+                  category={this.state.currentCategory}
+                  accessory={this.props.accessory}
+                  presentation={this.props.presentation}
+                  display={this.props.display}
+                  creative={this.props.creative}
+                  award={this.props.award}
+                />
+              ) : (
+                null
+              )}
+            </NavRight>
+          )}
         </NavContainer>
       </Nav>
     )
