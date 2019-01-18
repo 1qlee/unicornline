@@ -1,5 +1,5 @@
 import React from "react"
-import throttle from "lodash.throttle"
+import throttle from "lodash/throttle"
 import {graphql, StaticQuery} from "gatsby"
 import styled from "styled-components"
 import styles from "../css/styles.js"
@@ -113,6 +113,93 @@ const NavMenuArrow = styled.div`
   }
 `
 
+const Hamburger = styled.div`
+  padding: 1rem;
+  position: relative;
+  &.is-active {
+    span {
+      &:first-child {
+        transform: rotate(45deg);
+        top: 17px;
+      }
+      &:nth-child(2) {
+        display: none;
+      }
+      &:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 17px;
+      }
+    }
+  }
+  &:hover {
+    span {
+      background: ${styles.grey.dark};
+    }
+  }
+  span {
+    background: ${styles.grey.normal};
+    height: 1px;
+    left: 4px;
+    position: absolute;
+    transition: transform 0.2s ease;
+    width: 24px;
+    &:first-child {
+      top: 10px;
+    }
+    &:nth-child(2) {
+      top: 17px;
+    }
+    &:nth-child(3) {
+      top: 24px;
+    }
+  }
+`
+
+const HamburgerDropdown = styled.div`
+  background: ${styles.white};
+  border-bottom: 3px solid ${styles.shadow};
+  border-radius: 0.3rem;
+  box-shadow: 0 1px 20px 0 ${styles.shadow};
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 99;
+`
+
+// Nav hamburger menu component
+class HamburgerMenu extends React.Component {
+  state = {
+    isActive: false
+  }
+
+  handleClick = (e) => {
+    this.setState({
+      isActive: !this.state.isActive
+    })
+  }
+
+  render() {
+    return (
+      <Hamburger className={this.state.isActive ? "is-active" : null} onClick={this.handleClick}>
+        <span></span>
+        <span></span>
+        <span></span>
+        {this.state.isActive ? (
+          <HamburgerDropdown>
+            {this.props.categories.edges.map(({node}) => (
+              <NavItem key={node.id} id={node.name} className="nav-item">
+                <NavLink href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
+              </NavItem>
+            ))}
+          </HamburgerDropdown>
+        ) : (
+          null
+        )}
+      </Hamburger>
+    )
+  }
+}
+
 // Nav dropdown menu component
 class NavMenuContainer extends React.Component {
   // Pass all categories (graphql nodes) into component as props
@@ -174,13 +261,12 @@ class NavMenuContainer extends React.Component {
 class NavBar extends React.Component {
   constructor() {
     super()
-    // State
     // showMenu hides or shows dropdown menu
     // currentCategory keeps track of which dropdown category was last shown
     this.state = {
       showMenu: false,
       currentCategory: null,
-      showHamburger: false
+      showHamburger: window.innerWidth < 650
     }
     // Bind methods
     this.handlePointerEnter = this.handlePointerEnter.bind(this)
@@ -189,11 +275,13 @@ class NavBar extends React.Component {
   }
 
   // Handle small viewport width to toggle hamburger menu
-  handleWindowResize = () => {
-    return throttle(() => {
-      console.log("throttle")
-    }, 200)
-   }
+  handleWindowResize = throttle(() => {
+    this.onResize()
+  }, 200)
+
+  onResize = () => {
+    this.setState({ showHamburger: window.innerWidth < 650 })
+  }
 
   // Handle mouse entering a category link
   handlePointerEnter = (event) => {
@@ -231,6 +319,10 @@ class NavBar extends React.Component {
     window.addEventListener('resize', this.handleWindowResize)
   }
 
+  componentWillUnmount() {
+    window.removeEventListener('resize', this.handleWindowResize)
+  }
+
   render() {
     return (
       <Nav>
@@ -241,7 +333,9 @@ class NavBar extends React.Component {
             </NavLogo>
           </NavLeft>
           {this.state.showHamburger ? (
-            null
+            <NavRight>
+              <HamburgerMenu categories={this.props.categories} />
+            </NavRight>
           ) : (
             <NavRight onPointerLeave={this.handlePointerLeave}>
               {this.props.categories.edges.map(({node}) => (
