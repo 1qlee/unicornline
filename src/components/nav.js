@@ -268,18 +268,15 @@ class NavBar extends React.Component {
       showMenu: false,
       currentCategory: null,
       windowWidth: 0,
-      showHamburger: this.setWindowWidth() < 650
+      showHamburger: typeof window !== 'undefined' ? window.innerWidth < 650 : false
     }
     // Bind methods
     this.handlePointerEnter = this.handlePointerEnter.bind(this)
     this.handlePointerLeave = this.handlePointerLeave.bind(this)
     this.handleWindowResize = this.handleWindowResize.bind(this)
-    this.setWindowWidth = this.setWindowWidth.bind(this)
   }
 
   componentDidMount() {
-    // Set current window width
-    this.setWindowWidth()
     // Add window resizing event handler
     window.addEventListener('resize', this.handleWindowResize)
   }
@@ -295,13 +292,8 @@ class NavBar extends React.Component {
   }, 200)
 
   onResize = () => {
-    this.setState({ showHamburger: window.innerWidth < 650 })
-  }
-
-  setWindowWidth = () => {
     if (typeof window !== 'undefined') {
-      this.setState({ windowWidth: window.innerWidth })
-      return window.innerWidth
+      this.setState({ showHamburger: window.innerWidth < 650 })
     }
   }
 
