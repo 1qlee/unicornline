@@ -276,6 +276,18 @@ class NavBar extends React.Component {
     this.setWindowWidth = this.setWindowWidth.bind(this)
   }
 
+  componentDidMount() {
+    // Set current window width
+    this.setWindowWidth()
+    // Add window resizing event handler
+    window.addEventListener('resize', this.handleWindowResize)
+  }
+
+  componentWillUnmount() {
+    // Remove window resizing event handler
+    window.removeEventListener('resize', this.handleWindowResize)
+  }
+
   // Handle small viewport width to toggle hamburger menu
   handleWindowResize = throttle(() => {
     this.onResize()
@@ -319,15 +331,6 @@ class NavBar extends React.Component {
     this.setState({
       showMenu: false,
     })
-  }
-
-  componentDidMount() {
-    this.setWindowWidth()
-    window.addEventListener('resize', this.handleWindowResize)
-  }
-
-  componentWillUnmount() {
-    window.removeEventListener('resize', this.handleWindowResize)
   }
 
   render() {
