@@ -8,17 +8,6 @@ const Title = styled.h1`
   font-weight: 400;
   margin-bottom: 1rem;
   position: relative;
-  &.has-line {
-    &::before {
-      background: ${styles.primary.transparent};
-      bottom: 0;
-      content: "";
-      height: 1.2rem;
-      position: absolute;
-      right: 0;
-      width: 125px;
-    }
-  }
   &.fade-in-down {
     animation: fadeInDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }

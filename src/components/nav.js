@@ -266,12 +266,14 @@ class NavBar extends React.Component {
     this.state = {
       showMenu: false,
       currentCategory: null,
-      showHamburger: window.innerWidth < 650
+      windowWidth: 0,
+      showHamburger: this.state.windowWidth < 650,
     }
     // Bind methods
     this.handlePointerEnter = this.handlePointerEnter.bind(this)
     this.handlePointerLeave = this.handlePointerLeave.bind(this)
     this.handleWindowResize = this.handleWindowResize.bind(this)
+    this.setWindowWidth = this.setWindowWidth.bind(this)
   }
 
   // Handle small viewport width to toggle hamburger menu
@@ -281,6 +283,10 @@ class NavBar extends React.Component {
 
   onResize = () => {
     this.setState({ showHamburger: window.innerWidth < 650 })
+  }
+
+  setWindowWidth = () => {
+    this.setState({ windowWidth: window.innerWidth })
   }
 
   // Handle mouse entering a category link
@@ -316,6 +322,7 @@ class NavBar extends React.Component {
   }
 
   componentDidMount() {
+    this.setWindowWidth()
     window.addEventListener('resize', this.handleWindowResize)
   }
 
