@@ -42,6 +42,7 @@ const ProductCard = styled.a`
   display: block;
   padding: 2rem 1rem;
   transition: background 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
   &:hover {
     background: ${styles.primary.normal};
     box-shadow: 0 12px 20px 0 ${styles.shadow};

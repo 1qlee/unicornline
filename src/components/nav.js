@@ -114,6 +114,7 @@ const NavMenuArrow = styled.div`
 `
 
 const Hamburger = styled.div`
+  cursor: pointer;
   padding: 1rem;
   position: relative;
   &.is-active {
@@ -267,7 +268,7 @@ class NavBar extends React.Component {
       showMenu: false,
       currentCategory: null,
       windowWidth: 0,
-      showHamburger: this.state.windowWidth < 650,
+      showHamburger: this.setWindowWidth() < 650
     }
     // Bind methods
     this.handlePointerEnter = this.handlePointerEnter.bind(this)
@@ -298,7 +299,10 @@ class NavBar extends React.Component {
   }
 
   setWindowWidth = () => {
-    this.setState({ windowWidth: window.innerWidth })
+    if (typeof window !== 'undefined') {
+      this.setState({ windowWidth: window.innerWidth })
+      return window.innerWidth
+    }
   }
 
   // Handle mouse entering a category link
