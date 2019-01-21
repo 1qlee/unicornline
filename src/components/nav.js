@@ -165,6 +165,10 @@ const HamburgerDropdown = styled.div`
   right: 0;
   top: calc(100% + 0.5rem);
   z-index: 99;
+  .nav-link {
+    display: block;
+    padding: 1rem;
+  }
 `
 
 // Nav hamburger menu component
@@ -188,9 +192,7 @@ class HamburgerMenu extends React.Component {
         {this.state.isActive ? (
           <HamburgerDropdown>
             {this.props.categories.edges.map(({node}) => (
-              <NavItem key={node.id} id={node.name} className="nav-item">
-                <NavLink href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
-              </NavItem>
+              <NavLink key={node.id} className="nav-link" href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
             ))}
           </HamburgerDropdown>
         ) : (
@@ -268,7 +270,7 @@ class NavBar extends React.Component {
       showMenu: false,
       currentCategory: null,
       windowWidth: 0,
-      showHamburger: typeof window !== 'undefined' ? window.innerWidth < 650 : false
+      showHamburger: typeof window !== 'undefined' ? window.innerWidth < 750 : false
     }
     // Bind methods
     this.handlePointerEnter = this.handlePointerEnter.bind(this)
@@ -293,7 +295,7 @@ class NavBar extends React.Component {
 
   onResize = () => {
     if (typeof window !== 'undefined') {
-      this.setState({ showHamburger: window.innerWidth < 650 })
+      this.setState({ showHamburger: window.innerWidth < 750 })
     }
   }
 

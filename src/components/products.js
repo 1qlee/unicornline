@@ -7,23 +7,11 @@ import {Content} from "./content"
 const ProductsContainer = styled.div`
   align-items: center;
   animation: scaleIn 0.6s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  border: 1px solid ${styles.grey.text};
+  border: 1px solid ${styles.primary.normal};
   display: flex;
-  flex-grow: 1;
+  flex-direction: column;
   margin: 2rem auto 0;
   max-width: 1200px;
-  @media only screen and (max-width: 1270px) {
-    margin: 2rem 2rem 0;
-  }
-  @media only screen and (max-width: 850px) {
-    flex-direction: column;
-    max-width: 580px;
-    margin: 2rem auto 0;
-  }
-  @media only screen and (max-width: 665px) {
-    flex-direction: column;
-    margin: 2rem 1rem 0;
-  }
   @keyframes scaleIn {
     0% {
       opacity: 0;

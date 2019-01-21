@@ -1,11 +1,12 @@
 import React from "react"
 import { graphql } from "gatsby"
+import {Columns, Column} from "../components/columns"
+import {Content} from "../components/content"
+import {Title, Subtitle} from "../components/title"
+import Footer from "../components/footer"
+import Hero from "../components/hero"
 import Main from "../components/main"
 import NavBar from "../components/nav"
-import {Title, Subtitle} from "../components/title"
-import {Content} from "../components/content"
-import Hero from "../components/hero"
-import Footer from "../components/footer"
 import Products from "../components/products"
 
 import styles from "../css/styles"
@@ -15,15 +16,21 @@ import "../css/master.css"
 
 export default ({ data }) => (
   <Main className="is-flex-center">
+    <NavBar />
     <Hero>
-      <NavBar />
-      <Content className="has-text-centered">
-        <Title className="fade-in-down" color={styles.primary.normal}>{data.datoCmsIndex.title}</Title>
-        <Subtitle className="fade-in-down" color={styles.grey.title}>{data.datoCmsIndex.subtitle}</Subtitle>
-        <Products />
-      </Content>
-      <Footer />
+      <Columns>
+        <Column width={"50%"}>
+          <Content>
+            <Title className="fade-in-down" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
+            <Subtitle className="fade-in-down" color={styles.primary.normal}>{data.datoCmsIndex.blurb}</Subtitle>
+          </Content>
+        </Column>
+        <Column width={"50%"}>
+          <Products />
+        </Column>
+      </Columns>
     </Hero>
+    <Footer />
   </Main>
 )
 
@@ -32,6 +39,7 @@ export const query = graphql`
     datoCmsIndex {
       title
       subtitle
+      blurb
     }
   }
 `

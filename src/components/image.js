@@ -8,6 +8,7 @@ import "react-image-gallery/styles/css/image-gallery.css"
 const ImageContainer = styled.figure`
   display: block;
   margin-bottom: 1rem;
+  position: relative;
 `
 
 const Image = styled.img`
@@ -57,15 +58,15 @@ class ImageComponent extends React.Component {
     const images = [
       {
         original: 'https://placekitten.com/600/380',
-        thumbnail: 'https://placekitten.com/250/150',
+        thumbnail: 'https://placekitten.com/600/380',
       },
       {
-        original: 'https://placekitten.com/600/380',
-        thumbnail: 'https://placekitten.com/250/150'
+        original: 'https://placekitten.com/601/380',
+        thumbnail: 'https://placekitten.com/601/380'
       },
       {
-        original: 'https://placekitten.com/600/380',
-        thumbnail: 'https://placekitten.com/250/150'
+        original: 'https://placekitten.com/599/380',
+        thumbnail: 'https://placekitten.com/599/380'
       }
     ]
 

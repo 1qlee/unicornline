@@ -118,6 +118,7 @@ export default ({ data }) => {
         <ProductLeft>
           <ImageContainer>
             <ImageComponent images={images} />
+            <small style={{background: "white", padding: "5px", position: "absolute", top: "0", fontSize: "10px"}}>Our images are under construction. Meanwhile, please enjoy cats.</small>
           </ImageContainer>
         </ProductLeft>
         <ProductRight>

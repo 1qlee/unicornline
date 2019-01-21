@@ -2,10 +2,6 @@ import styled from "styled-components"
 
 const Hero = styled.div`
   background-color: ${props => props.color};
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
   position: relative;
   &.is-flex-start {
     justify-content: flex-start;
