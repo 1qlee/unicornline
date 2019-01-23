@@ -34,9 +34,9 @@ const ProductCard = styled.a`
   &:hover {
     background: ${styles.primary.normal};
     box-shadow: 0 12px 20px 0 ${styles.shadow};
-    color: ${styles.white};
+    color: ${styles.white.normal};
     p {
-      color: ${styles.whiteLight};
+      color: ${styles.white.light};
     }
   }
 `

@@ -2,13 +2,10 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Container = styled.div`
-  background: ${styles.primary.normal};
-  margin: 1rem;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow-y: auto;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  position: relative;
 `
 
 export default Container

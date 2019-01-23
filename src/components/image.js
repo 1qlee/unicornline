@@ -57,16 +57,16 @@ class ImageComponent extends React.Component {
   render() {
     const images = [
       {
-        original: 'https://placekitten.com/600/380',
-        thumbnail: 'https://placekitten.com/600/380',
+        original: 'https://dummyimage.com/600x400/e3dada/999',
+        thumbnail: 'https://dummyimage.com/600x400/e3dada/999',
       },
       {
-        original: 'https://placekitten.com/601/380',
-        thumbnail: 'https://placekitten.com/601/380'
+        original: 'https://dummyimage.com/600x400/e3dada/999',
+        thumbnail: 'https://dummyimage.com/600x400/e3dada/999'
       },
       {
-        original: 'https://placekitten.com/599/380',
-        thumbnail: 'https://placekitten.com/599/380'
+        original: 'https://dummyimage.com/600x400/e3dada/999',
+        thumbnail: 'https://dummyimage.com/600x400/e3dada/999'
       }
     ]
 

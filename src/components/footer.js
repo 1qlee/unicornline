@@ -5,10 +5,11 @@ import styles from "../css/styles.js"
 
 const Footer = styled.div`
   align-items: flex-end;
-  color: ${styles.grey.text};
+  background-color: ${styles.grey.dark};
+  color: ${styles.white.light};
   display: flex;
   justify-content: space-between;
-  padding: 1rem;
+  padding: 2rem 1rem;
   @media only screen and (max-width: 665px) {
     flex-direction: column;
     align-items: flex-start;
@@ -29,6 +30,7 @@ export default () => (
           company
           about
           phone
+          address
         }
       }
     `}

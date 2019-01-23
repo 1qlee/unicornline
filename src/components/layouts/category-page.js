@@ -1,18 +1,24 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
-
-import Main from "../main"
-import {Content} from "../content"
-import NavBar from "../nav"
-import Hero from "../hero"
-import {Title, Subtitle} from "../title"
-import {Menu, MenuItemWrapper, MenuItem} from "../menu"
+import { Helmet } from "react-helmet"
+import { Content } from "../content"
+import { Menu, MenuItemWrapper, MenuItem } from "../menu"
+import { Title, Subtitle } from "../title"
 import BreadCrumb from "../breadcrumb"
+import Footer from "../footer"
+import Hero from "../hero"
+import Main from "../main"
+import NavBar from "../nav"
 
 import styles from "../../css/styles"
-
+import favicon from "../../images/favicon.ico"
 import "../../css/reset.css"
 import "../../css/master.css"
+
+const CategoryContainer = styled.div`
+  padding: 2rem 0;
+`
 
 export default ({ data }) => {
   const category = data.datoCmsCategory
@@ -20,26 +26,35 @@ export default ({ data }) => {
 
   return (
     <Main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Unicorn Line</title>
+        <link rel="canonical" href="https://unicornline.com" />
+        <link rel="icon" type="image/x-icon" href={favicon} />
+      </Helmet>
       <NavBar />
-      <Hero className="is-flex-start has-animation">
-        <Content>
-          <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
-          <Title color={styles.grey.text}>{category.name}</Title>
-          <Subtitle color={styles.grey.title}>{category.description}</Subtitle>
-        </Content>
-      </Hero>
-      <Menu>
-        {products.edges.map(({ node: product }) => (
-          // Slug here is bugged in production
-          <MenuItemWrapper key={product.id}>
-            <MenuItem href={"/" + category.name.substring(0).toLowerCase() + "/" + product.slug}>
-              <Content className="has-text-centered">
-                <p className="label">{product.name}</p>
-              </Content>
-            </MenuItem>
-          </MenuItemWrapper>
-        ))}
-      </Menu>
+      <CategoryContainer>
+        <Hero className="is-flex-start has-animation">
+          <Content>
+            <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
+            <Title color={styles.grey.dark}>{category.name}</Title>
+            <Subtitle color={styles.grey.title}>{category.description}</Subtitle>
+          </Content>
+        </Hero>
+        <Menu>
+          {products.edges.map(({ node: product }) => (
+            // Slug here is bugged in production
+            <MenuItemWrapper key={product.id}>
+              <MenuItem href={"/" + category.name.substring(0).toLowerCase() + "/" + product.slug}>
+                <Content className="has-text-centered">
+                  <p className="label">{product.name}</p>
+                </Content>
+              </MenuItem>
+            </MenuItemWrapper>
+          ))}
+        </Menu>
+      </CategoryContainer>
+      <Footer />
     </Main>
   )
 }

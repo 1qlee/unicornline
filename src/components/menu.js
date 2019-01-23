@@ -41,7 +41,7 @@ const MenuItem = styled.a`
   position: relative;
   width: 100%;
   &::before {
-    background: rgba(0,109,225,0.9);
+    background: ${styles.primary.normal};
     content: "";
     height: 100%;
     left: 0;
@@ -51,14 +51,14 @@ const MenuItem = styled.a`
     width: 0;
   }
   &::after {
-    color: ${styles.white};
+    color: ${styles.white.normal};
     content: "View Item";
     left: 50%;
     opacity: 0;
     position: absolute;
     top: 50%;
     transform: translate(-50%,-50%);
-    transition: opacity 0.2s ease;
+    transition: opacity 0.1s ease;
   }
   &:hover {
     cursor: pointer;

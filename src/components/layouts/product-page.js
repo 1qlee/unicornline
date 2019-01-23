@@ -1,22 +1,25 @@
 import React from "react"
+import styled from "styled-components"
 import { graphql } from "gatsby"
-import {Content} from "../content"
-import {Table, TableHead, TableData} from "../table"
-import {Title, Subtitle} from "../title"
-import {ImageContainer, ImageComponent} from "../image"
+import { Helmet } from "react-helmet"
+import { Content } from "../content"
+import { Table, TableHead, TableData } from "../table"
+import { Title, Subtitle } from "../title"
+import { ImageContainer, ImageComponent } from "../image"
+import Footer from "../footer"
 import BreadCrumb from "../breadcrumb"
 import Hero from "../hero"
 import Main from "../main"
 import NavBar from "../nav"
-import styled from "styled-components"
 
 import styles from "../../css/styles"
-
+import favicon from "../../images/favicon.ico"
 import "../../css/reset.css"
 import "../../css/master.css"
 
 const ProductContainer = styled.div`
   display: flex;
+  padding: 2rem 0;
   width: 100%;
   @media only screen and (max-width: 1200px) {
     flex-direction: column;
@@ -113,19 +116,25 @@ export default ({ data }) => {
 
   return (
     <Main>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Unicorn Line</title>
+        <link rel="canonical" href="https://unicornline.com" />
+        <link rel="icon" type="image/x-icon" href={favicon} />
+      </Helmet>
       <NavBar />
       <ProductContainer>
         <ProductLeft>
           <ImageContainer>
             <ImageComponent images={images} />
-            <small style={{background: "white", padding: "5px", position: "absolute", top: "0", fontSize: "10px"}}>Our images are under construction. Meanwhile, please enjoy cats.</small>
+            <small style={{background: "white", padding: "5px", position: "absolute", top: "0", fontSize: "10px"}}>Our images are under construction.</small>
           </ImageContainer>
         </ProductLeft>
         <ProductRight>
           <Hero className="is-flex-start">
             <Content>
               <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
-              <Title color={styles.grey.text}>{product.name}</Title>
+              <Title color={styles.grey.dark}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.1rem">{product.description}</Subtitle>
             </Content>
           </Hero>
@@ -261,6 +270,7 @@ export default ({ data }) => {
           </ProductInfo>
         </ProductRight>
       </ProductContainer>
+      <Footer />
     </Main>
   )
 }

@@ -3,22 +3,21 @@ import styled from "styled-components"
 const Hero = styled.div`
   background-color: ${props => props.color};
   position: relative;
+  padding: 160px 0;
   &.is-flex-start {
     justify-content: flex-start;
     height: auto;
     padding: 1rem;
   }
+  &.has-items-centered {
+    display: flex;
+    align-items: center;
+  }
   &.has-animation {
     animation: fadeDown 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
-  .has-text-centered {
-    padding: 120px 0;
-    @media only screen and (max-width: 850px) {
-      padding: 60px 1rem;
-    }
-  }
-  @media only screen and (max-width: 850px) {
-    height: auto;
+  @media only screen and (max-width: 860px) {
+    padding: 2rem 0;
   }
   @keyframes fadeDown {
     0% {

@@ -52,15 +52,15 @@ const TableHead = styled.thead`
     vertical-align: middle;
     &.digital {
       background-color: ${styles.crimson};
-      color: ${styles.white};
+      color: ${styles.white.normal};
     }
     &.offset {
       background-color: ${styles.green};
-      color: ${styles.white};
+      color: ${styles.white.normal};
     }
     &.inkjet {
       background-color: ${styles.primary.light};
-      color: ${styles.white};
+      color: ${styles.white.normal};
     }
   }
 `

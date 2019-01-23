@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import styles from "../css/styles"
 
 const Title = styled.h1`
   color: ${props => props.color};
@@ -27,10 +26,8 @@ const Title = styled.h1`
 `
 
 const Subtitle = styled.p`
-  background-color: ${props => props.color};
-  color: ${styles.white};
-  padding: 1rem;
-  font-size: ${props => props.fontSize || "1.2rem"};
+  color: ${props => props.color};
+  font-size: ${props => props.fontSize || "1.5rem"};
   &.fade-in-down {
     animation: fadeInDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }

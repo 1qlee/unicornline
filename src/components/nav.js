@@ -53,18 +53,18 @@ const NavRight = styled.div`
 `
 
 const NavLink = styled.a`
-  color: ${styles.grey.text};
+  color: ${styles.grey.normal};
   font-size: 0.875rem;
   letter-spacing: 1px;
   text-transform: uppercase;
   &:hover {
     cursor: pointer;
-    color: ${styles.text};
+    color: ${styles.grey.dark};
   }
 `
 
 const NavMenu = styled.div`
-  background: ${styles.white};
+  background: ${styles.white.normal};
   border-bottom: 3px solid ${styles.shadow};
   border-radius: 0.3rem;
   box-shadow: 0 1px 20px 0 ${styles.shadow};
@@ -92,14 +92,14 @@ const NavMenu = styled.div`
     transition: color 0.1s ease, background-color 0.1s ease;
     width: 100%;
     &:hover {
-      color: ${styles.white};
+      color: ${styles.white.normal};
       background-color: ${styles.primary.normal};
     }
   }
 `
 
 const NavMenuArrow = styled.div`
-  background: ${styles.white};
+  background: ${styles.white.normal};
   box-shadow: -1px -1px 1px 0 ${styles.shadow};
   height: 16px;
   left: 50%;
@@ -157,7 +157,7 @@ const Hamburger = styled.div`
 `
 
 const HamburgerDropdown = styled.div`
-  background: ${styles.white};
+  background: ${styles.white.normal};
   border-bottom: 3px solid ${styles.shadow};
   border-radius: 0.3rem;
   box-shadow: 0 1px 20px 0 ${styles.shadow};
