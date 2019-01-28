@@ -25,7 +25,7 @@ export default ({ data }) => (
       <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <NavBar />
-    <Hero className="has-animation has-items-centered">
+    <Hero className="is-index has-animation has-items-centered">
       <Columns>
         <Column>
           <BookImage image={catalogCover} />

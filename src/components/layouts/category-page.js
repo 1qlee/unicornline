@@ -18,6 +18,10 @@ import "../../css/master.css"
 
 const CategoryContainer = styled.div`
   padding: 2rem 0;
+  min-height: calc(100% - 219px);
+  @media only screen and (max-width: 749px) {
+    min-height: calc(100% - 213px);
+  }
 `
 
 export default ({ data }) => {

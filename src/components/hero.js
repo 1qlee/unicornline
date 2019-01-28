@@ -3,7 +3,13 @@ import styled from "styled-components"
 const Hero = styled.div`
   background-color: ${props => props.color};
   position: relative;
-  padding: 160px 0;
+  padding: 2rem 0;
+  &.is-index {
+    min-height: calc(100% - 219px);
+    @media only screen and (max-width: 749px) {
+      min-height: calc(100% - 213px);
+    }
+  }
   &.is-flex-start {
     justify-content: flex-start;
     height: auto;
