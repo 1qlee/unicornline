@@ -20,6 +20,9 @@ const Content = styled.div`
   li {
     line-height: 1.5;
   }
+  p + p {
+    margin-top: 1rem;
+  }
 `
 
 const StyledList = styled.ul`

@@ -3,7 +3,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Columns, Column } from "../components/columns"
 import { Content} from "../components/content"
-import { Title, Subtitle } from "../components/title"
+import { Title } from "../components/title"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import Main from "../components/main"
@@ -33,7 +33,7 @@ export default ({ data }) => (
         <Column className="has-items-centered">
           <Content>
             <Title className="fade-in-down" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
-            <Subtitle style={{ maxWidth: "750px" }} className="fade-in-down" color={styles.grey.title}>{data.datoCmsIndex.blurb}</Subtitle>
+            <div style={{fontSize:"18px", maxWidth:"575px"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></div>
           </Content>
         </Column>
       </Columns>
@@ -47,7 +47,12 @@ export const query = graphql`
     datoCmsIndex {
       title
       subtitle
-      blurb
+      blurbNode {
+        childMarkdownRemark {
+          html
+          rawMarkdownBody
+        }
+      }
     }
   }
 `
