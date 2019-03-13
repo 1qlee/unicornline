@@ -65,27 +65,53 @@ const NavLink = styled.a`
 
 const NavMenu = styled.div`
   background: ${styles.white.normal};
-  border-bottom: 3px solid ${styles.shadow};
   border-radius: 0.3rem;
-  box-shadow: 0 1px 20px 0 ${styles.shadow};
+  box-shadow: 0 10px 20px 0 ${styles.shadow}, 1px 0 5px 0 ${styles.shadow};
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
   position: absolute;
   right: 0;
   top: 65px;
-  width: 250px;
+  transition: transform 0.1s ease, width 0.1s ease, height 0.1s ease;
+  will-change: transform, width, height;
   z-index: 99;
+  &.menu-pos-1 {
+    transform: translateX(-17rem);
+    width: 428px;
+    height: 382px;
+  }
+  &.menu-pos-2 {
+    transform: translateX(-9rem);
+    width: 428px;
+    height: 350px;
+  }
+  &.menu-pos-3 {
+    transform: translateX(-12px);
+    width: 459px;
+    height: 417px;
+  }
+  &.menu-pos-4 {
+    transform: translateX(-24px);
+    width: 252px;
+    height: 417px;
+  }
+  &.menu-pos-5 {
+    transform: translateX(-24px);
+    width: 155px;
+    height: 242px;
+  }
   &.menu-col-2 {
-    width: 425px;
     a {
       width: 50%;
     }
   }
-  &.menu-col-1 {
-    width: 155px;
-  }
   a {
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
     border-radius: 3px;
     color: ${styles.text};
     padding: 0.5rem 0.3rem;
@@ -94,6 +120,14 @@ const NavMenu = styled.div`
     &:hover {
       color: ${styles.white.normal};
       background-color: ${styles.primary.normal};
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
     }
   }
 `
@@ -211,7 +245,7 @@ class NavMenuContainer extends React.Component {
     switch(this.props.category) {
       case "Accessory":
         return (
-          <NavMenu className="menu-col-2" style={{right:"17rem"}}>
+          <NavMenu className="menu-col-2 menu-pos-1">
             <NavMenuArrow />
             {this.props.accessory.edges.map(({node}) => (
               <a key={node.id} href={"/accessory/" + node.slug}>{node.name}</a>
@@ -220,7 +254,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Presentation":
         return (
-          <NavMenu className="menu-col-2" style={{right:"9rem"}}>
+          <NavMenu className="menu-col-2 menu-pos-2">
             <NavMenuArrow />
             {this.props.presentation.edges.map(({node}) => (
               <a key={node.id} href={"/presentation/" + node.slug}>{node.name}</a>
@@ -229,7 +263,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Display":
         return (
-          <NavMenu className="menu-col-2" style={{right: "2rem"}}>
+          <NavMenu className="menu-col-2 menu-pos-3">
             <NavMenuArrow />
             {this.props.display.edges.map(({node}) => (
               <a key={node.id} href={"/display/" + node.slug}>{node.name}</a>
@@ -238,7 +272,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Creative":
         return (
-          <NavMenu style={{right: "1.5rem"}}>
+          <NavMenu className="menu-pos-4">
             <NavMenuArrow />
             {this.props.creative.edges.map(({node}) => (
               <a key={node.id} href={"/creative/" + node.slug}>{node.name}</a>
@@ -247,7 +281,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Award":
         return (
-          <NavMenu className="menu-col-1" style={{right: "1.5rem"}}>
+          <NavMenu className="menu-col-1 menu-pos-5">
             <NavMenuArrow className="is-right" />
             {this.props.award.edges.map(({node}) => (
               <a key={node.id} href={"/award/" + node.slug}>{node.name}</a>
