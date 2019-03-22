@@ -6,7 +6,6 @@ import { Content } from "../content"
 import { Menu, MenuItemWrapper, MenuItem } from "../menu"
 import { Title, Subtitle } from "../title"
 import BreadCrumb from "../breadcrumb"
-import Footer from "../footer"
 import Hero from "../hero"
 import Main from "../main"
 import NavBar from "../nav"
@@ -41,13 +40,12 @@ export default ({ data }) => {
         <Hero className="is-flex-start has-animation">
           <Content>
             <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
-            <Title color={styles.grey.dark}>{category.name}</Title>
+            <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{category.name}</Title>
             <Subtitle color={styles.grey.title}>{category.description}</Subtitle>
           </Content>
         </Hero>
         <Menu>
           {products.edges.map(({ node: product }) => (
-            // Slug here is bugged in production
             <MenuItemWrapper key={product.id}>
               <MenuItem href={"/" + category.name.substring(0).toLowerCase() + "/" + product.slug}>
                 <Content className="has-text-centered">
@@ -58,7 +56,6 @@ export default ({ data }) => {
           ))}
         </Menu>
       </CategoryContainer>
-      <Footer />
     </Main>
   )
 }

@@ -9,6 +9,7 @@ import UnicornLogo from "./unicorn.jpg"
 const Nav = styled.nav`
   display: block;
   position: relative;
+  z-index: 5;
 `
 
 const NavContainer = styled.div`

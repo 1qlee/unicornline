@@ -33,7 +33,7 @@ const MenuItemWrapper = styled.div`
 
 const MenuItem = styled.a`
   align-items: center;
-  border: 1px solid ${styles.grey.text};
+  border: 1px solid ${styles.grey.normal};
   display: flex;
   height: 100px;
   justify-content: center;

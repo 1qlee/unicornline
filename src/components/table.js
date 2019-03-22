@@ -27,9 +27,9 @@ const TableHead = styled.thead`
       width: 5px;
     }
     &.digital-legend {
-      color: ${styles.crimson};
+      color: ${styles.red};
       &::before {
-        background: ${styles.crimson};
+        background: ${styles.red};
       }
     }
     &.offset-legend {
@@ -51,7 +51,7 @@ const TableHead = styled.thead`
     padding: 0.5rem !important;
     vertical-align: middle;
     &.digital {
-      background-color: ${styles.crimson};
+      background-color: ${styles.red};
       color: ${styles.white.normal};
     }
     &.offset {
@@ -66,7 +66,7 @@ const TableHead = styled.thead`
 `
 
 const TableData = styled.td`
-  border-color: ${styles.grey.text};
+  border-color: ${styles.grey.border};
   border-width: 1px 0;
   border-style: solid;
   vertical-align: middle;

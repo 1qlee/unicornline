@@ -47,9 +47,6 @@ const ProductCardContent = styled.div`
     font-size: 1rem;
     letter-spacing: 1px;
   }
-  p {
-    color: ${styles.grey.text};
-  }
 `
 
 export default () => (

@@ -2,7 +2,9 @@ import styled from "styled-components"
 
 const Columns = styled.div`
   display: flex;
-  width: 100%;
+  width: calc(100% - 80px);
+  position: relative;
+  left: 80px;
   @media only screen and (max-width: 860px) {
     flex-direction: column;
   }

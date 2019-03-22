@@ -4,22 +4,31 @@ import styled from "styled-components"
 import styles from "../css/styles.js"
 
 const Footer = styled.div`
-  align-items: flex-end;
-  background-color: ${styles.grey.dark};
-  color: ${styles.white.light};
   display: flex;
-  justify-content: space-between;
-  padding: 2rem 1rem;
+  padding-top: 2rem;
   @media only screen and (max-width: 665px) {
     flex-direction: column;
     align-items: flex-start;
   }
 `
 
-const FooterLeft = styled.div`
+const FooterColumn = styled.div`
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
 `
 
-const FooterRight = styled.div`
+const FooterHeader = styled.h3`
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Karla";
+  margin-bottom: 1rem;
+`
+
+const FooterContent = styled.div`
+  &:not(:last-child) {
+    margin-bottom: 1rem;
+  }
 `
 
 export default () => (
@@ -30,19 +39,33 @@ export default () => (
           company
           about
           phone
-          address
+          email
+          addressNode {
+            childMarkdownRemark {
+              html
+            }
+          }
         }
       }
     `}
     render={data => (
       <Footer>
-        <FooterLeft>
-          <p>{data.datoCmsFooter.phone}</p>
-          <p>971 Stewart Avenue <br/>Garden City, NY 11530</p>
-        </FooterLeft>
-        <FooterRight>
-          <p>© {data.datoCmsFooter.company}. All rights reserved.</p>
-        </FooterRight>
+        <FooterColumn>
+          <FooterHeader>{data.datoCmsFooter.company}</FooterHeader>
+          <FooterContent>
+            <div dangerouslySetInnerHTML={{ __html: data.datoCmsFooter.addressNode.childMarkdownRemark.html }}></div>
+          </FooterContent>
+        </FooterColumn>
+        <FooterColumn>
+          <FooterContent>
+            <FooterHeader>Telephone</FooterHeader>
+            <p>{data.datoCmsFooter.phone}</p>
+          </FooterContent>
+          <FooterContent>
+            <FooterHeader>Email</FooterHeader>
+            <a href="mailto:jason@unicorngraphics.com">{data.datoCmsFooter.email}</a>
+          </FooterContent>
+        </FooterColumn>
       </Footer>
     )}
   />

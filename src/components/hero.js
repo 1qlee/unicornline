@@ -5,10 +5,9 @@ const Hero = styled.div`
   position: relative;
   padding: 2rem 0;
   &.is-index {
-    min-height: calc(100% - 219px);
-    @media only screen and (max-width: 749px) {
-      min-height: calc(100% - 213px);
-    }
+    height: calc(100% - 83px);
+    padding: 0;
+    display: flex;
   }
   &.is-flex-start {
     justify-content: flex-start;

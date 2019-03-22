@@ -4,15 +4,16 @@ import { Helmet } from "react-helmet"
 import { Columns, Column } from "../components/columns"
 import { Content} from "../components/content"
 import { Title } from "../components/title"
+import Bar from "../components/bar"
+import Box from "../components/box"
+import Slider from "../components/slider"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import Main from "../components/main"
 import NavBar from "../components/nav"
-import BookImage from "../components/book"
 
 import styles from "../css/styles"
 import favicon from "../images/favicon.ico"
-import catalogCover from "../images/catalog_cover.jpg"
 import "../css/reset.css"
 import "../css/master.css"
 
@@ -25,20 +26,29 @@ export default ({ data }) => (
       <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <NavBar />
-    <Hero className="is-index has-animation has-items-centered">
+    <Bar />
+    <Hero className="is-index has-animation">
       <Columns>
-        <Column>
-          <BookImage image={catalogCover} />
-        </Column>
-        <Column className="has-items-centered">
+        <Column style={{padding:"10rem 5rem 0"}}>
           <Content>
-            <Title className="fade-in-down" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
-            <div style={{fontSize:"18px", maxWidth:"575px"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></div>
+            <Title className="fade-in-down" fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
+            <div style={{fontSize:"18px", maxWidth:"525px",marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></div>
           </Content>
+          <Footer />
+        </Column>
+        <Column style={{padding:"10rem 0 0 5rem"}}>
+          <Slider>
+            {data.allDatoCmsCategory.edges.map(({node: category}) => (
+              <Box key={category.id} href={`/${category.name.toLowerCase()}`}>
+                <img src={category.photo.url} style={{userSelect:"none"}}/>
+                <h3 style={{fontFamily:"Karla", fontWeight:"700"}}>{category.name}</h3>
+                <p>{category.description}</p>
+              </Box>
+            ))}
+          </Slider>
         </Column>
       </Columns>
     </Hero>
-    <Footer />
   </Main>
 )
 
@@ -46,11 +56,31 @@ export const query = graphql`
   query IndexQuery {
     datoCmsIndex {
       title
-      subtitle
       blurbNode {
         childMarkdownRemark {
           html
           rawMarkdownBody
+        }
+      }
+    }
+    allDatoCmsCategory {
+      edges {
+        node {
+          id
+          name
+          description
+          photo {
+            id
+            url
+          }
+        }
+      }
+    }
+    allDatoCmsProduct {
+      edges {
+        node {
+          id
+          name
         }
       }
     }

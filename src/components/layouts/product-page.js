@@ -6,7 +6,6 @@ import { Content } from "../content"
 import { Table, TableHead, TableData } from "../table"
 import { Title, Subtitle } from "../title"
 import { ImageContainer, ImageComponent } from "../image"
-import Footer from "../footer"
 import BreadCrumb from "../breadcrumb"
 import Hero from "../hero"
 import Main from "../main"
@@ -39,9 +38,6 @@ const ProductRight = styled.div`
   animation: fadeInRight 0.6s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   padding: 0 1rem 2rem;
   width: calc(100% - 600px);
-  li {
-    color: ${styles.grey.text};
-  }
   @keyframes fadeInRight {
     0% {
       opacity: 0;
@@ -74,9 +70,6 @@ const ProductInfo = styled.div`
   position: relative;
   overflow-x: hidden;
   h3 {
-    font-size: 0.85rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
     font-family: "Karla";
     font-weight: 700;
   }
@@ -134,7 +127,7 @@ export default ({ data }) => {
           <Hero className="is-flex-start">
             <Content>
               <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
-              <Title color={styles.grey.dark}>{product.name}</Title>
+              <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.1rem">{product.description}</Subtitle>
             </Content>
           </Hero>
@@ -270,7 +263,6 @@ export default ({ data }) => {
           </ProductInfo>
         </ProductRight>
       </ProductContainer>
-      <Footer />
     </Main>
   )
 }

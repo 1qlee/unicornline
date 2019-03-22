@@ -13,13 +13,13 @@ const BreadCrumbContainer = styled.nav`
   li {
     &:not(:first-child) {
       &::before {
-        color: ${styles.grey.text};
+        color: ${styles.grey.normal};
         content: "\0002f";
       }
     }
   }
   a {
-    color: ${styles.grey.text};
+    color: ${styles.grey.normal};
     position: relative;
     padding: 0 0.75rem;
     &.first {
