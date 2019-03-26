@@ -23,3 +23,13 @@ a {
   color: inherit;
   text-decoration: inherit;
 }
+
+section::-webkit-scrollbar {
+    width: 12px;
+    display: none;
+}
+
+section::-webkit-scrollbar-thumb {
+  background-color: blue;
+  border-radius: 10px;
+}

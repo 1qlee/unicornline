@@ -1,11 +1,40 @@
 import React from "react"
 import styled from "styled-components"
-import styles from "../css/styles"
 
 const sliderStyle = {
   display: "flex",
   overflowX: "auto",
-  padding: "1rem"
+  overflowY: "hidden",
+  padding: "1.5rem 1rem",
+  position: "relative"
+}
+
+const FadeBlock = styled.div`
+  position: -webkit-sticky;
+  position: sticky;
+  left: -1rem;
+  padding: 0.2rem;
+  z-index: 9;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+  background: rgba(0,0,0,0.4);
+  transition: background 0.2s;
+  &.invisible {
+    background: transparent;
+  }
+`
+
+function FadeShit(props) {
+  if (props.toggle > 20) {
+    return (
+      <FadeBlock />
+    )
+  }
+  else {
+    return (
+      <FadeBlock className="invisible"/>
+    )
+  }
 }
 
 export default class Slider extends React.Component {
@@ -15,7 +44,8 @@ export default class Slider extends React.Component {
     this.state = {
       mouseDown: false,
       startX: null,
-      scrollLeft: null
+      scrollLeft: null,
+      current: null
    };
   }
 
@@ -25,7 +55,6 @@ export default class Slider extends React.Component {
       startX: e.pageX - this.slider.current.offsetLeft,
       scrollLeft: this.slider.current.scrollLeft
     })
-    console.log(this.state.startX)
   }
 
   handleMouseLeave = (e) => {
@@ -47,16 +76,18 @@ export default class Slider extends React.Component {
     e.preventDefault()
     const x = e.pageX - this.slider.current.offsetLeft
     const diff = x - this.state.startX
-    console.log(diff)
-    console.log(this.slider.current)
+    this.setState({
+      current: this.slider.current.scrollLeft
+    })
     this.slider.current.scrollLeft = this.state.scrollLeft - diff
   }
 
   render() {
     return (
-      <div style={sliderStyle} ref={this.slider} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} onMouseLeave={this.handleMouseLeave} onMouseMove={this.handleMouseMove}>
+      <section style={sliderStyle} ref={this.slider} onMouseDown={this.handleMouseDown} onMouseUp={this.handleMouseUp} onMouseLeave={this.handleMouseLeave} onMouseMove={this.handleMouseMove}>
+        <FadeShit toggle={this.state.current} />
         {this.props.children}
-      </div>
+      </section>
     )
   }
 }

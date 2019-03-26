@@ -1,6 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Content } from "../content"
 import { Menu, MenuItemWrapper, MenuItem } from "../menu"
@@ -47,11 +47,13 @@ export default ({ data }) => {
         <Menu>
           {products.edges.map(({ node: product }) => (
             <MenuItemWrapper key={product.id}>
-              <MenuItem href={"/" + category.name.substring(0).toLowerCase() + "/" + product.slug}>
-                <Content className="has-text-centered">
-                  <p className="label">{product.name}</p>
-                </Content>
-              </MenuItem>
+              <Link to={`/${category.name.toLowerCase()}/${product.slug}`}>
+                <MenuItem>
+                  <Content className="has-text-centered">
+                    <p className="label">{product.name}</p>
+                  </Content>
+                </MenuItem>
+              </Link>
             </MenuItemWrapper>
           ))}
         </Menu>

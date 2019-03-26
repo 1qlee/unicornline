@@ -31,7 +31,7 @@ const MenuItemWrapper = styled.div`
   }
 `
 
-const MenuItem = styled.a`
+const MenuItem = styled.div`
   align-items: center;
   border: 1px solid ${styles.grey.normal};
   display: flex;

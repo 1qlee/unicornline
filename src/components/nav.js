@@ -1,6 +1,6 @@
 import React from "react"
 import throttle from "lodash/throttle"
-import {graphql, StaticQuery} from "gatsby"
+import { graphql, StaticQuery, Link } from "gatsby"
 import styled from "styled-components"
 import styles from "../css/styles.js"
 
@@ -249,7 +249,7 @@ class NavMenuContainer extends React.Component {
           <NavMenu className="menu-col-2 menu-pos-1">
             <NavMenuArrow />
             {this.props.accessory.edges.map(({node}) => (
-              <a key={node.id} href={"/accessory/" + node.slug}>{node.name}</a>
+              <Link key={node.id} to={"/accessory/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
@@ -258,7 +258,7 @@ class NavMenuContainer extends React.Component {
           <NavMenu className="menu-col-2 menu-pos-2">
             <NavMenuArrow />
             {this.props.presentation.edges.map(({node}) => (
-              <a key={node.id} href={"/presentation/" + node.slug}>{node.name}</a>
+              <Link key={node.id} to={"/presentation/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
@@ -267,7 +267,7 @@ class NavMenuContainer extends React.Component {
           <NavMenu className="menu-col-2 menu-pos-3">
             <NavMenuArrow />
             {this.props.display.edges.map(({node}) => (
-              <a key={node.id} href={"/display/" + node.slug}>{node.name}</a>
+              <Link key={node.id} to={"/display/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
@@ -276,7 +276,7 @@ class NavMenuContainer extends React.Component {
           <NavMenu className="menu-pos-4">
             <NavMenuArrow />
             {this.props.creative.edges.map(({node}) => (
-              <a key={node.id} href={"/creative/" + node.slug}>{node.name}</a>
+              <Link key={node.id} to={"/creative/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
@@ -285,7 +285,7 @@ class NavMenuContainer extends React.Component {
           <NavMenu className="menu-col-1 menu-pos-5">
             <NavMenuArrow className="is-right" />
             {this.props.award.edges.map(({node}) => (
-              <a key={node.id} href={"/award/" + node.slug}>{node.name}</a>
+              <Link key={node.id} to={"/award/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )

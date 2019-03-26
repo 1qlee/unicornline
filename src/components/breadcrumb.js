@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styled from "styled-components"
 
 import styles from "../css/styles"
@@ -36,14 +37,14 @@ function BreadCrumb(props) {
     <BreadCrumbContainer>
       <ul>
         <li>
-          <a className="first" href="/">{props.parent}</a>
+          <Link className="first" to="/">{props.parent}</Link>
         </li>
         <li>
-          <a href={"/" + props.category.substring(0).toLowerCase()}>{props.category}</a>
+          <Link to={"/" + props.category.substring(0).toLowerCase()}>{props.category}</Link>
         </li>
         { props.product ? (
           <li>
-            <a href={"/" + props.category.substring(0).toLowerCase() + "/" + props.slug}>{props.product}</a>
+            <Link to={"/" + props.category.substring(0).toLowerCase() + "/" + props.slug}>{props.product}</Link>
           </li>
         ) : (
           null
