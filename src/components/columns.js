@@ -24,7 +24,7 @@ const Column = styled.div`
     align-items: center;
   }
   &.index-col-1 {
-    padding: 10rem 0rem 5rem 5rem;
+    padding: 10rem 0rem 5rem 3rem;
     @media only screen and (max-width: 1180px) {
       padding-left: 1rem;
       padding-right: 1rem;
