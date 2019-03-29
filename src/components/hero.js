@@ -5,7 +5,6 @@ const Hero = styled.div`
   position: relative;
   padding: 2rem 0;
   &.is-index {
-    height: calc(100% - 83px);
     padding: 0;
     display: flex;
   }
