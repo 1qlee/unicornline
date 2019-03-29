@@ -29,8 +29,7 @@ const NavItem = styled.div`
   }
 `
 
-const NavLogo = styled.a`
-  display: block;
+const NavLogo = styled.div`
   img {
     display: block;
     height: 45px;
@@ -53,7 +52,7 @@ const NavRight = styled.div`
   align-items: center;
 `
 
-const NavLink = styled.a`
+const NavLink = styled.div`
   color: ${styles.grey.normal};
   font-size: 0.875rem;
   letter-spacing: 1px;
@@ -227,7 +226,9 @@ class HamburgerMenu extends React.Component {
         {this.state.isActive ? (
           <HamburgerDropdown>
             {this.props.categories.edges.map(({node}) => (
-              <NavLink key={node.id} className="nav-link" href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
+              <Link key={node.id} to={`/${node.name.toLowerCase()}`}>
+                <NavLink className="nav-link">{node.name}</NavLink>
+              </Link>
             ))}
           </HamburgerDropdown>
         ) : (
@@ -371,9 +372,11 @@ class NavBar extends React.Component {
       <Nav>
         <NavContainer>
           <NavLeft>
-            <NavLogo href="/">
-              <img src={UnicornLogo} alt="Logo" />
-            </NavLogo>
+            <Link to="/">
+              <NavLogo>
+                <img src={UnicornLogo} alt="Logo" />
+              </NavLogo>
+            </Link>
           </NavLeft>
           {this.state.showHamburger ? (
             <NavRight>
@@ -383,7 +386,9 @@ class NavBar extends React.Component {
             <NavRight onPointerLeave={this.handlePointerLeave}>
               {this.props.categories.edges.map(({node}) => (
                 <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className="nav-item">
-                  <NavLink href={`/${node.name.toLowerCase()}`}>{node.name}</NavLink>
+                  <Link to={`/${node.name.toLowerCase()}`}>
+                    <NavLink>{node.name}</NavLink>
+                  </Link>
                 </NavItem>
               ))}
               {this.state.showMenu ? (

@@ -21,7 +21,7 @@ const Bar = styled.div`
     }
   }
   @keyframes barResize {
-    25% {
+    0% {
       width: 5px;
     }
     75% {

@@ -2,7 +2,7 @@ import React from "react"
 import { graphql, Link } from "gatsby"
 import { Helmet } from "react-helmet"
 import { CardImage } from "../components/image"
-import { Card, CardButton} from "../components/card"
+import { Card, CardButton, CardFooter } from "../components/card"
 import { Columns, Column } from "../components/columns"
 import { Content} from "../components/content"
 import { Title } from "../components/title"
@@ -42,15 +42,18 @@ export default ({ data }) => (
             {data.allDatoCmsCategory.edges.map(({node: category}) => (
               <Card key={category.id}>
                 <CardImage src={category.photo.url} />
-                <Content>
+                <Content style={{padding:"1rem"}}>
                   <h3 style={{fontFamily:"Karla", fontWeight:"700", pointerEvents: "none"}}>{category.name}</h3>
                   <p style={{pointerEvents: "none"}}>{category.description}</p>
+                </Content>
+                <CardFooter>
                   <Link to={`/${category.name.toLowerCase()}`}>
                     <CardButton className="card-button" color={styles.white.normal} background={styles.primary.normal}>
-                      View
+                      <span style={{display:"inline-block"}}>View</span>
+                      <span>&#8594;</span>
                     </CardButton>
                   </Link>
-                </Content>
+                </CardFooter>
               </Card>
             ))}
           </Slider>
