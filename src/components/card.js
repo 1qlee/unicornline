@@ -2,11 +2,13 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Card = styled.div`
+  animation: 1s ease forwards scaleIn;
   box-shadow: 0 2px 6px 0 ${styles.shadow};
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   min-width: 325px;
+  opacity: 0;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   &:not(:last-child) {
@@ -18,6 +20,28 @@ const Card = styled.div`
   &:active {
     box-shadow: 0 2px 6px 0 ${styles.shadow};
     transform: translateY(2px);
+  }
+  &:nth-child(3) {
+    animation-delay: 0.1s;
+  }
+  &:nth-child(4) {
+    animation-delay: 0.2s;
+  }
+  &:nth-child(5) {
+    animation-delay: 0.3s;
+  }
+  &:nth-child(6) {
+    animation-delay: 0.4s;
+  }
+  @keyframes scaleIn {
+    0% {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
 `
 
@@ -34,7 +58,6 @@ const CardButton = styled.div`
   padding: 1rem;
   position: relative;
   text-transform: uppercase;
-  transition: all 0.3s;
   &:hover,
   &:focus {
     background: ${props => props.background};

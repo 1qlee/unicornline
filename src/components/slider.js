@@ -6,7 +6,8 @@ const sliderStyle = {
   overflowX: "auto",
   overflowY: "hidden",
   padding: "1.5rem 1rem",
-  position: "relative"
+  position: "relative",
+  cursor: "grab"
 }
 
 const FadeBlock = styled.div`

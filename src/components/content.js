@@ -10,6 +10,9 @@ const Content = styled.div`
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
+  &.fade-in-down {
+    animation: fadeInDown 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  }
   &.has-text-centered {
     text-align: center;
   }

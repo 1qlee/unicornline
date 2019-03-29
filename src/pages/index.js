@@ -28,11 +28,11 @@ export default ({ data }) => (
     </Helmet>
     <NavBar />
     <Bar />
-    <Hero className="is-index has-animation">
+    <Hero className="is-index">
       <Columns>
         <Column className="index-col-1">
-          <Content>
-            <Title className="fade-in-down" fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
+          <Content className="fade-in-down">
+            <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
             <div style={{fontSize:"18px", maxWidth:"525px",marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></div>
           </Content>
           <Footer />

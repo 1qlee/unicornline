@@ -19,20 +19,10 @@ const Hero = styled.div`
     align-items: center;
   }
   &.has-animation {
-    animation: fadeDown 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    animation: fadeInDown 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   }
   @media only screen and (max-width: 860px) {
     padding: 2rem 0;
-  }
-  @keyframes fadeDown {
-    0% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
   }
 `
 

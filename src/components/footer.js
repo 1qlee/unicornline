@@ -4,6 +4,7 @@ import styled from "styled-components"
 import styles from "../css/styles.js"
 
 const Footer = styled.div`
+  animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   display: flex;
   padding-top: 2rem;
   @media only screen and (max-width: 665px) {
