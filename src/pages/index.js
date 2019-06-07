@@ -13,7 +13,7 @@ import NavBar from "../components/nav"
 import Slider from "../components/slider"
 
 import styles from "../css/styles"
-import favicon from "../images/favicon.ico"
+import favicon from "../images/favicon.png"
 import "../css/reset.css"
 import "../css/master.css"
 
@@ -23,7 +23,7 @@ export default ({ data }) => (
       <meta charSet="utf-8" />
       <title>Unicorn Line</title>
       <link rel="canonical" href="https://unicornline.com" />
-      <link rel="icon" type="image/x-icon" href={favicon} />
+      <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
     <NavBar />
     <Hero className="is-index">
