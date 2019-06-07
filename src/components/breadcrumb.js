@@ -1,7 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
 import styled from "styled-components"
-
 import styles from "../css/styles"
 
 const BreadCrumbContainer = styled.nav`
@@ -10,14 +9,6 @@ const BreadCrumbContainer = styled.nav`
     display: flex;
     list-style-type: none;
     margin-bottom: 1rem;
-  }
-  li {
-    &:not(:first-child) {
-      &::before {
-        color: ${styles.grey.normal};
-        content: "\0002f";
-      }
-    }
   }
   a {
     color: ${styles.grey.normal};
@@ -37,10 +28,10 @@ function BreadCrumb(props) {
     <BreadCrumbContainer>
       <ul>
         <li>
-          <Link className="first" to="/">{props.parent}</Link>
+          <Link className="first" to="/">{props.parent}</Link> /
         </li>
         <li>
-          <Link to={"/" + props.category.substring(0).toLowerCase()}>{props.category}</Link>
+          <Link to={"/" + props.category.substring(0).toLowerCase()}>{props.category}</Link> /
         </li>
         { props.product ? (
           <li>

@@ -5,8 +5,7 @@ import { CardImage } from "../components/image"
 import { Card, CardButton, CardFooter } from "../components/card"
 import { Columns, Column } from "../components/columns"
 import { Content} from "../components/content"
-import { Title } from "../components/title"
-import Bar from "../components/bar"
+import { Title, Subtitle } from "../components/title"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import Main from "../components/main"
@@ -34,7 +33,7 @@ export default ({ data }) => (
             <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>Unicorn
               <span style={{fontFamily:"Karla", padding:"0.5rem", background: styles.primary.normal, color: "#fff", display: "inline-block", marginLeft: "1rem"}}>Line</span>
             </Title>
-            <div style={{fontSize:"18px", maxWidth:"525px",marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></div>
+            <Subtitle style={{fontSize:"1.3rem", maxWidth:"525px", marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
           </Content>
           <Footer />
         </Column>

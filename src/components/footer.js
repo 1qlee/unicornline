@@ -6,7 +6,6 @@ import styles from "../css/styles.js"
 
 import Envelope from "../../assets/envelope.svg"
 import Map from "../../assets/map.svg"
-import Map2 from "../../assets/map2.svg"
 import Phone from "../../assets/phone.svg"
 
 const Footer = styled.div`
