@@ -1,34 +1,25 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
+import Icon from "./icon"
 import styled from "styled-components"
 import styles from "../css/styles.js"
 
+import Envelope from "../../assets/envelope.svg"
+import Map from "../../assets/map.svg"
+import Map2 from "../../assets/map2.svg"
+import Phone from "../../assets/phone.svg"
+
 const Footer = styled.div`
   animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  display: flex;
-  padding-top: 2rem;
-  @media only screen and (max-width: 665px) {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  background: ${styles.primary.normal};
+  border-radius: 8px;
+  display: inline-flex;
+  padding: 0.5rem;
 `
 
 const FooterColumn = styled.div`
   &:not(:last-child) {
-    margin-right: 2rem;
-  }
-`
-
-const FooterHeader = styled.h3`
-  font-weight: 700;
-  font-size: 1rem;
-  font-family: "Karla";
-  margin-bottom: 1rem;
-`
-
-const FooterContent = styled.div`
-  &:not(:last-child) {
-    margin-bottom: 1rem;
+    margin-right: 1rem;
   }
 `
 
@@ -41,6 +32,7 @@ export default () => (
           about
           phone
           email
+          map
           addressNode {
             childMarkdownRemark {
               html
@@ -52,20 +44,19 @@ export default () => (
     render={data => (
       <Footer>
         <FooterColumn>
-          <FooterHeader>{data.datoCmsFooter.company}</FooterHeader>
-          <FooterContent>
-            <div dangerouslySetInnerHTML={{ __html: data.datoCmsFooter.addressNode.childMarkdownRemark.html }}></div>
-          </FooterContent>
+          <Icon color={styles.white.normal} background={styles.primary.normal} href={"mailto:" + data.datoCmsFooter.email} target="_blank" referrer="noreferrer">
+            <Envelope style={{fill:styles.white.normal}}/>
+          </Icon>
         </FooterColumn>
         <FooterColumn>
-          <FooterContent>
-            <FooterHeader>Telephone</FooterHeader>
-            <p>{data.datoCmsFooter.phone}</p>
-          </FooterContent>
-          <FooterContent>
-            <FooterHeader>Email</FooterHeader>
-            <a href="mailto:jason@unicorngraphics.com">{data.datoCmsFooter.email}</a>
-          </FooterContent>
+          <Icon color={styles.white.normal} background={styles.primary.normal} href={data.datoCmsFooter.map} target="_blank" referrer="noreferrer">
+            <Map style={{fill:styles.white.normal}}/>
+          </Icon>
+        </FooterColumn>
+        <FooterColumn>
+          <Icon color={styles.white.normal} background={styles.primary.normal} href={"tel:" + data.datoCmsFooter.phone} target="_blank" referrer="noreferrer">
+            <Phone style={{fill:styles.white.normal}}/>
+          </Icon>
         </FooterColumn>
       </Footer>
     )}

@@ -40,15 +40,15 @@ const Column = styled.div`
   @media only screen and (max-height: 830px) {
     &.index-col-1,
     &.index-col-2 {
-      padding-top: 3rem;
-      padding-bottom: 3rem;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
     }
   }
   @media only screen and (min-height: 831px) and (max-height: 959px) {
     &.index-col-1,
     &.index-col-2 {
-      padding-top: 5rem;
-      padding-bottom: 5rem;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
     }
   }
   @media only screen and (max-width: 860px) {

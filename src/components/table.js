@@ -39,9 +39,9 @@ const TableHead = styled.thead`
       }
     }
     &.inkjet-legend {
-      color: ${styles.primary.light};
+      color: ${styles.blue};
       &::before {
-        background: ${styles.primary.light};
+        background: ${styles.blue};
       }
     }
   }
@@ -59,7 +59,7 @@ const TableHead = styled.thead`
       color: ${styles.white.normal};
     }
     &.inkjet {
-      background-color: ${styles.primary.light};
+      background-color: ${styles.blue};
       color: ${styles.white.normal};
     }
   }

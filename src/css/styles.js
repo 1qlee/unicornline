@@ -1,9 +1,9 @@
 const styles = {
   primary: {
-    transparent: "rgba(2, 79, 161, 0.2)",
-    light: "#167cb7",
-    normal: "#024fa1",
-    dark: "#13293D"
+    transparent: "#FFF2FC",
+    light: "#E879AB",
+    normal: "#dd4a80",
+    dark: "#D92978"
   },
   grey: {
     text: "#4e616c",
@@ -18,11 +18,13 @@ const styles = {
     normal: "#fff",
     light: "rgba(255,255,255,0.72)"
   },
-  purple: "#e7dae3",
   shadow: "rgba(0,0,0,0.2)",
-  green: "#418542",
-  red: "#d04161",
   text: "#444",
+  purple: "#6e53a4",
+  blue: "#2771de",
+  green: "#4abc8d",
+  orange: "#f15b25",
+  red: "#d04161",
   skin: "#FBDBC1",
   pink: "#ffdae0",
   lime: "#d5ffd5",

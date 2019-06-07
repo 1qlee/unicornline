@@ -27,12 +27,13 @@ export default ({ data }) => (
       <link rel="icon" type="image/x-icon" href={favicon} />
     </Helmet>
     <NavBar />
-    <Bar />
     <Hero className="is-index">
       <Columns>
         <Column className="index-col-1">
           <Content className="fade-in-down">
-            <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{data.datoCmsIndex.title}</Title>
+            <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>Unicorn
+              <span style={{fontFamily:"Karla", padding:"0.5rem", background: styles.primary.normal, color: "#fff", display: "inline-block", marginLeft: "1rem"}}>Line</span>
+            </Title>
             <div style={{fontSize:"18px", maxWidth:"525px",marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></div>
           </Content>
           <Footer />

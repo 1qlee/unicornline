@@ -30,11 +30,11 @@ section::-webkit-scrollbar {
 }
 
 section::-webkit-scrollbar-track {
-  background: lightgrey;
+  background: #FFF2FC;
 }
 
 section::-webkit-scrollbar-thumb {
-  background: #024fa1;
+  background: #dd4a80;
   width: 5px;
 }
 
