@@ -10,6 +10,17 @@ const BreadCrumbContainer = styled.nav`
     list-style-type: none;
     margin-bottom: 1rem;
   }
+  li {
+    position: relative;
+    &:not(:last-child) {
+      &::before {
+        content: "/";
+        position: absolute;
+        color: ${styles.grey.normal};
+        right: -0.35rem;
+      }
+    }
+  }
   a {
     color: ${styles.grey.normal};
     position: relative;
@@ -28,10 +39,10 @@ function BreadCrumb(props) {
     <BreadCrumbContainer>
       <ul>
         <li>
-          <Link className="first" to="/">{props.parent}</Link> /
+          <Link className="first" to="/">{props.parent}</Link>
         </li>
         <li>
-          <Link to={"/" + props.category.substring(0).toLowerCase()}>{props.category}</Link> /
+          <Link to={"/" + props.category.substring(0).toLowerCase()}>{props.category}</Link>
         </li>
         { props.product ? (
           <li>
