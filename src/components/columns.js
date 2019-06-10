@@ -3,14 +3,9 @@ import styled from "styled-components"
 const Columns = styled.div`
   display: flex;
   position: relative;
-  transform: translateX(80px);
   transition: width 0.4s ease, transform 0.4s ease;
-  width: calc(100% - 80px);
+  width: 100%;
   will-change: transform;
-  @media only screen and (max-width: 1180px) {
-    width: 100%;
-    transform: translateX(0);
-  }
   @media only screen and (max-width: 860px) {
     flex-direction: column;
   }
@@ -24,7 +19,7 @@ const Column = styled.div`
     align-items: center;
   }
   &.index-col-1 {
-    padding: 5rem 0rem 5rem 3rem;
+    padding: 5rem 0rem 5rem 1rem;
     @media only screen and (max-width: 1180px) {
       padding: 2rem 1rem 1rem;
     }

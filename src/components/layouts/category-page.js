@@ -11,7 +11,7 @@ import Main from "../main"
 import NavBar from "../nav"
 
 import styles from "../../css/styles"
-import favicon from "../../images/favicon.ico"
+import favicon from "../../images/favicon.png"
 import "../../css/reset.css"
 import "../../css/master.css"
 
@@ -28,27 +28,27 @@ export default ({ data }) => {
   const products = data.allDatoCmsProduct
 
   return (
-    <Main>
+    <Main className={category.name.toLowerCase()}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Unicorn Line</title>
         <link rel="canonical" href="https://unicornline.com" />
-        <link rel="icon" type="image/x-icon" href={favicon} />
+        <link rel="icon" type="image/png" href={favicon} />
       </Helmet>
       <NavBar />
       <CategoryContainer>
         <Hero className="is-flex-start has-animation">
           <Content>
-            <BreadCrumb parent="Home" category={category.name}></BreadCrumb>
-            <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{category.name}</Title>
-            <Subtitle color={styles.grey.title}>{category.description}</Subtitle>
+            <BreadCrumb parent="Home" color={styles.grey.light} hover={styles.grey.normal} category={category.name} />
+            <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>{category.name}</Title>
+            <Subtitle color={styles.text}>{category.description}</Subtitle>
           </Content>
         </Hero>
         <Menu>
           {products.edges.map(({ node: product }) => (
             <MenuItemWrapper key={product.id}>
               <Link to={`/${category.name.toLowerCase()}/${product.slug}`}>
-                <MenuItem>
+                <MenuItem className={category.name.toLowerCase()}>
                   <Content className="has-text-centered">
                     <p className="label">{product.name}</p>
                   </Content>

@@ -23,9 +23,9 @@ const Menu = styled.div`
 `
 
 const MenuItemWrapper = styled.div`
-  width: 25%;
-  margin-right: -1px;
   margin-bottom: -1px;
+  margin-right: -1px;
+  width: 25%;
   @media only screen and (max-width: 620px) {
     width: 100%;
   }
@@ -37,11 +37,36 @@ const MenuItem = styled.div`
   display: flex;
   height: 100px;
   justify-content: center;
+  font-weight: 700;
   padding: 1rem;
   position: relative;
   width: 100%;
+  &.accessory {
+    &::before {
+      background: ${styles.primary.normal};
+    }
+  }
+  &.presentation {
+    &::before {
+      background: ${styles.green};
+    }
+  }
+  &.display {
+    &::before {
+      background: ${styles.purple};
+    }
+  }
+  &.creative {
+    &::before {
+      background: ${styles.blue};
+    }
+  }
+  &.award {
+    &::before {
+      background: ${styles.orange};
+    }
+  }
   &::before {
-    background: ${styles.primary.normal};
     content: "";
     height: 100%;
     left: 0;

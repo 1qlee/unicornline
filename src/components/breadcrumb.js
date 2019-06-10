@@ -16,27 +16,27 @@ const BreadCrumbContainer = styled.nav`
       &::before {
         content: "/";
         position: absolute;
-        color: ${styles.grey.normal};
+        color: ${props => props.color || styles.grey.normal};
         right: -0.35rem;
       }
     }
   }
   a {
-    color: ${styles.grey.normal};
+    color: ${props => props.color || styles.grey.normal};
     position: relative;
     padding: 0 0.75rem;
     &.first {
       padding-left: 0;
     }
     &:hover {
-      color: ${styles.text};
+      color: ${props => props.hover || styles.text};
     }
   }
 `
 
 function BreadCrumb(props) {
   return (
-    <BreadCrumbContainer>
+    <BreadCrumbContainer color={props.color} hover={props.hover}>
       <ul>
         <li>
           <Link className="first" to="/">{props.parent}</Link>

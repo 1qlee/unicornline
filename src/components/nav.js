@@ -23,8 +23,30 @@ const NavContainer = styled.div`
 const NavItem = styled.div`
   padding: 1rem;
   &.is-active {
-    a {
-      color: ${styles.text};
+    &.accessory {
+      div {
+        border-top-color: ${styles.primary.normal};
+      }
+    }
+    &.presentation {
+      div {
+        border-top-color: ${styles.green};
+      }
+    }
+    &.display {
+      div {
+        border-top-color: ${styles.purple};
+      }
+    }
+    &.creative {
+      div {
+        border-top-color: ${styles.blue};
+      }
+    }
+    &.award {
+      div {
+        border-top-color: ${styles.orange};
+      }
     }
   }
 `
@@ -53,13 +75,13 @@ const NavRight = styled.div`
 `
 
 const NavLink = styled.div`
-  color: ${styles.grey.normal};
+  color: ${styles.white.light};
   font-size: 0.875rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  border-top: 3px solid transparent;
   &:hover {
     cursor: pointer;
-    color: ${styles.grey.dark};
   }
 `
 
@@ -80,26 +102,56 @@ const NavMenu = styled.div`
     transform: translateX(-17rem);
     width: 428px;
     height: 382px;
+    a {
+      &:hover {
+        color: ${styles.white.normal};
+        background-color: ${styles.primary.normal};
+      }
+    }
   }
   &.menu-pos-2 {
     transform: translateX(-9rem);
     width: 428px;
     height: 350px;
+    a {
+      &:hover {
+        color: ${styles.white.normal};
+        background-color: ${styles.green};
+      }
+    }
   }
   &.menu-pos-3 {
     transform: translateX(-12px);
     width: 459px;
     height: 417px;
+    a {
+      &:hover {
+        color: ${styles.white.normal};
+        background-color: ${styles.purple};
+      }
+    }
   }
   &.menu-pos-4 {
     transform: translateX(-24px);
     width: 252px;
     height: 417px;
+    a {
+      &:hover {
+        color: ${styles.white.normal};
+        background-color: ${styles.blue};
+      }
+    }
   }
   &.menu-pos-5 {
     transform: translateX(-24px);
     width: 155px;
     height: 242px;
+    a {
+      &:hover {
+        color: ${styles.white.normal};
+        background-color: ${styles.orange};
+      }
+    }
   }
   &.menu-col-2 {
     a {
@@ -117,10 +169,6 @@ const NavMenu = styled.div`
     padding: 0.5rem 0.3rem;
     transition: color 0.1s ease, background-color 0.1s ease;
     width: 100%;
-    &:hover {
-      color: ${styles.white.normal};
-      background-color: ${styles.primary.normal};
-    }
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -385,7 +433,7 @@ class NavBar extends React.Component {
           ) : (
             <NavRight onPointerLeave={this.handlePointerLeave}>
               {this.props.categories.edges.map(({node}) => (
-                <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className="nav-item">
+                <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className={"nav-item " + node.name.toLowerCase()}>
                   <Link to={`/${node.name.toLowerCase()}`}>
                     <NavLink>{node.name}</NavLink>
                   </Link>

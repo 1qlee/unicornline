@@ -3,6 +3,7 @@ import styles from "../css/styles"
 
 const Card = styled.div`
   animation: 1s ease forwards scaleIn;
+  background: ${styles.white.normal};
   box-shadow: 0 2px 6px 0 ${styles.shadow};
   display: flex;
   flex-direction: column;
