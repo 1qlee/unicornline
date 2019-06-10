@@ -22,33 +22,27 @@ const NavContainer = styled.div`
 
 const NavItem = styled.div`
   padding: 1rem;
+  position: relative;
+  &:hover {
+    cursor: pointer;
+  }
   &.is-active {
-    &.accessory {
-      div {
-        border-top-color: ${styles.primary.normal};
-      }
-    }
-    &.presentation {
-      div {
-        border-top-color: ${styles.green};
-      }
-    }
-    &.display {
-      div {
-        border-top-color: ${styles.purple};
-      }
-    }
-    &.creative {
-      div {
-        border-top-color: ${styles.blue};
-      }
-    }
-    &.award {
-      div {
-        border-top-color: ${styles.orange};
-      }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 3px;
+      background: ${styles.white.normal};
     }
   }
+`
+
+const NavLink = styled.div`
+  color: ${styles.white.normal};
+  font-size: 0.875rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 `
 
 const NavLogo = styled.div`
@@ -72,17 +66,6 @@ const NavRight = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-`
-
-const NavLink = styled.div`
-  color: ${styles.white.light};
-  font-size: 0.875rem;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  border-top: 3px solid transparent;
-  &:hover {
-    cursor: pointer;
-  }
 `
 
 const NavMenu = styled.div`
@@ -433,11 +416,11 @@ class NavBar extends React.Component {
           ) : (
             <NavRight onPointerLeave={this.handlePointerLeave}>
               {this.props.categories.edges.map(({node}) => (
-                <NavItem key={node.id} id={node.name} onPointerEnter={this.handlePointerEnter} className={"nav-item " + node.name.toLowerCase()}>
-                  <Link to={`/${node.name.toLowerCase()}`}>
+                <Link key={node.id} to={`/${node.name.toLowerCase()}`}>
+                  <NavItem id={node.name} onPointerEnter={this.handlePointerEnter} className={"nav-item " + node.name.toLowerCase()}>
                     <NavLink>{node.name}</NavLink>
-                  </Link>
-                </NavItem>
+                  </NavItem>
+                </Link>
               ))}
               {this.state.showMenu ? (
                 <NavMenuContainer

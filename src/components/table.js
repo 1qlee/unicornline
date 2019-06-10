@@ -2,7 +2,7 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Table = styled.table`
-  color: ${styles.text};
+  color: ${styles.white.normal};
   display: block;
   font-size: 0.75rem;
   overflow-x: auto;
@@ -11,48 +11,45 @@ const Table = styled.table`
 `
 
 const TableHead = styled.thead`
-  td {
+  div {
+    background-color: transparent;
+    color: ${styles.text};
     font-weight: 700;
-    padding: 0.5rem;
+    font-size: 0.7rem;
+    display: flex;
+    text-align: center;
+    margin-bottom: 5px;
     position: relative;
     text-transform: uppercase;
     vertical-align: middle;
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 12px;
-      content: '';
-      border-radius: 100%;
-      height: 5px;
-      width: 5px;
-    }
-    &.digital-legend {
-      color: ${styles.red};
-      &::before {
-        background: ${styles.red};
+    span {
+      background-color: ${styles.white.normal};
+      padding: 0.1rem 0.3rem;
+      margin-right: 5px;
+      border-radius: 5px;
+      &.digital-legend {
+        background-color: ${styles.yellow};
+        color: ${styles.text};
       }
-    }
-    &.offset-legend {
-      color: ${styles.green};
-      &::before {
-        background: ${styles.green};
+      &.offset-legend {
+        background-color: ${styles.lime};
+        color: ${styles.text};
       }
-    }
-    &.inkjet-legend {
-      color: ${styles.blue};
-      &::before {
-        background: ${styles.blue};
+      &.inkjet-legend {
+        background-color: ${styles.blue};
+        color: ${styles.white.normal};
       }
     }
   }
   th {
     background-color: ${styles.grey.hover};
     border-bottom: 1px solid transparent;
+    color: ${styles.text};
     padding: 0.5rem !important;
     vertical-align: middle;
     &.digital {
-      background-color: ${styles.red};
-      color: ${styles.white.normal};
+      background-color: ${styles.yellow};
+      color: ${styles.text};
     }
     &.offset {
       background-color: ${styles.green};

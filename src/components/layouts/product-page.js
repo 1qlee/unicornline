@@ -70,8 +70,12 @@ const ProductInfo = styled.div`
   position: relative;
   overflow-x: hidden;
   h3 {
+    color: ${styles.white.normal};
     font-family: "Karla";
     font-weight: 700;
+  }
+  li {
+    color: ${styles.white.light};
   }
 `
 
@@ -108,7 +112,7 @@ export default ({ data }) => {
   const {images} = product
 
   return (
-    <Main className="product">
+    <Main className={product.category.toLowerCase()}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Unicorn Line</title>
@@ -126,9 +130,9 @@ export default ({ data }) => {
         <ProductRight>
           <Hero className="is-flex-start">
             <Content>
-              <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
-              <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>{product.name}</Title>
-              <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.1rem">{product.description}</Subtitle>
+              <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
+              <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>{product.name}</Title>
+              <Subtitle style={{maxWidth: "750px"}} color={styles.white.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>
           </Hero>
           <ProductInfo>
@@ -185,30 +189,30 @@ export default ({ data }) => {
                   <Table>
                     <TableHead>
                       {pricing.legend ? (
-                        <tr>
+                        <div>
                           {pricing.legend.map((value) => {
                             if (value === "Digital") {
                               return (
-                                <td key={value} className="digital-legend">Digital</td>
+                                <span key={value} className="digital-legend">Digital</span>
                               )
                             }
                             else if (value === "Offset") {
                               return (
-                                <td key={value} className="offset-legend">Offset</td>
+                                <span key={value} className="offset-legend">Offset</span>
                               )
                             }
                             else if (value === "Inkjet") {
                               return (
-                                <td key={value} className="inkjet-legend">Inkjet</td>
+                                <span key={value} className="inkjet-legend">Inkjet</span>
                               )
                             }
                             else {
                               return (
-                                <td key={value}>{value}</td>
+                                <span key={value}>{value}</span>
                               )
                             }
                           })}
-                        </tr>
+                        </div>
                       ) : (
                         null
                       )}

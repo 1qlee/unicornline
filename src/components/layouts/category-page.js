@@ -39,16 +39,16 @@ export default ({ data }) => {
       <CategoryContainer>
         <Hero className="is-flex-start has-animation">
           <Content>
-            <BreadCrumb parent="Home" color={styles.grey.light} hover={styles.grey.normal} category={category.name} />
+            <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={category.name} />
             <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>{category.name}</Title>
-            <Subtitle color={styles.text}>{category.description}</Subtitle>
+            <Subtitle color={styles.white.normal}>{category.description}</Subtitle>
           </Content>
         </Hero>
-        <Menu>
+        <Menu className={category.name.toLowerCase()}>
           {products.edges.map(({ node: product }) => (
             <MenuItemWrapper key={product.id}>
               <Link to={`/${category.name.toLowerCase()}/${product.slug}`}>
-                <MenuItem className={category.name.toLowerCase()}>
+                <MenuItem className="menu-item">
                   <Content className="has-text-centered">
                     <p className="label">{product.name}</p>
                   </Content>

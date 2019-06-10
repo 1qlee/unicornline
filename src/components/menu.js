@@ -6,10 +6,35 @@ const Menu = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
+  &.accessory {
+    .menu-item {
+      background: ${styles.primary.normal};
+    }
+  }
+  &.presentation {
+    .menu-item {
+      background: ${styles.green};
+    }
+  }
+  &.display {
+    .menu-item {
+      background: ${styles.purple};
+    }
+  }
+  &.creative {
+    .menu-item {
+      background: ${styles.blue};
+    }
+  }
+  &.award {
+    .menu-item {
+      background: ${styles.orange};
+    }
+  }
   @keyframes scaleIn {
     0% {
       opacity: 0;
-      transform: scale(0.98);
+      transform: scale(0.9);
     }
     100% {
       opacity: 1;
@@ -33,40 +58,18 @@ const MenuItemWrapper = styled.div`
 
 const MenuItem = styled.div`
   align-items: center;
-  border: 1px solid ${styles.grey.normal};
+  border: 1px solid ${styles.shadow};
   display: flex;
   height: 100px;
   justify-content: center;
-  font-weight: 700;
   padding: 1rem;
   position: relative;
   width: 100%;
-  &.accessory {
-    &::before {
-      background: ${styles.primary.normal};
-    }
-  }
-  &.presentation {
-    &::before {
-      background: ${styles.green};
-    }
-  }
-  &.display {
-    &::before {
-      background: ${styles.purple};
-    }
-  }
-  &.creative {
-    &::before {
-      background: ${styles.blue};
-    }
-  }
-  &.award {
-    &::before {
-      background: ${styles.orange};
-    }
+  p {
+    color: ${styles.white.normal};
   }
   &::before {
+    background: ${styles.white.normal};
     content: "";
     height: 100%;
     left: 0;
@@ -76,7 +79,7 @@ const MenuItem = styled.div`
     width: 0;
   }
   &::after {
-    color: ${styles.white.normal};
+    color: ${styles.text};
     content: "View Item";
     left: 50%;
     opacity: 0;
