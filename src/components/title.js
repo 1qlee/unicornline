@@ -6,6 +6,7 @@ const Title = styled.h1`
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
   line-height: ${props => props.fontSize};
+  border-bottom: ${props => props.border || "none"};
   position: relative;
   & + p {
     margin-top: 1rem;

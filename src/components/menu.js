@@ -6,10 +6,35 @@ const Menu = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
+  &.accessory {
+    .menu-item {
+      background: ${styles.primary.normal};
+    }
+  }
+  &.presentation {
+    .menu-item {
+      background: ${styles.green};
+    }
+  }
+  &.display {
+    .menu-item {
+      background: ${styles.purple};
+    }
+  }
+  &.creative {
+    .menu-item {
+      background: ${styles.blue};
+    }
+  }
+  &.award {
+    .menu-item {
+      background: ${styles.orange};
+    }
+  }
   @keyframes scaleIn {
     0% {
       opacity: 0;
-      transform: scale(0.98);
+      transform: scale(0.9);
     }
     100% {
       opacity: 1;
@@ -23,9 +48,9 @@ const Menu = styled.div`
 `
 
 const MenuItemWrapper = styled.div`
-  width: 25%;
-  margin-right: -1px;
   margin-bottom: -1px;
+  margin-right: -1px;
+  width: 25%;
   @media only screen and (max-width: 620px) {
     width: 100%;
   }
@@ -33,15 +58,18 @@ const MenuItemWrapper = styled.div`
 
 const MenuItem = styled.div`
   align-items: center;
-  border: 1px solid ${styles.grey.normal};
+  border: 1px solid ${styles.shadow};
   display: flex;
   height: 100px;
   justify-content: center;
   padding: 1rem;
   position: relative;
   width: 100%;
+  p {
+    color: ${styles.white.normal};
+  }
   &::before {
-    background: ${styles.primary.normal};
+    background: ${styles.white.normal};
     content: "";
     height: 100%;
     left: 0;
@@ -51,7 +79,7 @@ const MenuItem = styled.div`
     width: 0;
   }
   &::after {
-    color: ${styles.white.normal};
+    color: ${styles.text};
     content: "View Item";
     left: 50%;
     opacity: 0;

@@ -18,7 +18,7 @@ import "../css/reset.css"
 import "../css/master.css"
 
 export default ({ data }) => (
-  <Main className="is-flex-center">
+  <Main className="index is-flex-center">
     <Helmet>
       <meta charSet="utf-8" />
       <title>Unicorn Line</title>
@@ -30,10 +30,10 @@ export default ({ data }) => (
       <Columns>
         <Column className="index-col-1">
           <Content className="fade-in-down">
-            <Title fontSize="4rem" fontWeight="400" color={styles.grey.dark}>Unicorn
+            <Title border={"3px solid " + styles.primary.normal} fontSize="4rem" fontWeight="400" color={styles.white.normal}>Unicorn
               <span style={{fontFamily:"Karla", padding:"0.5rem", background: styles.primary.normal, color: "#fff", display: "inline-block", marginLeft: "1rem"}}>Line</span>
             </Title>
-            <Subtitle style={{fontSize:"1.3rem", maxWidth:"525px", marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
+            <Subtitle color={styles.white.normal} fontSize="1.3rem" style={{maxWidth:"525px", marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
           </Content>
           <Footer />
         </Column>
