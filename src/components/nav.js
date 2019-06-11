@@ -20,29 +20,32 @@ const NavContainer = styled.div`
   position: relative;
 `
 
-const NavItem = styled.div`
-  padding: 1rem;
-  position: relative;
-  &:hover {
-    cursor: pointer;
-  }
-  &.is-active {
-    &::before {
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 3px;
-      background: ${styles.white.normal};
-    }
-  }
-`
-
 const NavLink = styled.div`
   color: ${styles.white.normal};
   font-size: 0.875rem;
+  padding: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
+  position: relative;
+  text-align: center;
+  &:hover {
+    cursor: pointer;
+  }
+  &::before {
+    content: "";
+    height: 0;
+    width: calc(100% - 2rem);
+    position: absolute;
+    top: 0;
+    left: 1rem;
+    background: ${styles.white.normal};
+    transition: height 0.2s ease;
+  }
+  &.is-active {
+    &::before {
+      height: 3px;
+    }
+  }
 `
 
 const NavLogo = styled.div`
@@ -199,11 +202,11 @@ const Hamburger = styled.div`
   }
   &:hover {
     span {
-      background: ${styles.grey.dark};
+      background: ${styles.white.light};
     }
   }
   span {
-    background: ${styles.grey.normal};
+    background: ${styles.white.normal};
     height: 1px;
     left: 4px;
     position: absolute;
@@ -222,10 +225,10 @@ const Hamburger = styled.div`
 `
 
 const HamburgerDropdown = styled.div`
-  background: ${styles.white.normal};
-  border-bottom: 3px solid ${styles.shadow};
+  background: ${styles.grey.dark};
+  border-bottom: 3px solid ${styles.grey.normal};
   border-radius: 0.3rem;
-  box-shadow: 0 1px 20px 0 ${styles.shadow};
+  box-shadow: 0 4px 20px 0 ${styles.shadow};
   position: absolute;
   right: 0;
   top: calc(100% + 0.5rem);
@@ -376,9 +379,9 @@ class NavBar extends React.Component {
     })
 
     // Remove any pre-existing highlights on all category links
-    const navItems = document.getElementsByClassName("nav-item")
-    for (let item of navItems) {
-      item.classList.remove("is-active")
+    const navLinks = document.getElementsByClassName("nav-item")
+    for (let link of navLinks) {
+      link.classList.remove("is-active")
     }
     // Highlight the text of the currently hovered category
     event.target.classList.add("is-active")
@@ -387,9 +390,9 @@ class NavBar extends React.Component {
   // Handle mouse leaving a category link
   handlePointerLeave = (event) => {
     // Remove any highlighting from category links
-    const navItems = document.querySelector(".nav-item.is-active")
-    if (navItems) {
-      navItems.classList.remove("is-active")
+    const navLinks = document.querySelector(".nav-item.is-active")
+    if (navLinks) {
+      navLinks.classList.remove("is-active")
     }
 
     // Set state to hide menu
@@ -417,9 +420,7 @@ class NavBar extends React.Component {
             <NavRight onPointerLeave={this.handlePointerLeave}>
               {this.props.categories.edges.map(({node}) => (
                 <Link key={node.id} to={`/${node.name.toLowerCase()}`}>
-                  <NavItem id={node.name} onPointerEnter={this.handlePointerEnter} className={"nav-item " + node.name.toLowerCase()}>
-                    <NavLink>{node.name}</NavLink>
-                  </NavItem>
+                  <NavLink id={node.name} onPointerEnter={this.handlePointerEnter} className={"nav-item " + node.name.toLowerCase()}>{node.name}</NavLink>
                 </Link>
               ))}
               {this.state.showMenu ? (

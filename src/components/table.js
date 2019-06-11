@@ -10,37 +10,38 @@ const Table = styled.table`
   width: auto;
 `
 
-const TableHead = styled.thead`
-  div {
-    background-color: transparent;
-    color: ${styles.text};
-    font-weight: 700;
-    font-size: 0.7rem;
-    display: flex;
-    text-align: center;
-    margin-bottom: 5px;
-    position: relative;
-    text-transform: uppercase;
-    vertical-align: middle;
-    span {
-      background-color: ${styles.white.normal};
-      padding: 0.1rem 0.3rem;
-      margin-right: 5px;
-      border-radius: 5px;
-      &.digital-legend {
-        background-color: ${styles.yellow};
-        color: ${styles.text};
-      }
-      &.offset-legend {
-        background-color: ${styles.lime};
-        color: ${styles.text};
-      }
-      &.inkjet-legend {
-        background-color: ${styles.blue};
-        color: ${styles.white.normal};
-      }
+const TableLegend = styled.div`
+  background-color: transparent;
+  color: ${styles.text};
+  font-weight: 700;
+  font-size: 0.7rem;
+  display: flex;
+  text-align: center;
+  margin-bottom: 5px;
+  position: relative;
+  text-transform: uppercase;
+  vertical-align: middle;
+  span {
+    background-color: ${styles.white.normal};
+    padding: 0.1rem 0.3rem;
+    margin-right: 5px;
+    border-radius: 5px;
+    &.digital-legend {
+      background-color: ${styles.yellow};
+      color: ${styles.text};
+    }
+    &.offset-legend {
+      background-color: ${styles.lime};
+      color: ${styles.text};
+    }
+    &.inkjet-legend {
+      background-color: ${styles.ice};
+      color: ${styles.text};
     }
   }
+`
+
+const TableHead = styled.thead`
   th {
     background-color: ${styles.grey.hover};
     border-bottom: 1px solid transparent;
@@ -52,12 +53,12 @@ const TableHead = styled.thead`
       color: ${styles.text};
     }
     &.offset {
-      background-color: ${styles.green};
-      color: ${styles.white.normal};
+      background-color: ${styles.lime};
+      color: ${styles.text};
     }
     &.inkjet {
-      background-color: ${styles.blue};
-      color: ${styles.white.normal};
+      background-color: ${styles.ice};
+      color: ${styles.text};
     }
   }
 `
@@ -70,4 +71,4 @@ const TableData = styled.td`
   padding: 0.5rem !important;
 `
 
-export {Table, TableHead, TableData}
+export {Table, TableLegend, TableHead, TableData}

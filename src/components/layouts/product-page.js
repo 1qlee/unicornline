@@ -3,7 +3,7 @@ import styled from "styled-components"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Content } from "../content"
-import { Table, TableHead, TableData } from "../table"
+import { Table, TableLegend, TableHead, TableData } from "../table"
 import { Title, Subtitle } from "../title"
 import { ImageContainer, ImageComponent } from "../image"
 import BreadCrumb from "../breadcrumb"
@@ -70,12 +70,31 @@ const ProductInfo = styled.div`
   position: relative;
   overflow-x: hidden;
   h3 {
-    color: ${styles.white.normal};
+    background-color: ${styles.white.normal};
+    display: inline-block;
     font-family: "Karla";
+    font-size: 0.875rem;
     font-weight: 700;
+    padding: 0.2rem 0.5rem;
+    text-transform: uppercase;
+    &.accessory {
+      color: ${styles.primary.normal};
+    }
+    &.presentation {
+      color: ${styles.green};
+    }
+    &.display {
+      color: ${styles.purple};
+    }
+    &.creative {
+      color: ${styles.blue};
+    }
+    &.award {
+      color: ${styles.orange};
+    }
   }
   li {
-    color: ${styles.white.light};
+    color: ${styles.white.normal};
   }
 `
 
@@ -110,9 +129,10 @@ export default ({ data }) => {
   const {specs} = product
   const {pricing} = product
   const {images} = product
+  const category = product.category.toLowerCase()
 
   return (
-    <Main className={product.category.toLowerCase()}>
+    <Main className={category}>
       <Helmet>
         <meta charSet="utf-8" />
         <title>Unicorn Line</title>
@@ -139,7 +159,7 @@ export default ({ data }) => {
             <Columns>
               <Column>
                 <Content>
-                  <h3>Specifications</h3>
+                  <h3 className={category}>Specifications</h3>
                   <ul>
                     {specs.list.map((item) => (
                       <li key={item}>{item}</li>
@@ -147,7 +167,7 @@ export default ({ data }) => {
                   </ul>
                 </Content>
                 <Content>
-                  <h3>Materials</h3>
+                  <h3 className={category}>Materials</h3>
                   <ul>
                     {specs.material.map((item) => (
                       <li key={item}>{item}</li>
@@ -155,7 +175,7 @@ export default ({ data }) => {
                   </ul>
                 </Content>
                 <Content>
-                  <h3>Printing</h3>
+                  <h3 className={category}>Printing</h3>
                   <ul>
                     {specs.printing.map((item) => (
                       <li key={item}>{item}</li>
@@ -164,7 +184,7 @@ export default ({ data }) => {
                 </Content>
                 {specs.custom ? (
                   <Content>
-                    <h3>Custom Shape</h3>
+                    <h3 className={category}>Custom Shape</h3>
                     <ul>
                       <li>{specs.custom}</li>
                     </ul>
@@ -173,7 +193,7 @@ export default ({ data }) => {
                   null
                 )}
                 <Content>
-                  <h3>Option</h3>
+                  <h3 className={category}>Option</h3>
                   <ul>
                     {specs.option.map((item) => (
                       <li key={item}>{item}</li>
@@ -183,39 +203,37 @@ export default ({ data }) => {
               </Column>
               {pricing ? (
                 <Column>
-                  <Content>
-                    <h3>Pricing</h3>
-                  </Content>
+                  <h3 className={category} style={{marginBottom: "1rem"}}>Pricing</h3>
                   <Table>
+                    {pricing.legend ? (
+                      <TableLegend>
+                        {pricing.legend.map((value) => {
+                          if (value === "Digital") {
+                            return (
+                              <span key={value} className="digital-legend">Digital</span>
+                            )
+                          }
+                          else if (value === "Offset") {
+                            return (
+                              <span key={value} className="offset-legend">Offset</span>
+                            )
+                          }
+                          else if (value === "Inkjet") {
+                            return (
+                              <span key={value} className="inkjet-legend">Inkjet</span>
+                            )
+                          }
+                          else {
+                            return (
+                              <span key={value}>{value}</span>
+                            )
+                          }
+                        })}
+                      </TableLegend>
+                    ) : (
+                      null
+                    )}
                     <TableHead>
-                      {pricing.legend ? (
-                        <div>
-                          {pricing.legend.map((value) => {
-                            if (value === "Digital") {
-                              return (
-                                <span key={value} className="digital-legend">Digital</span>
-                              )
-                            }
-                            else if (value === "Offset") {
-                              return (
-                                <span key={value} className="offset-legend">Offset</span>
-                              )
-                            }
-                            else if (value === "Inkjet") {
-                              return (
-                                <span key={value} className="inkjet-legend">Inkjet</span>
-                              )
-                            }
-                            else {
-                              return (
-                                <span key={value}>{value}</span>
-                              )
-                            }
-                          })}
-                        </div>
-                      ) : (
-                        null
-                      )}
                       {pricing.headings ? (
                         <tr>
                           {pricing.headings.map((heading) => {

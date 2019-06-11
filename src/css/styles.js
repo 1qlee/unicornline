@@ -2,8 +2,8 @@ const styles = {
   primary: {
     transparent: "#FFF2FC",
     light: "#E879AB",
-    normal: "#dd4a80",
-    dark: "#D92978"
+    normal: "#d72d6b",
+    dark: "#a51d4f"
   },
   grey: {
     text: "#4e616c",
@@ -20,16 +20,16 @@ const styles = {
   },
   shadow: "rgba(0,0,0,0.2)",
   text: "#444",
-  purple: "#6d52a1",
-  blue: "#324899",
-  green: "#20A163",
-  orange: "#f05c37",
+  purple: "#7e63b0",
+  blue: "#526bc7",
+  green: "#1d8151",
+  orange: "#da3910",
   yellow: "#E0BF2A",
   red: "#E0BF2A",
   skin: "#FBDBC1",
   pink: "#D700BF",
-  lime: "#d5ffd5",
-  baby: "#d8f5ff"
+  lime: "#b9ffb9",
+  ice: "#ccfdfc"
 }
 
 export default styles
