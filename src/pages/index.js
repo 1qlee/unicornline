@@ -5,7 +5,7 @@ import { CardImage } from "../components/image"
 import { Card, CardButton, CardFooter } from "../components/card"
 import { Columns, Column } from "../components/columns"
 import { Content} from "../components/content"
-import { Title, Subtitle } from "../components/title"
+import { Title, Subtitle, Line } from "../components/title"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import Main from "../components/main"
@@ -30,8 +30,8 @@ export default ({ data }) => (
       <Columns>
         <Column className="index-col-1">
           <Content className="fade-in-down">
-            <Title border={"3px solid " + styles.primary.normal} fontSize="4rem" fontWeight="400" color={styles.white.normal}>Unicorn
-              <span style={{fontFamily:"Karla", padding:"0.5rem", background: styles.primary.normal, color: "#fff", display: "inline-block", marginLeft: "1rem"}}>Line</span>
+            <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>Unicorn
+              <Line color={styles.primary.normal}>Line</Line>
             </Title>
             <Subtitle color={styles.white.normal} fontSize="1.3rem" style={{maxWidth:"525px", marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
           </Content>

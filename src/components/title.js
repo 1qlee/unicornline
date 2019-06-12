@@ -22,4 +22,18 @@ const Subtitle = styled.div`
   }
 `
 
-export {Title, Subtitle}
+const Line = styled.span`
+  font-family: "Karla";
+  padding: 0.5rem;
+  background: ${props => props.color};
+  color: #fff;
+  display: inline-block;
+  margin-left: 1rem;
+  @media only screen and (max-width: 425px) {
+    margin-left: 0;
+    margin-top: 1rem;
+    display: block;
+  }
+`
+
+export {Title, Subtitle, Line}
