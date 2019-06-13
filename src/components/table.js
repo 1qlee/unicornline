@@ -10,13 +10,12 @@ const Table = styled.table`
   width: auto;
 `
 
-const TableLegend = styled.div`
+const TableLegend = styled.thead`
   background-color: transparent;
   color: ${styles.text};
   font-weight: 700;
   font-size: 0.7rem;
   display: flex;
-  text-align: center;
   margin-bottom: 5px;
   position: relative;
   text-transform: uppercase;

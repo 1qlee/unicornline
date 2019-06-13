@@ -66,6 +66,7 @@ class ImageComponent extends React.Component {
   }
 
   render() {
+    console.log(this.state.images)
     const images = [
       {
         original: 'https://dummyimage.com/600x400/e3dada/999',
@@ -82,7 +83,7 @@ class ImageComponent extends React.Component {
     ]
 
     return (
-      <ImageGallery items={images} showPlayButton={false} useBrowserFullscreen={false} />
+      <ImageGallery lazyLoad={true} items={this.state.images} showPlayButton={false} showNav={true} thumbnailPosition="bottom" showThumbnails={true} />
     )
   }
 }

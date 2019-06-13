@@ -87,7 +87,7 @@ const NavMenu = styled.div`
   padding: 1rem;
   position: absolute;
   right: 0;
-  top: 75px;
+  top: 70px;
   transition: transform 0.1s ease, width 0.1s ease, height 0.1s ease;
   will-change: transform, width, height;
   z-index: 99;

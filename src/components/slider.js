@@ -52,6 +52,7 @@ export default class Slider extends React.Component {
   }
 
   handleMouseDown = (e) => {
+    this.slider.current.style.cursor = "grabbing"
     this.setState({
       mouseDown: true,
       startX: e.pageX - this.slider.current.offsetLeft,
@@ -66,6 +67,7 @@ export default class Slider extends React.Component {
   }
 
   handleMouseUp = (e) => {
+    this.slider.current.style.cursor = "grab"
     this.setState({
       mouseDown: false
     })
@@ -73,8 +75,10 @@ export default class Slider extends React.Component {
 
   handleMouseMove = (e) => {
     if (!this.state.mouseDown) {
+      this.slider.current.style.cursor = "grab"
       return;
     }
+    this.slider.current.style.cursor = "grabbing"
     e.preventDefault()
     const x = e.pageX - this.slider.current.offsetLeft
     const diff = x - this.state.startX
