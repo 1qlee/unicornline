@@ -41,10 +41,6 @@ const Menu = styled.div`
       transform: scale(1);
     }
   }
-  @media only screen and (max-width: 620px) {
-    flex-wrap: nowrap;
-    flex-direction: column;
-  }
 `
 
 const MenuItemWrapper = styled.div`
@@ -52,7 +48,7 @@ const MenuItemWrapper = styled.div`
   margin-right: -1px;
   width: 25%;
   @media only screen and (max-width: 620px) {
-    width: 100%;
+    width: 50%;
   }
 `
 
