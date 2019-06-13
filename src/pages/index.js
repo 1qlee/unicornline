@@ -30,9 +30,7 @@ export default ({ data }) => (
       <Columns>
         <Column className="index-col-1">
           <Content className="fade-in-down">
-            <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>Unicorn
-              <Line color={styles.primary.normal}>Line</Line>
-            </Title>
+            <img src={data.datoCmsCompany.logoLine.url} style={{marginBottom: "1rem"}}/>
             <Subtitle color={styles.white.normal} fontSize="1.3rem" style={{maxWidth:"525px", marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
           </Content>
           <Footer />
@@ -72,6 +70,12 @@ export const query = graphql`
           html
           rawMarkdownBody
         }
+      }
+    }
+    datoCmsCompany {
+      logoLine {
+        alt
+        url
       }
     }
     allDatoCmsCategory {

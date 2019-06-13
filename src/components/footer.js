@@ -26,7 +26,7 @@ export default () => (
   <StaticQuery
     query={graphql`
       query FooterQuery {
-        datoCmsFooter {
+        datoCmsCompany {
           company
           about
           phone
@@ -43,17 +43,17 @@ export default () => (
     render={data => (
       <Footer>
         <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.primary.normal} title="Email" href={"mailto:" + data.datoCmsFooter.email} target="_blank" referrer="noreferrer">
+          <Icon color={styles.white.normal} background={styles.primary.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" referrer="noreferrer">
             <Envelope style={{fill:styles.white.normal}}/>
           </Icon>
         </FooterColumn>
         <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.primary.normal} title="Map" href={data.datoCmsFooter.map} target="_blank" referrer="noreferrer">
+          <Icon color={styles.white.normal} background={styles.primary.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" referrer="noreferrer">
             <Map style={{fill:styles.white.normal}}/>
           </Icon>
         </FooterColumn>
         <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.primary.normal} title="Phone" href={"tel:" + data.datoCmsFooter.phone} target="_blank" referrer="noreferrer">
+          <Icon color={styles.white.normal} background={styles.primary.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" referrer="noreferrer">
             <Phone style={{fill:styles.white.normal}}/>
           </Icon>
         </FooterColumn>

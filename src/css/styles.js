@@ -18,7 +18,7 @@ const styles = {
     normal: "#fff",
     light: "rgba(255,255,255,0.72)"
   },
-  shadow: "rgba(0,0,0,0.2)",
+  shadow: "rgba(0,0,0,0.3)",
   text: "#444",
   purple: "#7e63b0",
   blue: "#526bc7",

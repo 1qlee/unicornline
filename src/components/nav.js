@@ -4,8 +4,6 @@ import { graphql, StaticQuery, Link } from "gatsby"
 import styled from "styled-components"
 import styles from "../css/styles.js"
 
-import UnicornLogo from "./unicorn.jpg"
-
 const Nav = styled.nav`
   display: block;
   position: relative;
@@ -50,14 +48,23 @@ const NavLink = styled.div`
 
 const NavLogo = styled.div`
   img {
-    display: block;
-    height: 45px;
-    min-width: 45px;
-    width: 45px;
-    padding: 5px;
     background: #fff;
     border-radius: 100%;
-    box-shadow: 0 8px 30px 0 ${styles.shadow};
+    box-shadow: 0 3px 12px 0 ${styles.shadow};
+    display: block;
+    height: 60px;
+    transition: box-shadow 0.2s;
+    width: 60px;
+  }
+  &:hover {
+    img {
+      box-shadow: 0 6px 12px 1px ${styles.shadow}, 0 -3px 12px 1px ${styles.shadow};
+    }
+  }
+  &:active {
+    img {
+      box-shadow: 0 1px 4px 1px ${styles.shadow};
+    }
   }
 `
 
@@ -74,13 +81,13 @@ const NavRight = styled.div`
 const NavMenu = styled.div`
   background: ${styles.white.normal};
   border-radius: 0.3rem;
-  box-shadow: 0 10px 20px 0 ${styles.shadow}, 1px 0 5px 0 ${styles.shadow};
+  box-shadow: 0 5px 20px 0 ${styles.shadow}, 0 -1px 10px 0 ${styles.shadow};
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
   position: absolute;
   right: 0;
-  top: 65px;
+  top: 75px;
   transition: transform 0.1s ease, width 0.1s ease, height 0.1s ease;
   will-change: transform, width, height;
   z-index: 99;
@@ -168,7 +175,6 @@ const NavMenu = styled.div`
 
 const NavMenuArrow = styled.div`
   background: ${styles.white.normal};
-  box-shadow: -1px -1px 1px 0 ${styles.shadow};
   height: 16px;
   left: 50%;
   position: absolute;
@@ -408,7 +414,7 @@ class NavBar extends React.Component {
           <NavLeft>
             <Link to="/">
               <NavLogo>
-                <img src={UnicornLogo} alt="Logo" />
+                <img src={this.props.logo.url} alt={this.props.logo.alt} title={this.props.logo.title} />
               </NavLogo>
             </Link>
           </NavLeft>
@@ -447,6 +453,13 @@ export default () => (
   <StaticQuery
     query={graphql`
       query NavQuery {
+        datoCmsCompany {
+          logo {
+            alt
+            title
+            url
+          }
+        }
         allAccessory:allDatoCmsProduct(sort: {fields: [name], order: ASC} filter: {category: {eq: "Accessory"}}) {
           edges {
             node {
@@ -503,7 +516,7 @@ export default () => (
       }
     `}
     render={data => (
-      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} />
+      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} logo={data.datoCmsCompany.logo} />
     )}
   />
 )
