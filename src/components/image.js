@@ -49,12 +49,13 @@ class ImageComponent extends React.Component {
     super(props)
 
     const newImages = []
+    console.log(this.props.thumbnail)
 
     for (let i = 0; i < this.props.images.length; i++) {
       const newObj = {
         original: this.props.images[i].url,
         originalAlt: this.props.images[i].alt,
-        thumbnail: this.props.images[i].url
+        thumbnail: this.props.thumbnail.url
       }
 
       newImages.push(newObj)
@@ -66,7 +67,6 @@ class ImageComponent extends React.Component {
   }
 
   render() {
-    console.log(this.state.images)
     const images = [
       {
         original: 'https://dummyimage.com/600x400/e3dada/999',

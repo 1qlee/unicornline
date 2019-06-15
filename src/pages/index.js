@@ -5,7 +5,7 @@ import { CardImage } from "../components/image"
 import { Card, CardButton, CardFooter } from "../components/card"
 import { Columns, Column } from "../components/columns"
 import { Content} from "../components/content"
-import { Title, Subtitle, Line } from "../components/title"
+import { Subtitle } from "../components/title"
 import Footer from "../components/footer"
 import Hero from "../components/hero"
 import Main from "../components/main"
@@ -29,9 +29,9 @@ export default ({ data }) => (
     <Hero className="is-index">
       <Columns>
         <Column className="index-col-1">
-          <Content className="fade-in-down">
-            <img src={data.datoCmsCompany.logoLine.url} style={{marginBottom: "1rem"}}/>
-            <Subtitle color={styles.white.normal} fontSize="1.3rem" style={{maxWidth:"525px", marginBottom:"2rem"}} dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
+          <Content className="fade-in-down" style={{maxWidth:"525px"}}>
+            <img src={data.datoCmsCompany.logoLine.url} style={{marginBottom: "2rem"}}/>
+            <Subtitle color={styles.white.normal} fontSize="1.3rem" dangerouslySetInnerHTML={{ __html: data.datoCmsIndex.blurbNode.childMarkdownRemark.html }}></Subtitle>
           </Content>
           <Footer />
         </Column>
@@ -46,7 +46,7 @@ export default ({ data }) => (
                 </Content>
                 <CardFooter>
                   <Link to={`/${category.name.toLowerCase()}`}>
-                    <CardButton className="card-button" color={styles.white.normal} background={styles.primary.normal}>
+                    <CardButton className="card-button" color={styles.white.normal} background={styles.grey.dark}>
                       <span style={{display:"inline-block"}}>View</span>
                       <span>&#8594;</span>
                     </CardButton>

@@ -10,9 +10,10 @@ import Phone from "../../assets/phone.svg"
 
 const Footer = styled.div`
   animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  background: ${styles.primary.normal};
+  background: ${styles.white.normal};
   border-radius: 8px;
   display: inline-flex;
+  margin-top: 2rem;
   padding: 0.5rem;
 `
 
@@ -43,18 +44,18 @@ export default () => (
     render={data => (
       <Footer>
         <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.primary.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" referrer="noreferrer">
-            <Envelope style={{fill:styles.white.normal}}/>
+          <Icon color={styles.white.normal} background={styles.white.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" referrer="noreferrer">
+            <Envelope style={{fill:styles.grey.dark}}/>
           </Icon>
         </FooterColumn>
         <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.primary.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" referrer="noreferrer">
-            <Map style={{fill:styles.white.normal}}/>
+          <Icon color={styles.white.normal} background={styles.white.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" referrer="noreferrer">
+            <Map style={{fill:styles.grey.dark}}/>
           </Icon>
         </FooterColumn>
         <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.primary.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" referrer="noreferrer">
-            <Phone style={{fill:styles.white.normal}}/>
+          <Icon color={styles.white.normal} background={styles.white.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" referrer="noreferrer">
+            <Phone style={{fill:styles.grey.dark}}/>
           </Icon>
         </FooterColumn>
       </Footer>

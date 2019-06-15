@@ -129,13 +129,14 @@ export default ({ data }) => {
   const {specs} = product
   const {pricing} = product
   const {images} = product
+  const {thumbnail} = product
   const category = product.category.toLowerCase()
 
   return (
     <Main className={category}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Unicorn Line</title>
+        <title>{product.name} - Unicorn Line</title>
         <link rel="canonical" href="https://unicornline.com" />
         <link rel="icon" type="image/png" href={favicon} />
       </Helmet>
@@ -143,7 +144,7 @@ export default ({ data }) => {
       <ProductContainer>
         <ProductLeft>
           <ImageContainer>
-            <ImageComponent images={images} />
+            <ImageComponent images={images} thumbnail={thumbnail} />
             <small style={{background: "white", padding: "5px", position: "absolute", top: "0", fontSize: "10px"}}>Our images are under construction.</small>
           </ImageContainer>
         </ProductLeft>
@@ -297,6 +298,7 @@ export const query = graphql`
       slug
       description
       images {alt, id, title, url}
+      thumbnail {alt, url}
       specs {list, material, printing, custom, option}
       pricing {legend, headings, values}
     }

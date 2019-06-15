@@ -10,7 +10,7 @@ const Table = styled.table`
   width: auto;
 `
 
-const TableLegend = styled.thead`
+const TableLegend = styled.div`
   background-color: transparent;
   color: ${styles.text};
   font-weight: 700;

@@ -48,6 +48,9 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       result.data.allDatoCmsProduct.edges.map(({ node: product}) => {
         switch(product.category) {
+          case "Beauty":
+            createProductPage("beauty", product)
+            break;
           case "Accessory":
             createProductPage("accessory", product)
             break;
@@ -72,6 +75,9 @@ exports.createPages = ({ graphql, actions }) => {
   }).then((categories) => {
     categories.map(({ node: category }) => {
       switch(category.name) {
+        case "Beauty":
+          createCategoryPage("beauty", category.name)
+          break;
         case "Accessory":
           createCategoryPage("accessory", category.name)
           break;

@@ -31,7 +31,7 @@ export default ({ data }) => {
     <Main className={category.name.toLowerCase()}>
       <Helmet>
         <meta charSet="utf-8" />
-        <title>Unicorn Line</title>
+        <title>{category.name} - Unicorn Line</title>
         <link rel="canonical" href="https://unicornline.com" />
         <link rel="icon" type="image/png" href={favicon} />
       </Helmet>

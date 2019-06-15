@@ -31,6 +31,11 @@ const Menu = styled.div`
       background: ${styles.orange};
     }
   }
+  &.beauty {
+    .menu-item {
+      background: ${styles.primary.dark};
+    }
+  }
   @keyframes scaleIn {
     0% {
       opacity: 0;

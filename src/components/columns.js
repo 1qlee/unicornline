@@ -25,7 +25,7 @@ const Column = styled.div`
     }
   }
   &.index-col-2 {
-    padding: 5rem 0 5rem 1rem;
+    padding: 5rem 1rem;
     @media only screen and (max-width: 1180px) {
       padding: 1rem 0 2rem;
     }

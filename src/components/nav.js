@@ -37,7 +37,7 @@ const NavLink = styled.div`
     top: 0;
     left: 1rem;
     background: ${styles.white.normal};
-    transition: height 0.2s ease;
+    transition: height 0.1s ease;
   }
   &.is-active {
     &::before {
@@ -92,57 +92,62 @@ const NavMenu = styled.div`
   will-change: transform, width, height;
   z-index: 99;
   &.menu-pos-1 {
-    transform: translateX(-17rem);
+    transform: translateX(-356px);
     width: 428px;
     height: 382px;
     a {
       &:hover {
-        color: ${styles.white.normal};
         background-color: ${styles.primary.normal};
       }
     }
   }
   &.menu-pos-2 {
-    transform: translateX(-9rem);
+    transform: translateX(-230px);
     width: 428px;
     height: 350px;
     a {
       &:hover {
-        color: ${styles.white.normal};
         background-color: ${styles.green};
       }
     }
   }
   &.menu-pos-3 {
-    transform: translateX(-12px);
+    transform: translateX(-100px);
     width: 459px;
     height: 417px;
     a {
       &:hover {
-        color: ${styles.white.normal};
         background-color: ${styles.purple};
       }
     }
   }
   &.menu-pos-4 {
-    transform: translateX(-24px);
+    transform: translateX(-110px);
     width: 252px;
     height: 417px;
     a {
       &:hover {
-        color: ${styles.white.normal};
         background-color: ${styles.blue};
       }
     }
   }
   &.menu-pos-5 {
+    transform: translateX(-4rem);
+    width: 155px;
+    height: 242px;
+    a {
+      &:hover {
+        background-color: ${styles.orange};
+      }
+    }
+  }
+  &.menu-pos-6 {
     transform: translateX(-24px);
     width: 155px;
     height: 242px;
     a {
       &:hover {
-        color: ${styles.white.normal};
-        background-color: ${styles.orange};
+        background-color: ${styles.primary.dark};
       }
     }
   }
@@ -162,6 +167,9 @@ const NavMenu = styled.div`
     padding: 0.5rem 0.3rem;
     transition: color 0.1s ease, background-color 0.1s ease;
     width: 100%;
+    &:hover {
+      color: ${styles.white.normal};
+    }
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -231,17 +239,32 @@ const Hamburger = styled.div`
 `
 
 const HamburgerDropdown = styled.div`
-  background: ${styles.grey.dark};
+  background: ${styles.white.normal};
   border-bottom: 3px solid ${styles.grey.normal};
-  border-radius: 0.3rem;
+  border-radius: 0.2rem;
   box-shadow: 0 4px 20px 0 ${styles.shadow};
   position: absolute;
-  right: 0;
-  top: calc(100% + 0.5rem);
+  right: 0.5rem;
+  top: 100%;
+  width: calc(100% - 1rem);
   z-index: 99;
   .nav-link {
     display: block;
     padding: 1rem;
+    color: ${styles.text};
+    text-align: left;
+    &:hover {
+      background-color: ${styles.grey.hover};
+      &::before {
+        content: "\u2192";
+      }
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      left: calc(100% - 30px);
+      top: 1rem;
+    }
   }
 `
 
@@ -259,10 +282,7 @@ class HamburgerMenu extends React.Component {
 
   render() {
     return (
-      <Hamburger className={this.state.isActive ? "is-active" : null} onClick={this.handleClick}>
-        <span></span>
-        <span></span>
-        <span></span>
+      <div>
         {this.state.isActive ? (
           <HamburgerDropdown>
             {this.props.categories.edges.map(({node}) => (
@@ -274,7 +294,12 @@ class HamburgerMenu extends React.Component {
         ) : (
           null
         )}
-      </Hamburger>
+        <Hamburger className={this.state.isActive ? "is-active" : null} onClick={this.handleClick}>
+          <span></span>
+          <span></span>
+          <span></span>
+        </Hamburger>
+      </div>
     )
   }
 }
@@ -324,9 +349,18 @@ class NavMenuContainer extends React.Component {
       case "Award":
         return (
           <NavMenu className="menu-col-1 menu-pos-5">
-            <NavMenuArrow className="is-right" />
+            <NavMenuArrow />
             {this.props.award.edges.map(({node}) => (
               <Link key={node.id} to={"/award/" + node.slug}>{node.name}</Link>
+            ))}
+          </NavMenu>
+        )
+      case "Beauty":
+        return (
+          <NavMenu className="menu-col-1 menu-pos-6">
+            <NavMenuArrow className="is-right" />
+            {this.props.beauty.edges.map(({node}) => (
+              <Link key={node.id} to={"/beauty/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
@@ -437,6 +471,7 @@ class NavBar extends React.Component {
                   display={this.props.display}
                   creative={this.props.creative}
                   award={this.props.award}
+                  beauty={this.props.beauty}
                 />
               ) : (
                 null
@@ -505,6 +540,15 @@ export default () => (
             }
           }
         }
+        allBeauty:allDatoCmsProduct(sort: {fields: [name], order: ASC} filter: {category: {eq: "Beauty"}}) {
+          edges {
+            node {
+              id
+              name
+              slug
+            }
+          }
+        }
         allDatoCmsCategory {
           edges {
             node {
@@ -516,7 +560,7 @@ export default () => (
       }
     `}
     render={data => (
-      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} logo={data.datoCmsCompany.logo} />
+      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} beauty={data.allBeauty} logo={data.datoCmsCompany.logo} />
     )}
   />
 )

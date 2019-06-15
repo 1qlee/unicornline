@@ -7,6 +7,7 @@ import PresentationBackground from "../images/trianglify-presentation.svg"
 import DisplayBackground from "../images/trianglify-display.svg"
 import CreativeBackground from "../images/trianglify-creative.svg"
 import AwardBackground from "../images/trianglify-award.svg"
+import BeautyBackground from "../images/trianglify-beauty.svg"
 
 const Main = styled.div`
   background: ${styles.white.normal};
@@ -16,22 +17,25 @@ const Main = styled.div`
   overflow-y: auto;
   overflow-x: hidden;
   &.index {
-    background-image: url("${IndexBackground}");
+    background-image: url(${IndexBackground});
   }
   &.accessory {
-    background-image: url("${AccessoryBackground}");
+    background-image: url(${AccessoryBackground});
   }
   &.presentation {
-    background-image: url("${PresentationBackground}");
+    background-image: url(${PresentationBackground});
   }
   &.display {
-    background-image: url("${DisplayBackground}");
+    background-image: url(${DisplayBackground});
   }
   &.creative {
-    background-image: url("${CreativeBackground}");
+    background-image: url(${CreativeBackground});
   }
   &.award {
-    background-image: url("${AwardBackground}");
+    background-image: url(${AwardBackground});
+  }
+  &.beauty {
+    background-image: url(${BeautyBackground});
   }
 `
 
