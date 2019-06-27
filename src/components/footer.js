@@ -14,9 +14,34 @@ const FooterSection = styled.section`
 `
 
 const FooterColumn = styled.div`
-  color: ${styles.white.normal};
+  p {
+    color: ${styles.white.normal};
+  }
   &:not(:last-child) {
     margin-right: 1rem;
+  }
+`
+
+const FooterLink = styled.a`
+  color: ${styles.white.normal};
+  display: block;
+  position: relative;
+  z-index: 1;
+  &:hover {
+    &::before {
+      width: calc(100% + 10px);
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    background: ${styles.primary.normal};
+    left: -5px;
+    top: 0;
+    height: 100%;
+    width: 0;
+    transition: width 0.2s ease-in-out;
+    z-index: -1;
   }
 `
 
@@ -54,20 +79,20 @@ export default () => (
         <FooterSection>
           <FooterColumn>
             <p>
-              <a color={styles.white.normal} background={styles.white.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" rel="noopener noreferrer">
+              <FooterLink color={styles.white.normal} background={styles.white.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" rel="noopener noreferrer">
                 516-222-0712
-              </a>
+              </FooterLink>
             </p>
             <p>
-              <a color={styles.white.normal} background={styles.white.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" rel="noopener noreferrer">
+              <FooterLink color={styles.white.normal} background={styles.white.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" rel="noopener noreferrer">
                 ny@unicorngraphics.com
-              </a>
+              </FooterLink>
             </p>
           </FooterColumn>
           <FooterColumn>
-            <a color={styles.white.normal} background={styles.white.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" rel="noopener noreferrer">
+            <FooterLink color={styles.white.normal} background={styles.white.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" rel="noopener noreferrer">
               <div dangerouslySetInnerHTML={{ __html: data.datoCmsCompany.addressNode.childMarkdownRemark.html }}></div>
-            </a>
+            </FooterLink>
           </FooterColumn>
         </FooterSection>
       </Footer>

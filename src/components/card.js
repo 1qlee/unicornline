@@ -16,13 +16,12 @@ const Card = styled.div`
   &:not(:last-child) {
     margin-right: 2rem;
   }
+  &:active {
+    box-shadow: 0 2px 6px 0 ${styles.shadow};
+  }
   &:hover {
     box-shadow: 0 4px 20px 0 ${styles.shadow};
     transform: translateY(5px);
-  }
-  &:active {
-    box-shadow: 0 2px 6px 0 ${styles.shadow};
-    transform: translateY(2px);
   }
   &:nth-child(3) {
     animation-delay: 0.1s;
