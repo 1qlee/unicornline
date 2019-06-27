@@ -29,43 +29,24 @@ const MenuItemWrapper = styled.div`
 
 const MenuItem = styled.div`
   align-items: center;
-  border: 1px solid ${styles.shadow};
   display: flex;
   justify-content: center;
+  flex-direction: column;
   padding: 1rem;
   position: relative;
   width: 100%;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
   p {
-    background: ${styles.orange};
+    margin-top: 1rem;
     color: ${styles.white.normal};
   }
-  &::before {
-    background: ${styles.white.normal};
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    transition: width 0.2s ease;
-    width: 0;
-  }
-  &::after {
-    color: ${styles.text};
-    content: "View Item";
-    left: 50%;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%,-50%);
-    transition: opacity 0.1s ease;
-  }
   &:hover {
+    background-color: ${styles.white.normal};
+    box-shadow: 0 4px 20px ${styles.shadow};
+    transform: translateY(-5px);
     cursor: pointer;
-    &::before {
-      width: 100%;
-    }
-    &::after {
-      opacity: 1;
+    p {
+      color: ${styles.text};
     }
   }
 `

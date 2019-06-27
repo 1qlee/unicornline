@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import styles from "../css/styles"
 
 const Content = styled.div`
   h1,h2,h3,h4,h5,h6 {
@@ -19,6 +20,13 @@ const Content = styled.div`
   &.is-flex {
     display: flex;
     align-items: center;
+  }
+  &.is-helper {
+    background-color: ${styles.white.normal};
+    border-left: 0.5rem solid ${styles.yellow};
+    border-radius: 0.2rem;
+    box-shadow: 0 4px 10px ${styles.shadow};
+    padding: 1rem;
   }
   li {
     line-height: 1.5;

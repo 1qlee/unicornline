@@ -6,10 +6,11 @@ import { Content } from "../content"
 import { Hero } from "../hero"
 import { Table, TableLegend, TableHead, TableData } from "../table"
 import { Title, Subtitle } from "../title"
-import { ImageContainer, ImageComponent } from "../image"
+import ImageComponent from "../productimage"
 import BreadCrumb from "../breadcrumb"
 import Main from "../main"
 import NavBar from "../nav"
+import Img from "gatsby-image"
 
 import styles from "../../css/styles"
 import favicon from "../../images/favicon.png"
@@ -92,6 +93,9 @@ const ProductInfo = styled.div`
     &.award {
       color: ${styles.orange};
     }
+    &.beauty {
+      color: ${styles.primary.dark};
+    }
   }
   li {
     color: ${styles.white.normal};
@@ -124,12 +128,23 @@ const Column = styled.div`
   }
 `
 
+const Whole = styled.div`
+  display: flex;
+`
+
+const Half = styled.div`
+  width: 50%;
+  &:not(:last-child) {
+    margin-right: 1rem;
+  }
+`
+
 export default ({ data }) => {
   const product = data.datoCmsProduct
-  const {specs} = product
-  const {pricing} = product
-  const {images} = product
-  const {thumbnail} = product
+  const { specs } = product
+  const { helperNode } = product
+  const { pricing } = product
+  const { thumbnail } = product
   const category = product.category.toLowerCase()
 
   return (
@@ -143,10 +158,16 @@ export default ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <ImageContainer>
-            <ImageComponent images={images} thumbnail={thumbnail} />
-            <small style={{background: "white", padding: "5px", position: "absolute", top: "0", fontSize: "10px"}}>Our images are under construction.</small>
-          </ImageContainer>
+          <div>
+            <ImageComponent thumbnail={thumbnail.fluid} />
+            <small style={{background: "white", padding: "5px", top: "0", fontSize: "10px"}}>Our images are under construction.</small>
+          </div>
+          {helperNode.childMarkdownRemark.html ? (
+            <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
+            </Content>
+          ) : (
+            null
+          )}
         </ProductLeft>
         <ProductRight>
           <Hero className="is-flex-start">
@@ -159,129 +180,137 @@ export default ({ data }) => {
           <ProductInfo>
             <Columns>
               <Column>
-                <Content>
-                  <h3 className={category}>Specifications</h3>
-                  <ul>
-                    {specs.list.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </Content>
-                <Content>
-                  <h3 className={category}>Materials</h3>
-                  <ul>
-                    {specs.material.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </Content>
-                <Content>
-                  <h3 className={category}>Printing</h3>
-                  <ul>
-                    {specs.printing.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </Content>
-                {specs.custom ? (
-                  <Content>
-                    <h3 className={category}>Custom Shape</h3>
-                    <ul>
-                      <li>{specs.custom}</li>
-                    </ul>
-                  </Content>
-                ) : (
-                  null
-                )}
-                <Content>
-                  <h3 className={category}>Option</h3>
-                  <ul>
-                    {specs.option.map((item) => (
-                      <li key={item}>{item}</li>
-                    ))}
-                  </ul>
-                </Content>
-              </Column>
-              {pricing ? (
-                <Column>
-                  <h3 className={category} style={{marginBottom: "1rem"}}>Pricing</h3>
-                  <Table>
-                    {pricing.legend ? (
-                      <TableLegend>
-                        {pricing.legend.map((value) => {
-                          if (value === "Digital") {
-                            return (
-                              <span key={value} className="digital-legend">Digital</span>
-                            )
-                          }
-                          else if (value === "Offset") {
-                            return (
-                              <span key={value} className="offset-legend">Offset</span>
-                            )
-                          }
-                          else if (value === "Inkjet") {
-                            return (
-                              <span key={value} className="inkjet-legend">Inkjet</span>
-                            )
-                          }
-                          else {
-                            return (
-                              <span key={value}>{value}</span>
-                            )
-                          }
-                        })}
-                      </TableLegend>
+                <Whole>
+                  <Half>
+                    <Content>
+                      <h3 className={category}>Specifications</h3>
+                      <ul>
+                        {specs.list.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </Content>
+                    <Content>
+                      <h3 className={category}>Materials</h3>
+                      <ul>
+                        {specs.material.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </Content>
+                  </Half>
+                  <Half>
+                    <Content>
+                      <h3 className={category}>Printing</h3>
+                      <ul>
+                        {specs.printing.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </Content>
+                    {specs.custom ? (
+                      <Content>
+                        <h3 className={category}>Custom Shape</h3>
+                        <ul>
+                          <li>{specs.custom}</li>
+                        </ul>
+                      </Content>
                     ) : (
                       null
                     )}
-                    <TableHead>
-                      {pricing.headings ? (
-                        <tr>
-                          {pricing.headings.map((heading) => {
-                            if (heading.substring(0,7) === 'digital') {
+                    <Content>
+                      <h3 className={category}>Option</h3>
+                      <ul>
+                        {specs.option.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </Content>
+                  </Half>
+                </Whole>
+              </Column>
+              <Column>
+                {pricing ? (
+                  <div>
+                    <h3 className={category} style={{marginBottom: "1rem"}}>Pricing</h3>
+                    <Table>
+                      {pricing.legend ? (
+                        <TableLegend>
+                          {pricing.legend.map((value) => {
+                            if (value === "Digital") {
                               return (
-                                <th key={heading} className="digital">{heading.substring(7)}</th>
+                                <span key={value} className="digital-legend">Digital</span>
                               )
                             }
-                            else if (heading.substring(0,6) === 'offset') {
+                            else if (value === "Offset") {
                               return (
-                                <th key={heading} className="offset">{heading.substring(6)}</th>
+                                <span key={value} className="offset-legend">Offset</span>
                               )
                             }
-                            else if (heading.substring(0,6) === 'inkjet') {
+                            else if (value === "Inkjet") {
                               return (
-                                <th key={heading} className="inkjet">{heading.substring(6)}</th>
+                                <span key={value} className="inkjet-legend">Inkjet</span>
                               )
                             }
                             else {
                               return (
-                                <th key={heading}>{heading}</th>
+                                <span key={value}>{value}</span>
                               )
                             }
                           })}
-                        </tr>
+                        </TableLegend>
                       ) : (
                         null
                       )}
-                    </TableHead>
-                    {pricing.values ? (
-                      <tbody>
-                        {pricing.values.map((value) => (
-                          <tr key={value}>
-                            {value.map((data, index) => (
-                              <TableData key={index}>{data}</TableData>
-                            ))}
+                      <TableHead>
+                        {pricing.headings ? (
+                          <tr>
+                            {pricing.headings.map((heading) => {
+                              if (heading.substring(0,7) === 'digital') {
+                                return (
+                                  <th key={heading} className="digital">{heading.substring(7)}</th>
+                                )
+                              }
+                              else if (heading.substring(0,6) === 'offset') {
+                                return (
+                                  <th key={heading} className="offset">{heading.substring(6)}</th>
+                                )
+                              }
+                              else if (heading.substring(0,6) === 'inkjet') {
+                                return (
+                                  <th key={heading} className="inkjet">{heading.substring(6)}</th>
+                                )
+                              }
+                              else {
+                                return (
+                                  <th key={heading}>{heading}</th>
+                                )
+                              }
+                            })}
                           </tr>
-                        ))}
-                      </tbody>
-                    ) : (
-                      null
-                    )}
-                  </Table>
-                </Column>
-              ) : (
-                null
-              )}
+                        ) : (
+                          null
+                        )}
+                      </TableHead>
+                      {pricing.values ? (
+                        <tbody>
+                          {pricing.values.map((value) => (
+                            <tr key={value}>
+                              {value.map((data, index) => (
+                                <TableData key={index}>{data}</TableData>
+                              ))}
+                            </tr>
+                          ))}
+                        </tbody>
+                      ) : (
+                        null
+                      )}
+                    </Table>
+                  </div>
+                ) : (
+                  null
+                )}
+              </Column>
             </Columns>
           </ProductInfo>
         </ProductRight>
@@ -297,8 +326,17 @@ export const query = graphql`
       category
       slug
       description
-      images {alt, id, title, url}
-      thumbnail {alt, url}
+      helperNode {
+        childMarkdownRemark {
+          html
+          rawMarkdownBody
+        }
+      }
+      thumbnail {
+        fluid(maxWidth: 600) {
+          ...GatsbyDatoCmsFluid
+        }
+      }
       specs {list, material, printing, custom, option}
       pricing {legend, headings, values}
     }

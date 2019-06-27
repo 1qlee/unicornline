@@ -1,9 +1,5 @@
-import React from "react"
 import styled from "styled-components"
 import styles from "../css/styles.js"
-import ImageGallery from "react-image-gallery"
-
-import "react-image-gallery/styles/css/image-gallery.css"
 
 const ImageContainer = styled.figure`
   display: block;
@@ -44,35 +40,5 @@ const Image = styled.img`
   }
 `
 
-class ImageComponent extends React.Component {
-  constructor(props) {
-    super(props)
 
-    const newImages = []
-    console.log(this.props.thumbnail)
-
-    for (let i = 0; i < this.props.images.length; i++) {
-      const newObj = {
-        original: this.props.images[i].url,
-        originalAlt: this.props.images[i].alt,
-        thumbnail: this.props.thumbnail.url
-      }
-
-      newImages.push(newObj)
-    }
-
-    this.state = {
-      images: newImages
-    }
-  }
-
-  render() {
-
-    return (
-      <ImageGallery lazyLoad={true} items={this.state.images} showPlayButton={false} showNav={true} thumbnailPosition="bottom" showThumbnails={true} />
-    )
-  }
-}
-
-
-export {ImageContainer, CardImage, Image, ImageComponent}
+export { ImageContainer, CardImage, Image }
