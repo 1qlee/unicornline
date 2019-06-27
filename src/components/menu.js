@@ -6,36 +6,6 @@ const Menu = styled.div`
   display: flex;
   flex-wrap: wrap;
   margin: 1rem;
-  &.accessory {
-    .menu-item {
-      background: ${styles.primary.normal};
-    }
-  }
-  &.presentation {
-    .menu-item {
-      background: ${styles.green};
-    }
-  }
-  &.display {
-    .menu-item {
-      background: ${styles.purple};
-    }
-  }
-  &.creative {
-    .menu-item {
-      background: ${styles.blue};
-    }
-  }
-  &.award {
-    .menu-item {
-      background: ${styles.orange};
-    }
-  }
-  &.beauty {
-    .menu-item {
-      background: ${styles.primary.dark};
-    }
-  }
   @keyframes scaleIn {
     0% {
       opacity: 0;
@@ -61,12 +31,12 @@ const MenuItem = styled.div`
   align-items: center;
   border: 1px solid ${styles.shadow};
   display: flex;
-  height: 100px;
   justify-content: center;
   padding: 1rem;
   position: relative;
   width: 100%;
   p {
+    background: ${styles.orange};
     color: ${styles.white.normal};
   }
   &::before {

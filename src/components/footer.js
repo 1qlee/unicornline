@@ -1,23 +1,20 @@
 import React from "react"
 import { StaticQuery, graphql } from "gatsby"
-import Icon from "./icon"
 import styled from "styled-components"
 import styles from "../css/styles.js"
 
-import Envelope from "../../assets/envelope.svg"
-import Map from "../../assets/map.svg"
-import Phone from "../../assets/phone.svg"
-
 const Footer = styled.div`
   animation: fadeInUp 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  background: ${styles.white.normal};
-  border-radius: 8px;
-  display: inline-flex;
-  margin-top: 2rem;
-  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+`
+
+const FooterSection = styled.section`
+  display: flex;
 `
 
 const FooterColumn = styled.div`
+  color: ${styles.white.normal};
   &:not(:last-child) {
     margin-right: 1rem;
   }
@@ -38,26 +35,41 @@ export default () => (
               html
             }
           }
+          blurbNode {
+            childMarkdownRemark {
+              html
+              rawMarkdownBody
+            }
+          }
         }
       }
     `}
     render={data => (
       <Footer>
-        <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.white.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" referrer="noreferrer">
-            <Envelope style={{fill:styles.grey.dark}}/>
-          </Icon>
-        </FooterColumn>
-        <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.white.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" referrer="noreferrer">
-            <Map style={{fill:styles.grey.dark}}/>
-          </Icon>
-        </FooterColumn>
-        <FooterColumn>
-          <Icon color={styles.white.normal} background={styles.white.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" referrer="noreferrer">
-            <Phone style={{fill:styles.grey.dark}}/>
-          </Icon>
-        </FooterColumn>
+        <FooterSection>
+          <FooterColumn>
+            <div color={styles.white.normal} fontSize="1.3rem" dangerouslySetInnerHTML={{ __html: data.datoCmsCompany.blurbNode.childMarkdownRemark.html }}></div>
+          </FooterColumn>
+        </FooterSection>
+        <FooterSection>
+          <FooterColumn>
+            <p>
+              <a color={styles.white.normal} background={styles.white.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" rel="noopener noreferrer">
+                516-222-0712
+              </a>
+            </p>
+            <p>
+              <a color={styles.white.normal} background={styles.white.normal} title="Email" href={"mailto:" + data.datoCmsCompany.email} target="_blank" rel="noopener noreferrer">
+                ny@unicorngraphics.com
+              </a>
+            </p>
+          </FooterColumn>
+          <FooterColumn>
+            <a color={styles.white.normal} background={styles.white.normal} title="Map" href={data.datoCmsCompany.map} target="_blank" rel="noopener noreferrer">
+              <div dangerouslySetInnerHTML={{ __html: data.datoCmsCompany.addressNode.childMarkdownRemark.html }}></div>
+            </a>
+          </FooterColumn>
+        </FooterSection>
       </Footer>
     )}
   />

@@ -19,7 +19,7 @@ const Column = styled.div`
     align-items: center;
   }
   &.index-col-1 {
-    padding: 5rem 0rem 5rem 3rem;
+    padding: 5rem 0rem 5rem 1rem;
     @media only screen and (max-width: 1180px) {
       padding: 2rem 1rem 1rem;
     }

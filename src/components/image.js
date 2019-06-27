@@ -67,20 +67,6 @@ class ImageComponent extends React.Component {
   }
 
   render() {
-    const images = [
-      {
-        original: 'https://dummyimage.com/600x400/e3dada/999',
-        thumbnail: 'https://dummyimage.com/600x400/e3dada/999',
-      },
-      {
-        original: 'https://dummyimage.com/600x400/e3dada/999',
-        thumbnail: 'https://dummyimage.com/600x400/e3dada/999'
-      },
-      {
-        original: 'https://dummyimage.com/600x400/e3dada/999',
-        thumbnail: 'https://dummyimage.com/600x400/e3dada/999'
-      }
-    ]
 
     return (
       <ImageGallery lazyLoad={true} items={this.state.images} showPlayButton={false} showNav={true} thumbnailPosition="bottom" showThumbnails={true} />

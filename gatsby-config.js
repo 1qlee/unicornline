@@ -26,6 +26,14 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        useMozJpeg: false,
+        stripMetadata: true,
+        defaultQuality: 75,
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
@@ -58,5 +66,6 @@ module.exports = {
       }
     },
     'gatsby-plugin-styled-components',
+    'gatsby-transformer-sharp',
   ],
 }

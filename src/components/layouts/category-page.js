@@ -1,12 +1,14 @@
 import React from "react"
 import styled from "styled-components"
 import { graphql, Link } from "gatsby"
+import Img from "gatsby-image"
 import { Helmet } from "react-helmet"
+
 import { Content } from "../content"
 import { Menu, MenuItemWrapper, MenuItem } from "../menu"
+import { Hero } from "../hero"
 import { Title, Subtitle } from "../title"
 import BreadCrumb from "../breadcrumb"
-import Hero from "../hero"
 import Main from "../main"
 import NavBar from "../nav"
 
@@ -49,6 +51,7 @@ export default ({ data }) => {
             <MenuItemWrapper key={product.id}>
               <Link to={`/${category.name.toLowerCase()}/${product.slug}`}>
                 <MenuItem className="menu-item">
+                  <Img fixed={product.thumbnail.fixed} />
                   <Content className="has-text-centered">
                     <p className="label">{product.name}</p>
                   </Content>
@@ -78,6 +81,11 @@ export const query = graphql`
           id
           name
           slug
+          thumbnail {
+            fixed(width: 400, imgixParams: { fm: "png", auto: "compress" }) {
+              ...GatsbyDatoCmsFixed
+            }
+          }
         }
       }
     }

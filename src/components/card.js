@@ -3,7 +3,8 @@ import styles from "../css/styles"
 
 const Card = styled.div`
   animation: 1s ease forwards scaleIn;
-  background: ${styles.white.normal};
+  color: ${styles.white.normal};
+  background: ${styles.primary.normal};
   box-shadow: 0 2px 6px 0 ${styles.shadow};
   display: flex;
   flex-direction: column;
@@ -13,10 +14,11 @@ const Card = styled.div`
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   &:hover {
     box-shadow: 0 4px 20px 0 ${styles.shadow};
+    transform: translateY(5px);
   }
   &:active {
     box-shadow: 0 2px 6px 0 ${styles.shadow};
@@ -24,15 +26,23 @@ const Card = styled.div`
   }
   &:nth-child(3) {
     animation-delay: 0.1s;
+    background: ${styles.green};
   }
   &:nth-child(4) {
     animation-delay: 0.2s;
+    background: ${styles.purple};
   }
   &:nth-child(5) {
     animation-delay: 0.3s;
+    background: ${styles.blue};
   }
   &:nth-child(6) {
     animation-delay: 0.4s;
+    background: ${styles.orange};
+  }
+  &:nth-child(7) {
+    animation-delay: 0.5s;
+    background: ${styles.primary.dark};
   }
   @keyframes scaleIn {
     0% {

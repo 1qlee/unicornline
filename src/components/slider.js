@@ -5,7 +5,7 @@ const sliderStyle = {
   display: "flex",
   overflowX: "auto",
   overflowY: "hidden",
-  padding: "0 1rem 1rem",
+  paddingBottom: "1rem",
   position: "relative",
   cursor: "grab"
 }
@@ -14,7 +14,7 @@ const FadeBlock = styled.div`
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  left: -20px;
+  left: -2px;
   padding: 0.2rem;
   z-index: 9;
   filter: blur(4px);
