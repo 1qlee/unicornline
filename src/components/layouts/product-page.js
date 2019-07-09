@@ -10,7 +10,6 @@ import ImageComponent from "../productimage"
 import BreadCrumb from "../breadcrumb"
 import Main from "../main"
 import NavBar from "../nav"
-import Img from "gatsby-image"
 
 import styles from "../../css/styles"
 import favicon from "../../images/favicon.png"
@@ -30,8 +29,7 @@ const ProductLeft = styled.div`
   padding: 1rem;
   width: 600px;
   @media only screen and (max-width: 1200px) {
-    margin: 0 auto;
-    width: auto;
+    width: 300px;
   }
 `
 
@@ -113,7 +111,6 @@ const Columns = styled.div`
 const Column = styled.div`
   &:first-child {
     margin-right: 2rem;
-    width: 350px;
     @media only screen and (max-width: 1425px) {
       width: 100%;
       margin-top: 1.5rem;
@@ -121,7 +118,7 @@ const Column = styled.div`
     }
   }
   &:nth-child(2) {
-    width: calc(100% - 350px);
+    width: calc(100% - 400px);
     @media only screen and (max-width: 1425px) {
       width: 100%;
     }
@@ -158,10 +155,7 @@ export default ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <div>
-            <ImageComponent thumbnail={thumbnail.fluid} />
-            <small style={{background: "white", padding: "5px", top: "0", fontSize: "10px"}}>Our images are under construction.</small>
-          </div>
+          <ImageComponent thumbnail={thumbnail.fluid} />
           {helperNode.childMarkdownRemark.html ? (
             <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
             </Content>
