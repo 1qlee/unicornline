@@ -6,7 +6,7 @@ import { Content } from "../content"
 import { Hero } from "../hero"
 import { Table, TableLegend, TableHead, TableData } from "../table"
 import { Title, Subtitle } from "../title"
-import ImageComponent from "../productimage"
+import ProductImages from "../productimages"
 import BreadCrumb from "../breadcrumb"
 import Main from "../main"
 import NavBar from "../nav"
@@ -141,7 +141,7 @@ export default ({ data }) => {
   const { specs } = product
   const { helperNode } = product
   const { pricing } = product
-  const { thumbnail } = product
+  const { images } = product
   const category = product.category.toLowerCase()
 
   return (
@@ -155,7 +155,7 @@ export default ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <ImageComponent thumbnail={thumbnail.fluid} />
+          <ProductImages images={images} />
           {helperNode.childMarkdownRemark.html ? (
             <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
             </Content>
@@ -326,7 +326,8 @@ export const query = graphql`
           rawMarkdownBody
         }
       }
-      thumbnail {
+      images {
+        url
         fluid(maxWidth: 600) {
           ...GatsbyDatoCmsFluid
         }
