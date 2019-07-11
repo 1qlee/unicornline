@@ -33,21 +33,18 @@ const MenuItem = styled.div`
   justify-content: center;
   flex-direction: column;
   padding: 1rem;
+  border: 2px solid transparent;
   position: relative;
   width: 100%;
-  transition: background-color 0.2s ease, box-shadow 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, transform 0.2s ease;
   p {
     margin-top: 1rem;
     color: ${styles.white.normal};
   }
   &:hover {
-    background-color: ${styles.white.normal};
-    box-shadow: 0 4px 20px ${styles.shadow};
+    border-color: ${styles.white.normal};
     transform: translateY(-5px);
     cursor: pointer;
-    p {
-      color: ${styles.text};
-    }
   }
 `
 

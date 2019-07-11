@@ -12,7 +12,7 @@ const ThumbnailRow = styled.div`
 const Thumbnail = styled.figure`
   width: 6rem;
   padding: 0.3rem;
-  border: 2px solid transparent;
+  border: 2px solid ${styles.shadow};
   transition: border 0.3s ease;
   &.is-active {
     border-color: ${styles.white.normal};
@@ -23,7 +23,7 @@ const Thumbnail = styled.figure`
   &:hover {
     cursor: pointer;
     &:not(.is-active) {
-      border-color: ${styles.white.light};
+      border-color: ${styles.grey.hover};
     }
   }
 `
