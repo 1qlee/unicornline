@@ -7,7 +7,7 @@ const Hero = styled.div`
   &.is-flex-start {
     justify-content: flex-start;
     height: auto;
-    padding: 1rem;
+    padding: 1rem 2rem;
   }
   &.has-items-centered {
     display: flex;

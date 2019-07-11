@@ -46,30 +46,22 @@ const NavLink = styled.div`
   }
 `
 
-const NavLogo = styled.div`
-  img {
-    background: #fff;
-    border-radius: 100%;
-    box-shadow: 0 3px 12px 0 ${styles.shadow};
-    display: block;
-    height: 60px;
-    transition: box-shadow 0.2s;
-    width: 60px;
-  }
+const NavLogo = styled.img`
+  filter: drop-shadow(1px 1px 4px #d9d9d9);
+  display: block;
+  height: 60px;
+  transition: filter 0.2s;
+  width: 60px;
   &:hover {
-    img {
-      box-shadow: 0 6px 12px 1px ${styles.shadow}, 0 -3px 12px 1px ${styles.shadow};
-    }
+    filter: drop-shadow(1px 1px 6px #d9d9d9);
   }
   &:active {
-    img {
-      box-shadow: 0 1px 4px 1px ${styles.shadow};
-    }
+    filter: drop-shadow(1px 1px 2px #888);
   }
 `
 
 const NavLeft = styled.div`
-  margin-right: 1rem;
+  margin: 0 1rem;
 `
 
 const NavRight = styled.div`
@@ -447,9 +439,7 @@ class NavBar extends React.Component {
         <NavContainer>
           <NavLeft>
             <Link to="/">
-              <NavLogo>
-                <img src={this.props.logo.url} alt={this.props.logo.alt} title={this.props.logo.title} />
-              </NavLogo>
+              <NavLogo src={this.props.logo.url} alt={this.props.logo.alt} title={this.props.logo.title}  />
             </Link>
           </NavLeft>
           {this.state.showHamburger ? (

@@ -29,7 +29,8 @@ const ProductLeft = styled.div`
   padding: 1rem;
   width: 600px;
   @media only screen and (max-width: 1200px) {
-    width: 300px;
+    margin: 0 auto;
+    width: 400px;
   }
 `
 

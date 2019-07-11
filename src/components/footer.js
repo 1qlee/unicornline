@@ -11,6 +11,14 @@ const Footer = styled.div`
 
 const FooterSection = styled.section`
   display: flex;
+  &:first-child {
+    margin-right: 1rem;
+  }
+  &.custom {
+    @media only screen and (max-width: 920px) {
+      flex-direction: column;
+    }
+  }
 `
 
 const FooterColumn = styled.div`
@@ -76,7 +84,7 @@ export default () => (
             <div color={styles.white.normal} fontSize="1.3rem" dangerouslySetInnerHTML={{ __html: data.datoCmsCompany.blurbNode.childMarkdownRemark.html }}></div>
           </FooterColumn>
         </FooterSection>
-        <FooterSection>
+        <FooterSection className="custom">
           <FooterColumn>
             <p>
               <FooterLink color={styles.white.normal} background={styles.white.normal} title="Phone" href={"tel:" + data.datoCmsCompany.phone} target="_blank" rel="noopener noreferrer">
