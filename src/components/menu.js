@@ -22,6 +22,9 @@ const MenuItemWrapper = styled.div`
   margin-bottom: -1px;
   margin-right: -1px;
   width: 25%;
+  @media only screen and (max-width: 865px) {
+    width: 33%;
+  }
   @media only screen and (max-width: 620px) {
     width: 50%;
   }

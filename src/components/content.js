@@ -23,10 +23,10 @@ const Content = styled.div`
   }
   &.is-helper {
     background-color: ${styles.white.normal};
-    border-left: 0.5rem solid ${styles.yellow};
+    border-left: 0.3rem solid ${styles.yellow};
     border-radius: 0.2rem;
-    box-shadow: 0 4px 10px ${styles.shadow};
-    padding: 1rem;
+    font-size: 0.6rem;
+    padding: 0.5rem;
   }
   li {
     line-height: 1.5;

@@ -49,7 +49,7 @@ class ProductImages extends React.Component {
 
   render() {
     return (
-      <div>
+      <div style={{marginBottom:"1rem"}}>
         <MainProductImage>
           <Img fluid={this.state.currentImage.fluid} />
         </MainProductImage>
