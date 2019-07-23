@@ -69,10 +69,6 @@ export const query = graphql`
           id
           name
           description
-          photo {
-            id
-            url
-          }
         }
       }
     }
