@@ -116,7 +116,7 @@ const NavMenu = styled.div`
   &.menu-pos-4 {
     transform: translateX(-110px);
     width: 252px;
-    height: 417px;
+    height: 450px;
     a {
       &:hover {
         background-color: ${styles.blue};

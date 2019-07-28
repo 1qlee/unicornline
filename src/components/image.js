@@ -7,17 +7,6 @@ const ImageContainer = styled.figure`
   position: relative;
 `
 
-const CardImage = styled.img`
-  display: block;
-  height: 360px;
-  width: 100%;
-  margin-bottom: 1rem;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  pointer-events: none;
-  user-select: none;
-`
-
 const Image = styled.img`
   border: 0.3rem solid white;
   box-shadow: 0 10px 30px 0 ${styles.shadow};
@@ -41,4 +30,4 @@ const Image = styled.img`
 `
 
 
-export { ImageContainer, CardImage, Image }
+export { ImageContainer, Image }

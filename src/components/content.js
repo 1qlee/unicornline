@@ -2,6 +2,7 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Content = styled.div`
+  position: relative;
   h1,h2,h3,h4,h5,h6 {
     margin-bottom: 1rem;
   }
@@ -27,6 +28,11 @@ const Content = styled.div`
     border-radius: 0.2rem;
     font-size: 0.6rem;
     padding: 0.5rem;
+  }
+  &.is-card {
+    margin-top: 2rem;
+    right: 4rem;
+    background: ${styles.white.normal};
   }
   li {
     line-height: 1.5;

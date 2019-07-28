@@ -1,20 +1,35 @@
 import styled from "styled-components"
 import styles from "../css/styles"
 
+const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`
+
+const CardImage = styled.img`
+  display: block;
+  width: 325px;
+`
+
 const Card = styled.div`
   animation: 1s ease forwards scaleIn;
-  color: ${styles.white.normal};
-  background: ${styles.primary.normal};
+  background-color: ${styles.primary.normal};
   box-shadow: 0 2px 6px 0 ${styles.shadow};
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  min-width: 325px;
+  margin-bottom: 1rem;
   opacity: 0;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+  width: 32%;
+  h3 {
+    color: ${styles.primary.normal};
+    text-transform: uppercase;
+    font-size: 0.875rem;
+  }
+  a {
+    display: flex;
+  }
   &:not(:last-child) {
-    margin-right: 2rem;
+    margin-right: 1rem;
   }
   &:active {
     box-shadow: 0 2px 6px 0 ${styles.shadow};
@@ -23,25 +38,40 @@ const Card = styled.div`
     box-shadow: 0 4px 20px 0 ${styles.shadow};
     transform: translateY(5px);
   }
-  &:nth-child(3) {
+  &:nth-child(2) {
     animation-delay: 0.1s;
-    background: ${styles.green};
+    background-color: ${styles.green};
+    h3 {
+      color: ${styles.green};
+    }
+  }
+  &:nth-child(3) {
+    animation-delay: 0.2s;
+    background-color: ${styles.purple};
+    h3 {
+      color: ${styles.purple};
+    }
   }
   &:nth-child(4) {
-    animation-delay: 0.2s;
-    background: ${styles.purple};
+    animation-delay: 0.3s;
+    background-color: ${styles.blue};
+    h3 {
+      color: ${styles.blue};
+    }
   }
   &:nth-child(5) {
-    animation-delay: 0.3s;
-    background: ${styles.blue};
+    animation-delay: 0.4s;
+    background-color: ${styles.orange};
+    h3 {
+      color: ${styles.orange};
+    }
   }
   &:nth-child(6) {
-    animation-delay: 0.4s;
-    background: ${styles.orange};
-  }
-  &:nth-child(7) {
     animation-delay: 0.5s;
-    background: ${styles.primary.dark};
+    background-color: ${styles.primary.dark};
+    h3 {
+      color: ${styles.primary.dark};
+    }
   }
   @keyframes scaleIn {
     0% {
@@ -111,4 +141,4 @@ const CardButton = styled.div`
   }
 `
 
-export {Card, CardButton, CardFooter}
+export {CardContainer, Card, CardImage, CardButton, CardFooter}

@@ -10,39 +10,34 @@ const Table = styled.table`
   width: auto;
 `
 
-const TableLegend = styled.div`
+const TableLegend = styled.thead`
   background-color: transparent;
   color: ${styles.text};
-  font-weight: 700;
-  font-size: 0.7rem;
   display: flex;
+  font-size: 0.7rem;
+  font-weight: 700;
   margin-bottom: 5px;
   position: relative;
   text-transform: uppercase;
   vertical-align: middle;
-  span {
+  th {
     background-color: ${styles.white.normal};
-    padding: 0.1rem 0.3rem;
-    margin-right: 5px;
-    border-radius: 5px;
+    padding: 0.2rem 0.5rem;
     &.digital-legend {
       background-color: ${styles.yellow};
-      color: ${styles.text};
     }
     &.offset-legend {
       background-color: ${styles.lime};
-      color: ${styles.text};
     }
     &.inkjet-legend {
       background-color: ${styles.ice};
-      color: ${styles.text};
     }
   }
 `
 
 const TableHead = styled.thead`
   th {
-    background-color: ${styles.grey.hover};
+    background-color: ${styles.white.normal};
     border-bottom: 1px solid transparent;
     color: ${styles.text};
     padding: 0.5rem !important;

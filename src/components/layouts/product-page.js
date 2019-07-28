@@ -6,6 +6,7 @@ import { Content } from "../content"
 import { Hero } from "../hero"
 import { Table, TableLegend, TableHead, TableData } from "../table"
 import { Title, Subtitle } from "../title"
+import { ButtonTray, Button } from "../button"
 import ProductImages from "../productimages"
 import BreadCrumb from "../breadcrumb"
 import Main from "../main"
@@ -75,7 +76,7 @@ const ProductInfo = styled.div`
     font-family: "Karla";
     font-size: 0.875rem;
     font-weight: 700;
-    padding: 0.2rem 0.5rem;
+    padding: 0.1rem 0.3rem;
     text-transform: uppercase;
     &.accessory {
       color: ${styles.primary.normal};
@@ -165,13 +166,18 @@ export default ({ data }) => {
           )}
         </ProductLeft>
         <ProductRight>
-          <Hero className="is-flex-start">
+          <Hero className="is-product">
             <Content>
               <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
               <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.white.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>
           </Hero>
+          <ButtonTray>
+            <Button href="">Template</Button>
+            <Button href="">Full Catalog</Button>
+            <Button href="">Catalog Page</Button>
+          </ButtonTray>
           <ProductInfo>
             <Columns>
               <Column>
@@ -214,7 +220,7 @@ export default ({ data }) => {
                       null
                     )}
                     <Content>
-                      <h3 className={category}>Option</h3>
+                      <h3 className={category}>Options</h3>
                       <ul>
                         {specs.option.map((item) => (
                           <li key={item}>{item}</li>
@@ -231,28 +237,30 @@ export default ({ data }) => {
                     <Table>
                       {pricing.legend ? (
                         <TableLegend>
-                          {pricing.legend.map((value) => {
-                            if (value === "Digital") {
-                              return (
-                                <span key={value} className="digital-legend">Digital</span>
-                              )
-                            }
-                            else if (value === "Offset") {
-                              return (
-                                <span key={value} className="offset-legend">Offset</span>
-                              )
-                            }
-                            else if (value === "Inkjet") {
-                              return (
-                                <span key={value} className="inkjet-legend">Inkjet</span>
-                              )
-                            }
-                            else {
-                              return (
-                                <span key={value}>{value}</span>
-                              )
-                            }
-                          })}
+                          <tr>
+                            {pricing.legend.map((value) => {
+                              if (value === "Digital") {
+                                return (
+                                  <th key={value} className="digital-legend">Digital</th>
+                                )
+                              }
+                              else if (value === "Offset") {
+                                return (
+                                  <th key={value} className="offset-legend">Offset</th>
+                                )
+                              }
+                              else if (value === "Inkjet") {
+                                return (
+                                  <th key={value} className="inkjet-legend">Inkjet</th>
+                                )
+                              }
+                              else {
+                                return (
+                                  <th key={value}>{value}</th>
+                                )
+                              }
+                            })}
+                          </tr>
                         </TableLegend>
                       ) : (
                         null
