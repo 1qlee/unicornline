@@ -144,6 +144,9 @@ export default ({ data }) => {
   const { helperNode } = product
   const { pricing } = product
   const { images } = product
+  const { template } = product
+  const { catalogPage } = product
+  const { fullCatalog } = product
   const category = product.category.toLowerCase()
 
   return (
@@ -174,9 +177,21 @@ export default ({ data }) => {
             </Content>
           </Hero>
           <ButtonTray>
-            <Button href="">Template</Button>
-            <Button href="">Full Catalog</Button>
-            <Button href="">Catalog Page</Button>
+            {template ? (
+              <Button href={template.url} target="_blank" rel="noopener noreferrer">Template</Button>
+            ) : (
+              null
+            )}
+            {catalogPage ? (
+              <Button href={catalogPage.url} target="_blank" rel="noopener noreferrer">Catalog Page</Button>
+            ) : (
+              null
+            )}
+            {fullCatalog ? (
+              <Button href={fullCatalog.url} target="_blank" rel="noopener noreferrer">Full Catalog</Button>
+            ) : (
+              null
+            )}
           </ButtonTray>
           <ProductInfo>
             <Columns>
@@ -329,6 +344,15 @@ export const query = graphql`
       category
       slug
       description
+      template {
+        url
+      }
+      catalogPage {
+        url
+      }
+      fullCatalog {
+        url
+      }
       helperNode {
         childMarkdownRemark {
           html

@@ -6,7 +6,7 @@ const ButtonTray = styled.div`
   padding: 1rem;
 `
 
-const Button = styled.button`
+const Button = styled.a`
   background: transparent;
   border: 1px solid ${styles.white.normal};
   color: ${styles.white.normal};

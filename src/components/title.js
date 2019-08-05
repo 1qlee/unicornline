@@ -1,16 +1,15 @@
 import styled from "styled-components"
 
 const Title = styled.h1`
+  background: ${props => props.background ? props.background : null};
+  border-bottom: ${props => props.border || "none"};
   color: ${props => props.color};
-  display: inline-block;
   font-size: ${props => props.fontSize};
   font-weight: ${props => props.fontWeight};
   line-height: ${props => props.fontSize};
-  border-bottom: ${props => props.border || "none"};
+  margin-bottom: ${props => props.marginBottom ? props.marginBottom : "1rem"};
   position: relative;
-  & + p {
-    margin-top: 1rem;
-  }
+  text-align: ${props => props.align ? props.align : null};
 `
 
 const Subtitle = styled.div`

@@ -8,28 +8,30 @@ const CardContainer = styled.div`
 
 const CardImage = styled.img`
   display: block;
-  width: 325px;
+  width: 100%;
+`
+
+const CardContent = styled.div`
+  padding: 1rem 2rem;
 `
 
 const Card = styled.div`
   animation: 1s ease forwards scaleIn;
-  background-color: ${styles.primary.normal};
+  background-color: ${styles.white.normal};
   box-shadow: 0 2px 6px 0 ${styles.shadow};
   margin-bottom: 1rem;
   opacity: 0;
   position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
-  width: 32%;
+  width: calc(33% - 2rem);
   h3 {
     color: ${styles.primary.normal};
-    text-transform: uppercase;
-    font-size: 0.875rem;
   }
-  a {
-    display: flex;
+  @media only screen and (max-width: 900px) {
+    width: calc(50% - 2rem);
   }
   &:not(:last-child) {
-    margin-right: 1rem;
+    margin-right: 2rem;
   }
   &:active {
     box-shadow: 0 2px 6px 0 ${styles.shadow};
@@ -40,35 +42,30 @@ const Card = styled.div`
   }
   &:nth-child(2) {
     animation-delay: 0.1s;
-    background-color: ${styles.green};
     h3 {
       color: ${styles.green};
     }
   }
   &:nth-child(3) {
     animation-delay: 0.2s;
-    background-color: ${styles.purple};
     h3 {
       color: ${styles.purple};
     }
   }
   &:nth-child(4) {
     animation-delay: 0.3s;
-    background-color: ${styles.blue};
     h3 {
       color: ${styles.blue};
     }
   }
   &:nth-child(5) {
     animation-delay: 0.4s;
-    background-color: ${styles.orange};
     h3 {
       color: ${styles.orange};
     }
   }
   &:nth-child(6) {
     animation-delay: 0.5s;
-    background-color: ${styles.primary.dark};
     h3 {
       color: ${styles.primary.dark};
     }
@@ -141,4 +138,4 @@ const CardButton = styled.div`
   }
 `
 
-export {CardContainer, Card, CardImage, CardButton, CardFooter}
+export {CardContainer, Card, CardImage, CardContent, CardButton, CardFooter}
