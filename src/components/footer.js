@@ -10,6 +10,9 @@ const Footer = styled.div`
   padding: 6rem 2rem;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 920px) {
+    flex-direction: column;
+  }
 `
 
 const FooterSection = styled.section`
@@ -21,10 +24,8 @@ const FooterSection = styled.section`
   &:nth-child(2) {
     flex: 0.5;
   }
-  &.custom {
-    @media only screen and (max-width: 920px) {
-      flex-direction: column;
-    }
+  @media only screen and (max-width: 920px) {
+    flex-direction: column;
   }
 `
 
