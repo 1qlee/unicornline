@@ -1,10 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import { CardContainer, CardContent, Card, CardImage } from "../components/card"
 import { Content} from "../components/content"
 import { Hero, HeroContent } from "../components/hero"
 import { Title } from "../components/title"
+import CardMenu from "../components/card"
 import Footer from "../components/footer"
 import Main from "../components/main"
 import NavBar from "../components/nav"
@@ -26,24 +26,10 @@ export default ({ data }) => (
     <Hero>
       <HeroContent>
         <Content className="fade-in-down">
-          <Title align="center" marginBottom="2rem" color={styles.white.normal} fontSize="4rem" fontWeight="400">Unicorn Line</Title>
+          <Title align="center" marginBottom="4rem" color={styles.white.normal} fontSize="4rem" fontWeight="400">Unicorn Line</Title>
         </Content>
       </HeroContent>
-      <CardContainer>
-        {data.allDatoCmsCategory.edges.map(({node: category}) => (
-          <Card key={category.name}>
-            <Link key={category.name} to={`/${category.name.toLowerCase()}`}>
-              <CardImage src="https://images.unsplash.com/photo-1554757387-fa0367573d09?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=600&h=400&fit=crop&ixid=eyJhcHBfaWQiOjF9" alt="Dummy" />
-              <CardContent>
-                <Content>
-                  <h3 style={{fontFamily: "Karla", fontWeight:"700", pointerEvents: "none"}}>{category.name}</h3>
-                  <p style={{pointerEvents: "none"}}>{category.description}</p>
-                </Content>
-              </CardContent>
-            </Link>
-          </Card>
-        ))}
-      </CardContainer>
+      <CardMenu categories={data.allDatoCmsCategory.edges}/>
     </Hero>
     <Footer />
   </Main>

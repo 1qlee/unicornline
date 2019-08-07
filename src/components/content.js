@@ -22,10 +22,10 @@ const Content = styled.div`
     align-items: center;
   }
   &.is-helper {
-    background-color: ${styles.white.normal};
-    border-left: 0.3rem solid ${styles.yellow};
-    border-radius: 0.2rem;
-    font-size: 0.6rem;
+    background-color: ${styles.paleYellow};
+    border: 1px solid ${styles.grey.normal};
+    border-radius: 0.8rem 0 0.8rem 0;
+    font-size: 0.7rem;
     padding: 0.5rem;
   }
   li {

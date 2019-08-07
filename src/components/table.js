@@ -41,6 +41,7 @@ const TableHead = styled.thead`
     border-bottom: 1px solid transparent;
     color: ${styles.text};
     padding: 0.5rem !important;
+    text-align: center;
     vertical-align: middle;
     &.digital {
       background-color: ${styles.yellow};
