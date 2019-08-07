@@ -1,10 +1,10 @@
 import React from "react"
-import { graphql, Link } from "gatsby"
+import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
-import { CardContainer, CardHeader, Card, CardImage } from "../components/card"
 import { Content} from "../components/content"
 import { Hero, HeroContent } from "../components/hero"
 import { Title } from "../components/title"
+import CardMenu from "../components/card"
 import Footer from "../components/footer"
 import Main from "../components/main"
 import NavBar from "../components/nav"
@@ -29,21 +29,7 @@ export default ({ data }) => (
           <Title align="center" marginBottom="4rem" color={styles.white.normal} fontSize="4rem" fontWeight="400">Unicorn Line</Title>
         </Content>
       </HeroContent>
-      <CardContainer>
-        {data.allDatoCmsCategory.edges.map(({node: category}) => (
-          <Card key={category.name}>
-            <Link key={category.name} to={`/${category.name.toLowerCase()}`}>
-              <div style={{position:'relative'}}>
-                <CardImage src="https://dummyimage.com/365x205/e3dada/999" alt="Dummy" />
-                <CardHeader>{category.name}</CardHeader>
-              </div>
-              <Content style={{paddingTop: "1rem"}}>
-                <p>{category.description}</p>
-              </Content>
-            </Link>
-          </Card>
-        ))}
-      </CardContainer>
+      <CardMenu categories={data.allDatoCmsCategory.edges}/>
     </Hero>
     <Footer />
   </Main>

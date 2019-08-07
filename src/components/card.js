@@ -1,3 +1,7 @@
+import React from "react"
+import { Link } from "gatsby"
+import { Content} from "../components/content"
+
 import styled from "styled-components"
 import styles from "../css/styles"
 
@@ -102,60 +106,25 @@ const Card = styled.div`
   }
 `
 
-const CardFooter = styled.div`
-  padding: 1rem;
-`
+function CardMenu(props) {
+  return (
+    <CardContainer>
+      {props.categories.map(({node: category}) => (
+        <Card key={category.name}>
+          <Link key={category.name} to={`/${category.name.toLowerCase()}`}>
+            <div style={{position:'relative'}}>
+              <CardImage src="https://dummyimage.com/365x205/e3dada/999" alt="Dummy" />
+              <CardHeader>{category.name}</CardHeader>
+            </div>
+            <Content style={{paddingTop: "1rem"}}>
+              <p>{category.description}</p>
+            </Content>
+          </Link>
+        </Card>
+      ))}
+    </CardContainer>
+  )
+}
 
-const CardButton = styled.div`
-  border: 2px solid ${props => props.background};
-  color: ${props => props.background};
-  font-size: 0.8rem;
-  font-weight: 700;
-  letter-spacing: 1px;
-  padding: 1rem;
-  position: relative;
-  text-transform: uppercase;
-  &:hover,
-  &:focus {
-    background: ${props => props.background};
-    color: ${props => props.color};
-    border-color: ${props => props.color};
-    span {
-      &:first-child {
-        animation: 0.4s ease forwards buttonTextFadeOut;
-      }
-    }
-    span {
-      &:last-child {
-        animation: 0.3s ease 0.3s forwards buttonArrowFadeIn;
-      }
-    }
-  }
-  span {
-    &:last-child {
-      opacity: 0;
-      position: absolute;
-      right: 1rem;
-      top: 0.8rem;
-      font-size: 1rem;
-    }
-  }
-  @keyframes buttonTextFadeOut {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(200px);
-    }
-  }
-  @keyframes buttonArrowFadeIn {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-`
 
-export {CardContainer, CardHeader, Card, CardImage, CardButton, CardFooter}
+export default CardMenu
