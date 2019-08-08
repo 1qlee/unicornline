@@ -35,9 +35,10 @@ const Card = styled.div`
   animation: 1s ease forwards scaleIn;
   margin-bottom: 1rem;
   opacity: 0;
+  border: 1px solid transparent;
   padding: 1rem;
   position: relative;
-  transition: background-color 0.2s ease;
+  transition: border-color 0.2s ease;
   width: 33%;
   p {
     color: ${styles.white.normal};
@@ -56,12 +57,9 @@ const Card = styled.div`
     box-shadow: 0 2px 6px 0 ${styles.shadow};
   }
   &:hover {
-    background: ${styles.white.normal};
+    border-color: ${styles.white.normal};
     img {
       transform: scale(0.98);
-    }
-    p {
-      color: ${styles.grey.text};
     }
   }
   &:nth-child(2) {

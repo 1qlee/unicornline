@@ -3,11 +3,11 @@ import styled from "styled-components"
 const Hero = styled.div`
   background-color: ${props => props.color};
   position: relative;
-  padding: 2rem;
+  padding: 2rem 1rem;
   &.is-flex-start {
     justify-content: flex-start;
     height: auto;
-    padding: 1rem 2rem;
+    padding: 1rem;
   }
   &.is-product {
     padding: 1rem;

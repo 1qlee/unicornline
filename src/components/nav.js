@@ -61,7 +61,7 @@ const NavLogo = styled.img`
 `
 
 const NavLeft = styled.div`
-  margin: 0 1rem;
+  margin: 0;
 `
 
 const NavRight = styled.div`
