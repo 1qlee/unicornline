@@ -5,7 +5,7 @@ const Menu = styled.div`
   animation: scaleIn 0.4s both cubic-bezier(0.25, 0.46, 0.45, 0.94);
   display: flex;
   flex-wrap: wrap;
-  margin: 1rem 2rem;
+  margin: 1rem;
   @keyframes scaleIn {
     0% {
       opacity: 0;
@@ -25,8 +25,11 @@ const MenuItemWrapper = styled.div`
   @media only screen and (max-width: 905px) {
     width: 33%;
   }
-  @media only screen and (max-width: 620px) {
+  @media only screen and (max-width: 700px) {
     width: 50%;
+  }
+  @media only screen and (max-width: 450px) {
+    width: 100%;
   }
 `
 

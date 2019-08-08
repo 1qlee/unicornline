@@ -62,23 +62,23 @@ const FooterColumn = styled.div`
 
 const FooterLink = styled.a`
   color: ${styles.white.normal};
-  display: block;
+  display: inline-block;
   position: relative;
   z-index: 1;
   &:hover {
     &::before {
-      width: calc(100% + 10px);
+      width: 100%;
     }
   }
   &::before {
     content: "";
     position: absolute;
     background: ${styles.primary.normal};
-    left: -5px;
-    top: 0;
-    height: 100%;
+    left: 0;
+    bottom: -4px;
+    height: 3px;
     width: 0;
-    transition: width 0.2s ease-in-out;
+    transition: width 0.2s ease;
     z-index: -1;
   }
 `
