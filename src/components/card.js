@@ -111,7 +111,7 @@ function CardMenu(props) {
         <Card key={category.name}>
           <Link key={category.name} to={`/${category.name.toLowerCase()}`}>
             <div style={{position:'relative'}}>
-              <CardImage src="https://dummyimage.com/365x205/e3dada/999" alt="Dummy" />
+              <CardImage src={category.photo.url} alt={category.photo.alt} />
               <CardHeader>{category.name}</CardHeader>
             </div>
             <Content style={{paddingTop: "1rem"}}>
