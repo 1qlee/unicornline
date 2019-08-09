@@ -51,12 +51,9 @@ const Card = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
-  &:active {
-    box-shadow: 0 2px 6px 0 ${styles.shadow};
-  }
   &:hover {
     img {
-      transform: scale(0.95);
+      transform: scale(0.98);
     }
   }
   &:nth-child(2) {

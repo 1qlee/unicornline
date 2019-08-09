@@ -19,7 +19,7 @@ const Content = styled.div`
   }
   &.is-flex {
     display: flex;
-    align-items: center;
+    justify-content: center;
   }
   &.is-helper {
     background-color: ${styles.paleYellow};

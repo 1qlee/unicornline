@@ -25,8 +25,8 @@ export default ({ data }) => (
     <NavBar />
     <Hero>
       <HeroContent>
-        <Content className="fade-in-down">
-          <Title align="center" marginBottom="4rem" color={styles.white.normal} fontSize="4rem" fontWeight="400">Unicorn Line</Title>
+        <Content className="is-flex fade-in-down">
+          <Title marginBottom="2rem" color={styles.white.normal} fontSize="4rem" fontWeight="400">Unicorn Line</Title>
         </Content>
       </HeroContent>
       <CardMenu categories={data.allDatoCmsCategory.edges}/>
