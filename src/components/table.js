@@ -14,8 +14,7 @@ const TableLegend = styled.thead`
   background-color: transparent;
   color: ${styles.text};
   display: flex;
-  font-size: 0.7rem;
-  font-weight: 700;
+  font-size: 0.75rem;
   margin-bottom: 5px;
   position: relative;
   text-transform: uppercase;
@@ -23,6 +22,7 @@ const TableLegend = styled.thead`
   th {
     background-color: ${styles.white.normal};
     padding: 0.2rem 0.5rem;
+    font-weight: 400;
     &.digital-legend {
       background-color: ${styles.yellow};
     }
@@ -38,11 +38,12 @@ const TableLegend = styled.thead`
 const TableHead = styled.thead`
   th {
     background-color: ${styles.white.normal};
-    border-bottom: 1px solid transparent;
     color: ${styles.text};
     padding: 0.5rem !important;
-    text-align: center;
+    font-size: 0.75rem;
     vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: 400;
     &.digital {
       background-color: ${styles.yellow};
       color: ${styles.text};
@@ -59,7 +60,7 @@ const TableHead = styled.thead`
 `
 
 const TableData = styled.td`
-  border-color: ${styles.grey.border};
+  border-color: ${styles.white.light};
   border-width: 1px 0;
   border-style: solid;
   vertical-align: middle;

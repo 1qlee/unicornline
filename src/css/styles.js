@@ -24,7 +24,7 @@ const styles = {
   blue: "#526bc7",
   green: "#1d8151",
   orange: "#da3910",
-  yellow: "#E0BF2A",
+  yellow: "#ffe336",
   paleYellow: "#E5F0C1",
   skin: "#FBDBC1",
   pink: "#D700BF",
