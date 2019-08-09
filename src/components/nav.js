@@ -104,7 +104,7 @@ const NavMenu = styled.div`
     }
   }
   &.beauty-menu {
-    transform: translateX(-290px);
+    transform: translateX(-285px);
     width: 205px;
     height: 220px;
     a {
