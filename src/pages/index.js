@@ -5,7 +5,6 @@ import { Content} from "../components/content"
 import { Hero, HeroContent } from "../components/hero"
 import { Title } from "../components/title"
 import CardMenu from "../components/card"
-import Footer from "../components/footer"
 import Main from "../components/main"
 import NavBar from "../components/nav"
 
@@ -31,18 +30,11 @@ export default ({ data }) => (
       </HeroContent>
       <CardMenu categories={data.allDatoCmsCategory.edges}/>
     </Hero>
-    <Footer />
   </Main>
 )
 
 export const query = graphql`
   query IndexQuery {
-    datoCmsCompany {
-      logoLine {
-        alt
-        url
-      }
-    }
     allDatoCmsCategory {
       edges {
         node {
