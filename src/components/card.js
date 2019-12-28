@@ -51,12 +51,9 @@ const Card = styled.div`
   @media only screen and (max-width: 600px) {
     width: 100%;
   }
-  &:active {
-    box-shadow: 0 2px 6px 0 ${styles.shadow};
-  }
   &:hover {
     img {
-      transform: scale(0.95);
+      transform: scale(0.98);
     }
   }
   &:nth-child(2) {
@@ -108,7 +105,7 @@ function CardMenu(props) {
         <Card key={category.name}>
           <Link key={category.name} to={`/${category.name.toLowerCase()}`}>
             <div style={{position:'relative'}}>
-              <CardImage src="https://dummyimage.com/365x205/e3dada/999" alt="Dummy" />
+              <CardImage src={category.photo.url} alt={category.photo.alt} />
               <CardHeader>{category.name}</CardHeader>
             </div>
             <Content style={{paddingTop: "1rem"}}>

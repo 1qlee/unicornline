@@ -33,6 +33,10 @@ const ProductLeft = styled.div`
     margin: 0 auto;
     width: 400px;
   }
+  @media only screen and (max-width: 400px) {
+    margin: 0 auto;
+    width: 300px;
+  }
 `
 
 const ProductRight = styled.div`
@@ -173,7 +177,7 @@ export default ({ data }) => {
           <Hero className="is-product">
             <Content>
               <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
-              <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>{product.name}</Title>
+              <Title fontWeight="400" color={styles.white.normal}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.white.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>
           </Hero>

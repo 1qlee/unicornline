@@ -83,7 +83,7 @@ const NavMenu = styled.div`
   transition: transform 0.1s ease, width 0.1s ease, height 0.1s ease;
   will-change: transform, width, height;
   z-index: 99;
-  &.menu-pos-1 {
+  &.accessory-menu {
     transform: translateX(-356px);
     width: 428px;
     height: 382px;
@@ -93,38 +93,8 @@ const NavMenu = styled.div`
       }
     }
   }
-  &.menu-pos-2 {
-    transform: translateX(-230px);
-    width: 428px;
-    height: 350px;
-    a {
-      &:hover {
-        background-color: ${styles.green};
-      }
-    }
-  }
-  &.menu-pos-3 {
-    transform: translateX(-100px);
-    width: 459px;
-    height: 417px;
-    a {
-      &:hover {
-        background-color: ${styles.purple};
-      }
-    }
-  }
-  &.menu-pos-4 {
-    transform: translateX(-110px);
-    width: 252px;
-    height: 450px;
-    a {
-      &:hover {
-        background-color: ${styles.blue};
-      }
-    }
-  }
-  &.menu-pos-5 {
-    transform: translateX(-4rem);
+  &.award-menu {
+    transform: translateX(-395px);
     width: 155px;
     height: 242px;
     a {
@@ -133,13 +103,43 @@ const NavMenu = styled.div`
       }
     }
   }
-  &.menu-pos-6 {
-    transform: translateX(-24px);
-    width: 155px;
-    height: 242px;
+  &.beauty-menu {
+    transform: translateX(-285px);
+    width: 205px;
+    height: 220px;
     a {
       &:hover {
         background-color: ${styles.primary.dark};
+      }
+    }
+  }
+  &.creative-menu {
+    transform: translateX(-165px);
+    width: 252px;
+    height: 450px;
+    a {
+      &:hover {
+        background-color: ${styles.blue};
+      }
+    }
+  }
+  &.display-menu {
+    transform: translateX(-32px);
+    width: 459px;
+    height: 417px;
+    a {
+      &:hover {
+        background-color: ${styles.purple};
+      }
+    }
+  }
+  &.presentation-menu {
+    transform: translateX(-2rem);
+    width: 428px;
+    height: 350px;
+    a {
+      &:hover {
+        background-color: ${styles.green};
       }
     }
   }
@@ -181,8 +181,12 @@ const NavMenuArrow = styled.div`
   top: -8px;
   transform: translateX(-50%) rotate(45deg);
   width: 16px;
-  &.is-right {
-    right: 1rem;
+  &.is-presentation {
+    right: 40px;
+    left: auto;
+  }
+  &.is-display {
+    right: 150px;
     left: auto;
   }
 `
@@ -304,43 +308,16 @@ class NavMenuContainer extends React.Component {
     switch(this.props.category) {
       case "Accessory":
         return (
-          <NavMenu className="menu-col-2 menu-pos-1">
+          <NavMenu className="menu-col-2 accessory-menu">
             <NavMenuArrow />
             {this.props.accessory.edges.map(({node}) => (
               <Link key={node.id} to={"/accessory/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
-      case "Presentation":
-        return (
-          <NavMenu className="menu-col-2 menu-pos-2">
-            <NavMenuArrow />
-            {this.props.presentation.edges.map(({node}) => (
-              <Link key={node.id} to={"/presentation/" + node.slug}>{node.name}</Link>
-            ))}
-          </NavMenu>
-        )
-      case "Display":
-        return (
-          <NavMenu className="menu-col-2 menu-pos-3">
-            <NavMenuArrow />
-            {this.props.display.edges.map(({node}) => (
-              <Link key={node.id} to={"/display/" + node.slug}>{node.name}</Link>
-            ))}
-          </NavMenu>
-        )
-      case "Creative":
-        return (
-          <NavMenu className="menu-pos-4">
-            <NavMenuArrow />
-            {this.props.creative.edges.map(({node}) => (
-              <Link key={node.id} to={"/creative/" + node.slug}>{node.name}</Link>
-            ))}
-          </NavMenu>
-        )
       case "Award":
         return (
-          <NavMenu className="menu-pos-5">
+          <NavMenu className="award-menu">
             <NavMenuArrow />
             {this.props.award.edges.map(({node}) => (
               <Link key={node.id} to={"/award/" + node.slug}>{node.name}</Link>
@@ -349,10 +326,37 @@ class NavMenuContainer extends React.Component {
         )
       case "Beauty":
         return (
-          <NavMenu className="menu-col-2 menu-pos-6">
-            <NavMenuArrow className="is-right" />
+          <NavMenu className="menu-col-2 beauty-menu">
+            <NavMenuArrow />
             {this.props.beauty.edges.map(({node}) => (
               <Link key={node.id} to={"/beauty/" + node.slug}>{node.name}</Link>
+            ))}
+          </NavMenu>
+        )
+      case "Creative":
+        return (
+          <NavMenu className="creative-menu">
+            <NavMenuArrow />
+            {this.props.creative.edges.map(({node}) => (
+              <Link key={node.id} to={"/creative/" + node.slug}>{node.name}</Link>
+            ))}
+          </NavMenu>
+        )
+      case "Display":
+        return (
+          <NavMenu className="menu-col-2 display-menu">
+            <NavMenuArrow className="is-display" />
+            {this.props.display.edges.map(({node}) => (
+              <Link key={node.id} to={"/display/" + node.slug}>{node.name}</Link>
+            ))}
+          </NavMenu>
+        )
+      case "Presentation":
+        return (
+          <NavMenu className="menu-col-2 presentation-menu">
+            <NavMenuArrow className="is-presentation" />
+            {this.props.presentation.edges.map(({node}) => (
+              <Link key={node.id} to={"/presentation/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
@@ -539,7 +543,12 @@ export default () => (
             }
           }
         }
-        allDatoCmsCategory {
+        allDatoCmsCategory(
+          sort: {
+            fields: [name]
+            order: ASC
+          }
+        ) {
           edges {
             node {
               id

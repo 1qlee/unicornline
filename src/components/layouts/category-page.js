@@ -42,7 +42,7 @@ export default ({ data }) => {
         <Hero className="is-flex-start has-animation">
           <Content>
             <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={category.name} />
-            <Title fontSize="4rem" fontWeight="400" color={styles.white.normal}>{category.name}</Title>
+            <Title fontWeight="400" color={styles.white.normal}>{category.name}</Title>
             <Subtitle color={styles.white.normal}>{category.description}</Subtitle>
           </Content>
         </Hero>
