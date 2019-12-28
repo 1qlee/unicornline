@@ -104,9 +104,9 @@ const NavMenu = styled.div`
     }
   }
   &.beauty-menu {
-    transform: translateX(-285px);
-    width: 205px;
-    height: 220px;
+    transform: translateX(-203px);
+    width: 365px;
+    height: 325px;
     a {
       &:hover {
         background-color: ${styles.primary.dark};
@@ -327,7 +327,7 @@ class NavMenuContainer extends React.Component {
       case "Beauty":
         return (
           <NavMenu className="menu-col-2 beauty-menu">
-            <NavMenuArrow />
+            <NavMenuArrow className="is-beauty" />
             {this.props.beauty.edges.map(({node}) => (
               <Link key={node.id} to={"/beauty/" + node.slug}>{node.name}</Link>
             ))}
