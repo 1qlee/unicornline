@@ -340,7 +340,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Award":
         return (
-          <NavMenu className="menu-col-1 menu-pos-5">
+          <NavMenu className="menu-pos-5">
             <NavMenuArrow />
             {this.props.award.edges.map(({node}) => (
               <Link key={node.id} to={"/award/" + node.slug}>{node.name}</Link>
@@ -349,7 +349,7 @@ class NavMenuContainer extends React.Component {
         )
       case "Beauty":
         return (
-          <NavMenu className="menu-col-1 menu-pos-6">
+          <NavMenu className="menu-col-2 menu-pos-6">
             <NavMenuArrow className="is-right" />
             {this.props.beauty.edges.map(({node}) => (
               <Link key={node.id} to={"/beauty/" + node.slug}>{node.name}</Link>
