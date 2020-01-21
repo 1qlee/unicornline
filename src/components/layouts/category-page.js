@@ -82,7 +82,7 @@ export const query = graphql`
           name
           slug
           thumbnail {
-            fixed(width: 200, imgixParams: { fm: "png", auto: "compress" }) {
+            fixed(width: 200, height: 150, imgixParams: { fm: "png", auto: "compress" }) {
               ...GatsbyDatoCmsFixed
             }
           }

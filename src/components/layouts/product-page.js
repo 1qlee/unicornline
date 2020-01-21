@@ -149,6 +149,7 @@ export default ({ data }) => {
   const { helperNode } = product
   const { pricing } = product
   const { images } = product
+  const { thumbnail } = product
   const { template } = product
   const { catalogPage } = product
   const { fullCatalog } = product
@@ -165,7 +166,7 @@ export default ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <ProductImages images={images} />
+          <ProductImages images={images} thumbnails={thumbnail}/>
           {helperNode.childMarkdownRemark.html ? (
             <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
             </Content>
@@ -366,7 +367,7 @@ export const query = graphql`
       }
       images {
         url
-        fluid(maxWidth: 600) {
+        fluid {
           ...GatsbyDatoCmsFluid
         }
       }
