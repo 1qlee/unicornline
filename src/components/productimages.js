@@ -10,7 +10,7 @@ const ThumbnailRow = styled.div`
 `
 
 const Thumbnail = styled.figure`
-  width: 6rem;
+  width: 100px;
   padding: 0.3rem;
   border: 2px solid ${styles.shadow};
   transition: border 0.3s ease;
