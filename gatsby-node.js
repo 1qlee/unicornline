@@ -66,6 +66,12 @@ exports.createPages = ({ graphql, actions }) => {
           case "Award":
             createProductPage("award", product)
             break;
+          case "Health":
+            createProductPage("health", product)
+            break;
+          case "Lifestyle":
+            createProductPage("lifestyle", product)
+            break;
           default:
             createProductPage("product")
         }
@@ -74,28 +80,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
   }).then((categories) => {
     categories.map(({ node: category }) => {
-      switch(category.name) {
-        case "Beauty":
-          createCategoryPage("beauty", category.name)
-          break;
-        case "Accessory":
-          createCategoryPage("accessory", category.name)
-          break;
-        case "Presentation":
-          createCategoryPage("presentation", category.name)
-          break;
-        case "Display":
-          createCategoryPage("display", category.name)
-          break;
-        case "Creative":
-          createCategoryPage("creative", category.name)
-          break;
-        case "Award":
-          createCategoryPage("award", category.name)
-          break
-        default:
-          createCategoryPage("category")
-      }
+      createCategoryPage(category.name.toLowerCase(), category.name)
     })
   })
 }

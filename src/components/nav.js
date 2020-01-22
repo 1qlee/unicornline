@@ -351,6 +351,24 @@ class NavMenuContainer extends React.Component {
             ))}
           </NavMenu>
         )
+      case "Health":
+        return (
+          <NavMenu className="menu-col-2 health-menu">
+            <NavMenuArrow className="is-health" />
+            {this.props.presentation.edges.map(({node}) => (
+              <Link key={node.id} to={"/health/" + node.slug}>{node.name}</Link>
+            ))}
+          </NavMenu>
+        )
+      case "Lifestyle":
+        return (
+          <NavMenu className="menu-col-2 lifestyle-menu">
+            <NavMenuArrow className="is-lifestyle" />
+            {this.props.presentation.edges.map(({node}) => (
+              <Link key={node.id} to={"/lifestyle/" + node.slug}>{node.name}</Link>
+            ))}
+          </NavMenu>
+        )
       case "Presentation":
         return (
           <NavMenu className="menu-col-2 presentation-menu">
@@ -466,6 +484,8 @@ class NavBar extends React.Component {
                   creative={this.props.creative}
                   award={this.props.award}
                   beauty={this.props.beauty}
+                  lifestyle={this.props.lifestyle}
+                  health={this.props.health}
                 />
               ) : (
                 null
@@ -543,6 +563,24 @@ export default () => (
             }
           }
         }
+        allLifestyle:allDatoCmsProduct(sort: {fields: [name], order: ASC} filter: {category: {eq: "Lifestyle"}}) {
+          edges {
+            node {
+              id
+              name
+              slug
+            }
+          }
+        }
+        allHealth:allDatoCmsProduct(sort: {fields: [name], order: ASC} filter: {category: {eq: "Health"}}) {
+          edges {
+            node {
+              id
+              name
+              slug
+            }
+          }
+        }
         allDatoCmsCategory(
           sort: {
             fields: [name]
@@ -559,7 +597,7 @@ export default () => (
       }
     `}
     render={data => (
-      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} beauty={data.allBeauty} logo={data.datoCmsCompany.logo} />
+      <NavBar categories={data.allDatoCmsCategory} accessory={data.allAccessory} presentation={data.allPresentation} display={data.allDisplay} creative={data.allCreative} award={data.allAward} beauty={data.allBeauty} lifestyle={data.allLifestyle} health={data.allHealth} logo={data.datoCmsCompany.logo} />
     )}
   />
 )
