@@ -26,16 +26,16 @@ const TableLegend = styled.thead`
     padding: 0.2rem 0.5rem;
     font-weight: 400;
     &.digital-legend {
-      background-color: ${styles.yellow};
-      color: ${styles.text};
+      background-color: ${styles.primary.normal};
+      color: ${styles.white.normal};
     }
     &.offset-legend {
-      background-color: ${styles.lime};
-      color: ${styles.text};
+      background-color: ${styles.green};
+      color: ${styles.white.normal};
     }
     &.inkjet-legend {
-      background-color: ${styles.ice};
-      color: ${styles.text};
+      background-color: ${styles.blue};
+      color: ${styles.white.normal};
     }
   }
 `
@@ -50,16 +50,16 @@ const TableHead = styled.thead`
     text-transform: uppercase;
     font-weight: 400;
     &.digital {
-      background-color: ${styles.yellow};
-      color: ${styles.text};
+      background-color: ${styles.primary.normal};
+      color: ${styles.white.normal};
     }
     &.offset {
-      background-color: ${styles.lime};
-      color: ${styles.text};
+      background-color: ${styles.green};
+      color: ${styles.white.normal};
     }
     &.inkjet {
-      background-color: ${styles.ice};
-      color: ${styles.text};
+      background-color: ${styles.blue};
+      color: ${styles.white.normal};
     }
   }
 `

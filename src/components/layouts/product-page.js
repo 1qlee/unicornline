@@ -80,7 +80,7 @@ const ProductInfo = styled.div`
     display: inline-block;
     font-family: "Karla";
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: 400;
     margin-bottom: 1rem;
     padding: 0.1rem 0.3rem;
     text-transform: uppercase;
