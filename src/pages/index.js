@@ -25,7 +25,7 @@ export default ({ data }) => (
     <Hero>
       <HeroContent>
         <Content className="is-flex fade-in-down">
-          <Title marginBottom="2rem" color={styles.white.normal} fontWeight="400">Unicorn Line</Title>
+          <Title marginBottom="2rem" color={styles.text} fontWeight="400">Unicorn Line</Title>
         </Content>
       </HeroContent>
       <CardMenu categories={data.allDatoCmsCategory.edges}/>

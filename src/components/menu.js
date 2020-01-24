@@ -45,10 +45,10 @@ const MenuItem = styled.div`
   transition: border-color 0.2s ease, transform 0.2s ease;
   p {
     margin-top: 1rem;
-    color: ${styles.white.normal};
+    color: ${styles.text};
   }
   &:hover {
-    border-color: ${styles.white.normal};
+    border-color: ${styles.grey.border};
     transform: translateY(-5px);
     cursor: pointer;
   }

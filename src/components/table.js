@@ -2,7 +2,8 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Table = styled.table`
-  color: ${styles.white.normal};
+  border: 1px solid ${styles.grey.border};
+  color: ${styles.text};
   display: block;
   font-size: 0.75rem;
   overflow-x: auto;
@@ -20,25 +21,29 @@ const TableLegend = styled.thead`
   text-transform: uppercase;
   vertical-align: middle;
   th {
-    background-color: ${styles.white.normal};
+    background-color: ${styles.grey.dark};
+    color: ${styles.white.normal};
     padding: 0.2rem 0.5rem;
     font-weight: 400;
     &.digital-legend {
       background-color: ${styles.yellow};
+      color: ${styles.text};
     }
     &.offset-legend {
       background-color: ${styles.lime};
+      color: ${styles.text};
     }
     &.inkjet-legend {
       background-color: ${styles.ice};
+      color: ${styles.text};
     }
   }
 `
 
 const TableHead = styled.thead`
   th {
-    background-color: ${styles.white.normal};
-    color: ${styles.text};
+    background-color: ${styles.grey.dark};
+    color: ${styles.white.normal};
     padding: 0.5rem !important;
     font-size: 0.75rem;
     vertical-align: middle;

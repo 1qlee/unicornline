@@ -8,14 +8,14 @@ const ButtonTray = styled.div`
 
 const Button = styled.a`
   background: transparent;
-  border: 1px solid ${styles.white.normal};
-  color: ${styles.white.normal};
+  border: 1px solid ${styles.grey.normal};
+  color: ${styles.text};
   padding: 0.5rem;
   position: relative;
   font-family: "Karla";
   font-size: 0.875rem;
   &::before {
-    background: ${styles.white.normal};
+    background: ${styles.grey.light};
     content: "";
     height: 0;
     left: 0;
@@ -34,7 +34,7 @@ const Button = styled.a`
   &:hover {
     cursor: pointer;
     border-color: ${styles.grey.hover};
-    color: ${styles.grey.text};
+    color: ${styles.text};
     &::before {
       height: 100%;
     }

@@ -41,9 +41,9 @@ export default ({ data }) => {
       <CategoryContainer>
         <Hero className="is-flex-start has-animation">
           <Content>
-            <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={category.name} />
-            <Title fontWeight="400" color={styles.white.normal}>{category.name}</Title>
-            <Subtitle color={styles.white.normal}>{category.description}</Subtitle>
+            <BreadCrumb parent="Home" color={styles.grey.normal} hover={styles.text} category={category.name} />
+            <Title fontWeight="400" color={styles.text}>{category.name}</Title>
+            <Subtitle color={styles.grey.normal}>{category.description}</Subtitle>
           </Content>
         </Hero>
         <Menu className={category.name.toLowerCase()}>

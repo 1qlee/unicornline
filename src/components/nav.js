@@ -19,7 +19,7 @@ const NavContainer = styled.div`
 `
 
 const NavLink = styled.div`
-  color: ${styles.white.normal};
+  color: ${styles.text};
   font-size: 0.875rem;
   padding: 1rem;
   letter-spacing: 1px;
@@ -28,6 +28,7 @@ const NavLink = styled.div`
   text-align: center;
   &:hover {
     cursor: pointer;
+    color: ${styles.grey.normal};
   }
   &::before {
     content: "";
@@ -47,17 +48,10 @@ const NavLink = styled.div`
 `
 
 const NavLogo = styled.img`
-  filter: drop-shadow(1px 1px 4px #d9d9d9);
+  filter: drop-shadow(0 1px 5px ${styles.shadow});
   display: block;
   height: 60px;
-  transition: filter 0.2s;
   width: 60px;
-  &:hover {
-    filter: drop-shadow(1px 1px 6px #d9d9d9);
-  }
-  &:active {
-    filter: drop-shadow(1px 1px 2px #888);
-  }
 `
 
 const NavLeft = styled.div`
@@ -73,7 +67,7 @@ const NavRight = styled.div`
 const NavMenu = styled.div`
   background: ${styles.white.normal};
   border-radius: 0.3rem;
-  box-shadow: 0 5px 20px 0 ${styles.shadow}, 0 -1px 10px 0 ${styles.shadow};
+  box-shadow: 0 1px 4px 0 ${styles.shadow};
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
@@ -83,65 +77,51 @@ const NavMenu = styled.div`
   transition: transform 0.1s ease, width 0.1s ease, height 0.1s ease;
   will-change: transform, width, height;
   z-index: 99;
+  a {
+    &:hover {
+      background-color: ${styles.primary.normal};
+      color: ${styles.white.normal};
+    }
+  }
   &.accessory-menu {
-    transform: translateX(-356px);
+    transform: translateX(-545px);
     width: 428px;
     height: 382px;
-    a {
-      &:hover {
-        background-color: ${styles.primary.normal};
-      }
-    }
   }
   &.award-menu {
-    transform: translateX(-395px);
+    transform: translateX(-585px);
     width: 155px;
     height: 242px;
-    a {
-      &:hover {
-        background-color: ${styles.orange};
-      }
-    }
   }
   &.beauty-menu {
-    transform: translateX(-203px);
+    transform: translateX(-395px);
     width: 365px;
-    height: 325px;
-    a {
-      &:hover {
-        background-color: ${styles.primary.dark};
-      }
-    }
+    height: 180px;
   }
   &.creative-menu {
-    transform: translateX(-165px);
+    transform: translateX(-360px);
     width: 252px;
     height: 450px;
-    a {
-      &:hover {
-        background-color: ${styles.blue};
-      }
-    }
   }
   &.display-menu {
-    transform: translateX(-32px);
+    transform: translateX(-225px);
     width: 459px;
     height: 417px;
-    a {
-      &:hover {
-        background-color: ${styles.purple};
-      }
-    }
+  }
+  &.health-menu {
+    transform: translateX(-190px);
+    width: 220px;
+    height: 360px;
+  }
+  &.lifestyle-menu {
+    transform: translateX(-110px);
+    width: 195px;
+    height: 210px;
   }
   &.presentation-menu {
     transform: translateX(-2rem);
-    width: 428px;
-    height: 350px;
-    a {
-      &:hover {
-        background-color: ${styles.green};
-      }
-    }
+    width: 375px;
+    height: 320px;
   }
   &.menu-col-2 {
     a {
@@ -159,9 +139,6 @@ const NavMenu = styled.div`
     padding: 0.5rem 0.3rem;
     transition: color 0.1s ease, background-color 0.1s ease;
     width: 100%;
-    &:hover {
-      color: ${styles.white.normal};
-    }
     @keyframes fadeIn {
       0% {
         opacity: 0;
@@ -178,8 +155,10 @@ const NavMenuArrow = styled.div`
   height: 16px;
   left: 50%;
   position: absolute;
-  top: -8px;
+  top: -9px;
   transform: translateX(-50%) rotate(45deg);
+  border-left: 1px solid ${styles.grey.border};
+  border-top: 1px solid ${styles.grey.border};
   width: 16px;
   &.is-presentation {
     right: 40px;
@@ -216,7 +195,7 @@ const Hamburger = styled.div`
     }
   }
   span {
-    background: ${styles.white.normal};
+    background: ${styles.grey.dark};
     height: 1px;
     left: 4px;
     position: absolute;
@@ -353,25 +332,25 @@ class NavMenuContainer extends React.Component {
         )
       case "Health":
         return (
-          <NavMenu className="menu-col-2 health-menu">
+          <NavMenu className="health-menu">
             <NavMenuArrow className="is-health" />
-            {this.props.presentation.edges.map(({node}) => (
+            {this.props.health.edges.map(({node}) => (
               <Link key={node.id} to={"/health/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
       case "Lifestyle":
         return (
-          <NavMenu className="menu-col-2 lifestyle-menu">
+          <NavMenu className="lifestyle-menu">
             <NavMenuArrow className="is-lifestyle" />
-            {this.props.presentation.edges.map(({node}) => (
+            {this.props.lifestyle.edges.map(({node}) => (
               <Link key={node.id} to={"/lifestyle/" + node.slug}>{node.name}</Link>
             ))}
           </NavMenu>
         )
       case "Presentation":
         return (
-          <NavMenu className="menu-col-2 presentation-menu">
+          <NavMenu className="presentation-menu">
             <NavMenuArrow className="is-presentation" />
             {this.props.presentation.edges.map(({node}) => (
               <Link key={node.id} to={"/presentation/" + node.slug}>{node.name}</Link>

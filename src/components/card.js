@@ -39,10 +39,10 @@ const Card = styled.div`
   position: relative;
   width: 33%;
   p {
-    color: ${styles.white.normal};
+    color: ${styles.grey.text};
   }
   h3 {
-    background-color: ${styles.primary.normal};
+    background-color: ${styles.grey.dark};
     color: ${styles.white.normal};
   }
   @media only screen and (max-width: 900px) {
@@ -54,36 +54,6 @@ const Card = styled.div`
   &:hover {
     img {
       transform: scale(0.98);
-    }
-  }
-  &:nth-child(2) {
-    animation-delay: 0.1s;
-    h3 {
-      background-color: ${styles.green};
-    }
-  }
-  &:nth-child(3) {
-    animation-delay: 0.2s;
-    h3 {
-      background-color: ${styles.purple};
-    }
-  }
-  &:nth-child(4) {
-    animation-delay: 0.3s;
-    h3 {
-      background-color: ${styles.blue};
-    }
-  }
-  &:nth-child(5) {
-    animation-delay: 0.4s;
-    h3 {
-      background-color: ${styles.orange};
-    }
-  }
-  &:nth-child(6) {
-    animation-delay: 0.5s;
-    h3 {
-      background-color: ${styles.primary.dark};
     }
   }
   @keyframes scaleIn {

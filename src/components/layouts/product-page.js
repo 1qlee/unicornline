@@ -75,7 +75,8 @@ const ProductInfo = styled.div`
   position: relative;
   overflow-x: hidden;
   h3 {
-    background-color: ${styles.white.normal};
+    background-color: ${styles.grey.dark};
+    color: ${styles.white.normal};
     display: inline-block;
     font-family: "Karla";
     font-size: 0.875rem;
@@ -83,27 +84,9 @@ const ProductInfo = styled.div`
     margin-bottom: 1rem;
     padding: 0.1rem 0.3rem;
     text-transform: uppercase;
-    &.accessory {
-      color: ${styles.primary.normal};
-    }
-    &.presentation {
-      color: ${styles.green};
-    }
-    &.display {
-      color: ${styles.purple};
-    }
-    &.creative {
-      color: ${styles.blue};
-    }
-    &.award {
-      color: ${styles.orange};
-    }
-    &.beauty {
-      color: ${styles.primary.dark};
-    }
   }
   li {
-    color: ${styles.white.normal};
+    color: ${styles.text};
   }
 `
 
@@ -177,9 +160,9 @@ export default ({ data }) => {
         <ProductRight>
           <Hero className="is-product">
             <Content>
-              <BreadCrumb parent="Home" color={styles.white.normal} hover={styles.white.light} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
-              <Title fontWeight="400" color={styles.white.normal}>{product.name}</Title>
-              <Subtitle style={{maxWidth: "750px"}} color={styles.white.normal} fontSize="1.3rem">{product.description}</Subtitle>
+              <BreadCrumb parent="Home" color={styles.grey.normal} hover={styles.text} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
+              <Title fontWeight="400" color={styles.text}>{product.name}</Title>
+              <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>
           </Hero>
           <ButtonTray>
