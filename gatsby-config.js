@@ -5,7 +5,7 @@ module.exports = {
       options: {
         // You can find your read-only API token under the Settings > API tokens
         // section of your administrative area:
-        apiToken: process.env.DATO_API_TOKEN,
+        apiToken: "6098d2e6f04428a8eff81d3b83c099",
 
         // If you are working on development/staging environment, you might want to
         // preview the latest version of records instead of the published one:
@@ -37,8 +37,8 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
-          `Karla\:400,700`,
-          `Lora\:400,700`
+          `Alata\:400`,
+          `Raleway\:400,700`
         ]
       }
     },

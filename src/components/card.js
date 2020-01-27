@@ -20,12 +20,11 @@ const CardImage = styled.img`
 `
 
 const CardHeader = styled.h3`
-  font-family: "Karla";
-  font-weight: 400;
+  letter-spacing: 1px;
   text-transform: uppercase;
   line-height: 2;
   padding: 0 0.5rem;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   position: absolute;
   bottom: 1rem;
   left: -1rem;

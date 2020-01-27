@@ -78,15 +78,14 @@ const ProductInfo = styled.div`
     background-color: ${styles.grey.dark};
     color: ${styles.white.normal};
     display: inline-block;
-    font-family: "Karla";
-    font-size: 0.875rem;
-    font-weight: 400;
+    font-size: 0.8rem;
     margin-bottom: 1rem;
-    padding: 0.1rem 0.3rem;
+    letter-spacing: 1px;
+    padding: 0.3rem;
     text-transform: uppercase;
   }
   li {
-    color: ${styles.text};
+    color: ${styles.grey.normal};
   }
 `
 
@@ -161,7 +160,7 @@ export default ({ data }) => {
           <Hero className="is-product">
             <Content>
               <BreadCrumb parent="Home" color={styles.grey.normal} hover={styles.text} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
-              <Title fontWeight="400" color={styles.text}>{product.name}</Title>
+              <Title color={styles.text}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>
           </Hero>

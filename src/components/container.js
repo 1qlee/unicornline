@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import styles from "../css/styles"
 
 const Container = styled.div`
   max-width: 1200px;

@@ -20,7 +20,7 @@ const NavContainer = styled.div`
 
 const NavLink = styled.div`
   color: ${styles.text};
-  font-size: 0.875rem;
+  font-size: 0.8rem;
   padding: 1rem;
   letter-spacing: 1px;
   text-transform: uppercase;
@@ -84,44 +84,44 @@ const NavMenu = styled.div`
     }
   }
   &.accessory-menu {
-    transform: translateX(-545px);
+    transform: translateX(-515px);
     width: 428px;
     height: 382px;
   }
   &.award-menu {
-    transform: translateX(-585px);
+    transform: translateX(-550px);
     width: 155px;
     height: 242px;
   }
   &.beauty-menu {
-    transform: translateX(-395px);
+    transform: translateX(-365px);
     width: 365px;
     height: 180px;
   }
   &.creative-menu {
-    transform: translateX(-360px);
+    transform: translateX(-330px);
     width: 252px;
-    height: 450px;
+    height: 510px;
   }
   &.display-menu {
-    transform: translateX(-225px);
+    transform: translateX(-200px);
     width: 459px;
-    height: 417px;
+    height: 500px;
   }
   &.health-menu {
-    transform: translateX(-190px);
+    transform: translateX(-170px);
     width: 220px;
-    height: 360px;
+    height: 380px;
   }
   &.lifestyle-menu {
-    transform: translateX(-110px);
+    transform: translateX(-100px);
     width: 195px;
-    height: 210px;
+    height: 245px;
   }
   &.presentation-menu {
     transform: translateX(-2rem);
     width: 375px;
-    height: 320px;
+    height: 340px;
   }
   &.menu-col-2 {
     a {

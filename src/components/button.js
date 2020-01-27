@@ -12,7 +12,7 @@ const Button = styled.a`
   color: ${styles.text};
   padding: 0.5rem;
   position: relative;
-  font-family: "Karla";
+  font-family: "Alata";
   font-size: 0.875rem;
   &::before {
     background: ${styles.grey.light};
@@ -22,14 +22,16 @@ const Button = styled.a`
     position: absolute;
     top: 0;
     width: 100%;
-    transition: height 0.1s ease;
+    transition: height 0.2s ease;
   }
   &::after {
-    content: "";
+    content: "Download";
     position: absolute;
+    opacity: 0;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
+    transition: opacity 0.2s;
   }
   &:hover {
     cursor: pointer;
@@ -39,7 +41,7 @@ const Button = styled.a`
       height: 100%;
     }
     &::after {
-      content: "Download";
+      opacity: 1;
     }
   }
   &:not(:last-child) {

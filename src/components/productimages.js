@@ -7,15 +7,17 @@ const ThumbnailRow = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 `
 
 const Thumbnail = styled.figure`
-  width: 100px;
+  width: 60px;
   padding: 0.3rem;
-  border: 2px solid ${styles.shadow};
+  border: 2px solid ${styles.grey.border};
   transition: border 0.3s ease;
+  margin: 0.5rem;
   &.is-active {
-    border-color: ${styles.white.normal};
+    border-color: ${styles.grey.normal};
   }
   &:not(:last-child) {
     margin-right: 1rem;

@@ -6,13 +6,13 @@ body {
   font-weight: 400;
   min-height: 100%;
   text-rendering: optimizeLegibility;
-  font-family: 'Karla',-apple-system,'BlinkMacSystemFont','Georgia',sans-serif;
+  font-family: 'Alata',-apple-system,'BlinkMacSystemFont','Georgia',sans-serif;
   font-kerning: normal;
   color: #444;
 }
 
 h1,h2,h3 {
-  font-family: 'Lora','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial', serif;
+  font-family: 'Raleway','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial', serif;
 }
 
 p {
@@ -22,6 +22,12 @@ p {
 a {
   color: inherit;
   text-decoration: inherit;
+}
+
+th {
+  font-family: 'Raleway','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial', serif;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 section::-webkit-scrollbar {

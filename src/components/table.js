@@ -2,7 +2,6 @@ import styled from "styled-components"
 import styles from "../css/styles"
 
 const Table = styled.table`
-  border: 1px solid ${styles.grey.border};
   color: ${styles.text};
   display: block;
   font-size: 0.75rem;
@@ -21,10 +20,9 @@ const TableLegend = styled.thead`
   text-transform: uppercase;
   vertical-align: middle;
   th {
-    background-color: ${styles.grey.dark};
+    background-color: ${styles.grey.normal};
     color: ${styles.white.normal};
     padding: 0.2rem 0.5rem;
-    font-weight: 400;
     &.digital-legend {
       background-color: ${styles.primary.normal};
       color: ${styles.white.normal};
@@ -42,13 +40,11 @@ const TableLegend = styled.thead`
 
 const TableHead = styled.thead`
   th {
-    background-color: ${styles.grey.dark};
-    color: ${styles.white.normal};
     padding: 0.5rem !important;
     font-size: 0.75rem;
     vertical-align: middle;
+    text-align: center;
     text-transform: uppercase;
-    font-weight: 400;
     &.digital {
       background-color: ${styles.primary.normal};
       color: ${styles.white.normal};
