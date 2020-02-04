@@ -11,7 +11,7 @@ const ThumbnailRow = styled.div`
 `
 
 const Thumbnail = styled.figure`
-  width: 60px;
+  width: 80px;
   padding: 0.3rem;
   border: 2px solid ${styles.grey.border};
   transition: border 0.3s ease;
@@ -33,6 +33,9 @@ const Thumbnail = styled.figure`
 const MainProductImage = styled.figure`
   margin-bottom: 1rem;
   width: 100%;
+  .gatsby-image-wrapper {
+    height: 400px;
+  }
 `
 
 class ProductImages extends React.Component {
@@ -53,12 +56,12 @@ class ProductImages extends React.Component {
     return (
       <div style={{marginBottom:"1rem"}}>
         <MainProductImage>
-          <Img fluid={this.state.currentImage.fluid} />
+          <Img fluid={this.state.currentImage.fluid} alt={this.state.currentImage.alt} imgStyle={{objectFit:"contain"}} />
         </MainProductImage>
         <ThumbnailRow>
           {this.state.allImages.map((image, index) => (
             <Thumbnail key={index} className={this.state.activeImage === index ? "is-active" : null} onClick={() => this.handleClick(index)}>
-              <Img fluid={image.fluid} />
+              <Img fluid={image.fluid} alt={image.alt} />
             </Thumbnail>
           ))}
         </ThumbnailRow>

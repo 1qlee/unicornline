@@ -18,6 +18,9 @@ const styles = {
     normal: "#fff",
     light: "rgba(255,255,255,0.72)"
   },
+  digital: "#b4638a",
+  offset: "#5cbc68",
+  inkjet: "#009edb",
   shadow: "rgba(0,0,0,0.3)",
   text: "#444",
   purple: "#7e63b0",
@@ -27,7 +30,6 @@ const styles = {
   yellow: "#ffe336",
   paleYellow: "#E5F0C1",
   skin: "#FBDBC1",
-  pink: "#D700BF",
   lime: "#b9ffb9",
   ice: "#ccfdfc"
 }

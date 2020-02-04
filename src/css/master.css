@@ -11,8 +11,13 @@ body {
   color: #444;
 }
 
-h1,h2,h3 {
+h1,h2 {
   font-family: 'Raleway','Avenir Next','Helvetica Neue','Segoe UI','Helvetica','Arial', serif;
+}
+
+h3 {
+  font-family: 'Alata',-apple-system,'BlinkMacSystemFont','Georgia',sans-serif;
+  font-weight: 400;
 }
 
 p {

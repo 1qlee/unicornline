@@ -20,22 +20,22 @@ const TableLegend = styled.thead`
   text-transform: uppercase;
   vertical-align: middle;
   th {
-    background-color: ${styles.grey.normal};
-    color: ${styles.white.normal};
     padding: 0.2rem 0.5rem;
     &.digital-legend {
-      background-color: ${styles.primary.normal};
-      color: ${styles.white.normal};
+      color: ${styles.digital};
     }
     &.offset-legend {
-      background-color: ${styles.green};
-      color: ${styles.white.normal};
+      color: ${styles.offset};
     }
     &.inkjet-legend {
-      background-color: ${styles.blue};
-      color: ${styles.white.normal};
+      color: ${styles.inkjet};
     }
   }
+`
+
+const Droplet = styled.span`
+  color: transparent;
+  text-shadow: 0 0 0 ${props => props.color};
 `
 
 const TableHead = styled.thead`
@@ -46,26 +46,23 @@ const TableHead = styled.thead`
     text-align: center;
     text-transform: uppercase;
     &.digital {
-      background-color: ${styles.primary.normal};
+      background-color: ${styles.digital};
       color: ${styles.white.normal};
     }
     &.offset {
-      background-color: ${styles.green};
+      background-color: ${styles.offset};
       color: ${styles.white.normal};
     }
     &.inkjet {
-      background-color: ${styles.blue};
+      background-color: ${styles.inkjet};
       color: ${styles.white.normal};
     }
   }
 `
 
 const TableData = styled.td`
-  border-color: ${styles.white.light};
-  border-width: 1px 0;
-  border-style: solid;
-  vertical-align: middle;
   padding: 0.5rem !important;
+  vertical-align: middle;
 `
 
-export {Table, TableLegend, TableHead, TableData}
+export {Table, TableLegend, TableHead, TableData, Droplet}

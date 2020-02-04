@@ -91,7 +91,7 @@ const NavMenu = styled.div`
   &.award-menu {
     transform: translateX(-550px);
     width: 155px;
-    height: 242px;
+    height: 280px;
   }
   &.beauty-menu {
     transform: translateX(-365px);
@@ -191,7 +191,7 @@ const Hamburger = styled.div`
   }
   &:hover {
     span {
-      background: ${styles.white.light};
+      background: ${styles.grey.normal};
     }
   }
   span {
@@ -215,14 +215,20 @@ const Hamburger = styled.div`
 
 const HamburgerDropdown = styled.div`
   background: ${styles.white.normal};
-  border-bottom: 3px solid ${styles.grey.normal};
   border-radius: 0.2rem;
-  box-shadow: 0 4px 20px 0 ${styles.shadow};
+  box-shadow: 0 50px 100px -20px rgba(50,50,93,.25), 0 30px 60px -30px rgba(0,0,0,.3), 0 -18px 60px -10px rgba(0,0,0,.025);
   position: absolute;
   right: 0.5rem;
   top: 100%;
   width: calc(100% - 1rem);
   z-index: 99;
+  h3 {
+    padding: 1rem;
+  }
+  .nav-link-wrapper {
+    display: block;
+    width: 50%;
+  }
   .nav-link {
     display: block;
     padding: 1rem;
@@ -243,6 +249,13 @@ const HamburgerDropdown = styled.div`
   }
 `
 
+const HamburgerItems = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+`
+
 // Nav hamburger menu component
 class HamburgerMenu extends React.Component {
   state = {
@@ -260,11 +273,14 @@ class HamburgerMenu extends React.Component {
       <div>
         {this.state.isActive ? (
           <HamburgerDropdown>
-            {this.props.categories.edges.map(({node}) => (
-              <Link key={node.id} to={`/${node.name.toLowerCase()}`}>
-                <NavLink className="nav-link">{node.name}</NavLink>
-              </Link>
-            ))}
+            <h3>Product Categories</h3>
+            <HamburgerItems>
+              {this.props.categories.edges.map(({node}) => (
+                <Link className="nav-link-wrapper" key={node.id} to={`/${node.name.toLowerCase()}`}>
+                  <NavLink className="nav-link">{node.name}</NavLink>
+                </Link>
+              ))}
+            </HamburgerItems>
           </HamburgerDropdown>
         ) : (
           null

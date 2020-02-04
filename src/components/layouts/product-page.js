@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Content } from "../content"
 import { Hero } from "../hero"
-import { Table, TableLegend, TableHead, TableData } from "../table"
+import { Table, TableLegend, TableHead, TableData, Droplet } from "../table"
 import { Title, Subtitle } from "../title"
 import { ButtonTray, Button } from "../button"
 import ProductImages from "../productimages"
@@ -157,7 +157,7 @@ export default ({ data }) => {
           )}
         </ProductLeft>
         <ProductRight>
-          <Hero className="is-product">
+          <Hero>
             <Content>
               <BreadCrumb parent="Home" color={styles.grey.normal} hover={styles.text} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
               <Title color={styles.text}>{product.name}</Title>
@@ -244,17 +244,26 @@ export default ({ data }) => {
                             {pricing.legend.map((value) => {
                               if (value === "Digital") {
                                 return (
-                                  <th key={value} className="digital-legend">Digital</th>
+                                  <th key={value} className="digital-legend">
+                                    <Droplet role="img" aria-label="digital" color={styles.digital}>&#128167;</Droplet>
+                                    Digital
+                                  </th>
                                 )
                               }
                               else if (value === "Offset") {
                                 return (
-                                  <th key={value} className="offset-legend">Offset</th>
+                                  <th key={value} className="offset-legend">
+                                    <Droplet role="img" aria-label="offset" color={styles.offset}>&#128167;</Droplet>
+                                    Offset
+                                  </th>
                                 )
                               }
                               else if (value === "Inkjet") {
                                 return (
-                                  <th key={value} className="inkjet-legend">Inkjet</th>
+                                  <th key={value} className="inkjet-legend">
+                                    <Droplet role="img" aria-label="inkjet" color={styles.inkjet}>&#128167;</Droplet>
+                                    Inkjet
+                                  </th>
                                 )
                               }
                               else {
@@ -349,7 +358,8 @@ export const query = graphql`
       }
       images {
         url
-        fluid {
+        alt
+        fluid(maxWidth: 600) {
           ...GatsbyDatoCmsFluid
         }
       }
