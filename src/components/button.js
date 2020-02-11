@@ -7,9 +7,9 @@ const ButtonTray = styled.div`
 `
 
 const Button = styled.a`
-  background: transparent;
-  border: 1px solid ${styles.grey.normal};
-  color: ${styles.text};
+  background: ${styles.primary.normal};
+  border: 1px solid ${styles.white.normal};
+  color: ${styles.white.normal};
   padding: 0.5rem;
   position: relative;
   font-family: "Alata";
@@ -21,8 +21,8 @@ const Button = styled.a`
     left: 0;
     position: absolute;
     top: 0;
-    width: 100%;
-    transition: height 0.2s ease;
+    width: 0;
+    transition: height 0.2s, width 0.2s;
   }
   &::after {
     content: "Download";
@@ -39,6 +39,7 @@ const Button = styled.a`
     color: ${styles.text};
     &::before {
       height: 100%;
+      width: 100%;
     }
     &::after {
       opacity: 1;
