@@ -43,8 +43,7 @@ const TableHead = styled.thead`
     padding: 0.5rem !important;
     font-size: 0.75rem;
     vertical-align: middle;
-    text-align: center;
-    text-transform: uppercase;
+    text-align: left;
     &.digital {
       background-color: ${styles.digital};
       color: ${styles.white.normal};
@@ -60,9 +59,20 @@ const TableHead = styled.thead`
   }
 `
 
+const TableBody = styled.tbody`
+  tr {
+    border-top: 1px solid ${styles.grey.border};
+    border-bottom: 1px solid ${styles.grey.border};
+    &:hover {
+      background-color: ${styles.grey.hover};
+    }
+  }
+`
+
 const TableData = styled.td`
   padding: 0.5rem !important;
   vertical-align: middle;
+  text-align: left;
 `
 
-export {Table, TableLegend, TableHead, TableData, Droplet}
+export {Table, TableLegend, TableHead, TableBody, TableData, Droplet}

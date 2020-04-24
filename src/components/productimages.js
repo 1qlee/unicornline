@@ -16,8 +16,11 @@ const Thumbnail = styled.figure`
   border: 2px solid ${styles.grey.border};
   transition: border 0.3s ease;
   margin: 0.5rem;
+  .gatsby-image-wrapper {
+    height: 40px;
+  }
   &.is-active {
-    border-color: ${styles.grey.normal};
+    border-color: ${styles.grey.dark};
   }
   &:not(:last-child) {
     margin-right: 1rem;
@@ -25,7 +28,7 @@ const Thumbnail = styled.figure`
   &:hover {
     cursor: pointer;
     &:not(.is-active) {
-      border-color: ${styles.grey.hover};
+      border-color: ${styles.grey.normal};
     }
   }
 `
@@ -61,7 +64,7 @@ class ProductImages extends React.Component {
         <ThumbnailRow>
           {this.state.allImages.map((image, index) => (
             <Thumbnail key={index} className={this.state.activeImage === index ? "is-active" : null} onClick={() => this.handleClick(index)}>
-              <Img fluid={image.fluid} alt={image.alt} />
+              <Img fluid={image.fluid} alt={image.alt} imgStyle={{objectFit:"contain"}} />
             </Thumbnail>
           ))}
         </ThumbnailRow>

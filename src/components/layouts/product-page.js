@@ -4,7 +4,7 @@ import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
 import { Content } from "../content"
 import { Hero } from "../hero"
-import { Table, TableLegend, TableHead, TableData, Droplet } from "../table"
+import { Table, TableLegend, TableHead, TableBody, TableData, Droplet } from "../table"
 import { Title, Subtitle } from "../title"
 import { ButtonTray, Button } from "../button"
 import ProductImages from "../productimages"
@@ -75,13 +75,10 @@ const ProductInfo = styled.div`
   position: relative;
   overflow-x: hidden;
   h3 {
-    background-color: ${styles.grey.dark};
-    color: ${styles.white.normal};
-    display: inline-block;
-    font-size: 0.8rem;
+    color: black;
+    font-size: 0.85rem;
     margin-bottom: 1rem;
     letter-spacing: 1px;
-    padding: 0.3rem;
     text-transform: uppercase;
   }
   li {
@@ -159,7 +156,7 @@ export default ({ data }) => {
         <ProductRight>
           <Hero>
             <Content>
-              <BreadCrumb parent="Home" color={styles.grey.normal} hover={styles.text} category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
+              <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
               <Title color={styles.text}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>
@@ -308,7 +305,7 @@ export default ({ data }) => {
                         )}
                       </TableHead>
                       {pricing.values ? (
-                        <tbody>
+                        <TableBody>
                           {pricing.values.map((value) => (
                             <tr key={value}>
                               {value.map((data, index) => (
@@ -316,7 +313,7 @@ export default ({ data }) => {
                               ))}
                             </tr>
                           ))}
-                        </tbody>
+                        </TableBody>
                       ) : (
                         null
                       )}
