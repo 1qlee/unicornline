@@ -42,8 +42,33 @@ const TocHeader = styled.h3`
   font-weight: 400;
   color: ${styles.white.normal};
   padding: 0.5rem;
+  position: relative;
   margin-left: -0.5rem;
   margin-bottom: 1rem;
+  min-width: 100px;
+  transition: padding 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
+  &:hover {
+    background-color: ${styles.primary.dark};
+    box-shadow: 0 2px 6px ${styles.shadow};
+    transform: translateY(-1px);
+    padding: 0.5rem 0.5rem 0.5rem 1rem;
+    &::before {
+      opacity: 1;
+      transform: translateX(-1rem);
+    }
+  }
+  &:active {
+    transform: translateY(0);
+  }
+  &::before {
+    content: "\u2192";
+    position: absolute;
+    right: 0;
+    transform: translateX(-1.5rem);
+    top: 0.5rem;
+    opacity: 0;
+    transition: opacity 0.2s, transform 0.2s;
+  }
 `
 
 export default () => (
@@ -79,7 +104,9 @@ export default () => (
       <StyledTableOfContents>
         {data.allDatoCmsCategory.edges.map(({ node: category }) => (
           <TocGroup key={category.id}>
-            <TocHeader>{category.name}</TocHeader>
+            <Link to={"/" + category.name.toLowerCase()}>
+              <TocHeader>{category.name}</TocHeader>
+            </Link>
             {data.allDatoCmsProduct.edges.map(({ node: product }) => (
               <>
                 {product.category === category.name ? (

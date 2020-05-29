@@ -47,29 +47,32 @@ exports.createPages = ({ graphql, actions }) => {
     `).then(result => {
       result.data.allDatoCmsProduct.edges.map(({ node: product}) => {
         switch(product.category) {
-          case "Beauty":
-            createProductPage("beauty", product)
-            break;
           case "Accessory":
             createProductPage("accessory", product)
             break;
-          case "Presentation":
-            createProductPage("presentation", product)
+          case "Award":
+            createProductPage("award", product)
             break;
-          case "Display":
-            createProductPage("display", product)
+          case "Beauty":
+            createProductPage("beauty", product)
             break;
           case "Creative":
             createProductPage("creative", product)
             break;
-          case "Award":
-            createProductPage("award", product)
+          case "Display":
+            createProductPage("display", product)
             break;
           case "Health":
             createProductPage("health", product)
             break;
           case "Lifestyle":
             createProductPage("lifestyle", product)
+            break;
+          case "Presentation":
+            createProductPage("presentation", product)
+            break;
+          case "PPE":
+            createProductPage("beauty", product)
             break;
           default:
             createProductPage("product")
