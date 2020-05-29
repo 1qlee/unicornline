@@ -72,7 +72,7 @@ exports.createPages = ({ graphql, actions }) => {
             createProductPage("presentation", product)
             break;
           case "PPE":
-            createProductPage("beauty", product)
+            createProductPage("ppe", product)
             break;
           default:
             createProductPage("product")
