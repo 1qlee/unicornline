@@ -183,32 +183,44 @@ export default ({ data }) => {
               <Column>
                 <Whole>
                   <Half>
-                    <Content>
-                      <h3 className={category}>Specifications</h3>
-                      <ul>
-                        {specs.list.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </Content>
-                    <Content>
-                      <h3 className={category}>Materials</h3>
-                      <ul>
-                        {specs.material.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </Content>
+                    {specs.list ? (
+                      <Content>
+                        <h3 className={category}>Specifications</h3>
+                        <ul>
+                          {specs.list.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </Content>
+                    ) : (
+                      null
+                    )}
+                    {specs.material ? (
+                      <Content>
+                        <h3 className={category}>Materials</h3>
+                        <ul>
+                          {specs.material.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </Content>
+                    ) : (
+                      null
+                    )}
                   </Half>
                   <Half>
-                    <Content>
-                      <h3 className={category}>Printing</h3>
-                      <ul>
-                        {specs.printing.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </Content>
+                    {specs.printing ? (
+                      <Content>
+                        <h3 className={category}>Printing</h3>
+                        <ul>
+                          {specs.printing.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </Content>
+                    ) : (
+                      null
+                    )}
                     {specs.custom ? (
                       <Content>
                         <h3 className={category}>Custom Shape</h3>
@@ -219,14 +231,18 @@ export default ({ data }) => {
                     ) : (
                       null
                     )}
-                    <Content>
-                      <h3 className={category}>Options</h3>
-                      <ul>
-                        {specs.option.map((item) => (
-                          <li key={item}>{item}</li>
-                        ))}
-                      </ul>
-                    </Content>
+                    {specs.option ? (
+                      <Content>
+                        <h3 className={category}>Options</h3>
+                        <ul>
+                          {specs.option.map((item) => (
+                            <li key={item}>{item}</li>
+                          ))}
+                        </ul>
+                      </Content>
+                    ) : (
+                      null
+                    )}
                   </Half>
                 </Whole>
               </Column>
