@@ -4,9 +4,11 @@ import { Helmet } from "react-helmet"
 import { Content} from "../components/content"
 import { Hero, HeroContent } from "../components/hero"
 import { Title } from "../components/title"
-import CardMenu from "../components/card"
 import Main from "../components/main"
 import NavBar from "../components/nav"
+import TableOfContents from "../components/tableOfContents"
+import Banner from "../components/banner"
+import Container from "../components/container"
 
 import styles from "../css/styles"
 import favicon from "../images/favicon.png"
@@ -17,25 +19,33 @@ export default ({ data }) => (
   <Main className="index is-flex-center">
     <Helmet>
       <meta charSet="utf-8" />
-      <title>Unicorn Line</title>
+      <title>{data.datoCmsCompany.company}</title>
       <link rel="canonical" href="https://unicornline.com" />
       <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
     <NavBar />
-    <Hero>
-      <HeroContent>
-        <Content className="is-flex fade-in-down">
-          <Title marginBottom="2rem" color={styles.text}>Unicorn Line</Title>
-        </Content>
-      </HeroContent>
-      <CardMenu categories={data.allDatoCmsCategory.edges}/>
-    </Hero>
+    <Container>
+      <Hero className="is-index">
+        <HeroContent>
+          <Content className="fade-in-down">
+            <Title color={styles.grey.dark}>{data.datoCmsCompany.company}</Title>
+            <p>{data.datoCmsCompany.blurb}</p>
+          </Content>
+        </HeroContent>
+      </Hero>
+      <Banner />
+      <TableOfContents />
+    </Container>
   </Main>
 )
 
 export const query = graphql`
-  query IndexQuery {
-    allDatoCmsCategory {
+  query TestQuery {
+    datoCmsCompany {
+      company
+      blurb
+    }
+    allDatoCmsCategory(sort: {fields: [name], order: ASC}) {
       edges {
         node {
           id
@@ -43,16 +53,10 @@ export const query = graphql`
           description
           photo {
             url
-            alt
+            fluid {
+              ...GatsbyDatoCmsFluid
+            }
           }
-        }
-      }
-    }
-    allDatoCmsProduct {
-      edges {
-        node {
-          id
-          name
         }
       }
     }

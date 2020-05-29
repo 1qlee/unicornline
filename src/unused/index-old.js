@@ -4,11 +4,9 @@ import { Helmet } from "react-helmet"
 import { Content} from "../components/content"
 import { Hero, HeroContent } from "../components/hero"
 import { Title } from "../components/title"
+import CardMenu from "../components/card"
 import Main from "../components/main"
 import NavBar from "../components/nav"
-import TableOfContents from "../components/tableOfContents"
-import Banner from "../components/banner"
-import Container from "../components/container"
 
 import styles from "../css/styles"
 import favicon from "../images/favicon.png"
@@ -19,33 +17,25 @@ export default ({ data }) => (
   <Main className="index is-flex-center">
     <Helmet>
       <meta charSet="utf-8" />
-      <title>{data.datoCmsCompany.company}</title>
+      <title>Unicorn Line</title>
       <link rel="canonical" href="https://unicornline.com" />
       <link rel="icon" type="image/png" href={favicon} />
     </Helmet>
     <NavBar />
-    <Container>
-      <Hero className="is-index">
-        <HeroContent>
-          <Content className="fade-in-down">
-            <Title color={styles.grey.dark}>{data.datoCmsCompany.company}</Title>
-            <p>{data.datoCmsCompany.blurb}</p>
-          </Content>
-        </HeroContent>
-      </Hero>
-      <Banner />
-      <TableOfContents />
-    </Container>
+    <Hero>
+      <HeroContent>
+        <Content className="is-flex fade-in-down">
+          <Title marginBottom="2rem" color={styles.text}>Unicorn Line</Title>
+        </Content>
+      </HeroContent>
+      <CardMenu categories={data.allDatoCmsCategory.edges}/>
+    </Hero>
   </Main>
 )
 
 export const query = graphql`
-  query TestQuery {
-    datoCmsCompany {
-      company
-      blurb
-    }
-    allDatoCmsCategory(sort: {fields: [name], order: ASC}) {
+  query IndexQuery {
+    allDatoCmsCategory {
       edges {
         node {
           id
@@ -53,10 +43,16 @@ export const query = graphql`
           description
           photo {
             url
-            fluid {
-              ...GatsbyDatoCmsFluid
-            }
+            alt
           }
+        }
+      }
+    }
+    allDatoCmsProduct {
+      edges {
+        node {
+          id
+          name
         }
       }
     }

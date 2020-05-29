@@ -464,28 +464,7 @@ class NavBar extends React.Component {
               <HamburgerMenu categories={this.props.categories} />
             </NavRight>
           ) : (
-            <NavRight onPointerLeave={this.handlePointerLeave}>
-              {this.props.categories.edges.map(({node}) => (
-                <Link key={node.id} to={`/${node.name.toLowerCase()}`}>
-                  <NavLink id={node.name} onPointerEnter={this.handlePointerEnter} className={"nav-item " + node.name.toLowerCase()}>{node.name}</NavLink>
-                </Link>
-              ))}
-              {this.state.showMenu ? (
-                <NavMenuContainer
-                  category={this.state.currentCategory}
-                  accessory={this.props.accessory}
-                  presentation={this.props.presentation}
-                  display={this.props.display}
-                  creative={this.props.creative}
-                  award={this.props.award}
-                  beauty={this.props.beauty}
-                  lifestyle={this.props.lifestyle}
-                  health={this.props.health}
-                />
-              ) : (
-                null
-              )}
-            </NavRight>
+            null
           )}
         </NavContainer>
       </Nav>
