@@ -132,6 +132,7 @@ export default ({ data }) => {
   const { template } = product
   const { catalogPage } = product
   const { fullCatalog } = product
+  const { videos } = product
   const category = product.category.toLowerCase()
 
   return (
@@ -245,6 +246,24 @@ export default ({ data }) => {
                     )}
                   </Half>
                 </Whole>
+                <div style={{marginTop:"1rem"}}>
+                  {videos ? (
+                    <>
+                      {videos.uids.map(uid => (
+                        <iframe
+                          allowfullscreen="allowfullscreen"
+                          mozallowfullscreen="mozallowfullscreen"
+                          msallowfullscreen="msallowfullscreen"
+                          oallowfullscreen="oallowfullscreen"
+                          webkitallowfullscreen="webkitallowfullscreen"
+                          height="300" src={"https://www.youtube.com/embed/" + uid}>
+                        </iframe>
+                      ))}
+                    </>
+                  ) : (
+                    null
+                  )}
+                </div>
               </Column>
               <Column>
                 {pricing ? (
@@ -378,6 +397,7 @@ export const query = graphql`
       }
       specs {list, material, printing, custom, option}
       pricing {legend, headings, values}
+      videos {uids}
     }
   }
 `
