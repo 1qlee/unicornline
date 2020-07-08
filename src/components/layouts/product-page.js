@@ -77,12 +77,16 @@ const ProductInfo = styled.div`
   h3 {
     color: black;
     font-size: 0.85rem;
-    margin-bottom: 1rem;
+    font-weight: 700;
     letter-spacing: 1px;
+    margin-bottom: 1rem;
     text-transform: uppercase;
   }
   li {
     color: ${styles.grey.normal};
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
   }
 `
 
