@@ -9,7 +9,7 @@ module.exports = {
       options: {
         // You can find your read-only API token under the Settings > API tokens
         // section of your administrative area:
-        apiToken: "6098d2e6f04428a8eff81d3b83c099",
+        apiToken: process.env.DATO_API_TOKEN || process.env.DEV_DATO_API_TOKEN,
 
         // If you are working on development/staging environment, you might want to
         // preview the latest version of records instead of the published one:
