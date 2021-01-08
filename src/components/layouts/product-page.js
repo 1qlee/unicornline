@@ -28,7 +28,7 @@ const ProductContainer = styled.div`
 
 const ProductLeft = styled.div`
   padding: 1rem;
-  width: 600px;
+  width: 800px;
   @media only screen and (max-width: 1200px) {
     margin: 0 auto;
     width: 400px;
