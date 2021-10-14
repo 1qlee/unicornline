@@ -399,9 +399,9 @@ export const query = graphql`
           ...GatsbyDatoCmsFluid
         }
       }
-      specs {list, material, printing, custom, option}
-      pricing {legend, headings, values}
-      videos {uids}
+      specs
+      pricing
+      videos
     }
   }
 `
