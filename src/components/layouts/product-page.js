@@ -251,7 +251,7 @@ export default ({ data }) => {
                   </Half>
                 </Whole>
                 <div style={{marginTop:"1rem"}}>
-                  {videos.uids ? (
+                  {videos && videos.uids && (
                     <>
                       {videos.uids.map(uid => (
                         <iframe
@@ -264,8 +264,6 @@ export default ({ data }) => {
                         </iframe>
                       ))}
                     </>
-                  ) : (
-                    null
                   )}
                 </div>
               </Column>
