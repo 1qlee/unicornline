@@ -253,7 +253,7 @@ export default ({ data }) => {
                   </Half>
                 </Whole>
                 <div style={{marginTop:"1rem"}}>
-                  {videos && videos.uids.length > 0 && (
+                  {videos && videos.uids && (
                     <>
                       {videos.uids.map(uid => (
                         <iframe
