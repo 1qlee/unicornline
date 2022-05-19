@@ -150,7 +150,7 @@ export default ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          {images && ( 
+          {images.length > 0 && ( 
             <ProductImages images={images} thumbnails={thumbnail}/> 
           )}
           {helperNode.childMarkdownRemark.html ? (
