@@ -150,7 +150,9 @@ export default ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <ProductImages images={images} thumbnails={thumbnail}/>
+          {images && ( 
+            <ProductImages images={images} thumbnails={thumbnail}/> 
+          )}
           {helperNode.childMarkdownRemark.html ? (
             <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
             </Content>
