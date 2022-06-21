@@ -51,7 +51,9 @@ connst CategoryPage = ({ data }) => {
             <MenuItemWrapper key={product.id}>
               <Link to={`/${category.name.toLowerCase()}/${product.slug}`}>
                 <MenuItem className="menu-item">
-                  <Img fixed={product.thumbnail.fixed} />
+                  {product.thumbnail && (
+                    <Img fixed={product.thumbnail.fixed} />
+                  )}
                   <Content className="has-text-centered">
                     <p className="label">{product.name}</p>
                   </Content>

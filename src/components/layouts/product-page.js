@@ -150,7 +150,9 @@ const ProductPage = ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          <ProductImages images={images} thumbnails={thumbnail}/>
+          {images.length > 0 && ( 
+            <ProductImages images={images} thumbnails={thumbnail}/> 
+          )}
           {helperNode.childMarkdownRemark.html ? (
             <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
             </Content>
@@ -251,7 +253,11 @@ const ProductPage = ({ data }) => {
                   </Half>
                 </Whole>
                 <div style={{marginTop:"1rem"}}>
+<<<<<<< HEAD
                   {videos ? (
+=======
+                  {videos && videos.uids && (
+>>>>>>> 021997ce26aedbfd103b5118ed423fa2bca09d71
                     <>
                       {videos.uids.map(uid => (
                         <iframe
@@ -264,8 +270,6 @@ const ProductPage = ({ data }) => {
                         </iframe>
                       ))}
                     </>
-                  ) : (
-                    null
                   )}
                 </div>
               </Column>
