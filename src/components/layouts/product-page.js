@@ -126,7 +126,7 @@ const Half = styled.div`
   }
 `
 
-export default ({ data }) => {
+const ProductPage = ({ data }) => {
   const product = data.datoCmsProduct
   const { specs } = product
   const { helperNode } = product
@@ -251,7 +251,7 @@ export default ({ data }) => {
                   </Half>
                 </Whole>
                 <div style={{marginTop:"1rem"}}>
-                  {videos.uids ? (
+                  {videos ? (
                     <>
                       {videos.uids.map(uid => (
                         <iframe
@@ -369,6 +369,8 @@ export default ({ data }) => {
     </Main>
   )
 }
+
+export default ProductPage
 
 export const query = graphql`
   query ProductQuery($slug: String!) {

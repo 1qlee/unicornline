@@ -15,7 +15,7 @@ import favicon from "../images/favicon.png"
 import "../css/reset.css"
 import "../css/master.css"
 
-export default ({ data }) => (
+const IndexPage = ({ data }) => (
   <Main className="index is-flex-center">
     <Helmet>
       <meta charSet="utf-8" />
@@ -38,6 +38,8 @@ export default ({ data }) => (
     </Container>
   </Main>
 )
+
+export default IndexPage
 
 export const query = graphql`
   query TestQuery {

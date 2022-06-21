@@ -25,7 +25,7 @@ const CategoryContainer = styled.div`
   }
 `
 
-export default ({ data }) => {
+connst CategoryPage = ({ data }) => {
   const category = data.datoCmsCategory
   const products = data.allDatoCmsProduct
 
@@ -64,6 +64,8 @@ export default ({ data }) => {
     </Main>
   )
 }
+
+export default CategoryPage
 
 export const query = graphql`
   query CategoryQuery($category: String!) {
