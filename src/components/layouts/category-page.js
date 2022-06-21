@@ -25,7 +25,7 @@ const CategoryContainer = styled.div`
   }
 `
 
-connst CategoryPage = ({ data }) => {
+const CategoryPage = ({ data }) => {
   const category = data.datoCmsCategory
   const products = data.allDatoCmsProduct
 

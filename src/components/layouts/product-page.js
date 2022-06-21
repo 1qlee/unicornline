@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -128,16 +128,20 @@ const Half = styled.div`
 
 const ProductPage = ({ data }) => {
   const product = data.datoCmsProduct
-  const { specs } = product
+  const specs = JSON.parse(data.datoCmsProduct.specs)
+  const pricing = JSON.parse(data.datoCmsProduct.pricing)
+  const videos = JSON.parse(data.datoCmsProduct.videos)
   const { helperNode } = product
-  const { pricing } = product
   const { images } = product
   const { thumbnail } = product
   const { template } = product
   const { catalogPage } = product
   const { fullCatalog } = product
-  const { videos } = product
   const category = product.category.toLowerCase()
+
+  useEffect(() => {
+    console.log(data.datoCmsProduct.helperNode)
+  }, data)
 
   return (
     <Main className={category}>
@@ -150,8 +154,8 @@ const ProductPage = ({ data }) => {
       <NavBar />
       <ProductContainer>
         <ProductLeft>
-          {images.length > 0 && ( 
-            <ProductImages images={images} thumbnails={thumbnail}/> 
+          {images.length > 0 && (
+            <ProductImages images={images} thumbnails={thumbnail}/>
           )}
           {helperNode.childMarkdownRemark.html ? (
             <Content className="is-helper" dangerouslySetInnerHTML={{ __html: data.datoCmsProduct.helperNode.childMarkdownRemark.html}}>
@@ -190,7 +194,7 @@ const ProductPage = ({ data }) => {
               <Column>
                 <Whole>
                   <Half>
-                    {specs.list ? (
+                    {specs.list && (
                       <Content>
                         <h3 className={category}>Specifications</h3>
                         <ul>
@@ -199,8 +203,6 @@ const ProductPage = ({ data }) => {
                           ))}
                         </ul>
                       </Content>
-                    ) : (
-                      null
                     )}
                     {specs.material ? (
                       <Content>
@@ -253,11 +255,7 @@ const ProductPage = ({ data }) => {
                   </Half>
                 </Whole>
                 <div style={{marginTop:"1rem"}}>
-<<<<<<< HEAD
-                  {videos ? (
-=======
                   {videos && videos.uids && (
->>>>>>> 021997ce26aedbfd103b5118ed423fa2bca09d71
                     <>
                       {videos.uids.map(uid => (
                         <iframe
