@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import styled from "styled-components"
 import { graphql } from "gatsby"
 import { Helmet } from "react-helmet"
@@ -27,7 +27,6 @@ const ProductContainer = styled.div`
 `
 
 const ProductLeft = styled.div`
-  padding: 1rem;
   width: 600px;
   @media only screen and (max-width: 1200px) {
     margin: 0 auto;
@@ -131,17 +130,8 @@ const ProductPage = ({ data }) => {
   const specs = JSON.parse(data.datoCmsProduct.specs)
   const pricing = JSON.parse(data.datoCmsProduct.pricing)
   const videos = JSON.parse(data.datoCmsProduct.videos)
-  const { helperNode } = product
-  const { images } = product
-  const { thumbnail } = product
-  const { template } = product
-  const { catalogPage } = product
-  const { fullCatalog } = product
+  const { helperNode, images, thumbnail, template, catalogPage, fullCatalog } = product
   const category = product.category.toLowerCase()
-
-  useEffect(() => {
-    console.log(data.datoCmsProduct.helperNode)
-  }, data)
 
   return (
     <Main className={category}>
@@ -399,7 +389,7 @@ export const query = graphql`
       images {
         url
         alt
-        fluid(maxWidth: 600) {
+        fluid {
           ...GatsbyDatoCmsFluid
         }
       }
