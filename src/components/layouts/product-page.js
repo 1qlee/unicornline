@@ -389,8 +389,14 @@ export const query = graphql`
       images {
         url
         alt
-        fluid {
+        fluid(
+          maxWidth: 1200,
+          maxHeight: 800
+        ) {
           ...GatsbyDatoCmsFluid
+        }
+        fixed(width: 66, height: 40) {
+          ...GatsbyDatoCmsFixed
         }
       }
       specs

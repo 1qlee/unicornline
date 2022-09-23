@@ -36,9 +36,6 @@ const Thumbnail = styled.figure`
 const MainProductImage = styled.figure`
   margin-bottom: 1rem;
   width: 100%;
-  .gatsby-image-wrapper {
-    height: 400px;
-  }
 `
 
 class ProductImages extends React.Component {
@@ -59,12 +56,12 @@ class ProductImages extends React.Component {
     return (
       <div style={{marginBottom:"1rem"}}>
         <MainProductImage>
-          <Img fluid={this.state.currentImage.fluid} alt={this.state.currentImage.alt} imgStyle={{objectFit:"contain"}} />
+          <Img fluid={this.state.currentImage.fluid} alt={this.state.currentImage.alt} objectFit="contain" />
         </MainProductImage>
         <ThumbnailRow>
           {this.state.allImages.map((image, index) => (
             <Thumbnail key={index} className={this.state.activeImage === index ? "is-active" : null} onClick={() => this.handleClick(index)}>
-              <Img fluid={image.fluid} alt={image.alt} imgStyle={{objectFit:"contain"}} />
+              <Img fixed={image.fixed} alt={image.alt} objectFit="contain" />
             </Thumbnail>
           ))}
         </ThumbnailRow>
