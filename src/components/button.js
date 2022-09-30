@@ -9,7 +9,7 @@ const ButtonTray = styled.div`
   padding: 1rem;
 `
 
-const StyledButton = styled.button`
+const StyledButton = styled.a`
   background-color: ${styles.primary.normal};
   border: none;
   display: inline-flex;
