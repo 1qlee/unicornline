@@ -1,53 +1,64 @@
+import React, { useState } from "react"
 import styled from "styled-components"
 import styles from "../css/styles"
+import Download from "../../assets/download.svg"
+import Icon from "../components/icon"
 
 const ButtonTray = styled.div`
   display: flex;
   padding: 1rem;
 `
 
-const Button = styled.a`
-  background: ${styles.primary.normal};
-  border: 1px solid ${styles.white.normal};
+const StyledButton = styled.button`
+  background-color: ${styles.primary.normal};
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
   color: ${styles.white.normal};
   padding: 0.5rem;
   position: relative;
   font-family: "Alata";
   font-size: 0.875rem;
-  &::before {
-    background: ${styles.grey.light};
-    content: "";
-    height: 0;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 0;
-    transition: height 0.2s, width 0.2s;
-  }
-  &::after {
-    content: "Download";
-    position: absolute;
-    opacity: 0;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.2s;
-  }
+  transition: background-color 0.2s;
   &:hover {
     cursor: pointer;
-    border-color: ${styles.grey.hover};
-    color: ${styles.text};
-    &::before {
-      height: 100%;
-      width: 100%;
-    }
-    &::after {
-      opacity: 1;
-    }
+    background-color: ${styles.primary.light};
   }
   &:not(:last-child) {
-    border-right-width: 0;
+    margin-right: 8px;
+  }
+  svg {
+    fill: #fff;
+    polyline {
+      fill: #fff;
+      stroke: #fff;
+    }
+    line {
+      fill: #fff;
+      stroke: #fff;
+    }
+    path {
+      stroke: #fff;
+    }
   }
 `
+
+function Button({ children }) {
+  const [isHovered, setIsHovered] = useState(false)
+
+  return (
+    <StyledButton>
+      <Icon
+        width="16px"
+        height="16px"
+        margin="0 4px 0 0"
+      >
+        <Download width="16" height="16" />
+      </Icon>
+      <span>{children}</span>
+    </StyledButton>
+  )
+}
 
 export { ButtonTray, Button }

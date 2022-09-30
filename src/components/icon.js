@@ -1,11 +1,12 @@
 import styled from "styled-components"
 
-const Icon = styled.a`
+const Icon = styled.span`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 36px;
-  width: 36px;
+  margin: ${props => props.margin};
+  height: ${props => props.height || "36px"};
+  width: ${props => props.width || "36px"};
 `
 
 export default Icon

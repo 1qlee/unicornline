@@ -127,6 +127,8 @@ const Half = styled.div`
 
 const ProductPage = ({ data }) => {
   const product = data.datoCmsProduct
+  const company = data.datoCmsCompany
+  const { terms } = company
   const specs = JSON.parse(data.datoCmsProduct.specs)
   const pricing = JSON.parse(data.datoCmsProduct.pricing)
   const videos = JSON.parse(data.datoCmsProduct.videos)
@@ -163,20 +165,17 @@ const ProductPage = ({ data }) => {
             </Content>
           </Hero>
           <ButtonTray>
-            {template ? (
+            {template && (
               <Button href={template.url} target="_blank" rel="noopener noreferrer">Template</Button>
-            ) : (
-              null
             )}
-            {catalogPage ? (
+            {terms && (
+              <Button href={terms.url} target="_blank" rel="noopener noreferrer">Terms</Button>
+            )}
+            {catalogPage && (
               <Button href={catalogPage.url} target="_blank" rel="noopener noreferrer">Catalog Page</Button>
-            ) : (
-              null
             )}
-            {fullCatalog ? (
+            {fullCatalog && (
               <Button href={fullCatalog.url} target="_blank" rel="noopener noreferrer">Full Catalog</Button>
-            ) : (
-              null
             )}
           </ButtonTray>
           <ProductInfo>
@@ -366,6 +365,11 @@ export default ProductPage
 
 export const query = graphql`
   query ProductQuery($slug: String!) {
+    datoCmsCompany {
+      terms {
+        url
+      }
+    }
     datoCmsProduct(slug: { eq: $slug }) {
       name
       category
