@@ -44,11 +44,13 @@ const StyledButton = styled.a`
   }
 `
 
-function Button({ children }) {
+function Button(props) {
   const [isHovered, setIsHovered] = useState(false)
 
   return (
-    <StyledButton>
+    <StyledButton
+      {...props}
+    >
       <Icon
         width="16px"
         height="16px"
@@ -56,7 +58,7 @@ function Button({ children }) {
       >
         <Download width="16" height="16" />
       </Icon>
-      <span>{children}</span>
+      <span>{props.children}</span>
     </StyledButton>
   )
 }
