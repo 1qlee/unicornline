@@ -39,6 +39,7 @@ exports.createPages = ({ graphql, actions }) => {
           edges {
             node {
               name
+              slug
               description
             }
           }
@@ -53,7 +54,7 @@ exports.createPages = ({ graphql, actions }) => {
     })
   }).then((categories) => {
     categories.map(({ node: category }) => {
-      createCategoryPage(category.name.toLowerCase(), category.name)
+      createCategoryPage(category.slug.toLowerCase(), category.name)
     })
   })
 }
