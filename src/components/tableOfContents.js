@@ -79,6 +79,7 @@ export default () => (
           edges {
             node {
               id
+              slug
               name
               description
               photo {
@@ -104,7 +105,7 @@ export default () => (
       <StyledTableOfContents>
         {data.allDatoCmsCategory.edges.map(({ node: category }) => (
           <TocGroup key={category.id}>
-            <Link to={"/" + category.name.toLowerCase()}>
+            <Link to={"/" + category.slug.toLowerCase()}>
               <TocHeader>{category.name}</TocHeader>
             </Link>
             {data.allDatoCmsProduct.edges.map(({ node: product }) => (
