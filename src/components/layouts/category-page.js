@@ -41,15 +41,15 @@ const CategoryPage = ({ data }) => {
       <CategoryContainer>
         <Hero className="is-flex-start has-animation">
           <Content>
-            <BreadCrumb parent="Home" category={category.name} />
+            <BreadCrumb parent="Home" categoryName={category.name} categorySlug={category.slug} />
             <Title color={styles.text}>{category.name}</Title>
             <Subtitle color={styles.grey.normal}>{category.description}</Subtitle>
           </Content>
         </Hero>
-        <Menu className={category.name.toLowerCase()}>
+        <Menu className={category.slug.toLowerCase()}>
           {products.edges.map(({ node: product }) => (
             <MenuItemWrapper key={product.id}>
-              <Link to={`/${category.name.toLowerCase()}/${product.slug}`}>
+              <Link to={`/${category.slug.toLowerCase()}/${product.slug}`}>
                 <MenuItem className="menu-item">
                   {product.thumbnail && (
                     <Img fixed={product.thumbnail.fixed} />
@@ -70,10 +70,11 @@ const CategoryPage = ({ data }) => {
 export default CategoryPage
 
 export const query = graphql`
-  query CategoryQuery($category: String!) {
-    datoCmsCategory(name: { eq: $category }) {
+  query CategoryQuery($category: String!, $slug: String!) {
+    datoCmsCategory(slug: { eq: $slug }) {
       name
       description
+      slug
     }
     allDatoCmsProduct(
       filter: {category: {eq: $category}},

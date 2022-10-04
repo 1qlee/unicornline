@@ -41,17 +41,15 @@ const TocHeader = styled.h3`
   font-family: "Alata";
   font-weight: 400;
   color: ${styles.white.normal};
-  padding: 0.5rem;
+  padding: 0.5rem 3rem 0.5rem 0.5rem;
   position: relative;
   margin-left: -0.5rem;
   margin-bottom: 1rem;
-  min-width: 100px;
   transition: padding 0.2s, background-color 0.2s, transform 0.2s, box-shadow 0.2s;
   &:hover {
     background-color: ${styles.primary.dark};
     box-shadow: 0 2px 6px ${styles.shadow};
     transform: translateY(-1px);
-    padding: 0.5rem 0.5rem 0.5rem 1rem;
     &::before {
       opacity: 1;
       transform: translateX(-1rem);
@@ -110,7 +108,7 @@ export default () => (
             </Link>
             {data.allDatoCmsProduct.edges.map(({ node: product }) => (
               <>
-                {product.category === category.name ? (
+                {product.category.toLowerCase() === category.name.toLowerCase() ? (
                   <Link key={product.id} to={"/" + product.category.toLowerCase() + "/" + product.slug} style={{color:"grey"}}>
                     <TocLink>{product.name}</TocLink>
                   </Link>

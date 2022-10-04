@@ -159,7 +159,7 @@ const ProductPage = ({ data }) => {
         <ProductRight>
           <Hero>
             <Content>
-              <BreadCrumb parent="Home" category={product.category} product={product.name} slug={product.slug}></BreadCrumb>
+              <BreadCrumb parent="Home" categorySlug={product.category} product={product.name} slug={product.slug}></BreadCrumb>
               <Title color={styles.text}>{product.name}</Title>
               <Subtitle style={{maxWidth: "750px"}} color={styles.grey.normal} fontSize="1.3rem">{product.description}</Subtitle>
             </Content>

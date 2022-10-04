@@ -34,6 +34,29 @@ const BreadCrumbContainer = styled.nav`
   }
 `
 
+function checkCategorySlug(props) {
+  if (!props.categoryName) {
+    let words = props.categorySlug.split("-")
+    let capitalizedString = ""
+
+    words.forEach((word, index) => {
+      console.log(word)
+      const capitalizedWord = word.charAt(0).toUpperCase() + word.slice(1)
+      if (index === 0) {
+        capitalizedString += capitalizedWord + " "
+      }
+      else {
+        capitalizedString += capitalizedWord
+      }
+    })
+
+    return capitalizedString
+  }
+  else {
+    return props.categoryName
+  }
+}
+
 function BreadCrumb(props) {
   return (
     <BreadCrumbContainer>
@@ -42,11 +65,11 @@ function BreadCrumb(props) {
           <Link className="first" to="/">{props.parent}</Link>
         </li>
         <li>
-          <Link to={"/" + props.category.substring(0).toLowerCase()}>{props.category}</Link>
+          <Link to={"/" + props.categorySlug.substring(0).toLowerCase()}>{checkCategorySlug(props)}</Link>
         </li>
         { props.product ? (
           <li>
-            <Link to={"/" + props.category.substring(0).toLowerCase() + "/" + props.slug}>{props.product}</Link>
+            <Link to={"/" + props.categorySlug.substring(0).toLowerCase() + "/" + props.slug}>{props.product}</Link>
           </li>
         ) : (
           null

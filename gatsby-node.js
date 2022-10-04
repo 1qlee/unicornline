@@ -5,11 +5,20 @@ exports.createPages = ({ graphql, actions }) => {
   const { createPage } = actions
 
   const createProductPage = (category, product) => {
+    let categorySlug = ""
+
+    if (/\s/.test(category)) {
+      categorySlug = category.split(" ").join("-")
+    }
+    else {
+      categorySlug = category
+    }
+
     createPage({
-      path: `${category}/${product.slug}`,
+      path: `${categorySlug}/${product.slug}`,
       component: path.resolve('./src/components/layouts/product-page.js'),
       context: {
-        slug: product.slug,
+        slug: product.slug, 
       },
     })
   }
@@ -19,6 +28,7 @@ exports.createPages = ({ graphql, actions }) => {
       path: slug,
       component: path.resolve('./src/components/layouts/category-page.js'),
       context: {
+        slug: slug,
         category: category,
       },
     })
@@ -47,8 +57,7 @@ exports.createPages = ({ graphql, actions }) => {
       }
     `).then(result => {
       result.data.allDatoCmsProduct.edges.map(({ node: product}) => {
-        const category = product.category.toLowerCase()
-        createProductPage(category, product)
+        createProductPage(product.category.toLowerCase(), product)
       })
       resolve(result.data.allDatoCmsCategory.edges)
     })
