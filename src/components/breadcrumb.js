@@ -78,11 +78,11 @@ function BreadCrumb(props) {
           <Link className="first" to="/">{props.parent}</Link>
         </li>
         <li>
-          <Link to={"/" + formatCategorySlug(categorySlug)}>{checkCategorySlug(props)}</Link>
+          <Link to={"/" + formatCategorySlug(props.categorySlug)}>{checkCategorySlug(props)}</Link>
         </li>
         { props.product ? (
           <li>
-            <Link to={"/" + formatCategorySlug(categorySlug) + "/" + props.slug}>{props.product}</Link>
+            <Link to={"/" + formatCategorySlug(props.categorySlug) + "/" + props.slug}>{props.product}</Link>
           </li>
         ) : (
           null
