@@ -57,6 +57,19 @@ function checkCategorySlug(props) {
   }
 }
 
+function formatCategorySlug(slug) {
+  let formattedSlug;
+
+  if (/\s/.test(slug)) {
+    formattedSlug = slug.split(" ").join("-")
+  }
+  else {
+    formattedSlug = slug
+  }
+
+  return formattedSlug.toLowerCase()
+}
+
 function BreadCrumb(props) {
   return (
     <BreadCrumbContainer>
@@ -65,11 +78,11 @@ function BreadCrumb(props) {
           <Link className="first" to="/">{props.parent}</Link>
         </li>
         <li>
-          <Link to={"/" + props.categorySlug.substring(0).toLowerCase()}>{checkCategorySlug(props)}</Link>
+          <Link to={"/" + formatCategorySlug(categorySlug)}>{checkCategorySlug(props)}</Link>
         </li>
         { props.product ? (
           <li>
-            <Link to={"/" + props.categorySlug.substring(0).toLowerCase() + "/" + props.slug}>{props.product}</Link>
+            <Link to={"/" + formatCategorySlug(categorySlug) + "/" + props.slug}>{props.product}</Link>
           </li>
         ) : (
           null
