@@ -103,13 +103,13 @@ export default () => (
       <StyledTableOfContents>
         {data.allDatoCmsCategory.edges.map(({ node: category }) => (
           <TocGroup key={category.id}>
-            <Link to={"/" + category.slug.toLowerCase()}>
+            <Link to={"/" + category.slug}>
               <TocHeader>{category.name}</TocHeader>
             </Link>
             {data.allDatoCmsProduct.edges.map(({ node: product }) => (
               <>
                 {product.category.toLowerCase() === category.name.toLowerCase() ? (
-                  <Link key={product.id} to={"/" + product.category.toLowerCase() + "/" + product.slug} style={{color:"grey"}}>
+                  <Link key={product.id} to={"/" + category.slug + "/" + product.slug} style={{color:"grey"}}>
                     <TocLink>{product.name}</TocLink>
                   </Link>
                 ) : (
