@@ -9,5 +9,8 @@
   },
   "scripts": {
     "export:datocms": "node --env-file=.env scripts/export-datocms.mjs"
+  },
+  "devDependencies": {
+    "aws4fetch": "^1.0.20"
   }
 }
