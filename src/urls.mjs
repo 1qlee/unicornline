@@ -17,3 +17,13 @@ export function productPath(product) {
 export function assetUrl(assetBaseUrl, key) {
   return `${assetBaseUrl.replace(/\/+$/, "")}/${key.split("/").map(encodeURIComponent).join("/")}`
 }
+
+export function viewerPath(fileKey, backPath) {
+  const params = new URLSearchParams({ file: fileKey })
+  if (backPath) params.set("back", backPath)
+  return `/viewer/?${params}`
+}
+
+export function absoluteUrl(siteUrl, path) {
+  return `${siteUrl.replace(/\/+$/, "")}${path}`
+}

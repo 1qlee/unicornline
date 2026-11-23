@@ -1,0 +1,6 @@
+# Old Gatsby product URLs that changed in the rebuild. Category URLs are handled by
+# redirect pages generated in src/build.mjs.
+/aromatherapy/body%20oils  /aromatherapy/body-oils/  301
+/lifestyle/Fizz-Off-Bottle-Cleaning-Tablet  /lifestyle/fizz-off-bottle-cleaning-tablet/  301
+/lifestyle/Just-in-case  /lifestyle/just-in-case/  301
+/gift-box,-eating-well/gift-set-salt-pepper  /gift-box/gift-set-salt-pepper/  301

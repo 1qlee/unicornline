@@ -10,7 +10,10 @@
   "scripts": {
     "export:datocms": "node --env-file=.env scripts/export-datocms.mjs",
     "test": "node --test \"test/*.test.mjs\"",
-    "upload:assets": "node --env-file=.env scripts/upload-assets.mjs"
+    "upload:assets": "node --env-file=.env scripts/upload-assets.mjs",
+    "build": "node src/build.mjs && node scripts/check-links.mjs",
+    "dev": "npm run build && node scripts/serve.mjs",
+    "publish:images": "node --env-file=.env scripts/publish-images.mjs"
   },
   "devDependencies": {
     "aws4fetch": "^1.0.20",
