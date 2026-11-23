@@ -4,34 +4,31 @@
   "categories": [
     "award"
   ],
-  "description": "Direct Printed Sleek Solid Wood Cuboid™ award is an economical and environmentally friendly option.",
+  "description": "A direct-printed solid wood Cuboid™ award. It is an economical and environmentally friendly option.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos / Personalization",
-      "Bleeds Allowed on All Sides",
-      "Hand-rubbed Finish",
+      "Free setup, art, logos and personalization",
+      "Bleeds allowed on all sides",
+      "Hand-rubbed finish",
       "Made in USA"
     ],
     "materials": [
-      "U8430 ~ 8433: Solid Wood Board"
+      "U8430 ~ 8433: solid wood board"
     ],
     "printing": [
-      "Inkjet: Full Color and White Printing on One Side",
-      "Print Area : 3.5 x 9.5in"
+      "Inkjet: full color and white on one side",
+      "Print area: 3.5 x 9.5 in."
     ],
     "options": [
-      "White Underlay Image: $5.00 (G) each",
-      "Artwork Change: $27 (G) each",
-      "packaging: Individual White Corrugated Box"
+      "White underlay image: $5.00 (G) each",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "6C"
-    ],
+    "note": "Inkjet, 6C.",
     "columns": [
       {
         "label": "Item",

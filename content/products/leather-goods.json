@@ -4,31 +4,29 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "A collection of various hand crafted leather goods made using vegetable tanned leather (a non-chemical process).",
+  "description": "A collection of handcrafted leather goods made from vegetable-tanned leather (a non-chemical process).",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos / No Running Charge",
-      "Unlined Interior",
-      "Hand Crafted in USA",
-      "Logo Printed in USA"
+      "Free setup, art and logos",
+      "No running charge",
+      "Unlined interior",
+      "Handcrafted in USA",
+      "Logo printed in USA"
     ],
     "materials": [
-      "Full grain vegetable tanned leather and solid brass hardware"
+      "Full-grain vegetable-tanned leather and solid brass hardware"
     ],
     "printing": [
-      "Inkjet: Full color printing on one location"
+      "Inkjet: full color in one location"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
     "customShape": "No charge for standard shape"
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "6C"
-    ],
+    "note": "Inkjet, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +64,7 @@
     "rows": [
       [
         "U3110",
-        "Pencil Case",
+        "Pencil case",
         "40.58",
         "39.02",
         "37.52",
@@ -76,7 +74,7 @@
       ],
       [
         "U3111",
-        "Mouse Pad",
+        "Mouse pad",
         "26.65",
         "25.63",
         "24.64",
@@ -86,7 +84,7 @@
       ],
       [
         "U3112",
-        "Earphone Holder",
+        "Earphone holder",
         "10.12",
         "9.73",
         "9.36",
@@ -96,7 +94,7 @@
       ],
       [
         "U3113",
-        "Card Holder A",
+        "Card holder A",
         "22.32",
         "21.46",
         "20.63",
@@ -106,7 +104,7 @@
       ],
       [
         "U3114",
-        "Card Holder B",
+        "Card holder B",
         "21.76",
         "20.93",
         "20.12",
@@ -116,7 +114,7 @@
       ],
       [
         "U3115",
-        "Valet Tray Large",
+        "Valet tray, large",
         "26.45",
         "25.43",
         "24.45",
@@ -126,7 +124,7 @@
       ],
       [
         "U3116",
-        "Valet Tray Medium",
+        "Valet tray, medium",
         "18.97",
         "18.24",
         "17.54",
@@ -136,7 +134,7 @@
       ],
       [
         "U3117",
-        "Valet Tray Small",
+        "Valet tray, small",
         "13.15",
         "12.64",
         "12.16",
@@ -146,7 +144,7 @@
       ],
       [
         "U3119",
-        "Key Chain",
+        "Key chain",
         "10.32",
         "9.93",
         "9.54",
@@ -156,7 +154,7 @@
       ],
       [
         "U3120",
-        "Key Holder",
+        "Key holder",
         "14.54",
         "13.98",
         "13.44",
@@ -166,7 +164,7 @@
       ],
       [
         "U3121",
-        "Belt Bag",
+        "Belt bag",
         "52.02",
         "50.02",
         "48.10",
@@ -176,7 +174,7 @@
       ],
       [
         "U3122",
-        "Sunglasses Case",
+        "Sunglasses case",
         "32.17",
         "30.93",
         "29.74",
@@ -186,7 +184,7 @@
       ],
       [
         "U3123",
-        "JUUL® Case",
+        "JUUL® case",
         "26.55",
         "25.53",
         "24.55",
@@ -196,7 +194,7 @@
       ],
       [
         "U3124",
-        "Pen Tray",
+        "Pen tray",
         "35.31",
         "33.95",
         "32.64",
@@ -206,7 +204,7 @@
       ],
       [
         "U3125",
-        "Pen Holder",
+        "Pen holder",
         "7.64",
         "7.35",
         "7.07",

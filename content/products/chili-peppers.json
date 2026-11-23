@@ -4,34 +4,31 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Chili Peppers are widely used in many cuisines as a spice to add flavor and heat to various dishes. Chili Peppers can be eaten fresh or added whole to your food. When dried they can be finely ground into chili powder for use with barbecue, hot curry, and other spicy sauces. ",
+  "description": "Chili peppers are used in many cuisines to add flavor and heat. They can be eaten fresh or added whole to food, and when dried they can be finely ground into chili powder for barbecue, hot curry and other spicy sauces.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Temper Proof Seal",
-      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
-      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Food-grade, durable tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on the Label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U4181G",
-        "Cayenne Pepper",
+        "Cayenne pepper",
         "10.17",
         "8.77",
         "8.29",
@@ -79,7 +76,7 @@
       ],
       [
         "U4182G",
-        "Ancho Chili Pepper",
+        "Ancho chili pepper",
         "12.17",
         "10.77",
         "10.29",
@@ -89,7 +86,7 @@
       ],
       [
         "U4183G",
-        "Chipotle Chili Pepper",
+        "Chipotle chili pepper",
         "12.17",
         "10.77",
         "10.29",
@@ -99,7 +96,7 @@
       ],
       [
         "U4184G",
-        "Jalapeno Pepper",
+        "Jalapeno pepper",
         "11.17",
         "9.77",
         "9.29",
@@ -119,7 +116,7 @@
       ],
       [
         "U4186G",
-        "Red Pepper",
+        "Red pepper",
         "10.17",
         "8.77",
         "8.29",
@@ -129,7 +126,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",
@@ -139,7 +136,7 @@
       ],
       [
         "U4181T",
-        "Cayenne Pepper",
+        "Cayenne pepper",
         "12.59",
         "11.18",
         "10.70",
@@ -149,7 +146,7 @@
       ],
       [
         "U4182T",
-        "Ancho Chili Pepper",
+        "Ancho chili pepper",
         "13.59",
         "12.18",
         "11.70",
@@ -159,7 +156,7 @@
       ],
       [
         "U4183T",
-        "Chipotle Chili Pepper",
+        "Chipotle chili pepper",
         "14.59",
         "13.18",
         "12.70",
@@ -169,7 +166,7 @@
       ],
       [
         "U4184T",
-        "Jalapeno Pepper",
+        "Jalapeno pepper",
         "13.59",
         "12.18",
         "11.70",
@@ -189,7 +186,7 @@
       ],
       [
         "U4186T",
-        "Red Pepper",
+        "Red pepper",
         "12.59",
         "11.18",
         "10.70",
@@ -199,7 +196,7 @@
       ],
       [
         "3435T",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

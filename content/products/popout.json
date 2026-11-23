@@ -4,34 +4,31 @@
   "categories": [
     "display"
   ],
-  "description": "Eye catching Popout™ with customer supplied objects with custom printed background.",
+  "description": "A Popout™ display that holds customer-supplied objects in front of a custom printed background.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Easy and Fun: Simple Assembly",
-      "Consult with Factory Regarding Centerpiece's Size and Weight Limitations",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Simple assembly",
+      "Ask the factory about size and weight limits for the centerpiece",
       "Made in USA"
     ],
     "materials": [
-      "U7260: 1mm Clear Plastic (popout), 3mm EPVC (back panel) with Black Aluminum Frame"
+      "U7260: 1mm clear plastic (popout) and 3mm EPVC (back panel) with black aluminum frame"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side of Base (EPVC)"
+      "Digital: full color on one side of the base (EPVC)"
     ],
     "options": [
-      "setup: $55 (G) per artwork or object: initial order only",
-      "frame: 3/16in Black Aluminum Frame Indulded",
-      "packaging: Kraft Corrugated Box"
+      "Setup: $55 (G) per artwork or object, initial order only",
+      "Frame: 3/16 in. black aluminum frame included",
+      "Packaging: kraft corrugated box"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "5C"
-    ],
+    "note": "Inkjet, 5C.",
     "columns": [
       {
         "label": "Item",
@@ -65,7 +62,7 @@
     "rows": [
       [
         "U7260",
-        "14 x 21 in",
+        "14 x 21 in.",
         "219.31",
         "204.31",
         "195.31",

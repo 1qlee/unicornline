@@ -4,34 +4,31 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Black, white, and green peppercorns all come from the same vine, but are harvested at various stages of growth. Sweet and spicy pink peppercorns are dried berries from South America. Chinese Szechuan peppercorns have a distinctly pungent and spicy flavor.",
+  "description": "Peppercorns in a glass jar or tin can with a custom label. Black, white and green peppercorns come from the same vine but are harvested at different stages of growth. Sweet and spicy pink peppercorns are dried berries from South America, and Chinese Szechuan peppercorns have a distinctly pungent, spicy flavor.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Temper Proof Seal",
-      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
-      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "High-quality, food-grade, durable tin-plated steel can",
+      "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on the Label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U4161G",
-        "Black Peppercorns",
+        "Black peppercorns",
         "11.17",
         "9.77",
         "9.29",
@@ -79,7 +76,7 @@
       ],
       [
         "U4162G",
-        "Green Peppercorns",
+        "Green peppercorns",
         "12.17",
         "10.77",
         "10.29",
@@ -89,7 +86,7 @@
       ],
       [
         "U4163G",
-        "White Peppercorns",
+        "White peppercorns",
         "12.17",
         "10.77",
         "10.29",
@@ -99,7 +96,7 @@
       ],
       [
         "U4164G",
-        "Szechuan Peppercorns",
+        "Szechuan peppercorns",
         "16.17",
         "14.77",
         "14.29",
@@ -109,7 +106,7 @@
       ],
       [
         "U4165G",
-        "Rainbow Peppercorns",
+        "Rainbow peppercorns",
         "12.17",
         "10.77",
         "10.29",
@@ -119,7 +116,7 @@
       ],
       [
         "U4166G",
-        "Pink Peppercorns",
+        "Pink peppercorns",
         "12.17",
         "10.77",
         "10.29",
@@ -129,7 +126,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",
@@ -139,7 +136,7 @@
       ],
       [
         "U4161T",
-        "Black Peppercorns",
+        "Black peppercorns",
         "12.59",
         "11.18",
         "10.70",
@@ -149,7 +146,7 @@
       ],
       [
         "U4162T",
-        "Green Peppercorns",
+        "Green peppercorns",
         "15.59",
         "14.18",
         "13.70",
@@ -159,7 +156,7 @@
       ],
       [
         "U4163T",
-        "White Peppercorns",
+        "White peppercorns",
         "13.59",
         "12.18",
         "11.70",
@@ -169,7 +166,7 @@
       ],
       [
         "U4164T",
-        "Szechuan Peppercorns",
+        "Szechuan peppercorns",
         "19.59",
         "18.18",
         "17.70",
@@ -179,7 +176,7 @@
       ],
       [
         "U4165T",
-        "Rainbow Peppercorns",
+        "Rainbow peppercorns",
         "13.59",
         "12.18",
         "11.70",
@@ -189,7 +186,7 @@
       ],
       [
         "U4166T",
-        "Pink Peppercorns",
+        "Pink peppercorns",
         "14.59",
         "13.18",
         "12.70",
@@ -199,7 +196,7 @@
       ],
       [
         "3435T",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

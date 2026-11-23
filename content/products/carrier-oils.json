@@ -4,32 +4,29 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "In aromatherapy, Carrier Oils are used to dilute essential oils and help \"carry\" them into the skin. Diluting essential oils is a common safety practice due to oil's high potency. Our carrier oils may be used alone or with other oils to help nourish the skin.",
+  "description": "Carrier oils are used in aromatherapy to dilute essential oils and help \"carry\" them into the skin. Diluting essential oils is a common safety practice because of their high potency. These carrier oils may be used alone or with other oils to help nourish the skin.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "100% Pure Carrier Oil",
-      "Fresh Packed upon Receipt of Order in USA"
+      "100% pure carrier oil",
+      "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Bulk, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -67,7 +64,7 @@
     "rows": [
       [
         "U2141",
-        "Sunflower Oil",
+        "Sunflower oil",
         "10.52",
         "9.11",
         "8.63",
@@ -77,7 +74,7 @@
       ],
       [
         "U2142",
-        "Sweet Almond Oil",
+        "Sweet almond oil",
         "10.52",
         "9.11",
         "8.63",
@@ -87,7 +84,7 @@
       ],
       [
         "U2143",
-        "Apricot Kernel Oil",
+        "Apricot kernel oil",
         "10.52",
         "9.11",
         "8.63",
@@ -97,7 +94,7 @@
       ],
       [
         "U2144",
-        "MCT Oil",
+        "MCT oil",
         "11.52",
         "10.11",
         "9.63",
@@ -107,7 +104,7 @@
       ],
       [
         "U2145",
-        "Jojoba Oil",
+        "Jojoba oil",
         "11.52",
         "10.11",
         "9.63",
@@ -117,7 +114,7 @@
       ],
       [
         "U2146",
-        "Safflower Oil",
+        "Safflower oil",
         "10.52",
         "9.11",
         "8.63",
@@ -127,7 +124,7 @@
       ],
       [
         "U3432",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

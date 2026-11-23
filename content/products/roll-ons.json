@@ -4,33 +4,30 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "Hand crafted and made with our single oils, our roll-on line is the top of its class. They are easy, safe, convenient and travel friendly. No mess, no fuss with these pre-diluted, ready to use roll-ons. A great gift for essential oil lovers.",
+  "description": "Handcrafted essential oil roll-ons made with our single oils. They are pre-diluted and ready to use, with no mess, and are safe and easy to travel with. A gift for essential oil lovers.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Hand Crafted with Essential Oils",
-      "Stainless Steel Roller Ball Inserts",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Handcrafted with essential oils",
+      "Stainless steel roller ball inserts",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: Bulk, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -128,7 +125,7 @@
       ],
       [
         "U3431",
-        "Gift Box (option)",
+        "Gift box (option)",
         "4.43",
         "2.86",
         "2.30",

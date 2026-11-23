@@ -5,33 +5,30 @@
     "gift-box",
     "eating-well"
   ],
-  "description": "Offered as a set in 10ml mini glass grinder bottles, our Salt & Pepper Mini Grinder Set is the ideal gift for the cooks and chefs in our lives. Our mini grinder comes with a glass bottle, a plastic grinder, and a cap to seal the container and maintain the freshness of the product inside.",
+  "description": "A salt and pepper set in two 10 ml mini glass grinder bottles, made as a gift for cooks and chefs. Each grinder has a glass bottle, a plastic grinder and a cap that seals the container to keep the contents fresh.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Set of Two 10ml Mini Glass Grinder Bottles in Custom Box",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Set of two 10 ml mini glass grinder bottles in a custom box",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: Bulk, Glass Grinder Set, Custom Gloss Label",
-      "Gift Box: 111# Gloss Cover"
+      "Package: bulk, glass grinder set and custom gloss label",
+      "Gift box: 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on Box & Label"
+      "Digital: full color on box and label"
     ],
     "options": [
-      "Custom Shape: add $150 (G) each shape",
-      "Artwork Change: $67 (G) each"
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "No Charge for Standard Shape"
+    "customShape": "No charge for standard shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C"
-    ],
+    "note": "Digital, 7C.",
     "columns": [
       {
         "label": "Item",
@@ -73,7 +70,7 @@
     "rows": [
       [
         "U3590",
-        "Salt & Pepper",
+        "Salt and pepper",
         "24.48",
         "19.45",
         "16.43",

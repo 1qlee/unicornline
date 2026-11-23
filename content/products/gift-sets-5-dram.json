@@ -4,33 +4,30 @@
   "categories": [
     "gift-box"
   ],
-  "description": "With its eye-catching vial design made from slim glass topped with a natural cork, this 5/8 ounce vial is an ideal container for teas, herbs, spices, and seasonings. Comes in sets of six vials packaged in a custom printed gift box for any occasion.",
+  "description": "Sets of six slim glass vials with natural cork tops, packed in a custom printed gift box. Each 5/8 oz. vial holds teas, herbs, spices or seasonings.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
-      "Bleeds allowed on all sides on label and box",
-      "Six set custom printed gift box",
-      "High quality, food grade, durable, vial with cork lid",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides of label and box",
+      "Custom printed gift box for a set of six",
+      "High-quality, food-grade, durable vial with cork lid",
       "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Gift Box (111# Gloss Cover), Custom Gloss Label"
+      "Package: gift box (111# gloss cover), custom gloss label"
     ],
     "printing": [
-      "Digital: Full color printing on box & label, no print on tray"
+      "Digital: full color on box and label, no print on tray"
     ],
     "options": [
-      "Custom Shape: add $150 (G) each shape",
-      "Artwork Change: $67 (G) each"
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
     ],
     "customShape": "No charge for standard shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C"
-    ],
+    "note": "Digital, 7C.",
     "columns": [
       {
         "label": "Item",
@@ -83,7 +80,7 @@
       ],
       [
         "U3541",
-        "Infused Salts",
+        "Infused salts",
         "34.74",
         "29.71",
         "26.73",
@@ -94,7 +91,7 @@
       ],
       [
         "U3542",
-        "Spices & Herbs",
+        "Spices and herbs",
         "30.07",
         "25.04",
         "22.06",
@@ -127,7 +124,7 @@
       ],
       [
         "U3545",
-        "Chili Peppers",
+        "Chili peppers",
         "30.74",
         "25.71",
         "22.73",
@@ -149,7 +146,7 @@
       ],
       [
         "U3547",
-        "Sprouting Seeds",
+        "Sprouting seeds",
         "33.40",
         "28.37",
         "25.40",

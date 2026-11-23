@@ -4,32 +4,29 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "An assortment of everyday carry essentials with an emphasis on personal health, conveniently packaged in a durable tin  case. You can modify the contents to your liking. An essential and useful kit for urban dwellers.",
+  "description": "An assortment of everyday carry essentials focused on personal health, packaged in a durable tin case. You can modify the contents to your liking, making it a useful kit for urban dwellers.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Fresh Packed upon Receipt of Order",
-      "High Quality, Durable, Tin Plated Steel Can",
+      "Fresh packed upon receipt of order",
+      "High-quality, durable tin-plated steel can",
       "Packaged in USA"
     ],
     "materials": [
-      "U3070-3972: Bulk, Tin Case, Custom Gloss Label"
+      "U3070-3972: bulk, tin case, custom gloss label"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

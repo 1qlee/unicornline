@@ -4,31 +4,28 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Packed Bath & Shower Products. Showers\ncan be pure magic. The best bath products can also make a\ndifference. Our need for the best bath products and hygiene\nproducts has never been stronger.",
+  "description": "Full-color, custom-packed bath salt, part of our bath and shower line.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Bath Salt Made in USA",
-      "Package Printed in USA"
+      "Bath salt made in USA",
+      "Package printed in USA"
     ],
     "materials": [
-      "U2530: Gloss Label"
+      "U2530: gloss label"
     ],
     "printing": [
-      "Digital: Full color printing on band"
+      "Digital: full color on band"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U2530",
-        "Bath Salt",
+        "Bath salt",
         "9.69",
         "8.28",
         "7.81",

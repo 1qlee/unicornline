@@ -4,31 +4,28 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Full Color Custom Packed Snacks. Wrapped up beautifully\nin a clear bag topped with a custom tag, you’ll wow your\ncustomers before they ever open the bag and get their first\ntaste. Talk about the perfect gift.",
+  "description": "Custom-packed snacks in a clear bag topped with a full-color custom tag, made for gifting to customers.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Tags Printed in USA",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tags printed in USA",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: Bulk, 80# Gloss Cover, Clear Bag"
+      "Package: bulk, 80# gloss cover and clear bag"
     ],
     "printing": [
-      "Digital: Full Color Printing on Tag"
+      "Digital: full color on the tag"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U4660",
-        "Gummy Bears",
+        "Gummy bears",
         "9.14",
         "8.20",
         "7.89",
@@ -76,7 +73,7 @@
       ],
       [
         "U4661",
-        "Fruit Barrels",
+        "Fruit barrels",
         "8.14",
         "7.20",
         "6.89",
@@ -86,7 +83,7 @@
       ],
       [
         "U4662",
-        "Butterscotch Buttons",
+        "Butterscotch buttons",
         "11.14",
         "10.20",
         "9.89",
@@ -96,7 +93,7 @@
       ],
       [
         "U4663",
-        "Caramel Squares",
+        "Caramel squares",
         "16.14",
         "15.20",
         "14.89",
@@ -106,7 +103,7 @@
       ],
       [
         "U4664",
-        "Starlight Mints",
+        "Starlight mints",
         "8.14",
         "7.20",
         "6.89",
@@ -116,7 +113,7 @@
       ],
       [
         "U4665",
-        "Salt Water Taffy",
+        "Salt water taffy",
         "8.14",
         "7.20",
         "6.89",

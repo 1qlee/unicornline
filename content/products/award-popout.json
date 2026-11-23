@@ -4,34 +4,31 @@
   "categories": [
     "award"
   ],
-  "description": "Solid Real Wood Cuboid™ Combined with Eye-catching Popout™.",
+  "description": "A solid real wood Cuboid™ combined with an eye-catching Popout™.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos / Personalization",
-      "Bleeds Allowed on All Sides",
-      "Hand-rubbed Finish",
+      "Free setup, art, logos and personalization",
+      "Bleeds allowed on all sides",
+      "Hand-rubbed finish",
       "Made in USA"
     ],
     "materials": [
-      "U8400 ~ 8403: 1mm Clear Plastic (base & encasement) and Solid Wood Block and 3mm EPVC (center Popout)"
+      "U8400 ~ 8403: 1mm clear plastic (base and encasement), solid wood block and 3mm EPVC (center Popout)"
     ],
     "printing": [
-      "Inkjet: Full Color and White Printing on One Side",
-      "Print Area: 7.5 x 9.5in (clear encasement), 3.5 x 9.5in (clear base), 2 x 2in (center Popout)"
+      "Inkjet: full color and white on one side",
+      "Print area: 7.5 x 9.5 in. (clear encasement), 3.5 x 9.5 in. (clear base), 2 x 2 in. (center Popout)"
     ],
     "options": [
-      "White Underlay Image: Cherry only available with underlay; $5 (G) each",
-      "Artwork Change: $27 (G) each",
-      "packaging: Individual White Corrugated Box"
+      "White underlay image: $5 (G) each. Cherry is only available with underlay",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "6C"
-    ],
+    "note": "Inkjet, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U8400",
-        "Red Oak",
+        "Red oak",
         "143.95",
         "130.61",
         "122.61",
@@ -89,7 +86,7 @@
       ],
       [
         "U8403",
-        "Hard Maple",
+        "Hard maple",
         "149.05",
         "135.71",
         "127.71",

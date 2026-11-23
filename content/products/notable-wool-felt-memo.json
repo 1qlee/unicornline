@@ -4,31 +4,28 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Custom Printed Memo with Full Color Artwork with Wool\nFelt Tray. This felt memo are crafted from luxurious Merino\nWool Felt, making them both stylish and functional. Made\nof high grade paper, our memo is perfect for jotting down\nimpromptu notes, observations, and ideas.",
+  "description": "A custom printed memo pad with full-color artwork in a wool felt tray. The tray is made from Merino wool felt, and the high-grade paper is suited to jotting down impromptu notes, observations and ideas.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds 10% Extra",
+      "Free setup, art and logos",
+      "Bleeds 10% extra",
       "Made in USA"
     ],
     "materials": [
-      "Memo: 60# Opaque Text (250 sheets)",
-      "Tray: 3mm Merino Wool Felt, Oeko Tex® 100 Certified Class II, EU Toy Safety Standard EN 71, Natural & Renewable, Naturally Anti-Bacterial"
+      "Memo: 60# opaque text (250 sheets)",
+      "Tray: 3mm Merino wool felt, Oeko Tex® 100 certified Class II, EU toy safety standard EN 71, natural and renewable, naturally antibacterial"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side (Memo)"
+      "Digital: full color on one side (memo)"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U3281",
-        "Felt Memo",
+        "Felt memo",
         "21.49",
         "20.66",
         "19.87",

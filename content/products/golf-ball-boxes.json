@@ -4,37 +4,33 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Full color golf ball boxes on coated stock.",
+  "description": "Full-color golf ball boxes on coated stock.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
       "No die charge on standard shapes",
-      "No over-run charge",
+      "No overrun charge",
       "One thickness",
-      "Available in 9 standard shapes",
-      "Box only - no ball included",
+      "9 standard shapes",
+      "Box only, ball not included",
       "Made in USA"
     ],
     "materials": [
       "U3030 - 3038: 11.4pt gloss cover"
     ],
     "printing": [
-      "Digital / Offset: Full color printing on one side"
+      "Digital and offset: full color on one side"
     ],
     "options": [
-      "No Print Sample: $40 (G) for 2 pieces / dieline",
-      "Artwork Change: $67 (G) each"
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
     ],
     "customShape": "No custom size available"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "Offset",
-      "16C"
-    ],
+    "note": "Digital and offset, 16C.",
     "columns": [
       {
         "label": "Item",
@@ -112,7 +108,7 @@
     "rows": [
       [
         "U3030",
-        "1 Ball Pillow",
+        "1 ball pillow",
         "6.15",
         "4.20",
         "3.56",
@@ -132,7 +128,7 @@
       ],
       [
         "U3031",
-        "1 Ball",
+        "1 ball",
         "6.73",
         "4.44",
         "3.68",
@@ -152,7 +148,7 @@
       ],
       [
         "U3032",
-        "1 Ball Window",
+        "1 ball window",
         "6.81",
         "4.53",
         "3.77",
@@ -172,7 +168,7 @@
       ],
       [
         "U3033",
-        "2 Balls",
+        "2 balls",
         "7.12",
         "4.84",
         "4.08",
@@ -192,7 +188,7 @@
       ],
       [
         "U3034",
-        "2 Balls Window",
+        "2 balls window",
         "7.30",
         "5.02",
         "4.26",
@@ -212,7 +208,7 @@
       ],
       [
         "U3035",
-        "3 Balls",
+        "3 balls",
         "7.87",
         "5.59",
         "4.83",
@@ -232,7 +228,7 @@
       ],
       [
         "U3036",
-        "3 Balls Window",
+        "3 balls window",
         "8.13",
         "5.85",
         "5.09",
@@ -252,7 +248,7 @@
       ],
       [
         "U3037",
-        "Half Dozen Sleeve",
+        "Half dozen sleeve",
         "6.93",
         "4.65",
         "3.89",
@@ -272,7 +268,7 @@
       ],
       [
         "U3038",
-        "Dozen Sleeve",
+        "Dozen sleeve",
         "7.49",
         "5.21",
         "4.45",

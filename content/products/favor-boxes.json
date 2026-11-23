@@ -4,36 +4,33 @@
   "categories": [
     "gift-box"
   ],
-  "description": "Full color party favor boxes on coated stock.",
-  "notesHtml": "<p><strong>Custom Size</strong>: You can order any in between size not stated in the size table. Price applies to the next larger size item that fits your size.</p>\n\n<p><strong>Need a larger size or quantity not listed?</strong> For larger sizes, quantities, or thicker stock, please contact factory for a quote!</p>",
+  "description": "Full-color party favor boxes on coated stock.",
+  "notesHtml": "<p><strong>Custom size</strong>: You can order any in-between size not listed in the size table. It is priced as the next larger size that fits it.</p>\n\n<p><strong>Need a larger size or quantity not listed?</strong> For larger sizes, larger quantities or thicker stock, contact the factory for a quote.</p>",
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Die Charge on Standard Sizes",
-      "No Over-run Charge",
-      "Available in 4 Standard Sizes",
-      "Available in 1 Thickness",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard sizes",
+      "No overrun charge",
+      "4 standard sizes",
+      "1 thickness",
       "Made in USA"
     ],
     "materials": [
-      "U5570 - 5573: 11.4pt Gloss Cover"
+      "U5570 - 5573: 11.4pt gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Dieline Design: $125 (G) each, sample extra",
-      "No Print Sample: $40 (G) for 2 pieces / dieline",
-      "Artwork Change: $67 (G) each"
+      "Dieline design: $125 (G) each, sample extra",
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "16C"
-    ],
+    "note": "Digital, 16C.",
     "columns": [
       {
         "label": "Item",
@@ -111,7 +108,7 @@
     "rows": [
       [
         "U5570",
-        "One Side",
+        "One side",
         "7.16",
         "4.71",
         "3.89",
@@ -131,7 +128,7 @@
       ],
       [
         "U5571",
-        "One Side",
+        "One side",
         "7.50",
         "5.06",
         "4.24",
@@ -151,7 +148,7 @@
       ],
       [
         "U5572",
-        "One Side",
+        "One side",
         "8.11",
         "5.66",
         "4.85",
@@ -171,7 +168,7 @@
       ],
       [
         "U5573",
-        "One Side",
+        "One side",
         "8.26",
         "5.82",
         "5.00",

@@ -4,31 +4,28 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Packed K-beauty Products. 100% vegan\nspa care products designed with your well-being in mind. Indulge in some me-time and pamper yourself at home!",
+  "description": "Full-color, custom-packed K-beauty spa care products. They are 100% vegan and designed for pampering yourself at home.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Product Made in Korea",
-      "Package Printed in USA"
+      "Product made in Korea",
+      "Package printed in USA"
     ],
     "materials": [
-      "U1300: 111# Gloss Cover"
+      "U1300: 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on band"
+      "Digital: full color on the band"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U1300",
-        "Shea Butter Lotion",
+        "Shea butter lotion",
         "8.25",
         "6.67",
         "6.11",

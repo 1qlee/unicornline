@@ -4,39 +4,36 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Custom Printed Desk Planners with Full Color Artwork with\nfountain pen friendly papers for a better note keeping experience.\nUnlike traditional calendars, our planner is undated\nso you can fill in the date on your own — perfect for using\nduring those busy days where you need an extra hand\nstaying organized.",
+  "description": "Custom printed desk planners with full-color artwork and paper suited to fountain pens. The planner is undated, so you fill in the dates yourself, which helps you stay organized on busy days.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "24pt Cardboard Backing",
-      "Glue Padded on the Top",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "24pt cardboard backing",
+      "Glue padded at the top",
       "Made in USA"
     ],
     "materials": [
-      "Paper: 60# Opaque Text (12 sheets)"
+      "Paper: 60# opaque text (12 sheets)"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "16C"
-    ],
+    "note": "Digital, 16C.",
     "columns": [
       {
         "label": "Item",
         "method": null
       },
       {
-        "label": "Type",
+        "label": "Size",
         "method": null
       },
       {
@@ -107,7 +104,7 @@
     "rows": [
       [
         "U3280",
-        "12x18in",
+        "12 x 18 in.",
         "14.08",
         "9.08",
         "7.41",

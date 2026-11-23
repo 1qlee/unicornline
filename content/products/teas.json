@@ -4,35 +4,32 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Discover our rich, energizing & full-bodied black teas, traditional pure green teas, and exciting new blends flavored with peach or vanilla.",
+  "description": "Full-bodied black teas, traditional pure green teas and blends flavored with peach or vanilla.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Temper Proof Seal",
-      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
-      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Food-grade, durable tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Custom Shape: add $150 (G) each shape",
-      "Artwork Change: $67 (G) each"
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
     ],
     "customShape": "No charge for standard shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -80,7 +77,7 @@
       ],
       [
         "U4202G",
-        "Masala Chai",
+        "Masala chai",
         "12.17",
         "10.77",
         "10.29",
@@ -90,7 +87,7 @@
       ],
       [
         "U4203G",
-        "Vanilla Cream",
+        "Vanilla cream",
         "11.17",
         "9.77",
         "9.29",
@@ -110,7 +107,7 @@
       ],
       [
         "U4205G",
-        "Peach Tea",
+        "Peach tea",
         "11.17",
         "9.77",
         "9.29",
@@ -120,7 +117,7 @@
       ],
       [
         "U4206G",
-        "English Breakfast",
+        "English breakfast",
         "11.17",
         "9.77",
         "9.29",
@@ -130,7 +127,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",
@@ -150,7 +147,7 @@
       ],
       [
         "U4202T",
-        "Masala Chai",
+        "Masala chai",
         "14.59",
         "13.18",
         "12.70",
@@ -160,7 +157,7 @@
       ],
       [
         "U4203T",
-        "Vanilla Cream",
+        "Vanilla cream",
         "13.59",
         "12.18",
         "11.70",
@@ -180,7 +177,7 @@
       ],
       [
         "U4205T",
-        "Peach Tea",
+        "Peach tea",
         "13.59",
         "12.18",
         "11.70",
@@ -190,7 +187,7 @@
       ],
       [
         "U4206T",
-        "English Breakfast",
+        "English breakfast",
         "12.59",
         "11.18",
         "10.70",
@@ -200,7 +197,7 @@
       ],
       [
         "U3435T",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

@@ -4,34 +4,31 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Superfood Powders are nutrient rich and high in antioxidants. It is a convenient and fast way to get a balanced meal without the hassle of preparing a full meal for the busy everyday person. Add them to your existing diet for a hassle-free way of hitting your daily nutritional requirements.",
+  "description": "Superfood powders are nutrient rich and high in antioxidants. They give busy people a quick, convenient way to get a balanced meal without preparing a full one, and help meet daily nutritional requirements when added to an existing diet.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Temper Proof Seal",
-      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
-      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "High-quality, food-grade, durable tin-plated steel can",
+      "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on the Label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U4401G",
-        "Beet Root Powder",
+        "Beet root powder",
         "12.17",
         "10.77",
         "10.29",
@@ -79,7 +76,7 @@
       ],
       [
         "U4402G",
-        "Mesquite Powder",
+        "Mesquite powder",
         "11.17",
         "9.77",
         "9.29",
@@ -89,7 +86,7 @@
       ],
       [
         "U4403G",
-        "Tumeric Powder",
+        "Turmeric powder",
         "11.17",
         "9.77",
         "9.29",
@@ -99,7 +96,7 @@
       ],
       [
         "U4404G",
-        "Cacao Powder",
+        "Cacao powder",
         "11.17",
         "9.77",
         "9.29",
@@ -109,7 +106,7 @@
       ],
       [
         "U4405G",
-        "Spirulina Powder",
+        "Spirulina powder",
         "12.17",
         "10.77",
         "10.29",
@@ -119,7 +116,7 @@
       ],
       [
         "U4406G",
-        "Maca Powder",
+        "Maca powder",
         "12.17",
         "10.77",
         "10.29",
@@ -129,7 +126,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",
@@ -139,7 +136,7 @@
       ],
       [
         "U4401T",
-        "Beet Root Powder",
+        "Beet root powder",
         "14.59",
         "13.18",
         "12.70",
@@ -149,7 +146,7 @@
       ],
       [
         "U4402T",
-        "Mesquite Powder",
+        "Mesquite powder",
         "12.59",
         "11.18",
         "10.70",
@@ -159,7 +156,7 @@
       ],
       [
         "U4403T",
-        "Tumeric Powder",
+        "Turmeric powder",
         "13.59",
         "12.18",
         "11.70",
@@ -169,7 +166,7 @@
       ],
       [
         "U4404T",
-        "Cacao Powder",
+        "Cacao powder",
         "12.59",
         "11.18",
         "10.70",
@@ -179,7 +176,7 @@
       ],
       [
         "U4405T",
-        "Spirulina Powder",
+        "Spirulina powder",
         "14.59",
         "13.18",
         "12.70",
@@ -189,7 +186,7 @@
       ],
       [
         "U4406T",
-        "Maca Powder",
+        "Maca powder",
         "13.59",
         "12.18",
         "11.70",
@@ -199,7 +196,7 @@
       ],
       [
         "3435T",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

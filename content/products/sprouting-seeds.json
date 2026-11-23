@@ -4,34 +4,31 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Sprouts are young plants that are harvested a mere few days just after they germinate. Generally speaking, sprouts have a higher concentration of nutrients than their fully-grown counterparts. Sprouts also have very high amounts of enzymes that help to boost your metabolism.",
+  "description": "Sprouting seeds, custom packed in a glass jar or tin can. Sprouts are young plants harvested a few days after they germinate, and they generally have more concentrated nutrients than fully grown plants. They are also high in enzymes that help boost metabolism.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Temper Proof Seal",
-      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
-      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Durable, food-grade tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, glass jar or tin can and custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on the Label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U4501G",
-        "Fenugreek Seeds",
+        "Fenugreek seeds",
         "14.17",
         "12.77",
         "12.29",
@@ -79,7 +76,7 @@
       ],
       [
         "U4502G",
-        "Alfalfa Seeds",
+        "Alfalfa seeds",
         "16.17",
         "14.77",
         "14.29",
@@ -89,7 +86,7 @@
       ],
       [
         "U4503G",
-        "Mung Bean Seeds",
+        "Mung bean seeds",
         "12.17",
         "10.77",
         "10.29",
@@ -99,7 +96,7 @@
       ],
       [
         "U4504G",
-        "Broccoli Seeds",
+        "Broccoli seeds",
         "18.17",
         "16.77",
         "16.29",
@@ -109,7 +106,7 @@
       ],
       [
         "U4505G",
-        "Daikon Radish Seeds",
+        "Daikon radish seeds",
         "14.17",
         "12.77",
         "12.29",
@@ -119,7 +116,7 @@
       ],
       [
         "U4506G",
-        "Wheat Seeds",
+        "Wheat seeds",
         "12.17",
         "10.77",
         "10.29",
@@ -129,7 +126,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",
@@ -139,7 +136,7 @@
       ],
       [
         "U4501T",
-        "Fenugreek Seeds",
+        "Fenugreek seeds",
         "19.59",
         "18.18",
         "17.70",
@@ -149,7 +146,7 @@
       ],
       [
         "U4502T",
-        "Alfalfa Seeds",
+        "Alfalfa seeds",
         "19.59",
         "18.18",
         "17.70",
@@ -159,7 +156,7 @@
       ],
       [
         "U4503T",
-        "Mung Bean Seeds",
+        "Mung bean seeds",
         "15.59",
         "14.18",
         "13.70",
@@ -169,7 +166,7 @@
       ],
       [
         "U4504T",
-        "Broccoli Seeds",
+        "Broccoli seeds",
         "23.59",
         "22.18",
         "21.70",
@@ -179,7 +176,7 @@
       ],
       [
         "U4505T",
-        "Daikon Radish Seeds",
+        "Daikon radish seeds",
         "17.59",
         "16.18",
         "15.70",
@@ -189,7 +186,7 @@
       ],
       [
         "U4506T",
-        "Wheat Seeds",
+        "Wheat seeds",
         "14.59",
         "13.18",
         "12.70",
@@ -199,7 +196,7 @@
       ],
       [
         "3435T",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

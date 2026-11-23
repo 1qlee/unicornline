@@ -4,34 +4,31 @@
   "categories": [
     "accessory"
   ],
-  "description": "Full color hanging permits on coated stock.",
+  "description": "Full-color hanging permits on coated stock.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Die Charge on Standard Shapes",
-      "No Overrun Charge",
-      "Two Separate Artworks for Front & Back Allowed",
-      "Available in Six Standard Shapes",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Two separate artworks allowed for front and back",
+      "Six standard shapes",
       "Made in USA"
     ],
     "materials": [
-      "U5370 - 5375: 130# Gloss Cover"
+      "U5370 - 5375: 130# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on One / Two Sides"
+      "Digital: full color on one or two sides"
     ],
     "options": [
-      "Artwork Change: $37 (G) each"
+      "Artwork change: $37 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C"
-    ],
+    "note": "Digital, 7C.",
     "columns": [
       {
         "label": "Item",
@@ -73,7 +70,7 @@
     "rows": [
       [
         "U5370",
-        "One Side",
+        "One side",
         "1.41",
         "0.84",
         "0.65",
@@ -95,7 +92,7 @@
       ],
       [
         "U5371",
-        "One Side",
+        "One side",
         "1.48",
         "0.91",
         "0.72",
@@ -117,7 +114,7 @@
       ],
       [
         "U5372",
-        "One Side",
+        "One side",
         "1.50",
         "0.93",
         "0.74",
@@ -139,7 +136,7 @@
       ],
       [
         "U5373",
-        "One Side",
+        "One side",
         "1.57",
         "1.00",
         "0.81",
@@ -161,7 +158,7 @@
       ],
       [
         "U5374",
-        "One Side",
+        "One side",
         "1.65",
         "1.08",
         "0.89",
@@ -183,7 +180,7 @@
       ],
       [
         "U5375",
-        "One Side",
+        "One side",
         "1.84",
         "1.27",
         "1.08",

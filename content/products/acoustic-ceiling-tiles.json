@@ -4,31 +4,28 @@
   "categories": [
     "display"
   ],
-  "description": "Full Color Graphics Printed Directly on Acoustic Ceiling Tiles. Custom tiles are a unique way to turn white ceiling into something colorful, creative and fun. And the results are jaw droppingly awesome! Perfect for medical offices, salons, spas, and/or advertising other services.",
+  "description": "Full-color graphics printed directly on acoustic ceiling tiles. Custom tiles turn a white ceiling into something colorful and creative, for medical offices, salons, spas or advertising other services.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
       "Made in USA"
     ],
     "materials": [
-      "U7200 - 7201: 2x2 ft or 2x4 ft Acoustic Ceiling Tile"
+      "U7200 - 7201: 2 x 2 ft or 2 x 4 ft acoustic ceiling tile"
     ],
     "printing": [
-      "Inkjet: Full Color Printing on One Side"
+      "Inkjet: full color on one side"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
-      "packaging: Kraft Corrugated Bulk Box"
+      "Artwork change: $67 (G) each",
+      "Packaging: kraft corrugated bulk box"
     ],
-    "customShape": "No Custom Shape Available"
+    "customShape": "No custom shape available"
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "5C"
-    ],
+    "note": "Inkjet, 5C.",
     "columns": [
       {
         "label": "Item",
@@ -62,7 +59,7 @@
     "rows": [
       [
         "U7200",
-        "2' x 2'",
+        "2 x 2 ft",
         "65.03",
         "56.70",
         "53.70",
@@ -71,7 +68,7 @@
       ],
       [
         "U7201",
-        "2' x 4'",
+        "2 x 4 ft",
         "108.40",
         "100.07",
         "97.07",

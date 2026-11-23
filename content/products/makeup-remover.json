@@ -4,31 +4,28 @@
   "categories": [
     "skincare"
   ],
-  "description": "Comes with custom printed outside band. Wipes instantly dissolve even heavy-duty makeup with a silky, lite-touch formula. Made in USA.",
-  "notesHtml": "<p>5&quot; x 2.75&quot;. Instantly dissolves even heavy-duty makeup with a silk, lite-touch formula.</p>",
+  "description": "Makeup remover wipes with a custom printed outside band. The silky, light-touch formula instantly dissolves even heavy-duty makeup. Made in USA.",
+  "notesHtml": "<p>5 x 2.75 in. Instantly dissolves even heavy-duty makeup with a silky, light-touch formula.</p>",
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
       "Package printed in USA"
     ],
     "materials": [
-      "Package: 8pt Gloss Cover"
+      "Package: 8pt gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on both sides"
+      "Digital: full color on both sides"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
-      "Packaging: Bulk"
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

@@ -4,38 +4,35 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "Full Color Custom Packed Potpourri. Curated and mixed\nbotanicals combined in a potpourri blend with clean scent\nto use in home decor. Our potpourri enhances any room\nwith light, refreshing fragrances.",
+  "description": "Full-color, custom-packed potpourri. A blend of curated botanicals with a clean scent for home decor that adds a light, refreshing fragrance to any room.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Pre-scented with Fragrance",
-      "Insert Printed in USA"
+      "Pre-scented with fragrance",
+      "Insert printed in USA"
     ],
     "materials": [
-      "Package: Bulk, Clear PET Box, 80# Gloss Cover Insert"
+      "Package: bulk, clear PET box, 80# gloss cover insert"
     ],
     "printing": [
-      "Digital: Full color printing on the front of insert"
+      "Digital: full color on the front of insert"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
         "method": null
       },
       {
-        "label": "Type",
+        "label": "Scent",
         "method": null
       },
       {
@@ -76,7 +73,7 @@
       ],
       [
         "U2301",
-        "Sea Salt & Orchid",
+        "Sea salt and orchid",
         "12.84",
         "11.91",
         "11.59",

@@ -4,31 +4,28 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Edible flower seeds help to add various unique flavors to your dishes. They can be used as simple garnish to add various colors to your plate or added to salads to blend together various flavors.",
+  "description": "Edible flower seeds add unique flavors to your dishes. Use them as a simple garnish to add color to the plate, or add them to salads to blend flavors.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: 8pt Gloss Cover"
+      "Package: 8pt gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on Front & Back"
+      "Digital: full color on front and back"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
-      "Packaging : Bulk"
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

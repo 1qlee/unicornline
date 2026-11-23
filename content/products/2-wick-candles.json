@@ -4,38 +4,35 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "Full Color Custom Labeled Candle. Made from 100% foodgrade\nwax with fragrance oils containing natural ingredients,\nand wicks utilizing innovative textiles.",
+  "description": "A full-color, custom-labeled candle made from 100% food-grade wax, with fragrance oils containing natural ingredients and wicks made from innovative textiles.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Recyclable Glass Jar",
-      "Hand Crafted in USA"
+      "Recyclable glass jar",
+      "Handcrafted in USA"
     ],
     "materials": [
-      "Package: Bulk, Custom Gloss Label"
+      "Package: bulk, custom gloss label"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
         "method": null
       },
       {
-        "label": "Type",
+        "label": "Scent",
         "method": null
       },
       {
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U2230",
-        "Lemon Lavender",
+        "Lemon lavender",
         "26.99",
         "25.58",
         "25.11",
@@ -76,7 +73,7 @@
       ],
       [
         "U2231",
-        "Vanilla Orchid",
+        "Vanilla orchid",
         "26.99",
         "25.58",
         "25.11",

@@ -4,31 +4,28 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Packed Bath & Shower Products. Showers\ncan be pure magic. The best bath products can also make a\ndifference. Our need for the best bath products and hygiene\nproducts has never been stronger.",
+  "description": "A shower filter, custom packed with a full-color printed band.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Shower Filter Made in Korea",
-      "Package Printed in USA"
+      "Shower filter made in Korea",
+      "Package printed in USA"
     ],
     "materials": [
-      "Band: 8t Gloss Cover"
+      "Band: 8t gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on band"
+      "Digital: full color on the band"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U2580",
-        "Shower Filter",
+        "Shower filter",
         "30.66",
         "29.43",
         "29.02",

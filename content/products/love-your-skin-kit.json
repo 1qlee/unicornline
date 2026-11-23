@@ -4,32 +4,29 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Packed Home Spa Essentials kit which\nincludes Makeup Remover, and Sheet Mask. This\nKit contains everything your clients need to bring a spa\nexperience home. Wipe away the day's make-up, and follow with the facial mask.",
+  "description": "A full-color, custom-packed home spa kit with a makeup remover and a sheet mask. It gives your clients a spa experience at home: wipe away the day's makeup, then follow with the facial mask.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
       "Makeup remover made in USA",
       "Sheet mask made in Korea",
       "Package printed in USA"
     ],
     "materials": [
-      "Package: 111# Gloss Cover"
+      "Package: 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on Front & Back"
+      "Digital: full color on front and back"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

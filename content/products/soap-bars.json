@@ -4,31 +4,28 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Packed Soap Bar. Cold process soap relies\non natural ingredients and time for the chemical reaction\nknown as saponification and does not require the use of\nheat to complete the process, resulting in soap that’s good\nfor the skin!",
+  "description": "A full-color, custom-packed cold process soap bar. Cold process soap relies on natural ingredients and time for saponification, with no heat needed, which makes a soap that is good for the skin.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Cold Process Soap",
-      "Hand Crafted in USA"
+      "Cold process soap",
+      "Handcrafted in USA"
     ],
     "materials": [
-      "Package: Bulk, 80# Gloss Cover Band"
+      "Package: bulk, 80# gloss cover band"
     ],
     "printing": [
-      "Digital: Full color printing on the Band"
+      "Digital: full color on the band"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -76,7 +73,7 @@
       ],
       [
         "U2501",
-        "Lemon Zest Scrub",
+        "Lemon zest scrub",
         "8.02",
         "6.79",
         "6.38",
@@ -86,7 +83,7 @@
       ],
       [
         "U2502",
-        "Oatmeal Milk & Honey",
+        "Oatmeal, milk and honey",
         "8.02",
         "6.79",
         "6.38",
@@ -106,7 +103,7 @@
       ],
       [
         "U2504",
-        "Cafe Mocha",
+        "Cafe mocha",
         "8.02",
         "6.79",
         "6.38",
@@ -116,7 +113,7 @@
       ],
       [
         "U2505",
-        "Mango Delight",
+        "Mango delight",
         "8.02",
         "6.79",
         "6.38",

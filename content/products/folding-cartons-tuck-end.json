@@ -4,42 +4,39 @@
   "categories": [
     "gift-box"
   ],
-  "description": "Full color shortrun custom printed folding cartons.",
-  "notesHtml": "<p><strong>Custom Folding Cartons</strong>: We offer high quality full-custom folding cartons. Our minimum starts at 50 boxes. Industry&#39;s lowest! No die charge and Free Setup! You can order any in between size not stated in the size table. Price applies to the next larger size item that fits your size.</p>\n\n<p><strong>Need a Larger Size or Quantity not Listed?</strong> For larger sizes, quantities, or thicker stock, please contact factory for a quote! We are capable of producing folding cartons up to 40pt thick and larger sizes not listed here. Numerous finishes including embossing/debossing, aqueous coating, UV coating, and foil stamping can be added also.</p>",
+  "description": "Full-color, short-run custom printed folding cartons.",
+  "notesHtml": "<p><strong>Custom folding cartons</strong>: We offer high-quality, fully custom folding cartons. Minimum order is 50 boxes, with no die charge and free setup. You can order any in-between size not listed in the size table. The price is that of the next larger size that fits your size.</p>\n\n<p><strong>Need a larger size or quantity not listed?</strong> For larger sizes, larger quantities or thicker stock, contact the factory for a quote. We can produce folding cartons up to 40pt thick and in larger sizes not listed here. Finishes such as embossing and debossing, aqueous coating, UV coating and foil stamping can also be added.</p>",
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Die Charge on Standard Sizes",
-      "No Over-run Charge",
-      "No Pre-fixed Sizes",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard sizes",
+      "No overrun charge",
+      "No pre-fixed sizes",
       "Made in USA"
     ],
     "materials": [
-      "U5520 - 5524: 11.4pt Gloss Cover"
+      "U5520 - 5524: 11.4pt gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Dieline Design: $125 (G) each, sample extra",
-      "No Print Sample: $40 (G) for 2 pieces / dieline",
-      "Artwork Change: $67 (G) each"
+      "Dieline design: $125 (G) each, sample extra",
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each custom size"
+    "customShape": "Die charge: $150 (G) per custom size"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "16C"
-    ],
+    "note": "Digital, 16C.",
     "columns": [
       {
         "label": "Item",
         "method": null
       },
       {
-        "label": "Side",
+        "label": "Sides",
         "method": null
       },
       {
@@ -110,7 +107,7 @@
     "rows": [
       [
         "U5520",
-        "One Side",
+        "One side",
         "6.18",
         "3.89",
         "3.13",
@@ -130,7 +127,7 @@
       ],
       [
         "U5521",
-        "One Side",
+        "One side",
         "6.79",
         "4.51",
         "3.75",
@@ -150,7 +147,7 @@
       ],
       [
         "U5522",
-        "One Side",
+        "One side",
         "7.41",
         "5.13",
         "4.37",
@@ -170,7 +167,7 @@
       ],
       [
         "U5523",
-        "One Side",
+        "One side",
         "8.66",
         "6.38",
         "5.62",
@@ -190,7 +187,7 @@
       ],
       [
         "U5524",
-        "One Side",
+        "One side",
         "10.39",
         "8.11",
         "7.35",

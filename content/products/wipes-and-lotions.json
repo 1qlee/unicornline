@@ -4,31 +4,28 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Full color, custom packed wipes and lotions. We have procured the most popular wipes and lotions in convenient single use packages. All our wipes and lotion come individually prepacked in an attractive custom printed package.",
-  "notesHtml": "<p>6.5” x 5” (Wipe) • 2.25” x 2” (Packet)</p>",
+  "description": "Full-color, custom-packed wipes and lotions. Popular wipes and lotions come in convenient single-use packets, each individually prepacked in a custom printed package.",
+  "notesHtml": "<p>Wipe: 6.5 x 5 in. • Packet: 2.25 x 2 in.</p>",
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Package Printed in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Package printed in USA"
     ],
     "materials": [
-      "Package: 8pt Gloss Cover"
+      "Package: 8pt gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on Both Sides"
+      "Digital: full color on both sides"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
-      "Packaging: Bulk"
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

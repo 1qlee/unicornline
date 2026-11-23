@@ -4,32 +4,29 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "Inspired by a floral garden, our candles use natural ingredients like flowers, plants and trees. Made from 100% natural soy wax with clean scents and a wick made of only cotton and paper, our candles burn cooler, cleaner, and longer than traditional paraffin wax candles.",
+  "description": "Soy candles inspired by a floral garden and made with natural ingredients such as flowers, plants and trees. They use 100% natural soy wax, clean scents and a wick made only of cotton and paper, so they burn cooler, cleaner and longer than traditional paraffin wax candles.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Recyclable Glass Jar and Metal Lid",
+      "Recyclable glass jar and metal lid",
       "Handcrafted in USA"
     ],
     "materials": [
-      "Package: Bulk, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -67,7 +64,7 @@
     "rows": [
       [
         "U2201",
-        "Oakmoss & Amber",
+        "Oakmoss and amber",
         "12.71",
         "11.31",
         "10.83",
@@ -87,7 +84,7 @@
       ],
       [
         "U2203",
-        "White Birch",
+        "White birch",
         "12.71",
         "11.31",
         "10.83",
@@ -97,7 +94,7 @@
       ],
       [
         "U2204",
-        "Sea Salt & Orchid",
+        "Sea salt and orchid",
         "12.71",
         "11.31",
         "10.83",
@@ -117,7 +114,7 @@
       ],
       [
         "U2206",
-        "Fraser Fir",
+        "Fraser fir",
         "12.71",
         "11.31",
         "10.83",
@@ -127,7 +124,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

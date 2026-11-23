@@ -4,31 +4,28 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Labeled Foaming Hand Soap. Washes\naway germs and helps maintain skin’s natural moisture\nbarrier without dyes, parabens or sulfates. Experience the\nluxurious, creamy foaming formula with our foaming hand\nwashes for your hands to love.",
+  "description": "Full-color, custom-labeled foaming hand soap. The creamy foaming formula washes away germs and helps maintain the skin's natural moisture barrier, without dyes, parabens or sulfates.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Plant-based Scent",
-      "Package Printed in USA"
+      "Plant-based scent",
+      "Package printed in USA"
     ],
     "materials": [
-      "Package: Bulk, Custom Gloss Label"
+      "Package: bulk, custom gloss label"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -76,7 +73,7 @@
       ],
       [
         "U2511",
-        "Lemon Sugar",
+        "Lemon sugar",
         "11.30",
         "9.63",
         "9.07",

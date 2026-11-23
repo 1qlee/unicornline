@@ -4,34 +4,31 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Protein Powder is a popular nutritional supplement used by athletes and other fitness enthusiasts around the world. In combination with a balanced diet and fitness plan, protein supplements can aid in weight loss, help tone muscles, and satisfy daily nutritional or caloric requirements.",
+  "description": "Protein powder is a popular nutritional supplement used by athletes and fitness enthusiasts around the world. Combined with a balanced diet and fitness plan, protein supplements can aid weight loss, help tone muscles and meet daily nutritional or caloric requirements.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Temper Proof Seal",
-      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
-      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "High-quality, food-grade, durable tin-plated steel can",
+      "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on the Label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U4441G",
-        "Hemp Protein",
+        "Hemp protein",
         "12.17",
         "10.77",
         "10.29",
@@ -79,7 +76,7 @@
       ],
       [
         "U4442G",
-        "Whey Protein",
+        "Whey protein",
         "14.17",
         "12.77",
         "12.29",
@@ -89,7 +86,7 @@
       ],
       [
         "U4443G",
-        "Pea Protein",
+        "Pea protein",
         "11.17",
         "9.77",
         "9.29",
@@ -99,7 +96,7 @@
       ],
       [
         "U4444G",
-        "Brown Rice Protein",
+        "Brown rice protein",
         "11.17",
         "9.77",
         "9.29",
@@ -109,7 +106,7 @@
       ],
       [
         "U4445G",
-        "Brown Flax Seeds",
+        "Brown flax seeds",
         "13.17",
         "11.77",
         "11.29",
@@ -119,7 +116,7 @@
       ],
       [
         "U4446G",
-        "Chia Seeds",
+        "Chia seeds",
         "11.17",
         "9.77",
         "9.29",
@@ -129,7 +126,7 @@
       ],
       [
         "U3435G",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",
@@ -139,7 +136,7 @@
       ],
       [
         "U4441T",
-        "Hemp Protein",
+        "Hemp protein",
         "13.59",
         "12.18",
         "11.70",
@@ -149,7 +146,7 @@
       ],
       [
         "U4442T",
-        "Whey Protein",
+        "Whey protein",
         "17.59",
         "16.18",
         "15.70",
@@ -159,7 +156,7 @@
       ],
       [
         "U4443T",
-        "Pea Protein",
+        "Pea protein",
         "13.59",
         "12.18",
         "11.70",
@@ -169,7 +166,7 @@
       ],
       [
         "U4444T",
-        "Brown Rice Protein",
+        "Brown rice protein",
         "13.59",
         "12.18",
         "11.70",
@@ -179,7 +176,7 @@
       ],
       [
         "U4445T",
-        "Brown Flax Seeds",
+        "Brown flax seeds",
         "15.59",
         "14.18",
         "13.70",
@@ -189,7 +186,7 @@
       ],
       [
         "U4446T",
-        "Chia Seeds",
+        "Chia seeds",
         "13.59",
         "12.18",
         "11.70",
@@ -199,7 +196,7 @@
       ],
       [
         "3435T",
-        "Gift Box (option)",
+        "Gift box (option)",
         "5.07",
         "3.50",
         "2.94",

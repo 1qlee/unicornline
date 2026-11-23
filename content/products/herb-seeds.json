@@ -4,31 +4,28 @@
   "categories": [
     "eating-well"
   ],
-  "description": "Growing herbs from seeds is amazingly easy, even for the busy everyday person. By growing with your own seeds you can ensure that your food is as fresh and chemical free as possible. Why pay extra for farm-to-table fresh produce when you can bring the farm to your home for a fraction of the price?",
+  "description": "Custom-packed herb seeds. Growing herbs from seed is easy, even for busy people, and home-grown herbs are as fresh and chemical-free as possible for a fraction of the price of farm-to-table produce.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Fresh packed in USA upon receipt of order"
     ],
     "materials": [
-      "Package: 8pt Gloss Cover"
+      "Package: 8pt gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on Front & Back"
+      "Digital: full color on front and back"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
-      "Packaging : Bulk"
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U4541",
-        "Greek Oregano",
+        "Greek oregano",
         "5.33",
         "3.90",
         "2.73",
@@ -76,7 +73,7 @@
       ],
       [
         "U4542",
-        "Genovese Basil",
+        "Genovese basil",
         "5.33",
         "3.90",
         "2.73",
@@ -86,7 +83,7 @@
       ],
       [
         "U4543",
-        "Sweet Marjoram",
+        "Sweet marjoram",
         "5.33",
         "3.90",
         "2.73",
@@ -96,7 +93,7 @@
       ],
       [
         "U4544",
-        "Italian Parsley",
+        "Italian parsley",
         "5.33",
         "3.90",
         "2.73",
@@ -116,7 +113,7 @@
       ],
       [
         "U4546",
-        "Common Chive",
+        "Common chive",
         "5.33",
         "3.90",
         "2.73",

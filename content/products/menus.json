@@ -4,35 +4,32 @@
   "categories": [
     "accessory"
   ],
-  "description": "Full Color Menus on washable polyester.",
+  "description": "Full-color menus on washable polyester.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Overrun Charge",
-      "Two Separtate Artworks for Front & Back Allowed",
-      "One Thickness",
-      "More Durable than Paper",
-      "Available in Ten Standard Sizes",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No overrun charge",
+      "Two separate artworks for front and back allowed",
+      "One thickness",
+      "More durable than paper",
+      "Ten standard sizes",
       "Made in USA"
     ],
     "materials": [
-      "U5240 - 5249: 10 mil Synthetic"
+      "U5240 - 5249: 10 mil synthetic"
     ],
     "printing": [
-      "Digital: Full Color Printing on Two Sides"
+      "Digital: full color on two sides"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
     "customShape": "No custom shape available"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "16C"
-    ],
+    "note": "Digital, 16C.",
     "columns": [
       {
         "label": "Item",
@@ -270,7 +267,7 @@
       ],
       [
         "U5248",
-        "8 Pages",
+        "8 pages",
         "15.53",
         "13.42",
         "12.72",
@@ -290,7 +287,7 @@
       ],
       [
         "U5249",
-        "12 Pages",
+        "12 pages",
         "22.17",
         "19.73",
         "18.91",

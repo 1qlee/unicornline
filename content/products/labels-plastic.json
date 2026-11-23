@@ -4,34 +4,31 @@
   "categories": [
     "accessory"
   ],
-  "description": "Full Color Labels. Multiple ups on 8.5\" x 11\" sheets.",
-  "notesHtml": "<p>You may order sizes that are not listed in the available sizes table. Pricing will be adjusted to the price of the next larger size item.</p>",
+  "description": "Full-color labels, printed several up on 8.5 x 11 in. sheets.",
+  "notesHtml": "<p>You can order sizes not listed in the size table. They are priced as the next larger size.</p>",
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Die Charge on Standard Shapes",
-      "No Overrun Charge",
-      "Indoor / outdoor Application",
-      "Available in Forty Standard Shapes",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Indoor and outdoor use",
+      "40 standard shapes",
       "Made in USA"
     ],
     "materials": [
-      "4 mil White Matte Vinyl"
+      "4 mil white matte vinyl"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Artwork Change: $37 (G) each"
+      "Artwork change: $37 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C"
-    ],
+    "note": "Digital, 7C.",
     "columns": [
       {
         "label": "Item",
@@ -73,7 +70,7 @@
     "rows": [
       [
         "U5050",
-        "One Side",
+        "One side",
         "1.10",
         "0.52",
         "0.33",
@@ -84,7 +81,7 @@
       ],
       [
         "U5051",
-        "One Side",
+        "One side",
         "1.14",
         "0.56",
         "0.36",
@@ -95,7 +92,7 @@
       ],
       [
         "U5052",
-        "One Side",
+        "One side",
         "1.18",
         "0.61",
         "0.41",
@@ -106,7 +103,7 @@
       ],
       [
         "U5053",
-        "One Side",
+        "One side",
         "1.22",
         "0.64",
         "0.45",
@@ -117,7 +114,7 @@
       ],
       [
         "U5054",
-        "One Side",
+        "One side",
         "1.28",
         "0.70",
         "0.51",
@@ -128,7 +125,7 @@
       ],
       [
         "U5055, 5056",
-        "One Side",
+        "One side",
         "1.36",
         "0.78",
         "0.58",
@@ -139,7 +136,7 @@
       ],
       [
         "U5057",
-        "One Side",
+        "One side",
         "1.42",
         "0.84",
         "0.65",
@@ -150,7 +147,7 @@
       ],
       [
         "U5058",
-        "One Side",
+        "One side",
         "1.44",
         "0.86",
         "0.67",
@@ -161,7 +158,7 @@
       ],
       [
         "U5059, 5060",
-        "One Side",
+        "One side",
         "1.52",
         "0.94",
         "0.75",
@@ -172,7 +169,7 @@
       ],
       [
         "U5061, 5062",
-        "One Side",
+        "One side",
         "1.64",
         "1.06",
         "0.87",
@@ -183,7 +180,7 @@
       ],
       [
         "U5063",
-        "One Side",
+        "One side",
         "1.86",
         "1.28",
         "1.09",
@@ -194,7 +191,7 @@
       ],
       [
         "U5064",
-        "One Side",
+        "One side",
         "2.11",
         "1.54",
         "1.35",
@@ -205,7 +202,7 @@
       ],
       [
         "U5065",
-        "One Side",
+        "One side",
         "2.52",
         "1.95",
         "1.76",
@@ -216,7 +213,7 @@
       ],
       [
         "U5066",
-        "One Side",
+        "One side",
         "3.75",
         "3.19",
         "3.00",

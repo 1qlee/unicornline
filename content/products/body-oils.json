@@ -4,31 +4,28 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "Deeply moisturizing, our Body Oils contain many different kinds of essential oils, fatty acids, and vitamin E to help smooth, hydrate, and nourish the skin. When applied after a shower, Body Oils may also offer certain health benefits. We provide a three oil blend that helps promote good sleep, soothe muscle aches, and also calm your nerves.",
+  "description": "Deeply moisturizing body oils with essential oils, fatty acids and vitamin E to smooth, hydrate and nourish the skin. Applied after a shower, they may also offer certain health benefits. The three-oil blend helps promote good sleep, soothe muscle aches and calm the nerves.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Fresh Packed upon Receipt of Order in USA"
+      "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Bulk, Custom Gloss Label",
-      "Gift Box (option): 111# Gloss Cover"
+      "Package: bulk, custom gloss label",
+      "Gift box (option): 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on the label"
+      "Digital: full color on the label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U2161",
-        "Good Night",
+        "Good night",
         "12.51",
         "11.06",
         "10.59",
@@ -86,7 +83,7 @@
       ],
       [
         "U2163",
-        "Muscle Relief",
+        "Muscle relief",
         "12.51",
         "11.06",
         "10.59",
@@ -96,7 +93,7 @@
       ],
       [
         "U3433",
-        "Gift Box (option)",
+        "Gift box (option)",
         "4.75",
         "3.18",
         "2.62",

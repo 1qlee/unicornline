@@ -4,17 +4,17 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Full Color Custom Printed Golf Tee Packs with Golf Tees.",
+  "description": "Full-color custom printed golf tee packs with golf tees.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "No Die Charge on Standard Sizes",
-      "No Overrun Charge",
-      "Available in One Thickness",
-      "Pack Comes with Four White Golf Teas",
-      "Available in 3 Standard Tea Lengths",
+      "No die charge on standard sizes",
+      "No overrun charge",
+      "One thickness",
+      "Pack comes with four white golf tees",
+      "3 standard tee lengths",
       "No custom shapes available",
       "Made in USA"
     ],
@@ -22,20 +22,16 @@
       "U3050 - 3052: 11.4pt gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on one side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "No Print Sample: $40 (G) for 2 pieces / dieline",
-      "Artwork Change: $67 (G) each"
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "Offset",
-      "16C"
-    ],
+    "note": "Digital and offset, 16C.",
     "columns": [
       {
         "label": "Item",
@@ -113,7 +109,7 @@
     "rows": [
       [
         "U3050",
-        "2.125 Tee",
+        "2.125 tee",
         "5.05",
         "3.60",
         "3.12",
@@ -133,7 +129,7 @@
       ],
       [
         "U3051",
-        "2.75 Tee",
+        "2.75 tee",
         "5.10",
         "3.65",
         "3.16",
@@ -153,7 +149,7 @@
       ],
       [
         "U3052",
-        "3.25 Tee",
+        "3.25 tee",
         "5.14",
         "3.69",
         "3.21",

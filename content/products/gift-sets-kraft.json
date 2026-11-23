@@ -4,36 +4,32 @@
   "categories": [
     "gift-box"
   ],
-  "description": "Custom packaged gift set box with a choice of three or six items included. Made from high-end, eco-friendly Kraft corrugated materials, plus a custom printed tray or tissue paper, a custom printed label to seal the box. Gift box can be used as a mailer. BOX & PACKAGING ONLY PRICE.",
+  "description": "A custom packaged gift set box with a choice of three or six items. It is made from eco-friendly kraft corrugated material, with a custom printed tray or tissue paper and a custom printed label to seal the box. The gift box can also be used as a mailer.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides on Label and Tray",
-      "Processed and Packaged in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides of the label and tray",
+      "Processed and packaged in USA"
     ],
     "materials": [
-      "Package: Gift Box (200# E-flute Kraft Corrugated), Custom Gloss Label, Custom Tray (16pt Cover Stock) or Tissue Paper"
+      "Package: gift box (200# E-flute kraft corrugated), custom gloss label, custom tray (16pt cover stock) or tissue paper"
     ],
     "printing": [
-      "Digital: Full color Printing on the Label & Tray"
+      "Digital: full color on the label and tray"
     ],
     "options": [
-      "Custom Shape: add $150 (G) each shape",
-      "Artwork Change: $67 (G) each",
-      "Crinkle Paper Fill: $2 (G) each box (min.)",
-      "Setup Change: $65 (G) each per packout",
-      "Product Picking (G): $0.50 (S) $1.50 (M) $3.00 (L)",
-      "Printed Marketing Material: $0.20 (G)"
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each",
+      "Crinkle paper fill: $2 (G) each box (min.)",
+      "Setup change: $65 (G) each per packout",
+      "Product picking (G): $0.50 (S), $1.50 (M), $3.00 (L)",
+      "Printed marketing material: $0.20 (G)"
     ],
-    "customShape": "No Charge for Standard Shape"
+    "customShape": "No charge for standard shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C",
-      "Box & Packing Only Price"
-    ],
+    "note": "Digital, 7C. Box and packing only.",
     "columns": [
       {
         "label": "Item",
@@ -75,7 +71,7 @@
     "rows": [
       [
         "U3500",
-        "3 Pack Gift Set",
+        "3-pack gift set",
         "5.67",
         "3.91",
         "2.85",
@@ -86,7 +82,7 @@
       ],
       [
         "U3520",
-        "6 Pack Gift Set",
+        "6-pack gift set",
         "11.14",
         "7.87",
         "5.92",

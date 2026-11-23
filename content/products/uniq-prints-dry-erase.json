@@ -4,12 +4,12 @@
   "categories": [
     "display"
   ],
-  "description": "Full Color Graphics Printed Directly on Dry Erase Board. A very smooth, clean dry erase writing surface that won't ghost and erases great every time. \nYou can create the most colorful custom boards with us. ",
+  "description": "Full-color graphics printed directly on dry erase board for colorful custom boards. The smooth, clean writing surface does not ghost and erases cleanly every time.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
       "Ready to hang",
       "Made in USA"
     ],
@@ -17,18 +17,15 @@
       "U6220 - 6235: 3mm dry erase board"
     ],
     "printing": [
-      "Inkjet: Full Color Printing on One Side"
+      "Inkjet: full color on one side"
     ],
     "options": [
-      "Kraft Corrugated Individual Box"
+      "Individual kraft corrugated box"
     ],
-    "customShape": "Setup Charge: $40 (G) each shape plus $0.05 (G) per linear cutting inch; no charge for round corners / circles"
+    "customShape": "Setup charge: $40 (G) per shape plus $0.05 (G) per linear cutting inch; no charge for round corners and circles"
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "5C"
-    ],
+    "note": "Inkjet, 5C.",
     "columns": [
       {
         "label": "Item",
@@ -62,7 +59,7 @@
     "rows": [
       [
         "U6220",
-        "8 x 10in",
+        "8 x 10 in.",
         "49.47",
         "39.47",
         "33.47",
@@ -71,7 +68,7 @@
       ],
       [
         "U6221",
-        "8 x 12in",
+        "8 x 12 in.",
         "51.31",
         "41.31",
         "35.31",
@@ -80,7 +77,7 @@
       ],
       [
         "U6222",
-        "12 x 12in",
+        "12 x 12 in.",
         "74.44",
         "64.44",
         "58.44",
@@ -89,7 +86,7 @@
       ],
       [
         "U6223",
-        "11 x 14in",
+        "11 x 14 in.",
         "77.30",
         "67.30",
         "61.30",
@@ -98,7 +95,7 @@
       ],
       [
         "U6224",
-        "12 x 18in",
+        "12 x 18 in.",
         "81.51",
         "71.51",
         "65.51",
@@ -107,7 +104,7 @@
       ],
       [
         "U6225",
-        "16 x 16in",
+        "16 x 16 in.",
         "89.12",
         "79.12",
         "73.12",
@@ -116,7 +113,7 @@
       ],
       [
         "U6226",
-        "12 x 24in",
+        "12 x 24 in.",
         "91.91",
         "81.91",
         "75.91",
@@ -125,7 +122,7 @@
       ],
       [
         "U6227",
-        "16 x 20in",
+        "16 x 20 in.",
         "94.09",
         "84.09",
         "78.09",
@@ -134,7 +131,7 @@
       ],
       [
         "U6228",
-        "16 x 24in",
+        "16 x 24 in.",
         "101.84",
         "91.84",
         "85.84",
@@ -143,7 +140,7 @@
       ],
       [
         "U6229",
-        "20 x 20in",
+        "20 x 20 in.",
         "102.93",
         "92.93",
         "86.93",
@@ -152,7 +149,7 @@
       ],
       [
         "U6230",
-        "20 x 24in",
+        "20 x 24 in.",
         "110.98",
         "100.98",
         "94.98",
@@ -161,7 +158,7 @@
       ],
       [
         "U6231",
-        "24 x 24in",
+        "24 x 24 in.",
         "155.92",
         "145.92",
         "139.92",
@@ -170,7 +167,7 @@
       ],
       [
         "U6232",
-        "20 x 30in",
+        "20 x 30 in.",
         "154.08",
         "144.08",
         "138.08",
@@ -179,7 +176,7 @@
       ],
       [
         "U6233",
-        "24 x 30in",
+        "24 x 30 in.",
         "166.65",
         "156.65",
         "150.65",
@@ -188,7 +185,7 @@
       ],
       [
         "U6234",
-        "24 x 36in",
+        "24 x 36 in.",
         "177.39",
         "167.39",
         "161.39",
@@ -197,7 +194,7 @@
       ],
       [
         "U6235",
-        "30 x 40in",
+        "30 x 40 in.",
         "201.86",
         "191.86",
         "185.86",

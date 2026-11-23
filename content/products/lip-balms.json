@@ -4,33 +4,30 @@
   "categories": [
     "skincare"
   ],
-  "description": "Lip Balms in full-color, custom packaging. The balm is formulated with rich shea butter to soothe and comfort dry, chapped lips. This plush balm is available in eight flavors.",
+  "description": "Lip balms in full-color custom packaging. The balm is formulated with shea butter to soothe dry, chapped lips and comes in eight flavors.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
       "Package printed in USA",
       "Made in China"
     ],
     "materials": [
-      "Package: 111# Gloss Cover"
+      "Package: 111# gloss cover"
     ],
     "printing": [
-      "Digital: Full color printing on the Box"
+      "Digital: full color on the box"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
+      "Artwork change: $67 (G) each",
       "Flavors: Strawberry, Berries & Cream, Tropical Mai Tai, Mint Cherry, Pomegranate Punch, Berry Breeze, Citrus Tart",
-      "Packaging: Bulk"
+      "Packaging: bulk"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

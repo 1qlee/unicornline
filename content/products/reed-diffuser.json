@@ -4,31 +4,28 @@
   "categories": [
     "aromatherapy"
   ],
-  "description": "Reed diffuser with custom label and custom gift box packaging. Diffusers come with rose scented oil in a glass bottle; reeds included.",
+  "description": "A reed diffuser with a custom label and custom gift box packaging. It comes with rose-scented oil in a glass bottle, and reeds are included.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
       "Diffusers made in China",
       "Package printed in USA"
     ],
     "materials": [
-      "Package: 130# Gloss Cover"
+      "Package: 130# gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on the Box and Label"
+      "Digital: full color on the box and label"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U2310",
-        "Reed Diffuser",
+        "Reed diffuser",
         "20.29",
         "16.98",
         "15.88",

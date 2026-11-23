@@ -4,34 +4,31 @@
   "categories": [
     "accessory"
   ],
-  "description": "Full color hanging permits on plastic.",
+  "description": "Full-color hanging permits on plastic.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Die Charge on Standard Shapes",
-      "No Overrun Charge",
-      "Two Separtate Artworks for Front & Back Allowed",
-      "Available in Six Standard Shapes",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Two separate artworks for front and back allowed",
+      "Six standard shapes",
       "Made in USA"
     ],
     "materials": [
       "U5380 - 5385: 20 mil PVC"
     ],
     "printing": [
-      "Digital: Full Color Printing on One / Two sides"
+      "Digital: full color on one or two sides"
     ],
     "options": [
-      "Artwork Change: $37 (G) each"
+      "Artwork change: $37 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C"
-    ],
+    "note": "Digital, 7C.",
     "columns": [
       {
         "label": "Item",
@@ -73,7 +70,7 @@
     "rows": [
       [
         "U5380",
-        "One Side",
+        "One side",
         "1.60",
         "1.01",
         "0.82",
@@ -84,7 +81,7 @@
       ],
       [
         "U5380",
-        "Two Sides",
+        "Two sides",
         "1.85",
         "1.16",
         "0.93",
@@ -95,7 +92,7 @@
       ],
       [
         "U5381",
-        "One Side",
+        "One side",
         "1.73",
         "1.14",
         "0.95",
@@ -106,7 +103,7 @@
       ],
       [
         "U5381",
-        "Two Sides",
+        "Two sides",
         "2.00",
         "1.31",
         "1.09",
@@ -117,7 +114,7 @@
       ],
       [
         "U5382",
-        "One Side",
+        "One side",
         "1.76",
         "1.17",
         "0.98",
@@ -128,7 +125,7 @@
       ],
       [
         "U5382",
-        "Two Sides",
+        "Two sides",
         "2.05",
         "1.36",
         "1.13",
@@ -139,7 +136,7 @@
       ],
       [
         "U5383",
-        "One Side",
+        "One side",
         "1.87",
         "1.28",
         "1.09",
@@ -150,7 +147,7 @@
       ],
       [
         "U5383",
-        "Two Sides",
+        "Two sides",
         "2.17",
         "1.48",
         "1.26",
@@ -161,7 +158,7 @@
       ],
       [
         "U5384",
-        "One Side",
+        "One side",
         "2.00",
         "1.42",
         "1.23",
@@ -172,7 +169,7 @@
       ],
       [
         "U5384",
-        "Two Sides",
+        "Two sides",
         "2.33",
         "1.64",
         "1.42",
@@ -183,7 +180,7 @@
       ],
       [
         "U5385",
-        "One Side",
+        "One side",
         "2.33",
         "1.75",
         "1.56",
@@ -194,7 +191,7 @@
       ],
       [
         "U5385",
-        "Two Sides",
+        "Two sides",
         "2.73",
         "2.05",
         "1.83",

@@ -4,31 +4,28 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Ultimate Golfer's Survival Kit in Custom Printed Full Color Gift Box.",
+  "description": "A golfer's survival kit in a full-color custom printed gift box.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
-      "Comes with: 3 tees, 2 bandages, sunscreen, and various wipes",
+      "Comes with 3 tees, 2 bandages, sunscreen and various wipes",
       "Package printed in USA"
     ],
     "materials": [
-      "U3060: 12.5pt Gloss Cover"
+      "U3060: 12.5pt gloss cover"
     ],
     "printing": [
-      "Digital & Offset: Full Color Printing on One Side"
+      "Digital and offset: full color on one side"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "No custom shape is available"
+    "customShape": "No custom shape available"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -66,7 +63,7 @@
     "rows": [
       [
         "U3060",
-        "Pocket Caddy",
+        "Pocket caddy",
         "5.26",
         "4.74",
         "4.09",

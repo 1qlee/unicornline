@@ -4,34 +4,31 @@
   "categories": [
     "award"
   ],
-  "description": "Direct Printed Sleek Solid Wood Cuboid™ award block with an opaque, resin top-piece. Fluorescent acrylic is attached at a slant to create the illusion of a colorful glow throughout the milky top-piece. Acrylic is available in multiple colors. Each award is produced individually by hand.",
+  "description": "A direct-printed solid wood Cuboid™ award block with an opaque resin top piece. Fluorescent acrylic set at a slant makes the milky top piece appear to glow with color. The acrylic comes in multiple colors, and each award is made individually by hand.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos / Personalization",
-      "Hand-rubbed Finish",
-      "Orange Fluorescent Acrylic Standard",
+      "Free setup, art, logos and personalization",
+      "Hand-rubbed finish",
+      "Orange fluorescent acrylic standard",
       "Made in USA"
     ],
     "materials": [
-      "U8350: Solid Wood Block + Fluorescent Acrylic + Resin"
+      "U8350: solid wood block, fluorescent acrylic and resin"
     ],
     "printing": [
-      "Inkjet: Full Color and White Printing on One Side",
-      "Print Area : 3 x 6.5in"
+      "Inkjet: full color and white on one side",
+      "Print area: 3 x 6.5 in."
     ],
     "options": [
-      "Acrylic Color Change: $30 (G) per order",
-      "Artwork Change: $27 (G) each",
-      "packaging: Individual White Corrugated Box"
+      "Acrylic color change: $30 (G) per order",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "6C"
-    ],
+    "note": "Inkjet, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -69,7 +66,7 @@
     "rows": [
       [
         "U8350",
-        "Red Oak",
+        "Red oak",
         "106.26",
         "102.92",
         "100.92",

@@ -4,33 +4,30 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Give your tumblers and bottles a new and fresh look with our new biodegradable and chlorine-free cleaning tablet! Our bottle cleaning tablets dissolve in water, creating bubbles that clean stubborn stains and odors without any harsh chemicals.",
+  "description": "A biodegradable, chlorine-free cleaning tablet for tumblers and bottles. The tablet dissolves in water and creates bubbles that clean stubborn stains and odors without harsh chemicals.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Bottle Cleaning Tablets Made in China",
-      "Individually Packaged Tablet",
-      "Package Printed in USA"
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Bottle cleaning tablets made in China",
+      "Individually packaged tablets",
+      "Package printed in USA"
     ],
     "materials": [
-      "Package: 8pt Gloss Cover"
+      "Package: 8pt gloss cover"
     ],
     "printing": [
-      "Digital: Full Color Printing on Outside of Packaging"
+      "Digital: full color on outside of packaging"
     ],
     "options": [
-      "Artwork Change: $67 (G) each",
-      "Packaging: Bulk"
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -68,7 +65,7 @@
     "rows": [
       [
         "U3080",
-        "Bottle Cleaner",
+        "Bottle cleaner",
         "5.26",
         "3.89",
         "2.76",

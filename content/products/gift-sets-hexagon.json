@@ -4,33 +4,30 @@
   "categories": [
     "gift-box"
   ],
-  "description": "Packed fresh upon order in our sealed facility, our Hexagon™ food-grade tins keep its contents fresh. Comes in a variety of different collections complete with custom labels, an elegant custom printed box. Our Hexagon™ Gift Set is a premium gift for any occasion.",
+  "description": "Hexagon™ gift sets are packed fresh upon order in our sealed facility, and the Hexagon™ food-grade tins keep their contents fresh. Sets come in a variety of collections with custom labels and a custom printed box, and make a premium gift for any occasion.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
-      "Bleeds allowed on all sides on label and box",
-      "High quality, food grade, durable, tin plated steel can",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides of label and box",
+      "High-quality, food-grade, durable tin-plated steel can",
       "Only candles packed five in recyclable glass jar",
       "Fresh packed upon receipt of order in USA"
     ],
     "materials": [
-      "Package: Gift Box (111# Gloss Cover), Custom Gloss Label"
+      "Package: gift box (111# gloss cover), custom gloss label"
     ],
     "printing": [
-      "Digital: Full color printing on box, sleeve, and label"
+      "Digital: full color on box, sleeve and label"
     ],
     "options": [
-      "Custom Shape: add $150 (G) each shape",
-      "Artwork Change: $67 (G) each"
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
     ],
     "customShape": "No charge for standard shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "7C"
-    ],
+    "note": "Digital, 7C.",
     "columns": [
       {
         "label": "Item",
@@ -72,7 +69,7 @@
     "rows": [
       [
         "U3560",
-        "Essential Oils",
+        "Essential oils",
         "75.77",
         "68.33",
         "63.87",
@@ -116,7 +113,7 @@
       ],
       [
         "U3571",
-        "Spices & Herbs",
+        "Spices and herbs",
         "70.18",
         "62.74",
         "58.28",
@@ -149,7 +146,7 @@
       ],
       [
         "U3574",
-        "Chili Peppers",
+        "Chili peppers",
         "72.18",
         "64.74",
         "60.28",
@@ -171,7 +168,7 @@
       ],
       [
         "U3576",
-        "Floral Teas",
+        "Floral teas",
         "70.84",
         "63.41",
         "58.95",
@@ -182,7 +179,7 @@
       ],
       [
         "U3577",
-        "Superfood Powder",
+        "Superfood powder",
         "74.18",
         "66.74",
         "62.28",
@@ -193,7 +190,7 @@
       ],
       [
         "U3578",
-        "Protein Powder",
+        "Protein powder",
         "77.51",
         "70.08",
         "65.62",
@@ -204,7 +201,7 @@
       ],
       [
         "U3579",
-        "Sprouting Seeds",
+        "Sprouting seeds",
         "94.51",
         "87.08",
         "82.62",

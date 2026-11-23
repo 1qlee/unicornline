@@ -4,35 +4,32 @@
   "categories": [
     "accessory"
   ],
-  "description": "Full Color Shelf Wobblers on durable plastic.",
+  "description": "Full-color shelf wobblers on durable plastic.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "No Die Charge on Standard Shapes",
-      "No Overrun Charge",
-      "One Thickness",
-      "Available in Two Standard Shapes",
-      "Double-side Tape Pre-applied",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "One thickness",
+      "Two standard shapes",
+      "Double-sided tape pre-applied",
       "Made in USA"
     ],
     "materials": [
       "U5360 - 5364: 10 mil PVC"
     ],
     "printing": [
-      "Digital: Full Color Printing on One Side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Artwork Change: $37 (G) each"
+      "Artwork change: $37 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "16C"
-    ],
+    "note": "Digital, 16C.",
     "columns": [
       {
         "label": "Item",
@@ -110,7 +107,7 @@
     "rows": [
       [
         "U5360",
-        "One Side",
+        "One side",
         "4.33",
         "3.19",
         "2.81",
@@ -130,7 +127,7 @@
       ],
       [
         "U5361",
-        "One Side",
+        "One side",
         "4.89",
         "3.75",
         "3.38",
@@ -150,7 +147,7 @@
       ],
       [
         "U5362",
-        "One Side",
+        "One side",
         "5.09",
         "3.95",
         "3.58",
@@ -170,7 +167,7 @@
       ],
       [
         "U5363",
-        "One Side",
+        "One side",
         "5.45",
         "4.31",
         "3.94",
@@ -190,7 +187,7 @@
       ],
       [
         "U5364",
-        "One Side",
+        "One side",
         "5.68",
         "4.55",
         "4.18",
