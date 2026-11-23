@@ -5,6 +5,8 @@ import * as pdfjs from "/vendor/pdfjs/pdf.min.mjs"
 
 pdfjs.GlobalWorkerOptions.workerSrc = "/vendor/pdfjs/pdf.worker.min.mjs"
 
+// Zoom is relative to the page fitting the viewer width, so 1 means "fit to width".
+const FIT_WIDTH_ZOOM = 1
 const ZOOM_STEP = 0.25
 const MIN_ZOOM = 0.5
 const MAX_ZOOM = 3
@@ -99,7 +101,7 @@ async function open() {
   const slots = buildSlots(pdf, `${width} / ${height}`)
   status.hidden = true
 
-  let zoom = 1
+  let zoom = FIT_WIDTH_ZOOM
   const visible = new Set()
   const rerender = (slot) =>
     renderPage(pdf, slot, zoom).catch((error) => {
@@ -128,8 +130,9 @@ async function open() {
 
   for (const button of document.querySelectorAll("[data-viewer-zoom]")) {
     button.addEventListener("click", () => {
-      const direction = button.dataset.viewerZoom === "in" ? 1 : -1
-      zoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom + direction * ZOOM_STEP))
+      const action = button.dataset.viewerZoom
+      if (action === "fit") zoom = FIT_WIDTH_ZOOM
+      else zoom = Math.min(MAX_ZOOM, Math.max(MIN_ZOOM, zoom + (action === "in" ? 1 : -1) * ZOOM_STEP))
       for (const number of visible) rerender(slots[number - 1])
     })
   }

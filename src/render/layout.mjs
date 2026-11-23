@@ -12,7 +12,10 @@ function header({ config, company }) {
 <a href="${e(viewerPath(company.fullCatalog.key))}">Full catalog (PDF)</a>
 <a href="${e(config.mainSiteUrl)}">${e(company.owner)}</a>
 </nav>
+<div class="hdr-cta">
+<a class="hdr-phone" href="tel:${e(company.phoneE164)}">${e(company.phone)}</a>
 <a href="${e(config.quoteUrl)}" class="btn" style="min-height:46px;font-size:16px;padding:0 20px">Get a free quote</a>
+</div>
 </div>
 </header>`
 }

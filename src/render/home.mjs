@@ -1,4 +1,4 @@
-import { escapeHtml as e, numberWord, capitalize } from "../format.mjs"
+import { escapeHtml as e } from "../format.mjs"
 import { productPath, homePath } from "../urls.mjs"
 import { renderPage } from "./layout.mjs"
 
@@ -19,11 +19,6 @@ function hero(catalog, productCount) {
 </label>
 <div class="search-results" id="search-results" role="listbox" aria-label="Matching products" hidden data-search-results></div>
 </div>
-</div>
-<div class="slug">
-<p>${e(capitalize(numberWord(categories.length)))} categories</p>
-<p>${productCount} products</p>
-<p><a href="tel:${e(company.phoneE164)}">${e(company.phone)}</a></p>
 </div>
 <img class="hero-art line" src="/drawings/hero-cluster.svg" alt="Isometric drawing of a line-up of catalog items: cartons, a mailer box, a candle, a wooden award cube and a tin" style="object-fit:contain;object-position:right bottom">
 </div>

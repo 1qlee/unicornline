@@ -26,6 +26,7 @@ export function renderViewer(catalog, config) {
 <span aria-live="polite" data-viewer-page></span>
 <button type="button" data-viewer-zoom="out" aria-label="Zoom out">&minus;</button>
 <button type="button" data-viewer-zoom="in" aria-label="Zoom in">+</button>
+<button type="button" data-viewer-zoom="fit" class="vfit">Fit to width</button>
 <a href="#" data-viewer-download>Download PDF</a>
 </div>
 </div>
