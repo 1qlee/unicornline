@@ -230,7 +230,7 @@
   "videos": [],
   "thumbnail": {
     "key": "images/labels-paper/main-accessory-12.png",
-    "alt": "Labels (Paper)",
+    "alt": "Shape guide of 21 label die-cuts, including rectangles, arches, ovals, triangle, hexagon and shield shapes.",
     "width": 833,
     "height": 625
   },
@@ -249,7 +249,7 @@
     },
     {
       "key": "images/labels-paper/accessory-15.png",
-      "alt": "Labels (Paper)",
+      "alt": "Size chart of 17 paper label sizes, items U5010 to U5026, from 1 x 1 inch up to 8 x 10 3/4 inches.",
       "width": 1200,
       "height": 800
     }

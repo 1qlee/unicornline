@@ -215,32 +215,32 @@
   ],
   "thumbnail": {
     "key": "images/teas/main-eating-well-6.png",
-    "alt": "Teas",
+    "alt": "Teas in custom-labeled glass jars and square tins on a woven runner against a tea field backdrop.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/teas/eating-well-17.png",
-      "alt": "Teas",
+      "alt": "Spec sheet for tea glass jars and tin cans with top and side label sizes for each.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/teas/eating-well-18.png",
-      "alt": "Teas",
+      "alt": "Text panel describing six teas: masala chai, gunpowder, English breakfast, Earl Grey, vanilla cream, peach.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/teas/eating-well-19.png",
-      "alt": "Teas",
+      "alt": "Chart of six loose teas: Earl Grey, masala chai, gunpowder, English breakfast, peach tea and vanilla cream.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/teas/eating-well-4.png",
-      "alt": "Teas",
+      "alt": "Two optional gift boxes with custom graphics, one sized for a glass jar and one for a tin can.",
       "width": 1200,
       "height": 801
     }

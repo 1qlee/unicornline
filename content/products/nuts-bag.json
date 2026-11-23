@@ -129,26 +129,26 @@
   "videos": [],
   "thumbnail": {
     "key": "images/nuts-bag/main-eating-well-18.png",
-    "alt": "Nuts (Bag)",
+    "alt": "Three clear bags of almonds, hazelnuts and walnuts, each topped with a gold custom printed header tag.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/nuts-bag/eating-well-45.png",
-      "alt": "Nuts (Bag)",
+      "alt": "Six tagged nut bags in a woven basket, with spec text for tag size, bag size and various net weights.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/nuts-bag/eating-well-46.png",
-      "alt": "Nuts (Bag)",
+      "alt": "Chart of six nut options in circles: cashews, almonds, hazelnuts, pistachios, walnuts and pecans.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/nuts/eating-well-31.png",
-      "alt": "Nuts (Bag)",
+      "alt": "Text panel titled Nuts: Nutrition Powerhouse describing each of the six nuts above a photo of mixed nuts.",
       "width": 1200,
       "height": 801
     }

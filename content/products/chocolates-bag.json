@@ -129,26 +129,26 @@
   "videos": [],
   "thumbnail": {
     "key": "images/chocolates-bag/main-eating-well-16.png",
-    "alt": "Chocolates (Bag)",
+    "alt": "Three clear bags of chocolate malt balls, latte malt balls and chocolate pretzels topped with custom-printed header tags.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/chocolates-bag/eating-well-50.png",
-      "alt": "Chocolates (Bag)",
+      "alt": "Basket of six clear chocolate bags with matching custom header tags, with tag and bag dimensions.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chocolates-bag/eating-well-51.png",
-      "alt": "Chocolates (Bag)",
+      "alt": "Six chocolate options in circles: Mini Pretzels, Andes Mints, Jumbo, Cafe Latte, Raisins and Cookie Dough.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chocolates-bag/eating-well-52.png",
-      "alt": "Chocolates (Bag)",
+      "alt": "Text panel titled \"Chocolates: Heavenly Delights\" describing each of the six chocolate treats offered.",
       "width": 1200,
       "height": 801
     }

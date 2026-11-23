@@ -212,32 +212,32 @@
   "videos": [],
   "thumbnail": {
     "key": "images/spices-herbs/main-eating-well-2.png",
-    "alt": "Spices & Herbs",
+    "alt": "Six glass spice jars and six tin cans with custom printed labels, including garlic, cumin, oregano and rosemary.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/spices-herbs/eating-well-5.png",
-      "alt": "Spices & Herbs",
+      "alt": "Spice spec sheet with tin cans and glass jars, listing top label, side label and container sizes for each.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/spices-herbs/eating-well-6.png",
-      "alt": "Spices & Herbs",
+      "alt": "Text panel titled Sweet and Savory Spices & Herbs describing cinnamon, cumin, garlic, oregano, rosemary and thyme.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/spices-herbs/eating-well-7.png",
-      "alt": "Spices & Herbs",
+      "alt": "Chart of six spice options in circles: cinnamon, cumin, garlic, oregano, rosemary and thyme.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chili-peppers/eating-well-4.png",
-      "alt": "Spices & Herbs",
+      "alt": "Diagram of two optional gift boxes, one for glass jars and one for tin cans, each with a Your Logo area and dimensions.",
       "width": 1200,
       "height": 801
     }

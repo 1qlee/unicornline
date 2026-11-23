@@ -89,26 +89,26 @@
   "videos": [],
   "thumbnail": {
     "key": "images/mani-pedi/main-skincare-8.png",
-    "alt": "Mani / Pedi",
+    "alt": "Mani in a Box and Pedi in a Box lavender spa kits, each wrapped in a custom printed band with a sample logo.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/mani-pedi/skincare-1.png",
-      "alt": "Mani / Pedi",
+      "alt": "U1100 Mani in a Box kit with custom band, showing band and product dimensions and a product description.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/mani-pedi/skincare-2.png",
-      "alt": "Mani / Pedi",
+      "alt": "U1130 Pedi in a Box kit with custom band, showing band and product dimensions and a product description.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/mani-pedi/skincare-4.png",
-      "alt": "Mani / Pedi",
+      "alt": "Manicured hands resting on bare feet with pink flowers in the background.",
       "width": 1200,
       "height": 800
     }

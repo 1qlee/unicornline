@@ -129,26 +129,26 @@
   "videos": [],
   "thumbnail": {
     "key": "images/edible-flower-seeds/main-eating-well-12.png",
-    "alt": "Edible Flower Seeds",
+    "alt": "Yellow seed packet with a YOUR LOGO front and printed growing instructions on the back, seeds visible inside.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/edible-flower-seeds/eating-well-36.png",
-      "alt": "Edible Flower Seeds",
+      "alt": "Spec sheet for 4 x 3 3/4 in. custom seed packets, showing the logo front and instruction-printed back.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/edible-flower-seeds/eating-well-37.png",
-      "alt": "Edible Flower Seeds",
+      "alt": "Text panel describing six edible flowers: nasturtium, borage, calendula, lavender, viola and cornflower.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/edible-flower-seeds/eating-well-38.png",
-      "alt": "Edible Flower Seeds",
+      "alt": "Chart of six edible flower seed options: nasturtium, borage, calendula, lavender, viola and cornflower.",
       "width": 1200,
       "height": 801
     }

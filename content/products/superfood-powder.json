@@ -212,32 +212,32 @@
   "videos": [],
   "thumbnail": {
     "key": "images/superfood-powder/main-eating-well-8.png",
-    "alt": "Superfood Powder",
+    "alt": "Six glass jars and six tin cans of superfood powders with custom printed labels, including cacao and spirulina.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/superfood-powder/eating-well-23.png",
-      "alt": "Superfood Powder",
+      "alt": "Superfood powder spec sheet with tin cans and glass jars, listing top label, side label and container sizes.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/superfood-powder/eating-well-24.png",
-      "alt": "Superfood Powder",
+      "alt": "Text panel titled Organic Superfood Powder describing beet root, mesquite, turmeric, cacao, spirulina and maca.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/superfood-powder/eating-well-25.png",
-      "alt": "Superfood Powder",
+      "alt": "Chart of six powder options in circles: beet root, mesquite, turmeric, cacao, spirulina and maca.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chili-peppers/eating-well-4.png",
-      "alt": "Superfood Powder",
+      "alt": "Diagram of two optional gift boxes, one for glass jars and one for tin cans, each with a Your Logo area and dimensions.",
       "width": 1200,
       "height": 801
     }

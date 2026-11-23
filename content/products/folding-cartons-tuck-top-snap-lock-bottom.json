@@ -213,20 +213,20 @@
   "videos": [],
   "thumbnail": {
     "key": "images/folding-cartons-tuck-top-snap-lock-bottom/main-packaging-5.png",
-    "alt": "Folding Cartons (TTSLB)",
+    "alt": "Illustration of a tuck top, snap lock bottom folding carton shown open, closed and from the bottom.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/folding-cartons-tuck-top-snap-lock-bottom/packaging-7.png",
-      "alt": "Folding Cartons (TTSLB)",
+      "alt": "Tuck top snap lock bottom carton diagram marking length, width and depth measurements.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/folding-cartons-tuck-top-snap-lock-bottom/packaging-8.png",
-      "alt": "Folding Cartons (TTSLB)",
+      "alt": "Feature list for shortrun folding cartons, including easy top loading, optional vial inserts and flat shipping.",
       "width": 1200,
       "height": 800
     }

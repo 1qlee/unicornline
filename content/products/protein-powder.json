@@ -212,32 +212,32 @@
   "videos": [],
   "thumbnail": {
     "key": "images/protein-powder/main-eating-well-9.png",
-    "alt": "Protein Powder",
+    "alt": "Custom-labeled tins and stacked glass jars of protein powders and seeds with sample branding, over a gym background.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/protein-powder/eating-well-26.png",
-      "alt": "Protein Powder",
+      "alt": "Tin can and glass jar protein powder options with sample labels, listing top label, side label and container sizes.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/protein-powder/eating-well-27.png",
-      "alt": "Protein Powder",
+      "alt": "Text panel titled \"Organic Protein Powder\" describing hemp, whey, pea and brown rice protein plus flax and chia seeds.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/protein-powder/eating-well-28.png",
-      "alt": "Protein Powder",
+      "alt": "Six fill options in circles: hemp, whey, pea and brown rice protein, brown flax seeds and chia seeds.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chili-peppers/eating-well-4.png",
-      "alt": "Protein Powder",
+      "alt": "Optional \"Your Logo\" gift boxes with full-color graphics for the glass jar and tin can, with box dimensions.",
       "width": 1200,
       "height": 801
     }

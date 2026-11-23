@@ -129,32 +129,32 @@
   "videos": [],
   "thumbnail": {
     "key": "images/soap-bars/main-skincare-5.png",
-    "alt": "Soap Bars",
+    "alt": "Two stacks of three soap bars in kraft paper bands printed with sample branding and scent names.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/soap-bars/skincare-15.png",
-      "alt": "Soap Bars",
+      "alt": "Cold process soap info panel with two stacks of banded soap bars, listing band and bar dimensions.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/soap-bars/skincare-19.png",
-      "alt": "Soap Bars",
+      "alt": "Six banded soap bar scents with item numbers, from Lavender and Lemon Zest to Cafe Mocha and Mango Delight.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/soap-bars/skincare-16.png",
-      "alt": "Soap Bars",
+      "alt": "Color swatch strip showing the six soap bar scents side by side, from Mango Delight to Cafe Mocha.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/2-wick-candles/hand-made-in-usa.png",
-      "alt": "Soap Bars",
+      "alt": "\"100% Handmade in USA\" badge with a red, white and blue American flag ribbon.",
       "width": 1200,
       "height": 600
     }

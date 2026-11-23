@@ -214,32 +214,32 @@
   ],
   "thumbnail": {
     "key": "images/spices/main-eating-well-3.png",
-    "alt": "Seasonings",
+    "alt": "Seasonings in custom-labeled glass jars and square tins with colored caps, set before a spice backdrop.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/spices/eating-well-8.png",
-      "alt": "Seasonings",
+      "alt": "Spec sheet for seasoning glass jars and tin cans with top and side label sizes for each.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/spices/eating-well-9.png",
-      "alt": "Seasonings",
+      "alt": "Text panel describing six seasonings: BBQ, lemon pepper, seafood, steak, Cajun and Jamaican jerk.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/spices/eating-well-10.png",
-      "alt": "Seasonings",
+      "alt": "Chart of six seasoning blends: BBQ, lemon pepper, seafood, Canadian steak, Cajun and Jamaica jerk.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chili-peppers/eating-well-4.png",
-      "alt": "Seasonings",
+      "alt": "Two optional gift boxes with custom graphics, one sized for a glass jar and one for a tin can.",
       "width": 1200,
       "height": 801
     }

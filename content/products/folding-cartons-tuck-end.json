@@ -213,20 +213,20 @@
   "videos": [],
   "thumbnail": {
     "key": "images/folding-cartons-tuck-end/main-packaging-4.png",
-    "alt": "Folding Cartons (Tuck End)",
+    "alt": "Line drawing of a tuck end folding carton shown open with flaps up and closed.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/folding-cartons-tuck-end/packaging-3.png",
-      "alt": "Folding Cartons (Tuck End)",
+      "alt": "Diagram comparing straight tuck end and reverse tuck end cartons, with length, width and depth marked.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/folding-cartons-tuck-end/packaging-4.png",
-      "alt": "Folding Cartons (Tuck End)",
+      "alt": "Tuck end feature list: top or bottom loading, easy assembly, friction fit or slit lock, ships flat.",
       "width": 1200,
       "height": 800
     }

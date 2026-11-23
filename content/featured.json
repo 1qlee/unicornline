@@ -5,7 +5,7 @@
     "path": "/eating-well",
     "image": {
       "key": "images/featured/tea.jpg",
-      "alt": "Health & Wellness Items",
+      "alt": "Stacked glass jars and square tins of tea with custom printed labels showing sample company logos",
       "width": 1800,
       "height": 1650
     }
@@ -16,7 +16,7 @@
     "path": "/gift-box/mailer-boxes",
     "image": {
       "key": "images/mailer-boxes/mailer-boxes-1.png",
-      "alt": "Mailer Boxes",
+      "alt": "Overhead view of several kraft mailer boxes with different full-color printed designs on a green background.",
       "width": 1200,
       "height": 800
     }

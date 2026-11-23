@@ -214,32 +214,32 @@
   ],
   "thumbnail": {
     "key": "images/floral-teas/main-eating-well-7.png",
-    "alt": "Floral Teas",
+    "alt": "Floral teas in custom-labeled glass jars and square tins, stacked among flower-printed coasters.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/floral-teas/eating-well-20.png",
-      "alt": "Floral Teas",
+      "alt": "Spec sheet for floral tea glass jars and tin cans with top and side label sizes for each.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/floral-teas/eating-well-21.png",
-      "alt": "Floral Teas",
+      "alt": "Text panel describing six floral teas: hibiscus, marigold, chamomile, lavender ultra, jasmine and rose petal.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/floral-teas/eating-well-22.png",
-      "alt": "Floral Teas",
+      "alt": "Chart of six loose floral teas: hibiscus roselle, marigold, chamomile, lavender ultra, jasmine and rose petal.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/floral-teas/eating-well-4.png",
-      "alt": "Floral Teas",
+      "alt": "Two optional gift boxes with custom graphics, one sized for a glass jar and one for a tin can.",
       "width": 1200,
       "height": 801
     }

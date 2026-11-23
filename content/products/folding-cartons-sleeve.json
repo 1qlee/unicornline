@@ -293,32 +293,32 @@
   "videos": [],
   "thumbnail": {
     "key": "images/folding-cartons-sleeve/main-packaging-3.png",
-    "alt": "Folding Cartons (Sleeve)",
+    "alt": "Line drawing of two open-end carton sleeves, one tall and one short, shown standing upright in light green.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/folding-cartons-sleeve/packaging-1.png",
-      "alt": "Folding Cartons (Sleeve)",
+      "alt": "Carton sleeve dimension diagram with depth, length and width marked on the smaller of two sleeves.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/folding-cartons-sleeve/packaging-2.png",
-      "alt": "Folding Cartons (Sleeve)",
+      "alt": "Text graphic titled Shortrun Custom Cartons listing open end glued sleeve, hard-to-package products and overslip use.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/folding-cartons-sleeve/01.jpg",
-      "alt": "Folding Cartons (Sleeve)",
+      "alt": "Yellow carton sleeve printed with a red ribbon and bow design and two circular Your Logo Here placeholders.",
       "width": 837,
       "height": 684
     },
     {
       "key": "images/folding-cartons-sleeve/02.jpg",
-      "alt": "Folding Cartons (Sleeve)",
+      "alt": "Kraft brown carton sleeve with Your Logo Here printed in large pink letters on top.",
       "width": 654,
       "height": 506
     }

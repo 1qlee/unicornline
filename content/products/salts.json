@@ -214,32 +214,32 @@
   ],
   "thumbnail": {
     "key": "images/salts/main-eating-well-1.png",
-    "alt": "Salts",
+    "alt": "Gourmet salts in six custom-labeled tin cans and six glass jars on a wooden kitchen counter.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/salts/eating-well-1.png",
-      "alt": "Salts",
+      "alt": "Salt tins and glass jars with label and container dimensions for item numbers U4001T to U4006G.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/salts/eating-well-2.png",
-      "alt": "Salts",
+      "alt": "Text panel describing six gourmet salts: Himalayan pink, Hiwa Kai, Alaea, flaky, sel gris and alderwood.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/salts/eating-well-3.png",
-      "alt": "Salts",
+      "alt": "Swatches of six salts: Himalayan pink, black Hiwa Kai, red Alaea, alderwood smoked, flaky and sel gris.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/chili-peppers/eating-well-4.png",
-      "alt": "Salts",
+      "alt": "Diagram of optional glass jar and tin can gift boxes with full-color \"Your Logo\" graphics and dimensions.",
       "width": 1200,
       "height": 801
     }

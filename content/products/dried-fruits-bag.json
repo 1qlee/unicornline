@@ -129,32 +129,32 @@
   "videos": [],
   "thumbnail": {
     "key": "images/dried-fruits-bag/main-eating-well-17.png",
-    "alt": "Dried Fruits (Bag)",
+    "alt": "Three clear bags of dried cranberries, apples and papaya, each topped with an orange custom printed header tag.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/dried-fruits-bag/eating-well-47.png",
-      "alt": "Dried Fruits (Bag)",
+      "alt": "Six tagged dried fruit bags in a woven basket, with spec text for tag size, bag size and various net weights.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/dried-fruits-bag/eating-well-48.png",
-      "alt": "Dried Fruits (Bag)",
+      "alt": "Chart of six dried fruit options in circles: apples, pineapples, papayas, cranberries, kiwis and golden raisins.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/dried-fruits-bag/eating-well-49.png",
-      "alt": "Dried Fruits (Bag)",
+      "alt": "Text panel titled Dried Fruits: Healthy Snacks with a short description of each of the six fruit options.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/dried-fruits-bag/eating-well-56.png",
-      "alt": "Dried Fruits (Bag)",
+      "alt": "Six clear dried fruit bags with orange custom header tags arranged in two rows on and in front of a wooden board.",
       "width": 1200,
       "height": 801
     }

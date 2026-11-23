@@ -178,14 +178,14 @@
   ],
   "thumbnail": {
     "key": "images/golf-tee-packs/main-lifestyle-3.png",
-    "alt": "Golf Tee Packs",
+    "alt": "Illustration of a matchbook-style golf tee pack, shown open with four white tees and closed.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/golf-tee-packs/lifestyle-3.png",
-      "alt": "Golf Tee Packs",
+      "alt": "Open and closed golf tee pack with package sizes for 2 1/8, 2 3/4 and 3 1/4 inch tees.",
       "width": 1200,
       "height": 800
     }

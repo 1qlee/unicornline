@@ -179,14 +179,14 @@
   "videos": [],
   "thumbnail": {
     "key": "images/award-tower/award-tower-1.png",
-    "alt": "Award Tower",
+    "alt": "Two wooden tower awards with wraparound full-color printed plates, one with a portrait photo and one with a fruit design.",
     "width": 1200,
     "height": 800
   },
   "images": [
     {
       "key": "images/award-tower/award-tower-1.png",
-      "alt": "Award Tower",
+      "alt": "Award Tower sizes: 3\" x 3\" x 9\" with aluminum plate and 2 1/2\" x 2 1/2\" x 7 1/2\" with clear plastic plate, both on red oak.",
       "width": 1200,
       "height": 800
     },
@@ -210,7 +210,7 @@
     },
     {
       "key": "images/2-wick-candles/hand-made-in-usa.png",
-      "alt": "Award Tower",
+      "alt": "\"100% Handmade in USA\" badge with a red, white and blue American flag ribbon.",
       "width": 1200,
       "height": 600
     }

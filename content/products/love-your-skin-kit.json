@@ -82,20 +82,20 @@
   ],
   "thumbnail": {
     "key": "images/love-your-skin-kit/main-beauty-2.png",
-    "alt": "Love Your Skin™ Kit",
+    "alt": "Love Your Skin kit folder with a sample logo on a yellow and green wave design, with a sheet mask tucked inside.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/love-your-skin-kit/beauty-love-your-skin-1.png",
-      "alt": "Love Your Skin™ Kit",
+      "alt": "Woman with a lily in her hair beside the kit folder holding a sheet mask, with the 4 1/2\" x 6\" size.",
       "width": 1200,
       "height": 800
     },
     {
       "key": "images/love-your-skin-kit/beauty-love-your-skin-2.png",
-      "alt": "Love Your Skin™ Kit",
+      "alt": "Kit contents laid out: custom-printed folder with sample logo, a sheet mask pouch and a makeup remover wipe packet.",
       "width": 1200,
       "height": 800
     }

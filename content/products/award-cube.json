@@ -143,7 +143,7 @@
   "videos": [],
   "thumbnail": {
     "key": "images/award-cube/main-award-2.png",
-    "alt": "Award Cube",
+    "alt": "Two wooden award cubes, each with a full-color printed plate showing a sample logo, recipient name and date.",
     "width": 833,
     "height": 625
   },
@@ -174,7 +174,7 @@
     },
     {
       "key": "images/2-wick-candles/hand-made-in-usa.png",
-      "alt": "Award Cube",
+      "alt": "Red, white and blue \"100% Handmade in USA\" badge with a flag ribbon.",
       "width": 1200,
       "height": 600
     }

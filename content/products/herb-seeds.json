@@ -129,26 +129,26 @@
   "videos": [],
   "thumbnail": {
     "key": "images/herb-seeds/main-eating-well-13.png",
-    "alt": "Herb Seeds",
+    "alt": "Front and back of a lime green herb seed packet for dill with a \"Your Logo\" area and printed growing instructions.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/herb-seeds/eating-well-39.png",
-      "alt": "Herb Seeds",
+      "alt": "Custom dill seed packet shown front and open back with seed pouch, with the 4\" x 3 3/4\" packet size.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/herb-seeds/eating-well-40.png",
-      "alt": "Herb Seeds",
+      "alt": "Text panel titled \"Growing Fresh Herbs from Seeds\" describing six herbs over a background of leafy greens.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/herb-seeds/eating-well-41.png",
-      "alt": "Herb Seeds",
+      "alt": "Six herb seed options in circles: Greek Oregano, Genovese Basil, Sweet Marjoram, Italian Parsley, Dill and Common Chive.",
       "width": 1200,
       "height": 801
     }

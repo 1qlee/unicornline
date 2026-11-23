@@ -129,26 +129,26 @@
   "videos": [],
   "thumbnail": {
     "key": "images/candies-bag/main-eating-well-15.png",
-    "alt": "Candies (Bag)",
+    "alt": "Three clear bags of gummy bears, starlight mints and butterscotch, each topped with a green custom-printed header tag.",
     "width": 833,
     "height": 625
   },
   "images": [
     {
       "key": "images/candies-bag/eating-well-53.png",
-      "alt": "Candies (Bag)",
+      "alt": "Basket of six clear candy bags with matching custom header tags, with tag and bag dimensions.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/candies-bag/eating-well-54.png",
-      "alt": "Candies (Bag)",
+      "alt": "Six candy options: Gummy Bears, Fruit Barrels, Butterscotch, Caramel Squares, Starlight Mints and Salt Water Taffy.",
       "width": 1200,
       "height": 801
     },
     {
       "key": "images/candies-bag/eating-well-55.png",
-      "alt": "Candies (Bag)",
+      "alt": "Text panel titled \"Candies: Sweet Carnival\" describing each of the six candy flavors offered.",
       "width": 1200,
       "height": 801
     }
