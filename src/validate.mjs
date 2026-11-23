@@ -29,6 +29,7 @@ function checkPricing(pricing, where, errors) {
   if (!pricing || !Array.isArray(pricing.columns) || !Array.isArray(pricing.rows)) {
     return errors.push(`${where}: pricing needs columns and rows`)
   }
+  if (!isNonEmptyString(pricing.note)) errors.push(`${where}: missing note`)
   for (const column of pricing.columns) {
     if (column.method !== null && !PRINT_METHODS.has(column.method)) {
       errors.push(`${where}: unknown print method "${column.method}"`)
@@ -87,11 +88,19 @@ export function validateContent({ company, categories, featured, products }) {
   }
 
   featured.forEach((item, index) => {
-    if (!isNonEmptyString(item.path)) errors.push(`featured.json[${index}]: missing path`)
-    checkImage(item.image, `featured.json[${index}] image`, errors)
+    const where = `featured.json[${index}]`
+    for (const field of ["title", "line", "cta", "drawing"]) {
+      if (!isNonEmptyString(item[field])) errors.push(`${where}: missing ${field}`)
+    }
+    const { category, product } = item.target ?? {}
+    if (category && !categorySlugs.has(category)) errors.push(`${where}: unknown category "${category}"`)
+    if (product && !productSlugs.has(product)) errors.push(`${where}: unknown product "${product}"`)
+    if (!category && !product) errors.push(`${where}: target needs a category or a product`)
   })
 
-  if (!isNonEmptyString(company?.name)) errors.push("company.json: missing name")
+  for (const field of ["name", "owner", "lede", "address", "phone", "phoneE164"]) {
+    if (!isNonEmptyString(company?.[field])) errors.push(`company.json: missing ${field}`)
+  }
 
   return errors
 }

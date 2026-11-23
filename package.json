@@ -13,6 +13,10 @@
     "upload:assets": "node --env-file=.env scripts/upload-assets.mjs"
   },
   "devDependencies": {
-    "aws4fetch": "^1.0.20"
+    "aws4fetch": "^1.0.20",
+    "sharp": "^0.35.5"
+  },
+  "dependencies": {
+    "pdfjs-dist": "^6.5.438"
   }
 }
