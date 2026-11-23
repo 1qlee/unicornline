@@ -8,7 +8,9 @@
     "node": ">=22"
   },
   "scripts": {
-    "export:datocms": "node --env-file=.env scripts/export-datocms.mjs"
+    "export:datocms": "node --env-file=.env scripts/export-datocms.mjs",
+    "test": "node --test \"test/*.test.mjs\"",
+    "upload:assets": "node --env-file=.env scripts/upload-assets.mjs"
   },
   "devDependencies": {
     "aws4fetch": "^1.0.20"
