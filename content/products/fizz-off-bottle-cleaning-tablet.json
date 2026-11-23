@@ -42,7 +42,7 @@
         "method": "digital"
       },
       {
-        "label": "2500",
+        "label": "250",
         "method": "digital"
       },
       {
@@ -65,7 +65,7 @@
     "rows": [
       [
         "U3080",
-        "Bottle cleaner",
+        "Bottle Cleaner",
         "5.26",
         "3.89",
         "2.76",

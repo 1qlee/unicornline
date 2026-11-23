@@ -27,3 +27,10 @@ export function viewerPath(fileKey, backPath) {
 export function absoluteUrl(siteUrl, path) {
   return `${siteUrl.replace(/\/+$/, "")}${path}`
 }
+
+// Lets the quote form on the main site know which product the visitor came from.
+export function quoteUrlFor(quoteUrl, productName) {
+  const url = new URL(quoteUrl)
+  url.searchParams.set("product", productName)
+  return url.toString()
+}

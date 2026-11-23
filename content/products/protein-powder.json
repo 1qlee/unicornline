@@ -66,7 +66,7 @@
     "rows": [
       [
         "U4441G",
-        "Hemp protein",
+        "Hemp Protein",
         "12.17",
         "10.77",
         "10.29",
@@ -76,7 +76,7 @@
       ],
       [
         "U4442G",
-        "Whey protein",
+        "Whey Protein",
         "14.17",
         "12.77",
         "12.29",
@@ -86,7 +86,7 @@
       ],
       [
         "U4443G",
-        "Pea protein",
+        "Pea Protein",
         "11.17",
         "9.77",
         "9.29",
@@ -96,7 +96,7 @@
       ],
       [
         "U4444G",
-        "Brown rice protein",
+        "Brown Rice Protein",
         "11.17",
         "9.77",
         "9.29",
@@ -106,7 +106,7 @@
       ],
       [
         "U4445G",
-        "Brown flax seeds",
+        "Brown Flax Seeds",
         "13.17",
         "11.77",
         "11.29",
@@ -116,7 +116,7 @@
       ],
       [
         "U4446G",
-        "Chia seeds",
+        "Chia Seeds",
         "11.17",
         "9.77",
         "9.29",
@@ -136,7 +136,7 @@
       ],
       [
         "U4441T",
-        "Hemp protein",
+        "Hemp Protein",
         "13.59",
         "12.18",
         "11.70",
@@ -146,7 +146,7 @@
       ],
       [
         "U4442T",
-        "Whey protein",
+        "Whey Protein",
         "17.59",
         "16.18",
         "15.70",
@@ -156,7 +156,7 @@
       ],
       [
         "U4443T",
-        "Pea protein",
+        "Pea Protein",
         "13.59",
         "12.18",
         "11.70",
@@ -166,7 +166,7 @@
       ],
       [
         "U4444T",
-        "Brown rice protein",
+        "Brown Rice Protein",
         "13.59",
         "12.18",
         "11.70",
@@ -176,7 +176,7 @@
       ],
       [
         "U4445T",
-        "Brown flax seeds",
+        "Brown Flax Seeds",
         "15.59",
         "14.18",
         "13.70",
@@ -186,7 +186,7 @@
       ],
       [
         "U4446T",
-        "Chia seeds",
+        "Chia Seeds",
         "13.59",
         "12.18",
         "11.70",
@@ -195,7 +195,7 @@
         "11.28"
       ],
       [
-        "3435T",
+        "U3435T",
         "Gift box (option)",
         "5.07",
         "3.50",

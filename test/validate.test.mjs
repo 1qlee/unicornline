@@ -1,7 +1,7 @@
 import { test } from "node:test"
 import assert from "node:assert/strict"
 import { validateContent } from "../src/validate.mjs"
-import { productPath, categoryPath, assetUrl } from "../src/urls.mjs"
+import { productPath, categoryPath, assetUrl, quoteUrlFor } from "../src/urls.mjs"
 
 function image(overrides = {}) {
   return { key: "images/x/a.png", alt: "A candle", width: 10, height: 10, ...overrides }
@@ -69,4 +69,11 @@ test("a product in several categories lives under its first one", () => {
 
 test("asset URLs join the base and key without doubled slashes", () => {
   assert.equal(assetUrl("https://files.example.com/", "files/a b.pdf"), "https://files.example.com/files/a%20b.pdf")
+})
+
+test("the quote link carries the product name ahead of the #quote anchor", () => {
+  assert.equal(
+    quoteUrlFor("https://www.unicorngraphics.com/#quote", "Notable™ (Notebooks)"),
+    "https://www.unicorngraphics.com/?product=Notable%E2%84%A2+%28Notebooks%29#quote",
+  )
 })

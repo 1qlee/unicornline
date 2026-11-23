@@ -28,7 +28,7 @@
     "customShape": null
   },
   "pricing": {
-    "note": "Inkjet, 5C.",
+    "note": "Digital, 5C.",
     "columns": [
       {
         "label": "Item",
@@ -40,23 +40,23 @@
       },
       {
         "label": "5",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "10",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "25",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "50",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "100",
-        "method": "inkjet"
+        "method": "digital"
       }
     ],
     "rows": [

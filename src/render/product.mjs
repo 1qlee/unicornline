@@ -1,5 +1,5 @@
 import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
-import { productPath, homePath, assetUrl, viewerPath } from "../urls.mjs"
+import { productPath, homePath, assetUrl, viewerPath, quoteUrlFor } from "../urls.mjs"
 import { variantKey, widthsFor } from "../images.mjs"
 import { renderPage } from "./layout.mjs"
 
@@ -78,7 +78,7 @@ ${breadcrumb(product, category)}
 <p class="lede">${e(product.description)}</p>
 ${documentLinks(product, company, config)}
 <div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px">
-<a href="${e(config.quoteUrl)}" class="btn">Get a free quote</a>
+<a href="${e(quoteUrlFor(config.quoteUrl, product.name))}" class="btn">Get a free quote</a>
 <p style="font-size:16px">Or call <a href="tel:${e(company.phoneE164)}" style="font-weight:700">${e(company.phone)}</a></p>
 </div>
 </div>

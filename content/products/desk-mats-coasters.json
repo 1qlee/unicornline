@@ -26,7 +26,7 @@
     "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "note": "Inkjet, 6C.",
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",
@@ -38,33 +38,33 @@
       },
       {
         "label": "10",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "25",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "50",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "100",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "250",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "500",
-        "method": "inkjet"
+        "method": "digital"
       }
     ],
     "rows": [
       [
         "U3150",
-        "Desk mat - felt",
+        "Desk Mat - Felt",
         "38.20",
         "36.73",
         "35.31",
@@ -74,7 +74,7 @@
       ],
       [
         "U3151",
-        "Desk mat - PVC",
+        "Desk Mat - PVC",
         "32.38",
         "31.14",
         "29.94",
@@ -84,7 +84,7 @@
       ],
       [
         "U3160",
-        "Coaster - felt",
+        "Coaster - Felt",
         "35.17",
         "33.81",
         "32.51",

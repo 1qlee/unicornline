@@ -25,7 +25,7 @@
     "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "note": "Inkjet, 6C. Coins not included, priced separately.",
+    "note": "Digital, 6C. Coins not included, priced separately.",
     "columns": [
       {
         "label": "Item",
@@ -37,33 +37,33 @@
       },
       {
         "label": "100",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "250",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "500",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "1000",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "2500",
-        "method": "inkjet"
+        "method": "digital"
       },
       {
         "label": "5000",
-        "method": "inkjet"
+        "method": "digital"
       }
     ],
     "rows": [
       [
         "U3180",
-        "5 x 7 frame",
+        "5 x 7 Frame",
         "22.53",
         "22.03",
         "21.87",
@@ -73,7 +73,7 @@
       ],
       [
         "U3185",
-        "Mint set",
+        "Mint Set",
         "8.71",
         "7.26",
         "6.78",
@@ -83,7 +83,7 @@
       ],
       [
         "U3186",
-        "Single coin",
+        "Single Coin",
         "5.39",
         "3.94",
         "3.46",

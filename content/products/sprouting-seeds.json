@@ -66,7 +66,7 @@
     "rows": [
       [
         "U4501G",
-        "Fenugreek seeds",
+        "Fenugreek Seeds",
         "14.17",
         "12.77",
         "12.29",
@@ -76,7 +76,7 @@
       ],
       [
         "U4502G",
-        "Alfalfa seeds",
+        "Alfalfa Seeds",
         "16.17",
         "14.77",
         "14.29",
@@ -86,7 +86,7 @@
       ],
       [
         "U4503G",
-        "Mung bean seeds",
+        "Mung Bean Seeds",
         "12.17",
         "10.77",
         "10.29",
@@ -96,7 +96,7 @@
       ],
       [
         "U4504G",
-        "Broccoli seeds",
+        "Broccoli Seeds",
         "18.17",
         "16.77",
         "16.29",
@@ -106,7 +106,7 @@
       ],
       [
         "U4505G",
-        "Daikon radish seeds",
+        "Daikon Radish Seeds",
         "14.17",
         "12.77",
         "12.29",
@@ -116,7 +116,7 @@
       ],
       [
         "U4506G",
-        "Wheat seeds",
+        "Wheat Seeds",
         "12.17",
         "10.77",
         "10.29",
@@ -136,7 +136,7 @@
       ],
       [
         "U4501T",
-        "Fenugreek seeds",
+        "Fenugreek Seeds",
         "19.59",
         "18.18",
         "17.70",
@@ -146,7 +146,7 @@
       ],
       [
         "U4502T",
-        "Alfalfa seeds",
+        "Alfalfa Seeds",
         "19.59",
         "18.18",
         "17.70",
@@ -156,7 +156,7 @@
       ],
       [
         "U4503T",
-        "Mung bean seeds",
+        "Mung Bean Seeds",
         "15.59",
         "14.18",
         "13.70",
@@ -166,7 +166,7 @@
       ],
       [
         "U4504T",
-        "Broccoli seeds",
+        "Broccoli Seeds",
         "23.59",
         "22.18",
         "21.70",
@@ -176,7 +176,7 @@
       ],
       [
         "U4505T",
-        "Daikon radish seeds",
+        "Daikon Radish Seeds",
         "17.59",
         "16.18",
         "15.70",
@@ -186,7 +186,7 @@
       ],
       [
         "U4506T",
-        "Wheat seeds",
+        "Wheat Seeds",
         "14.59",
         "13.18",
         "12.70",
@@ -195,7 +195,7 @@
         "12.28"
       ],
       [
-        "3435T",
+        "U3435T",
         "Gift box (option)",
         "5.07",
         "3.50",
