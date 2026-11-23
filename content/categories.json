@@ -2,7 +2,7 @@
   {
     "slug": "accessory",
     "name": "Accessory",
-    "description": "Basic, everyday usable items like paper and plastic labels, coasters, menus, and luggage tags.",
+    "description": "Everyday items such as paper and plastic labels, menus, hang tags and bookmarks.",
     "photo": {
       "key": "images/categories/accessory-card.jpeg",
       "alt": "Assorted blank white stationery, notepads and cards laid flat on a pale wood floor",
@@ -13,7 +13,7 @@
   {
     "slug": "aromatherapy",
     "name": "Aromatherapy",
-    "description": "Products related to well-being through aromatherapy.",
+    "description": "Candles, oils and diffusers for well-being through scent.",
     "photo": {
       "key": "images/categories/lifestyle.jpg",
       "alt": "Flat lay of a notebook with a wooden tag bookmark, coffee cup, glasses and dried wheat",
@@ -24,7 +24,7 @@
   {
     "slug": "award",
     "name": "Award",
-    "description": "Award plaques in sleek, natural wood with customizable artwork.",
+    "description": "Award pieces in natural wood with custom printed artwork.",
     "photo": {
       "key": "images/categories/award-card.jpeg",
       "alt": "Hands raising a gold trophy against a clear blue sky",
@@ -35,7 +35,7 @@
   {
     "slug": "display",
     "name": "Display",
-    "description": "Large, wide displays on materials like ceiling tiles, chalk board, and dry erase.",
+    "description": "Large display pieces on materials like ceiling tiles, chalkboard and dry erase.",
     "photo": {
       "key": "images/categories/display-card.jpeg",
       "alt": "Wall covered in printed posters and flyers over graffiti",
@@ -46,13 +46,13 @@
   {
     "slug": "eating-well",
     "name": "Eating Well",
-    "description": "Promotinal products that promotes brand as well as living well by healthy eating.",
+    "description": "Teas, spices, snacks and seeds that promote a brand and healthy eating together.",
     "photo": null
   },
   {
     "slug": "gift-box",
     "name": "Gift Box",
-    "description": "Gift Boxes from folding cartons to corrugated mailers.",
+    "description": "Gift boxes, from folding cartons to corrugated mailers.",
     "photo": {
       "key": "images/categories/presentation-card.jpeg",
       "alt": "Kraft paper gift boxes tied with twine on a white wooden surface",
@@ -63,7 +63,7 @@
   {
     "slug": "lifestyle",
     "name": "Lifestyle",
-    "description": "Products for everyday life like stationery, leather accessories, and sports accessories.",
+    "description": "Products for everyday life: stationery, leather goods and golf accessories.",
     "photo": {
       "key": "images/categories/lifestyle.jpg",
       "alt": "Flat lay of a notebook with a wooden tag bookmark, coffee cup, glasses and dried wheat",
@@ -74,7 +74,7 @@
   {
     "slug": "skincare",
     "name": "Skincare",
-    "description": "Skincare products as promotional items with full-color, custom packaging.",
+    "description": "Skincare products as promotional items, in full-color custom packaging.",
     "photo": {
       "key": "images/categories/beauty-card.jpeg",
       "alt": "Red lipstick with its cap off beside blurred cosmetics bottles",

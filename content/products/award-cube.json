@@ -4,35 +4,32 @@
   "categories": [
     "award"
   ],
-  "description": "Wooden award cube with printed plate.",
+  "description": "A wooden award cube with a printed plate.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos / Personalization",
-      "Bleeds Allowed on All Sides",
-      "Hand-rubbed Finish",
-      "Available in 2 Plate Decoration Materials",
+      "Free setup, art, logos and personalization",
+      "Bleeds allowed on all sides",
+      "Hand-rubbed finish",
+      "2 plate decoration materials",
       "Made in USA"
     ],
     "materials": [
-      "U8120 / 8122 / 8123: Solid Wood Block and 1mm Clear Plastic",
-      "U8130 / 8132 / 8133: Solid Wood Block and 20mil Aluminum"
+      "U8120 / 8122 / 8123: solid wood block and 1mm clear plastic",
+      "U8130 / 8132 / 8133: solid wood block and 20mil aluminum"
     ],
     "printing": [
-      "Inkjet: Full Color and White Printing on One Side of Plate",
-      "Print Area U8120 ~ 8133: 2 3/4 x 5 5/8in"
+      "Inkjet: full color and white on one side of the plate",
+      "Print area: 2 3/4 x 5 5/8 in."
     ],
     "options": [
-      "Custom Plate Shape: $25 (G) each",
-      "packaging: Individual White Corrugated Box"
+      "Custom plate shape: $25 (G) each",
+      "Packaging: individual white corrugated box"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Inkjet",
-      "6C"
-    ],
+    "note": "Inkjet, 6C.",
     "columns": [
       {
         "label": "Item",

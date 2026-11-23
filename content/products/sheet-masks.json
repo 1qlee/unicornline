@@ -4,34 +4,31 @@
   "categories": [
     "skincare"
   ],
-  "description": "Full Color Custom Packed Sheet Mask. An enormously\npopular K-beauty phenomenon, sheet masks are now\navailable as a promotional gift in an attractive paper sleeve.",
+  "description": "A full-color, custom-packed sheet mask in a paper sleeve. The water-based mask has a rose fragrance, follows the contours of the face, and is made from 100% natural cellulose fibers, so it is biodegradable.",
   "notesHtml": "<p>This refreshing water-based sheet mask is accentuated with a pleasant rose fragrance that leaves the skin hydrated and radiant. The sheet mask is designed to fit to the contours of the face and adhere to the skin. This mask is made from 100% natural cellulose fibers, making it biodegradable and sustainable.</p>",
   "specs": {
     "features": [
-      "Free setup / art / logos",
-      "Bleeds allowed on all sides",
-      "Made with 100% natural cellulose fibers",
-      "Romantic rose scent",
+      "Free setup, art and logos",
+      "Bleeds on all sides",
+      "100% natural cellulose fibers",
+      "Rose scent",
       "Package printed in USA",
-      "Sheet masks made in Korea",
-      "Shipping Weight: 23 lbs per 250"
+      "Masks made in Korea",
+      "Shipping weight: 23 lbs per 250"
     ],
     "materials": [
-      "Package: 111# Gloss Cover"
+      "Package: 111# gloss cover stock"
     ],
     "printing": [
-      "Digital: Full color printing on both sides"
+      "Digital: full color on both sides"
     ],
     "options": [
-      "Artwork Change: $67 (G) each"
+      "Artwork change: $67 (G) each"
     ],
-    "customShape": "Die Charge: $150 (G) each shape"
+    "customShape": "Die charge: $150 (G) per shape"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "6C"
-    ],
+    "note": "Digital, 6C.",
     "columns": [
       {
         "label": "Item",

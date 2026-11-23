@@ -4,43 +4,40 @@
   "categories": [
     "lifestyle"
   ],
-  "description": "Custom printed notebooks with full color cover and one PMS inside color with fountain pen friendly papers for a better note keeping experience.",
+  "description": "Custom printed notebooks with a full-color cover, one PMS ink color inside, and paper suited to fountain pens.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free Setup / Art / Logos",
-      "Bleeds Allowed on All Sides",
-      "Available in Five Cover Options",
-      "Available in Three\t\t Popular Sizes",
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Five cover options",
+      "Three popular sizes",
       "Made in USA"
     ],
     "materials": [
-      "Cover: 100# Uncoated Cover",
-      "Inside: 60# Opaque Text (12 sheets / 48 pages)"
+      "Cover: 100# uncoated cover",
+      "Inside: 60# opaque text (12 sheets / 48 pages)"
     ],
     "printing": [
-      "Cover: Full Color Printing on 1 Side (Digital)",
-      "Inside: PMS One Color Printing on 2 Sides (Offset)"
+      "Cover: full color on 1 side (digital)",
+      "Inside: PMS one color on 2 sides (offset)"
     ],
     "options": [
-      "White Ultra Smooth Cover: Full Color Printed Cover (Standard)",
-      "Other Covers: Add $60 (G) to the Base Price",
-      "Artwork Change: $67 (G) each"
+      "White Ultra Smooth cover: full color printed cover (standard)",
+      "Other covers: add $60 (G) to the base price",
+      "Artwork change: $67 (G) each"
     ],
     "customShape": null
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "16C"
-    ],
+    "note": "Digital, 16C.",
     "columns": [
       {
         "label": "Item",
         "method": null
       },
       {
-        "label": "Type",
+        "label": "Size",
         "method": null
       },
       {
@@ -111,7 +108,7 @@
     "rows": [
       [
         "U3225",
-        "5 x 7in",
+        "5 x 7 in.",
         "9.86",
         "7.11",
         "6.20",
@@ -131,7 +128,7 @@
       ],
       [
         "U3226",
-        "5.5 x 8.5in",
+        "5.5 x 8.5 in.",
         "9.86",
         "7.11",
         "6.20",
@@ -151,7 +148,7 @@
       ],
       [
         "U3227",
-        "7 x 10in",
+        "7 x 10 in.",
         "11.04",
         "8.30",
         "7.38",

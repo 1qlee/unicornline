@@ -4,37 +4,33 @@
   "categories": [
     "gift-box"
   ],
-  "description": "Custom mailer boxes are a great way to tell your brand story and turn your E-commerce mailers, corporate/influencer gift boxes, subscription boxes, and sales kits into an uncompromised unboxing experience. Kitting & Distribution Services Available.",
+  "description": "Custom mailer boxes tell your brand story and upgrade e-commerce mailers, corporate and influencer gift boxes, subscription boxes and sales kits. Kitting and distribution services are available.",
   "notesHtml": null,
   "specs": {
     "features": [
-      "Free setup / art / logos",
+      "Free setup, art and logos",
       "Bleeds allowed on all sides",
       "No die charge on standard sizes",
-      "Available in 3 standard sizes",
-      "Available in 1 thickness",
+      "3 standard sizes",
+      "1 thickness",
       "Made in USA"
     ],
     "materials": [
-      "E-flute White Corrugated"
+      "E-flute white corrugated"
     ],
     "printing": [
-      "Digital: Full color printing on one side"
+      "Digital: full color on one side"
     ],
     "options": [
-      "Kitting and fulfillment services available",
-      "Contact us for more information!"
+      "Kitting and fulfillment services available"
     ],
-    "customShape": "Contact us for custom box sizes!"
+    "customShape": "Contact us for custom box sizes"
   },
   "pricing": {
-    "legend": [
-      "Digital",
-      "5C"
-    ],
+    "note": "Digital, 5C. Price per box.",
     "columns": [
       {
-        "label": "Item",
+        "label": "Size",
         "method": null
       },
       {
@@ -64,8 +60,8 @@
     ],
     "rows": [
       [
-        "8 in. x 8 in. x 2.75 in.",
-        "One Side",
+        "8 x 8 x 2.75 in.",
+        "One side",
         "9.45",
         "6.95",
         "6.11",
@@ -73,8 +69,8 @@
         "5.45"
       ],
       [
-        "8 in. x 8 in. x 2.75 in.",
-        "Two Side",
+        "8 x 8 x 2.75 in.",
+        "Two sides",
         "12.10",
         "9.60",
         "8.77",
@@ -82,8 +78,8 @@
         "8.10"
       ],
       [
-        "10 in. x 10 in. x 4 in.",
-        "One Side",
+        "10 x 10 x 4 in.",
+        "One side",
         "12.62",
         "9.28",
         "8.45",
@@ -91,8 +87,8 @@
         "7.78"
       ],
       [
-        "10 in. x 10 in. x 4 in.",
-        "Two Side",
+        "10 x 10 x 4 in.",
+        "Two sides",
         "17.20",
         "13.87",
         "13.03",
@@ -100,8 +96,8 @@
         "12.37"
       ],
       [
-        "11 in. x 11 in. x 4 in.",
-        "One Side",
+        "11 x 11 x 4 in.",
+        "One side",
         "13.13",
         "9.80",
         "8.96",
@@ -109,8 +105,8 @@
         "8.30"
       ],
       [
-        "11 in. x 11 in. x 4 in.",
-        "Two Side",
+        "11 x 11 x 4 in.",
+        "Two sides",
         "18.13",
         "14.80",
         "13.97",

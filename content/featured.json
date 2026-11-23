@@ -1,35 +1,29 @@
 [
   {
-    "name": "Health & Wellness Items",
-    "description": "Check out our new line of items!",
-    "path": "/eating-well",
-    "image": {
-      "key": "images/featured/tea.jpg",
-      "alt": "Stacked glass jars and square tins of tea with custom printed labels showing sample company logos",
-      "width": 1800,
-      "height": 1650
-    }
+    "title": "Health and wellness items",
+    "line": "A new line of skincare, aromatherapy and eating-well products.",
+    "cta": "See skincare products",
+    "target": {
+      "category": "skincare"
+    },
+    "drawing": "featured-health-wellness.svg"
   },
   {
-    "name": "Mailer Boxes",
-    "description": "Custom mailer boxes are a great way to tell your brand story.",
-    "path": "/gift-box/mailer-boxes",
-    "image": {
-      "key": "images/mailer-boxes/mailer-boxes-1.png",
-      "alt": "Overhead view of several kraft mailer boxes with different full-color printed designs on a green background.",
-      "width": 1200,
-      "height": 800
-    }
+    "title": "Mailer boxes",
+    "line": "Custom mailer boxes are a great way to tell your brand story.",
+    "cta": "See mailer boxes",
+    "target": {
+      "product": "mailer-boxes"
+    },
+    "drawing": "featured-mailer-boxes.svg"
   },
   {
-    "name": "Sheet Masks",
-    "description": "Full Color Custom Packed Sheet Mask.",
-    "path": "/skincare/sheet-masks",
-    "image": {
-      "key": "images/sheet-masks/beauty-sheet-mask-4.png",
-      "alt": "Sheet Mask Instructions",
-      "width": 1200,
-      "height": 800
-    }
+    "title": "Sheet masks",
+    "line": "Full-color, custom-packed sheet masks.",
+    "cta": "See sheet masks",
+    "target": {
+      "product": "sheet-masks"
+    },
+    "drawing": "featured-sheet-masks.svg"
   }
 ]
