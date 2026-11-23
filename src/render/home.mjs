@@ -15,11 +15,15 @@ function hero(catalog, productCount) {
 <h1 id="hero-h" class="disp reg">${e(company.name)}</h1>
 <div class="hero-row">
 <p class="lede">${e(company.lede)}</p>
+<div class="search-box" data-search-box>
 <label class="search">
 <span class="vh">Search the catalog</span>
-<input type="search" placeholder="Search ${productCount} products" autocomplete="off" data-search>
-<span aria-live="polite" data-search-count></span>
+<svg class="search-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
+<input type="search" placeholder="Search ${productCount} products" autocomplete="off" spellcheck="false" role="combobox" aria-autocomplete="list" aria-expanded="false" aria-controls="search-results" data-search>
+<span class="search-count" aria-live="polite" data-search-count></span>
 </label>
+<div class="search-results" id="search-results" role="listbox" aria-label="Matching products" hidden data-search-results></div>
+</div>
 </div>
 <div class="slug">
 <p>${e(capitalize(numberWord(categories.length)))} categories</p>
