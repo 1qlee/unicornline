@@ -1,0 +1,241 @@
+{
+  "slug": "uniq-prints-dry-erase",
+  "name": "Uniq Prints™ (Dry Erase)",
+  "categories": [
+    "display"
+  ],
+  "description": "Full Color Graphics Printed Directly on Dry Erase Board. A very smooth, clean dry erase writing surface that won't ghost and erases great every time. \nYou can create the most colorful custom boards with us. ",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Ready to hang",
+      "Made in USA"
+    ],
+    "materials": [
+      "U6220 - 6235: 3mm dry erase board"
+    ],
+    "printing": [
+      "Inkjet: Full Color Printing on One Side"
+    ],
+    "options": [
+      "Kraft Corrugated Individual Box"
+    ],
+    "customShape": "Setup Charge: $40 (G) each shape plus $0.05 (G) per linear cutting inch; no charge for round corners / circles"
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "5C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U6220",
+        "8 x 10in",
+        "49.47",
+        "39.47",
+        "33.47",
+        "31.47",
+        "30.47"
+      ],
+      [
+        "U6221",
+        "8 x 12in",
+        "51.31",
+        "41.31",
+        "35.31",
+        "33.31",
+        "32.31"
+      ],
+      [
+        "U6222",
+        "12 x 12in",
+        "74.44",
+        "64.44",
+        "58.44",
+        "56.44",
+        "55.44"
+      ],
+      [
+        "U6223",
+        "11 x 14in",
+        "77.30",
+        "67.30",
+        "61.30",
+        "59.30",
+        "58.30"
+      ],
+      [
+        "U6224",
+        "12 x 18in",
+        "81.51",
+        "71.51",
+        "65.51",
+        "63.51",
+        "62.51"
+      ],
+      [
+        "U6225",
+        "16 x 16in",
+        "89.12",
+        "79.12",
+        "73.12",
+        "71.12",
+        "70.12"
+      ],
+      [
+        "U6226",
+        "12 x 24in",
+        "91.91",
+        "81.91",
+        "75.91",
+        "73.91",
+        "72.91"
+      ],
+      [
+        "U6227",
+        "16 x 20in",
+        "94.09",
+        "84.09",
+        "78.09",
+        "76.09",
+        "75.09"
+      ],
+      [
+        "U6228",
+        "16 x 24in",
+        "101.84",
+        "91.84",
+        "85.84",
+        "83.84",
+        "82.84"
+      ],
+      [
+        "U6229",
+        "20 x 20in",
+        "102.93",
+        "92.93",
+        "86.93",
+        "84.93",
+        "83.93"
+      ],
+      [
+        "U6230",
+        "20 x 24in",
+        "110.98",
+        "100.98",
+        "94.98",
+        "92.98",
+        "91.98"
+      ],
+      [
+        "U6231",
+        "24 x 24in",
+        "155.92",
+        "145.92",
+        "139.92",
+        "137.92",
+        "136.92"
+      ],
+      [
+        "U6232",
+        "20 x 30in",
+        "154.08",
+        "144.08",
+        "138.08",
+        "136.08",
+        "135.08"
+      ],
+      [
+        "U6233",
+        "24 x 30in",
+        "166.65",
+        "156.65",
+        "150.65",
+        "148.65",
+        "147.65"
+      ],
+      [
+        "U6234",
+        "24 x 36in",
+        "177.39",
+        "167.39",
+        "161.39",
+        "159.39",
+        "158.39"
+      ],
+      [
+        "U6235",
+        "30 x 40in",
+        "201.86",
+        "191.86",
+        "185.86",
+        "183.86",
+        "182.86"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/uniq-prints-dry-erase/main-display-1.png",
+    "alt": "Uniq Prints™ (Dry Erase)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/uniq-prints-dry-erase/display-uniqprints-1.png",
+      "alt": "Uniq Prints Dry Erase Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/uniq-prints-dry-erase/display-uniqprints-2.png",
+      "alt": "Uniq Prints™ (Dry Erase)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/uniq-prints-dry-erase/catalog-2023-web-80.pdf",
+      "bytes": 231166
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

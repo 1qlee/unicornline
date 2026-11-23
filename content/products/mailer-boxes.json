@@ -1,0 +1,175 @@
+{
+  "slug": "mailer-boxes",
+  "name": "Mailer Boxes",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Custom mailer boxes are a great way to tell your brand story and turn your E-commerce mailers, corporate/influencer gift boxes, subscription boxes, and sales kits into an uncompromised unboxing experience. Kitting & Distribution Services Available.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard sizes",
+      "Available in 3 standard sizes",
+      "Available in 1 thickness",
+      "Made in USA"
+    ],
+    "materials": [
+      "E-flute White Corrugated"
+    ],
+    "printing": [
+      "Digital: Full color printing on one side"
+    ],
+    "options": [
+      "Kitting and fulfillment services available",
+      "Contact us for more information!"
+    ],
+    "customShape": "Contact us for custom box sizes!"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "5C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "25",
+        "method": "digital"
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "8 in. x 8 in. x 2.75 in.",
+        "One Side",
+        "9.45",
+        "6.95",
+        "6.11",
+        "5.61",
+        "5.45"
+      ],
+      [
+        "8 in. x 8 in. x 2.75 in.",
+        "Two Side",
+        "12.10",
+        "9.60",
+        "8.77",
+        "8.27",
+        "8.10"
+      ],
+      [
+        "10 in. x 10 in. x 4 in.",
+        "One Side",
+        "12.62",
+        "9.28",
+        "8.45",
+        "7.95",
+        "7.78"
+      ],
+      [
+        "10 in. x 10 in. x 4 in.",
+        "Two Side",
+        "17.20",
+        "13.87",
+        "13.03",
+        "12.53",
+        "12.37"
+      ],
+      [
+        "11 in. x 11 in. x 4 in.",
+        "One Side",
+        "13.13",
+        "9.80",
+        "8.96",
+        "8.46",
+        "8.30"
+      ],
+      [
+        "11 in. x 11 in. x 4 in.",
+        "Two Side",
+        "18.13",
+        "14.80",
+        "13.97",
+        "13.47",
+        "13.30"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/mailer-boxes/main-packaging-6.png",
+    "alt": "Mailer Boxes",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/mailer-boxes/mailer-boxes-1.png",
+      "alt": "Mailer Boxes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/mailer-boxes/mailer-boxes-2.png",
+      "alt": "Mailer Boxes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/mailer-boxes/mailer-boxes-3.png",
+      "alt": "Mailer Boxes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/mailer-boxes/mailer-boxes-4.png",
+      "alt": "Mailer Boxes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/mailer-boxes/mailer-boxes-5.png",
+      "alt": "Mailer Boxes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/mailer-boxes/template-mailer.pdf",
+      "bytes": 236459
+    },
+    "catalogPage": {
+      "key": "files/mailer-boxes/custom-mailersasi.jpg",
+      "bytes": 1841479
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

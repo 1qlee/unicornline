@@ -1,0 +1,170 @@
+{
+  "slug": "candies-bag",
+  "name": "Candies (Bag)",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Full Color Custom Packed Snacks. Wrapped up beautifully\nin a clear bag topped with a custom tag, you’ll wow your\ncustomers before they ever open the bag and get their first\ntaste. Talk about the perfect gift.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Tags Printed in USA",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, 80# Gloss Cover, Clear Bag"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on Tag"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4660",
+        "Gummy Bears",
+        "9.14",
+        "8.20",
+        "7.89",
+        "7.73",
+        "7.63",
+        "7.60"
+      ],
+      [
+        "U4661",
+        "Fruit Barrels",
+        "8.14",
+        "7.20",
+        "6.89",
+        "6.73",
+        "6.63",
+        "6.60"
+      ],
+      [
+        "U4662",
+        "Butterscotch Buttons",
+        "11.14",
+        "10.20",
+        "9.89",
+        "9.73",
+        "9.63",
+        "9.60"
+      ],
+      [
+        "U4663",
+        "Caramel Squares",
+        "16.14",
+        "15.20",
+        "14.89",
+        "14.73",
+        "14.63",
+        "14.60"
+      ],
+      [
+        "U4664",
+        "Starlight Mints",
+        "8.14",
+        "7.20",
+        "6.89",
+        "6.73",
+        "6.63",
+        "6.60"
+      ],
+      [
+        "U4665",
+        "Salt Water Taffy",
+        "8.14",
+        "7.20",
+        "6.89",
+        "6.73",
+        "6.63",
+        "6.60"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/candies-bag/main-eating-well-15.png",
+    "alt": "Candies (Bag)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/candies-bag/eating-well-53.png",
+      "alt": "Candies (Bag)",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candies-bag/eating-well-54.png",
+      "alt": "Candies (Bag)",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candies-bag/eating-well-55.png",
+      "alt": "Candies (Bag)",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/candies-bag/template-bag-eating-well.pdf",
+      "bytes": 2695358
+    },
+    "catalogPage": {
+      "key": "files/candies-bag/catalog-2023-web-59.pdf",
+      "bytes": 463472
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

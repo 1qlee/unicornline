@@ -1,0 +1,223 @@
+{
+  "slug": "wipes-and-lotions",
+  "name": "Wipes & Lotions",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Full color, custom packed wipes and lotions. We have procured the most popular wipes and lotions in convenient single use packages. All our wipes and lotion come individually prepacked in an attractive custom printed package.",
+  "notesHtml": "<p>6.5” x 5” (Wipe) • 2.25” x 2” (Packet)</p>",
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Package Printed in USA"
+    ],
+    "materials": [
+      "Package: 8pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on Both Sides"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each",
+      "Packaging: Bulk"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1311 • U1338 • U1339 • U1340",
+        "3.49",
+        "2.35",
+        "1.70",
+        "1.32",
+        "1.19",
+        "1.06"
+      ],
+      [
+        "U1315 • U1331 • U1355 • U1358 • U1363",
+        "3.53",
+        "2.39",
+        "1.75",
+        "1.36",
+        "1.23",
+        "1.10"
+      ],
+      [
+        "U1330",
+        "3.77",
+        "2.64",
+        "1.99",
+        "1.60",
+        "1.47",
+        "1.35"
+      ],
+      [
+        "U1356 • U1380",
+        "3.47",
+        "2.33",
+        "1.69",
+        "1.30",
+        "1.17",
+        "1.04"
+      ],
+      [
+        "U1337 • U1362",
+        "3.76",
+        "2.63",
+        "1.98",
+        "1.59",
+        "1.46",
+        "1.34"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/wipes-and-lotions/main-lifestyle-10.png",
+    "alt": "Wipes & Lotions",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-8.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-2.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-3.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-4.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-5.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-6.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-7.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-9.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-10.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-11.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-12.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-13.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-14.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-15.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-16.png",
+      "alt": "Wipes & Lotions",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/wipes-and-lotions/template-wipes-lotions.pdf",
+      "bytes": 2932978
+    },
+    "catalogPage": {
+      "key": "files/wipes-and-lotions/2023-wipes-lotions.pdf",
+      "bytes": 2570191
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

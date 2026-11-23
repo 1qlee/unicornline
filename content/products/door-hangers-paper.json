@@ -1,0 +1,261 @@
+{
+  "slug": "door-hangers-paper",
+  "name": "Door Hangers (Paper)",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full color door hangers on coated stock.",
+  "notesHtml": "<p>For U5132: Shapes 1 to 8 come with a business card holder at the bottom.</p>",
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "No Die Charge on Standard Shapes",
+      "No Overrun Charge",
+      "Two Separate Artworks for Front & Back Allowed",
+      "Available in Fourteen Standard Shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5130 - 5132: 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One / Two Sides"
+    ],
+    "options": [
+      "Artwork Change: $37 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape. No charge for standard shapes, square corners, or circles."
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5130",
+        "One Side",
+        "2.85",
+        "1.90",
+        "1.58",
+        "1.42",
+        "1.33",
+        "1.27",
+        "1.22",
+        "1.19",
+        "1.14",
+        "1.08",
+        "1.05",
+        "0.94",
+        "0.60",
+        "0.35",
+        "0.27",
+        "0.23"
+      ],
+      [
+        "U5130",
+        "Two Sides",
+        "3.41",
+        "2.30",
+        "1.92",
+        "1.74",
+        "1.63",
+        "1.55",
+        "1.50",
+        "1.46",
+        "1.41",
+        "1.33",
+        "1.29",
+        "1.26",
+        "0.85",
+        "0.48",
+        "0.36",
+        "0.30"
+      ],
+      [
+        "U5131",
+        "One Side",
+        "3.01",
+        "2.06",
+        "1.75",
+        "1.59",
+        "1.50",
+        "1.43",
+        "1.39",
+        "1.35",
+        "1.31",
+        "1.24",
+        "1.21",
+        "0.96",
+        "0.62",
+        "0.37",
+        "0.29",
+        "0.25"
+      ],
+      [
+        "U5131",
+        "Two Sides",
+        "3.62",
+        "2.50",
+        "2.13",
+        "1.94",
+        "1.83",
+        "1.76",
+        "1.71",
+        "1.67",
+        "1.61",
+        "1.54",
+        "1.40",
+        "0.98",
+        "0.64",
+        "0.39",
+        "0.30",
+        "0.26"
+      ],
+      [
+        "U5132",
+        "One Side",
+        "3.40",
+        "2.45",
+        "2.13",
+        "1.97",
+        "1.88",
+        "1.82",
+        "1.77",
+        "1.74",
+        "1.69",
+        "1.63",
+        "1.43",
+        "1.01",
+        "0.68",
+        "0.43",
+        "0.35",
+        "0.30"
+      ],
+      [
+        "U5132",
+        "Two Sides",
+        "4.13",
+        "3.02",
+        "2.65",
+        "2.46",
+        "2.35",
+        "2.28",
+        "2.23",
+        "2.19",
+        "2.13",
+        "1.89",
+        "1.47",
+        "1.04",
+        "0.70",
+        "0.45",
+        "0.37",
+        "0.32"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/door-hangers-paper/main-accessory-5.png",
+    "alt": "Door Hangers (Paper)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/door-hangers-paper/accessory-5.png",
+      "alt": "Door Hangers Paper Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/door-hangers-paper/template-door-hangers.pdf",
+      "bytes": 239569
+    },
+    "catalogPage": {
+      "key": "files/door-hangers-paper/catalog-2023-web-62.pdf",
+      "bytes": 211975
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

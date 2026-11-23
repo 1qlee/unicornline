@@ -1,0 +1,237 @@
+{
+  "slug": "hanging-permits-plastic",
+  "name": "Hanging Permits (Plastic)",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full color hanging permits on plastic.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "No Die Charge on Standard Shapes",
+      "No Overrun Charge",
+      "Two Separtate Artworks for Front & Back Allowed",
+      "Available in Six Standard Shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5380 - 5385: 20 mil PVC"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One / Two sides"
+    ],
+    "options": [
+      "Artwork Change: $37 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "7C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5380",
+        "One Side",
+        "1.60",
+        "1.01",
+        "0.82",
+        "0.72",
+        "0.67",
+        "0.65",
+        "0.64"
+      ],
+      [
+        "U5380",
+        "Two Sides",
+        "1.85",
+        "1.16",
+        "0.93",
+        "0.82",
+        "0.76",
+        "0.73",
+        "0.72"
+      ],
+      [
+        "U5381",
+        "One Side",
+        "1.73",
+        "1.14",
+        "0.95",
+        "0.85",
+        "0.80",
+        "0.78",
+        "0.77"
+      ],
+      [
+        "U5381",
+        "Two Sides",
+        "2.00",
+        "1.31",
+        "1.09",
+        "0.98",
+        "0.91",
+        "0.89",
+        "0.88"
+      ],
+      [
+        "U5382",
+        "One Side",
+        "1.76",
+        "1.17",
+        "0.98",
+        "0.89",
+        "0.83",
+        "0.81",
+        "0.81"
+      ],
+      [
+        "U5382",
+        "Two Sides",
+        "2.05",
+        "1.36",
+        "1.13",
+        "1.02",
+        "0.95",
+        "0.93",
+        "0.92"
+      ],
+      [
+        "U5383",
+        "One Side",
+        "1.87",
+        "1.28",
+        "1.09",
+        "1.00",
+        "0.94",
+        "0.92",
+        "0.91"
+      ],
+      [
+        "U5383",
+        "Two Sides",
+        "2.17",
+        "1.48",
+        "1.26",
+        "1.15",
+        "1.08",
+        "1.06",
+        "1.05"
+      ],
+      [
+        "U5384",
+        "One Side",
+        "2.00",
+        "1.42",
+        "1.23",
+        "1.13",
+        "1.08",
+        "1.06",
+        "1.05"
+      ],
+      [
+        "U5384",
+        "Two Sides",
+        "2.33",
+        "1.64",
+        "1.42",
+        "1.31",
+        "1.24",
+        "1.22",
+        "1.21"
+      ],
+      [
+        "U5385",
+        "One Side",
+        "2.33",
+        "1.75",
+        "1.56",
+        "1.47",
+        "1.41",
+        "1.40",
+        "1.39"
+      ],
+      [
+        "U5385",
+        "Two Sides",
+        "2.73",
+        "2.05",
+        "1.83",
+        "1.72",
+        "1.65",
+        "1.63",
+        "1.62"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/hanging-permits-paper/main-accessory-10.png",
+    "alt": "Hanging Permits (Plastic)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/hanging-permits-plastic/accessory-18.png",
+      "alt": "Hanging Permits Plastic Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/hanging-permits-paper/template-hanging-permits.pdf",
+      "bytes": 97368
+    },
+    "catalogPage": {
+      "key": "files/hanging-permits-paper/catalog-2023-web-68.pdf",
+      "bytes": 141379
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

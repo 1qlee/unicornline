@@ -1,0 +1,232 @@
+{
+  "slug": "award-tower",
+  "name": "Award Tower",
+  "categories": [
+    "award"
+  ],
+  "description": "Wooden Tower Award with Printed Plate is an economical and environmentally friendly option.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos / Personalization",
+      "Bleeds Allowed on All Sides",
+      "Hand-rubbed Finish",
+      "Available in 2 Plate Decoration Materials",
+      "Available in 4 Standard Shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8200 / 8220 ~ 8223: Solid Wood Block and 1mm Clear",
+      "U8210 / 8230 ~ 8233: Solid Wood Block and 20mm Aluminum"
+    ],
+    "printing": [
+      "Inkjet: Full Color and White Printing on One Side of Plate",
+      "Print Area U8200 / 8210: 4.5 x 7.5in",
+      "Print Area U8220 - 8234: 5.5 x 9in"
+    ],
+    "options": [
+      "Custom Plate Shape: $25 (G) each",
+      "packaging: Individual White Corrugated Box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Material",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8200",
+        "Plastic",
+        "Red Oak",
+        "2.5 x 2.5 x 7.5in",
+        "73.35",
+        "66.69",
+        "62.69",
+        "61.35",
+        "60.69",
+        "60.29"
+      ],
+      [
+        "U8210",
+        "Aluminum",
+        "Red Oak",
+        "2.5 x 2.5 x 7.5in",
+        "78.14",
+        "73.14",
+        "70.14",
+        "69.14",
+        "68.64",
+        "68.34"
+      ],
+      [
+        "U8220",
+        "Plastic",
+        "Red Oak",
+        "3 x 3 x 9in",
+        "81.18",
+        "74.52",
+        "70.52",
+        "69.18",
+        "68.52",
+        "68.12"
+      ],
+      [
+        "U8222",
+        "Plastic",
+        "Cherry",
+        "3 x 3 x 9in",
+        "84.63",
+        "77.97",
+        "73.97",
+        "72.63",
+        "71.97",
+        "71.57"
+      ],
+      [
+        "U8223",
+        "Plastic",
+        "Hard Maple",
+        "3 x 3 x 9in",
+        "84.29",
+        "77.62",
+        "73.62",
+        "72.29",
+        "71.62",
+        "71.22"
+      ],
+      [
+        "U8230",
+        "Aluminum",
+        "Red Oak",
+        "3 x 3 x 9in",
+        "87.27",
+        "82.27",
+        "79.27",
+        "78.27",
+        "77.77",
+        "77.47"
+      ],
+      [
+        "U8232",
+        "Aluminum",
+        "Cherry",
+        "3 x 3 x 9in",
+        "90.72",
+        "85.72",
+        "82.72",
+        "81.72",
+        "81.22",
+        "80.92"
+      ],
+      [
+        "U8233",
+        "Aluminum",
+        "Hard Maple",
+        "3 x 3 x 9in",
+        "90.38",
+        "85.38",
+        "82.38",
+        "81.38",
+        "80.88",
+        "80.58"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-tower/award-tower-1.png",
+    "alt": "Award Tower",
+    "width": 1200,
+    "height": 800
+  },
+  "images": [
+    {
+      "key": "images/award-tower/award-tower-1.png",
+      "alt": "Award Tower",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-tower/award-tower-2.png",
+      "alt": "Aluminum and Clear Plastic Plate Materials",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-tower/award-tower-3.png",
+      "alt": "Red Oak, Ash, Cherry, Soft Maple, Walnut",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-tower/award-tower-4.png",
+      "alt": "Award Tower Standard Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Award Tower",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-tower/template-award-tower.pdf",
+      "bytes": 81169
+    },
+    "catalogPage": {
+      "key": "files/award-tower/catalog-2023-web-86.pdf",
+      "bytes": 607026
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

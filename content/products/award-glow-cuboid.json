@@ -1,0 +1,123 @@
+{
+  "slug": "award-glow-cuboid",
+  "name": "Award Glow Cuboid™",
+  "categories": [
+    "award"
+  ],
+  "description": "Direct Printed Sleek Solid Wood Cuboid™ award block with an opaque, resin top-piece. Fluorescent acrylic is attached at a slant to create the illusion of a colorful glow throughout the milky top-piece. Acrylic is available in multiple colors. Each award is produced individually by hand.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos / Personalization",
+      "Hand-rubbed Finish",
+      "Orange Fluorescent Acrylic Standard",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8350: Solid Wood Block + Fluorescent Acrylic + Resin"
+    ],
+    "printing": [
+      "Inkjet: Full Color and White Printing on One Side",
+      "Print Area : 3 x 6.5in"
+    ],
+    "options": [
+      "Acrylic Color Change: $30 (G) per order",
+      "Artwork Change: $27 (G) each",
+      "packaging: Individual White Corrugated Box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8350",
+        "Red Oak",
+        "106.26",
+        "102.92",
+        "100.92",
+        "100.26",
+        "99.92",
+        "99.72"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-glow-cuboid/main-award-1.png",
+    "alt": "Award Glow Cuboid™",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-glow-cuboid/award-cuboid-3.png",
+      "alt": "Award Glow Cuboid™",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-glow-cuboid/award-cuboid-4.png",
+      "alt": "Award Glow Cuboid™",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Award Glow Cuboid™",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-glow-cuboid/award-glow-cuboid.pdf",
+      "bytes": 77561
+    },
+    "catalogPage": {
+      "key": "files/award-glow-cuboid/catalog-2023-web-88.pdf",
+      "bytes": 377198
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "slug": "award-cuboid",
+  "name": "Award Cuboid™",
+  "categories": [
+    "award"
+  ],
+  "description": "Direct Printed Sleek Solid Wood Cuboid™ award is an economical and environmentally friendly option.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos / Personalization",
+      "Bleeds Allowed on All Sides",
+      "Hand-rubbed Finish",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8430 ~ 8433: Solid Wood Board"
+    ],
+    "printing": [
+      "Inkjet: Full Color and White Printing on One Side",
+      "Print Area : 3.5 x 9.5in"
+    ],
+    "options": [
+      "White Underlay Image: $5.00 (G) each",
+      "Artwork Change: $27 (G) each",
+      "packaging: Individual White Corrugated Box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8430",
+        "Red Oak",
+        "71.67",
+        "68.34",
+        "66.34",
+        "65.67",
+        "65.34",
+        "65.14"
+      ],
+      [
+        "U8432",
+        "Cherry",
+        "76.19",
+        "72.86",
+        "70.86",
+        "70.19",
+        "69.86",
+        "69.66"
+      ],
+      [
+        "U8433",
+        "Hard Maple",
+        "76.77",
+        "73.44",
+        "71.44",
+        "70.77",
+        "70.44",
+        "70.24"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-cuboid/main-award-3.png",
+    "alt": "Award Cuboid™",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-cuboid/award-cuboid-1.png",
+      "alt": "Award Cuboid Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-cuboid/award-cuboid-2.png",
+      "alt": "Award Cuboid™",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Award Cuboid™",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-cuboid/template-award-cuboid.pdf",
+      "bytes": 69270
+    },
+    "catalogPage": {
+      "key": "files/award-cuboid/catalog-2023-web-90.pdf",
+      "bytes": 655182
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

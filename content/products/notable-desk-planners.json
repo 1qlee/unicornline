@@ -1,0 +1,162 @@
+{
+  "slug": "notable-desk-planners",
+  "name": "Notable™ (Desk Planners)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Custom Printed Desk Planners with Full Color Artwork with\nfountain pen friendly papers for a better note keeping experience.\nUnlike traditional calendars, our planner is undated\nso you can fill in the date on your own — perfect for using\nduring those busy days where you need an extra hand\nstaying organized.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "24pt Cardboard Backing",
+      "Glue Padded on the Top",
+      "Made in USA"
+    ],
+    "materials": [
+      "Paper: 60# Opaque Text (12 sheets)"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One Side"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3280",
+        "12x18in",
+        "14.08",
+        "9.08",
+        "7.41",
+        "6.58",
+        "6.08",
+        "5.74",
+        "5.09",
+        "4.60",
+        "3.92",
+        "3.04",
+        "2.58",
+        "2.13",
+        "1.77",
+        "1.50",
+        "1.41",
+        "1.36"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/notable-desk-planners/main-lifestyle-14.png",
+    "alt": "Notable™ (Desk Planners)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-desk-planners/lifestyle-49.png",
+      "alt": "Notable™ (Desk Planners)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-desk-planners/lifestyle-50.png",
+      "alt": "Notable™ (Desk Planners)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/notable-desk-planners/catalog-2023-web-36.pdf",
+      "bytes": 547628
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

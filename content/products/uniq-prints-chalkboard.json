@@ -1,0 +1,241 @@
+{
+  "slug": "uniq-prints-chalkboard",
+  "name": "Uniq Prints™ (Chalk Board)",
+  "categories": [
+    "display"
+  ],
+  "description": "Full Color Graphics Printed Directly on Black Chalkboard.Chalkboard signs and menus are a unique and colorful way to add originality and an artistic flare to your cafe, \nrestaurant, coffee shop or any retail business.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Ready to Hang",
+      "Made in USA"
+    ],
+    "materials": [
+      "U6240 - 6255: 3mm black chalkboard"
+    ],
+    "printing": [
+      "Inkjet: Full Color and White Printing on One Side"
+    ],
+    "options": [
+      "Kraft Corrugated Individual Box"
+    ],
+    "customShape": "Setup Charge: $40 (G) each shape plus $0.05 (G) per linear cutting inch; no charge for round corners / circles"
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "5C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U6240",
+        "8 x 10in",
+        "56.59",
+        "46.59",
+        "40.59",
+        "38.59",
+        "37.59"
+      ],
+      [
+        "U6241",
+        "8 x 12in",
+        "59.82",
+        "49.82",
+        "43.82",
+        "41.82",
+        "40.82"
+      ],
+      [
+        "U6242",
+        "12 x 12in",
+        "88.38",
+        "78.38",
+        "72.38",
+        "70.38",
+        "69.38"
+      ],
+      [
+        "U6243",
+        "11 x 14in",
+        "92.62",
+        "82.62",
+        "76.62",
+        "74.62",
+        "73.62"
+      ],
+      [
+        "U6244",
+        "12 x 18in",
+        "100.90",
+        "90.90",
+        "84.90",
+        "82.90",
+        "81.90"
+      ],
+      [
+        "U6245",
+        "16 x 16in",
+        "115.50",
+        "105.50",
+        "99.50",
+        "97.50",
+        "96.50"
+      ],
+      [
+        "U6246",
+        "12 x 24in",
+        "120.17",
+        "110.17",
+        "104.17",
+        "102.17",
+        "101.17"
+      ],
+      [
+        "U6247",
+        "16 x 20in",
+        "124.16",
+        "114.16",
+        "108.16",
+        "106.16",
+        "105.16"
+      ],
+      [
+        "U6248",
+        "16 x 24in",
+        "138.44",
+        "128.44",
+        "122.44",
+        "120.44",
+        "119.44"
+      ],
+      [
+        "U6249",
+        "20 x 20in",
+        "140.44",
+        "130.44",
+        "124.44",
+        "122.44",
+        "121.44"
+      ],
+      [
+        "U6250",
+        "20 x 24in",
+        "155.12",
+        "145.12",
+        "139.12",
+        "137.12",
+        "136.12"
+      ],
+      [
+        "U6251",
+        "24 x 24in",
+        "227.29",
+        "217.29",
+        "211.29",
+        "209.29",
+        "208.29"
+      ],
+      [
+        "U6252",
+        "20 x 30in",
+        "215.55",
+        "205.55",
+        "199.55",
+        "197.55",
+        "196.55"
+      ],
+      [
+        "U6253",
+        "24 x 30in",
+        "246.27",
+        "236.27",
+        "230.27",
+        "228.27",
+        "227.27"
+      ],
+      [
+        "U6254",
+        "24 x 36in",
+        "265.26",
+        "255.26",
+        "249.26",
+        "247.26",
+        "246.26"
+      ],
+      [
+        "U6255",
+        "30 x 40in",
+        "308.94",
+        "298.94",
+        "292.94",
+        "290.94",
+        "289.94"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/uniq-prints-chalkboard/main-display-2.png",
+    "alt": "Uniq Prints™ (Chalk Board)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/uniq-prints-chalkboard/display-uniqprints-2.png",
+      "alt": "Uniq Prints Chalk Board Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/uniq-prints-chalkboard/display-uniqprints-4.png",
+      "alt": "Uniq Prints™ (Chalk Board)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/uniq-prints-chalkboard/catalog-2023-web-81.pdf",
+      "bytes": 357042
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

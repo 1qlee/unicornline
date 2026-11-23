@@ -1,0 +1,122 @@
+{
+  "slug": "fizz-off-bottle-cleaning-tablet",
+  "name": "Bottle Cleaning Tablets (Fizz off™)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Give your tumblers and bottles a new and fresh look with our new biodegradable and chlorine-free cleaning tablet! Our bottle cleaning tablets dissolve in water, creating bubbles that clean stubborn stains and odors without any harsh chemicals.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Bottle Cleaning Tablets Made in China",
+      "Individually Packaged Tablet",
+      "Package Printed in USA"
+    ],
+    "materials": [
+      "Package: 8pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on Outside of Packaging"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each",
+      "Packaging: Bulk"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3080",
+        "Bottle Cleaner",
+        "5.26",
+        "3.89",
+        "2.76",
+        "2.12",
+        "1.73",
+        "1.60"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/fizz-off-bottle-cleaning-tablet/main-lifestyle-1.png",
+    "alt": "Bottle Cleaning Tablets (Fizz off™)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/fizz-off-bottle-cleaning-tablet/lifestyle-13.png",
+      "alt": "Bottle Cleaning Tablets (Fizz off™)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/fizz-off-bottle-cleaning-tablet/lifestyle-14.png",
+      "alt": "Bottle Cleaning Tablets (Fizz off™)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/fizz-off-bottle-cleaning-tablet/lifestyle-12.png",
+      "alt": "Bottle Cleaning Tablets (Fizz off™)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/fizz-off-bottle-cleaning-tablet/template-bottle-cleaning-tablet.pdf",
+      "bytes": 168212
+    },
+    "catalogPage": {
+      "key": "files/fizz-off-bottle-cleaning-tablet/catalog-2023-web-26.pdf",
+      "bytes": 1191511
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

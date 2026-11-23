@@ -1,0 +1,251 @@
+{
+  "slug": "image-wrap-faux-canvas",
+  "name": "Image Wrap™ (Faux Canvas)",
+  "categories": [
+    "display"
+  ],
+  "description": "Full Color Graphics Printed Directly on Faux-canvas \nFoamboard. Its embossed, textured surface adds depth to print. Transform your favorite digital photos as a beautiful piece of unique wall art. The Image continues over the sides of the frame.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Ready to Hang (gallery wrap)",
+      "Indoor Application Only",
+      "Image Continues Over the Sides of the Frame",
+      "Wrapped Edges are a Reflection of the Image",
+      "Made in USA"
+    ],
+    "materials": [
+      "U7000 - 7015: 3/16 in faux canvas foamboard"
+    ],
+    "printing": [
+      "Inkjet: Full Color Printing on One Side"
+    ],
+    "options": [
+      "White Corrugated Individual Box",
+      "Mirrored Edge Setup: $10 (G) each image",
+      "Wrapped Edges are a Reflection of the Main Image"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "5C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U7000",
+        "8 x 10in",
+        "66.19",
+        "57.86",
+        "52.86",
+        "51.19",
+        "50.36"
+      ],
+      [
+        "U7001",
+        "8 x 12in",
+        "69.40",
+        "61.07",
+        "56.07",
+        "54.40",
+        "53.57"
+      ],
+      [
+        "U7002",
+        "12 x 12in",
+        "95.15",
+        "86.82",
+        "81.82",
+        "80.15",
+        "79.32"
+      ],
+      [
+        "U7003",
+        "11 x 14in",
+        "96.66",
+        "88.33",
+        "83.33",
+        "81.66",
+        "80.83"
+      ],
+      [
+        "U7004",
+        "12 x 18in",
+        "106.69",
+        "98.35",
+        "93.35",
+        "91.69",
+        "90.85"
+      ],
+      [
+        "U7005",
+        "16 x 16in",
+        "111.07",
+        "102.73",
+        "97.73",
+        "96.07",
+        "95.23"
+      ],
+      [
+        "U7006",
+        "12 x 24in",
+        "119.34",
+        "111.01",
+        "106.01",
+        "104.34",
+        "103.51"
+      ],
+      [
+        "U7007",
+        "16 x 20in",
+        "121.52",
+        "113.18",
+        "108.18",
+        "106.52",
+        "105.68"
+      ],
+      [
+        "U7008",
+        "16 x 24in",
+        "129.18",
+        "120.85",
+        "115.85",
+        "114.18",
+        "113.35"
+      ],
+      [
+        "U7009",
+        "20 x 20in",
+        "135.87",
+        "127.54",
+        "122.54",
+        "120.87",
+        "120.04"
+      ],
+      [
+        "U7010",
+        "20 x 24in",
+        "150.21",
+        "141.88",
+        "136.88",
+        "135.21",
+        "134.38"
+      ],
+      [
+        "U7011",
+        "24 x 24in",
+        "176.72",
+        "168.39",
+        "163.39",
+        "161.72",
+        "160.89"
+      ],
+      [
+        "U7012",
+        "20 x 30in",
+        "180.01",
+        "171.68",
+        "166.68",
+        "165.01",
+        "164.18"
+      ],
+      [
+        "U7013",
+        "24 x 30in",
+        "191.49",
+        "183.16",
+        "178.16",
+        "176.49",
+        "175.66"
+      ],
+      [
+        "U7014",
+        "24 x 36in",
+        "206.25",
+        "197.92",
+        "192.92",
+        "191.25",
+        "190.42"
+      ],
+      [
+        "U7015",
+        "30 x 40in",
+        "248.59",
+        "240.26",
+        "235.26",
+        "233.59",
+        "232.76"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/image-wrap-faux-canvas/main-creative-2.png",
+    "alt": "Image Wrap™ (Faux Canvas)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/image-wrap-faux-canvas/creative-imagewrap-fc-1.png",
+      "alt": "Image Wrap Faux Canvas Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/image-wrap-faux-canvas/creative-imagewrap-fc-2.png",
+      "alt": "Image Wrap Faux Canvas Zoomed-in Detail",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/image-wrap-faux-canvas/creative-imagewrap-fc-3.png",
+      "alt": "Image Wrap™ (Faux Canvas)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/image-wrap-faux-canvas/catalog-2023-web-82.pdf",
+      "bytes": 311908
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

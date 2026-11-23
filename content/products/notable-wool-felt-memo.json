@@ -1,0 +1,114 @@
+{
+  "slug": "notable-wool-felt-memo",
+  "name": "Notable™ (Wool Felt Memo)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Custom Printed Memo with Full Color Artwork with Wool\nFelt Tray. This felt memo are crafted from luxurious Merino\nWool Felt, making them both stylish and functional. Made\nof high grade paper, our memo is perfect for jotting down\nimpromptu notes, observations, and ideas.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds 10% Extra",
+      "Made in USA"
+    ],
+    "materials": [
+      "Memo: 60# Opaque Text (250 sheets)",
+      "Tray: 3mm Merino Wool Felt, Oeko Tex® 100 Certified Class II, EU Toy Safety Standard EN 71, Natural & Renewable, Naturally Anti-Bacterial"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One Side (Memo)"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "10",
+        "method": "digital"
+      },
+      {
+        "label": "25",
+        "method": "digital"
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3281",
+        "Felt Memo",
+        "21.49",
+        "20.66",
+        "19.87",
+        "19.11",
+        "18.55",
+        "18.01"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/notable-wool-felt-memo/main-lifestyle-13.png",
+    "alt": "Notable™ (Wool Felt Memo)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-wool-felt-memo/lifestyle-46.png",
+      "alt": "Notable™ (Wool Felt Memo)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-wool-felt-memo/lifestyle-47.png",
+      "alt": "Notable™ (Wool Felt Memo)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/notable-notebooks/templatenotebook.zip",
+      "bytes": 6915718
+    },
+    "catalogPage": {
+      "key": "files/notable-wool-felt-memo/catalog-2023-web-37.pdf",
+      "bytes": 389829
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

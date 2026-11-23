@@ -1,0 +1,85 @@
+[
+  {
+    "slug": "accessory",
+    "name": "Accessory",
+    "description": "Basic, everyday usable items like paper and plastic labels, coasters, menus, and luggage tags.",
+    "photo": {
+      "key": "images/categories/accessory-card.jpeg",
+      "alt": "Accessory Category",
+      "width": 365,
+      "height": 205
+    }
+  },
+  {
+    "slug": "aromatherapy",
+    "name": "Aromatherapy",
+    "description": "Products related to well-being through aromatherapy.",
+    "photo": {
+      "key": "images/categories/lifestyle.jpg",
+      "alt": "Aromatherapy",
+      "width": 365,
+      "height": 205
+    }
+  },
+  {
+    "slug": "award",
+    "name": "Award",
+    "description": "Award plaques in sleek, natural wood with customizable artwork.",
+    "photo": {
+      "key": "images/categories/award-card.jpeg",
+      "alt": "Award Category",
+      "width": 365,
+      "height": 205
+    }
+  },
+  {
+    "slug": "display",
+    "name": "Display",
+    "description": "Large, wide displays on materials like ceiling tiles, chalk board, and dry erase.",
+    "photo": {
+      "key": "images/categories/display-card.jpeg",
+      "alt": "Display Category",
+      "width": 365,
+      "height": 205
+    }
+  },
+  {
+    "slug": "eating-well",
+    "name": "Eating Well",
+    "description": "Promotinal products that promotes brand as well as living well by healthy eating.",
+    "photo": null
+  },
+  {
+    "slug": "gift-box",
+    "name": "Gift Box",
+    "description": "Gift Boxes from folding cartons to corrugated mailers.",
+    "photo": {
+      "key": "images/categories/presentation-card.jpeg",
+      "alt": "Presentation Category",
+      "width": 365,
+      "height": 205
+    }
+  },
+  {
+    "slug": "lifestyle",
+    "name": "Lifestyle",
+    "description": "Products for everyday life like stationery, leather accessories, and sports accessories.",
+    "photo": {
+      "key": "images/categories/lifestyle.jpg",
+      "alt": "Lifestyle",
+      "width": 365,
+      "height": 205
+    }
+  },
+  {
+    "slug": "skincare",
+    "name": "Skincare",
+    "description": "Skincare products as promotional items with full-color, custom packaging.",
+    "photo": {
+      "key": "images/categories/beauty-card.jpeg",
+      "alt": "Beauty Category",
+      "width": 365,
+      "height": 205
+    }
+  }
+]

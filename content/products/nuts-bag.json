@@ -1,0 +1,170 @@
+{
+  "slug": "nuts-bag",
+  "name": "Nuts (Bag)",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Full Color Custom Packed Snacks. Wrapped up beautifully\nin a clear bag topped with a custom tag, you’ll wow your\ncustomers before they even open the bag and get their first\ntaste. Talk about the perfect gift.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Tag Printed in USA",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, 80# Gloss Cover, Clear Bag"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on Tag"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4600",
+        "Cashews",
+        "13.14",
+        "12.20",
+        "11.89",
+        "11.73",
+        "11.63",
+        "11.60"
+      ],
+      [
+        "U4601",
+        "Almonds",
+        "10.14",
+        "9.20",
+        "8.89",
+        "8.73",
+        "8.63",
+        "8.60"
+      ],
+      [
+        "U4602",
+        "Hazelnuts",
+        "13.14",
+        "12.20",
+        "11.89",
+        "11.73",
+        "11.63",
+        "11.60"
+      ],
+      [
+        "U4603",
+        "Pistachios",
+        "11.14",
+        "10.20",
+        "9.89",
+        "9.73",
+        "9.63",
+        "9.60"
+      ],
+      [
+        "U4604",
+        "Walnuts",
+        "9.14",
+        "8.20",
+        "7.89",
+        "7.73",
+        "7.63",
+        "7.60"
+      ],
+      [
+        "U4605",
+        "Pecans",
+        "12.14",
+        "11.20",
+        "10.89",
+        "10.73",
+        "10.63",
+        "10.60"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/nuts-bag/main-eating-well-18.png",
+    "alt": "Nuts (Bag)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/nuts-bag/eating-well-45.png",
+      "alt": "Nuts (Bag)",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts-bag/eating-well-46.png",
+      "alt": "Nuts (Bag)",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-31.png",
+      "alt": "Nuts (Bag)",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/candies-bag/template-bag-eating-well.pdf",
+      "bytes": 2695358
+    },
+    "catalogPage": {
+      "key": "files/nuts-bag/catalog-2023-web-56.pdf",
+      "bytes": 485920
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

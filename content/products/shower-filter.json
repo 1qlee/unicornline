@@ -1,0 +1,108 @@
+{
+  "slug": "shower-filter",
+  "name": "Shower Filter",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full Color Custom Packed Bath & Shower Products. Showers\ncan be pure magic. The best bath products can also make a\ndifference. Our need for the best bath products and hygiene\nproducts has never been stronger.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Shower Filter Made in Korea",
+      "Package Printed in USA"
+    ],
+    "materials": [
+      "Band: 8t Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on band"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2580",
+        "Shower Filter",
+        "30.66",
+        "29.43",
+        "29.02",
+        "28.39",
+        "28.00",
+        "27.88"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/shower-filter/main-skincare-11.png",
+    "alt": "Shower Filter",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/shower-filter/skincare-12.png",
+      "alt": "Shower Filter",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gloves-socks/template-banding.pdf",
+      "bytes": 19395
+    },
+    "catalogPage": {
+      "key": "files/bath-salt/catalog-2023-web-19.pdf",
+      "bytes": 602218
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

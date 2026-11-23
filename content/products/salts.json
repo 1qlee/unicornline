@@ -1,0 +1,261 @@
+{
+  "slug": "salts",
+  "name": "Salts",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "From sea salts from France, mineral salts from the Himalayas, to smoked salts created here in the USA, we ensure that our customers receive the highest quality salt available. ",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Temper Proof Seal",
+      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
+      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on the Label"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4001G",
+        "Himalayan Pink",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4002G",
+        "Hiwa Kai",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4003G",
+        "Alaea",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4004G",
+        "Flaky",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4005G",
+        "Sel Gris",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4006G",
+        "Alderwood",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U3435G",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4001T",
+        "Himalayan Pink",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4002T",
+        "Hiwa Kai",
+        "16.59",
+        "15.18",
+        "14.70",
+        "14.47",
+        "14.33",
+        "14.28"
+      ],
+      [
+        "U4003T",
+        "Alaea",
+        "16.59",
+        "15.18",
+        "14.70",
+        "14.47",
+        "14.33",
+        "14.28"
+      ],
+      [
+        "U4004T",
+        "Flaky",
+        "16.59",
+        "15.18",
+        "14.70",
+        "14.47",
+        "14.33",
+        "14.28"
+      ],
+      [
+        "U4005T",
+        "Sel Gris",
+        "15.59",
+        "14.18",
+        "13.70",
+        "13.47",
+        "13.33",
+        "13.28"
+      ],
+      [
+        "U4006T",
+        "Alderwood",
+        "17.59",
+        "16.18",
+        "15.70",
+        "15.47",
+        "15.33",
+        "15.28"
+      ],
+      [
+        "U3435T",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "sloPnBVK6-A"
+  ],
+  "thumbnail": {
+    "key": "images/salts/main-eating-well-1.png",
+    "alt": "Salts",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/salts/eating-well-1.png",
+      "alt": "Salts",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/salts/eating-well-2.png",
+      "alt": "Salts",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/salts/eating-well-3.png",
+      "alt": "Salts",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Salts",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/salts/template-salts.zip",
+      "bytes": 608811
+    },
+    "catalogPage": {
+      "key": "files/salts/catalog-2023-web-43.pdf",
+      "bytes": 793042
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

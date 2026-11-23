@@ -1,0 +1,261 @@
+{
+  "slug": "floral-teas",
+  "name": "Floral Teas",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Floral teas come in a variety of delicious flavors and are naturally free of sugar, calories, and caffeine. Many floral teas also offer health-promoting effects.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Temper Proof Seal",
+      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
+      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on the Label"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4301G",
+        "Hibiscus",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4302G",
+        "Marigold",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U4303G",
+        "Chamomile",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U4304G",
+        "Lavender Ultra",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4305G",
+        "Jasmine",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4306G",
+        "Rose Petal",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U3435G",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4301T",
+        "Hibiscus",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4302T",
+        "Marigold",
+        "11.59",
+        "10.18",
+        "9.70",
+        "9.47",
+        "9.33",
+        "9.28"
+      ],
+      [
+        "U4303T",
+        "Chamomile",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4304T",
+        "Lavender Ultra",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4305T",
+        "Jasmine",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4306T",
+        "Rose Petal",
+        "11.59",
+        "10.18",
+        "9.70",
+        "9.47",
+        "9.33",
+        "9.28"
+      ],
+      [
+        "U3435T",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "1TKDwZ3nT_E"
+  ],
+  "thumbnail": {
+    "key": "images/floral-teas/main-eating-well-7.png",
+    "alt": "Floral Teas",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/floral-teas/eating-well-20.png",
+      "alt": "Floral Teas",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/floral-teas/eating-well-21.png",
+      "alt": "Floral Teas",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/floral-teas/eating-well-22.png",
+      "alt": "Floral Teas",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/floral-teas/eating-well-4.png",
+      "alt": "Floral Teas",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/floral-teas/template-floral-teas.zip",
+      "bytes": 958263
+    },
+    "catalogPage": {
+      "key": "files/floral-teas/catalog-2023-web-49.pdf",
+      "bytes": 679366
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

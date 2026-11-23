@@ -1,0 +1,162 @@
+{
+  "slug": "gloves-socks",
+  "name": "Gloves & Socks",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full Color Custom Packed K-beauty Products. 100% vegan\nspa care products designed with your well-being in mind. Indulge in some me-time and pamper yourself at home!",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Product Made in Korea",
+      "Band Printed in USA"
+    ],
+    "materials": [
+      "Band: 8t Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on band"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1020",
+        "Colagen Gloves",
+        "9.10",
+        "7.88",
+        "7.46",
+        "6.83",
+        "6.44",
+        "6.32"
+      ],
+      [
+        "U1021",
+        "Shea Butter Gloves",
+        "6.10",
+        "4.88",
+        "4.46",
+        "3.83",
+        "3.44",
+        "3.32"
+      ],
+      [
+        "U1030",
+        "Collagen Socks",
+        "9.10",
+        "7.88",
+        "7.46",
+        "6.83",
+        "6.44",
+        "6.32"
+      ],
+      [
+        "U1031",
+        "Shea Butter Socks",
+        "6.10",
+        "4.88",
+        "4.46",
+        "3.83",
+        "3.44",
+        "3.32"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/gloves-socks/main-skincare-9.png",
+    "alt": "Gloves & Socks",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/gloves-socks/skincare-5.png",
+      "alt": "Gloves & Socks",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-6.png",
+      "alt": "Gloves & Socks",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-7.png",
+      "alt": "Gloves & Socks",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-8.png",
+      "alt": "Gloves & Socks",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-9.png",
+      "alt": "Gloves & Socks",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gloves-socks/template-banding.pdf",
+      "bytes": 19395
+    },
+    "catalogPage": {
+      "key": "files/gloves-socks/catalog-2023-web-7.pdf",
+      "bytes": 537523
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

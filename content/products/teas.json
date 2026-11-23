@@ -1,0 +1,262 @@
+{
+  "slug": "teas",
+  "name": "Teas",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Discover our rich, energizing & full-bodied black teas, traditional pure green teas, and exciting new blends flavored with peach or vanilla.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Temper Proof Seal",
+      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
+      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on the label"
+    ],
+    "options": [
+      "Custom Shape: add $150 (G) each shape",
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "No charge for standard shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4201G",
+        "Earl Grey",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4202G",
+        "Masala Chai",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4203G",
+        "Vanilla Cream",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4204G",
+        "Gunpowder",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4205G",
+        "Peach Tea",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4206G",
+        "English Breakfast",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U3435G",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4201T",
+        "Earl Grey",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4202T",
+        "Masala Chai",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4203T",
+        "Vanilla Cream",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4204T",
+        "Gunpowder",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4205T",
+        "Peach Tea",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4206T",
+        "English Breakfast",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U3435T",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "GHkxhqkpSvs"
+  ],
+  "thumbnail": {
+    "key": "images/teas/main-eating-well-6.png",
+    "alt": "Teas",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/teas/eating-well-17.png",
+      "alt": "Teas",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/teas/eating-well-18.png",
+      "alt": "Teas",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/teas/eating-well-19.png",
+      "alt": "Teas",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/teas/eating-well-4.png",
+      "alt": "Teas",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/teas/template-teas.zip",
+      "bytes": 959516
+    },
+    "catalogPage": {
+      "key": "files/teas/catalog-2023-web-48.pdf",
+      "bytes": 2054674
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

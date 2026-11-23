@@ -1,0 +1,147 @@
+{
+  "slug": "coin-set",
+  "name": "Coin Set",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Full Color Custom Packed Coin Gift. Whether you’re looking\nto celebrate a milestone or anniversary, honor a person, or\nwelcome a new business opportunity, a coin from U.S. Mint\nmakes any moment an occasion to remember.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds Allowed on All Sides",
+      "Made in USA"
+    ],
+    "materials": [
+      "U3180: Real Wood Frame, 3/16inch Foamcore Insert",
+      "U3185/6: Coin Holder, 80# Gloss Cover Insert"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on Insert"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "6C",
+      "Pricing not include coins, Coin price extra."
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      },
+      {
+        "label": "500",
+        "method": "inkjet"
+      },
+      {
+        "label": "1000",
+        "method": "inkjet"
+      },
+      {
+        "label": "2500",
+        "method": "inkjet"
+      },
+      {
+        "label": "5000",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U3180",
+        "5x7 Frame",
+        "22.53",
+        "22.03",
+        "21.87",
+        "21.78",
+        "21.73",
+        "21.72"
+      ],
+      [
+        "U3185",
+        "Mint Set",
+        "8.71",
+        "7.26",
+        "6.78",
+        "6.54",
+        "6.39",
+        "6.34"
+      ],
+      [
+        "U3186",
+        "Single Coin",
+        "5.39",
+        "3.94",
+        "3.46",
+        "3.21",
+        "3.06",
+        "3.01"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/coin-set/main-lifestyle-11.png",
+    "alt": "Coin Set",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/coin-set/lifestyle-42.png",
+      "alt": "Coin Set",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/coin-set/lifestyle-43.png",
+      "alt": "Coin Set",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/coin-set/lifestyle-44.png",
+      "alt": "Coin Set",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/coin-set/lifestyle-45.png",
+      "alt": "Coin Set",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/coin-set/template-coins.zip",
+      "bytes": 38654
+    },
+    "catalogPage": {
+      "key": "files/coin-set/catalog-2023-web-31.pdf",
+      "bytes": 443222
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

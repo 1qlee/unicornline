@@ -1,0 +1,188 @@
+{
+  "slug": "nuts",
+  "name": "Nuts",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Nuts are a very popular snack that provide key proteins, nutrients, and healthy fats to your daily diet. They can also promote a healthy heart. Above all they are tasty, convenient, and extremely loved across the world as snacks.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Temper Proof Seal",
+      "Elegant Wide Mouth, Easy Access Glass Jar with Metal Lid",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Glass Jar, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on the Label"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4461",
+        "Cashews",
+        "15.00",
+        "13.59",
+        "13.12",
+        "12.88",
+        "12.74",
+        "12.69"
+      ],
+      [
+        "U4462",
+        "Almonds",
+        "14.00",
+        "12.59",
+        "12.12",
+        "11.88",
+        "11.74",
+        "11.69"
+      ],
+      [
+        "U4463",
+        "Hazelnuts",
+        "16.00",
+        "14.59",
+        "14.12",
+        "13.88",
+        "13.74",
+        "13.69"
+      ],
+      [
+        "U4464",
+        "Pistachios",
+        "14.00",
+        "12.59",
+        "12.12",
+        "11.88",
+        "11.74",
+        "11.69"
+      ],
+      [
+        "U4465",
+        "Walnuts",
+        "13.00",
+        "11.59",
+        "11.12",
+        "10.88",
+        "10.74",
+        "10.69"
+      ],
+      [
+        "U4466",
+        "Pecans",
+        "15.00",
+        "13.59",
+        "13.12",
+        "12.88",
+        "12.74",
+        "12.69"
+      ],
+      [
+        "U3436G",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/nuts/main-eating-well-10.png",
+    "alt": "Nuts",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/nuts/eating-well-29.png",
+      "alt": "Nuts",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-31.png",
+      "alt": "Nuts",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-32.png",
+      "alt": "Nuts",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-30.png",
+      "alt": "Nuts",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/nuts/template-4oz-glass-nuts.zip",
+      "bytes": 1398572
+    },
+    "catalogPage": {
+      "key": "files/nuts/catalog-2023-web-52.pdf",
+      "bytes": 766067
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "slug": "pocket-caddy",
+  "name": "Pocket Caddy™",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Ultimate Golfer's Survival Kit in Custom Printed Full Color Gift Box.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Comes with: 3 tees, 2 bandages, sunscreen, and various wipes",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "U3060: 12.5pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital & Offset: Full Color Printing on One Side"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "No custom shape is available"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3060",
+        "Pocket Caddy",
+        "5.26",
+        "4.74",
+        "4.09",
+        "3.70",
+        "3.54",
+        "3.35"
+      ]
+    ]
+  },
+  "videos": [
+    "4yrEIF51GdA"
+  ],
+  "thumbnail": {
+    "key": "images/pocket-caddy/main-lifestyle-8.png",
+    "alt": "Pocket Caddy™",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/pocket-caddy/lifestyle-4.png",
+      "alt": "Pocket Caddy™",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/pocket-caddy/lifestyle-5.png",
+      "alt": "Pocket Caddy™",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/pocket-caddy/template-pocket-caddy-kit.pdf",
+      "bytes": 76789
+    },
+    "catalogPage": {
+      "key": "files/pocket-caddy/catalog-2023-web-24.pdf",
+      "bytes": 456594
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

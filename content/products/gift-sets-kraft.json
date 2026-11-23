@@ -1,0 +1,180 @@
+{
+  "slug": "gift-sets-kraft",
+  "name": "Gift Sets (Kraft)",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Custom packaged gift set box with a choice of three or six items included. Made from high-end, eco-friendly Kraft corrugated materials, plus a custom printed tray or tissue paper, a custom printed label to seal the box. Gift box can be used as a mailer. BOX & PACKAGING ONLY PRICE.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides on Label and Tray",
+      "Processed and Packaged in USA"
+    ],
+    "materials": [
+      "Package: Gift Box (200# E-flute Kraft Corrugated), Custom Gloss Label, Custom Tray (16pt Cover Stock) or Tissue Paper"
+    ],
+    "printing": [
+      "Digital: Full color Printing on the Label & Tray"
+    ],
+    "options": [
+      "Custom Shape: add $150 (G) each shape",
+      "Artwork Change: $67 (G) each",
+      "Crinkle Paper Fill: $2 (G) each box (min.)",
+      "Setup Change: $65 (G) each per packout",
+      "Product Picking (G): $0.50 (S) $1.50 (M) $3.00 (L)",
+      "Printed Marketing Material: $0.20 (G)"
+    ],
+    "customShape": "No Charge for Standard Shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "7C",
+      "Box & Packing Only Price"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "48",
+        "method": "digital"
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3500",
+        "3 Pack Gift Set",
+        "5.67",
+        "3.91",
+        "2.85",
+        "2.49",
+        "2.32",
+        "2.21",
+        "2.17"
+      ],
+      [
+        "U3520",
+        "6 Pack Gift Set",
+        "11.14",
+        "7.87",
+        "5.92",
+        "5.26",
+        "4.90",
+        "4.21",
+        "3.98"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/gift-sets-kraft/main-packaging-8.png",
+    "alt": "Gift Sets (Kraft)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/gift-sets-kraft/gift-set-1.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-10.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-2.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-3.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-4.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-5.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-6.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-7.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-8.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-9.png",
+      "alt": "Gift Sets (Kraft)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/gift-sets-kraft/catalog-2023-web-39.pdf",
+      "bytes": 786757
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

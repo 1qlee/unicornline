@@ -1,0 +1,25 @@
+{
+  "name": "Unicorn Line",
+  "blurb": "Unicorn Line represents our entire line of innovative promotional premium products.",
+  "about": "Unicorn Line represents our entire line of innovative promotional premium products.",
+  "address": "971 Stewart Avenue\n\nGarden City, NY 11530",
+  "email": "ny@unicorngraphics.com",
+  "phone": "(516) 222-0712",
+  "mapUrl": "https://goo.gl/maps/mHeeUK4Zo5XtF8Ap7",
+  "logo": {
+    "key": "images/company/unicorn-logo.png",
+    "alt": "Unicorn Graphics Logo",
+    "width": 144,
+    "height": 144
+  },
+  "logoLine": {
+    "key": "images/company/unicorn-line-logo.png",
+    "alt": "Unicorn Line",
+    "width": 410,
+    "height": 34
+  },
+  "terms": {
+    "key": "files/company/catalog-2023-web-91.pdf",
+    "bytes": 170124
+  }
+}

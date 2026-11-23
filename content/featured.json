@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Health & Wellness Items",
+    "description": "Check out our new line of items!",
+    "path": "/eating-well",
+    "image": {
+      "key": "images/featured/tea.jpg",
+      "alt": "Health & Wellness Items",
+      "width": 1800,
+      "height": 1650
+    }
+  },
+  {
+    "name": "Mailer Boxes",
+    "description": "Custom mailer boxes are a great way to tell your brand story.",
+    "path": "/gift-box/mailer-boxes",
+    "image": {
+      "key": "images/mailer-boxes/mailer-boxes-1.png",
+      "alt": "Mailer Boxes",
+      "width": 1200,
+      "height": 800
+    }
+  },
+  {
+    "name": "Sheet Masks",
+    "description": "Full Color Custom Packed Sheet Mask.",
+    "path": "/skincare/sheet-masks",
+    "image": {
+      "key": "images/sheet-masks/beauty-sheet-mask-4.png",
+      "alt": "Sheet Mask Instructions",
+      "width": 1200,
+      "height": 800
+    }
+  }
+]

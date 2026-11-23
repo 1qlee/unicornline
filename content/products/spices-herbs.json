@@ -1,0 +1,259 @@
+{
+  "slug": "spices-herbs",
+  "name": "Spices & Herbs",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Spices are aromatic flavorings from seeds, fruits, and other plant parts. Spices differ from herbs, which are the leaves, flowers, or stems of plants used for flavoring or as garnish.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Temper Proof Seal",
+      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
+      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on the Label"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4101G",
+        "Cinnamon",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4102G",
+        "Cumin",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4103G",
+        "Garlic",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4104G",
+        "Oregano",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U4105G",
+        "Rosemary",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U4106G",
+        "Thyme",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U3435G",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4101T",
+        "Cinnamon",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4102T",
+        "Cumin",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4103T",
+        "Garlic",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4104T",
+        "Oregano",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4105T",
+        "Rosemary",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4106T",
+        "Thyme",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "3435T",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/spices-herbs/main-eating-well-2.png",
+    "alt": "Spices & Herbs",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/spices-herbs/eating-well-5.png",
+      "alt": "Spices & Herbs",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/spices-herbs/eating-well-6.png",
+      "alt": "Spices & Herbs",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/spices-herbs/eating-well-7.png",
+      "alt": "Spices & Herbs",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Spices & Herbs",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/spices-herbs/template-spices-herbs.zip",
+      "bytes": 588743
+    },
+    "catalogPage": {
+      "key": "files/spices-herbs/catalog-2023-web-44.pdf",
+      "bytes": 637694
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

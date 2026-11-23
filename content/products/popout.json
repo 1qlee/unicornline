@@ -1,0 +1,121 @@
+{
+  "slug": "popout",
+  "name": "Popout™",
+  "categories": [
+    "display"
+  ],
+  "description": "Eye catching Popout™ with customer supplied objects with custom printed background.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Easy and Fun: Simple Assembly",
+      "Consult with Factory Regarding Centerpiece's Size and Weight Limitations",
+      "Made in USA"
+    ],
+    "materials": [
+      "U7260: 1mm Clear Plastic (popout), 3mm EPVC (back panel) with Black Aluminum Frame"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One Side of Base (EPVC)"
+    ],
+    "options": [
+      "setup: $55 (G) per artwork or object: initial order only",
+      "frame: 3/16in Black Aluminum Frame Indulded",
+      "packaging: Kraft Corrugated Box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "5C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U7260",
+        "14 x 21 in",
+        "219.31",
+        "204.31",
+        "195.31",
+        "192.31",
+        "190.81"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/popout/main-creative-6.png",
+    "alt": "Popout™",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/popout/creative-popout-1.png",
+      "alt": "Popout Amazon Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/popout/creative-popout-2.png",
+      "alt": "Popout Underarmour Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/popout/creative-popout-3.png",
+      "alt": "Popout Jordan Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Popout™",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/popout/catalog-2023-web-83.pdf",
+      "bytes": 630124
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

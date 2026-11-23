@@ -1,0 +1,196 @@
+{
+  "slug": "award-cube",
+  "name": "Award Cube",
+  "categories": [
+    "award"
+  ],
+  "description": "Wooden award cube with printed plate.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos / Personalization",
+      "Bleeds Allowed on All Sides",
+      "Hand-rubbed Finish",
+      "Available in 2 Plate Decoration Materials",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8120 / 8122 / 8123: Solid Wood Block and 1mm Clear Plastic",
+      "U8130 / 8132 / 8133: Solid Wood Block and 20mil Aluminum"
+    ],
+    "printing": [
+      "Inkjet: Full Color and White Printing on One Side of Plate",
+      "Print Area U8120 ~ 8133: 2 3/4 x 5 5/8in"
+    ],
+    "options": [
+      "Custom Plate Shape: $25 (G) each",
+      "packaging: Individual White Corrugated Box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Material",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8120",
+        "Plastic",
+        "Red Oak",
+        "63.28",
+        "56.61",
+        "52.61",
+        "51.28",
+        "50.61",
+        "50.21"
+      ],
+      [
+        "U8122",
+        "Plastic",
+        "Cherry",
+        "64.43",
+        "57.76",
+        "53.76",
+        "52.43",
+        "51.76",
+        "51.36"
+      ],
+      [
+        "U8123",
+        "Plastic",
+        "Hard Maple",
+        "64.31",
+        "57.65",
+        "53.65",
+        "52.31",
+        "51.65",
+        "51.25"
+      ],
+      [
+        "U8130",
+        "Aluminum",
+        "Red Oak",
+        "64.31",
+        "59.31",
+        "56.31",
+        "55.31",
+        "54.81",
+        "54.51"
+      ],
+      [
+        "U8132",
+        "Aluminum",
+        "Cherry",
+        "65.46",
+        "60.46",
+        "57.46",
+        "56.46",
+        "55.96",
+        "55.66"
+      ],
+      [
+        "U8133",
+        "Aluminum",
+        "Hard Maple",
+        "65.34",
+        "60.34",
+        "57.34",
+        "56.34",
+        "55.84",
+        "55.54"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-cube/main-award-2.png",
+    "alt": "Award Cube",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-cube/award-cube-1.png",
+      "alt": "Award Cubes Side by Side",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-cube/award-cube-2.png",
+      "alt": "Aluminum, White EPVC, and Clear Plastic Plate Materials",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-cube/award-cube-3.png",
+      "alt": "Red Oak, Ash, Cherry, Soft Maple, Walnut",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-cube/award-cube-4.png",
+      "alt": "Award Cube Standard Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Award Cube",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-cube/template-award-cube.pdf",
+      "bytes": 84978
+    },
+    "catalogPage": {
+      "key": "files/award-cube/catalog-2023-web-85.pdf",
+      "bytes": 408217
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

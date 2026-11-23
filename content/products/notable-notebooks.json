@@ -1,0 +1,229 @@
+{
+  "slug": "notable-notebooks",
+  "name": "Notable™ (Notebooks)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Custom printed notebooks with full color cover and one PMS inside color with fountain pen friendly papers for a better note keeping experience.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Available in Five Cover Options",
+      "Available in Three\t\t Popular Sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "Cover: 100# Uncoated Cover",
+      "Inside: 60# Opaque Text (12 sheets / 48 pages)"
+    ],
+    "printing": [
+      "Cover: Full Color Printing on 1 Side (Digital)",
+      "Inside: PMS One Color Printing on 2 Sides (Offset)"
+    ],
+    "options": [
+      "White Ultra Smooth Cover: Full Color Printed Cover (Standard)",
+      "Other Covers: Add $60 (G) to the Base Price",
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3225",
+        "5 x 7in",
+        "9.86",
+        "7.11",
+        "6.20",
+        "5.74",
+        "5.47",
+        "5.08",
+        "4.75",
+        "4.51",
+        "4.17",
+        "3.74",
+        "3.51",
+        "3.16",
+        "2.79",
+        "2.52",
+        "2.43",
+        "2.38"
+      ],
+      [
+        "U3226",
+        "5.5 x 8.5in",
+        "9.86",
+        "7.11",
+        "6.20",
+        "5.74",
+        "5.47",
+        "5.08",
+        "4.75",
+        "4.51",
+        "4.17",
+        "3.74",
+        "3.51",
+        "3.28",
+        "2.92",
+        "2.64",
+        "2.55",
+        "2.50"
+      ],
+      [
+        "U3227",
+        "7 x 10in",
+        "11.04",
+        "8.30",
+        "7.38",
+        "6.93",
+        "6.65",
+        "6.26",
+        "5.94",
+        "5.70",
+        "5.36",
+        "4.92",
+        "4.68",
+        "4.23",
+        "3.87",
+        "3.59",
+        "3.51",
+        "3.46"
+      ]
+    ]
+  },
+  "videos": [
+    "klGUHCifrXM"
+  ],
+  "thumbnail": {
+    "key": "images/notable-notebooks/main-lifestyle-6.png",
+    "alt": "Notable™ (Notebooks)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-notebooks/lifestyle-31.png",
+      "alt": "Notable™ (Notebooks)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notebooks/lifestyle-30.png",
+      "alt": "Notable™ (Notebooks)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notebooks/lifestyle-32.png",
+      "alt": "Notable™ (Notebooks)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notebooks/lifestyle-33.png",
+      "alt": "Notable™ (Notebooks)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Notable™ (Notebooks)",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/notable-notebooks/templatenotebook.zip",
+      "bytes": 6915718
+    },
+    "catalogPage": {
+      "key": "files/notable-notebooks/2023-notebooks.pdf",
+      "bytes": 1079839
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

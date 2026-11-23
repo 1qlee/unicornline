@@ -1,0 +1,271 @@
+{
+  "slug": "labels-paper",
+  "name": "Labels (Paper)",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full Color Labels. Multiple ups on 8.5\" x 11\" sheets.",
+  "notesHtml": "<p>You may order sizes that are not listed in the available sizes table. Pricing will be adjusted to the price of the next larger size item.</p>",
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds allowed on All Sides",
+      "No Die Charge on Standard Shapes",
+      "No Overrun Charge",
+      "Indoor Application",
+      "Available in Forty Standard Shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "60# White Semi-gloss paper"
+    ],
+    "printing": [
+      "Digital: Full Color on One Side"
+    ],
+    "options": [
+      "Artwork Change: $37 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "7C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5010",
+        "One Side",
+        "1.09",
+        "0.51",
+        "0.32",
+        "0.23",
+        "0.17",
+        "0.15",
+        "0.14"
+      ],
+      [
+        "U5011",
+        "One Side",
+        "1.13",
+        "0.55",
+        "0.36",
+        "0.26",
+        "0.20",
+        "0.18",
+        "0.18"
+      ],
+      [
+        "U5012",
+        "One Side",
+        "1.17",
+        "0.60",
+        "0.40",
+        "0.31",
+        "0.25",
+        "0.23",
+        "0.22"
+      ],
+      [
+        "U5013",
+        "One Side",
+        "1.21",
+        "0.63",
+        "0.44",
+        "0.35",
+        "0.29",
+        "0.27",
+        "0.23"
+      ],
+      [
+        "U5014",
+        "One Side",
+        "1.27",
+        "0.69",
+        "0.50",
+        "0.40",
+        "0.35",
+        "0.33",
+        "0.25"
+      ],
+      [
+        "U5015, 5016",
+        "One Side",
+        "1.34",
+        "0.76",
+        "0.57",
+        "0.47",
+        "0.42",
+        "0.40",
+        "0.27"
+      ],
+      [
+        "U5017",
+        "One Side",
+        "1.40",
+        "0.82",
+        "0.63",
+        "0.54",
+        "0.48",
+        "0.46",
+        "0.28"
+      ],
+      [
+        "U5018",
+        "One Side",
+        "1.42",
+        "0.84",
+        "0.65",
+        "0.56",
+        "0.50",
+        "0.48",
+        "0.29"
+      ],
+      [
+        "U5019, 5020",
+        "One Side",
+        "1.49",
+        "0.91",
+        "0.72",
+        "0.63",
+        "0.57",
+        "0.49",
+        "0.31"
+      ],
+      [
+        "U5021, 5022",
+        "One Side",
+        "1.61",
+        "1.03",
+        "0.84",
+        "0.75",
+        "0.69",
+        "0.53",
+        "0.35"
+      ],
+      [
+        "U5023",
+        "One Side",
+        "1.81",
+        "1.23",
+        "1.04",
+        "0.95",
+        "0.89",
+        "0.61",
+        "0.43"
+      ],
+      [
+        "U5024",
+        "One Side",
+        "2.04",
+        "1.47",
+        "1.28",
+        "1.19",
+        "1.06",
+        "0.69",
+        "0.51"
+      ],
+      [
+        "U5025",
+        "One Side",
+        "2.42",
+        "1.85",
+        "1.67",
+        "1.57",
+        "1.22",
+        "0.85",
+        "0.67"
+      ],
+      [
+        "U5026",
+        "One Side",
+        "3.56",
+        "2.99",
+        "2.80",
+        "2.71",
+        "1.71",
+        "1.33",
+        "1.15"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/labels-paper/main-accessory-12.png",
+    "alt": "Labels (Paper)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/labels-paper/accessory-1.png",
+      "alt": "Custom Labels Paper Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/labels-paper/accessory-2.png",
+      "alt": "Custom Labels Paper Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/labels-paper/accessory-15.png",
+      "alt": "Labels (Paper)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/labels-paper/template-labels-decals.pdf",
+      "bytes": 157628
+    },
+    "catalogPage": {
+      "key": "files/labels-paper/2023-labels-decals.pdf",
+      "bytes": 368032
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "slug": "makeup-remover",
+  "name": "Makeup Remover",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Comes with custom printed outside band. Wipes instantly dissolve even heavy-duty makeup with a silky, lite-touch formula. Made in USA.",
+  "notesHtml": "<p>5&quot; x 2.75&quot;. Instantly dissolves even heavy-duty makeup with a silk, lite-touch formula.</p>",
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Package: 8pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on both sides"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each",
+      "Packaging: Bulk"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1365",
+        "2.76",
+        "2.36",
+        "1.76",
+        "1.39",
+        "1.26",
+        "1.20"
+      ]
+    ]
+  },
+  "videos": [
+    "VnCueDXgciQ"
+  ],
+  "thumbnail": {
+    "key": "images/makeup-remover/main-beauty-3.png",
+    "alt": "Makeup Remover",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/makeup-remover/lifestyle-wipes-1.png",
+      "alt": "Makeup Remover",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/makeup-remover/template-makeup-remover-wipe.pdf",
+      "bytes": 64144
+    },
+    "catalogPage": {
+      "key": "files/lip-balms/catalog-2023-web-5.pdf",
+      "bytes": 455658
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

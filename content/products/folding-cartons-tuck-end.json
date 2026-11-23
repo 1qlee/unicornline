@@ -1,0 +1,248 @@
+{
+  "slug": "folding-cartons-tuck-end",
+  "name": "Folding Cartons (Tuck End)",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Full color shortrun custom printed folding cartons.",
+  "notesHtml": "<p><strong>Custom Folding Cartons</strong>: We offer high quality full-custom folding cartons. Our minimum starts at 50 boxes. Industry&#39;s lowest! No die charge and Free Setup! You can order any in between size not stated in the size table. Price applies to the next larger size item that fits your size.</p>\n\n<p><strong>Need a Larger Size or Quantity not Listed?</strong> For larger sizes, quantities, or thicker stock, please contact factory for a quote! We are capable of producing folding cartons up to 40pt thick and larger sizes not listed here. Numerous finishes including embossing/debossing, aqueous coating, UV coating, and foil stamping can be added also.</p>",
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "No Die Charge on Standard Sizes",
+      "No Over-run Charge",
+      "No Pre-fixed Sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5520 - 5524: 11.4pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One Side"
+    ],
+    "options": [
+      "Dieline Design: $125 (G) each, sample extra",
+      "No Print Sample: $40 (G) for 2 pieces / dieline",
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each custom size"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Side",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5520",
+        "One Side",
+        "6.18",
+        "3.89",
+        "3.13",
+        "2.75",
+        "2.52",
+        "2.37",
+        "2.26",
+        "2.18",
+        "2.07",
+        "1.75",
+        "1.63",
+        "1.36",
+        "0.91",
+        "0.58",
+        "0.48",
+        "0.42"
+      ],
+      [
+        "U5521",
+        "One Side",
+        "6.79",
+        "4.51",
+        "3.75",
+        "3.37",
+        "3.14",
+        "2.99",
+        "2.88",
+        "2.80",
+        "2.69",
+        "2.37",
+        "2.04",
+        "1.46",
+        "1.01",
+        "0.68",
+        "0.58",
+        "0.52"
+      ],
+      [
+        "U5522",
+        "One Side",
+        "7.41",
+        "5.13",
+        "4.37",
+        "3.99",
+        "3.77",
+        "3.62",
+        "3.51",
+        "3.43",
+        "3.31",
+        "2.72",
+        "2.14",
+        "1.55",
+        "1.10",
+        "0.78",
+        "0.67",
+        "0.62"
+      ],
+      [
+        "U5523",
+        "One Side",
+        "8.66",
+        "6.38",
+        "5.62",
+        "5.24",
+        "5.01",
+        "4.86",
+        "4.75",
+        "4.67",
+        "4.16",
+        "2.91",
+        "2.33",
+        "1.75",
+        "1.30",
+        "0.98",
+        "0.87",
+        "0.82"
+      ],
+      [
+        "U5524",
+        "One Side",
+        "10.39",
+        "8.11",
+        "7.35",
+        "6.97",
+        "6.75",
+        "6.60",
+        "6.13",
+        "5.55",
+        "4.74",
+        "3.49",
+        "2.93",
+        "2.34",
+        "1.89",
+        "1.57",
+        "1.46",
+        "1.41"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/folding-cartons-tuck-end/main-packaging-4.png",
+    "alt": "Folding Cartons (Tuck End)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/folding-cartons-tuck-end/packaging-3.png",
+      "alt": "Folding Cartons (Tuck End)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/folding-cartons-tuck-end/packaging-4.png",
+      "alt": "Folding Cartons (Tuck End)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/folding-cartons-seal-end/template-folding-cartons.pdf",
+      "bytes": 99088
+    },
+    "catalogPage": {
+      "key": "files/folding-cartons-tuck-end/2023-tuck-end.pdf",
+      "bytes": 124090
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

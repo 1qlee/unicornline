@@ -1,0 +1,115 @@
+{
+  "slug": "acoustic-ceiling-tiles",
+  "name": "Acoustic Ceiling Tiles",
+  "categories": [
+    "display"
+  ],
+  "description": "Full Color Graphics Printed Directly on Acoustic Ceiling Tiles. Custom tiles are a unique way to turn white ceiling into something colorful, creative and fun. And the results are jaw droppingly awesome! Perfect for medical offices, salons, spas, and/or advertising other services.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Made in USA"
+    ],
+    "materials": [
+      "U7200 - 7201: 2x2 ft or 2x4 ft Acoustic Ceiling Tile"
+    ],
+    "printing": [
+      "Inkjet: Full Color Printing on One Side"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each",
+      "packaging: Kraft Corrugated Bulk Box"
+    ],
+    "customShape": "No Custom Shape Available"
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "5C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U7200",
+        "2' x 2'",
+        "65.03",
+        "56.70",
+        "53.70",
+        "52.03",
+        "51.20"
+      ],
+      [
+        "U7201",
+        "2' x 4'",
+        "108.40",
+        "100.07",
+        "97.07",
+        "95.40",
+        "94.57"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/acoustic-ceiling-tiles/main-creative-1.png",
+    "alt": "Acoustic Ceiling Tiles",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/acoustic-ceiling-tiles/creative-ceilingtiles-1.png",
+      "alt": "Ceiling Tile Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/acoustic-ceiling-tiles/creative-ceilingtiles-2.png",
+      "alt": "Ceiling Tile Product Sample (2)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/acoustic-ceiling-tiles/catalog-2023-web-84.pdf",
+      "bytes": 444890
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

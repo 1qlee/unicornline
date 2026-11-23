@@ -1,0 +1,156 @@
+{
+  "slug": "body-oils",
+  "name": "Body Oils",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "Deeply moisturizing, our Body Oils contain many different kinds of essential oils, fatty acids, and vitamin E to help smooth, hydrate, and nourish the skin. When applied after a shower, Body Oils may also offer certain health benefits. We provide a three oil blend that helps promote good sleep, soothe muscle aches, and also calm your nerves.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on the label"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2161",
+        "Good Night",
+        "12.51",
+        "11.06",
+        "10.59",
+        "10.36",
+        "10.21",
+        "10.16"
+      ],
+      [
+        "U2162",
+        "Lavender",
+        "13.51",
+        "12.06",
+        "11.59",
+        "11.36",
+        "11.21",
+        "11.16"
+      ],
+      [
+        "U2163",
+        "Muscle Relief",
+        "12.51",
+        "11.06",
+        "10.59",
+        "10.36",
+        "10.21",
+        "10.16"
+      ],
+      [
+        "U3433",
+        "Gift Box (option)",
+        "4.75",
+        "3.18",
+        "2.62",
+        "1.92",
+        "1.51",
+        "1.18"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/body-oils/main-living-well-4.png",
+    "alt": "Body Oils",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/body-oils/aromatherapy-13.png",
+      "alt": "Body Oils",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/body-oils/aromatherapy-14.png",
+      "alt": "Body Oils",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/body-oils/aromatherapy-15.png",
+      "alt": "Body Oils",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/body-oils/aromatherapy-16.png",
+      "alt": "Body Oils",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/body-oils/template-body-oil.zip",
+      "bytes": 143748
+    },
+    "catalogPage": {
+      "key": "files/body-oils/catalog-2023-web-14.pdf",
+      "bytes": 432055
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

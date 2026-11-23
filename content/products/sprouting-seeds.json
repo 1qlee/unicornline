@@ -1,0 +1,259 @@
+{
+  "slug": "sprouting-seeds",
+  "name": "Sprouting Seeds",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Sprouts are young plants that are harvested a mere few days just after they germinate. Generally speaking, sprouts have a higher concentration of nutrients than their fully-grown counterparts. Sprouts also have very high amounts of enzymes that help to boost your metabolism.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Temper Proof Seal",
+      "Elegant Wide Mouth, Easy Access Glass Jar with Black Lid",
+      "High Quality, Food Grade, Durable, Tin Plated Steel Can",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: Bulk, Glass Jar or Tin Can, Custom Gloss Label",
+      "Gift Box (option): 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on the Label"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4501G",
+        "Fenugreek Seeds",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U4502G",
+        "Alfalfa Seeds",
+        "16.17",
+        "14.77",
+        "14.29",
+        "14.05",
+        "13.91",
+        "13.86"
+      ],
+      [
+        "U4503G",
+        "Mung Bean Seeds",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4504G",
+        "Broccoli Seeds",
+        "18.17",
+        "16.77",
+        "16.29",
+        "16.05",
+        "15.91",
+        "15.86"
+      ],
+      [
+        "U4505G",
+        "Daikon Radish Seeds",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U4506G",
+        "Wheat Seeds",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U3435G",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4501T",
+        "Fenugreek Seeds",
+        "19.59",
+        "18.18",
+        "17.70",
+        "17.47",
+        "17.33",
+        "17.28"
+      ],
+      [
+        "U4502T",
+        "Alfalfa Seeds",
+        "19.59",
+        "18.18",
+        "17.70",
+        "17.47",
+        "17.33",
+        "17.28"
+      ],
+      [
+        "U4503T",
+        "Mung Bean Seeds",
+        "15.59",
+        "14.18",
+        "13.70",
+        "13.47",
+        "13.33",
+        "13.28"
+      ],
+      [
+        "U4504T",
+        "Broccoli Seeds",
+        "23.59",
+        "22.18",
+        "21.70",
+        "21.47",
+        "21.33",
+        "21.28"
+      ],
+      [
+        "U4505T",
+        "Daikon Radish Seeds",
+        "17.59",
+        "16.18",
+        "15.70",
+        "15.47",
+        "15.33",
+        "15.28"
+      ],
+      [
+        "U4506T",
+        "Wheat Seeds",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "3435T",
+        "Gift Box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/sprouting-seeds/main-eating-well-11.png",
+    "alt": "Sprouting Seeds",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/sprouting-seeds/eating-well-33.png",
+      "alt": "Sprouting Seeds",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/sprouting-seeds/eating-well-34.png",
+      "alt": "Sprouting Seeds",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/sprouting-seeds/eating-well-35.png",
+      "alt": "Sprouting Seeds",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Sprouting Seeds",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/sprouting-seeds/template-sprouting-seeds.zip",
+      "bytes": 7585809
+    },
+    "catalogPage": {
+      "key": "files/sprouting-seeds/catalog-2023-web-53.pdf",
+      "bytes": 912119
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

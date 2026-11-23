@@ -1,0 +1,170 @@
+{
+  "slug": "herb-seeds",
+  "name": "Herb Seeds",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Growing herbs from seeds is amazingly easy, even for the busy everyday person. By growing with your own seeds you can ensure that your food is as fresh and chemical free as possible. Why pay extra for farm-to-table fresh produce when you can bring the farm to your home for a fraction of the price?",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "Fresh Packed upon Receipt of Order in USA"
+    ],
+    "materials": [
+      "Package: 8pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on Front & Back"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each",
+      "Packaging : Bulk"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4541",
+        "Greek Oregano",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4542",
+        "Genovese Basil",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4543",
+        "Sweet Marjoram",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4544",
+        "Italian Parsley",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4545",
+        "Dill",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4546",
+        "Common Chive",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/herb-seeds/main-eating-well-13.png",
+    "alt": "Herb Seeds",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/herb-seeds/eating-well-39.png",
+      "alt": "Herb Seeds",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/herb-seeds/eating-well-40.png",
+      "alt": "Herb Seeds",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/herb-seeds/eating-well-41.png",
+      "alt": "Herb Seeds",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/herb-seeds/template-herb-seeds.pdf",
+      "bytes": 387473
+    },
+    "catalogPage": {
+      "key": "files/herb-seeds/catalog-2023-web-55.pdf",
+      "bytes": 734079
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2022-web.pdf",
+      "bytes": 37916831
+    }
+  }
+}

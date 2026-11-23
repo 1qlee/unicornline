@@ -1,0 +1,223 @@
+{
+  "slug": "pillow-boxes",
+  "name": "Pillow Boxes",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Full color pillow boxes on coated cover.",
+  "notesHtml": "<p><strong>Custom Size</strong>: You can order any in between size not stated in the size table. Price applies to the next larger size item that fits your size.</p>\n\n<p><strong>Need a larger size or quantity not listed?</strong> For larger sizes, quantities, or thicker stock, please contact factory for a quote!</p>",
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "No Die Charge on Standard Sizes",
+      "No Over-run Charge",
+      "One Thickness",
+      "Available in 4 Standard Sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5575 - 5578: 11.4pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on one side"
+    ],
+    "options": [
+      "Dieline Design: $125 (G) each, sample extra",
+      "No Print Sample: $40 (G) for 2 pieces / dieline",
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5575",
+        "One Side",
+        "6.90",
+        "4.28",
+        "3.41",
+        "2.97",
+        "2.71",
+        "2.54",
+        "2.41",
+        "2.32",
+        "2.19",
+        "1.85",
+        "1.72",
+        "1.38",
+        "0.92",
+        "0.59",
+        "0.48",
+        "0.43"
+      ],
+      [
+        "U5576",
+        "One Side",
+        "7.30",
+        "4.69",
+        "3.82",
+        "3.38",
+        "3.12",
+        "2.95",
+        "2.82",
+        "2.73",
+        "2.60",
+        "2.26",
+        "2.07",
+        "1.48",
+        "1.02",
+        "0.69",
+        "0.58",
+        "0.53"
+      ],
+      [
+        "U5577",
+        "One Side",
+        "7.36",
+        "4.75",
+        "3.88",
+        "3.44",
+        "3.18",
+        "3.01",
+        "2.88",
+        "2.79",
+        "2.66",
+        "2.32",
+        "2.07",
+        "1.48",
+        "1.02",
+        "0.69",
+        "0.58",
+        "0.53"
+      ],
+      [
+        "U5578",
+        "One Side",
+        "8.42",
+        "5.81",
+        "4.94",
+        "4.51",
+        "4.24",
+        "4.07",
+        "3.95",
+        "3.85",
+        "3.72",
+        "2.96",
+        "2.36",
+        "1.77",
+        "1.32",
+        "0.98",
+        "0.88",
+        "0.82"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/pillow-boxes/main-packaging-7.png",
+    "alt": "Pillow Boxes",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/pillow-boxes/packaging-6.png",
+      "alt": "Pillow Boxes Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/pillow-boxes/template-pillow-boxes.pdf",
+      "bytes": 97871
+    },
+    "catalogPage": {
+      "key": "files/pillow-boxes/catalog-2023-web-79.pdf",
+      "bytes": 289085
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

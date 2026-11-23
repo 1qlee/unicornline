@@ -1,0 +1,123 @@
+{
+  "slug": "award-glow-tower",
+  "name": "Award Glow Tower",
+  "categories": [
+    "award"
+  ],
+  "description": "Solid Wood Glow Tower™ award block with an opaque, resin top-piece. Fluorescent acrylic is attached at a slant to create the illusion of a colorful glow throughout the milky top-piece. Acrylic is available in multiple colors. Each award is produced individually by hand. ",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos / Personalization",
+      "Hand-rubbed Finish",
+      "Green Fluorescent Acrylic Standard",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8330: Solid Wood Block + Fluorescent Acrylic + Resin"
+    ],
+    "printing": [
+      "Inkjet: Full Color and White Printing on One Side of plate",
+      "Print Area: 2 x 6in"
+    ],
+    "options": [
+      "Acrylic Color Change: $30 (G) per order",
+      "Artwork Change: $27 (G) each",
+      "packaging: Individual White Corrugated Box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Inkjet",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8330",
+        "Red Oak",
+        "117.03",
+        "110.36",
+        "106.36",
+        "105.03",
+        "104.36",
+        "103.96"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-glow-tower/main-award-4.png",
+    "alt": "Award Glow Tower",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-glow-tower/award-tower-5.png",
+      "alt": "Award Glow Tower",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-glow-cuboid/award-cuboid-4.png",
+      "alt": "Award Glow Tower",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Award Glow Tower",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-glow-tower/award-glow-tower.pdf",
+      "bytes": 75675
+    },
+    "catalogPage": {
+      "key": "files/award-glow-tower/catalog-2023-web-89.pdf",
+      "bytes": 337596
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web-49089828.pdf",
+      "bytes": 39897981
+    }
+  }
+}

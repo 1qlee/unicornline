@@ -1,0 +1,263 @@
+{
+  "slug": "notable-notepads",
+  "name": "Notable™ (Notepads)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Custom printed, full color cover and one PMS color inside with fountain pen friendly papers. Our paper ensures a better note keeping experience as most pens glide across the surface smoothly without snagging and with minimized feathers and bleeds.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides for Cover",
+      "80 Sheets per Pad with Flip Over Cover",
+      "Cardboard Backed",
+      "Micro-perforated Sheets for Easy Tear",
+      "Available in 5 Popular Sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "Cover: 11.4pt Gloss Cover",
+      "Inside: 60# Opaque Text"
+    ],
+    "printing": [
+      "Cover: Full color printing on 2 sides (digital/offset)",
+      "Inside: One PMS color printing on 2 sides (offset)"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3213",
+        "3 x 4in",
+        "8.85",
+        "6.10",
+        "5.18",
+        "4.72",
+        "4.45",
+        "4.26",
+        "4.13",
+        "4.03",
+        "3.90",
+        "3.74",
+        "3.64",
+        "3.55",
+        "3.31",
+        "2.95",
+        "2.80",
+        "2.72"
+      ],
+      [
+        "U3214",
+        "3 1/2 x 5 1/2in",
+        "9.90",
+        "7.15",
+        "6.23",
+        "5.78",
+        "5.50",
+        "5.32",
+        "5.19",
+        "5.09",
+        "4.95",
+        "4.79",
+        "4.70",
+        "4.45",
+        "3.95",
+        "3.50",
+        "3.36",
+        "3.28"
+      ],
+      [
+        "U3215",
+        "4 x 6in",
+        "11.33",
+        "8.58",
+        "7.67",
+        "7.21",
+        "6.94",
+        "6.76",
+        "6.63",
+        "6.53",
+        "6.39",
+        "6.23",
+        "5.71",
+        "4.96",
+        "4.37",
+        "3.92",
+        "3.77",
+        "3.70"
+      ],
+      [
+        "U3216",
+        "5 1/8 x 6in",
+        "12.02",
+        "9.27",
+        "8.36",
+        "7.90",
+        "7.63",
+        "7.44",
+        "7.31",
+        "7.21",
+        "7.08",
+        "6.61",
+        "6.05",
+        "5.31",
+        "4.71",
+        "4.26",
+        "4.12",
+        "4.04"
+      ],
+      [
+        "U3217",
+        "5 1/2 x 8 1/2in",
+        "13.39",
+        "10.65",
+        "9.73",
+        "9.28",
+        "9.00",
+        "8.82",
+        "8.69",
+        "8.59",
+        "8.28",
+        "7.65",
+        "7.10",
+        "6.35",
+        "5.76",
+        "5.31",
+        "5.16",
+        "5.08"
+      ]
+    ]
+  },
+  "videos": [
+    "5sNCxA5WeAE"
+  ],
+  "thumbnail": {
+    "key": "images/notable-notepads/main-lifestyle-7.png",
+    "alt": "Notable™ (Notepads)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-notepads/lifestyle-27.png",
+      "alt": "Notable™ (Notepads)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notepads/lifestyle-28.png",
+      "alt": "Notable™ (Notepads)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notepads/lifestyle-29.png",
+      "alt": "Notable™ (Notepads)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Notable™ (Notepads)",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/notable-notepads/templatenotepad.zip",
+      "bytes": 6006748
+    },
+    "catalogPage": {
+      "key": "files/notable-notepads/2023-notepads.pdf",
+      "bytes": 1096266
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

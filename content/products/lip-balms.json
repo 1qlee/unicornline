@@ -1,0 +1,113 @@
+{
+  "slug": "lip-balms",
+  "name": "Lip Balms",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Lip Balms in full-color, custom packaging. The balm is formulated with rich shea butter to soothe and comfort dry, chapped lips. This plush balm is available in eight flavors.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup / art / logos",
+      "Bleeds allowed on all sides",
+      "Package printed in USA",
+      "Made in China"
+    ],
+    "materials": [
+      "Package: 111# Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full color printing on the Box"
+    ],
+    "options": [
+      "Artwork Change: $67 (G) each",
+      "Flavors: Strawberry, Berries & Cream, Tropical Mai Tai, Mint Cherry, Pomegranate Punch, Berry Breeze, Citrus Tart",
+      "Packaging: Bulk"
+    ],
+    "customShape": "Die Charge: $150 (G) each shape"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "6C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1310",
+        "4.68",
+        "4.17",
+        "3.51",
+        "3.12",
+        "2.99",
+        "2.91"
+      ]
+    ]
+  },
+  "videos": [
+    "WUfdUCLLq00"
+  ],
+  "thumbnail": {
+    "key": "images/lip-balms/main-beauty-1.png",
+    "alt": "Lip Balms",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/lip-balms/skincare-17.png",
+      "alt": "Lip Balms",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/lip-balms/skincare-18.png",
+      "alt": "Lip Balms",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/lip-balms/template-lip-balm.pdf",
+      "bytes": 68941
+    },
+    "catalogPage": {
+      "key": "files/lip-balms/catalog-2023-web-5.pdf",
+      "bytes": 455658
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

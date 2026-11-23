@@ -1,0 +1,340 @@
+{
+  "slug": "folding-cartons-sleeve",
+  "name": "Folding Cartons (Sleeve)",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Full color shortrun custom printed folding cartons.",
+  "notesHtml": "<p><strong>Custom Folding Cartons</strong>: We offer high quality full-custom folding cartons. Our minimum starts at 50 boxes. Industry&#39;s lowest! No die charge and Free Setup! You can order any in between size not stated in the size table. Price applies to the next larger size item that fits your size.</p>\n\n<p><strong>Need a Larger Size or Quantity not Listed?</strong> For larger sizes, quantities, or thicker stock, please contact factory for a quote! We are capable of producing folding cartons up to 40pt thick and larger sizes not listed here. Numerous finishes including embossing/debossing, aqueous coating, UV coating, and foil stamping can be added also.</p>",
+  "specs": {
+    "features": [
+      "Free Setup / Art / Logos",
+      "Bleeds Allowed on All Sides",
+      "No Die Charge on Standard Sizes",
+      "No Over-run Charge",
+      "No Pre-fixed Sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U510 - 5518: 11.4pt Gloss Cover"
+    ],
+    "printing": [
+      "Digital: Full Color Printing on One Side"
+    ],
+    "options": [
+      "Dieline Design: No charge",
+      "No Print Sample: $40 (G) for 2 pieces / dieline",
+      "Artwork Change: $67 (G) each"
+    ],
+    "customShape": "Die Charge: $50 (G) each custom size"
+  },
+  "pricing": {
+    "legend": [
+      "Digital",
+      "16C"
+    ],
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Side",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5510",
+        "One Side",
+        "5.53",
+        "3.24",
+        "2.48",
+        "2.10",
+        "1.87",
+        "1.72",
+        "1.61",
+        "1.53",
+        "1.41",
+        "1.10",
+        "0.98",
+        "0.86",
+        "0.78",
+        "0.46",
+        "0.35",
+        "0.29"
+      ],
+      [
+        "U5511",
+        "One Side",
+        "5.73",
+        "3.45",
+        "2.69",
+        "2.31",
+        "2.08",
+        "1.93",
+        "1.82",
+        "1.74",
+        "1.62",
+        "1.30",
+        "1.19",
+        "1.07",
+        "0.81",
+        "0.49",
+        "0.38",
+        "0.33"
+      ],
+      [
+        "U5512",
+        "One Side",
+        "5.94",
+        "3.65",
+        "2.89",
+        "2.51",
+        "2.28",
+        "2.13",
+        "2.02",
+        "1.94",
+        "1.83",
+        "1.51",
+        "1.39",
+        "1.28",
+        "0.85",
+        "0.52",
+        "0.41",
+        "0.36"
+      ],
+      [
+        "U5513",
+        "One Side",
+        "6.16",
+        "3.88",
+        "3.11",
+        "2.73",
+        "2.51",
+        "2.35",
+        "2.25",
+        "2.16",
+        "2.05",
+        "1.73",
+        "1.61",
+        "1.31",
+        "0.86",
+        "0.54",
+        "0.43",
+        "0.38"
+      ],
+      [
+        "U5514",
+        "One Side",
+        "6.35",
+        "4.07",
+        "3.31",
+        "2.93",
+        "2.70",
+        "2.55",
+        "2.44",
+        "2.36",
+        "2.24",
+        "1.93",
+        "1.81",
+        "1.36",
+        "0.91",
+        "0.58",
+        "0.48",
+        "0.42"
+      ],
+      [
+        "U5515",
+        "One Side",
+        "6.97",
+        "4.69",
+        "3.93",
+        "3.55",
+        "3.32",
+        "3.17",
+        "3.06",
+        "2.98",
+        "2.87",
+        "2.55",
+        "2.04",
+        "1.46",
+        "1.01",
+        "0.68",
+        "0.58",
+        "0.52"
+      ],
+      [
+        "U5516",
+        "One Side",
+        "7.59",
+        "5.31",
+        "4.55",
+        "4.17",
+        "3.95",
+        "3.79",
+        "3.69",
+        "3.60",
+        "3.49",
+        "2.72",
+        "2.14",
+        "1.55",
+        "1.10",
+        "0.78",
+        "0.67",
+        "0.62"
+      ],
+      [
+        "U5517",
+        "One Side",
+        "8.41",
+        "6.14",
+        "5.38",
+        "5.00",
+        "4.77",
+        "4.62",
+        "4.51",
+        "4.43",
+        "4.16",
+        "2.91",
+        "2.33",
+        "1.75",
+        "1.30",
+        "0.98",
+        "0.87",
+        "0.82"
+      ],
+      [
+        "U5518",
+        "One Side",
+        "9.90",
+        "7.62",
+        "6.87",
+        "6.49",
+        "6.26",
+        "6.11",
+        "6.00",
+        "5.55",
+        "4.74",
+        "3.49",
+        "2.93",
+        "2.34",
+        "1.89",
+        "1.57",
+        "1.46",
+        "1.41"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/folding-cartons-sleeve/main-packaging-3.png",
+    "alt": "Folding Cartons (Sleeve)",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/folding-cartons-sleeve/packaging-1.png",
+      "alt": "Folding Cartons (Sleeve)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/folding-cartons-sleeve/packaging-2.png",
+      "alt": "Folding Cartons (Sleeve)",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/folding-cartons-sleeve/01.jpg",
+      "alt": "Folding Cartons (Sleeve)",
+      "width": 837,
+      "height": 684
+    },
+    {
+      "key": "images/folding-cartons-sleeve/02.jpg",
+      "alt": "Folding Cartons (Sleeve)",
+      "width": 654,
+      "height": 506
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/folding-cartons-seal-end/template-folding-cartons.pdf",
+      "bytes": 99088
+    },
+    "catalogPage": {
+      "key": "files/folding-cartons-sleeve/2023-sleeve.pdf",
+      "bytes": 133096
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}
