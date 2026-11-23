@@ -26,7 +26,6 @@ function content(productOverrides = {}, file = "candles.json") {
   return {
     company: { name: "Unicorn Line", owner: "Unicorn Graphics", lede: "Lede", address: "1 Main St", phone: "516-222-0712", phoneE164: "+15162220712" },
     categories: [{ slug: "lifestyle", name: "Lifestyle" }],
-    featured: [],
     products: [{ file, data: product(productOverrides) }],
   }
 }
@@ -43,12 +42,6 @@ test("reports a product that names a category that doesn't exist", () => {
 test("reports a pricing row with the wrong number of cells", () => {
   const pricing = { note: "Digital, 6C.", columns: [{ label: "Item", method: null }], rows: [["U1", "1.00"]] }
   assert.deepEqual(validateContent(content({ pricing })), ["candles.json pricing: row 1 has 2 cells, expected 1"])
-})
-
-test("reports a featured item pointing at a product that doesn't exist", () => {
-  const data = content()
-  data.featured = [{ title: "T", line: "L", cta: "C", drawing: "d.svg", target: { product: "mugs" } }]
-  assert.deepEqual(validateContent(data), ['featured.json[0]: unknown product "mugs"'])
 })
 
 test("reports images without alt text", () => {

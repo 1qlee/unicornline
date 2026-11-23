@@ -67,7 +67,7 @@ function checkProduct(product, file, categorySlugs, errors) {
 }
 
 // products: [{ file, data }] so errors can name the file to fix.
-export function validateContent({ company, categories, featured, products }) {
+export function validateContent({ company, categories, products }) {
   const errors = []
   const categorySlugs = new Set()
 
@@ -86,17 +86,6 @@ export function validateContent({ company, categories, featured, products }) {
     if (file !== `${data.slug}.json`) errors.push(`${file}: file name must match slug "${data.slug}"`)
     checkProduct(data, file, categorySlugs, errors)
   }
-
-  featured.forEach((item, index) => {
-    const where = `featured.json[${index}]`
-    for (const field of ["title", "line", "cta", "drawing"]) {
-      if (!isNonEmptyString(item[field])) errors.push(`${where}: missing ${field}`)
-    }
-    const { category, product } = item.target ?? {}
-    if (category && !categorySlugs.has(category)) errors.push(`${where}: unknown category "${category}"`)
-    if (product && !productSlugs.has(product)) errors.push(`${where}: unknown product "${product}"`)
-    if (!category && !product) errors.push(`${where}: target needs a category or a product`)
-  })
 
   for (const field of ["name", "owner", "lede", "address", "phone", "phoneE164"]) {
     if (!isNonEmptyString(company?.[field])) errors.push(`company.json: missing ${field}`)

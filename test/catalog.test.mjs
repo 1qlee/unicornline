@@ -9,7 +9,6 @@ function product(slug, name, categories) {
 
 const catalog = buildCatalog({
   company: {},
-  featured: [],
   categories: [
     { slug: "gift-box", name: "Gift Box" },
     { slug: "eating-well", name: "Eating Well" },

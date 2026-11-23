@@ -3,7 +3,7 @@
 
 const byName = (a, b) => a.name.localeCompare(b.name, "en", { numeric: true, sensitivity: "base" })
 
-export function buildCatalog({ company, categories, featured, products }) {
+export function buildCatalog({ company, categories, products }) {
   const allProducts = products.map(({ data }) => data).sort(byName)
   const productBySlug = new Map(allProducts.map((product) => [product.slug, product]))
 
@@ -16,7 +16,6 @@ export function buildCatalog({ company, categories, featured, products }) {
 
   return {
     company,
-    featured,
     categories: orderedCategories,
     products: allProducts,
     categoryOf: (product) => categoryBySlug.get(product.categories[0]),

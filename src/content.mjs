@@ -16,7 +16,6 @@ export async function loadContent(contentDir) {
   return {
     company: await readJson(path.join(contentDir, "company.json")),
     categories: await readJson(path.join(contentDir, "categories.json")),
-    featured: await readJson(path.join(contentDir, "featured.json")),
     products: await Promise.all(
       productFiles.map(async (file) => ({ file, data: await readJson(path.join(productDir, file)) })),
     ),

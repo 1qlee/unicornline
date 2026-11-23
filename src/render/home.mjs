@@ -2,11 +2,6 @@ import { escapeHtml as e, numberWord, capitalize } from "../format.mjs"
 import { productPath, homePath } from "../urls.mjs"
 import { renderPage } from "./layout.mjs"
 
-function featuredHref(item, catalog) {
-  if (item.target.product) return productPath(catalog.productBySlug(item.target.product))
-  return `${homePath()}#${item.target.category}`
-}
-
 function hero(catalog, productCount) {
   const { company, categories } = catalog
   return `<section class="hero" aria-labelledby="hero-h">
@@ -36,26 +31,6 @@ function hero(catalog, productCount) {
 </section>`
 }
 
-function featuredSection(catalog) {
-  const tiles = catalog.featured
-    .map(
-      (item) => `<article class="ftile">
-<div style="height:170px;margin-bottom:8px"><img src="/drawings/${e(item.drawing)}" alt="" aria-hidden="true" style="width:100%;height:100%;display:block;object-fit:contain"></div>
-<h3 style="font-size:clamp(24px,2.2vw,32px)">${e(item.title)}</h3>
-<p style="max-width:24em">${e(item.line)}</p>
-<a class="linkbtn" href="${e(featuredHref(item, catalog))}">${e(item.cta)}</a>
-</article>`,
-    )
-    .join("\n")
-  return `<section class="wrap sec" aria-labelledby="feat-h">
-<div class="rule" aria-hidden="true"></div>
-<h2 id="feat-h" class="h2">New and popular in the line</h2>
-<div class="feat">
-${tiles}
-</div>
-</section>`
-}
-
 function categorySection(category) {
   const items = category.products
     .map((product) => `<li><a class="pitem" href="${e(productPath(product))}"><i aria-hidden="true"></i>${e(product.name)}</a></li>`)
@@ -72,14 +47,14 @@ function categorySection(category) {
 </section>`
 }
 
-function indexSection(catalog, productCount) {
+function indexSection(catalog) {
   const { categories } = catalog
   const nav = categories
     .map((category) => `<a href="#${e(category.slug)}">${e(category.name)}<span>${category.products.length}</span></a>`)
     .join("")
   return `<section id="index" class="wrap sec" aria-labelledby="index-h">
 <div class="rule" aria-hidden="true"></div>
-<h2 id="index-h" class="h2">${e(capitalize(numberWord(categories.length)))} categories, ${productCount} products.</h2>
+<h2 id="index-h" class="h2">Explore the catalog</h2>
 <div class="ix">
 <nav class="ixnav" aria-label="Categories">${nav}</nav>
 <div>
@@ -104,7 +79,7 @@ export function renderHome(catalog, config) {
     title: `${catalog.company.name} | ${catalog.company.owner}`,
     description: catalog.company.lede,
     path: homePath(),
-    main: [hero(catalog, productCount), featuredSection(catalog), indexSection(catalog, productCount)].join("\n"),
+    main: [hero(catalog, productCount), indexSection(catalog)].join("\n"),
     scripts: ["/js/site.js"],
   })
 }
