@@ -193,3 +193,33 @@ h3{font-weight:650;letter-spacing:-0.015em;line-height:1.1}
 .hdr-phone{font-size:16px;font-weight:600;text-decoration:none;min-height:44px;display:inline-flex;align-items:center;white-space:nowrap}
 @media (max-width:420px){.hdr-phone{display:none}}
 @media (prefers-reduced-motion:reduce){.pitem i{transition:none}}
+
+/* To-scale carton model in "What you get" */
+.carton{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:32px 40px;align-items:start}
+.carton-stage{aspect-ratio:1 / 1;border:1px solid #0B0B0B;background:#FFFFFF;display:flex;align-items:center;justify-content:center;padding:16px;box-sizing:border-box}
+.carton-svg{width:100%;height:100%;display:block}
+.carton-faces polygon,.carton-dim line{vector-effect:non-scaling-stroke}
+.carton-dim line{stroke:#0033FF;stroke-width:1}
+.carton-dim circle{fill:#0033FF}
+.carton-dim text{fill:#0B0B0B;font-family:'Archivo',system-ui,sans-serif;font-weight:600}
+.carton-controls{display:flex;flex-direction:column;gap:24px}
+.carton-controls fieldset{border:0;margin:0;padding:0;min-width:0}
+.carton-controls legend{font-size:15px;font-weight:700;margin-bottom:10px;padding:0}
+.seg div{display:flex;flex-wrap:wrap}
+.seg label{position:relative}
+.seg input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.seg span{display:inline-flex;align-items:center;min-height:44px;padding:0 16px;border:1px solid #0B0B0B;margin:0 -1px -1px 0;font-size:16px;font-weight:600;background:#FFFFFF}
+.seg input:checked+span{background:#0B0B0B;color:#FFFFFF}
+.seg label:hover input:not(:checked)+span{color:#0033FF}
+.seg input:focus-visible+span{outline:3px solid #0033FF;outline-offset:3px;position:relative;z-index:1}
+.dims div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.dim-field{display:flex;flex-direction:column;gap:6px;font-size:14px;font-weight:600}
+.dim-input{display:flex;align-items:center;border:1px solid #0B0B0B;padding:0 10px;background:#FFFFFF}
+.dim-input:focus-within{border-color:#0033FF;box-shadow:0 4px 14px rgba(11,11,11,.12)}
+.dim-input input{flex:1 1 auto;min-width:0;width:100%;min-height:44px;border:0;padding:0;font:inherit;font-size:18px;font-weight:500;background:transparent;outline:none}
+.dim-input span{font-size:14px;color:#2B2F33}
+.carton-item{font-size:19px;font-weight:600}
+.carton-note{font-size:15px;color:#2B2F33}
+.ptable tbody tr.is-match td{background:#FFFFFF;font-weight:700}
+.ptable tbody tr.is-match td:first-child{box-shadow:inset 4px 0 0 #0033FF;padding-left:12px}
+@media (max-width:900px){.carton{grid-template-columns:minmax(0,1fr)}}

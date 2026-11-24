@@ -2,6 +2,7 @@ import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
 import { productPath, homePath, assetUrl, viewerPath, quoteUrlFor } from "../urls.mjs"
 import { variantKey, widthsFor } from "../images.mjs"
 import { renderPage } from "./layout.mjs"
+import { cartonModelRow } from "./carton-model.mjs"
 
 const MAIN_IMAGE_SIZES = "(max-width: 900px) calc(100vw - 64px), 520px"
 const PRICES_CURRENCY_NOTE = "Prices in USD."
@@ -122,6 +123,7 @@ function details(product) {
   return `<section class="wrap sec" aria-labelledby="spec-h">
 <div class="rule" aria-hidden="true"></div>
 <h2 id="spec-h" class="h2" style="margin-bottom:48px">What you get</h2>
+${product.model ? cartonModelRow(product.model) : ""}
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
 ${notes}
 </section>`
@@ -187,6 +189,6 @@ export function renderProduct(product, catalog, config) {
       details(product),
       pricingSection(product, catalog.neighbours(product)),
     ].join("\n"),
-    scripts: ["/js/site.js"],
+    scripts: product.model ? ["/js/site.js", "/js/carton-view.js"] : ["/js/site.js"],
   })
 }

@@ -42,6 +42,19 @@ function checkPricing(pricing, where, errors) {
   })
 }
 
+const MODEL_TYPES = new Set(["tuck-end-carton"])
+
+function checkModel(model, where, errors) {
+  if (model === undefined) return
+  if (!MODEL_TYPES.has(model?.type)) return errors.push(`${where}: unknown model type "${model?.type}"`)
+  const isSize = (size) => ["w", "l", "d"].every((key) => typeof size?.[key] === "number" && size[key] > 0)
+  if (!Array.isArray(model.sizes) || model.sizes.length === 0) return errors.push(`${where}: model needs a size table`)
+  model.sizes.forEach((size, index) => {
+    if (!isSize(size) || !isNonEmptyString(size.item)) errors.push(`${where}: model size ${index + 1} needs item, w, l and d`)
+  })
+  if (!isSize(model.defaultSize)) errors.push(`${where}: model needs a defaultSize with w, l and d`)
+}
+
 function checkProduct(product, file, categorySlugs, errors) {
   const where = file
   if (!SLUG_PATTERN.test(product.slug ?? "")) errors.push(`${where}: invalid slug "${product.slug}"`)
@@ -59,6 +72,7 @@ function checkProduct(product, file, categorySlugs, errors) {
   }
   checkPricing(product.pricing, `${where} pricing`, errors)
   if (!isStringList(product.videos)) errors.push(`${where}: videos must be a list of YouTube IDs`)
+  checkModel(product.model, `${where} model`, errors)
   checkImage(product.thumbnail, `${where} thumbnail`, errors)
   ;(product.images ?? []).forEach((image, index) => checkImage(image, `${where} images[${index}]`, errors))
   for (const [name, document] of Object.entries(product.documents ?? {})) {
