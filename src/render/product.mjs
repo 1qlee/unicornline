@@ -51,19 +51,26 @@ function documentLinks(product, company, config) {
   return `<div class="dl">${links.join("")}</div>`
 }
 
+function photoThumb(config, image, index) {
+  return `<li><a href="${e(largestUrl(config, image))}" data-full="${e(mainImageUrl(config, image))}" data-srcset="${e(srcset(config, image))}" data-alt="${e(image.alt)}" data-width="${image.width}" data-height="${image.height}"${index === 0 ? ' aria-current="true"' : ""}><img src="${e(assetUrl(config.assetBaseUrl, variantKey(image.key, widthsFor(image)[0])))}" alt="Show photo ${index + 1}: ${e(image.alt)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async"></a></li>`
+}
+
+// Videos sit at the end of the carousel. Without JavaScript the thumbnail links to YouTube.
+function videoThumb(product, id, index, total) {
+  const label = `Play video${total > 1 ? ` ${index + 1} of ${total}` : ""}: ${product.name}`
+  return `<li><a class="thumb-video" href="https://www.youtube.com/watch?v=${e(id)}" data-video="${e(id)}" data-title="${e(label.replace(/^Play /, ""))}"><img src="https://i.ytimg.com/vi/${e(id)}/mqdefault.jpg" alt="${e(label)}" width="320" height="180" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true"></span></a></li>`
+}
+
 function gallery(product, config) {
   const images = product.images.length ? product.images : [product.thumbnail]
   const [first] = images
-  const thumbs =
-    images.length > 1
-      ? `<ul class="thumbs" aria-label="Product photos">${images
-          .map(
-            (image, index) => `<li><a href="${e(largestUrl(config, image))}" data-full="${e(mainImageUrl(config, image))}" data-srcset="${e(srcset(config, image))}" data-alt="${e(image.alt)}" data-width="${image.width}" data-height="${image.height}"${index === 0 ? ' aria-current="true"' : ""}><img src="${e(assetUrl(config.assetBaseUrl, variantKey(image.key, widthsFor(image)[0])))}" alt="Show photo ${index + 1}: ${e(image.alt)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async"></a></li>`,
-          )
-          .join("")}</ul>`
-      : ""
+  const items = [
+    ...images.map((image, index) => photoThumb(config, image, index)),
+    ...product.videos.map((id, index) => videoThumb(product, id, index, product.videos.length)),
+  ]
+  const thumbs = items.length > 1 ? `<ul class="thumbs" aria-label="Product photos and videos">${items.join("")}</ul>` : ""
   return `<div>
-<div class="pstage2"><img src="${e(mainImageUrl(config, first))}" srcset="${e(srcset(config, first))}" sizes="${MAIN_IMAGE_SIZES}" alt="${e(first.alt)}" width="${first.width}" height="${first.height}" fetchpriority="high" data-gallery-main></div>
+<div class="pstage2" data-gallery-stage><img src="${e(mainImageUrl(config, first))}" srcset="${e(srcset(config, first))}" sizes="${MAIN_IMAGE_SIZES}" alt="${e(first.alt)}" width="${first.width}" height="${first.height}" fetchpriority="high" data-gallery-main></div>
 ${thumbs}
 </div>`
 }
@@ -117,26 +124,6 @@ function details(product) {
 <h2 id="spec-h" class="h2" style="margin-bottom:48px">What you get</h2>
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
 ${notes}
-</section>`
-}
-
-function videos(product) {
-  if (product.videos.length === 0) return ""
-  const total = product.videos.length
-  const tiles = product.videos
-    .map(
-      (id, index) => `<a class="vid" href="https://www.youtube.com/watch?v=${e(id)}" data-video="${e(id)}" aria-label="Play video${total > 1 ? ` ${index + 1} of ${total}` : ""}: ${e(product.name)}">
-<img src="https://i.ytimg.com/vi/${e(id)}/hqdefault.jpg" alt="" width="480" height="360" loading="lazy" decoding="async">
-<span>Play video</span>
-</a>`,
-    )
-    .join("\n")
-  return `<section class="wrap sec" aria-labelledby="video-h">
-<div class="rule" aria-hidden="true"></div>
-<h2 id="video-h" class="h2" style="margin-bottom:48px">See it made</h2>
-<div class="vids">
-${tiles}
-</div>
 </section>`
 }
 
@@ -198,7 +185,6 @@ export function renderProduct(product, catalog, config) {
     main: [
       productTop(product, category, catalog, config),
       details(product),
-      videos(product),
       pricingSection(product, catalog.neighbours(product)),
     ].join("\n"),
     scripts: ["/js/site.js"],

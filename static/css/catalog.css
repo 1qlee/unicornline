@@ -141,14 +141,13 @@ h3{font-weight:650;letter-spacing:-0.015em;line-height:1.1}
 .prose li{display:flex;align-items:baseline;gap:12px;padding:3px 0}
 .prose li::before{content:"";width:7px;height:7px;background:#0B0B0B;flex:none;transform:translateY(-2px)}
 
-/* Videos */
-.vids{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
-.vid{position:relative;display:block;aspect-ratio:16 / 9;border:1px solid #0B0B0B;background:#0B0B0B;color:#FFFFFF;text-decoration:none;overflow:hidden}
-.vid img{width:100%;height:100%;object-fit:cover;display:block;opacity:.85}
-.vid span{position:absolute;left:0;bottom:0;display:inline-flex;align-items:center;gap:10px;min-height:52px;padding:0 22px;background:#FF6616;color:#0B0B0B;font-weight:700;font-size:17px}
-.vid span::before{content:"";width:0;height:0;border-left:11px solid currentColor;border-top:7px solid transparent;border-bottom:7px solid transparent}
-.vid:hover span{background:#0B0B0B;color:#FFFFFF}
-.vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+/* Videos at the end of the photo carousel */
+.thumbs .thumb-video{background:#0B0B0B;overflow:hidden}
+.thumbs .thumb-video img{inset:0;width:100%;height:100%;object-fit:cover;opacity:.8}
+.thumb-play{position:absolute;left:50%;top:50%;width:34px;height:34px;margin:-17px 0 0 -17px;background:#FF6616}
+.thumb-play::before{content:"";position:absolute;left:13px;top:10px;border-left:11px solid #0B0B0B;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.thumbs .thumb-video:hover .thumb-play{background:#FFFFFF}
+.stage-video{position:absolute;left:0;top:50%;width:100%;aspect-ratio:16 / 9;transform:translateY(-50%);border:0;background:#0B0B0B}
 
 /* PDF viewer */
 .vbar{position:sticky;top:76px;z-index:10;background:#FFFFFF;border-bottom:1px solid #0B0B0B}
@@ -164,9 +163,6 @@ h3{font-weight:650;letter-spacing:-0.015em;line-height:1.1}
 .vpage canvas{display:block;width:100%;height:auto}
 .vstatus{max-width:36em;margin:0 auto;padding:48px 0;font-size:17px}
 
-@media (max-width:900px){
-.vids{grid-template-columns:minmax(0,1fr)}
-}
 @media (max-width:640px){
 .vbar{top:0;position:static}
 }

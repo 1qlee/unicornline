@@ -215,37 +215,36 @@ function setUpHeadingReveal() {
 }
 
 function setUpGallery() {
+  const stage = document.querySelector("[data-gallery-stage]")
   const main = document.querySelector("[data-gallery-main]")
   const links = [...document.querySelectorAll(".thumbs a")]
-  if (!main || links.length === 0) return
+  if (!stage || !main || links.length === 0) return
+
+  function showPhoto(link) {
+    main.src = link.dataset.full
+    main.srcset = link.dataset.srcset
+    main.alt = link.dataset.alt
+    main.width = Number(link.dataset.width)
+    main.height = Number(link.dataset.height)
+    stage.replaceChildren(main)
+  }
+
+  function showVideo(link) {
+    const frame = document.createElement("iframe")
+    frame.className = "stage-video"
+    frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(link.dataset.video)}?autoplay=1&rel=0`
+    frame.title = link.dataset.title
+    frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"
+    frame.allowFullscreen = true
+    stage.replaceChildren(frame)
+  }
+
   for (const link of links) {
     link.addEventListener("click", (event) => {
       event.preventDefault()
-      main.src = link.dataset.full
-      main.srcset = link.dataset.srcset
-      main.alt = link.dataset.alt
-      main.width = Number(link.dataset.width)
-      main.height = Number(link.dataset.height)
+      link.dataset.video ? showVideo(link) : showPhoto(link)
       for (const other of links) other.removeAttribute("aria-current")
       link.setAttribute("aria-current", "true")
-    })
-  }
-}
-
-function setUpVideos() {
-  for (const tile of document.querySelectorAll("[data-video]")) {
-    tile.addEventListener("click", (event) => {
-      event.preventDefault()
-      const frame = document.createElement("iframe")
-      frame.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(tile.dataset.video)}?autoplay=1`
-      frame.title = tile.getAttribute("aria-label").replace(/^Play /, "")
-      frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"
-      frame.allowFullscreen = true
-      const holder = document.createElement("div")
-      holder.className = "vid"
-      holder.append(frame)
-      tile.replaceWith(holder)
-      frame.focus()
     })
   }
 }
@@ -253,4 +252,3 @@ function setUpVideos() {
 setUpSearch()
 setUpHeadingReveal()
 setUpGallery()
-setUpVideos()
