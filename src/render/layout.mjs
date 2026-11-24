@@ -2,11 +2,15 @@ import { escapeHtml as e } from "../format.mjs"
 import { homePath, viewerPath, absoluteUrl } from "../urls.mjs"
 
 const FONT_PRELOAD = "/fonts/archivo-latin-wdth-normal.woff2"
+const LOGO = "/images/logo.svg"
+// The logo's intrinsic size, from its viewBox, so the browser reserves its space.
+const LOGO_WIDTH = 73
+const LOGO_HEIGHT = 72
 
 function header({ config, company }) {
   return `<header class="hdr">
 <div class="wrap hdr-in">
-<a href="${e(config.mainSiteUrl)}" aria-label="${e(company.owner)} home" style="display:flex;align-items:center"><img src="/images/logo.png" alt="${e(company.owner)}" width="56" height="56" style="height:56px;width:auto;display:block"></a>
+<a class="hdr-logo" href="${e(config.mainSiteUrl)}"><img src="${LOGO}" alt="${e(company.owner)}" width="${LOGO_WIDTH}" height="${LOGO_HEIGHT}"></a>
 <nav aria-label="Main">
 <a href="${homePath()}">Catalog</a>
 <a href="${e(viewerPath(company.fullCatalog.key))}">Full catalog (PDF)</a>
@@ -14,30 +18,30 @@ function header({ config, company }) {
 </nav>
 <div class="hdr-cta">
 <a class="hdr-phone" href="tel:${e(company.phoneE164)}">${e(company.phone)}</a>
-<a href="${e(config.quoteUrl)}" class="btn" style="min-height:46px;font-size:16px;padding:0 20px">Get a free quote</a>
+<a href="${e(config.quoteUrl)}" class="btn btn-sm">Get a free quote</a>
 </div>
 </div>
 </header>`
 }
 
 function footer({ config, company }) {
-  return `<footer class="wrap" style="padding-bottom:48px">
-<div class="rule" aria-hidden="true" style="margin-bottom:64px"></div>
-<div style="display:flex;flex-wrap:wrap;gap:40px 72px;justify-content:space-between">
-<div style="display:flex;flex-direction:column;gap:12px;max-width:22em">
-<img src="/images/logo.png" alt="${e(company.owner)}" width="110" height="110" style="height:110px;width:auto;display:block;align-self:flex-start">
-<p style="font-size:15px">${e(company.address)}</p>
-<p style="font-size:15px"><a href="tel:${e(company.phoneE164)}">${e(company.phone)}</a></p>
+  return `<footer class="wrap ftr">
+<div class="rule" aria-hidden="true"></div>
+<div class="ftr-in">
+<div class="ftr-id">
+<img src="${LOGO}" alt="${e(company.owner)}" width="${LOGO_WIDTH}" height="${LOGO_HEIGHT}">
+<p>${e(company.address)}</p>
+<p><a href="tel:${e(company.phoneE164)}">${e(company.phone)}</a></p>
 </div>
-<nav aria-label="Footer" style="display:flex;flex-wrap:wrap;gap:40px 72px;font-size:15px">
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-weight:700">Catalog</p>
+<nav aria-label="Footer">
+<div class="ftr-col">
+<p>Catalog</p>
 <a href="${homePath()}">All products</a>
 <a href="${e(viewerPath(company.fullCatalog.key))}">Full catalog (PDF)</a>
 <a href="${e(viewerPath(company.terms.key))}">Terms</a>
 </div>
-<div style="display:flex;flex-direction:column;gap:8px">
-<p style="font-weight:700">${e(company.owner)}</p>
+<div class="ftr-col">
+<p>${e(company.owner)}</p>
 <a href="${e(config.mainSiteUrl)}">Homepage</a>
 <a href="${e(config.quoteUrl)}">Get a free quote</a>
 </div>
@@ -55,14 +59,16 @@ export function renderPage({ config, company, title, description, path, main, sc
 <title>${e(title)}</title>
 <meta name="description" content="${e(description)}">
 <link rel="canonical" href="${e(absoluteUrl(config.siteUrl, path))}">
-<link rel="icon" type="image/png" href="/images/logo.png">
+<link rel="icon" type="image/svg+xml" href="${LOGO}">
+<link rel="alternate icon" type="image/png" href="/images/logo.png">
 <link rel="preload" href="${FONT_PRELOAD}" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/catalog.css">
 ${head}</head>
 <body>
-<div id="top" style="width:100%;min-width:0;position:relative;overflow-x:clip">
+<div id="top" class="page">
+<a class="skip" href="#content">Skip to content</a>
 ${header({ config, company })}
-<main>
+<main id="content">
 ${main}
 </main>
 ${footer({ config, company })}

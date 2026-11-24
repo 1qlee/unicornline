@@ -9,10 +9,12 @@ export function renderNotFound(catalog, config) {
     description: "This page doesn't exist.",
     path: "/404.html",
     head: '<meta name="robots" content="noindex">\n',
-    main: `<section class="wrap sec" style="padding-top:72px">
-<h1 class="disp reg pname">Page not found</h1>
-<p class="lede" style="margin:26px 0">This page doesn't exist or has moved. Every product is listed in the catalog.</p>
+    main: `<section class="wrap sec nf">
+<div class="stack-6">
+<h1 class="display-md">Page not found</h1>
+<p class="lead">This page doesn't exist or has moved. Every product is listed in the catalog.</p>
 <a class="btn" href="${homePath()}">Go to the catalog</a>
+</div>
 </section>`,
   })
 }

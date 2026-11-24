@@ -201,15 +201,15 @@ function setUpHeadingReveal() {
     (entries) => {
       for (const entry of entries) {
         if (!entry.isIntersecting) continue
-        entry.target.classList.remove("pre")
-        entry.target.classList.add("go")
+        entry.target.classList.remove("reveal-pre")
+        entry.target.classList.add("reveal-go")
         observer.unobserve(entry.target)
       }
     },
     { threshold: 0.3 },
   )
-  for (const heading of document.querySelectorAll(".h2")) {
-    heading.classList.add("pre")
+  for (const heading of document.querySelectorAll("[data-reveal]")) {
+    heading.classList.add("reveal-pre")
     observer.observe(heading)
   }
 }

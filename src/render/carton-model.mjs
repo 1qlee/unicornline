@@ -32,7 +32,7 @@ export function cartonModelRow(model) {
   const sizesJson = JSON.stringify(model.sizes).replace(/</g, "\\u003c")
 
   return `<div class="srow">
-<h3 style="font-size:20px">Size it up</h3>
+<h3 class="heading-sm">Size it up</h3>
 <div class="carton" data-carton>
 <div class="carton-stage" data-carton-stage>${renderCartonSvg(cartonState(size, DEFAULT_STYLE, DEFAULT_VIEW))}</div>
 <form class="carton-controls" data-carton-controls>

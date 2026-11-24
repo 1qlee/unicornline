@@ -78,16 +78,16 @@ ${thumbs}
 
 function productTop(product, category, catalog, config) {
   const { company } = catalog
-  return `<section class="wrap" style="padding-top:36px;padding-bottom:110px">
+  return `<section class="wrap ptop-sec">
 ${breadcrumb(product, category)}
 <div class="ptop">
-<div style="display:flex;flex-direction:column;gap:26px;min-width:0">
-<h1 class="disp reg pname">${e(product.name)}</h1>
-<p class="lede">${e(product.description)}</p>
+<div class="stack-6">
+<h1 class="display-md">${e(product.name)}</h1>
+<p class="lead">${e(product.description)}</p>
 ${documentLinks(product, company, config)}
-<div style="display:flex;flex-wrap:wrap;align-items:center;gap:14px 28px">
+<div class="pcta">
 <a href="${e(quoteUrlFor(config.quoteUrl, product.name))}" class="btn">Get a free quote</a>
-<p style="font-size:16px">Or call <a href="tel:${e(company.phoneE164)}" style="font-weight:700">${e(company.phone)}</a></p>
+<p>Or call <a href="tel:${e(company.phoneE164)}">${e(company.phone)}</a></p>
 </div>
 </div>
 ${gallery(product, config)}
@@ -97,7 +97,7 @@ ${gallery(product, config)}
 
 function specRow(label, items) {
   return `<div class="srow">
-<h3 style="font-size:20px">${label}</h3>
+<h3 class="heading-sm">${label}</h3>
 <ul>${items.map((item) => `<li>${e(item)}</li>`).join("")}</ul>
 </div>`
 }
@@ -115,14 +115,14 @@ function details(product) {
   // notesHtml is authored in content/ (trusted), so it is inserted as HTML.
   const notes = product.notesHtml
     ? `<div class="srow">
-<h3 style="font-size:20px">Good to know</h3>
+<h3 class="heading-sm">Good to know</h3>
 <div class="prose">${product.notesHtml}</div>
 </div>`
     : ""
 
   return `<section class="wrap sec" aria-labelledby="spec-h">
 <div class="rule" aria-hidden="true"></div>
-<h2 id="spec-h" class="h2" style="margin-bottom:48px">What you get</h2>
+<h2 id="spec-h" class="heading-xl sec-head">What you get</h2>
 ${product.model ? cartonModelRow(product.model) : ""}
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
 ${notes}
@@ -134,7 +134,7 @@ function priceTable(pricing, productName) {
     .map((column) =>
       column.method
         ? `<th scope="col" class="num">${e(formatQuantityLabel(column.label))}</th>`
-        : `<th scope="col" class="lead">${e(column.label)}</th>`,
+        : `<th scope="col" class="col-text">${e(column.label)}</th>`,
     )
     .join("")
   const body = pricing.rows
@@ -159,16 +159,15 @@ function pricingSection(product, neighbours) {
   const nav =
     neighbours.previous && neighbours.next
       ? `<div class="pn">
-<a class="linkbtn" href="${e(productPath(neighbours.previous))}">Previous: ${e(neighbours.previous.name)}</a>
-<a class="linkbtn" href="${e(productPath(neighbours.next))}">Next: ${e(neighbours.next.name)}</a>
+<a class="link" href="${e(productPath(neighbours.previous))}">Previous: ${e(neighbours.previous.name)}</a>
+<a class="link" href="${e(productPath(neighbours.next))}">Next: ${e(neighbours.next.name)}</a>
 </div>`
       : ""
   return `<section class="band sec" aria-labelledby="price-h">
 <div class="wrap">
-<div class="rule" aria-hidden="true"></div>
-<div style="display:flex;flex-wrap:wrap;gap:16px 64px;align-items:flex-end;justify-content:space-between">
-<h2 id="price-h" class="h2">Pricing by quantity</h2>
-<p class="lede" style="font-size:19px;max-width:24em">${e(product.pricing.note)} ${PRICES_CURRENCY_NOTE}</p>
+<div class="sec-head sec-head-split">
+<h2 id="price-h" class="heading-xl">Pricing by quantity</h2>
+<p class="lead">${e(product.pricing.note)} ${PRICES_CURRENCY_NOTE}</p>
 </div>
 ${priceTable(product.pricing, product.name)}
 ${nav}

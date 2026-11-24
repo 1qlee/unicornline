@@ -20,7 +20,7 @@ export function renderViewer(catalog, config) {
   const documents = JSON.stringify(collectDocuments(catalog)).replace(/</g, "\\u003c")
   const main = `<div class="vbar">
 <div class="wrap vbar-in">
-<h1 data-viewer-title>Document</h1>
+<h1 class="heading-sm" data-viewer-title>Document</h1>
 <div class="vtools">
 <a href="${homePath()}" data-viewer-back>Back to catalog</a>
 <span aria-live="polite" data-viewer-page></span>
@@ -33,7 +33,7 @@ export function renderViewer(catalog, config) {
 </div>
 <div class="vpages">
 <div class="wrap">
-<p class="vstatus" data-viewer-status>Loading document…</p>
+<p class="vstatus" data-viewer-status><span class="loader" aria-hidden="true"><span></span><span></span><span></span><span></span></span>Loading document</p>
 <div data-viewer-pages></div>
 </div>
 </div>

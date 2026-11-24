@@ -5,11 +5,10 @@ import { renderPage } from "./layout.mjs"
 function hero(catalog, productCount) {
   const { company, categories } = catalog
   return `<section class="hero" aria-labelledby="hero-h">
-<div class="wrap" style="padding-top:72px;padding-bottom:96px;z-index:1">
-<div class="sheet">
-<h1 id="hero-h" class="disp reg">${e(company.name)}</h1>
+<div class="wrap">
+<h1 id="hero-h" class="display-xl reveal">${e(company.name)}</h1>
 <div class="hero-row">
-<p class="lede">${e(company.lede)}</p>
+<p class="lead">${e(company.lede)}</p>
 <div class="search-box" data-search-box>
 <label class="search">
 <span class="vh">Search the catalog</span>
@@ -20,8 +19,7 @@ function hero(catalog, productCount) {
 <div class="search-results" id="search-results" role="listbox" aria-label="Matching products" hidden data-search-results></div>
 </div>
 </div>
-<img class="hero-art line" src="/drawings/hero-cluster.svg" alt="Isometric drawing of a line-up of catalog items: cartons, a mailer box, a candle, a wooden award cube and a tin" style="object-fit:contain;object-position:right bottom">
-</div>
+<img class="hero-art" src="/drawings/hero-cluster.svg" alt="Isometric drawing of a line-up of catalog items: cartons, a mailer box, a candle, a wooden award cube and a tin">
 </div>
 </section>`
 }
@@ -32,9 +30,9 @@ function categorySection(category) {
     .join("")
   return `<section class="cat" id="${e(category.slug)}" aria-label="${e(category.name)}" data-category="${e(category.name)}">
 <div class="cat-head">
-<div style="display:flex;flex-direction:column;gap:14px;min-width:0">
-<h3 class="h2" style="font-weight:500">${e(category.name)}</h3>
-<p class="lede" style="font-size:19px;max-width:28em">${e(category.description)}</p>
+<div class="stack">
+<h3 class="heading-lg">${e(category.name)}</h3>
+<p>${e(category.description)}</p>
 </div>
 <img class="cat-art" src="/drawings/${e(category.drawing)}" alt="" aria-hidden="true">
 </div>
@@ -49,16 +47,14 @@ function indexSection(catalog) {
     .join("")
   return `<section id="index" class="wrap sec" aria-labelledby="index-h">
 <div class="rule" aria-hidden="true"></div>
-<h2 id="index-h" class="h2">Explore the catalog</h2>
+<h2 id="index-h" class="heading-xl sec-head" data-reveal>Explore the catalog</h2>
 <div class="ix">
 <nav class="ixnav" aria-label="Categories">${nav}</nav>
 <div>
-<div id="no-results" hidden>
-<div style="display:flex;flex-direction:column;gap:14px;align-items:flex-start;padding-bottom:104px">
-<h3 style="font-size:28px">No products match your search.</h3>
+<div id="no-results" class="empty" hidden>
+<h3 class="heading-md">No products match your search.</h3>
 <p>Check the spelling or try a broader word, such as "box" or "tea".</p>
-<button type="button" class="btn" data-clear-search>Clear search</button>
-</div>
+<button type="button" class="btn btn-secondary" data-clear-search>Clear search</button>
 </div>
 ${categories.map(categorySection).join("\n")}
 </div>

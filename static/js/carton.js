@@ -26,14 +26,16 @@ const PADDING = 0.6
 const DIMENSION_OFFSET = 0.45
 const VIEWER = [1, 1, 1]
 
+// The design system's illustration tones: paper and illus-grey for the board,
+// illus-ink for the shadowed cavity, blue for the printed panel.
 const COLORS = {
-  ink: "#0B0B0B",
-  outside: "#FFFFFF",
-  outsideShade: "#E4E7EE",
-  inside: "#C9CDD6",
-  insideDeep: "#A9AEBA",
-  flapInside: "#E9ECF2",
-  print: "#0033FF",
+  ink: "#0b0b0b",
+  outside: "#ffffff",
+  outsideShade: "#dde0e6",
+  inside: "#dde0e6",
+  insideDeep: "#12151a",
+  flapInside: "#dde0e6",
+  print: "#0033ff",
 }
 
 export const STYLES = {
