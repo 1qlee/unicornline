@@ -1,7 +1,7 @@
 // Animates the carton model between states as the visitor changes style, view or
 // size, and highlights the matching row in the pricing table.
 
-import { renderCartonSvg, cartonViewBox, cartonState, itemForSize, sizeLimits, sizeMessage } from "/js/carton.js"
+import { renderCartonSvg, cartonViewBox, cartonState, itemForSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct } from "/js/carton.js"
 import { priceRowHtml } from "/js/price-row.js"
 import "/js/segmented.js"
 
@@ -103,6 +103,9 @@ function setUpCarton(root) {
   const sizes = JSON.parse(root.querySelector("[data-carton-sizes]").textContent)
   const limits = sizeLimits(sizes)
   const pricesBox = root.querySelector("[data-carton-prices]")
+  const custom = root.querySelector("[data-carton-custom]")
+  const customText = custom.querySelector("[data-carton-custom-text]")
+  const customLink = custom.querySelector("[data-carton-custom-link]")
   const priceRows = [...document.querySelectorAll(".ptable tbody tr")]
   const priceColumns = [...document.querySelectorAll(".ptable thead th")].map((cell) => ({
     label: cell.textContent.trim(),
@@ -126,6 +129,17 @@ function setUpCarton(root) {
     for (const row of priceRows) row.classList.toggle("is-match", matches.includes(row))
     const cells = matches.map((row) => [...row.cells].map((cell) => cell.textContent.trim()))
     pricesBox.innerHTML = priceRowHtml(priceColumns, cells)
+    showCustomPrice(target, !item)
+  }
+
+  function showCustomPrice(target, needed) {
+    custom.hidden = !needed
+    if (!needed) return
+    const { unit, product, quoteBase } = custom.dataset
+    customText.textContent = customSizeMessage(target, unit)
+    const url = new URL(quoteBase)
+    url.searchParams.set("product", customSizeProduct(product, target, unit))
+    customLink.href = url.toString()
   }
 
   const initial = readTarget()

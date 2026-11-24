@@ -300,6 +300,18 @@ export function sizeMessage(item) {
   return item ? `Priced as ${item} in the table below.` : ""
 }
 
+const formatSize = ({ w, l, d }, unit) => `${w} x ${l} x ${d} ${unit}`
+
+// Shown in place of prices when the drawn size is not a row of the size table.
+export function customSizeMessage(size, unit) {
+  return `This size isn't in our price table, but we make cartons to any size. Send us the ${formatSize(size, unit)} size and the quantity you need, and we'll price it for you.`
+}
+
+// What the quote form receives as the product, so the request names the size.
+export function customSizeProduct(productName, { style, ...size }, unit) {
+  return `${productName}, ${STYLES[style].label.toLowerCase()}, ${formatSize(size, unit)}`
+}
+
 export function sizeLimits(sizes) {
   return {
     w: Math.max(...sizes.map((size) => size.w)),

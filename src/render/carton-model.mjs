@@ -1,6 +1,7 @@
 import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
 import { priceRowHtml } from "../../static/js/price-row.js"
-import { renderCartonSvg, cartonState, itemForSize, sizeLimits, sizeMessage, STYLES, VIEWS } from "../../static/js/carton.js"
+import { renderCartonSvg, cartonState, itemForSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct, STYLES, VIEWS } from "../../static/js/carton.js"
+import { quoteUrlFor } from "../urls.mjs"
 
 const SIZE_STEP = 0.25
 const MIN_SIZE = 1
@@ -42,7 +43,7 @@ function matchingPrices(pricing, item) {
   return rows.length ? priceRowHtml(columns, rows) : ""
 }
 
-export function cartonModelControls(model, pricing) {
+export function cartonModelControls(model, { pricing, productName, quoteUrl }) {
   const size = model.defaultSize
   const item = itemForSize(model.sizes, size)
   const limits = sizeLimits(model.sizes)
@@ -58,6 +59,10 @@ ${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
 <fieldset class="dims"><legend class="vh">Size in inches</legend><div>${sizeInputs}</div></fieldset>
 <p class="carton-item" aria-live="polite" data-carton-item${item ? "" : " hidden"}>${e(sizeMessage(item))}</p>
 <div class="carton-prices" data-carton-prices>${item ? matchingPrices(pricing, item) : ""}</div>
+<div class="carton-custom" data-carton-custom data-quote-base="${e(quoteUrl)}" data-product="${e(productName)}" data-unit="${e(model.unit)}"${item ? " hidden" : ""}>
+<p data-carton-custom-text>${e(customSizeMessage(size, model.unit))}</p>
+<a class="btn" href="${e(quoteUrlFor(quoteUrl, customSizeProduct(productName, { ...size, style: DEFAULT_STYLE }, model.unit)))}" data-carton-custom-link>Get a custom price</a>
+</div>
 </form>
 <script type="application/json" data-carton-sizes>${sizesJson}</script>`
 }
