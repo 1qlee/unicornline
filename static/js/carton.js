@@ -15,9 +15,11 @@ const DEG = Math.PI / 180
 const TOP_LID_OPEN = 102 * DEG
 const BOTTOM_LID_OPEN = 106 * DEG
 const DUST_FLAP_OPEN = 104 * DEG
-const TUCK_FOLDED = 90 * DEG
-// The tuck straightens during the first part of the lid's swing.
-const TUCK_STRAIGHT_BY = 0.35
+// A closing tuck is bent a little past square so it slides down inside the far wall.
+const TUCK_INTO_CAVITY = -(90 + 4) * DEG
+// Fold range, after the tuck tip clears the rim, over which the tuck straightens out.
+const TUCK_CLEARANCE_MARGIN = 0.04
+const TUCK_STRAIGHTEN_SPAN = 0.25
 // Flaps flatter than this are painted with the closed-carton order.
 const FLAT_ANGLE = 45 * DEG
 const PADDING = 0.6
@@ -101,19 +103,31 @@ function panel(origin, along, out, outline, outsideSign) {
   return { points, showsOutside: dot(outsideNormal, VIEWER) > 0 }
 }
 
+const smoothstep = (t) => t * t * (3 - 2 * t)
+
 // Lid (with its tuck flap) hinged along x. sgnY is the direction the closed lid
 // lies in (+1 toward the front); sgnZ is the side it opens to (+1 up, -1 down).
+//
+// Angles are measured in the lid's plane of rotation: 0 lies flat across the
+// opening, positive swings away from the box. Below the fold where the tuck tip
+// could reach the rim, the tuck points into the cavity, so it never passes
+// through a wall; above it, the tuck straightens out in line with the lid.
 function lidAssembly({ w, l }, hinge, sgnY, sgnZ, fold, openAngle, tuckLength) {
   const angle = openAngle * fold
-  const tuckAngle = TUCK_FOLDED * (1 - clamp01(fold / TUCK_STRAIGHT_BY))
+  const clearFold = Math.asin(Math.min(1, tuckLength / w)) / openAngle + TUCK_CLEARANCE_MARGIN
+  const straightened = smoothstep(clamp01((fold - clearFold) / TUCK_STRAIGHTEN_SPAN))
+  const tuckDirection = TUCK_INTO_CAVITY + (angle - TUCK_INTO_CAVITY) * straightened
   const direction = (theta) => [0, sgnY * Math.cos(theta), sgnZ * Math.sin(theta)]
   const along = [1, 0, 0]
   const outsideSign = sgnY * sgnZ
   const lidOut = direction(angle)
   const lid = panel(hinge, along, lidOut, [[0, 0], [l, 0], [l, w], [0, w]], outsideSign)
   const tuckOrigin = add(hinge, scale(lidOut, w))
-  const tuck = panel(tuckOrigin, along, direction(angle - tuckAngle), tuckFlapOutline(l, tuckLength), outsideSign)
-  return { lid, tuck, angle, tuckAngle }
+  const tuck = panel(tuckOrigin, along, direction(tuckDirection), tuckFlapOutline(l, tuckLength), outsideSign)
+  // Any part of the tuck past the rim plane is inside the box.
+  const rimZ = hinge[2]
+  const inCavity = tuck.points.some(([, , z]) => sgnZ * (z - rimZ) < -1e-6)
+  return { lid, tuck, angle, inCavity }
 }
 
 // Dust flap hinged along y on the x = xHinge edge. outward is -1 or +1 (which side
@@ -145,26 +159,33 @@ function printPanel({ w, l, d }) {
 // Painter's order, back to front. The box is convex, so its two visible walls hide
 // everything behind them except what shows through the open top. Flaps switch
 // between "folded against the box" and "swung out" ordering at FLAT_ANGLE.
-export function cartonPolygons(state) {
+// The carton's moving panels in 3D (inches), for drawing and for geometry checks.
+export function cartonGeometry(state) {
   const { w, l, d, style } = state
   const { tuck, dust } = flapSizes(state)
   const reverse = style === "reverse"
+  return {
+    topLid: lidAssembly(state, [0, 0, d], 1, 1, state.topLid, TOP_LID_OPEN, tuck),
+    bottomLid: reverse
+      ? lidAssembly(state, [0, w, 0], -1, -1, state.bottomLid, BOTTOM_LID_OPEN, tuck)
+      : lidAssembly(state, [0, 0, 0], 1, -1, state.bottomLid, BOTTOM_LID_OPEN, tuck),
+    topLeft: dustFlap(state, 0, d, -1, 1, state.topDust, dust),
+    topRight: dustFlap(state, l, d, 1, 1, state.topDust, dust),
+    bottomLeft: dustFlap(state, 0, 0, -1, -1, state.bottomDust, dust),
+    bottomRight: dustFlap(state, l, 0, 1, -1, state.bottomDust, dust),
+  }
+}
 
-  const topLid = lidAssembly(state, [0, 0, d], 1, 1, state.topLid, TOP_LID_OPEN, tuck)
-  const bottomLid = reverse
-    ? lidAssembly(state, [0, w, 0], -1, -1, state.bottomLid, BOTTOM_LID_OPEN, tuck)
-    : lidAssembly(state, [0, 0, 0], 1, -1, state.bottomLid, BOTTOM_LID_OPEN, tuck)
-  const topLeft = dustFlap(state, 0, d, -1, 1, state.topDust, dust)
-  const topRight = dustFlap(state, l, d, 1, 1, state.topDust, dust)
-  const bottomLeft = dustFlap(state, 0, 0, -1, -1, state.bottomDust, dust)
-  const bottomRight = dustFlap(state, l, 0, 1, -1, state.bottomDust, dust)
+export function cartonPolygons(state) {
+  const { w, l, d, style } = state
+  const reverse = style === "reverse"
+  const { topLid, bottomLid, topLeft, topRight, bottomLeft, bottomRight } = cartonGeometry(state)
 
   const before = []
   const after = []
   const bottomLidInFront = reverse && bottomLid.angle >= FLAT_ANGLE
-  const bottomTuckHidden = bottomLid.tuckAngle >= FLAT_ANGLE
   ;(bottomLidInFront ? after : before).push(flapFace(bottomLid.lid))
-  ;(bottomLidInFront && !bottomTuckHidden ? after : before).push(flapFace(bottomLid.tuck))
+  if (!bottomLid.inCavity) (bottomLidInFront ? after : before).push(flapFace(bottomLid.tuck))
   before.push(flapFace(bottomLeft))
   ;(bottomRight.angle >= FLAT_ANGLE ? after : before).push(flapFace(bottomRight))
 
@@ -173,21 +194,22 @@ export function cartonPolygons(state) {
     face([[0, 0, 0], [l, 0, 0], [l, 0, d], [0, 0, d]], COLORS.inside),
     face([[0, 0, 0], [0, w, 0], [0, w, d], [0, 0, d]], COLORS.insideDeep),
   ]
-  const topTuckHidden = topLid.tuckAngle >= FLAT_ANGLE
+  // Tucks inside the box sit in front of the inner walls and behind the outer ones.
+  const cavity = [topLid, bottomLid].filter((lid) => lid.inCavity).map((lid) => flapFace(lid.tuck))
   const walls = [
     face([[0, w, 0], [l, w, 0], [l, w, d], [0, w, d]], COLORS.outside),
     face([[l, 0, 0], [l, w, 0], [l, w, d], [l, 0, d]], COLORS.outsideShade),
     face(printPanel(state), COLORS.print),
   ]
 
-  const lidFaces = [flapFace(topLid.lid), ...(topTuckHidden ? [] : [flapFace(topLid.tuck)])]
+  const lidFaces = [flapFace(topLid.lid), ...(topLid.inCavity ? [] : [flapFace(topLid.tuck)])]
   const dustFaces = [flapFace(topLeft), flapFace(topRight)]
   const topFaces = topLid.angle >= FLAT_ANGLE ? [...lidFaces, ...dustFaces] : [...dustFaces, ...lidFaces]
 
   return [
     ...before,
     ...interior,
-    ...(topTuckHidden ? [flapFace(topLid.tuck)] : []),
+    ...cavity,
     ...walls,
     ...after,
     ...topFaces,
