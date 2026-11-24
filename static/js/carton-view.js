@@ -120,6 +120,7 @@ function setUpCarton(root) {
   function showPrice(target) {
     const item = itemForSize(sizes, target)
     itemLine.textContent = sizeMessage(item)
+    itemLine.hidden = !item
     const matches = priceRows.filter((row) => Boolean(item) && row.cells[0]?.textContent.trim() === item)
     for (const row of priceRows) row.classList.toggle("is-match", matches.includes(row))
     const cells = matches.map((row) => [...row.cells].map((cell) => cell.textContent.trim()))

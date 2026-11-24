@@ -44,6 +44,7 @@ function matchingPrices(pricing, item) {
 
 export function cartonModelControls(model, pricing) {
   const size = model.defaultSize
+  const item = itemForSize(model.sizes, size)
   const limits = sizeLimits(model.sizes)
   const styleOptions = Object.fromEntries(Object.entries(STYLES).map(([key, style]) => [key, style.label]))
   const sizeInputs = DIMENSIONS.map(
@@ -55,9 +56,8 @@ export function cartonModelControls(model, pricing) {
 ${segmented("style", "Style", styleOptions, DEFAULT_STYLE)}
 ${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
 <fieldset class="dims"><legend class="vh">Size in inches</legend><div>${sizeInputs}</div></fieldset>
-<p class="carton-item" aria-live="polite" data-carton-item>${e(sizeMessage(itemForSize(model.sizes, size)))}</p>
-<div class="carton-prices" data-carton-prices>${matchingPrices(pricing, itemForSize(model.sizes, size))}</div>
-<p class="carton-note">Drawn to scale. Any in-between size is possible.</p>
+<p class="carton-item" aria-live="polite" data-carton-item${item ? "" : " hidden"}>${e(sizeMessage(item))}</p>
+<div class="carton-prices" data-carton-prices>${item ? matchingPrices(pricing, item) : ""}</div>
 </form>
 <script type="application/json" data-carton-sizes>${sizesJson}</script>`
 }

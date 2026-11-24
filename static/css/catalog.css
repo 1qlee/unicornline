@@ -303,7 +303,6 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .dim-input input{flex:1 1 auto;min-width:0;width:100%;border:0;padding:0;font:inherit;font-size:18px;font-weight:500;background:transparent;outline:none}
 .dim-input span{font-size:16px;font-weight:400;color:var(--ink-muted)}
 .carton-item{font-size:18px;font-weight:700}
-.carton-note{font-size:16px;line-height:1.4;color:var(--ink-muted)}
 
 /* ---------- PDF viewer ---------- */
 .vbar{position:sticky;top:var(--size-header);z-index:10;background:var(--paper);border-bottom:var(--border-hairline) solid var(--rule);box-shadow:var(--shadow-sm)}

@@ -16,7 +16,7 @@ export function priceRowHtml(columns, rows) {
       const pairs = columns
         .map((column, index) => (column.quantity ? `<div><dt>${escape(column.label)}</dt><dd>${escape(cells[index])}</dd></div>` : ""))
         .join("")
-      const caption = [`Prices for ${cells[0]}`, ...details].join(", ")
+      const caption = `${[`Prices for ${cells[0]}`, ...details].join(", ")}. Quantity in bold, price in USD below.`
       return `<p class="label">${escape(caption)}</p><dl class="price-row">${pairs}</dl>`
     })
     .join("")

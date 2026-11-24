@@ -13,8 +13,8 @@ test("a listed size is priced as its own item", () => {
   assert.equal(itemForSize(sizes, { w: 2, l: 2, d: 6 }), "U5523")
 })
 
-test("an in-between size is priced as the cheapest listed size that fits", () => {
-  assert.equal(itemForSize(sizes, { w: 1.5, l: 1.25, d: 4 }), "U5523")
+test("an unlisted size has no item, even when a listed size would fit it", () => {
+  assert.equal(itemForSize(sizes, { w: 1.5, l: 1.25, d: 4 }), null)
 })
 
 test("a size beyond the table has no item", () => {

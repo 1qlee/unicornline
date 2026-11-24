@@ -291,17 +291,13 @@ export function renderCartonSvg(state, frame = cartonViewBox(state)) {
   return `<svg class="carton-svg" viewBox="${viewBox.join(" ")}" role="img" aria-label="${escapeText(describeCarton(state))}" preserveAspectRatio="xMidYMid meet"><g class="carton-faces" stroke="${COLORS.ink}" stroke-opacity=".85" stroke-width="1" stroke-linejoin="round">${polygons}</g>${dims}</svg>`
 }
 
-// Sizes between table rows are priced as the cheapest listed size that fits.
+// Only a size listed in the table has an item; any other size has none.
 export function itemForSize(sizes, { w, l, d }) {
-  const fitting = sizes.filter((size) => size.w >= w && size.l >= l && size.d >= d)
-  if (fitting.length === 0) return null
-  return fitting.reduce((best, size) => (size.item < best.item ? size : best)).item
+  return sizes.find((size) => size.w === w && size.l === l && size.d === d)?.item ?? null
 }
 
 export function sizeMessage(item) {
-  return item
-    ? `Priced as ${item} in the table below.`
-    : "Larger than the size table. Contact us for a custom quote."
+  return item ? `Priced as ${item} in the table below.` : ""
 }
 
 export function sizeLimits(sizes) {
