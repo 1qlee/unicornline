@@ -45,11 +45,12 @@ const STEP_LABELS = { previous: "Previous listed item", next: "Next listed item"
 const STEP_DIRECTIONS = { previous: -1, next: 1 }
 
 // Icon buttons that jump the size to the neighbouring listed item; carton-view.js
-// keeps their disabled state current.
+// keeps their disabled state current. They use aria-disabled rather than the
+// disabled attribute, so a button that runs out keeps keyboard focus.
 function stepButtons(model) {
   const buttons = Object.keys(CHEVRONS).map((key) => {
     const disabled = !steppedSize(model.sizes, model.defaultSize, STEP_DIRECTIONS[key])
-    return `<button type="button" class="icon-btn" aria-label="${STEP_LABELS[key]}" title="${STEP_LABELS[key]}" data-carton-step="${STEP_DIRECTIONS[key]}"${disabled ? " disabled" : ""}><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">${CHEVRONS[key]}</svg></button>`
+    return `<button type="button" class="icon-btn" aria-label="${STEP_LABELS[key]}" title="${STEP_LABELS[key]}" data-carton-step="${STEP_DIRECTIONS[key]}"${disabled ? ' aria-disabled="true"' : ""}><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true" focusable="false">${CHEVRONS[key]}</svg></button>`
   })
   return `<div class="dim-steps">${buttons.join("")}</div>`
 }

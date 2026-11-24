@@ -131,10 +131,16 @@ function setUpCarton(root) {
     const cells = matches.map((row) => [...row.cells].map((cell) => cell.textContent.trim()))
     pricesBox.innerHTML = priceRowHtml(priceColumns, cells)
     showCustomPrice(target, !item)
-    for (const button of stepButtons) button.disabled = !steppedSize(sizes, target, Number(button.dataset.cartonStep))
+    for (const button of stepButtons) {
+      const available = Boolean(steppedSize(sizes, target, Number(button.dataset.cartonStep)))
+      if (available) button.removeAttribute("aria-disabled")
+      else button.setAttribute("aria-disabled", "true")
+    }
   }
 
-  function stepSize(direction) {
+  function stepSize(button) {
+    if (button.getAttribute("aria-disabled") === "true") return
+    const direction = Number(button.dataset.cartonStep)
     const size = steppedSize(sizes, readTarget(), direction)
     if (!size) return
     for (const key of ["w", "l", "d"]) form.elements[key].value = size[key]
@@ -162,7 +168,7 @@ function setUpCarton(root) {
     animator.animateTo(target)
   })
   form.addEventListener("submit", (event) => event.preventDefault())
-  for (const button of stepButtons) button.addEventListener("click", () => stepSize(Number(button.dataset.cartonStep)))
+  for (const button of stepButtons) button.addEventListener("click", () => stepSize(button))
   showPrice(initial)
 }
 
