@@ -1,7 +1,7 @@
 // Animates the carton model between states as the visitor changes style, view or
 // size, and highlights the matching row in the pricing table.
 
-import { renderCartonSvg, cartonViewBox, cartonState, itemForSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct } from "/js/carton.js"
+import { renderCartonSvg, cartonViewBox, cartonState, itemForSize, steppedSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct } from "/js/carton.js"
 import { priceRowHtml } from "/js/price-row.js"
 import "/js/segmented.js"
 
@@ -103,6 +103,7 @@ function setUpCarton(root) {
   const sizes = JSON.parse(root.querySelector("[data-carton-sizes]").textContent)
   const limits = sizeLimits(sizes)
   const pricesBox = root.querySelector("[data-carton-prices]")
+  const stepButtons = [...root.querySelectorAll("[data-carton-step]")]
   const custom = root.querySelector("[data-carton-custom]")
   const customText = custom.querySelector("[data-carton-custom-text]")
   const customLink = custom.querySelector("[data-carton-custom-link]")
@@ -130,6 +131,14 @@ function setUpCarton(root) {
     const cells = matches.map((row) => [...row.cells].map((cell) => cell.textContent.trim()))
     pricesBox.innerHTML = priceRowHtml(priceColumns, cells)
     showCustomPrice(target, !item)
+    for (const button of stepButtons) button.disabled = !steppedSize(sizes, target, Number(button.dataset.cartonStep))
+  }
+
+  function stepSize(direction) {
+    const size = steppedSize(sizes, readTarget(), direction)
+    if (!size) return
+    for (const key of ["w", "l", "d"]) form.elements[key].value = size[key]
+    form.dispatchEvent(new Event("input", { bubbles: true }))
   }
 
   function showCustomPrice(target, needed) {
@@ -153,6 +162,7 @@ function setUpCarton(root) {
     animator.animateTo(target)
   })
   form.addEventListener("submit", (event) => event.preventDefault())
+  for (const button of stepButtons) button.addEventListener("click", () => stepSize(Number(button.dataset.cartonStep)))
   showPrice(initial)
 }
 

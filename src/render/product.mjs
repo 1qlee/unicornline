@@ -99,7 +99,6 @@ ${breadcrumb(product, category)}
 <div class="stack-6">
 <h1 class="display-md">${e(product.name)}</h1>
 <p class="lead">${e(product.description)}</p>
-${documentLinks(product, company, config)}
 ${model ? cartonModelControls(model, { pricing: product.pricing, productName: product.name, quoteUrl: config.quoteUrl }) : quoteAction(product, company, config)}
 </div>
 ${gallery(product, config)}
@@ -114,7 +113,7 @@ function specRow(label, items) {
 </div>`
 }
 
-function details(product) {
+function details(product, company, config) {
   const { specs } = product
   const groups = [
     ["Specifications", specs.features],
@@ -137,6 +136,10 @@ function details(product) {
 <h2 id="spec-h" class="heading-xl sec-head">What you get</h2>
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
 ${notes}
+<div class="srow">
+<h3 class="heading-sm">Documents</h3>
+${documentLinks(product, company, config)}
+</div>
 </section>`
 }
 
@@ -196,7 +199,7 @@ export function renderProduct(product, catalog, config) {
     path: productPath(product),
     main: [
       productTop(product, category, catalog, config),
-      details(product),
+      details(product, catalog.company, config),
       pricingSection(product, catalog.neighbours(product)),
     ].join("\n"),
     scripts: product.model ? ["/js/site.js", "/js/carton-view.js"] : ["/js/site.js"],

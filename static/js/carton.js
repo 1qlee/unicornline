@@ -300,6 +300,33 @@ export function sizeMessage(item) {
   return item ? `Priced as ${item} in the table below.` : ""
 }
 
+const distance = (a, b) => Math.hypot(a.w - b.w, a.l - b.l, a.d - b.d)
+
+// The listed size to step to from the drawn one. From a listed size, the step
+// goes to the nearest size of the adjacent item code, next (direction 1) or previous (-1).
+// From an unlisted size, it rounds up to the nearest listed size that holds it,
+// or down to the nearest one it holds. Null when there is nowhere to go.
+function sizesOfAdjacentItem(sizes, item, direction) {
+  const items = [...new Set(sizes.map((size) => size.item))].sort()
+  const adjacent = items[items.indexOf(item) + direction]
+  return sizes.filter((size) => size.item === adjacent)
+}
+
+export function steppedSize(sizes, size, direction) {
+  const item = itemForSize(sizes, size)
+  const candidates = item
+    ? sizesOfAdjacentItem(sizes, item, direction)
+    : sizes.filter((other) =>
+        ["w", "l", "d"].every((key) => (direction > 0 ? other[key] >= size[key] : other[key] <= size[key])),
+      )
+  if (candidates.length === 0) return null
+  return candidates.reduce((best, other) => {
+    const gap = distance(other, size) - distance(best, size)
+    if (gap !== 0) return gap < 0 ? other : best
+    return direction * other.item.localeCompare(best.item) < 0 ? other : best
+  })
+}
+
 const formatSize = ({ w, l, d }, unit) => `${w} x ${l} x ${d} ${unit}`
 
 // Shown in place of prices when the drawn size is not a row of the size table.

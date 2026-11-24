@@ -51,3 +51,17 @@ test("no flap passes through a wall at any point while folding", () => {
     }
   }
 })
+
+test("stepping from a listed size moves to the nearest size of the adjacent item", async () => {
+  const { steppedSize } = await import("../static/js/carton.js")
+  const withMiddle = [...sizes, { item: "U5521", w: 1, l: 1, d: 4 }, { item: "U5521", w: 3, l: 3, d: 9 }]
+  assert.equal(steppedSize(withMiddle, { w: 2, l: 2, d: 6 }, 1).item, "U5524")
+  assert.deepEqual(steppedSize(withMiddle, { w: 2, l: 2, d: 6 }, -1), { item: "U5521", w: 1, l: 1, d: 4 })
+  assert.equal(steppedSize(sizes, { w: 3, l: 2, d: 12 }, 1), null)
+})
+
+test("stepping from an unlisted size rounds up or down to a listed size", async () => {
+  const { steppedSize } = await import("../static/js/carton.js")
+  assert.deepEqual(steppedSize(sizes, { w: 1.5, l: 1.5, d: 4 }, 1), { item: "U5523", w: 2, l: 2, d: 6 })
+  assert.deepEqual(steppedSize(sizes, { w: 1.5, l: 1.5, d: 4 }, -1), { item: "U5520", w: 1, l: 1, d: 2 })
+})
