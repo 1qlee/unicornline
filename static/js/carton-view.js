@@ -2,6 +2,7 @@
 // size, and highlights the matching row in the pricing table.
 
 import { renderCartonSvg, cartonViewBox, cartonState, itemForSize, sizeLimits, sizeMessage } from "/js/carton.js"
+import { priceRowHtml } from "/js/price-row.js"
 
 const MIN_SIZE = 1
 const FOLD_DURATION_MS = 1100
@@ -100,7 +101,12 @@ function setUpCarton(root) {
   const itemLine = root.querySelector("[data-carton-item]")
   const sizes = JSON.parse(root.querySelector("[data-carton-sizes]").textContent)
   const limits = sizeLimits(sizes)
+  const pricesBox = root.querySelector("[data-carton-prices]")
   const priceRows = [...document.querySelectorAll(".ptable tbody tr")]
+  const priceColumns = [...document.querySelectorAll(".ptable thead th")].map((cell) => ({
+    label: cell.textContent.trim(),
+    quantity: cell.classList.contains("num"),
+  }))
 
   function readTarget() {
     const value = (name) => {
@@ -114,9 +120,10 @@ function setUpCarton(root) {
   function showPrice(target) {
     const item = itemForSize(sizes, target)
     itemLine.textContent = sizeMessage(item)
-    for (const row of priceRows) {
-      row.classList.toggle("is-match", Boolean(item) && row.cells[0]?.textContent.trim() === item)
-    }
+    const matches = priceRows.filter((row) => Boolean(item) && row.cells[0]?.textContent.trim() === item)
+    for (const row of priceRows) row.classList.toggle("is-match", matches.includes(row))
+    const cells = matches.map((row) => [...row.cells].map((cell) => cell.textContent.trim()))
+    pricesBox.innerHTML = priceRowHtml(priceColumns, cells)
   }
 
   const initial = readTarget()

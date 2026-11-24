@@ -100,7 +100,7 @@ ${breadcrumb(product, category)}
 <h1 class="display-md">${e(product.name)}</h1>
 <p class="lead">${e(product.description)}</p>
 ${documentLinks(product, company, config)}
-${model ? cartonModelControls(model) : quoteAction(product, company, config)}
+${model ? cartonModelControls(model, product.pricing) : quoteAction(product, company, config)}
 </div>
 ${gallery(product, config)}
 </div>

@@ -1,4 +1,5 @@
-import { escapeHtml as e } from "../format.mjs"
+import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
+import { priceRowHtml } from "../../static/js/price-row.js"
 import { renderCartonSvg, cartonState, itemForSize, sizeLimits, sizeMessage, STYLES, VIEWS } from "../../static/js/carton.js"
 
 const SIZE_STEP = 0.25
@@ -35,7 +36,13 @@ export function cartonModelThumb(model) {
   return `<li><a href="#carton-controls" class="thumb-model" data-model aria-current="true" aria-label="Show the to-scale carton model">${renderCartonSvg(defaultState(model))}</a></li>`
 }
 
-export function cartonModelControls(model) {
+function matchingPrices(pricing, item) {
+  const columns = pricing.columns.map((column) => ({ label: formatQuantityLabel(column.label), quantity: Boolean(column.method) }))
+  const rows = pricing.rows.filter((row) => row[0] === item)
+  return rows.length ? priceRowHtml(columns, rows) : ""
+}
+
+export function cartonModelControls(model, pricing) {
   const size = model.defaultSize
   const limits = sizeLimits(model.sizes)
   const styleOptions = Object.fromEntries(Object.entries(STYLES).map(([key, style]) => [key, style.label]))
@@ -49,6 +56,7 @@ ${segmented("style", "Style", styleOptions, DEFAULT_STYLE)}
 ${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
 <fieldset class="dims"><legend class="vh">Size in inches</legend><div>${sizeInputs}</div></fieldset>
 <p class="carton-item" aria-live="polite" data-carton-item>${e(sizeMessage(itemForSize(model.sizes, size)))}</p>
+<div class="carton-prices" data-carton-prices>${matchingPrices(pricing, itemForSize(model.sizes, size))}</div>
 <p class="carton-note">Drawn to scale. Any in-between size is possible.</p>
 </form>
 <script type="application/json" data-carton-sizes>${sizesJson}</script>`
