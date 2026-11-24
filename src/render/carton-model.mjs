@@ -1,16 +1,24 @@
 import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
 import { priceRowHtml } from "../../static/js/price-row.js"
-import { renderCartonSvg, cartonState, itemForSize, steppedSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct, KINDS, VIEWS, hasFlaps } from "../../static/js/carton.js"
+import { renderCartonSvg, cartonState, itemForSize, steppedSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct, KINDS, VIEWS, hasFlaps, dimensionsOf } from "../../static/js/carton.js"
 import { quoteUrlFor } from "../urls.mjs"
 
-const SIZE_STEP = 0.25
+// Sizes move in eighths of an inch, the finest fraction the catalog uses (2 3/8 in.).
+const SIZE_STEP = 0.125
 const MIN_SIZE = 1
 const DEFAULT_VIEW = "open"
-const DIMENSIONS = [
-  ["w", "Width (W)"],
-  ["l", "Length (L)"],
-  ["d", "Depth (D)"],
-]
+
+// Each field starts at 1 in., or lower when the size table lists something smaller.
+function sizeField(model, key, dimension, limits) {
+  const value = model.defaultSize[key]
+  const min = Math.min(MIN_SIZE, ...model.sizes.map((size) => size[key]))
+  return `<label class="dim-field"><span>${e(dimension.label)} (${e(dimension.short)})</span><span class="dim-input"><input type="number" name="${key}" value="${value}" min="${min}" max="${limits[key]}" step="${SIZE_STEP}" inputmode="decimal"><span aria-hidden="true">${e(model.unit)}</span></span></label>`
+}
+
+// A size the material sets (a board's thickness) is carried, not asked for.
+function fixedField(model, key) {
+  return `<input type="hidden" name="${key}" value="${model.defaultSize[key]}">`
+}
 
 function segmented(name, legend, options, selected) {
   const inputs = Object.entries(options)
@@ -75,18 +83,20 @@ export function cartonModelControls(model, { pricing, productName, quoteUrl }) {
   const item = itemForSize(model.sizes, size)
   const limits = sizeLimits(model.sizes)
   const state = defaultState(model)
-  const sizeInputs = DIMENSIONS.map(
-    ([key, label]) => `<label class="dim-field"><span>${label}</span><span class="dim-input"><input type="number" name="${key}" value="${size[key]}" min="${MIN_SIZE}" max="${limits[key]}" step="${SIZE_STEP}" inputmode="decimal"><span aria-hidden="true">${e(model.unit)}</span></span></label>`,
-  ).join("")
+  const dimensions = dimensionsOf(model.type)
+  const sizeInputs = [
+    ...dimensions.order.map((key) => sizeField(model, key, dimensions[key], limits)),
+    ...(dimensions.fixed ?? []).map((key) => fixedField(model, key)),
+  ].join("")
   const sizesJson = JSON.stringify(model.sizes).replace(/</g, "\\u003c")
 
   return `<form class="carton-controls" id="carton-controls" aria-label="Carton model" data-carton-controls data-kind="${e(model.type)}">
 ${choiceControls(model, state)}
-<fieldset class="dims"><legend class="vh">Size in inches</legend><div>${sizeInputs}${stepButtons(model)}</div></fieldset>
+<fieldset class="dims"><legend class="vh">Size in inches</legend><div style="--fields:${dimensions.order.length}">${sizeInputs}${stepButtons(model)}</div></fieldset>
 <p class="carton-item" aria-live="polite" data-carton-item${item ? "" : " hidden"}>${e(sizeMessage(item))}</p>
 <div class="carton-prices" data-carton-prices>${item ? matchingPrices(pricing, item) : ""}</div>
 <div class="carton-custom" data-carton-custom data-quote-base="${e(quoteUrl)}" data-product="${e(productName)}" data-unit="${e(model.unit)}"${item ? " hidden" : ""}>
-<p data-carton-custom-text>${e(customSizeMessage(size, model.unit))}</p>
+<p data-carton-custom-text>${e(customSizeMessage(state, model.unit))}</p>
 <a class="btn" href="${e(quoteUrlFor(quoteUrl, customSizeProduct(productName, state, model.unit)))}" data-carton-custom-link>Get a custom price</a>
 </div>
 </form>
