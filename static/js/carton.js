@@ -12,6 +12,8 @@
 // the short edges. Every in-between value is a real hinge angle, so the drawing
 // can be animated.
 
+import { SOLIDS } from "./solids.js"
+
 const COS30 = Math.cos(Math.PI / 6)
 const SIN30 = 0.5
 const DEG = Math.PI / 180
@@ -41,8 +43,19 @@ const COLORS = {
   print: "#0033ff",
 }
 
-// Each kind names how its top and bottom close. A kind with styles lets the
-// visitor choose one; a kind without flaps has no open or assembled view.
+// What each size means for a kind: the field label, the letter on its dimension
+// line and the word for the screen-reader description. `order` is how the kind
+// writes a size ("W x L x D"); `fixed` sizes are set by the material, not the visitor.
+const CARTON_DIMENSIONS = {
+  order: ["w", "l", "d"],
+  w: { label: "Width", short: "W", word: "wide" },
+  l: { label: "Length", short: "L", word: "long" },
+  d: { label: "Depth", short: "D", word: "deep" },
+}
+
+// Each kind names how its top and bottom close, or the solid it is. A kind with
+// styles lets the visitor choose one; a kind without flaps has no open or
+// assembled view.
 export const KINDS = {
   "tuck-end-carton": {
     label: "tuck end carton",
@@ -55,8 +68,46 @@ export const KINDS = {
   "sleeve-carton": { label: "carton sleeve", top: null, bottom: null },
   // Roll end tuck front: a rigid tray and a lid hinged at the back, with a tuck
   // at the front and side ears that fold down inside the side walls.
-  "mailer-box": { label: "mailer box", top: "mailer", bottom: null, dustFlaps: false },
+  "mailer-box": {
+    label: "mailer box",
+    top: "mailer",
+    bottom: null,
+    dustFlaps: false,
+    dimensions: { ...CARTON_DIMENSIONS, order: ["l", "w", "d"] },
+  },
+  "favor-box": {
+    label: "favor box",
+    solid: "favor",
+    dimensions: {
+      order: ["w", "d", "l"],
+      w: { label: "Width", short: "W", word: "wide" },
+      d: { label: "Height", short: "H", word: "high" },
+      l: { label: "Length", short: "L", word: "long" },
+    },
+  },
+  "pillow-box": {
+    label: "pillow box",
+    solid: "pillow",
+    dimensions: { ...CARTON_DIMENSIONS, order: ["l", "w", "d"] },
+  },
+  // A board or framed print hanging on a wall. A size turned on its side is the
+  // same product, so 10 x 8 prices as 8 x 10.
+  "wall-panel": {
+    label: "wall panel",
+    solid: "panel",
+    turns: true,
+    dimensions: {
+      order: ["l", "d"],
+      fixed: ["w"],
+      l: { label: "Width", short: "W", word: "wide" },
+      d: { label: "Height", short: "H", word: "high" },
+      w: { label: "Thickness", short: "T", word: "thick" },
+    },
+  },
 }
+
+export const dimensionsOf = (kind) => KINDS[kind].dimensions ?? CARTON_DIMENSIONS
+export const isSolid = (kind) => Boolean(KINDS[kind].solid)
 
 export const VIEWS = {
   open: "Flaps open",
@@ -384,6 +435,7 @@ function topOrder(flaps) {
 // everything behind them except what shows through the open top. A bottom flap on
 // a near edge swings in front of the walls once it is more open than FLAT_ANGLE.
 export function cartonPolygons(state) {
+  if (isSolid(state.kind)) return solidShapes(state)
   const { w, l, d } = state
   const { top, bottom } = cartonGeometry(state)
   const inCavity = (flap) => flap.inCavity === true
@@ -406,12 +458,81 @@ export function cartonPolygons(state) {
   return [...before, ...interior, ...cavity, ...walls, ...after, ...topFaces]
 }
 
+// ---------- solids ----------
+
+const newellNormal = (points) =>
+  points.reduce(
+    (sum, point, index) => {
+      const next = points[(index + 1) % points.length]
+      return [
+        sum[0] + (point[1] - next[1]) * (point[2] + next[2]),
+        sum[1] + (point[2] - next[2]) * (point[0] + next[0]),
+        sum[2] + (point[0] - next[0]) * (point[1] + next[1]),
+      ]
+    },
+    [0, 0, 0],
+  )
+const centroid = (points) => scale(points.reduce(add, [0, 0, 0]), 1 / points.length)
+const PRINT_INSET = 0.08
+const SEAM = (a, b) => [a, b].map((point) => point.map((value) => value.toFixed(4)).join(",")).sort().join("|")
+
+// Board faces shade by where they point: up and front are paper, right is grey.
+function solidFill([nx, ny, nz]) {
+  const length = Math.hypot(nx, ny, nz)
+  if (nz / length > 0.5) return COLORS.outside
+  return nx > ny ? COLORS.outsideShade : COLORS.outside
+}
+
+// The print area on a printed face, inset from its edges.
+function printDecal(points) {
+  const middle = centroid(points)
+  return points.map((point) => add(middle, scale(add(point, scale(middle, -1)), 1 - PRINT_INSET * 2)))
+}
+
+// Faces turned toward the viewer, painted far to near, then the outline: edges
+// where a visible face meets nothing visible, or meets a different surface.
+// Seams inside one smooth surface stay hidden, so curves read as curves.
+function solidShapes(state) {
+  const faces = SOLIDS[KINDS[state.kind].solid](state)
+  const middle = centroid(faces.flatMap((face) => face.points))
+  const visible = faces
+    .map((face) => {
+      const raw = newellNormal(face.points)
+      const outward = dot(raw, add(centroid(face.points), scale(middle, -1))) >= 0 ? raw : scale(raw, -1)
+      return { ...face, normal: outward }
+    })
+    .filter((face) => dot(face.normal, VIEWER) > 1e-9)
+    .sort((a, b) => dot(centroid(a.points), VIEWER) - dot(centroid(b.points), VIEWER))
+
+  const shapes = visible.flatMap((face) => {
+    const fill = solidFill(face.normal)
+    const base = { points: face.points.map(project), fill, stroke: fill }
+    return face.printed ? [base, { points: printDecal(face.points).map(project), fill: COLORS.print }] : [base]
+  })
+
+  const seams = new Map()
+  for (const face of visible) {
+    face.points.forEach((point, index) => {
+      const next = face.points[(index + 1) % face.points.length]
+      const key = SEAM(point, next)
+      const seam = seams.get(key) ?? { ends: [point, next], surfaces: [] }
+      seam.surfaces.push(face.surface)
+      seams.set(key, seam)
+    })
+  }
+  const outline = [...seams.values()]
+    .filter(({ surfaces }) => surfaces.length === 1 || surfaces[0] !== surfaces[1])
+    .map(({ ends }) => ({ points: ends.map(project), line: true }))
+  return [...shapes, ...outline]
+}
+
 function formatInches(value) {
   return `${Number(value.toFixed(2))} in.`
 }
 
 // The lowest point of the bottom flaps, or the base when they are shut.
 function floorZ(state) {
+  if (isSolid(state.kind)) return 0
   const points = cartonGeometry(state).bottom.flatMap((flap) => flap.points)
   return Math.min(0, ...points.map(([, , z]) => z))
 }
@@ -421,16 +542,17 @@ function floorZ(state) {
 // flaps never cover them, with extension lines back up to the base corners.
 function dimensionLines(state) {
   const { w, l, d } = state
+  const dims = dimensionsOf(state.kind)
   const offset = DIMENSION_OFFSET
   const floor = floorZ(state)
   const dropped = floor < -0.01
   const extend = (...corners) => (dropped ? corners.map((corner) => [corner, [corner[0], corner[1], floor]]) : [])
   return [
-    { from: [0, w + offset, 0], to: [0, w + offset, d], label: `D ${formatInches(d)}`, anchor: "end", nudge: [-8, 0], extensions: [] },
+    { from: [0, w + offset, 0], to: [0, w + offset, d], label: `${dims.d.short} ${formatInches(d)}`, anchor: "end", nudge: [-8, 0], extensions: [] },
     {
       from: [0, w + offset, floor],
       to: [l, w + offset, floor],
-      label: `L ${formatInches(l)}`,
+      label: `${dims.l.short} ${formatInches(l)}`,
       anchor: "end",
       nudge: [-6, 18],
       extensions: extend([0, w + offset, 0], [l, w + offset, 0]),
@@ -438,7 +560,7 @@ function dimensionLines(state) {
     {
       from: [l + offset, 0, floor],
       to: [l + offset, w, floor],
-      label: `W ${formatInches(w)}`,
+      label: `${dims.w.short} ${formatInches(w)}`,
       anchor: "start",
       nudge: [6, 18],
       extensions: extend([l + offset, 0, 0], [l + offset, w, 0]),
@@ -462,9 +584,12 @@ function escapeText(text) {
 export function describeCarton(state) {
   const kind = KINDS[state.kind]
   const open = state.topLid > 0.5 || state.bottomLid > 0.5
-  const condition = !hasFlaps(state.kind) ? "open at both ends" : open ? "with its top and bottom flaps open" : "assembled"
+  const condition = isSolid(state.kind) ? "" : !hasFlaps(state.kind) ? " open at both ends" : open ? " with its top and bottom flaps open" : " assembled"
   const name = kind.styles ? `${kind.styles[state.style].toLowerCase()} carton` : kind.label
-  return `Isometric model of a ${name} ${condition}, ${formatInches(state.w)} wide, ${formatInches(state.l)} long and ${formatInches(state.d)} deep, drawn to scale.`
+  const dims = dimensionsOf(state.kind)
+  const sizes = [...dims.order, ...(dims.fixed ?? [])].map((key) => `${formatInches(state[key])} ${dims[key].word}`)
+  const sizeText = `${sizes.slice(0, -1).join(", ")} and ${sizes[sizes.length - 1]}`
+  return `Isometric model of a ${name}${condition}, ${sizeText}, drawn to scale.`
 }
 
 function layout(state) {
@@ -490,7 +615,13 @@ export function renderCartonSvg(state, frame = cartonViewBox(state)) {
   const { shapes, dimensions } = layout(state)
   const viewBox = frame.map(round)
 
-  const polygons = shapes.map((shape) => `<polygon points="${pointsAttr(shape.points)}" fill="${shape.fill}"/>`).join("")
+  const polygons = shapes
+    .map((shape) =>
+      shape.line
+        ? `<polyline points="${pointsAttr(shape.points)}" fill="none"/>`
+        : `<polygon points="${pointsAttr(shape.points)}" fill="${shape.fill}"${shape.stroke ? ` stroke="${shape.stroke}"` : ""}/>`,
+    )
+    .join("")
 
   // The viewBox is in inches, so text and markers are sized relative to it.
   const fontSize = Math.max(viewBox[2], viewBox[3]) * 0.03
@@ -511,9 +642,12 @@ export function renderCartonSvg(state, frame = cartonViewBox(state)) {
   return `<svg class="carton-svg" viewBox="${viewBox.join(" ")}" role="img" aria-label="${escapeText(describeCarton(state))}" preserveAspectRatio="xMidYMid meet"><g class="carton-faces" stroke="${COLORS.ink}" stroke-opacity=".85" stroke-width="1" stroke-linejoin="round">${polygons}</g>${dims}</svg>`
 }
 
-// Only a size listed in the table has an item; any other size has none.
-export function itemForSize(sizes, { w, l, d }) {
-  return sizes.find((size) => size.w === w && size.l === l && size.d === d)?.item ?? null
+// Only a size listed in the table has an item; any other size has none. A kind
+// that turns also matches a listed size on its side (width and height swapped).
+export function itemForSize(sizes, { w, l, d, kind }) {
+  const turns = Boolean(kind && KINDS[kind]?.turns)
+  const matches = (size) => size.w === w && ((size.l === l && size.d === d) || (turns && size.l === d && size.d === l))
+  return sizes.find(matches)?.item ?? null
 }
 
 export function sizeMessage(item) {
@@ -551,17 +685,18 @@ export function steppedSize(sizes, size, direction) {
   })
 }
 
-const formatSize = ({ w, l, d }, unit) => `${w} x ${l} x ${d} ${unit}`
+// A size the way the kind writes it, such as "2 x 2 x 5 in." or "8 x 10 in.".
+const formatSize = (state, unit) => `${dimensionsOf(state.kind).order.map((key) => state[key]).join(" x ")} ${unit}`
 
 // Shown in place of prices when the drawn size is not a row of the size table.
-export function customSizeMessage(size, unit) {
-  return `This size isn't in our price table, but we make them to any size. Send us the ${formatSize(size, unit)} size and the quantity you need, and we'll price it for you.`
+export function customSizeMessage(state, unit) {
+  return `This size isn't in our price table, but we make them to any size. Send us the ${formatSize(state, unit)} size and the quantity you need, and we'll price it for you.`
 }
 
 // What the quote form receives as the product, so the request names the size.
-export function customSizeProduct(productName, { kind, style, ...size }, unit) {
-  const styleLabel = KINDS[kind].styles?.[style]
-  return [productName, styleLabel?.toLowerCase(), formatSize(size, unit)].filter(Boolean).join(", ")
+export function customSizeProduct(productName, state, unit) {
+  const styleLabel = KINDS[state.kind].styles?.[state.style]
+  return [productName, styleLabel?.toLowerCase(), formatSize(state, unit)].filter(Boolean).join(", ")
 }
 
 export function sizeLimits(sizes) {

@@ -91,8 +91,11 @@ function setUpCarton(root) {
 
   function readTarget() {
     const value = (name) => {
-      const number = Number(form.elements[name].value)
-      return Number.isFinite(number) && number >= MIN_SIZE ? Math.min(number, limits[name] * 2) : MIN_SIZE
+      const input = form.elements[name]
+      const number = Number(input.value)
+      if (input.type === "hidden") return number
+      const min = Number(input.min) || MIN_SIZE
+      return Number.isFinite(number) && number >= min ? Math.min(number, limits[name] * 2) : min
     }
     const size = { w: value("w"), l: value("l"), d: value("d") }
     return cartonState(size, form.dataset.kind, form.elements.style?.value, form.elements.view?.value)

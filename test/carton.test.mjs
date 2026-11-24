@@ -167,3 +167,25 @@ test("no two flaps pass through each other while the model opens or closes", () 
     }
   }
 })
+
+test("every kind draws a finite, labeled drawing at its smallest and largest sizes", () => {
+  const { renderCartonSvg, cartonState, KINDS } = carton
+  for (const kind of Object.keys(KINDS)) {
+    for (const size of [{ w: 0.118, l: 1, d: 1 }, { w: 7, l: 30, d: 40 }]) {
+      const svg = renderCartonSvg(cartonState(size, kind, null, "closed"))
+      assert.doesNotMatch(svg, /NaN|Infinity/, kind)
+      assert.match(svg, /aria-label="Isometric model of a /, kind)
+    }
+  }
+})
+
+test("a wall panel reads its size as width by height and prices it either way up", () => {
+  const { itemForSize, describeCarton, cartonState, customSizeProduct } = carton
+  const boards = [{ item: "U6220", w: 0.118, l: 8, d: 10 }]
+  assert.equal(itemForSize(boards, { kind: "wall-panel", w: 0.118, l: 8, d: 10 }), "U6220")
+  assert.equal(itemForSize(boards, { kind: "wall-panel", w: 0.118, l: 10, d: 8 }), "U6220")
+  assert.equal(itemForSize(boards, { kind: "tuck-end-carton", w: 0.118, l: 10, d: 8 }), null)
+  const state = cartonState({ w: 1.5, l: 9, d: 12 }, "wall-panel", null, "open")
+  assert.equal(describeCarton(state), "Isometric model of a wall panel, 9 in. wide, 12 in. high and 1.5 in. thick, drawn to scale.")
+  assert.equal(customSizeProduct("Image Wrap", state, "in."), "Image Wrap, 9 x 12 in.")
+})

@@ -12,12 +12,24 @@ listed items, and see that size's prices or a "Get a custom price" button.
 
 Live today: `folding-cartons-tuck-end` (tuck-end-carton), `folding-cartons-seal-end`
 (seal-end-carton), `folding-cartons-tuck-top-snap-lock-bottom` (snap-lock-carton),
-`folding-cartons-sleeve` (sleeve-carton), `mailer-boxes` (mailer-box).
+`folding-cartons-sleeve` (sleeve-carton), `mailer-boxes` (mailer-box), and the solids
+`favor-boxes` (favor-box), `pillow-boxes` (pillow-box), `image-wrap-faux-canvas`,
+`uniq-prints-chalkboard` and `uniq-prints-dry-erase` (wall-panel).
+
+## Which products get a model
+
+A product qualifies when it is a rigid shape with stated dimensions and its price
+depends on its size: the drawing then compares sizes to scale and drives the price
+lookup. Left out on purpose (as of 2026-11-24): soft goods, food, liquids and flat
+print; ceiling tiles (no stated thickness, and sizes are never invented); golf ball
+boxes (nine different shapes); awards, notebooks and pads (fixed sizes, no custom
+sizing). Revisit if one of those gains a size table or custom sizes.
 
 ## Where things live
 
 | File | Role |
 | --- | --- |
+| `static/js/solids.js` | Rigid solids with no moving parts (favor wedge, pillow, wall panel), as faces tagged with a `surface` and `printed`. |
 | `static/js/carton.js` | Pure geometry and SVG rendering, shared by the build and the browser. `KINDS`, `cartonState`, `cartonGeometry`, `cartonPolygons`, `renderCartonSvg`, `cartonViewBox`, sizing helpers (`itemForSize`, `steppedSize`, `customSizeMessage`, `customSizeProduct`). |
 | `static/js/carton-view.js` | Browser: reads the form, tweens between states, updates prices, step buttons and the custom-price block. |
 | `static/js/segmented.js` | The design system's segmented control (style and view). |
@@ -49,6 +61,12 @@ numbers in merged cells bounded by horizontal rules, and merged cells that may
 continue unlabeled at the head of the next column. It was verified to reproduce the
 hand-checked tuck end table exactly. If a new catalog changes the layout, print the
 table and spot-check several rows against the PDF before writing.
+
+## Adding a solid kind
+
+1. Write a builder in `solids.js` returning faces `{ points, surface, printed? }` and add it to `SOLIDS`. Winding does not matter: `solidShapes` turns each normal away from the solid's centre, culls faces turned away from the viewer and paints the rest far to near.
+2. Faces of one smooth surface share a `surface` name, so their seams stay hidden and only the outline and real creases are drawn. Keep the solid convex, or close to it.
+3. Add the kind to `KINDS` with `solid`, and `dimensions`: field labels, the letter on each dimension line, the word for the description, `order` (how the product writes a size), `fixed` sizes the material sets (a board's thickness, carried in a hidden field), and `turns: true` when a size on its side is the same product.
 
 ## Adding a new kind (a new closure)
 

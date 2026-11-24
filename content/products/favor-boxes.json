@@ -216,5 +216,40 @@
       "key": "files/catalogs/catalog-2023-web.pdf",
       "bytes": 39897985
     }
+  },
+  "model": {
+    "type": "favor-box",
+    "unit": "in.",
+    "defaultSize": {
+      "w": 2,
+      "l": 5,
+      "d": 2
+    },
+    "sizes": [
+      {
+        "item": "U5570",
+        "w": 2,
+        "l": 5,
+        "d": 2
+      },
+      {
+        "item": "U5571",
+        "w": 2.5,
+        "l": 5,
+        "d": 2.5
+      },
+      {
+        "item": "U5572",
+        "w": 2.5,
+        "l": 6.5,
+        "d": 2.5
+      },
+      {
+        "item": "U5573",
+        "w": 3,
+        "l": 6.5,
+        "d": 3
+      }
+    ]
   }
 }

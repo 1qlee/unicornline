@@ -272,7 +272,7 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 
 /* ---------- to-scale carton model ---------- */
 .carton-svg{width:100%;height:100%;display:block}
-.carton-faces polygon,.carton-dim line{vector-effect:non-scaling-stroke}
+.carton-faces polygon,.carton-faces polyline,.carton-dim line{vector-effect:non-scaling-stroke}
 .carton-dim line{stroke:var(--blue);stroke-width:1}
 .carton-dim .carton-ext{stroke-opacity:.45;stroke-dasharray:3 3}
 .carton-dim circle{fill:var(--blue)}
@@ -308,14 +308,14 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .sc-indicator{position:absolute;left:0;top:0;z-index:1;background:var(--ink)}
 .sc[data-initialized] .sc-indicator{transition:transform var(--ease-hover),width var(--ease-hover)}
 @media (prefers-reduced-motion:reduce){.sc[data-initialized] .sc-indicator{transition:none}}
-.dims>div{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) auto;align-items:end;gap:var(--space-4);max-width:42em}
+.dims>div{display:grid;grid-template-columns:repeat(var(--fields,3),minmax(0,1fr)) auto;align-items:end;gap:var(--space-4);max-width:42em}
 .dim-steps{display:flex;gap:var(--space-2)}
 /* icon button: the secondary button at control height, square, holding a chevron */
 .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:var(--size-control);height:var(--size-control);padding:0;box-sizing:border-box;background:var(--paper);color:var(--ink);border:var(--border-control) solid var(--ink);cursor:pointer;transition:background-color var(--ease-hover),color var(--ease-hover)}
 .icon-btn:hover:not([aria-disabled="true"]){background:var(--blue-tint);color:var(--blue)}
 /* disabled: a soft border and a faded chevron, so it reads as unavailable next to its live twin */
 .icon-btn[aria-disabled="true"]{cursor:not-allowed;color:rgba(11,11,11,.3);border-color:var(--rule-soft)}
-@media (max-width:640px){.dims>div{grid-template-columns:repeat(3,minmax(0,1fr))}.dim-steps{grid-column:1 / -1}}
+@media (max-width:640px){.dims>div{grid-template-columns:repeat(var(--fields,3),minmax(0,1fr))}.dim-steps{grid-column:1 / -1}}
 .dim-field{display:flex;flex-direction:column;gap:var(--space-2);font-size:14px;line-height:1.3;font-weight:700}
 .dim-input{display:flex;align-items:center;gap:var(--space-2);min-height:var(--size-control);box-sizing:border-box;border:var(--border-control) solid var(--ink);padding:0 var(--space-3);background:var(--paper)}
 .dim-input:focus-within{outline:var(--border-focus) solid var(--blue);outline-offset:3px}
