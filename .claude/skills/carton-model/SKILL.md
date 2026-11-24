@@ -12,7 +12,7 @@ listed items, and see that size's prices or a "Get a custom price" button.
 
 Live today: `folding-cartons-tuck-end` (tuck-end-carton), `folding-cartons-seal-end`
 (seal-end-carton), `folding-cartons-tuck-top-snap-lock-bottom` (snap-lock-carton),
-`folding-cartons-sleeve` (sleeve-carton).
+`folding-cartons-sleeve` (sleeve-carton), `mailer-boxes` (mailer-box).
 
 ## Where things live
 
@@ -38,6 +38,12 @@ Live today: `folding-cartons-tuck-end` (tuck-end-carton), `folding-cartons-seal-
 3. `npm test` and `npm run build`. The build fails if an item has no pricing row.
 4. Screenshot the product page open and assembled (see "Checking it"), then commit.
 
+**Products without a size-table PDF.** When the pricing table itself names the sizes
+(the mailer boxes' "Size" column reads "8 x 8 x 2.75 in."), write the model by hand:
+each size's `item` is that exact pricing label, so the price row and table highlight
+match it. Read L x W x D from the label and check the order against the photos.
+Items are ordered naturally (`compareItems`), so "8 x 8" steps before "10 x 10".
+
 The parser expects the 2023 catalog layout: blocks headed `ITEM NO | W | L | D`, item
 numbers in merged cells bounded by horizontal rules, and merged cells that may
 continue unlabeled at the head of the next column. It was verified to reproduce the
@@ -47,7 +53,10 @@ table and spot-check several rows against the PDF before writing.
 ## Adding a new kind (a new closure)
 
 1. Add an entry to `KINDS` in `carton.js`: `label` (used in the aria-label), `top` and
-   `bottom` closure names (or `null` for an open end), optional `styles` map.
+   `bottom` closure names (or `null` for an open or rigid end), optional `styles` map,
+   and `dustFlaps: false` when the kind has none, so its lid uses the whole animation.
+   The mailer box (`mailerEnd`) is the example of a shape with no catalog diagram:
+   model it from the product photos, as a rigid tray plus the parts that move.
 2. If the closure is new, write an end builder and register it in `END_BUILDERS`.
    Builders return flaps made with `lidAssembly` (lid plus tuck), `longEdgeFlap`
    (flaps hinged on the L edges at y = 0 or y = W) or `shortEdgeFlap` (flaps hinged
@@ -61,6 +70,7 @@ table and spot-check several rows against the PDF before writing.
 - **Axes.** x along L, y along W, z up along D. The viewer looks from (+1, +1, +1), so the visible walls are the front (y = W) and the right side (x = L). Projection: `sx = (x - y) cos 30`, `sy = (x + y) / 2 - z`.
 - **Folds.** State holds `topLid`, `topDust`, `bottomLid`, `bottomDust` from 0 (closed) to 1 (open). Lid folds move long-edge flaps, dust folds move short-edge flaps. Each is a real hinge angle, so any value can be drawn.
 - **Never through a wall.** No flap point may sit between floor and rim outside the walls at any fold. A closing tuck bends past square (`TUCK_INTO_CAVITY`) and slides down inside the far wall, straightening only after its tip clears the rim. Tucks inside the box are painted after the interior and before the walls. Keep the wall-clearance test green, and when you change folding, mutate a constant to confirm the test still fails.
+- **Flaps that turn with a lid.** Mailer ears stand square to the lid and rotate with it. Any point farther from the hinge than the box is wide would swing through the front wall, so ears are cut back to a quarter circle about the hinge (`mailerEarOutline`), less the tuck's clearance.
 - **Never through each other.** Flaps at one end take turns. Dust flaps close before the lid or majors (the fold windows in `foldStateAt`). Two majors that close onto each other split their fold with `backFold` and `frontFold`, so the front one only comes down once the back one lies flat. Flaps folding in from opposite edges reach under half the span (`FACING_FLAP_REACH`). Dust flaps next to a tuck get a relief cut sized by `tuckRelief`, so the tuck slides down past them. The flap-crossing test walks `foldStateAt` both ways; when you change folding, break one of these rules on purpose and confirm the test fails.
 - **Painter's order.** Bottom flaps behind the walls, then the interior, cavity tucks, walls and print panel, then bottom flaps on near edges once they pass `FLAT_ANGLE`, then the top flaps. Top flaps: open, far before near; nearly flat, in closing order (dust flaps, back, front).
 - **Dimension lines.** W, L and D always show. L and W drop below the lowest open bottom flap with dashed extension lines, and they always count toward the frame, so the view doesn't jump.

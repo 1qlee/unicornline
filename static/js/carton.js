@@ -53,6 +53,9 @@ export const KINDS = {
   "seal-end-carton": { label: "seal end carton", top: "seal", bottom: "seal" },
   "snap-lock-carton": { label: "tuck top snap lock bottom carton", top: "tuck", bottom: "snap" },
   "sleeve-carton": { label: "carton sleeve", top: null, bottom: null },
+  // Roll end tuck front: a rigid tray and a lid hinged at the back, with a tuck
+  // at the front and side ears that fold down inside the side walls.
+  "mailer-box": { label: "mailer box", top: "mailer", bottom: null, dustFlaps: false },
 }
 
 export const VIEWS = {
@@ -73,8 +76,11 @@ const CLOSING_WINDOWS = { Dust: [0, 0.5], Lid: [0.4, 1] }
 
 const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2)
 
-function foldWindow(key, from, to) {
+// A kind with no dust flaps gives its lid the whole timeline instead of waiting
+// for dust flaps that are not there.
+function foldWindow(key, from, to, kind) {
   if (SIZE_KEYS.includes(key)) return [0, 1]
+  if (KINDS[kind]?.dustFlaps === false) return [0, 1]
   const part = key.endsWith("Lid") ? "Lid" : "Dust"
   return (to > from ? OPENING_WINDOWS : CLOSING_WINDOWS)[part]
 }
@@ -83,7 +89,7 @@ function foldWindow(key, from, to) {
 export function foldStateAt(from, to, progress) {
   const state = { ...to }
   for (const key of [...SIZE_KEYS, ...FOLDS]) {
-    const [start, end] = foldWindow(key, from[key], to[key])
+    const [start, end] = foldWindow(key, from[key], to[key], to.kind)
     const local = easeInOut(clamp01((progress - start) / (end - start)))
     state[key] = from[key] + (to[key] - from[key]) * local
   }
@@ -286,7 +292,44 @@ function snapEnd(state) {
   ]
 }
 
-const END_BUILDERS = { tuck: tuckEnd, seal: sealEnd, snap: (state) => snapEnd(state) }
+// Mailer box lid. The tuck is almost as deep as the box. The ears stand square to
+// the lid and turn with it; their front corner is cut back to a quarter circle
+// about the hinge, so as the lid closes they sweep down inside the side walls
+// without passing the front wall, and stop short of the front tuck.
+const EAR_INSET = 0.08
+const MAILER_TUCK_DEPTH = 0.85
+const MAILER_EAR_DEPTH = 0.9
+
+// Every point of an ear stays within `reach` of the hinge, so the ear can never
+// swing past the front wall; on a box deeper than it is wide, the ear is shortened.
+function mailerEarOutline(depth, reach) {
+  const earDepth = Math.min(depth, reach * 0.95)
+  const lowCorner = Math.sqrt(reach * reach - earDepth * earDepth)
+  return [[0, 0], [reach, 0], [lowCorner, earDepth], [0, earDepth]]
+}
+
+function mailerEnd(state) {
+  const { w, l, d } = state
+  const tuckLength = Math.min(d * MAILER_TUCK_DEPTH, w * 0.6)
+  const [lid, tuck] = lidAssembly(state, [0, 0, d], 1, 1, state.topLid, TOP_LID_OPEN, tuckLength)
+  const theta = lid.angle
+  const alongLid = [0, Math.cos(theta), Math.sin(theta)]
+  const intoBox = [0, Math.sin(theta), -Math.cos(theta)]
+  const outline = mailerEarOutline(d * MAILER_EAR_DEPTH, w - tuckRelief(w, tuckLength))
+  // Under a lid that is mostly shut, the ears are inside the box: painted with the
+  // cavity, behind the walls and under the lid.
+  const tucked = theta < FLAT_ANGLE
+  const ear = (x, outsideSign, edge) => ({
+    ...panel([x, 0, d], alongLid, intoBox, outline, outsideSign),
+    angle: theta,
+    edge,
+    role: "ear",
+    inCavity: tucked,
+  })
+  return [lid, tuck, ear(EAR_INSET, 1, "left"), ear(l - EAR_INSET, -1, "right")]
+}
+
+const END_BUILDERS = { tuck: tuckEnd, seal: sealEnd, snap: (state) => snapEnd(state), mailer: mailerEnd }
 
 // The carton's moving panels in 3D (inches), for drawing and for geometry checks.
 export function cartonGeometry(state) {
@@ -483,8 +526,12 @@ const distance = (a, b) => Math.hypot(a.w - b.w, a.l - b.l, a.d - b.d)
 // goes to the nearest size of the adjacent item code, next (direction 1) or previous (-1).
 // From an unlisted size, it rounds up to the nearest listed size that holds it,
 // or down to the nearest one it holds. Null when there is nowhere to go.
+// Items in natural order: U5513 before U5514, and "8 x 8" before "10 x 10".
+const compareItems = (a, b) => a.localeCompare(b, "en", { numeric: true })
+const itemOrder = (sizes) => [...new Set(sizes.map((size) => size.item))].sort(compareItems)
+
 function sizesOfAdjacentItem(sizes, item, direction) {
-  const items = [...new Set(sizes.map((size) => size.item))].sort()
+  const items = itemOrder(sizes)
   const adjacent = items[items.indexOf(item) + direction]
   return sizes.filter((size) => size.item === adjacent)
 }
@@ -500,7 +547,7 @@ export function steppedSize(sizes, size, direction) {
   return candidates.reduce((best, other) => {
     const gap = distance(other, size) - distance(best, size)
     if (gap !== 0) return gap < 0 ? other : best
-    return direction * other.item.localeCompare(best.item) < 0 ? other : best
+    return direction * compareItems(other.item, best.item) < 0 ? other : best
   })
 }
 
@@ -508,7 +555,7 @@ const formatSize = ({ w, l, d }, unit) => `${w} x ${l} x ${d} ${unit}`
 
 // Shown in place of prices when the drawn size is not a row of the size table.
 export function customSizeMessage(size, unit) {
-  return `This size isn't in our price table, but we make cartons to any size. Send us the ${formatSize(size, unit)} size and the quantity you need, and we'll price it for you.`
+  return `This size isn't in our price table, but we make them to any size. Send us the ${formatSize(size, unit)} size and the quantity you need, and we'll price it for you.`
 }
 
 // What the quote form receives as the product, so the request names the size.

@@ -50,13 +50,25 @@ test("no flap of any carton kind passes through a wall at any point while foldin
   }
 })
 
-test("a sleeve has no flaps and every other kind closes at both ends", () => {
+test("each kind has flaps exactly at the ends it closes", () => {
   const { cartonGeometry, cartonState, KINDS } = carton
-  for (const kind of Object.keys(KINDS)) {
-    const { top, bottom } = cartonGeometry(cartonState({ w: 2, l: 2, d: 5 }, kind, null, "open"))
-    if (kind === "sleeve-carton") assert.equal(top.length + bottom.length, 0)
-    else assert.ok(top.length >= 3 && bottom.length >= 3, kind)
+  for (const [kind, { top, bottom }] of Object.entries(KINDS)) {
+    const geometry = cartonGeometry(cartonState({ w: 2, l: 2, d: 5 }, kind, null, "open"))
+    assert.equal(geometry.top.length > 0, Boolean(top), `${kind} top`)
+    assert.equal(geometry.bottom.length > 0, Boolean(bottom), `${kind} bottom`)
   }
+})
+
+test("mailer box sizes step in size order, not text order", async () => {
+  const { steppedSize } = await import("../static/js/carton.js")
+  const mailers = [
+    { item: "10 x 10 x 4 in.", w: 10, l: 10, d: 4 },
+    { item: "8 x 8 x 2.75 in.", w: 8, l: 8, d: 2.75 },
+    { item: "11 x 11 x 4 in.", w: 11, l: 11, d: 4 },
+  ]
+  assert.equal(steppedSize(mailers, { w: 8, l: 8, d: 2.75 }, 1).item, "10 x 10 x 4 in.")
+  assert.equal(steppedSize(mailers, { w: 10, l: 10, d: 4 }, 1).item, "11 x 11 x 4 in.")
+  assert.equal(steppedSize(mailers, { w: 8, l: 8, d: 2.75 }, -1), null)
 })
 
 test("stepping from a listed size moves to the nearest size of the adjacent item", async () => {

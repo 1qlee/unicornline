@@ -167,5 +167,34 @@
       "key": "files/catalogs/catalog-2023-web.pdf",
       "bytes": 39897985
     }
+  },
+  "model": {
+    "type": "mailer-box",
+    "unit": "in.",
+    "defaultSize": {
+      "w": 8,
+      "l": 8,
+      "d": 2.75
+    },
+    "sizes": [
+      {
+        "item": "8 x 8 x 2.75 in.",
+        "w": 8,
+        "l": 8,
+        "d": 2.75
+      },
+      {
+        "item": "10 x 10 x 4 in.",
+        "w": 10,
+        "l": 10,
+        "d": 4
+      },
+      {
+        "item": "11 x 11 x 4 in.",
+        "w": 11,
+        "l": 11,
+        "d": 4
+      }
+    ]
   }
 }
