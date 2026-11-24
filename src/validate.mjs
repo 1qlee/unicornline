@@ -1,6 +1,8 @@
 // Checks content/ before anything renders, so a bad edit fails the build with the
 // file and field at fault instead of producing a broken page.
 
+import { KINDS } from "../static/js/carton.js"
+
 const SLUG_PATTERN = /^[a-z0-9]+(?:-[a-z0-9]+)*$/
 const PRINT_METHODS = new Set(["digital", "offset", "inkjet"])
 
@@ -42,9 +44,9 @@ function checkPricing(pricing, where, errors) {
   })
 }
 
-const MODEL_TYPES = new Set(["tuck-end-carton"])
+const MODEL_TYPES = new Set(Object.keys(KINDS))
 
-function checkModel(model, where, errors) {
+function checkModel(model, pricing, where, errors) {
   if (model === undefined) return
   if (!MODEL_TYPES.has(model?.type)) return errors.push(`${where}: unknown model type "${model?.type}"`)
   const isSize = (size) => ["w", "l", "d"].every((key) => typeof size?.[key] === "number" && size[key] > 0)
@@ -53,6 +55,10 @@ function checkModel(model, where, errors) {
     if (!isSize(size) || !isNonEmptyString(size.item)) errors.push(`${where}: model size ${index + 1} needs item, w, l and d`)
   })
   if (!isSize(model.defaultSize)) errors.push(`${where}: model needs a defaultSize with w, l and d`)
+  const pricedItems = new Set((pricing?.rows ?? []).map((row) => row[0]))
+  for (const item of new Set(model.sizes.map((size) => size.item))) {
+    if (!pricedItems.has(item)) errors.push(`${where}: model size item ${item} has no row in the pricing table`)
+  }
 }
 
 function checkProduct(product, file, categorySlugs, errors) {
@@ -72,7 +78,7 @@ function checkProduct(product, file, categorySlugs, errors) {
   }
   checkPricing(product.pricing, `${where} pricing`, errors)
   if (!isStringList(product.videos)) errors.push(`${where}: videos must be a list of YouTube IDs`)
-  checkModel(product.model, `${where} model`, errors)
+  checkModel(product.model, product.pricing, `${where} model`, errors)
   checkImage(product.thumbnail, `${where} thumbnail`, errors)
   ;(product.images ?? []).forEach((image, index) => checkImage(image, `${where} images[${index}]`, errors))
   for (const [name, document] of Object.entries(product.documents ?? {})) {

@@ -1,11 +1,10 @@
 import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
 import { priceRowHtml } from "../../static/js/price-row.js"
-import { renderCartonSvg, cartonState, itemForSize, steppedSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct, STYLES, VIEWS } from "../../static/js/carton.js"
+import { renderCartonSvg, cartonState, itemForSize, steppedSize, sizeLimits, sizeMessage, customSizeMessage, customSizeProduct, KINDS, VIEWS, hasFlaps } from "../../static/js/carton.js"
 import { quoteUrlFor } from "../urls.mjs"
 
 const SIZE_STEP = 0.25
 const MIN_SIZE = 1
-const DEFAULT_STYLE = "straight"
 const DEFAULT_VIEW = "open"
 const DIMENSIONS = [
   ["w", "Width (W)"],
@@ -22,8 +21,18 @@ function segmented(name, legend, options, selected) {
   return `<fieldset class="seg"><legend>${legend}</legend><div class="sc" data-segmented>${inputs}</div></fieldset>`
 }
 
+// model.type names the carton kind (see KINDS in carton.js).
 function defaultState(model) {
-  return cartonState(model.defaultSize, DEFAULT_STYLE, DEFAULT_VIEW)
+  return cartonState(model.defaultSize, model.type, null, DEFAULT_VIEW)
+}
+
+// Style shows only for a kind with styles, view only for a kind with flaps.
+function choiceControls(model, state) {
+  const { styles } = KINDS[model.type]
+  return [
+    styles ? segmented("style", "Style", styles, state.style) : "",
+    hasFlaps(model.type) ? segmented("view", "View", VIEWS, DEFAULT_VIEW) : "",
+  ].join("\n")
 }
 
 // Interactive, to-scale carton drawing: the first slot of the product gallery.
@@ -65,21 +74,20 @@ export function cartonModelControls(model, { pricing, productName, quoteUrl }) {
   const size = model.defaultSize
   const item = itemForSize(model.sizes, size)
   const limits = sizeLimits(model.sizes)
-  const styleOptions = Object.fromEntries(Object.entries(STYLES).map(([key, style]) => [key, style.label]))
+  const state = defaultState(model)
   const sizeInputs = DIMENSIONS.map(
     ([key, label]) => `<label class="dim-field"><span>${label}</span><span class="dim-input"><input type="number" name="${key}" value="${size[key]}" min="${MIN_SIZE}" max="${limits[key]}" step="${SIZE_STEP}" inputmode="decimal"><span aria-hidden="true">${e(model.unit)}</span></span></label>`,
   ).join("")
   const sizesJson = JSON.stringify(model.sizes).replace(/</g, "\\u003c")
 
-  return `<form class="carton-controls" id="carton-controls" aria-label="Carton model" data-carton-controls>
-${segmented("style", "Style", styleOptions, DEFAULT_STYLE)}
-${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
+  return `<form class="carton-controls" id="carton-controls" aria-label="Carton model" data-carton-controls data-kind="${e(model.type)}">
+${choiceControls(model, state)}
 <fieldset class="dims"><legend class="vh">Size in inches</legend><div>${sizeInputs}${stepButtons(model)}</div></fieldset>
 <p class="carton-item" aria-live="polite" data-carton-item${item ? "" : " hidden"}>${e(sizeMessage(item))}</p>
 <div class="carton-prices" data-carton-prices>${item ? matchingPrices(pricing, item) : ""}</div>
 <div class="carton-custom" data-carton-custom data-quote-base="${e(quoteUrl)}" data-product="${e(productName)}" data-unit="${e(model.unit)}"${item ? " hidden" : ""}>
 <p data-carton-custom-text>${e(customSizeMessage(size, model.unit))}</p>
-<a class="btn" href="${e(quoteUrlFor(quoteUrl, customSizeProduct(productName, { ...size, style: DEFAULT_STYLE }, model.unit)))}" data-carton-custom-link>Get a custom price</a>
+<a class="btn" href="${e(quoteUrlFor(quoteUrl, customSizeProduct(productName, state, model.unit)))}" data-carton-custom-link>Get a custom price</a>
 </div>
 </form>
 <script type="application/json" data-carton-sizes>${sizesJson}</script>`

@@ -119,7 +119,7 @@ function setUpCarton(root) {
       return Number.isFinite(number) && number >= MIN_SIZE ? Math.min(number, limits[name] * 2) : MIN_SIZE
     }
     const size = { w: value("w"), l: value("l"), d: value("d") }
-    return cartonState(size, form.elements.style.value, form.elements.view.value)
+    return cartonState(size, form.dataset.kind, form.elements.style?.value, form.elements.view?.value)
   }
 
   function showPrice(target) {
