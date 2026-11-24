@@ -63,6 +63,33 @@ export const VIEWS = {
 export const hasFlaps = (kind) => Boolean(KINDS[kind].top || KINDS[kind].bottom)
 export const defaultStyle = (kind) => Object.keys(KINDS[kind].styles ?? {})[0] ?? null
 
+export const FOLDS = ["topLid", "topDust", "bottomLid", "bottomDust"]
+const SIZE_KEYS = ["w", "l", "d"]
+
+// Real cartons open lid first, then the dust flaps; they close in reverse.
+// Each fold moves within its own window of an animation's 0..1 timeline.
+const OPENING_WINDOWS = { Lid: [0, 0.6], Dust: [0.4, 1] }
+const CLOSING_WINDOWS = { Dust: [0, 0.5], Lid: [0.4, 1] }
+
+const easeInOut = (t) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2)
+
+function foldWindow(key, from, to) {
+  if (SIZE_KEYS.includes(key)) return [0, 1]
+  const part = key.endsWith("Lid") ? "Lid" : "Dust"
+  return (to > from ? OPENING_WINDOWS : CLOSING_WINDOWS)[part]
+}
+
+// The carton part way through an animation from one state to another.
+export function foldStateAt(from, to, progress) {
+  const state = { ...to }
+  for (const key of [...SIZE_KEYS, ...FOLDS]) {
+    const [start, end] = foldWindow(key, from[key], to[key])
+    const local = easeInOut(clamp01((progress - start) / (end - start)))
+    state[key] = from[key] + (to[key] - from[key]) * local
+  }
+  return state
+}
+
 export function cartonState(size, kind, style, view) {
   const fold = view === "closed" ? 0 : 1
   return { ...size, kind, style: style ?? defaultStyle(kind), topLid: fold, topDust: fold, bottomLid: fold, bottomDust: fold }
@@ -94,15 +121,29 @@ function tuckFlapOutline(width, length) {
   ]
 }
 
-function dustFlapOutline(width, height) {
+// Dust flaps stop short of the front and back walls, like the relief cuts on a real
+// die line, so a tuck can slide down past them against the wall.
+const DUST_RELIEF = 0.12
+const RELIEF_MARGIN = 0.03
+
+// How far from the wall a closing tuck dips below the rim: its hinge has not quite
+// reached the wall when its tip first passes the rim, and it leans in past square.
+function tuckRelief(w, tuck) {
+  const hingeGap = w - Math.sqrt(Math.max(0, w * w - tuck * tuck))
+  const lean = tuck * Math.sin(-TUCK_INTO_CAVITY - Math.PI / 2)
+  return Math.max(DUST_RELIEF, hingeGap + lean + RELIEF_MARGIN)
+}
+
+function dustFlapOutline(width, height, relief = DUST_RELIEF) {
+  const inner = width - relief * 2
   return [
     [0, 0],
-    [width, 0],
-    [width - height * 0.12, height * 0.55],
-    [Math.max(width - height * 0.9, width * 0.45), height],
-    [Math.min(height * 0.2, width * 0.2), height],
+    [inner, 0],
+    [inner - height * 0.12, height * 0.55],
+    [Math.max(inner - height * 0.9, inner * 0.45), height],
+    [Math.min(height * 0.2, inner * 0.2), height],
     [0, height * 0.7],
-  ]
+  ].map(([u, v]) => [u + relief, v])
 }
 
 const rectangleOutline = (width, length) => [[0, 0], [width, 0], [width, length], [0, length]]
@@ -117,14 +158,24 @@ function snapSideOutline(width, depth) {
   return [[0, 0], [width, 0], [width * 0.7, depth], [width * 0.15, depth]]
 }
 
+// Flaps folding in from opposite edges never reach each other, so each is kept
+// under half the span it folds across.
+const FACING_FLAP_REACH = 0.45
+
 export function flapSizes({ w, l }) {
   return {
     tuck: Math.min(Math.max(w * 0.35, 0.4), 1),
-    dust: Math.min(Math.max(w * 0.4, 0.35), 1.6),
+    dust: Math.min(Math.max(w * 0.4, 0.35), 1.6, l * FACING_FLAP_REACH),
     snapMajor: w * 0.55,
-    snapSide: Math.min(w * 0.45, l * 0.6),
+    snapSide: Math.min(w * 0.45, l * FACING_FLAP_REACH),
   }
 }
+
+// Two flaps that close onto each other take turns: the back flap closes in the
+// first half of the fold, the front flap in the second, so the front one only
+// comes down once the back one lies flat. Opening runs the same path in reverse.
+const backFold = (fold) => clamp01(fold * 2 - 1)
+const frontFold = (fold) => clamp01(fold * 2)
 
 // A flat panel attached along a hinge. `along` runs down the hinge, `out` points
 // away from it; `outsideSign` flips the normal so it points to the carton's outside.
@@ -202,9 +253,8 @@ function tuckEnd(state, isTop) {
     : reverseBottom
       ? lidAssembly(state, [0, w, 0], -1, -1, state.bottomLid, BOTTOM_LID_OPEN, sizes.tuck)
       : lidAssembly(state, [0, 0, 0], 1, -1, state.bottomLid, BOTTOM_LID_OPEN, sizes.tuck)
-  const dust = isTop
-    ? dustFlaps(state, d, 1, state.topDust, dustFlapOutline(w, sizes.dust))
-    : dustFlaps(state, 0, -1, state.bottomDust, dustFlapOutline(w, sizes.dust))
+  const outline = dustFlapOutline(w, sizes.dust, tuckRelief(w, sizes.tuck))
+  const dust = isTop ? dustFlaps(state, d, 1, state.topDust, outline) : dustFlaps(state, 0, -1, state.bottomDust, outline)
   return [...lid, ...dust]
 }
 
@@ -218,8 +268,8 @@ function sealEnd(state, isTop) {
   const openAngle = isTop ? TOP_LID_OPEN : BOTTOM_LID_OPEN
   const outline = rectangleOutline(l, w)
   return [
-    longEdgeFlap(state, [0, 0, z], 1, rise, fold, openAngle, outline),
-    longEdgeFlap(state, [0, w, z], -1, rise, fold, openAngle, outline),
+    longEdgeFlap(state, [0, 0, z], 1, rise, backFold(fold), openAngle, outline),
+    longEdgeFlap(state, [0, w, z], -1, rise, frontFold(fold), openAngle, outline),
     ...dustFlaps(state, z, rise, isTop ? state.topDust : state.bottomDust, dustFlapOutline(w, flapSizes(state).dust)),
   ]
 }
@@ -230,8 +280,8 @@ function snapEnd(state) {
   const sizes = flapSizes(state)
   const majors = snapMajorOutline(l, sizes.snapMajor)
   return [
-    longEdgeFlap(state, [0, 0, 0], 1, -1, state.bottomLid, BOTTOM_LID_OPEN, majors),
-    longEdgeFlap(state, [0, w, 0], -1, -1, state.bottomLid, BOTTOM_LID_OPEN, majors),
+    longEdgeFlap(state, [0, 0, 0], 1, -1, backFold(state.bottomLid), BOTTOM_LID_OPEN, majors),
+    longEdgeFlap(state, [0, w, 0], -1, -1, frontFold(state.bottomLid), BOTTOM_LID_OPEN, majors),
     ...dustFlaps(state, 0, -1, state.bottomDust, snapSideOutline(w, sizes.snapSide)),
   ]
 }
@@ -264,20 +314,13 @@ function printPanel({ w, l, d }) {
   return [[marginX, w, bottom], [l - marginX, w, bottom], [l - marginX, w, top], [marginX, w, top]]
 }
 
-// A carton with ends has a shadowed cavity. A sleeve is open at both ends, so it
-// has no floor and its inner walls stay light, as in the catalog's sleeve drawing.
-function closedInterior({ w, l, d }) {
+// Every kind, sleeve included, shows the same shadowed cavity, so they read as
+// hollow in the same way.
+function cavityInterior({ w, l, d }) {
   return [
     face([[0, 0, 0], [l, 0, 0], [l, w, 0], [0, w, 0]], COLORS.insideDeep),
     face([[0, 0, 0], [l, 0, 0], [l, 0, d], [0, 0, d]], COLORS.inside),
     face([[0, 0, 0], [0, w, 0], [0, w, d], [0, 0, d]], COLORS.insideDeep),
-  ]
-}
-
-function sleeveInterior({ w, l, d }) {
-  return [
-    face([[0, 0, 0], [l, 0, 0], [l, 0, d], [0, 0, d]], COLORS.outside),
-    face([[0, 0, 0], [0, w, 0], [0, w, d], [0, 0, d]], COLORS.inside),
   ]
 }
 
@@ -307,7 +350,7 @@ export function cartonPolygons(state) {
   const before = bottomOutside.filter((flap) => !inFront(flap)).map((flap) => flapFace(flap))
   const after = bottomOutside.filter(inFront).map((flap) => flapFace(flap))
 
-  const interior = hasFlaps(state.kind) ? closedInterior(state) : sleeveInterior(state)
+  const interior = cavityInterior(state)
   // Tucks inside the box sit in front of the inner walls and behind the outer ones.
   const cavity = [...top, ...bottom].filter(inCavity).map((flap) => flapFace(flap))
   const walls = [

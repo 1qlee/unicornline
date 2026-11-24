@@ -26,7 +26,7 @@ Live today: `folding-cartons-tuck-end` (tuck-end-carton), `folding-cartons-seal-
 | `src/render/product.mjs` | Puts the panel and thumbnail in the gallery and the controls in the left column in place of the quote button. |
 | `src/validate.mjs` | `checkModel`: kind must be in `KINDS`, sizes need item, w, l, d; every model item must have a pricing row. |
 | `scripts/parse-carton-sizes.mjs` | Reads the size table from a product's catalog-page PDF and writes the model. |
-| `test/carton.test.mjs` | Pricing lookup, stepping, the aria-label, and the wall-clearance test across every kind. |
+| `test/carton.test.mjs` | Pricing lookup, stepping, the aria-label, and two geometry tests across every kind: no flap through a wall, and no flap through another flap along the real animation path. |
 
 ## Adding the model to a product whose closure already exists
 
@@ -54,17 +54,18 @@ table and spot-check several rows against the PDF before writing.
    on the W edges at x = 0 or x = L). Every flap carries `angle`, `edge`
    (`back`, `front`, `left`, `right`) and `role` (`lid`, `tuck`, `major`, `dust`).
 3. Size new flap outlines in `flapSizes`, from the carton's own W and L.
-4. Run the tests: the wall-clearance test picks up every kind and style automatically.
+4. Run the tests: both geometry tests pick up every kind and style automatically.
 
 ## Rules the geometry follows
 
 - **Axes.** x along L, y along W, z up along D. The viewer looks from (+1, +1, +1), so the visible walls are the front (y = W) and the right side (x = L). Projection: `sx = (x - y) cos 30`, `sy = (x + y) / 2 - z`.
 - **Folds.** State holds `topLid`, `topDust`, `bottomLid`, `bottomDust` from 0 (closed) to 1 (open). Lid folds move long-edge flaps, dust folds move short-edge flaps. Each is a real hinge angle, so any value can be drawn.
 - **Never through a wall.** No flap point may sit between floor and rim outside the walls at any fold. A closing tuck bends past square (`TUCK_INTO_CAVITY`) and slides down inside the far wall, straightening only after its tip clears the rim. Tucks inside the box are painted after the interior and before the walls. Keep the wall-clearance test green, and when you change folding, mutate a constant to confirm the test still fails.
+- **Never through each other.** Flaps at one end take turns. Dust flaps close before the lid or majors (the fold windows in `foldStateAt`). Two majors that close onto each other split their fold with `backFold` and `frontFold`, so the front one only comes down once the back one lies flat. Flaps folding in from opposite edges reach under half the span (`FACING_FLAP_REACH`). Dust flaps next to a tuck get a relief cut sized by `tuckRelief`, so the tuck slides down past them. The flap-crossing test walks `foldStateAt` both ways; when you change folding, break one of these rules on purpose and confirm the test fails.
 - **Painter's order.** Bottom flaps behind the walls, then the interior, cavity tucks, walls and print panel, then bottom flaps on near edges once they pass `FLAT_ANGLE`, then the top flaps. Top flaps: open, far before near; nearly flat, in closing order (dust flaps, back, front).
 - **Dimension lines.** W, L and D always show. L and W drop below the lowest open bottom flap with dashed extension lines, and they always count toward the frame, so the view doesn't jump.
-- **Colors.** Only the design system's illustration tones: paper and illus-grey for board, illus-ink for the shadowed cavity, blue for the print panel. A sleeve has no floor and light inner walls.
-- **Animation.** `carton-view.js` tweens every change. Opening runs lid then dust; closing runs dust then lid. A style change first folds the bottom shut. Reduced motion jumps straight to the result.
+- **Colors.** Only the design system's illustration tones: paper and illus-grey for board, illus-ink for the shadowed cavity, blue for the print panel. Every kind, the sleeve included, uses the same shadowed interior.
+- **Animation.** `carton-view.js` tweens every change through `foldStateAt` in `carton.js`. Opening runs lid then dust; closing runs dust then lid. A style change first folds the bottom shut. Reduced motion jumps straight to the result.
 
 ## Pricing behaviour
 
