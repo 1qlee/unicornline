@@ -133,7 +133,7 @@ function details(product, company, config) {
 
   return `<section class="half" aria-labelledby="spec-h">
 <div class="rule" aria-hidden="true"></div>
-<h2 id="spec-h" class="heading-xl sec-head">What you get</h2>
+<h2 id="spec-h" class="heading-xl sec-head">Information</h2>
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
 ${notes}
 <div class="srow">
@@ -188,7 +188,7 @@ function neighbourNav(neighbours) {
 </nav>`
 }
 
-// What you get and the pricing sit side by side, 50:50, and stack below bp-md.
+// Information and the pricing sit side by side, 50:50, and stack below bp-md.
 function detailsAndPricing(product, catalog, config) {
   return `<div class="wrap sec">
 <div class="halves">
