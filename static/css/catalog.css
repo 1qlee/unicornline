@@ -77,8 +77,6 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .rule{border-top:var(--border-hairline) solid var(--rule);margin-bottom:var(--space-12)}
 .sec-head{margin-bottom:var(--space-16)}
 .sec-head-split{display:flex;flex-wrap:wrap;gap:var(--space-4) var(--space-16);align-items:flex-end;justify-content:space-between}
-.band{background:var(--blue-tint)}
-.band.sec{padding-top:var(--space-24)}
 .stack-6{display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-6);min-width:0}
 
 /* ---------- actions ---------- */
@@ -243,9 +241,14 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .thumbs .thumb-model .carton-dim{display:none}
 .stage-video{position:absolute;left:0;top:50%;width:100%;aspect-ratio:16 / 9;transform:translateY(-50%);border:0;background:var(--ink)}
 
+/* What you get and Pricing by quantity: equal columns, stacked at bp-md */
+.halves{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:var(--space-16);align-items:start}
+.half{min-width:0}
+@media (max-width:900px){.halves{grid-template-columns:minmax(0,1fr);gap:var(--space-24)}}
+
 /* label with details, 3 and 9 columns; a soft rule between rows */
 .srow{display:grid;grid-template-columns:minmax(0,3fr) minmax(0,9fr);gap:var(--space-3) var(--space-8);padding:var(--space-6) 0;border-top:var(--border-hairline) solid var(--rule-soft)}
-.srow ul{list-style:none;columns:2;column-gap:var(--space-12)}
+.srow ul{list-style:none}
 .srow li,.prose li{display:flex;align-items:baseline;gap:var(--space-3);padding:var(--space-1) 0;break-inside:avoid;font-size:16px;line-height:1.4}
 .srow li::before,.prose li::before{content:"";width:7px;height:7px;background:var(--ink);flex:none;transform:translateY(-2px)}
 .prose{display:flex;flex-direction:column;gap:var(--space-3);font-size:16px;line-height:1.4;max-width:44em}
@@ -266,7 +269,6 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
   .ptop{grid-template-columns:minmax(0,1fr);gap:var(--space-12)}
   .srow{grid-template-columns:minmax(0,1fr)}
 }
-@media (max-width:640px){.srow ul{columns:1}}
 
 /* ---------- to-scale carton model ---------- */
 .carton-svg{width:100%;height:100%;display:block}

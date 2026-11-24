@@ -131,7 +131,7 @@ function details(product, company, config) {
 </div>`
     : ""
 
-  return `<section class="wrap sec" aria-labelledby="spec-h">
+  return `<section class="half" aria-labelledby="spec-h">
 <div class="rule" aria-hidden="true"></div>
 <h2 id="spec-h" class="heading-xl sec-head">What you get</h2>
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
@@ -169,24 +169,34 @@ ${body}
 </div>`
 }
 
-function pricingSection(product, neighbours) {
-  const nav =
-    neighbours.previous && neighbours.next
-      ? `<div class="pn">
-<a class="link" href="${e(productPath(neighbours.previous))}">Previous: ${e(neighbours.previous.name)}</a>
-<a class="link" href="${e(productPath(neighbours.next))}">Next: ${e(neighbours.next.name)}</a>
-</div>`
-      : ""
-  return `<section class="band sec" aria-labelledby="price-h">
-<div class="wrap">
-<div class="sec-head sec-head-split">
+function pricingSection(product) {
+  return `<section class="half" aria-labelledby="price-h">
+<div class="rule" aria-hidden="true"></div>
+<div class="sec-head stack-6">
 <h2 id="price-h" class="heading-xl">Pricing by quantity</h2>
 <p class="lead">${e(product.pricing.note)} ${PRICES_CURRENCY_NOTE}</p>
 </div>
 ${priceTable(product.pricing, product.name)}
-${nav}
-</div>
 </section>`
+}
+
+function neighbourNav(neighbours) {
+  if (!neighbours.previous || !neighbours.next) return ""
+  return `<nav class="pn" aria-label="More in this category">
+<a class="link" href="${e(productPath(neighbours.previous))}">Previous: ${e(neighbours.previous.name)}</a>
+<a class="link" href="${e(productPath(neighbours.next))}">Next: ${e(neighbours.next.name)}</a>
+</nav>`
+}
+
+// What you get and the pricing sit side by side, 50:50, and stack below bp-md.
+function detailsAndPricing(product, catalog, config) {
+  return `<div class="wrap sec">
+<div class="halves">
+${details(product, catalog.company, config)}
+${pricingSection(product)}
+</div>
+${neighbourNav(catalog.neighbours(product))}
+</div>`
 }
 
 export function renderProduct(product, catalog, config) {
@@ -199,8 +209,7 @@ export function renderProduct(product, catalog, config) {
     path: productPath(product),
     main: [
       productTop(product, category, catalog, config),
-      details(product, catalog.company, config),
-      pricingSection(product, catalog.neighbours(product)),
+      detailsAndPricing(product, catalog, config),
     ].join("\n"),
     scripts: product.model ? ["/js/site.js", "/js/carton-view.js"] : ["/js/site.js"],
   })
