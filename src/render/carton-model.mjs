@@ -47,7 +47,7 @@ export function cartonModelControls(model) {
   return `<form class="carton-controls" id="carton-controls" aria-label="Carton model" data-carton-controls>
 ${segmented("style", "Style", styleOptions, DEFAULT_STYLE)}
 ${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
-<fieldset class="dims"><legend>Size in inches</legend><div>${sizeInputs}</div></fieldset>
+<fieldset class="dims"><legend class="vh">Size in inches</legend><div>${sizeInputs}</div></fieldset>
 <p class="carton-item" aria-live="polite" data-carton-item>${e(sizeMessage(itemForSize(model.sizes, size)))}</p>
 <p class="carton-note">Drawn to scale. Any in-between size is possible.</p>
 </form>
