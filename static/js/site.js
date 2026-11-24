@@ -67,6 +67,19 @@ function highlighted(text, query) {
   return fragment
 }
 
+// A sentinel just above the search bar leaves view the moment the bar sticks.
+function setUpStickySearch() {
+  const bar = document.querySelector("[data-search-bar]")
+  if (!bar || !("IntersectionObserver" in window)) return
+  const sentinel = document.createElement("div")
+  sentinel.setAttribute("aria-hidden", "true")
+  bar.before(sentinel)
+  const headerHeight = document.querySelector(".hdr")?.offsetHeight ?? 0
+  new IntersectionObserver(([entry]) => bar.classList.toggle("is-stuck", !entry.isIntersecting), {
+    rootMargin: `-${headerHeight}px 0px 0px 0px`,
+  }).observe(sentinel)
+}
+
 function setUpSearch() {
   const input = document.querySelector("[data-search]")
   if (!input) return
@@ -268,5 +281,6 @@ function setUpGallery() {
 }
 
 setUpSearch()
+setUpStickySearch()
 setUpHeadingReveal()
 setUpGallery()

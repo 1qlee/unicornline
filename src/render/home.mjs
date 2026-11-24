@@ -39,7 +39,7 @@ function indexSection(catalog) {
   return `<section id="index" class="wrap sec index" aria-labelledby="index-h">
 <h1 id="index-h" class="heading-xl" data-reveal>Explore the catalog</h1>
 <p class="lead index-lead">${e(catalog.company.lede)}</p>
-${searchBox(catalog.products.length)}
+<div class="search-bar" data-search-bar>${searchBox(catalog.products.length)}</div>
 <div class="ix">
 <nav class="ixnav" aria-label="Categories">${nav}</nav>
 <div>
