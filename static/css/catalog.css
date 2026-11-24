@@ -274,6 +274,7 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .carton-svg{width:100%;height:100%;display:block}
 .carton-faces polygon,.carton-dim line{vector-effect:non-scaling-stroke}
 .carton-dim line{stroke:var(--blue);stroke-width:1}
+.carton-dim .carton-ext{stroke-opacity:.45;stroke-dasharray:3 3}
 .carton-dim circle{fill:var(--blue)}
 .carton-dim text{fill:var(--ink);font-family:var(--font-sans);font-weight:600}
 /* style and view share a row, the three sizes share the next, so the controls

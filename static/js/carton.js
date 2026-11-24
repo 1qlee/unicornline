@@ -222,16 +222,40 @@ function formatInches(value) {
   return `${Number(value.toFixed(2))} in.`
 }
 
-// L and W are measured along the bottom edges, so they show only while the bottom is
-// shut. They always count toward the frame, so the drawing doesn't jump when they appear.
+// The lowest point of the bottom flaps, or the base when they are shut.
+function floorZ(state) {
+  const { bottomLid, bottomLeft, bottomRight } = cartonGeometry(state)
+  const points = [bottomLid.lid, bottomLid.tuck, bottomLeft, bottomRight].flatMap((flap) => flap.points)
+  return Math.min(0, ...points.map(([, , z]) => z))
+}
+
+// Every size the visitor can change gets a dimension line. D runs up the front
+// corner; L and W run along the base, dropped below any open bottom flap so the
+// flaps never cover them, with extension lines back up to the base corners.
 function dimensionLines(state) {
   const { w, l, d } = state
   const offset = DIMENSION_OFFSET
-  const bottomShut = state.bottomLid < 0.02 && state.bottomDust < 0.02
+  const floor = floorZ(state)
+  const dropped = floor < -0.01
+  const extend = (...corners) => (dropped ? corners.map((corner) => [corner, [corner[0], corner[1], floor]]) : [])
   return [
-    { from: [0, w + offset, 0], to: [0, w + offset, d], label: `D ${formatInches(d)}`, anchor: "end", nudge: [-8, 0], visible: true },
-    { from: [0, w + offset, 0], to: [l, w + offset, 0], label: `L ${formatInches(l)}`, anchor: "end", nudge: [-6, 18], visible: bottomShut },
-    { from: [l + offset, 0, 0], to: [l + offset, w, 0], label: `W ${formatInches(w)}`, anchor: "start", nudge: [6, 18], visible: bottomShut },
+    { from: [0, w + offset, 0], to: [0, w + offset, d], label: `D ${formatInches(d)}`, anchor: "end", nudge: [-8, 0], extensions: [] },
+    {
+      from: [0, w + offset, floor],
+      to: [l, w + offset, floor],
+      label: `L ${formatInches(l)}`,
+      anchor: "end",
+      nudge: [-6, 18],
+      extensions: extend([0, w + offset, 0], [l, w + offset, 0]),
+    },
+    {
+      from: [l + offset, 0, floor],
+      to: [l + offset, w, floor],
+      label: `W ${formatInches(w)}`,
+      anchor: "start",
+      nudge: [6, 18],
+      extensions: extend([l + offset, 0, 0], [l + offset, w, 0]),
+    },
   ]
 }
 
@@ -256,7 +280,12 @@ export function describeCarton(state) {
 
 function layout(state) {
   const shapes = cartonPolygons(state)
-  const dimensions = dimensionLines(state).map((line) => ({ ...line, from2: project(line.from), to2: project(line.to) }))
+  const dimensions = dimensionLines(state).map((line) => ({
+    ...line,
+    from2: project(line.from),
+    to2: project(line.to),
+    extensions2: line.extensions.map(([start, end]) => [project(start), project(end)]),
+  }))
   return { shapes, dimensions }
 }
 
@@ -278,13 +307,15 @@ export function renderCartonSvg(state, frame = cartonViewBox(state)) {
   const fontSize = Math.max(viewBox[2], viewBox[3]) * 0.03
   const pxToUnits = fontSize / 14
   const dims = dimensions
-    .filter((line) => line.visible)
-    .map(({ from2, to2, label, anchor, nudge }) => {
+    .map(({ from2, to2, extensions2, label, anchor, nudge }) => {
       const mid = [(from2[0] + to2[0]) / 2, (from2[1] + to2[1]) / 2]
       const x = round(mid[0] + nudge[0] * pxToUnits)
       const y = round(mid[1] + nudge[1] * pxToUnits)
       const r = round(2.5 * pxToUnits)
-      return `<g class="carton-dim"><line x1="${round(from2[0])}" y1="${round(from2[1])}" x2="${round(to2[0])}" y2="${round(to2[1])}"/><circle cx="${round(from2[0])}" cy="${round(from2[1])}" r="${r}"/><circle cx="${round(to2[0])}" cy="${round(to2[1])}" r="${r}"/><text x="${x}" y="${y}" text-anchor="${anchor}" font-size="${round(fontSize)}">${escapeText(label)}</text></g>`
+      const extensions = extensions2
+        .map(([start, end]) => `<line class="carton-ext" x1="${round(start[0])}" y1="${round(start[1])}" x2="${round(end[0])}" y2="${round(end[1])}"/>`)
+        .join("")
+      return `<g class="carton-dim">${extensions}<line x1="${round(from2[0])}" y1="${round(from2[1])}" x2="${round(to2[0])}" y2="${round(to2[1])}"/><circle cx="${round(from2[0])}" cy="${round(from2[1])}" r="${r}"/><circle cx="${round(to2[0])}" cy="${round(to2[1])}" r="${r}"/><text x="${x}" y="${y}" text-anchor="${anchor}" font-size="${round(fontSize)}">${escapeText(label)}</text></g>`
     })
     .join("")
 
