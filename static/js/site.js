@@ -214,11 +214,20 @@ function setUpHeadingReveal() {
   }
 }
 
+// The stage holds the carton model (when there is one) and the main photo side
+// by side; switching hides one rather than removing it, so the model keeps its state.
 function setUpGallery() {
   const stage = document.querySelector("[data-gallery-stage]")
   const main = document.querySelector("[data-gallery-main]")
   const links = [...document.querySelectorAll(".thumbs a")]
+  const modelParts = [...document.querySelectorAll("[data-gallery-model]")]
   if (!stage || !main || links.length === 0) return
+
+  function show(element) {
+    stage.querySelector(".stage-video")?.remove()
+    main.hidden = element !== main
+    for (const part of modelParts) part.hidden = element !== "model"
+  }
 
   function showPhoto(link) {
     main.src = link.dataset.full
@@ -226,7 +235,7 @@ function setUpGallery() {
     main.alt = link.dataset.alt
     main.width = Number(link.dataset.width)
     main.height = Number(link.dataset.height)
-    stage.replaceChildren(main)
+    show(main)
   }
 
   function showVideo(link) {
@@ -236,13 +245,16 @@ function setUpGallery() {
     frame.title = link.dataset.title
     frame.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen"
     frame.allowFullscreen = true
-    stage.replaceChildren(frame)
+    show(frame)
+    stage.append(frame)
   }
 
   for (const link of links) {
     link.addEventListener("click", (event) => {
       event.preventDefault()
-      link.dataset.video ? showVideo(link) : showPhoto(link)
+      if (link.dataset.video) showVideo(link)
+      else if ("model" in link.dataset) show("model")
+      else showPhoto(link)
       for (const other of links) other.removeAttribute("aria-current")
       link.setAttribute("aria-current", "true")
     })

@@ -2,7 +2,7 @@ import { escapeHtml as e, formatQuantityLabel } from "../format.mjs"
 import { productPath, homePath, assetUrl, viewerPath, quoteUrlFor } from "../urls.mjs"
 import { variantKey, widthsFor } from "../images.mjs"
 import { renderPage } from "./layout.mjs"
-import { cartonModelRow } from "./carton-model.mjs"
+import { cartonModelPanel, cartonModelThumb, cartonModelControls } from "./carton-model.mjs"
 
 const MAIN_IMAGE_SIZES = "(max-width: 900px) calc(100vw - 64px), 520px"
 const PRICES_CURRENCY_NOTE = "Prices in USD."
@@ -52,8 +52,8 @@ function documentLinks(product, company, config) {
   return `<div class="dl">${links.join("")}</div>`
 }
 
-function photoThumb(config, image, index) {
-  return `<li><a href="${e(largestUrl(config, image))}" data-full="${e(mainImageUrl(config, image))}" data-srcset="${e(srcset(config, image))}" data-alt="${e(image.alt)}" data-width="${image.width}" data-height="${image.height}"${index === 0 ? ' aria-current="true"' : ""}><img src="${e(assetUrl(config.assetBaseUrl, variantKey(image.key, widthsFor(image)[0])))}" alt="Show photo ${index + 1}: ${e(image.alt)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async"></a></li>`
+function photoThumb(config, image, index, current) {
+  return `<li><a href="${e(largestUrl(config, image))}" data-full="${e(mainImageUrl(config, image))}" data-srcset="${e(srcset(config, image))}" data-alt="${e(image.alt)}" data-width="${image.width}" data-height="${image.height}"${current ? ' aria-current="true"' : ""}><img src="${e(assetUrl(config.assetBaseUrl, variantKey(image.key, widthsFor(image)[0])))}" alt="Show photo ${index + 1}: ${e(image.alt)}" width="${image.width}" height="${image.height}" loading="lazy" decoding="async"></a></li>`
 }
 
 // Videos sit at the end of the carousel. Without JavaScript the thumbnail links to YouTube.
@@ -62,17 +62,23 @@ function videoThumb(product, id, index, total) {
   return `<li><a class="thumb-video" href="https://www.youtube.com/watch?v=${e(id)}" data-video="${e(id)}" data-title="${e(label.replace(/^Play /, ""))}"><img src="https://i.ytimg.com/vi/${e(id)}/mqdefault.jpg" alt="${e(label)}" width="320" height="180" loading="lazy" decoding="async"><span class="thumb-play" aria-hidden="true"></span></a></li>`
 }
 
+// With a carton model, the interactive drawing takes the first slot and the
+// first photo waits, hidden, until its thumbnail is chosen.
 function gallery(product, config) {
   const images = product.images.length ? product.images : [product.thumbnail]
   const [first] = images
+  const { model } = product
   const items = [
-    ...images.map((image, index) => photoThumb(config, image, index)),
+    ...(model ? [cartonModelThumb(model)] : []),
+    ...images.map((image, index) => photoThumb(config, image, index, !model && index === 0)),
     ...product.videos.map((id, index) => videoThumb(product, id, index, product.videos.length)),
   ]
   const thumbs = items.length > 1 ? `<ul class="thumbs" aria-label="Product photos and videos">${items.join("")}</ul>` : ""
-  return `<div>
-<div class="pstage2" data-gallery-stage><img src="${e(mainImageUrl(config, first))}" srcset="${e(srcset(config, first))}" sizes="${MAIN_IMAGE_SIZES}" alt="${e(first.alt)}" width="${first.width}" height="${first.height}" fetchpriority="high" data-gallery-main></div>
+  const mainImage = `<img src="${e(mainImageUrl(config, first))}" srcset="${e(srcset(config, first))}" sizes="${MAIN_IMAGE_SIZES}" alt="${e(first.alt)}" width="${first.width}" height="${first.height}"${model ? " hidden" : ' fetchpriority="high"'} data-gallery-main>`
+  return `<div${model ? " data-carton" : ""}>
+<div class="pstage2" data-gallery-stage>${model ? cartonModelPanel(model) : ""}${mainImage}</div>
 ${thumbs}
+${model ? cartonModelControls(model) : ""}
 </div>`
 }
 
@@ -123,7 +129,6 @@ function details(product) {
   return `<section class="wrap sec" aria-labelledby="spec-h">
 <div class="rule" aria-hidden="true"></div>
 <h2 id="spec-h" class="heading-xl sec-head">What you get</h2>
-${product.model ? cartonModelRow(product.model) : ""}
 ${groups.map(([label, items]) => specRow(label, items)).join("\n")}
 ${notes}
 </section>`

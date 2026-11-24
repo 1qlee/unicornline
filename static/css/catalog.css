@@ -238,6 +238,9 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .thumb-play::before{content:"";position:absolute;left:14px;top:11px;border-left:11px solid var(--ink);border-top:7px solid transparent;border-bottom:7px solid transparent;transition:border-color var(--ease-hover)}
 .thumbs .thumb-video:hover .thumb-play{background:var(--blue)}
 .thumbs .thumb-video:hover .thumb-play::before{border-left-color:var(--on-blue)}
+.stage-model{position:absolute;inset:0;padding:var(--space-4);box-sizing:border-box;display:flex;align-items:center;justify-content:center}
+.thumbs .thumb-model svg{position:absolute;inset:8%;width:84%;height:84%}
+.thumbs .thumb-model .carton-dim{display:none}
 .stage-video{position:absolute;left:0;top:50%;width:100%;aspect-ratio:16 / 9;transform:translateY(-50%);border:0;background:var(--ink)}
 
 /* label with details, 3 and 9 columns; a soft rule between rows */
@@ -266,14 +269,12 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 @media (max-width:640px){.srow ul{columns:1}}
 
 /* ---------- to-scale carton model ---------- */
-.carton{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--space-8);align-items:start}
-.carton-stage{aspect-ratio:1 / 1;border:var(--border-hairline) solid var(--rule);background:var(--paper);display:flex;align-items:center;justify-content:center;padding:var(--space-4);box-sizing:border-box}
 .carton-svg{width:100%;height:100%;display:block}
 .carton-faces polygon,.carton-dim line{vector-effect:non-scaling-stroke}
 .carton-dim line{stroke:var(--blue);stroke-width:1}
 .carton-dim circle{fill:var(--blue)}
 .carton-dim text{fill:var(--ink);font-family:var(--font-sans);font-weight:600}
-.carton-controls{display:flex;flex-direction:column;gap:var(--space-6)}
+.carton-controls{display:flex;flex-direction:column;gap:var(--space-6);margin-top:var(--space-8)}
 .carton-controls fieldset{border:0;margin:0;padding:0;min-width:0}
 .carton-controls legend{font-size:14px;line-height:1.3;font-weight:700;margin-bottom:var(--space-2);padding:0}
 /* segmented control: paper with an ink border; the selected segment is ink */
@@ -292,7 +293,6 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .dim-input span{font-size:16px;font-weight:400;color:var(--ink-muted)}
 .carton-item{font-size:18px;font-weight:700}
 .carton-note{font-size:16px;line-height:1.4;color:var(--ink-muted)}
-@media (max-width:900px){.carton{grid-template-columns:minmax(0,1fr)}}
 
 /* ---------- PDF viewer ---------- */
 .vbar{position:sticky;top:var(--size-header);z-index:10;background:var(--paper);border-bottom:var(--border-hairline) solid var(--rule);box-shadow:var(--shadow-sm)}
