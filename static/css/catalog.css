@@ -132,8 +132,7 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
   100%{-webkit-mask-size:100% 18%,100% 18%,100% 18%,100% 18%,100% 18%,100% 18%;mask-size:100% 18%,100% 18%,100% 18%,100% 18%,100% 18%,100% 18%}
 }
 @media (prefers-reduced-motion:no-preference){
-  .reveal,.reveal-pre,.reveal-go{-webkit-mask-image:var(--bands);mask-image:var(--bands);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:var(--band-positions);mask-position:var(--band-positions)}
-  .reveal{animation:reveal .9s linear .15s both}
+  .reveal-pre,.reveal-go{-webkit-mask-image:var(--bands);mask-image:var(--bands);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:var(--band-positions);mask-position:var(--band-positions)}
   .reveal-pre{-webkit-mask-size:0 18%;mask-size:0 18%}
   .reveal-go{animation:reveal .65s linear both}
 }
@@ -151,16 +150,10 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 @keyframes print-4{0%,54%{transform:scaleX(0);opacity:1}72%{transform:scaleX(1)}82%{transform:scaleX(1);opacity:1}94%,100%{transform:scaleX(1);opacity:0}}
 @media (prefers-reduced-motion:reduce){.loader span::before{animation:none;transform:none}}
 
-/* ---------- home: hero and search ---------- */
-.hero{position:relative;background:var(--paper)}
-.hero .wrap{padding-top:var(--space-16);padding-bottom:var(--space-24);z-index:1}
-.hero-row{position:relative;z-index:3;display:flex;flex-direction:column;align-items:flex-start;gap:var(--space-6);margin-top:var(--space-12);max-width:min(var(--size-measure),54%)}
-.hero-art{position:absolute;right:0;bottom:0;width:56%;height:54%;display:block;object-fit:contain;object-position:right bottom}
-@media (max-width:900px){
-  .hero-row{max-width:var(--size-measure)}
-  .hero-art{position:static;width:100%;max-width:560px;height:auto;margin:var(--space-12) auto 0}
-}
-
+/* ---------- home: catalog heading and search ---------- */
+.index{padding-top:var(--space-16)}
+.index-lead{margin-top:var(--space-6)}
+.index .search-box{margin:var(--space-8) 0 var(--space-16)}
 .search-box{position:relative;width:100%;max-width:30em;z-index:5}
 .search{display:flex;align-items:center;gap:var(--space-3);width:100%;min-height:var(--size-control-lg);box-sizing:border-box;padding:0 var(--space-4);border:var(--border-control) solid var(--ink);background:var(--paper);transition:box-shadow var(--ease-hover)}
 .search:focus-within{outline:var(--border-focus) solid var(--blue);outline-offset:3px;box-shadow:var(--shadow-sm)}

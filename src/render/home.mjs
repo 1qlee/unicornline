@@ -2,14 +2,8 @@ import { escapeHtml as e } from "../format.mjs"
 import { productPath, homePath } from "../urls.mjs"
 import { renderPage } from "./layout.mjs"
 
-function hero(catalog, productCount) {
-  const { company, categories } = catalog
-  return `<section class="hero" aria-labelledby="hero-h">
-<div class="wrap">
-<h1 id="hero-h" class="display-xl reveal">${e(company.name)}</h1>
-<div class="hero-row">
-<p class="lead">${e(company.lede)}</p>
-<div class="search-box" data-search-box>
+function searchBox(productCount) {
+  return `<div class="search-box" data-search-box>
 <label class="search">
 <span class="vh">Search the catalog</span>
 <svg class="search-icon" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><circle cx="10.5" cy="10.5" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></svg>
@@ -17,11 +11,7 @@ function hero(catalog, productCount) {
 <span class="search-count" aria-live="polite" data-search-count></span>
 </label>
 <div class="search-results" id="search-results" role="listbox" aria-label="Matching products" hidden data-search-results></div>
-</div>
-</div>
-<img class="hero-art" src="/drawings/hero-cluster.svg" alt="Isometric drawing of a line-up of catalog items: cartons, a mailer box, a candle, a wooden award cube and a tin">
-</div>
-</section>`
+</div>`
 }
 
 function categorySection(category) {
@@ -40,14 +30,16 @@ function categorySection(category) {
 </section>`
 }
 
+// The catalog heading is the page's h1 now that the home page has no hero.
 function indexSection(catalog) {
   const { categories } = catalog
   const nav = categories
     .map((category) => `<a href="#${e(category.slug)}">${e(category.name)}<span>${category.products.length}</span></a>`)
     .join("")
-  return `<section id="index" class="wrap sec" aria-labelledby="index-h">
-<div class="rule" aria-hidden="true"></div>
-<h2 id="index-h" class="heading-xl sec-head" data-reveal>Explore the catalog</h2>
+  return `<section id="index" class="wrap sec index" aria-labelledby="index-h">
+<h1 id="index-h" class="heading-xl" data-reveal>Explore the catalog</h1>
+<p class="lead index-lead">${e(catalog.company.lede)}</p>
+${searchBox(catalog.products.length)}
 <div class="ix">
 <nav class="ixnav" aria-label="Categories">${nav}</nav>
 <div>
@@ -63,14 +55,13 @@ ${categories.map(categorySection).join("\n")}
 }
 
 export function renderHome(catalog, config) {
-  const productCount = catalog.products.length
   return renderPage({
     config,
     company: catalog.company,
     title: `${catalog.company.name} | ${catalog.company.owner}`,
     description: catalog.company.lede,
     path: homePath(),
-    main: [hero(catalog, productCount), indexSection(catalog)].join("\n"),
+    main: indexSection(catalog),
     scripts: ["/js/site.js"],
   })
 }
