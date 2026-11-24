@@ -4,20 +4,30 @@
 // Axes: x runs along L, y along W, z up along D. The viewer looks from +x, +y, +z,
 // so the visible walls are the front (y = W, showing L) and the right side
 // (x = L, showing W), matching the catalog's carton diagrams.
+//
+// A carton is described by its size, tuck style and four fold amounts from 0
+// (closed) to 1 (fully open): topLid, topDust, bottomLid, bottomDust. Every
+// in-between value is a real hinge angle, so the drawing can be animated.
 
 const COS30 = Math.cos(Math.PI / 6)
 const SIN30 = 0.5
-const LID_TILT = (12 * Math.PI) / 180
-const DUST_FLAP_TILT = (14 * Math.PI) / 180
-const BOTTOM_LID_TILT = (16 * Math.PI) / 180
+const DEG = Math.PI / 180
+const TOP_LID_OPEN = 102 * DEG
+const BOTTOM_LID_OPEN = 106 * DEG
+const DUST_FLAP_OPEN = 104 * DEG
+const TUCK_FOLDED = 90 * DEG
+// The tuck straightens during the first part of the lid's swing.
+const TUCK_STRAIGHT_BY = 0.35
+// Flaps flatter than this are painted with the closed-carton order.
+const FLAT_ANGLE = 45 * DEG
 const PADDING = 0.6
 const DIMENSION_OFFSET = 0.45
+const VIEWER = [1, 1, 1]
 
 const COLORS = {
   ink: "#0B0B0B",
   outside: "#FFFFFF",
   outsideShade: "#E4E7EE",
-  top: "#F4F5F8",
   inside: "#C9CDD6",
   insideDeep: "#A9AEBA",
   flapInside: "#E9ECF2",
@@ -34,15 +44,25 @@ export const VIEWS = {
   closed: "Assembled",
 }
 
+export function cartonState(size, style, view) {
+  const fold = view === "closed" ? 0 : 1
+  return { ...size, style, topLid: fold, topDust: fold, bottomLid: fold, bottomDust: fold }
+}
+
+// ---------- vector helpers ----------
+
+const add = (a, b) => [a[0] + b[0], a[1] + b[1], a[2] + b[2]]
+const scale = (a, k) => [a[0] * k, a[1] * k, a[2] * k]
+const dot = (a, b) => a[0] * b[0] + a[1] * b[1] + a[2] * b[2]
+const cross = (a, b) => [a[1] * b[2] - a[2] * b[1], a[2] * b[0] - a[0] * b[2], a[0] * b[1] - a[1] * b[0]]
+const clamp01 = (value) => Math.min(1, Math.max(0, value))
+
 function project([x, y, z]) {
   return [(x - y) * COS30, (x + y) * SIN30 - z]
 }
 
-function polygon(points3d, fill, extra = "") {
-  return { points: points3d.map(project), fill, extra }
-}
+// ---------- flap geometry ----------
 
-// Flap outlines in local (along-hinge, away-from-hinge) coordinates.
 function tuckFlapOutline(width, length) {
   const shoulder = Math.min(length * 0.45, width * 0.25)
   return [
@@ -73,15 +93,46 @@ export function flapSizes({ w }) {
   }
 }
 
-function boxWalls({ w, l, d }) {
-  return {
-    front: [[0, w, 0], [l, w, 0], [l, w, d], [0, w, d]],
-    right: [[l, 0, 0], [l, w, 0], [l, w, d], [l, 0, d]],
-    top: [[0, 0, d], [l, 0, d], [l, w, d], [0, w, d]],
-    floor: [[0, 0, 0], [l, 0, 0], [l, w, 0], [0, w, 0]],
-    innerBack: [[0, 0, 0], [l, 0, 0], [l, 0, d], [0, 0, d]],
-    innerLeft: [[0, 0, 0], [0, w, 0], [0, w, d], [0, 0, d]],
-  }
+// A flat panel attached along a hinge. `along` runs down the hinge, `out` points
+// away from it; `outsideSign` flips the normal so it points to the carton's outside.
+function panel(origin, along, out, outline, outsideSign) {
+  const points = outline.map(([u, v]) => add(origin, add(scale(along, u), scale(out, v))))
+  const outsideNormal = scale(cross(along, out), outsideSign)
+  return { points, showsOutside: dot(outsideNormal, VIEWER) > 0 }
+}
+
+// Lid (with its tuck flap) hinged along x. sgnY is the direction the closed lid
+// lies in (+1 toward the front); sgnZ is the side it opens to (+1 up, -1 down).
+function lidAssembly({ w, l }, hinge, sgnY, sgnZ, fold, openAngle, tuckLength) {
+  const angle = openAngle * fold
+  const tuckAngle = TUCK_FOLDED * (1 - clamp01(fold / TUCK_STRAIGHT_BY))
+  const direction = (theta) => [0, sgnY * Math.cos(theta), sgnZ * Math.sin(theta)]
+  const along = [1, 0, 0]
+  const outsideSign = sgnY * sgnZ
+  const lidOut = direction(angle)
+  const lid = panel(hinge, along, lidOut, [[0, 0], [l, 0], [l, w], [0, w]], outsideSign)
+  const tuckOrigin = add(hinge, scale(lidOut, w))
+  const tuck = panel(tuckOrigin, along, direction(angle - tuckAngle), tuckFlapOutline(l, tuckLength), outsideSign)
+  return { lid, tuck, angle, tuckAngle }
+}
+
+// Dust flap hinged along y on the x = xHinge edge. outward is -1 or +1 (which side
+// of the carton), rise is +1 for the top end and -1 for the bottom end.
+function dustFlap({ w }, xHinge, z, outward, rise, fold, height) {
+  const angle = DUST_FLAP_OPEN * fold
+  const out = [-outward * Math.cos(angle), 0, rise * Math.sin(angle)]
+  const flap = panel([xHinge, 0, z], [0, 1, 0], out, dustFlapOutline(w, height), outward * rise)
+  return { ...flap, angle }
+}
+
+// ---------- painting ----------
+
+function face(points3d, fill) {
+  return { points: points3d.map(project), fill }
+}
+
+function flapFace(flap, insideFill = COLORS.flapInside) {
+  return face(flap.points, flap.showsOutside ? COLORS.outside : insideFill)
 }
 
 function printPanel({ w, l, d }) {
@@ -91,84 +142,73 @@ function printPanel({ w, l, d }) {
   return [[marginX, w, bottom], [l - marginX, w, bottom], [l - marginX, w, top], [marginX, w, top]]
 }
 
-// Lid panel plus tuck flap, hinged on an edge running along x at (y0, z0).
-// `lean` is +1 to fall toward the viewer (front hinge), -1 to lean away (back hinge);
-// `rise` is +1 for a lid standing up from the top, -1 for one hanging from the bottom.
-function lidPanels({ w, l }, { y0, z0, lean, rise }, tilt, tuckLength) {
-  const place = ([u, v]) => [u, y0 + lean * Math.sin(tilt) * v, z0 + rise * Math.cos(tilt) * v]
-  const lid = [[0, 0], [l, 0], [l, w], [0, w]].map(place)
-  const tuck = tuckFlapOutline(l, tuckLength).map(([u, v]) => place([u, v + w]))
-  return { lid, tuck }
-}
+// Painter's order, back to front. The box is convex, so its two visible walls hide
+// everything behind them except what shows through the open top. Flaps switch
+// between "folded against the box" and "swung out" ordering at FLAT_ANGLE.
+export function cartonPolygons(state) {
+  const { w, l, d, style } = state
+  const { tuck, dust } = flapSizes(state)
+  const reverse = style === "reverse"
 
-// Dust flap hinged on the x = xHinge edge at height z0, splayed outward.
-function dustFlap({ w }, { xHinge, outward, z0, rise }, height) {
-  return dustFlapOutline(w, height).map(([u, v]) => [
-    xHinge + outward * Math.sin(DUST_FLAP_TILT) * v,
-    u,
-    z0 + rise * Math.cos(DUST_FLAP_TILT) * v,
-  ])
-}
+  const topLid = lidAssembly(state, [0, 0, d], 1, 1, state.topLid, TOP_LID_OPEN, tuck)
+  const bottomLid = reverse
+    ? lidAssembly(state, [0, w, 0], -1, -1, state.bottomLid, BOTTOM_LID_OPEN, tuck)
+    : lidAssembly(state, [0, 0, 0], 1, -1, state.bottomLid, BOTTOM_LID_OPEN, tuck)
+  const topLeft = dustFlap(state, 0, d, -1, 1, state.topDust, dust)
+  const topRight = dustFlap(state, l, d, 1, 1, state.topDust, dust)
+  const bottomLeft = dustFlap(state, 0, 0, -1, -1, state.bottomDust, dust)
+  const bottomRight = dustFlap(state, l, 0, 1, -1, state.bottomDust, dust)
 
-// Paint order is back to front; the box is convex, so its front walls hide
-// everything behind them except what shows through the open top.
-export function cartonPolygons(size, style, view) {
-  const { w, l, d } = size
-  const walls = boxWalls(size)
-  const { tuck, dust } = flapSizes(size)
-  const shapes = []
+  const before = []
+  const after = []
+  const bottomLidInFront = reverse && bottomLid.angle >= FLAT_ANGLE
+  const bottomTuckHidden = bottomLid.tuckAngle >= FLAT_ANGLE
+  ;(bottomLidInFront ? after : before).push(flapFace(bottomLid.lid))
+  ;(bottomLidInFront && !bottomTuckHidden ? after : before).push(flapFace(bottomLid.tuck))
+  before.push(flapFace(bottomLeft))
+  ;(bottomRight.angle >= FLAT_ANGLE ? after : before).push(flapFace(bottomRight))
 
-  if (view === "closed") {
-    shapes.push(polygon(walls.top, COLORS.top))
-    shapes.push(polygon(walls.front, COLORS.outside))
-    shapes.push(polygon(walls.right, COLORS.outsideShade))
-    shapes.push(polygon(printPanel(size), COLORS.print))
-    return shapes
-  }
+  const interior = [
+    face([[0, 0, 0], [l, 0, 0], [l, w, 0], [0, w, 0]], COLORS.insideDeep),
+    face([[0, 0, 0], [l, 0, 0], [l, 0, d], [0, 0, d]], COLORS.inside),
+    face([[0, 0, 0], [0, w, 0], [0, w, d], [0, 0, d]], COLORS.insideDeep),
+  ]
+  const topTuckHidden = topLid.tuckAngle >= FLAT_ANGLE
+  const walls = [
+    face([[0, w, 0], [l, w, 0], [l, w, d], [0, w, d]], COLORS.outside),
+    face([[l, 0, 0], [l, w, 0], [l, w, d], [l, 0, d]], COLORS.outsideShade),
+    face(printPanel(state), COLORS.print),
+  ]
 
-  const topLid = lidPanels(size, { y0: 0, z0: d, lean: -1, rise: 1 }, LID_TILT, tuck)
-  const bottomHingeFront = style === "reverse"
-  const bottomLid = lidPanels(
-    size,
-    bottomHingeFront ? { y0: w, z0: 0, lean: 1, rise: -1 } : { y0: 0, z0: 0, lean: -1, rise: -1 },
-    BOTTOM_LID_TILT,
-    tuck,
-  )
+  const lidFaces = [flapFace(topLid.lid), ...(topTuckHidden ? [] : [flapFace(topLid.tuck)])]
+  const dustFaces = [flapFace(topLeft), flapFace(topRight)]
+  const topFaces = topLid.angle >= FLAT_ANGLE ? [...lidFaces, ...dustFaces] : [...dustFaces, ...lidFaces]
 
-  if (!bottomHingeFront) {
-    shapes.push(polygon(bottomLid.lid, COLORS.flapInside), polygon(bottomLid.tuck, COLORS.flapInside))
-  }
-  shapes.push(polygon(dustFlap(size, { xHinge: 0, outward: -1, z0: 0, rise: -1 }, dust), COLORS.flapInside))
-  shapes.push(polygon(topLid.lid, COLORS.flapInside), polygon(topLid.tuck, COLORS.flapInside))
-  shapes.push(polygon(dustFlap(size, { xHinge: 0, outward: -1, z0: d, rise: 1 }, dust), COLORS.flapInside))
-  shapes.push(polygon(walls.floor, COLORS.insideDeep))
-  shapes.push(polygon(walls.innerBack, COLORS.inside))
-  shapes.push(polygon(walls.innerLeft, COLORS.insideDeep))
-  shapes.push(polygon(walls.front, COLORS.outside))
-  shapes.push(polygon(walls.right, COLORS.outsideShade))
-  shapes.push(polygon(printPanel(size), COLORS.print))
-  shapes.push(polygon(dustFlap(size, { xHinge: l, outward: 1, z0: d, rise: 1 }, dust), COLORS.outside))
-  shapes.push(polygon(dustFlap(size, { xHinge: l, outward: 1, z0: 0, rise: -1 }, dust), COLORS.outside))
-  if (bottomHingeFront) {
-    shapes.push(polygon(bottomLid.lid, COLORS.outside), polygon(bottomLid.tuck, COLORS.outside))
-  }
-  return shapes
+  return [
+    ...before,
+    ...interior,
+    ...(topTuckHidden ? [flapFace(topLid.tuck)] : []),
+    ...walls,
+    ...after,
+    ...topFaces,
+  ]
 }
 
 function formatInches(value) {
   return `${Number(value.toFixed(2))} in.`
 }
 
-// Dimension lines drawn just outside the edges they measure.
-function dimensionLines({ w, l, d }, view) {
-  const lines = []
+// L and W are measured along the bottom edges, so they show only while the bottom is
+// shut. They always count toward the frame, so the drawing doesn't jump when they appear.
+function dimensionLines(state) {
+  const { w, l, d } = state
   const offset = DIMENSION_OFFSET
-  lines.push({ from: [0, w + offset, 0], to: [0, w + offset, d], label: `D ${formatInches(d)}`, anchor: "end", nudge: [-8, 0] })
-  if (view === "closed") {
-    lines.push({ from: [0, w + offset, 0], to: [l, w + offset, 0], label: `L ${formatInches(l)}`, anchor: "end", nudge: [-6, 18] })
-    lines.push({ from: [l + offset, 0, 0], to: [l + offset, w, 0], label: `W ${formatInches(w)}`, anchor: "start", nudge: [6, 18] })
-  }
-  return lines
+  const bottomShut = state.bottomLid < 0.02 && state.bottomDust < 0.02
+  return [
+    { from: [0, w + offset, 0], to: [0, w + offset, d], label: `D ${formatInches(d)}`, anchor: "end", nudge: [-8, 0], visible: true },
+    { from: [0, w + offset, 0], to: [l, w + offset, 0], label: `L ${formatInches(l)}`, anchor: "end", nudge: [-6, 18], visible: bottomShut },
+    { from: [l + offset, 0, 0], to: [l + offset, w, 0], label: `W ${formatInches(w)}`, anchor: "start", nudge: [6, 18], visible: bottomShut },
+  ]
 }
 
 function bounds(points) {
@@ -184,25 +224,37 @@ function escapeText(text) {
   return String(text).replace(/[&<>"]/g, (character) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" })[character])
 }
 
-export function describeCarton(size, style, view) {
-  const state = view === "closed" ? "assembled" : "with its top and bottom flaps open"
-  return `Isometric model of a ${STYLES[style].label.toLowerCase()} carton ${state}, ${formatInches(size.w)} wide, ${formatInches(size.l)} long and ${formatInches(size.d)} deep, drawn to scale.`
+export function describeCarton(state) {
+  const open = state.topLid > 0.5 || state.bottomLid > 0.5
+  const condition = open ? "with its top and bottom flaps open" : "assembled"
+  return `Isometric model of a ${STYLES[state.style].label.toLowerCase()} carton ${condition}, ${formatInches(state.w)} wide, ${formatInches(state.l)} long and ${formatInches(state.d)} deep, drawn to scale.`
 }
 
-export function renderCartonSvg(size, style, view) {
-  const shapes = cartonPolygons(size, style, view)
-  const dimensions = dimensionLines(size, view).map((line) => ({ ...line, from2: project(line.from), to2: project(line.to) }))
-  const box = bounds([...shapes.flatMap((shape) => shape.points), ...dimensions.flatMap((line) => [line.from2, line.to2])])
-  const pad = PADDING + Math.max(size.w, size.l, size.d) * 0.08
-  const viewBox = [box.minX - pad * 2, box.minY - pad, box.maxX - box.minX + pad * 3, box.maxY - box.minY + pad * 2].map(round)
+function layout(state) {
+  const shapes = cartonPolygons(state)
+  const dimensions = dimensionLines(state).map((line) => ({ ...line, from2: project(line.from), to2: project(line.to) }))
+  return { shapes, dimensions }
+}
 
-  const polygons = shapes
-    .map((shape) => `<polygon points="${pointsAttr(shape.points)}" fill="${shape.fill}"/>`)
-    .join("")
+// [x, y, width, height] that fits the drawing with padding, in inches.
+export function cartonViewBox(state) {
+  const { shapes, dimensions } = layout(state)
+  const box = bounds([...shapes.flatMap((shape) => shape.points), ...dimensions.flatMap((line) => [line.from2, line.to2])])
+  const pad = PADDING + Math.max(state.w, state.l, state.d) * 0.08
+  return [box.minX - pad * 2, box.minY - pad, box.maxX - box.minX + pad * 3, box.maxY - box.minY + pad * 2]
+}
+
+export function renderCartonSvg(state, frame = cartonViewBox(state)) {
+  const { shapes, dimensions } = layout(state)
+  const viewBox = frame.map(round)
+
+  const polygons = shapes.map((shape) => `<polygon points="${pointsAttr(shape.points)}" fill="${shape.fill}"/>`).join("")
+
   // The viewBox is in inches, so text and markers are sized relative to it.
   const fontSize = Math.max(viewBox[2], viewBox[3]) * 0.03
   const pxToUnits = fontSize / 14
   const dims = dimensions
+    .filter((line) => line.visible)
     .map(({ from2, to2, label, anchor, nudge }) => {
       const mid = [(from2[0] + to2[0]) / 2, (from2[1] + to2[1]) / 2]
       const x = round(mid[0] + nudge[0] * pxToUnits)
@@ -212,7 +264,7 @@ export function renderCartonSvg(size, style, view) {
     })
     .join("")
 
-  return `<svg class="carton-svg" viewBox="${viewBox.join(" ")}" role="img" aria-label="${escapeText(describeCarton(size, style, view))}" preserveAspectRatio="xMidYMid meet"><g class="carton-faces" stroke="${COLORS.ink}" stroke-opacity=".85" stroke-width="1" stroke-linejoin="round">${polygons}</g>${dims}</svg>`
+  return `<svg class="carton-svg" viewBox="${viewBox.join(" ")}" role="img" aria-label="${escapeText(describeCarton(state))}" preserveAspectRatio="xMidYMid meet"><g class="carton-faces" stroke="${COLORS.ink}" stroke-opacity=".85" stroke-width="1" stroke-linejoin="round">${polygons}</g>${dims}</svg>`
 }
 
 // Sizes between table rows are priced as the cheapest listed size that fits.

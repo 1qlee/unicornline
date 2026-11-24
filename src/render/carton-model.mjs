@@ -1,5 +1,5 @@
 import { escapeHtml as e } from "../format.mjs"
-import { renderCartonSvg, itemForSize, sizeLimits, sizeMessage, STYLES, VIEWS } from "../../static/js/carton.js"
+import { renderCartonSvg, cartonState, itemForSize, sizeLimits, sizeMessage, STYLES, VIEWS } from "../../static/js/carton.js"
 
 const SIZE_STEP = 0.25
 const MIN_SIZE = 1
@@ -34,7 +34,7 @@ export function cartonModelRow(model) {
   return `<div class="srow">
 <h3 style="font-size:20px">Size it up</h3>
 <div class="carton" data-carton>
-<div class="carton-stage" data-carton-stage>${renderCartonSvg(size, DEFAULT_STYLE, DEFAULT_VIEW)}</div>
+<div class="carton-stage" data-carton-stage>${renderCartonSvg(cartonState(size, DEFAULT_STYLE, DEFAULT_VIEW))}</div>
 <form class="carton-controls" data-carton-controls>
 ${segmented("style", "Style", styleOptions, DEFAULT_STYLE)}
 ${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
