@@ -285,7 +285,6 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .price-row div{padding:var(--space-2) var(--space-2) var(--space-2) 0;border-bottom:var(--border-hairline) solid var(--rule-soft)}
 .price-row dt{font-size:14px;line-height:1.3;font-weight:700}
 .price-row dd{margin:var(--space-1) 0 0;font-size:16px;line-height:1.4}
-.carton-note{margin-top:calc(var(--space-4) * -1)}
 @media (max-width:640px){.carton-controls{grid-template-columns:minmax(0,1fr)}}
 .carton-controls fieldset{border:0;margin:0;padding:0;min-width:0}
 .carton-controls legend{font-size:14px;line-height:1.3;font-weight:700;margin-bottom:var(--space-2);padding:0}
