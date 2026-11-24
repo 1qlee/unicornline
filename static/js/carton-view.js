@@ -3,6 +3,7 @@
 
 import { renderCartonSvg, cartonViewBox, cartonState, itemForSize, sizeLimits, sizeMessage } from "/js/carton.js"
 import { priceRowHtml } from "/js/price-row.js"
+import "/js/segmented.js"
 
 const MIN_SIZE = 1
 const FOLD_DURATION_MS = 1100

@@ -15,10 +15,10 @@ const DIMENSIONS = [
 function segmented(name, legend, options, selected) {
   const inputs = Object.entries(options)
     .map(
-      ([value, label]) => `<label><input type="radio" name="${name}" value="${e(value)}"${value === selected ? " checked" : ""}><span>${e(label)}</span></label>`,
+      ([value, label]) => `<label class="sc-item"><input type="radio" name="${name}" value="${e(value)}"${value === selected ? " checked" : ""}><span>${e(label)}</span></label>`,
     )
     .join("")
-  return `<fieldset class="seg"><legend>${legend}</legend><div>${inputs}</div></fieldset>`
+  return `<fieldset class="seg"><legend>${legend}</legend><div class="sc" data-segmented>${inputs}</div></fieldset>`
 }
 
 function defaultState(model) {
