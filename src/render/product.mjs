@@ -75,26 +75,32 @@ function gallery(product, config) {
   ]
   const thumbs = items.length > 1 ? `<ul class="thumbs" aria-label="Product photos and videos">${items.join("")}</ul>` : ""
   const mainImage = `<img src="${e(mainImageUrl(config, first))}" srcset="${e(srcset(config, first))}" sizes="${MAIN_IMAGE_SIZES}" alt="${e(first.alt)}" width="${first.width}" height="${first.height}"${model ? " hidden" : ' fetchpriority="high"'} data-gallery-main>`
-  return `<div${model ? " data-carton" : ""}>
+  return `<div>
 <div class="pstage2" data-gallery-stage>${model ? cartonModelPanel(model) : ""}${mainImage}</div>
 ${thumbs}
-${model ? cartonModelControls(model) : ""}
 </div>`
 }
 
+function quoteAction(product, company, config) {
+  return `<div class="pcta">
+<a href="${e(quoteUrlFor(config.quoteUrl, product.name))}" class="btn">Get a free quote</a>
+<p>Or call <a href="tel:${e(company.phoneE164)}">${e(company.phone)}</a></p>
+</div>`
+}
+
+// A product with a carton model puts the model's controls where the quote button
+// would be; the header still carries the quote button and phone number.
 function productTop(product, category, catalog, config) {
   const { company } = catalog
+  const { model } = product
   return `<section class="wrap ptop-sec">
 ${breadcrumb(product, category)}
-<div class="ptop">
+<div class="ptop"${model ? " data-carton" : ""}>
 <div class="stack-6">
 <h1 class="display-md">${e(product.name)}</h1>
 <p class="lead">${e(product.description)}</p>
 ${documentLinks(product, company, config)}
-<div class="pcta">
-<a href="${e(quoteUrlFor(config.quoteUrl, product.name))}" class="btn">Get a free quote</a>
-<p>Or call <a href="tel:${e(company.phoneE164)}">${e(company.phone)}</a></p>
-</div>
+${model ? cartonModelControls(model) : quoteAction(product, company, config)}
 </div>
 ${gallery(product, config)}
 </div>

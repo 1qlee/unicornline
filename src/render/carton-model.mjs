@@ -44,7 +44,7 @@ export function cartonModelControls(model) {
   ).join("")
   const sizesJson = JSON.stringify(model.sizes).replace(/</g, "\\u003c")
 
-  return `<form class="carton-controls" id="carton-controls" aria-label="Carton model" data-carton-controls data-gallery-model>
+  return `<form class="carton-controls" id="carton-controls" aria-label="Carton model" data-carton-controls>
 ${segmented("style", "Style", styleOptions, DEFAULT_STYLE)}
 ${segmented("view", "View", VIEWS, DEFAULT_VIEW)}
 <fieldset class="dims"><legend>Size in inches</legend><div>${sizeInputs}</div></fieldset>

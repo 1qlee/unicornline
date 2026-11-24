@@ -274,7 +274,7 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .carton-dim line{stroke:var(--blue);stroke-width:1}
 .carton-dim circle{fill:var(--blue)}
 .carton-dim text{fill:var(--ink);font-family:var(--font-sans);font-weight:600}
-.carton-controls{display:flex;flex-direction:column;gap:var(--space-6);margin-top:var(--space-8)}
+.carton-controls{display:flex;flex-direction:column;gap:var(--space-6);width:100%;max-width:30em}
 .carton-controls fieldset{border:0;margin:0;padding:0;min-width:0}
 .carton-controls legend{font-size:14px;line-height:1.3;font-weight:700;margin-bottom:var(--space-2);padding:0}
 /* segmented control: paper with an ink border; the selected segment is ink */

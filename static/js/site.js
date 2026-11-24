@@ -216,6 +216,7 @@ function setUpHeadingReveal() {
 
 // The stage holds the carton model (when there is one) and the main photo side
 // by side; switching hides one rather than removing it, so the model keeps its state.
+// Changing a model control while a photo shows brings the model back.
 function setUpGallery() {
   const stage = document.querySelector("[data-gallery-stage]")
   const main = document.querySelector("[data-gallery-main]")
@@ -248,6 +249,11 @@ function setUpGallery() {
     show(frame)
     stage.append(frame)
   }
+
+  const modelLink = links.find((link) => "model" in link.dataset)
+  document.querySelector("[data-carton-controls]")?.addEventListener("input", () => {
+    if (modelLink && modelLink.getAttribute("aria-current") !== "true") modelLink.click()
+  })
 
   for (const link of links) {
     link.addEventListener("click", (event) => {
