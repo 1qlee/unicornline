@@ -196,7 +196,7 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .crumbs [aria-current]{font-weight:400;color:var(--ink-muted)}
 .ptop{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:var(--space-16);align-items:start}
 .dl{display:flex;flex-wrap:wrap;gap:0 var(--space-6);font-size:16px}
-.dl a{min-height:var(--size-target);display:inline-flex;align-items:center;font-weight:600}
+.dl a{min-height:var(--size-target);display:inline-flex;align-items:flex-start;font-weight:600}
 .pcta{display:flex;flex-wrap:wrap;align-items:center;gap:var(--space-3) var(--space-6)}
 .pcta p{font-size:16px}
 .pcta p a{font-weight:600}
