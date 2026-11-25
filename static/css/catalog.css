@@ -1,7 +1,7 @@
 /* Unicorn Line catalog, built on the Unicorn Graphics design system.
    Tokens mirror the system's tokens.json; components follow its guidelines.
    The catalog is a functional page: no decoration, and motion only for hover,
-   focus, the loader, the carton model and the home page heading reveal. */
+   focus, the loader and the carton model. */
 
 @font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(/fonts/archivo-latin-ext-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
 @font-face{font-family:'Archivo';font-style:normal;font-display:swap;font-weight:100 900;font-stretch:62% 125%;src:url(/fonts/archivo-latin-wdth-normal.woff2) format('woff2-variations');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
@@ -114,28 +114,6 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .ftr nav{display:flex;flex-wrap:wrap;gap:var(--space-12) var(--space-16)}
 .ftr-col{display:flex;flex-direction:column;gap:var(--space-2)}
 .ftr-col p{font-weight:700}
-
-/* ---------- heading reveal (home page only) ----------
-   Six horizontal bands, each wiped in from the left, top band first, like an inkjet pass.
-   Each keyframe finishes one more band, so linear timing gives six equal steps. */
-:root{
-  --bands:linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000),linear-gradient(#000,#000);
-  --band-positions:0 0,0 20%,0 40%,0 60%,0 80%,0 100%;
-}
-@keyframes reveal{
-  0%{-webkit-mask-size:0 18%,0 18%,0 18%,0 18%,0 18%,0 18%;mask-size:0 18%,0 18%,0 18%,0 18%,0 18%,0 18%}
-  16.667%{-webkit-mask-size:100% 18%,0 18%,0 18%,0 18%,0 18%,0 18%;mask-size:100% 18%,0 18%,0 18%,0 18%,0 18%,0 18%}
-  33.333%{-webkit-mask-size:100% 18%,100% 18%,0 18%,0 18%,0 18%,0 18%;mask-size:100% 18%,100% 18%,0 18%,0 18%,0 18%,0 18%}
-  50%{-webkit-mask-size:100% 18%,100% 18%,100% 18%,0 18%,0 18%,0 18%;mask-size:100% 18%,100% 18%,100% 18%,0 18%,0 18%,0 18%}
-  66.667%{-webkit-mask-size:100% 18%,100% 18%,100% 18%,100% 18%,0 18%,0 18%;mask-size:100% 18%,100% 18%,100% 18%,100% 18%,0 18%,0 18%}
-  83.333%{-webkit-mask-size:100% 18%,100% 18%,100% 18%,100% 18%,100% 18%,0 18%;mask-size:100% 18%,100% 18%,100% 18%,100% 18%,100% 18%,0 18%}
-  100%{-webkit-mask-size:100% 18%,100% 18%,100% 18%,100% 18%,100% 18%,100% 18%;mask-size:100% 18%,100% 18%,100% 18%,100% 18%,100% 18%,100% 18%}
-}
-@media (prefers-reduced-motion:no-preference){
-  .reveal-pre,.reveal-go{-webkit-mask-image:var(--bands);mask-image:var(--bands);-webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;-webkit-mask-position:var(--band-positions);mask-position:var(--band-positions)}
-  .reveal-pre{-webkit-mask-size:0 18%;mask-size:0 18%}
-  .reveal-go{animation:reveal .65s linear both}
-}
 
 /* ---------- loader: four lines printed row by row ---------- */
 .loader{--loader-size:24px;display:inline-flex;flex-direction:column;justify-content:space-between;width:var(--loader-size);height:var(--loader-size);padding-block:calc(var(--loader-size) * .08);box-sizing:border-box;vertical-align:middle;flex:none}

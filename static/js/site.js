@@ -207,26 +207,6 @@ function setUpSearch() {
   })
 }
 
-function setUpHeadingReveal() {
-  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches
-  if (reduceMotion || !("IntersectionObserver" in window)) return
-  const observer = new IntersectionObserver(
-    (entries) => {
-      for (const entry of entries) {
-        if (!entry.isIntersecting) continue
-        entry.target.classList.remove("reveal-pre")
-        entry.target.classList.add("reveal-go")
-        observer.unobserve(entry.target)
-      }
-    },
-    { threshold: 0.3 },
-  )
-  for (const heading of document.querySelectorAll("[data-reveal]")) {
-    heading.classList.add("reveal-pre")
-    observer.observe(heading)
-  }
-}
-
 // The stage holds the carton model (when there is one) and the main photo side
 // by side; switching hides one rather than removing it, so the model keeps its state.
 // Changing a model control while a photo shows brings the model back.
@@ -282,5 +262,4 @@ function setUpGallery() {
 
 setUpSearch()
 setUpStickySearch()
-setUpHeadingReveal()
 setUpGallery()

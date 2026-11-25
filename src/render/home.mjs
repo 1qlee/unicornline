@@ -37,7 +37,7 @@ function indexSection(catalog) {
     .map((category) => `<a href="#${e(category.slug)}">${e(category.name)}<span>${category.products.length}</span></a>`)
     .join("")
   return `<section id="index" class="wrap sec index" aria-labelledby="index-h">
-<h1 id="index-h" class="heading-xl" data-reveal>Explore the catalog</h1>
+<h1 id="index-h" class="heading-xl">Explore the catalog</h1>
 <p class="lead index-lead">${e(catalog.company.lede)}</p>
 <div class="search-bar" data-search-bar>${searchBox(catalog.products.length)}</div>
 <div class="ix">
