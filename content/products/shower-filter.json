@@ -1,0 +1,105 @@
+{
+  "slug": "shower-filter",
+  "name": "Shower Filter",
+  "categories": [
+    "skincare"
+  ],
+  "description": "A shower filter, custom packed with a full-color printed band.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Shower filter made in Korea",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Band: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the band"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2580",
+        "Shower Filter",
+        "30.66",
+        "29.43",
+        "29.02",
+        "28.39",
+        "28.00",
+        "27.88"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/shower-filter/main-skincare-11.png",
+    "alt": "Boxed vitamin C shower filter in a milk carton style package wrapped with a custom printed band.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/shower-filter/skincare-12.png",
+      "alt": "U2580 shower filter box with custom band, showing band and product dimensions and a product description.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gloves-socks/template-banding.pdf",
+      "bytes": 19395
+    },
+    "catalogPage": {
+      "key": "files/bath-salt/catalog-2023-web-19.pdf",
+      "bytes": 602218
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

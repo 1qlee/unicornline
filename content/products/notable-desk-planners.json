@@ -1,0 +1,159 @@
+{
+  "slug": "notable-desk-planners",
+  "name": "Notable™ (Desk Planners)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Custom printed desk planners with full-color artwork and paper suited to fountain pens. The planner is undated, so you fill in the dates yourself, which helps you stay organized on busy days.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "24pt cardboard backing",
+      "Glue padded at the top",
+      "Made in USA"
+    ],
+    "materials": [
+      "Paper: 60# opaque text (12 sheets)"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3280",
+        "12 x 18 in.",
+        "14.08",
+        "9.08",
+        "7.41",
+        "6.58",
+        "6.08",
+        "5.74",
+        "5.09",
+        "4.60",
+        "3.92",
+        "3.04",
+        "2.58",
+        "2.13",
+        "1.77",
+        "1.50",
+        "1.41",
+        "1.36"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/notable-desk-planners/main-lifestyle-14.png",
+    "alt": "Three desk planner pads, monthly plan, project planner and weekly plan, each with a small logo in the corner.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-desk-planners/lifestyle-49.png",
+      "alt": "12 x 18 inch monthly plan desk pad with a calendar grid, to-do lines, a dot-grid notes column and a corner logo.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-desk-planners/lifestyle-50.png",
+      "alt": "Standard artwork options for the desk planner: monthly plan, project planner and weekly plan layouts.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/notable-desk-planners/catalog-2023-web-36.pdf",
+      "bytes": 547628
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

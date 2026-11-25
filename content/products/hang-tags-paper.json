@@ -1,0 +1,246 @@
+{
+  "slug": "hang-tags-paper",
+  "name": "Hang Tags (Paper)",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full-color hang tags on coated stock.",
+  "notesHtml": "<p>You can order sizes not listed in the size table. They are priced as the next larger size.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Separate artwork allowed for front and back",
+      "1 thickness",
+      "15 standard shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5430 - 5445: 130# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on two sides"
+    ],
+    "options": [
+      "Artwork change: $37 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 7C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5430",
+        "Two sides",
+        "1.31",
+        "0.63",
+        "0.41",
+        "0.30",
+        "0.23",
+        "0.21",
+        "0.19"
+      ],
+      [
+        "U5431",
+        "Two sides",
+        "1.35",
+        "0.68",
+        "0.46",
+        "0.34",
+        "0.28",
+        "0.25",
+        "0.19"
+      ],
+      [
+        "U5432",
+        "Two sides",
+        "1.40",
+        "0.73",
+        "0.50",
+        "0.39",
+        "0.32",
+        "0.30",
+        "0.19"
+      ],
+      [
+        "U5433, 5434",
+        "Two sides",
+        "1.42",
+        "0.75",
+        "0.53",
+        "0.41",
+        "0.35",
+        "0.33",
+        "0.19"
+      ],
+      [
+        "U5435",
+        "Two sides",
+        "1.43",
+        "0.75",
+        "0.53",
+        "0.42",
+        "0.35",
+        "0.33",
+        "0.30"
+      ],
+      [
+        "U5436",
+        "Two sides",
+        "1.45",
+        "0.77",
+        "0.55",
+        "0.44",
+        "0.37",
+        "0.35",
+        "0.19"
+      ],
+      [
+        "U5437, 5438",
+        "Two sides",
+        "1.50",
+        "0.83",
+        "0.60",
+        "0.49",
+        "0.42",
+        "0.40",
+        "0.30"
+      ],
+      [
+        "U5439",
+        "Two sides",
+        "1.47",
+        "0.80",
+        "0.57",
+        "0.46",
+        "0.39",
+        "0.35",
+        "0.19"
+      ],
+      [
+        "U5440",
+        "Two sides",
+        "1.49",
+        "0.81",
+        "0.59",
+        "0.47",
+        "0.41",
+        "0.38",
+        "0.30"
+      ],
+      [
+        "U5441",
+        "Two sides",
+        "1.53",
+        "0.85",
+        "0.62",
+        "0.51",
+        "0.44",
+        "0.42",
+        "0.30"
+      ],
+      [
+        "U5442, 5443",
+        "Two sides",
+        "1.55",
+        "0.87",
+        "0.65",
+        "0.53",
+        "0.47",
+        "0.44",
+        "0.30"
+      ],
+      [
+        "U5444",
+        "Two sides",
+        "1.59",
+        "0.91",
+        "0.68",
+        "0.57",
+        "0.50",
+        "0.48",
+        "0.30"
+      ],
+      [
+        "U5445",
+        "Two sides",
+        "1.66",
+        "0.98",
+        "0.75",
+        "0.64",
+        "0.57",
+        "0.55",
+        "0.30"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/hang-tags-paper/main-accessory-8.png",
+    "alt": "Shape guide of 15 blank paper hang tag die-cuts with punched holes, including rectangles, arches, ovals and a shield.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/hang-tags-paper/accessory-13.png",
+      "alt": "Hang Tags Paper Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/hang-tags-paper/template-hang-tags.pdf",
+      "bytes": 109506
+    },
+    "catalogPage": {
+      "key": "files/hang-tags-paper/catalog-2023-web-69.pdf",
+      "bytes": 160507
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

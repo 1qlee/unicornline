@@ -1,0 +1,167 @@
+{
+  "slug": "herb-seeds",
+  "name": "Herb Seeds",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Custom-packed herb seeds. Growing herbs from seed is easy, even for busy people, and home-grown herbs are as fresh and chemical-free as possible for a fraction of the price of farm-to-table produce.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on front and back"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4541",
+        "Greek Oregano",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4542",
+        "Genovese Basil",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4543",
+        "Sweet Marjoram",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4544",
+        "Italian Parsley",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4545",
+        "Dill",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4546",
+        "Common Chive",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/herb-seeds/main-eating-well-13.png",
+    "alt": "Front and back of a lime green herb seed packet for dill with a \"Your Logo\" area and printed growing instructions.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/herb-seeds/eating-well-39.png",
+      "alt": "Custom dill seed packet shown front and open back with seed pouch, with the 4\" x 3 3/4\" packet size.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/herb-seeds/eating-well-40.png",
+      "alt": "Text panel titled \"Growing Fresh Herbs from Seeds\" describing six herbs over a background of leafy greens.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/herb-seeds/eating-well-41.png",
+      "alt": "Six herb seed options in circles: Greek Oregano, Genovese Basil, Sweet Marjoram, Italian Parsley, Dill and Common Chive.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/herb-seeds/template-herb-seeds.pdf",
+      "bytes": 387473
+    },
+    "catalogPage": {
+      "key": "files/herb-seeds/catalog-2023-web-55.pdf",
+      "bytes": 734079
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

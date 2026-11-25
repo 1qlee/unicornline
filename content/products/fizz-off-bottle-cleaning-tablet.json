@@ -1,0 +1,119 @@
+{
+  "slug": "fizz-off-bottle-cleaning-tablet",
+  "name": "Bottle Cleaning Tablets (Fizz off™)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "A biodegradable, chlorine-free cleaning tablet for tumblers and bottles. The tablet dissolves in water and creates bubbles that clean stubborn stains and odors without harsh chemicals.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Bottle cleaning tablets made in China",
+      "Individually packaged tablets",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Package: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on outside of packaging"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3080",
+        "Bottle Cleaner",
+        "5.26",
+        "3.89",
+        "2.76",
+        "2.12",
+        "1.73",
+        "1.60"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/fizz-off-bottle-cleaning-tablet/main-lifestyle-1.png",
+    "alt": "Fizz Off bottle cleaning tablet banner with a stainless bottle shown before and after cleaning and a tablet fizzing in water.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/fizz-off-bottle-cleaning-tablet/lifestyle-13.png",
+      "alt": "Fizz Off promo graphic with a before-and-after steel bottle and a hand holding a clear bottle of fizzing water.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/fizz-off-bottle-cleaning-tablet/lifestyle-14.png",
+      "alt": "Three-step instructions diagram: drop a tablet in warm water, wait 15 to 30 minutes, then rinse the bottle.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/fizz-off-bottle-cleaning-tablet/lifestyle-12.png",
+      "alt": "Open tablet sleeve and closed 3 1/2 x 2 1/2 inch package printed with a sample Coffeebear logo, plus feature list.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/fizz-off-bottle-cleaning-tablet/template-bottle-cleaning-tablet.pdf",
+      "bytes": 168212
+    },
+    "catalogPage": {
+      "key": "files/fizz-off-bottle-cleaning-tablet/catalog-2023-web-26.pdf",
+      "bytes": 1191511
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,339 @@
+{
+  "slug": "menus",
+  "name": "Menus",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full-color menus on washable polyester.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No overrun charge",
+      "Two separate artworks for front and back allowed",
+      "One thickness",
+      "More durable than paper",
+      "Ten standard sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5240 - 5249: 10 mil synthetic"
+    ],
+    "printing": [
+      "Digital: full color on two sides"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "No custom shape available"
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Folds",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5240",
+        "Single",
+        "2.94",
+        "2.15",
+        "1.89",
+        "1.76",
+        "1.68",
+        "1.63",
+        "1.59",
+        "1.56",
+        "1.53",
+        "1.47",
+        "1.45",
+        "1.42",
+        "1.40",
+        "1.39",
+        "1.38",
+        "1.38"
+      ],
+      [
+        "U5241",
+        "Single",
+        "4.30",
+        "3.52",
+        "3.26",
+        "3.13",
+        "3.05",
+        "3.00",
+        "2.96",
+        "2.94",
+        "2.90",
+        "2.84",
+        "2.82",
+        "2.79",
+        "2.78",
+        "2.76",
+        "2.76",
+        "2.76"
+      ],
+      [
+        "U5242",
+        "Single",
+        "7.04",
+        "6.26",
+        "6.00",
+        "5.87",
+        "5.79",
+        "5.74",
+        "5.70",
+        "5.68",
+        "5.64",
+        "5.58",
+        "5.56",
+        "5.54",
+        "5.53",
+        "5.51",
+        "5.51",
+        "5.50"
+      ],
+      [
+        "U5243",
+        "Single",
+        "7.04",
+        "6.26",
+        "6.00",
+        "5.87",
+        "5.79",
+        "5.74",
+        "5.70",
+        "5.68",
+        "5.64",
+        "5.58",
+        "5.56",
+        "5.54",
+        "5.53",
+        "5.51",
+        "5.51",
+        "5.50"
+      ],
+      [
+        "U5244",
+        "Bifold",
+        "4.30",
+        "3.52",
+        "3.26",
+        "3.13",
+        "3.05",
+        "3.00",
+        "2.96",
+        "2.94",
+        "2.90",
+        "2.84",
+        "2.82",
+        "2.79",
+        "2.78",
+        "2.76",
+        "2.76",
+        "2.76"
+      ],
+      [
+        "U5245",
+        "Bifold",
+        "7.04",
+        "6.26",
+        "6.00",
+        "5.87",
+        "5.79",
+        "5.74",
+        "5.70",
+        "5.68",
+        "5.64",
+        "5.58",
+        "5.56",
+        "5.54",
+        "5.53",
+        "5.51",
+        "5.51",
+        "5.50"
+      ],
+      [
+        "U5246",
+        "Trifold",
+        "4.30",
+        "3.52",
+        "3.26",
+        "3.13",
+        "3.05",
+        "3.00",
+        "2.96",
+        "2.94",
+        "2.90",
+        "2.84",
+        "2.82",
+        "2.79",
+        "2.78",
+        "2.76",
+        "2.76",
+        "2.76"
+      ],
+      [
+        "U5247",
+        "Trifold",
+        "7.04",
+        "6.26",
+        "6.00",
+        "5.87",
+        "5.79",
+        "5.74",
+        "5.70",
+        "5.68",
+        "5.64",
+        "5.58",
+        "5.56",
+        "5.54",
+        "5.53",
+        "5.51",
+        "5.51",
+        "5.50"
+      ],
+      [
+        "U5248",
+        "8 pages",
+        "15.53",
+        "13.42",
+        "12.72",
+        "12.36",
+        "12.15",
+        "12.01",
+        "11.91",
+        "11.84",
+        "11.73",
+        "11.61",
+        "11.54",
+        "11.47",
+        "11.42",
+        "11.38",
+        "11.37",
+        "11.36"
+      ],
+      [
+        "U5249",
+        "12 pages",
+        "22.17",
+        "19.73",
+        "18.91",
+        "18.50",
+        "18.26",
+        "18.10",
+        "18.03",
+        "17.93",
+        "17.80",
+        "17.65",
+        "17.56",
+        "17.49",
+        "17.43",
+        "17.38",
+        "17.36",
+        "17.35"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/menus/main-accessory-15.png",
+    "alt": "Shape guide of 12 blank menu formats, including flat cards in several sizes plus bifold and trifold layouts.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/menus/accessory-13.png",
+      "alt": "Menus Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/menus/template-menu.pdf",
+      "bytes": 230584
+    },
+    "catalogPage": {
+      "key": "files/menus/catalog-2023-web-66.pdf",
+      "bytes": 171646
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

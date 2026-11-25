@@ -1,0 +1,185 @@
+{
+  "slug": "nuts",
+  "name": "Nuts",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Custom-labeled jars of nuts. Nuts are a popular snack that provide protein, nutrients and healthy fats, and they can promote a healthy heart.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with metal lid",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, glass jar and custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4461",
+        "Cashews",
+        "15.00",
+        "13.59",
+        "13.12",
+        "12.88",
+        "12.74",
+        "12.69"
+      ],
+      [
+        "U4462",
+        "Almonds",
+        "14.00",
+        "12.59",
+        "12.12",
+        "11.88",
+        "11.74",
+        "11.69"
+      ],
+      [
+        "U4463",
+        "Hazelnuts",
+        "16.00",
+        "14.59",
+        "14.12",
+        "13.88",
+        "13.74",
+        "13.69"
+      ],
+      [
+        "U4464",
+        "Pistachios",
+        "14.00",
+        "12.59",
+        "12.12",
+        "11.88",
+        "11.74",
+        "11.69"
+      ],
+      [
+        "U4465",
+        "Walnuts",
+        "13.00",
+        "11.59",
+        "11.12",
+        "10.88",
+        "10.74",
+        "10.69"
+      ],
+      [
+        "U4466",
+        "Pecans",
+        "15.00",
+        "13.59",
+        "13.12",
+        "12.88",
+        "12.74",
+        "12.69"
+      ],
+      [
+        "U3436G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/nuts/main-eating-well-10.png",
+    "alt": "Six clear jars of nuts with custom printed labels, stacked among loose mixed nuts.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/nuts/eating-well-29.png",
+      "alt": "Spec sheet for six nut jars, 2 1/4 x 2 5/8 in., with 7 3/4 x 1 1/2 in. custom side labels.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-31.png",
+      "alt": "Text panel describing six nuts: cashews, almonds, hazelnuts, pistachios, walnuts and pecans.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-32.png",
+      "alt": "Chart of six nut options: cashews, almonds, hazelnuts, pistachios, walnuts and pecans.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/nuts/eating-well-30.png",
+      "alt": "Optional jar gift box, 2 3/8 x 2 3/8 x 2 7/8 in., with full-color custom graphics.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/nuts/template-4oz-glass-nuts.zip",
+      "bytes": 1398572
+    },
+    "catalogPage": {
+      "key": "files/nuts/catalog-2023-web-52.pdf",
+      "bytes": 766067
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

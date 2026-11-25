@@ -1,0 +1,127 @@
+{
+  "slug": "3-wick-candles",
+  "name": "3 Wick Candles",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "A full-color, custom-labeled candle. Made from 100% natural soy wax with clean scents and a cotton wick, these candles burn cooler, cleaner and longer than traditional paraffin wax candles.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Recyclable glass jar",
+      "Handcrafted in USA"
+    ],
+    "materials": [
+      "Package: bulk, custom gloss label"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2220",
+        "French Lavender",
+        "31.83",
+        "30.41",
+        "29.94",
+        "29.70",
+        "29.56",
+        "29.52"
+      ],
+      [
+        "U2221",
+        "Vanilla Cone",
+        "31.83",
+        "30.41",
+        "29.94",
+        "29.70",
+        "29.56",
+        "29.52"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/3-wick-candles/main-aromatherapy-8.png",
+    "alt": "Two 3-wick soy candles in clear glass jars with silver lids and full-color custom labels, French Lavender and Vanilla Cone.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/3-wick-candles/aromatherapy-23.png",
+      "alt": "3-wick candle spec sheet showing French Lavender and Vanilla Cone jars with label size, product size and 14 oz net weight.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/3-wick-candles/aromatherapy-24.png",
+      "alt": "Text panel on soy wax candles listing features such as cotton and paper wicks, phthalate-free oils and up to 45-hour burn.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Red, white and blue badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/2-wick-candles/template-2-3-wick-candle.pdf",
+      "bytes": 2285128
+    },
+    "catalogPage": {
+      "key": "files/3-wick-candles/catalog-2023-web-16.pdf",
+      "bytes": 406248
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "slug": "golf-tee-packs",
+  "name": "Golf Tee Packs",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Full-color custom printed golf tee packs with golf tees.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard sizes",
+      "No overrun charge",
+      "One thickness",
+      "Pack comes with four white golf tees",
+      "3 standard tee lengths",
+      "No custom shapes available",
+      "Made in USA"
+    ],
+    "materials": [
+      "U3050 - 3052: 11.4pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital and offset, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Tee",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3050",
+        "2.125 tee",
+        "5.05",
+        "3.60",
+        "3.12",
+        "2.88",
+        "2.73",
+        "2.64",
+        "2.57",
+        "2.52",
+        "2.44",
+        "2.35",
+        "2.30",
+        "1.95",
+        "1.54",
+        "1.23",
+        "1.13",
+        "1.08"
+      ],
+      [
+        "U3051",
+        "2.75 tee",
+        "5.10",
+        "3.65",
+        "3.16",
+        "2.92",
+        "2.78",
+        "2.68",
+        "2.61",
+        "2.56",
+        "2.49",
+        "2.39",
+        "2.35",
+        "1.95",
+        "1.54",
+        "1.23",
+        "1.13",
+        "1.08"
+      ],
+      [
+        "U3052",
+        "3.25 tee",
+        "5.14",
+        "3.69",
+        "3.21",
+        "2.96",
+        "2.82",
+        "2.72",
+        "2.65",
+        "2.60",
+        "2.53",
+        "2.43",
+        "2.39",
+        "1.95",
+        "1.54",
+        "1.23",
+        "1.13",
+        "1.08"
+      ]
+    ]
+  },
+  "videos": [
+    "f2KlWVqFdKk"
+  ],
+  "thumbnail": {
+    "key": "images/golf-tee-packs/main-lifestyle-3.png",
+    "alt": "Illustration of a matchbook-style golf tee pack, shown open with four white tees and closed.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/golf-tee-packs/lifestyle-3.png",
+      "alt": "Open and closed golf tee pack with package sizes for 2 1/8, 2 3/4 and 3 1/4 inch tees.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/golf-tee-packs/template-golf-tee-packs.pdf",
+      "bytes": 85124
+    },
+    "catalogPage": {
+      "key": "files/golf-tee-packs/catalog-2023-web-23.pdf",
+      "bytes": 286827
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

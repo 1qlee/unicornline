@@ -1,0 +1,127 @@
+{
+  "slug": "mani-pedi",
+  "name": "Mani / Pedi",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full-color, custom-packed K-beauty spa care products. They are 100% vegan and designed for pampering yourself at home.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Product made in Korea",
+      "Band printed in USA"
+    ],
+    "materials": [
+      "Band: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the band"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1100",
+        "Mani in a Box",
+        "8.33",
+        "7.10",
+        "6.69",
+        "6.06",
+        "5.67",
+        "5.54"
+      ],
+      [
+        "U1130",
+        "Pedi in a Box",
+        "8.33",
+        "7.10",
+        "6.69",
+        "6.06",
+        "5.67",
+        "5.54"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/mani-pedi/main-skincare-8.png",
+    "alt": "Mani in a Box and Pedi in a Box lavender spa kits, each wrapped in a custom printed band with a sample logo.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/mani-pedi/skincare-1.png",
+      "alt": "U1100 Mani in a Box kit with custom band, showing band and product dimensions and a product description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/mani-pedi/skincare-2.png",
+      "alt": "U1130 Pedi in a Box kit with custom band, showing band and product dimensions and a product description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/mani-pedi/skincare-4.png",
+      "alt": "Manicured hands resting on bare feet with pink flowers in the background.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gloves-socks/template-banding.pdf",
+      "bytes": 19395
+    },
+    "catalogPage": {
+      "key": "files/mani-pedi/catalog-2023-web-6.pdf",
+      "bytes": 395321
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

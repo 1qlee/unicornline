@@ -1,0 +1,154 @@
+{
+  "slug": "sheet-masks",
+  "name": "Sheet Masks",
+  "categories": [
+    "skincare"
+  ],
+  "description": "A full-color, custom-packed sheet mask in a paper sleeve. The water-based mask has a rose fragrance, follows the contours of the face, and is made from 100% natural cellulose fibers, so it is biodegradable.",
+  "notesHtml": "<p>This refreshing water-based sheet mask is accentuated with a pleasant rose fragrance that leaves the skin hydrated and radiant. The sheet mask is designed to fit to the contours of the face and adhere to the skin. This mask is made from 100% natural cellulose fibers, making it biodegradable and sustainable.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds on all sides",
+      "100% natural cellulose fibers",
+      "Rose scent",
+      "Package printed in USA",
+      "Masks made in Korea",
+      "Shipping weight: 23 lbs per 250"
+    ],
+    "materials": [
+      "Package: 111# gloss cover stock"
+    ],
+    "printing": [
+      "Digital: full color on both sides"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1012",
+        "SM Sleeve",
+        "5.91",
+        "4.76",
+        "4.11",
+        "3.71",
+        "3.46",
+        "3.27"
+      ],
+      [
+        "U1014",
+        "2 Pack Sleeve",
+        "8.25",
+        "7.11",
+        "6.46",
+        "6.07",
+        "5.82",
+        "5.62"
+      ],
+      [
+        "U1015",
+        "5 Pack Carton",
+        "14.93",
+        "14.41",
+        "13.76",
+        "13.31",
+        "12.93",
+        "12.73"
+      ]
+    ]
+  },
+  "videos": [
+    "bIRKVuUXgWo"
+  ],
+  "thumbnail": {
+    "key": "images/sheet-masks/main-skincare-4.png",
+    "alt": "Peach sheet mask packet beside an unfolded white face mask, with a rose and oil scent graphic.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/sheet-masks/beauty-sheet-mask-1.png",
+      "alt": "Sheet mask in a 4 1/4 x 6 inch sleeve envelope printed with colorful geometric panels and a logo.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/sheet-masks/beauty-sheet-mask-3.png",
+      "alt": "Sheet Mask Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/sheet-masks/beauty-sheet-mask-4.png",
+      "alt": "Sheet Mask Instructions",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/sheet-masks/beauty-sheet-mask-5.png",
+      "alt": "Sheet Mask Label, Card, and Sleeve Packaging",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/sheet-masks/beauty-sheet-mask-2.png",
+      "alt": "Five-pack sheet mask box with a printed pink and gold design and four mask packets fanned out beside it.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/sheet-masks/template-sheet-mask.zip",
+      "bytes": 160361
+    },
+    "catalogPage": {
+      "key": "files/sheet-masks/catalog-2023-web-4.pdf",
+      "bytes": 567385
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

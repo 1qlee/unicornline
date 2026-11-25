@@ -1,0 +1,260 @@
+{
+  "slug": "bookmarks",
+  "name": "Bookmarks",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full-color bookmarks on coated stock or durable plastic.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Two separate artworks for front and back allowed",
+      "Five standard shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5160: 130# gloss cover",
+      "U5165: 10 mil PVC",
+      "U5166: 20 mil PVC"
+    ],
+    "printing": [
+      "Digital: full color on one or two sides"
+    ],
+    "options": [
+      "Artwork change: $37 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5160",
+        "One side",
+        "2.83",
+        "1.88",
+        "1.57",
+        "1.41",
+        "1.31",
+        "1.25",
+        "1.20",
+        "1.17",
+        "1.12",
+        "1.06",
+        "1.03",
+        "0.93",
+        "0.59",
+        "0.33",
+        "0.25",
+        "0.20"
+      ],
+      [
+        "U5160",
+        "Two sides",
+        "3.33",
+        "2.21",
+        "1.84",
+        "1.65",
+        "1.54",
+        "1.47",
+        "1.41",
+        "1.37",
+        "1.32",
+        "1.25",
+        "1.21",
+        "0.95",
+        "0.60",
+        "0.34",
+        "0.26",
+        "0.21"
+      ],
+      [
+        "U5165",
+        "One side",
+        "3.05",
+        "2.08",
+        "1.76",
+        "1.60",
+        "1.50",
+        "1.44",
+        "1.40",
+        "1.36",
+        "1.32",
+        "1.25",
+        "1.22",
+        "1.19",
+        "1.16",
+        "1.15",
+        "1.14",
+        "1.14"
+      ],
+      [
+        "U5165",
+        "Two sides",
+        "3.55",
+        "2.41",
+        "2.03",
+        "1.84",
+        "1.73",
+        "1.66",
+        "1.61",
+        "1.57",
+        "1.51",
+        "1.44",
+        "1.40",
+        "1.36",
+        "1.33",
+        "1.31",
+        "1.30",
+        "1.30"
+      ],
+      [
+        "U5166",
+        "One side",
+        "3.22",
+        "2.23",
+        "1.91",
+        "1.74",
+        "1.65",
+        "1.59",
+        "1.54",
+        "1.51",
+        "1.46",
+        "1.40",
+        "1.37",
+        "1.33",
+        "1.31",
+        "1.29",
+        "1.29",
+        "1.28"
+      ],
+      [
+        "U5166",
+        "Two sides",
+        "3.71",
+        "2.56",
+        "2.18",
+        "1.99",
+        "1.88",
+        "1.80",
+        "1.75",
+        "1.71",
+        "1.66",
+        "1.58",
+        "1.54",
+        "1.51",
+        "1.48",
+        "1.46",
+        "1.45",
+        "1.45"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/bookmarks/main-accessory-1.png",
+    "alt": "Shape guide of five bookmark die-cuts: rectangle and arched tops with clip tabs, rounded rectangle and round-top.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/bookmarks/accessory-7.png",
+      "alt": "Bookmarks Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/bookmarks/template-book-mark.pdf",
+      "bytes": 217619
+    },
+    "catalogPage": {
+      "key": "files/bookmarks/catalog-2023-web-64.pdf",
+      "bytes": 154015
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "slug": "candles",
+  "name": "Candles",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "Soy candles inspired by a floral garden and made with natural ingredients such as flowers, plants and trees. They use 100% natural soy wax, clean scents and a wick made only of cotton and paper, so they burn cooler, cleaner and longer than traditional paraffin wax candles.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Recyclable glass jar and metal lid",
+      "Handcrafted in USA"
+    ],
+    "materials": [
+      "Package: bulk, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2201",
+        "Oakmoss and Amber",
+        "12.71",
+        "11.31",
+        "10.83",
+        "10.59",
+        "10.45",
+        "10.40"
+      ],
+      [
+        "U2202",
+        "Lavender",
+        "12.71",
+        "11.31",
+        "10.83",
+        "10.59",
+        "10.45",
+        "10.40"
+      ],
+      [
+        "U2203",
+        "White Birch",
+        "12.71",
+        "11.31",
+        "10.83",
+        "10.59",
+        "10.45",
+        "10.40"
+      ],
+      [
+        "U2204",
+        "Sea Salt and Orchid",
+        "12.71",
+        "11.31",
+        "10.83",
+        "10.59",
+        "10.45",
+        "10.40"
+      ],
+      [
+        "U2205",
+        "Black Sea",
+        "12.71",
+        "11.31",
+        "10.83",
+        "10.59",
+        "10.45",
+        "10.40"
+      ],
+      [
+        "U2206",
+        "Fraser Fir",
+        "12.71",
+        "11.31",
+        "10.83",
+        "10.59",
+        "10.45",
+        "10.40"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "2U5UmEw9hQc"
+  ],
+  "thumbnail": {
+    "key": "images/candles/main-living-well-5.png",
+    "alt": "Group of nine small soy candles in glass jars with black lids and pastel Your Logo labels, two shown lit.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/candles/aromatherapy-17.png",
+      "alt": "Candle spec sheet for items U2201-2206 showing the jar lineup with label size, product size and 1.5 oz net weight.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candles/aromatherapy-18.png",
+      "alt": "Text panel on soy wax candles listing benefits of soy wax and explaining the braided cotton and paper wicks.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candles/aromatherapy-22.png",
+      "alt": "Scent chart with six color circles: Oakmoss & Amber, Lavender, White Birch, Sea Salt & Orchid, Black Sea and Fraser Fir.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candles/aromatherapy-19.png",
+      "alt": "Diagram of an optional cube gift box for the glass jar candle with a Your Logo area and full-color custom graphics.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Red, white and blue badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/candles/template-candle.zip",
+      "bytes": 133910
+    },
+    "catalogPage": {
+      "key": "files/candles/catalog-2023-web-15.pdf",
+      "bytes": 886422
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

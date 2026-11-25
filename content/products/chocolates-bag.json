@@ -1,0 +1,167 @@
+{
+  "slug": "chocolates-bag",
+  "name": "Chocolates (Bag)",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Custom-packed snacks in a clear bag topped with a full-color custom tag, made for gifting to customers.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tags printed in USA",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, 80# gloss cover and clear bag"
+    ],
+    "printing": [
+      "Digital: full color on the tag"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4640",
+        "Mini Pretzels",
+        "9.14",
+        "8.20",
+        "7.89",
+        "7.73",
+        "7.63",
+        "7.60"
+      ],
+      [
+        "U4641",
+        "Andes Mints",
+        "11.14",
+        "10.20",
+        "9.89",
+        "9.73",
+        "9.63",
+        "9.60"
+      ],
+      [
+        "U4642",
+        "Jumbo Malt Balls",
+        "12.14",
+        "11.20",
+        "10.89",
+        "10.73",
+        "10.63",
+        "10.60"
+      ],
+      [
+        "U4643",
+        "Cafe Latte Malt Balls",
+        "16.14",
+        "15.20",
+        "14.89",
+        "14.73",
+        "14.63",
+        "14.60"
+      ],
+      [
+        "U4644",
+        "Dark Chocolate Raisins",
+        "15.14",
+        "14.20",
+        "13.89",
+        "13.73",
+        "13.63",
+        "13.60"
+      ],
+      [
+        "U4645",
+        "Cookie Dough Bites",
+        "15.14",
+        "14.20",
+        "13.89",
+        "13.73",
+        "13.63",
+        "13.60"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/chocolates-bag/main-eating-well-16.png",
+    "alt": "Three clear bags of chocolate malt balls, latte malt balls and chocolate pretzels topped with custom-printed header tags.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/chocolates-bag/eating-well-50.png",
+      "alt": "Basket of six clear chocolate bags with matching custom header tags, with tag and bag dimensions.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chocolates-bag/eating-well-51.png",
+      "alt": "Six chocolate options in circles: Mini Pretzels, Andes Mints, Jumbo, Cafe Latte, Raisins and Cookie Dough.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chocolates-bag/eating-well-52.png",
+      "alt": "Text panel titled \"Chocolates: Heavenly Delights\" describing each of the six chocolate treats offered.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/candies-bag/template-bag-eating-well.pdf",
+      "bytes": 2695358
+    },
+    "catalogPage": {
+      "key": "files/chocolates-bag/catalog-2023-web-58.pdf",
+      "bytes": 467809
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

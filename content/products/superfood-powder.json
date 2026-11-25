@@ -1,0 +1,256 @@
+{
+  "slug": "superfood-powder",
+  "name": "Superfood Powder",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Superfood powders are nutrient rich and high in antioxidants. They give busy people a quick, convenient way to get a balanced meal without preparing a full one, and help meet daily nutritional requirements when added to an existing diet.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "High-quality, food-grade, durable tin-plated steel can",
+      "Fresh packed upon receipt of order in USA"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4401G",
+        "Beet Root Powder",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4402G",
+        "Mesquite Powder",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4403G",
+        "Turmeric Powder",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4404G",
+        "Cacao Powder",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4405G",
+        "Spirulina Powder",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4406G",
+        "Maca Powder",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4401T",
+        "Beet Root Powder",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4402T",
+        "Mesquite Powder",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4403T",
+        "Turmeric Powder",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4404T",
+        "Cacao Powder",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4405T",
+        "Spirulina Powder",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4406T",
+        "Maca Powder",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/superfood-powder/main-eating-well-8.png",
+    "alt": "Six glass jars and six tin cans of superfood powders with custom printed labels, including cacao and spirulina.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/superfood-powder/eating-well-23.png",
+      "alt": "Superfood powder spec sheet with tin cans and glass jars, listing top label, side label and container sizes.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/superfood-powder/eating-well-24.png",
+      "alt": "Text panel titled Organic Superfood Powder describing beet root, mesquite, turmeric, cacao, spirulina and maca.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/superfood-powder/eating-well-25.png",
+      "alt": "Chart of six powder options in circles: beet root, mesquite, turmeric, cacao, spirulina and maca.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Diagram of two optional gift boxes, one for glass jars and one for tin cans, each with a Your Logo area and dimensions.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/superfood-powder/template-superfood-powder.zip",
+      "bytes": 5630047
+    },
+    "catalogPage": {
+      "key": "files/superfood-powder/catalog-2023-web-50.pdf",
+      "bytes": 712081
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

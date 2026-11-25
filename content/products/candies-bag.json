@@ -1,0 +1,167 @@
+{
+  "slug": "candies-bag",
+  "name": "Candies (Bag)",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Custom-packed snacks in a clear bag topped with a full-color custom tag, made for gifting to customers.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tags printed in USA",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, 80# gloss cover and clear bag"
+    ],
+    "printing": [
+      "Digital: full color on the tag"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4660",
+        "Gummy Bears",
+        "9.14",
+        "8.20",
+        "7.89",
+        "7.73",
+        "7.63",
+        "7.60"
+      ],
+      [
+        "U4661",
+        "Fruit Barrels",
+        "8.14",
+        "7.20",
+        "6.89",
+        "6.73",
+        "6.63",
+        "6.60"
+      ],
+      [
+        "U4662",
+        "Butterscotch Buttons",
+        "11.14",
+        "10.20",
+        "9.89",
+        "9.73",
+        "9.63",
+        "9.60"
+      ],
+      [
+        "U4663",
+        "Caramel Squares",
+        "16.14",
+        "15.20",
+        "14.89",
+        "14.73",
+        "14.63",
+        "14.60"
+      ],
+      [
+        "U4664",
+        "Starlight Mints",
+        "8.14",
+        "7.20",
+        "6.89",
+        "6.73",
+        "6.63",
+        "6.60"
+      ],
+      [
+        "U4665",
+        "Salt Water Taffy",
+        "8.14",
+        "7.20",
+        "6.89",
+        "6.73",
+        "6.63",
+        "6.60"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/candies-bag/main-eating-well-15.png",
+    "alt": "Three clear bags of gummy bears, starlight mints and butterscotch, each topped with a green custom-printed header tag.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/candies-bag/eating-well-53.png",
+      "alt": "Basket of six clear candy bags with matching custom header tags, with tag and bag dimensions.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candies-bag/eating-well-54.png",
+      "alt": "Six candy options: Gummy Bears, Fruit Barrels, Butterscotch, Caramel Squares, Starlight Mints and Salt Water Taffy.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/candies-bag/eating-well-55.png",
+      "alt": "Text panel titled \"Candies: Sweet Carnival\" describing each of the six candy flavors offered.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/candies-bag/template-bag-eating-well.pdf",
+      "bytes": 2695358
+    },
+    "catalogPage": {
+      "key": "files/candies-bag/catalog-2023-web-59.pdf",
+      "bytes": 463472
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

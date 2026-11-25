@@ -1,0 +1,226 @@
+{
+  "slug": "notable-notebooks",
+  "name": "Notable™ (Notebooks)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Custom printed notebooks with a full-color cover, one PMS ink color inside, and paper suited to fountain pens.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Five cover options",
+      "Three popular sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "Cover: 100# uncoated cover",
+      "Inside: 60# opaque text (12 sheets / 48 pages)"
+    ],
+    "printing": [
+      "Cover: full color on 1 side (digital)",
+      "Inside: PMS one color on 2 sides (offset)"
+    ],
+    "options": [
+      "White Ultra Smooth cover: full color printed cover (standard)",
+      "Other covers: add $60 (G) to the base price",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3225",
+        "5 x 7 in.",
+        "9.86",
+        "7.11",
+        "6.20",
+        "5.74",
+        "5.47",
+        "5.08",
+        "4.75",
+        "4.51",
+        "4.17",
+        "3.74",
+        "3.51",
+        "3.16",
+        "2.79",
+        "2.52",
+        "2.43",
+        "2.38"
+      ],
+      [
+        "U3226",
+        "5.5 x 8.5 in.",
+        "9.86",
+        "7.11",
+        "6.20",
+        "5.74",
+        "5.47",
+        "5.08",
+        "4.75",
+        "4.51",
+        "4.17",
+        "3.74",
+        "3.51",
+        "3.28",
+        "2.92",
+        "2.64",
+        "2.55",
+        "2.50"
+      ],
+      [
+        "U3227",
+        "7 x 10 in.",
+        "11.04",
+        "8.30",
+        "7.38",
+        "6.93",
+        "6.65",
+        "6.26",
+        "5.94",
+        "5.70",
+        "5.36",
+        "4.92",
+        "4.68",
+        "4.23",
+        "3.87",
+        "3.59",
+        "3.51",
+        "3.46"
+      ]
+    ]
+  },
+  "videos": [
+    "klGUHCifrXM"
+  ],
+  "thumbnail": {
+    "key": "images/notable-notebooks/main-lifestyle-6.png",
+    "alt": "Two Notable notebooks with full-color city map covers, one kraft brown and one white with blue water.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-notebooks/lifestyle-31.png",
+      "alt": "Notable notebook, 7 x 10 in., with a kraft cover printed with a dark city street map.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notebooks/lifestyle-30.png",
+      "alt": "Notable notebooks in 5 x 7 in. pearlized white and 5 1/2 x 8 1/2 in. white covers with map prints.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notebooks/lifestyle-32.png",
+      "alt": "Inside page options: blank, dotted, graph and ruled, with an open ruled notebook.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-notebooks/lifestyle-33.png",
+      "alt": "Cover stock options: white standard, plus gray, desert, kraft and pearlized white, with print samples on each.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/notable-notebooks/templatenotebook.zip",
+      "bytes": 6915718
+    },
+    "catalogPage": {
+      "key": "files/notable-notebooks/2023-notebooks.pdf",
+      "bytes": 1079839
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

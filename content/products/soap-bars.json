@@ -1,0 +1,173 @@
+{
+  "slug": "soap-bars",
+  "name": "Soap Bars",
+  "categories": [
+    "skincare"
+  ],
+  "description": "A full-color, custom-packed cold process soap bar. Cold process soap relies on natural ingredients and time for saponification, with no heat needed, which makes a soap that is good for the skin.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Cold process soap",
+      "Handcrafted in USA"
+    ],
+    "materials": [
+      "Package: bulk, 80# gloss cover band"
+    ],
+    "printing": [
+      "Digital: full color on the band"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2500",
+        "Lavender",
+        "8.02",
+        "6.79",
+        "6.38",
+        "5.75",
+        "5.37",
+        "5.24"
+      ],
+      [
+        "U2501",
+        "Lemon Zest Scrub",
+        "8.02",
+        "6.79",
+        "6.38",
+        "5.75",
+        "5.37",
+        "5.24"
+      ],
+      [
+        "U2502",
+        "Oatmeal, Milk and Honey",
+        "8.02",
+        "6.79",
+        "6.38",
+        "5.75",
+        "5.37",
+        "5.24"
+      ],
+      [
+        "U2503",
+        "Black Forest",
+        "8.02",
+        "6.79",
+        "6.38",
+        "5.75",
+        "5.37",
+        "5.24"
+      ],
+      [
+        "U2504",
+        "Cafe Mocha",
+        "8.02",
+        "6.79",
+        "6.38",
+        "5.75",
+        "5.37",
+        "5.24"
+      ],
+      [
+        "U2505",
+        "Mango Delight",
+        "8.02",
+        "6.79",
+        "6.38",
+        "5.75",
+        "5.37",
+        "5.24"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/soap-bars/main-skincare-5.png",
+    "alt": "Two stacks of three soap bars in kraft paper bands printed with sample branding and scent names.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/soap-bars/skincare-15.png",
+      "alt": "Cold process soap info panel with two stacks of banded soap bars, listing band and bar dimensions.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/soap-bars/skincare-19.png",
+      "alt": "Six banded soap bar scents with item numbers, from Lavender and Lemon Zest to Cafe Mocha and Mango Delight.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/soap-bars/skincare-16.png",
+      "alt": "Color swatch strip showing the six soap bar scents side by side, from Mango Delight to Cafe Mocha.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "\"100% Handmade in USA\" badge with a red, white and blue American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/soap-bars/template-soap-bar.pdf",
+      "bytes": 10523224
+    },
+    "catalogPage": {
+      "key": "files/soap-bars/catalog-2023-web-21.pdf",
+      "bytes": 703450
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

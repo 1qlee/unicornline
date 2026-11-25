@@ -1,0 +1,121 @@
+{
+  "slug": "potpourri",
+  "name": "Potpourri",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "Full-color, custom-packed potpourri. A blend of curated botanicals with a clean scent for home decor that adds a light, refreshing fragrance to any room.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Pre-scented with fragrance",
+      "Insert printed in USA"
+    ],
+    "materials": [
+      "Package: bulk, clear PET box, 80# gloss cover insert"
+    ],
+    "printing": [
+      "Digital: full color on the front of insert"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Scent",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2300",
+        "Lavender",
+        "12.84",
+        "11.91",
+        "11.59",
+        "11.43",
+        "11.33",
+        "11.30"
+      ],
+      [
+        "U2301",
+        "Sea Salt and Orchid",
+        "12.84",
+        "11.91",
+        "11.59",
+        "11.43",
+        "11.33",
+        "11.30"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/potpourri/main-aromatherapy-9.png",
+    "alt": "Two clear boxes of potpourri with floral printed sleeves, lavender and sea salt and orchid, among dried flowers.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/potpourri/aromatherapy-27.png",
+      "alt": "Lavender and Sea Salt & Orchid potpourri boxes with insert and box sizes for items U2300 and U2301.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/potpourri/aromatherapy-28.png",
+      "alt": "Close-up squares of the two potpourri blends, purple lavender and amber sea salt and orchid, above dried flowers.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/potpourri/template-potpourri.pdf",
+      "bytes": 340979
+    },
+    "catalogPage": {
+      "key": "files/potpourri/catalog-2023-web-18.pdf",
+      "bytes": 1552277
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

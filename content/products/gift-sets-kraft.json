@@ -1,0 +1,176 @@
+{
+  "slug": "gift-sets-kraft",
+  "name": "Gift Sets (Kraft)",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "A custom packaged gift set box with a choice of three or six items. It is made from eco-friendly kraft corrugated material, with a custom printed tray or tissue paper and a custom printed label to seal the box. The gift box can also be used as a mailer.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides of the label and tray",
+      "Processed and packaged in USA"
+    ],
+    "materials": [
+      "Package: gift box (200# E-flute kraft corrugated), custom gloss label, custom tray (16pt cover stock) or tissue paper"
+    ],
+    "printing": [
+      "Digital: full color on the label and tray"
+    ],
+    "options": [
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each",
+      "Crinkle paper fill: $2 (G) each box (min.)",
+      "Setup change: $65 (G) each per packout",
+      "Product picking (G): $0.50 (S), $1.50 (M), $3.00 (L)",
+      "Printed marketing material: $0.20 (G)"
+    ],
+    "customShape": "No charge for standard shape"
+  },
+  "pricing": {
+    "note": "Digital, 7C. Box and packing only.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "48",
+        "method": "digital"
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3500",
+        "3-Pack Gift Set",
+        "5.67",
+        "3.91",
+        "2.85",
+        "2.49",
+        "2.32",
+        "2.21",
+        "2.17"
+      ],
+      [
+        "U3520",
+        "6-Pack Gift Set",
+        "11.14",
+        "7.87",
+        "5.92",
+        "5.26",
+        "4.90",
+        "4.21",
+        "3.98"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/gift-sets-kraft/main-packaging-8.png",
+    "alt": "Two open kraft gift boxes, a three-pack of labeled glass jars and a six-pack of labeled tins.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/gift-sets-kraft/gift-set-1.png",
+      "alt": "U3520 six-pack kraft gift set, closed with a \"Your Logo Here\" band and open with six tins, plus dimensions.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-10.png",
+      "alt": "U3500 three-pack kraft gift sets for glass jars or tins, each with a \"Your Logo Here\" label, plus dimensions.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-2.png",
+      "alt": "Kraft box with a printed patterned tray holding six 2 oz glass jars in assorted label colors.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-3.png",
+      "alt": "Kraft box with a burlap-look printed tray holding six 2.5 inch tin cans with custom labels.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-4.png",
+      "alt": "Kraft box with a printed tray holding six labeled essential oil bottles in a row.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-5.png",
+      "alt": "Kraft box with a printed tray holding six labeled roll-on bottles in a row.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-6.png",
+      "alt": "Kraft box lined with pink tissue paper holding assorted face and eye mask packets.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-7.png",
+      "alt": "Kraft box filled with black crinkle paper holding three \"Your Logo\" candles and a reed diffuser.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-8.png",
+      "alt": "Kraft box filled with white crinkle paper holding four labeled glass jars and two labeled tins.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-kraft/gift-set-9.png",
+      "alt": "Kraft box lined with yellow tissue paper holding two Notable notepads and a red pen.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/gift-sets-kraft/catalog-2023-web-39.pdf",
+      "bytes": 786757
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

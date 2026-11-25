@@ -1,0 +1,246 @@
+{
+  "slug": "hang-tags-plastic",
+  "name": "Hang Tags (Plastic)",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full-color hang tags on durable plastic.",
+  "notesHtml": "<p>You can order sizes not listed in the size table. The price is that of the next larger size.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Separate front and back artwork allowed",
+      "One thickness",
+      "Fifteen standard shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5470 - 5485: 10 mil PVC"
+    ],
+    "printing": [
+      "Digital: full color on two sides"
+    ],
+    "options": [
+      "Artwork change: $37 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 7C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5470",
+        "Two sides",
+        "1.37",
+        "0.69",
+        "0.46",
+        "0.35",
+        "0.28",
+        "0.26",
+        "0.25"
+      ],
+      [
+        "U5471",
+        "Two sides",
+        "1.46",
+        "0.78",
+        "0.56",
+        "0.44",
+        "0.38",
+        "0.35",
+        "0.34"
+      ],
+      [
+        "U5472",
+        "Two sides",
+        "1.56",
+        "0.88",
+        "0.65",
+        "0.54",
+        "0.47",
+        "0.45",
+        "0.44"
+      ],
+      [
+        "U5473, 5474",
+        "Two sides",
+        "1.63",
+        "0.95",
+        "0.72",
+        "0.61",
+        "0.54",
+        "0.52",
+        "0.51"
+      ],
+      [
+        "U5475",
+        "Two sides",
+        "1.22",
+        "0.70",
+        "0.53",
+        "0.45",
+        "0.40",
+        "0.38",
+        "0.38"
+      ],
+      [
+        "U5476",
+        "Two sides",
+        "1.70",
+        "1.02",
+        "0.79",
+        "0.68",
+        "0.61",
+        "0.59",
+        "0.58"
+      ],
+      [
+        "U5477, 5478",
+        "Two sides",
+        "1.78",
+        "1.10",
+        "0.87",
+        "0.76",
+        "0.69",
+        "0.67",
+        "0.66"
+      ],
+      [
+        "U5479",
+        "Two sides",
+        "1.79",
+        "1.11",
+        "0.89",
+        "0.78",
+        "0.71",
+        "0.69",
+        "0.68"
+      ],
+      [
+        "U5480",
+        "Two sides",
+        "1.83",
+        "1.15",
+        "0.92",
+        "0.81",
+        "0.74",
+        "0.72",
+        "0.71"
+      ],
+      [
+        "U5481",
+        "Two sides",
+        "1.89",
+        "1.21",
+        "0.99",
+        "0.87",
+        "0.81",
+        "0.79",
+        "0.77"
+      ],
+      [
+        "U5482, 5483",
+        "Two sides",
+        "1.98",
+        "1.30",
+        "1.08",
+        "0.97",
+        "0.90",
+        "0.88",
+        "0.87"
+      ],
+      [
+        "U5484",
+        "Two sides",
+        "2.11",
+        "1.43",
+        "1.21",
+        "1.10",
+        "1.03",
+        "1.01",
+        "1.00"
+      ],
+      [
+        "U5485",
+        "Two sides",
+        "2.42",
+        "1.75",
+        "1.52",
+        "1.41",
+        "1.35",
+        "1.32",
+        "1.32"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/hang-tags-paper/main-accessory-8.png",
+    "alt": "Shape guide showing 15 hang tag die-cut shapes with hole punches, including rectangles, arches, ovals and a shield.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/hang-tags-plastic/accessory-14.png",
+      "alt": "Hang Tags Plastic Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/hang-tags-plastic/template-hang-tags.pdf",
+      "bytes": 109506
+    },
+    "catalogPage": {
+      "key": "files/hang-tags-paper/catalog-2023-web-69.pdf",
+      "bytes": 160507
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

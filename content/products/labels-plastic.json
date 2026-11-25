@@ -1,0 +1,268 @@
+{
+  "slug": "labels-plastic",
+  "name": "Labels (Plastic)",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full-color labels, printed several up on 8.5 x 11 in. sheets.",
+  "notesHtml": "<p>You can order sizes not listed in the size table. They are priced as the next larger size.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "Indoor and outdoor use",
+      "40 standard shapes",
+      "Made in USA"
+    ],
+    "materials": [
+      "4 mil white matte vinyl"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "Artwork change: $37 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 7C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5050",
+        "One side",
+        "1.10",
+        "0.52",
+        "0.33",
+        "0.23",
+        "0.17",
+        "0.15",
+        "0.14"
+      ],
+      [
+        "U5051",
+        "One side",
+        "1.14",
+        "0.56",
+        "0.36",
+        "0.27",
+        "0.21",
+        "0.19",
+        "0.18"
+      ],
+      [
+        "U5052",
+        "One side",
+        "1.18",
+        "0.61",
+        "0.41",
+        "0.32",
+        "0.26",
+        "0.24",
+        "0.23"
+      ],
+      [
+        "U5053",
+        "One side",
+        "1.22",
+        "0.64",
+        "0.45",
+        "0.36",
+        "0.30",
+        "0.28",
+        "0.27"
+      ],
+      [
+        "U5054",
+        "One side",
+        "1.28",
+        "0.70",
+        "0.51",
+        "0.41",
+        "0.36",
+        "0.34",
+        "0.33"
+      ],
+      [
+        "U5055, 5056",
+        "One side",
+        "1.36",
+        "0.78",
+        "0.58",
+        "0.49",
+        "0.43",
+        "0.41",
+        "0.41"
+      ],
+      [
+        "U5057",
+        "One side",
+        "1.42",
+        "0.84",
+        "0.65",
+        "0.56",
+        "0.50",
+        "0.48",
+        "0.47"
+      ],
+      [
+        "U5058",
+        "One side",
+        "1.44",
+        "0.86",
+        "0.67",
+        "0.58",
+        "0.52",
+        "0.50",
+        "0.49"
+      ],
+      [
+        "U5059, 5060",
+        "One side",
+        "1.52",
+        "0.94",
+        "0.75",
+        "0.65",
+        "0.60",
+        "0.58",
+        "0.57"
+      ],
+      [
+        "U5061, 5062",
+        "One side",
+        "1.64",
+        "1.06",
+        "0.87",
+        "0.78",
+        "0.72",
+        "0.70",
+        "0.70"
+      ],
+      [
+        "U5063",
+        "One side",
+        "1.86",
+        "1.28",
+        "1.09",
+        "1.00",
+        "0.94",
+        "0.92",
+        "0.92"
+      ],
+      [
+        "U5064",
+        "One side",
+        "2.11",
+        "1.54",
+        "1.35",
+        "1.25",
+        "1.20",
+        "1.18",
+        "1.17"
+      ],
+      [
+        "U5065",
+        "One side",
+        "2.52",
+        "1.95",
+        "1.76",
+        "1.67",
+        "1.61",
+        "1.60",
+        "1.59"
+      ],
+      [
+        "U5066",
+        "One side",
+        "3.75",
+        "3.19",
+        "3.00",
+        "2.90",
+        "2.85",
+        "2.84",
+        "2.83"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/labels-plastic/main-accessory-13.png",
+    "alt": "Shape guide of 21 blank label die-cuts, including rectangles, arches, ovals, a triangle, a shield and notched shapes.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/labels-plastic/accessory-3.png",
+      "alt": "Custom Labels Plastic Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/labels-plastic/accessory-4.png",
+      "alt": "Custom Labels Plastic Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/labels-paper/accessory-15.png",
+      "alt": "Available sizes chart listing 17 label sizes from 1\" x 1\" up to 8\" x 10 3/4\" with item numbers.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/labels-paper/template-labels-decals.pdf",
+      "bytes": 157628
+    },
+    "catalogPage": {
+      "key": "files/labels-paper/2023-labels-decals.pdf",
+      "bytes": 368032
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

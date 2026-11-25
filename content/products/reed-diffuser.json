@@ -1,0 +1,113 @@
+{
+  "slug": "reed-diffuser",
+  "name": "Reed Diffuser",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "A reed diffuser with a custom label and custom gift box packaging. It comes with rose-scented oil in a glass bottle, and reeds are included.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Diffusers made in China",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Package: 130# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the box and label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2310",
+        "Reed Diffuser",
+        "20.29",
+        "16.98",
+        "15.88",
+        "14.83",
+        "13.54",
+        "13.12"
+      ]
+    ]
+  },
+  "videos": [
+    "rbT64eewiEA"
+  ],
+  "thumbnail": {
+    "key": "images/reed-diffuser/main-living-well-6.png",
+    "alt": "Square glass reed diffuser with black reeds and a custom logo label, standing in front of its tall printed gift box.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/reed-diffuser/aromatherapy-20.png",
+      "alt": "Reed diffuser spec sheet with box, label and bottle sizes, 50 ml oil, 5 reeds and a rose scent graphic.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/reed-diffuser/aromatherapy-21.png",
+      "alt": "Text panel on the benefits of reed diffusers with answers to common questions, over a bathroom photo.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/reed-diffuser/template-reed-diffuser.pdf",
+      "bytes": 79566
+    },
+    "catalogPage": {
+      "key": "files/reed-diffuser/catalog-2023-web-10.pdf",
+      "bytes": 688546
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "slug": "award-glow-cuboid",
+  "name": "Award Glow Cuboid™",
+  "categories": [
+    "award"
+  ],
+  "description": "A direct-printed solid wood Cuboid™ award block with an opaque resin top piece. Fluorescent acrylic set at a slant makes the milky top piece appear to glow with color. The acrylic comes in multiple colors, and each award is made individually by hand.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art, logos and personalization",
+      "Hand-rubbed finish",
+      "Orange fluorescent acrylic standard",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8350: solid wood block, fluorescent acrylic and resin"
+    ],
+    "printing": [
+      "Inkjet: full color and white on one side",
+      "Print area: 3 x 6.5 in."
+    ],
+    "options": [
+      "Acrylic color change: $30 (G) per order",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Inkjet, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8350",
+        "Red Oak",
+        "106.26",
+        "102.92",
+        "100.92",
+        "100.26",
+        "99.92",
+        "99.72"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-glow-cuboid/main-award-1.png",
+    "alt": "Front and side views of a wood block award with a glowing orange acrylic top, direct printed with a recipient name.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-glow-cuboid/award-cuboid-3.png",
+      "alt": "Award Glow Cuboid spec image with front and side of the printed oak award, 3 x 10 x 1 1/4 inches, clear plastic on red oak.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-glow-cuboid/award-cuboid-4.png",
+      "alt": "Acrylic color chart with five swatches: orange (standard), blue, green, red and yellow.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Red, white and blue badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-glow-cuboid/award-glow-cuboid.pdf",
+      "bytes": 77561
+    },
+    "catalogPage": {
+      "key": "files/award-glow-cuboid/catalog-2023-web-88.pdf",
+      "bytes": 377198
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

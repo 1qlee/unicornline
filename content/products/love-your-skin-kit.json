@@ -1,0 +1,114 @@
+{
+  "slug": "love-your-skin-kit",
+  "name": "Love Your Skin™ Kit",
+  "categories": [
+    "skincare"
+  ],
+  "description": "A full-color, custom-packed home spa kit with a makeup remover and a sheet mask. It gives your clients a spa experience at home: wipe away the day's makeup, then follow with the facial mask.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Makeup remover made in USA",
+      "Sheet mask made in Korea",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Package: 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on front and back"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1000",
+        "Love Your Skin™",
+        "8.57",
+        "7.15",
+        "6.01",
+        "5.35",
+        "4.91",
+        "4.52"
+      ]
+    ]
+  },
+  "videos": [
+    "ifKiSjFowmM"
+  ],
+  "thumbnail": {
+    "key": "images/love-your-skin-kit/main-beauty-2.png",
+    "alt": "Love Your Skin kit folder with a sample logo on a yellow and green wave design, with a sheet mask tucked inside.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/love-your-skin-kit/beauty-love-your-skin-1.png",
+      "alt": "Woman with a lily in her hair beside the kit folder holding a sheet mask, with the 4 1/2\" x 6\" size.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/love-your-skin-kit/beauty-love-your-skin-2.png",
+      "alt": "Kit contents laid out: custom-printed folder with sample logo, a sheet mask pouch and a makeup remover wipe packet.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/love-your-skin-kit/template-sheet-mask-single-or-double.pdf",
+      "bytes": 68712
+    },
+    "catalogPage": {
+      "key": "files/love-your-skin-kit/catalog-2023-web-3.pdf",
+      "bytes": 473860
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

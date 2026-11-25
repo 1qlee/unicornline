@@ -1,0 +1,186 @@
+{
+  "slug": "essential-oils",
+  "name": "Essential Oils",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "Custom-labeled essential oils for a daily aromatherapy and self-care routine. Add a few drops to an aromatherapy diffuser, or dilute with a high-quality carrier oil and apply to the skin.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "100% pure essential oils",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2001",
+        "Lavender",
+        "10.22",
+        "8.82",
+        "8.34",
+        "8.10",
+        "7.96",
+        "7.91"
+      ],
+      [
+        "U2002",
+        "Lemon",
+        "9.22",
+        "7.82",
+        "7.33",
+        "7.10",
+        "6.95",
+        "6.91"
+      ],
+      [
+        "U2003",
+        "Peppermint",
+        "9.22",
+        "7.82",
+        "7.33",
+        "7.10",
+        "6.95",
+        "6.91"
+      ],
+      [
+        "U2004",
+        "Sweet Orange",
+        "8.22",
+        "6.82",
+        "6.33",
+        "6.10",
+        "5.96",
+        "5.91"
+      ],
+      [
+        "U2005",
+        "Frankincense",
+        "12.22",
+        "10.82",
+        "10.34",
+        "10.10",
+        "9.96",
+        "9.91"
+      ],
+      [
+        "U2006",
+        "Eucalyptus",
+        "8.22",
+        "6.82",
+        "6.33",
+        "6.10",
+        "5.96",
+        "5.91"
+      ],
+      [
+        "U3430",
+        "Gift box (add)",
+        "4.35",
+        "2.78",
+        "2.22",
+        "1.52",
+        "1.11",
+        "0.97"
+      ]
+    ]
+  },
+  "videos": [
+    "ixlJcrrTzZg"
+  ],
+  "thumbnail": {
+    "key": "images/essential-oils/main-living-well-1.png",
+    "alt": "Six essential oil bottles with custom-printed labels and matching gift boxes on a wooden board with lavender.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/essential-oils/aromatherapy-1.png",
+      "alt": "Six labeled essential oil bottles with gift boxes, with label and bottle sizes for items U2001 to U2006.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/essential-oils/aromatherapy-2.png",
+      "alt": "Text panel on single essential oils covering what they are, how they work and safe use.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/essential-oils/aromatherapy-4.png",
+      "alt": "Diagram of the optional U3430 tall gift box with a full-color \"Your Logo\" print and its dimensions.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/essential-oils/aromatherapy-3.png",
+      "alt": "Six scent swatches: lavender, lemon, peppermint, sweet orange, frankincense and eucalyptus, items U2001 to U2006.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/essential-oils/template-essential-oil.zip",
+      "bytes": 191703
+    },
+    "catalogPage": {
+      "key": "files/essential-oils/catalog-2023-web-11.pdf",
+      "bytes": 508868
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

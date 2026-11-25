@@ -1,0 +1,105 @@
+{
+  "slug": "bath-salt",
+  "name": "Bath Salt",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full-color, custom-packed bath salt, part of our bath and shower line.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Bath salt made in USA",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "U2530: gloss label"
+    ],
+    "printing": [
+      "Digital: full color on band"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2530",
+        "Bath Salt",
+        "9.69",
+        "8.28",
+        "7.81",
+        "7.57",
+        "7.43",
+        "7.38"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/bath-salt/main-skincare-10.png",
+    "alt": "Two jars of pink bath salt with black lids and a sample Spa Center Relaxation Bath Salt label, one closed and one open.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/bath-salt/skincare-11.png",
+      "alt": "Bath salt spec sheet with labeled jars, label and product sizes, 4.2 oz net weight and a short Himalayan salt description.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/bath-salt/template-bath-salt.pdf",
+      "bytes": 1775279
+    },
+    "catalogPage": {
+      "key": "files/bath-salt/catalog-2023-web-19.pdf",
+      "bytes": 602218
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

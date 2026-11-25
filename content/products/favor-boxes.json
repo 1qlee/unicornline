@@ -1,0 +1,255 @@
+{
+  "slug": "favor-boxes",
+  "name": "Favor Boxes",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Full-color party favor boxes on coated stock.",
+  "notesHtml": "<p><strong>Custom size</strong>: You can order any in-between size not listed in the size table. It is priced as the next larger size that fits it.</p>\n\n<p><strong>Need a larger size or quantity not listed?</strong> For larger sizes, larger quantities or thicker stock, contact the factory for a quote.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard sizes",
+      "No overrun charge",
+      "4 standard sizes",
+      "1 thickness",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5570 - 5573: 11.4pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "Dieline design: $125 (G) each, sample extra",
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5570",
+        "One side",
+        "7.16",
+        "4.71",
+        "3.89",
+        "3.49",
+        "3.24",
+        "3.08",
+        "2.96",
+        "2.88",
+        "2.75",
+        "2.42",
+        "2.06",
+        "1.47",
+        "1.01",
+        "0.69",
+        "0.58",
+        "0.52"
+      ],
+      [
+        "U5571",
+        "One side",
+        "7.50",
+        "5.06",
+        "4.24",
+        "3.83",
+        "3.59",
+        "3.43",
+        "3.31",
+        "3.22",
+        "3.10",
+        "2.74",
+        "2.15",
+        "1.56",
+        "1.11",
+        "0.78",
+        "0.68",
+        "0.62"
+      ],
+      [
+        "U5572",
+        "One side",
+        "8.11",
+        "5.66",
+        "4.85",
+        "4.44",
+        "4.20",
+        "4.03",
+        "3.92",
+        "3.83",
+        "3.71",
+        "2.93",
+        "2.35",
+        "1.76",
+        "1.31",
+        "0.98",
+        "0.87",
+        "0.82"
+      ],
+      [
+        "U5573",
+        "One side",
+        "8.26",
+        "5.82",
+        "5.00",
+        "4.60",
+        "4.35",
+        "4.19",
+        "4.07",
+        "3.99",
+        "3.86",
+        "2.93",
+        "2.35",
+        "1.76",
+        "1.31",
+        "0.98",
+        "0.87",
+        "0.82"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/favor-boxes/main-packaging-1.png",
+    "alt": "Four blank triangular wedge-shaped favor boxes in light green, shown in different sizes.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/favor-boxes/packaging-5.png",
+      "alt": "Favor Boxes Sizes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/favor-boxes/template-favor-boxes.pdf",
+      "bytes": 103317
+    },
+    "catalogPage": {
+      "key": "files/favor-boxes/catalog-2023-web-78.pdf",
+      "bytes": 128266
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  },
+  "model": {
+    "type": "favor-box",
+    "unit": "in.",
+    "defaultSize": {
+      "w": 2,
+      "l": 5,
+      "d": 2
+    },
+    "sizes": [
+      {
+        "item": "U5570",
+        "w": 2,
+        "l": 5,
+        "d": 2
+      },
+      {
+        "item": "U5571",
+        "w": 2.5,
+        "l": 5,
+        "d": 2.5
+      },
+      {
+        "item": "U5572",
+        "w": 2.5,
+        "l": 6.5,
+        "d": 2.5
+      },
+      {
+        "item": "U5573",
+        "w": 3,
+        "l": 6.5,
+        "d": 3
+      }
+    ]
+  }
+}

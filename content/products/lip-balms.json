@@ -1,0 +1,110 @@
+{
+  "slug": "lip-balms",
+  "name": "Lip Balms",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Lip balms in full-color custom packaging. The balm is formulated with shea butter to soothe dry, chapped lips and comes in eight flavors.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Package printed in USA",
+      "Made in China"
+    ],
+    "materials": [
+      "Package: 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the box"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each",
+      "Flavors: Strawberry, Berries & Cream, Tropical Mai Tai, Mint Cherry, Pomegranate Punch, Berry Breeze, Citrus Tart",
+      "Packaging: bulk"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1310",
+        "4.68",
+        "4.17",
+        "3.51",
+        "3.12",
+        "2.99",
+        "2.91"
+      ]
+    ]
+  },
+  "videos": [
+    "WUfdUCLLq00"
+  ],
+  "thumbnail": {
+    "key": "images/lip-balms/main-beauty-1.png",
+    "alt": "Lip balm with a full-color custom printed box, shown capped and uncapped beside the box.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/lip-balms/skincare-17.png",
+      "alt": "Lip balm with custom box and item U1310 dimensions, 1 x 1 x 2 3/4 inches, net weight 1.15 fl oz.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/lip-balms/skincare-18.png",
+      "alt": "Eight lip balm flavor swatches, from strawberry and cherry to mint, berry and citrus tart.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/lip-balms/template-lip-balm.pdf",
+      "bytes": 68941
+    },
+    "catalogPage": {
+      "key": "files/lip-balms/catalog-2023-web-5.pdf",
+      "bytes": 455658
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,328 @@
+{
+  "slug": "golf-ball-boxes",
+  "name": "Golf Ball Boxes",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Full-color golf ball boxes on coated stock.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "One thickness",
+      "9 standard shapes",
+      "Box only, ball not included",
+      "Made in USA"
+    ],
+    "materials": [
+      "U3030 - 3038: 11.4pt gloss cover"
+    ],
+    "printing": [
+      "Digital and offset: full color on one side"
+    ],
+    "options": [
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "No custom size available"
+  },
+  "pricing": {
+    "note": "Digital and offset, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3030",
+        "1 ball pillow",
+        "6.15",
+        "4.20",
+        "3.56",
+        "3.23",
+        "3.04",
+        "2.91",
+        "2.82",
+        "2.75",
+        "2.65",
+        "2.35",
+        "2.01",
+        "1.43",
+        "0.99",
+        "0.68",
+        "0.57",
+        "0.52"
+      ],
+      [
+        "U3031",
+        "1 ball",
+        "6.73",
+        "4.44",
+        "3.68",
+        "3.31",
+        "3.08",
+        "2.93",
+        "2.82",
+        "2.74",
+        "2.62",
+        "2.30",
+        "2.04",
+        "1.46",
+        "1.01",
+        "0.68",
+        "0.58",
+        "0.52"
+      ],
+      [
+        "U3032",
+        "1 ball window",
+        "6.81",
+        "4.53",
+        "3.77",
+        "3.39",
+        "3.16",
+        "3.01",
+        "2.90",
+        "2.82",
+        "2.71",
+        "2.39",
+        "2.04",
+        "1.46",
+        "1.01",
+        "0.68",
+        "0.58",
+        "0.52"
+      ],
+      [
+        "U3033",
+        "2 balls",
+        "7.12",
+        "4.84",
+        "4.08",
+        "3.70",
+        "3.48",
+        "3.32",
+        "3.22",
+        "3.13",
+        "3.02",
+        "2.70",
+        "2.14",
+        "1.55",
+        "1.10",
+        "0.78",
+        "0.67",
+        "0.62"
+      ],
+      [
+        "U3034",
+        "2 balls window",
+        "7.30",
+        "5.02",
+        "4.26",
+        "3.88",
+        "3.65",
+        "3.50",
+        "3.39",
+        "3.31",
+        "3.19",
+        "2.72",
+        "2.14",
+        "1.55",
+        "1.10",
+        "0.78",
+        "0.67",
+        "0.62"
+      ],
+      [
+        "U3035",
+        "3 balls",
+        "7.87",
+        "5.59",
+        "4.83",
+        "4.45",
+        "4.22",
+        "4.07",
+        "3.96",
+        "3.88",
+        "3.77",
+        "2.91",
+        "2.33",
+        "1.75",
+        "1.30",
+        "0.98",
+        "0.87",
+        "0.82"
+      ],
+      [
+        "U3036",
+        "3 balls window",
+        "8.13",
+        "5.85",
+        "5.09",
+        "4.71",
+        "4.48",
+        "4.33",
+        "4.22",
+        "4.14",
+        "4.03",
+        "2.91",
+        "2.33",
+        "1.75",
+        "1.30",
+        "0.98",
+        "0.87",
+        "0.82"
+      ],
+      [
+        "U3037",
+        "Half dozen sleeve",
+        "6.93",
+        "4.65",
+        "3.89",
+        "3.51",
+        "3.29",
+        "3.13",
+        "3.03",
+        "2.94",
+        "2.83",
+        "2.51",
+        "2.14",
+        "1.55",
+        "1.10",
+        "0.78",
+        "0.67",
+        "0.62"
+      ],
+      [
+        "U3038",
+        "Dozen sleeve",
+        "7.49",
+        "5.21",
+        "4.45",
+        "4.07",
+        "3.85",
+        "3.69",
+        "3.59",
+        "3.50",
+        "3.39",
+        "2.91",
+        "2.33",
+        "1.75",
+        "1.30",
+        "0.98",
+        "0.87",
+        "0.82"
+      ]
+    ]
+  },
+  "videos": [
+    "m35bR5nblRY"
+  ],
+  "thumbnail": {
+    "key": "images/golf-ball-boxes/main-lifestyle-2.png",
+    "alt": "Shape guide of golf ball boxes: single and multi-ball cube sleeves with ball cutouts and a pillow box.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/golf-ball-boxes/lifestyle-1.png",
+      "alt": "Golf Ball Boxes Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/golf-ball-boxes/lifestyle-2.png",
+      "alt": "Golf Ball Boxes Sizes and Shapes (2)",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/golf-ball-boxes/template-golf-ball-box.pdf",
+      "bytes": 108319
+    },
+    "catalogPage": {
+      "key": "files/golf-ball-boxes/catalog-2023-web-22.pdf",
+      "bytes": 900533
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,259 @@
+{
+  "slug": "teas",
+  "name": "Teas",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Full-bodied black teas, traditional pure green teas and blends flavored with peach or vanilla.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Food-grade, durable tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "No charge for standard shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4201G",
+        "Earl Grey",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4202G",
+        "Masala Chai",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4203G",
+        "Vanilla Cream",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4204G",
+        "Gunpowder",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4205G",
+        "Peach Tea",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4206G",
+        "English Breakfast",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4201T",
+        "Earl Grey",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4202T",
+        "Masala Chai",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4203T",
+        "Vanilla Cream",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4204T",
+        "Gunpowder",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4205T",
+        "Peach Tea",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4206T",
+        "English Breakfast",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "GHkxhqkpSvs"
+  ],
+  "thumbnail": {
+    "key": "images/teas/main-eating-well-6.png",
+    "alt": "Teas in custom-labeled glass jars and square tins on a woven runner against a tea field backdrop.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/teas/eating-well-17.png",
+      "alt": "Spec sheet for tea glass jars and tin cans with top and side label sizes for each.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/teas/eating-well-18.png",
+      "alt": "Text panel describing six teas: masala chai, gunpowder, English breakfast, Earl Grey, vanilla cream, peach.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/teas/eating-well-19.png",
+      "alt": "Chart of six loose teas: Earl Grey, masala chai, gunpowder, English breakfast, peach tea and vanilla cream.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/teas/eating-well-4.png",
+      "alt": "Two optional gift boxes with custom graphics, one sized for a glass jar and one for a tin can.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/teas/template-teas.zip",
+      "bytes": 959516
+    },
+    "catalogPage": {
+      "key": "files/teas/catalog-2023-web-48.pdf",
+      "bytes": 2054674
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

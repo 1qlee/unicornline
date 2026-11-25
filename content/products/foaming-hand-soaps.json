@@ -1,0 +1,127 @@
+{
+  "slug": "foaming-hand-soaps",
+  "name": "Foaming Hand Soaps",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full-color, custom-labeled foaming hand soap. The creamy foaming formula washes away germs and helps maintain the skin's natural moisture barrier, without dyes, parabens or sulfates.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Plant-based scent",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Package: bulk, custom gloss label"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2510",
+        "Lavender",
+        "11.30",
+        "9.63",
+        "9.07",
+        "8.79",
+        "8.62",
+        "8.57"
+      ],
+      [
+        "U2511",
+        "Lemon Sugar",
+        "11.30",
+        "9.63",
+        "9.07",
+        "8.79",
+        "8.62",
+        "8.57"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/foaming-hand-soaps/main-skincare-6.png",
+    "alt": "Two pump bottles of foaming hand soap with full-color custom labels, one lavender tinted and one yellow.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/foaming-hand-soaps/skincare-13.png",
+      "alt": "Lavender and Lemon Sugar foaming soap bottles with label and bottle dimensions for items U2510 and U2511.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/foaming-hand-soaps/skincare-14.png",
+      "alt": "Text panel on pink foam background listing the foaming hand soap's plant-based, cruelty-free formula.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/foaming-hand-soaps/skincare-20.png",
+      "alt": "Pair of hands lathering white soap foam.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/foaming-hand-soaps/template-foaming-hand-soap.pdf",
+      "bytes": 123181
+    },
+    "catalogPage": {
+      "key": "files/foaming-hand-soaps/catalog-2023-web-20.pdf",
+      "bytes": 665327
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

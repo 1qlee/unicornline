@@ -1,0 +1,256 @@
+{
+  "slug": "chili-peppers",
+  "name": "Chili Peppers",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Chili peppers are used in many cuisines to add flavor and heat. They can be eaten fresh or added whole to food, and when dried they can be finely ground into chili powder for barbecue, hot curry and other spicy sauces.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Food-grade, durable tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4181G",
+        "Cayenne Pepper",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U4182G",
+        "Ancho Chili Pepper",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4183G",
+        "Chipotle Chili Pepper",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4184G",
+        "Jalapeno Pepper",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4185G",
+        "Paprika",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4186G",
+        "Red Pepper",
+        "10.17",
+        "8.77",
+        "8.29",
+        "8.05",
+        "7.91",
+        "7.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4181T",
+        "Cayenne Pepper",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4182T",
+        "Ancho Chili Pepper",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4183T",
+        "Chipotle Chili Pepper",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4184T",
+        "Jalapeno Pepper",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4185T",
+        "Paprika",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4186T",
+        "Red Pepper",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/chili-peppers/main-eating-well-5.png",
+    "alt": "Chili pepper spices in six custom-labeled tin cans and six glass jars, set against a pepper field.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/chili-peppers/eating-well-14.png",
+      "alt": "Chili pepper tins and glass jars with label and container dimensions for item numbers U4181T to U4186G.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-15.png",
+      "alt": "Text panel describing six hot chili peppers: cayenne, ancho, chipotle, jalapeno, paprika and red pepper.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-16.png",
+      "alt": "Swatches of six ground chili peppers: cayenne, ancho, chipotle, jalapeno, paprika and crushed red pepper.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Diagram of optional glass jar and tin can gift boxes with full-color \"Your Logo\" graphics and dimensions.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/chili-peppers/template-chili-peppers.zip",
+      "bytes": 10917055
+    },
+    "catalogPage": {
+      "key": "files/chili-peppers/catalog-2023-web-47.pdf",
+      "bytes": 1203220
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

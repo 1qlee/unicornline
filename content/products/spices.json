@@ -1,0 +1,258 @@
+{
+  "slug": "spices",
+  "name": "Seasonings",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Custom-labeled spice blends, sourced from a trusted network of growers around the world.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Food-grade, durable tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4141G",
+        "BBQ",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4142G",
+        "Lemon Pepper",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4143G",
+        "Seafood",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4144G",
+        "Steak",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4145G",
+        "Cajun",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4146G",
+        "Jamaican Jerk",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4141T",
+        "BBQ",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4142T",
+        "Lemon Pepper",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4143T",
+        "Seafood",
+        "12.59",
+        "11.18",
+        "10.70",
+        "10.47",
+        "10.33",
+        "10.28"
+      ],
+      [
+        "U4144T",
+        "Steak",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4145T",
+        "Cajun",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4146T",
+        "Jamaican Jerk",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "675GBlc8wGs"
+  ],
+  "thumbnail": {
+    "key": "images/spices/main-eating-well-3.png",
+    "alt": "Seasonings in custom-labeled glass jars and square tins with colored caps, set before a spice backdrop.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/spices/eating-well-8.png",
+      "alt": "Spec sheet for seasoning glass jars and tin cans with top and side label sizes for each.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/spices/eating-well-9.png",
+      "alt": "Text panel describing six seasonings: BBQ, lemon pepper, seafood, steak, Cajun and Jamaican jerk.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/spices/eating-well-10.png",
+      "alt": "Chart of six seasoning blends: BBQ, lemon pepper, seafood, Canadian steak, Cajun and Jamaica jerk.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Two optional gift boxes with custom graphics, one sized for a glass jar and one for a tin can.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/spices/template-seasonings.zip",
+      "bytes": 591208
+    },
+    "catalogPage": {
+      "key": "files/spices/catalog-2023-web-45.pdf",
+      "bytes": 1116068
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

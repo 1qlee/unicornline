@@ -1,0 +1,143 @@
+{
+  "slug": "coin-set",
+  "name": "Coin Set",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "A full-color, custom-packed coin gift. A coin from the U.S. Mint marks a milestone or anniversary, honors a person or welcomes a new business opportunity.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Made in USA"
+    ],
+    "materials": [
+      "U3180: real wood frame, 3/16 in. foamcore insert",
+      "U3185/6: coin holder, 80# gloss cover insert"
+    ],
+    "printing": [
+      "Digital: full color on insert"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C. Coins not included, priced separately.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3180",
+        "5 x 7 Frame",
+        "22.53",
+        "22.03",
+        "21.87",
+        "21.78",
+        "21.73",
+        "21.72"
+      ],
+      [
+        "U3185",
+        "Mint Set",
+        "8.71",
+        "7.26",
+        "6.78",
+        "6.54",
+        "6.39",
+        "6.34"
+      ],
+      [
+        "U3186",
+        "Single Coin",
+        "5.39",
+        "3.94",
+        "3.46",
+        "3.21",
+        "3.06",
+        "3.01"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/coin-set/main-lifestyle-11.png",
+    "alt": "Framed five-coin anniversary display with custom printed artwork, plus single-coin and mint-set acrylic cases in front.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/coin-set/lifestyle-42.png",
+      "alt": "Two 5 x 7 inch wood-framed coin sets side by side, one with mint coins and one with proof coins, on custom backgrounds.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/coin-set/lifestyle-43.png",
+      "alt": "Five 2 x 2 inch single-coin acrylic cases and one 2 x 6 inch five-coin mint set case, all with printed anniversary inserts.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/coin-set/lifestyle-44.png",
+      "alt": "Coin set lineup with a black-framed anniversary display behind an assortment of printed acrylic coin cases.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/coin-set/lifestyle-45.png",
+      "alt": "Text panel above a wooden shelf explaining the Mint Set, Proof Set and Silver Proof Set from the United States Mint.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/coin-set/template-coins.zip",
+      "bytes": 38654
+    },
+    "catalogPage": {
+      "key": "files/coin-set/catalog-2023-web-31.pdf",
+      "bytes": 443222
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

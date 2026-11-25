@@ -1,0 +1,17 @@
+{
+  "name": "Unicorn Line",
+  "owner": "Unicorn Graphics",
+  "lede": "Our complete range of promotional premium products, custom printed and packed by Unicorn Graphics.",
+  "address": "971 Stewart Ave, Garden City, NY 11530",
+  "phone": "516-222-0712",
+  "phoneE164": "+15162220712",
+  "email": "ny@unicorngraphics.com",
+  "terms": {
+    "key": "files/company/catalog-2023-web-91.pdf",
+    "bytes": 170124
+  },
+  "fullCatalog": {
+    "key": "files/catalogs/catalog-2023-web.pdf",
+    "bytes": 39897985
+  }
+}

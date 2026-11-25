@@ -1,0 +1,167 @@
+{
+  "slug": "edible-flower-seeds",
+  "name": "Edible Flower Seeds",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Edible flower seeds add unique flavors to your dishes. Use them as a simple garnish to add color to the plate, or add them to salads to blend flavors.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Fresh packed upon receipt of order in USA"
+    ],
+    "materials": [
+      "Package: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on front and back"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4521",
+        "Nasturtium",
+        "5.83",
+        "4.40",
+        "3.23",
+        "2.55",
+        "2.15",
+        "1.99"
+      ],
+      [
+        "U4522",
+        "Borage",
+        "5.83",
+        "4.40",
+        "3.23",
+        "2.55",
+        "2.15",
+        "1.99"
+      ],
+      [
+        "U4523",
+        "Calendula",
+        "5.83",
+        "4.40",
+        "3.23",
+        "2.55",
+        "2.15",
+        "1.99"
+      ],
+      [
+        "U4524",
+        "Lavender",
+        "5.83",
+        "4.40",
+        "3.23",
+        "2.55",
+        "2.15",
+        "1.99"
+      ],
+      [
+        "U4525",
+        "Viola",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ],
+      [
+        "U4526",
+        "Cornflower",
+        "5.33",
+        "3.90",
+        "2.73",
+        "2.05",
+        "1.65",
+        "1.49"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/edible-flower-seeds/main-eating-well-12.png",
+    "alt": "Yellow seed packet with a YOUR LOGO front and printed growing instructions on the back, seeds visible inside.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/edible-flower-seeds/eating-well-36.png",
+      "alt": "Spec sheet for 4 x 3 3/4 in. custom seed packets, showing the logo front and instruction-printed back.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/edible-flower-seeds/eating-well-37.png",
+      "alt": "Text panel describing six edible flowers: nasturtium, borage, calendula, lavender, viola and cornflower.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/edible-flower-seeds/eating-well-38.png",
+      "alt": "Chart of six edible flower seed options: nasturtium, borage, calendula, lavender, viola and cornflower.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/edible-flower-seeds/template-edible-flower-seeds.pdf",
+      "bytes": 380805
+    },
+    "catalogPage": {
+      "key": "files/edible-flower-seeds/catalog-2023-web-54.pdf",
+      "bytes": 746832
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

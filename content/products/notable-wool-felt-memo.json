@@ -1,0 +1,111 @@
+{
+  "slug": "notable-wool-felt-memo",
+  "name": "Notable™ (Wool Felt Memo)",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "A custom printed memo pad with full-color artwork in a wool felt tray. The tray is made from Merino wool felt, and the high-grade paper is suited to jotting down impromptu notes, observations and ideas.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds 10% extra",
+      "Made in USA"
+    ],
+    "materials": [
+      "Memo: 60# opaque text (250 sheets)",
+      "Tray: 3mm Merino wool felt, Oeko Tex® 100 certified Class II, EU toy safety standard EN 71, natural and renewable, naturally antibacterial"
+    ],
+    "printing": [
+      "Digital: full color on one side (memo)"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "10",
+        "method": "digital"
+      },
+      {
+        "label": "25",
+        "method": "digital"
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3281",
+        "Felt Memo",
+        "21.49",
+        "20.66",
+        "19.87",
+        "19.11",
+        "18.55",
+        "18.01"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/notable-wool-felt-memo/main-lifestyle-13.png",
+    "alt": "Stack of white memo sheets with a small sample logo in front of an empty gray wool felt tray.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/notable-wool-felt-memo/lifestyle-46.png",
+      "alt": "Memo pad sitting in a gray wool felt tray with a sample logo, listing 3\" x 4 1/2\" memo and tray dimensions.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/notable-wool-felt-memo/lifestyle-47.png",
+      "alt": "Two felt memo sets, one memo stack beside an empty tray and one loaded tray, with a pen and handwritten note.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/notable-notebooks/templatenotebook.zip",
+      "bytes": 6915718
+    },
+    "catalogPage": {
+      "key": "files/notable-wool-felt-memo/catalog-2023-web-37.pdf",
+      "bytes": 389829
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

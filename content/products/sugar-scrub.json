@@ -1,0 +1,105 @@
+{
+  "slug": "sugar-scrub",
+  "name": "Sugar Scrub",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full-color, custom-packed sugar scrub, part of our bath and shower line.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Sugar scrub made in USA",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "U2520~1: gloss label"
+    ],
+    "printing": [
+      "Digital: full color on band"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2520~1",
+        "Sugar Scrub",
+        "16.36",
+        "14.68",
+        "14.13",
+        "13.85",
+        "13.68",
+        "13.63"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/sugar-scrub/main-skincare-7.png",
+    "alt": "Two black-lidded sugar scrub jars with full-color top and side labels showing sample logos.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/sugar-scrub/skincare-10.png",
+      "alt": "Lavender Vanilla and Oatmeal Milk & Honey sugar scrub jars with side label, top label and jar dimensions.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/sugar-scrub/sugar-scrub.zip",
+      "bytes": 98486
+    },
+    "catalogPage": {
+      "key": "files/bath-salt/catalog-2023-web-19.pdf",
+      "bytes": 602218
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

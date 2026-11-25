@@ -1,0 +1,256 @@
+{
+  "slug": "protein-powder",
+  "name": "Protein Powder",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Protein powder is a popular nutritional supplement used by athletes and fitness enthusiasts around the world. Combined with a balanced diet and fitness plan, protein supplements can aid weight loss, help tone muscles and meet daily nutritional or caloric requirements.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "High-quality, food-grade, durable tin-plated steel can",
+      "Fresh packed upon receipt of order in USA"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4441G",
+        "Hemp Protein",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4442G",
+        "Whey Protein",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U4443G",
+        "Pea Protein",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4444G",
+        "Brown Rice Protein",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U4445G",
+        "Brown Flax Seeds",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4446G",
+        "Chia Seeds",
+        "11.17",
+        "9.77",
+        "9.29",
+        "9.05",
+        "8.91",
+        "8.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4441T",
+        "Hemp Protein",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4442T",
+        "Whey Protein",
+        "17.59",
+        "16.18",
+        "15.70",
+        "15.47",
+        "15.33",
+        "15.28"
+      ],
+      [
+        "U4443T",
+        "Pea Protein",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4444T",
+        "Brown Rice Protein",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U4445T",
+        "Brown Flax Seeds",
+        "15.59",
+        "14.18",
+        "13.70",
+        "13.47",
+        "13.33",
+        "13.28"
+      ],
+      [
+        "U4446T",
+        "Chia Seeds",
+        "13.59",
+        "12.18",
+        "11.70",
+        "11.47",
+        "11.33",
+        "11.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/protein-powder/main-eating-well-9.png",
+    "alt": "Custom-labeled tins and stacked glass jars of protein powders and seeds with sample branding, over a gym background.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/protein-powder/eating-well-26.png",
+      "alt": "Tin can and glass jar protein powder options with sample labels, listing top label, side label and container sizes.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/protein-powder/eating-well-27.png",
+      "alt": "Text panel titled \"Organic Protein Powder\" describing hemp, whey, pea and brown rice protein plus flax and chia seeds.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/protein-powder/eating-well-28.png",
+      "alt": "Six fill options in circles: hemp, whey, pea and brown rice protein, brown flax seeds and chia seeds.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Optional \"Your Logo\" gift boxes with full-color graphics for the glass jar and tin can, with box dimensions.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/protein-powder/template-protein-powder.zip",
+      "bytes": 5628610
+    },
+    "catalogPage": {
+      "key": "files/protein-powder/catalog-2023-web-51.pdf",
+      "bytes": 788067
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "slug": "2-wick-candles",
+  "name": "2 Wick Candles",
+  "categories": [
+    "aromatherapy"
+  ],
+  "description": "A full-color, custom-labeled candle made from 100% food-grade wax, with fragrance oils containing natural ingredients and wicks made from innovative textiles.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Recyclable glass jar",
+      "Handcrafted in USA"
+    ],
+    "materials": [
+      "Package: bulk, custom gloss label"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Scent",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U2230",
+        "Lemon Lavender",
+        "26.99",
+        "25.58",
+        "25.11",
+        "24.87",
+        "24.73",
+        "24.68"
+      ],
+      [
+        "U2231",
+        "Vanilla Orchid",
+        "26.99",
+        "25.58",
+        "25.11",
+        "24.87",
+        "24.73",
+        "24.68"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/2-wick-candles/main-aromatherapy-7.png",
+    "alt": "Purple two-wick candle in a glass jar with its domed lid off, wrapped in a full-color custom label with a sample logo.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/2-wick-candles/aromatherapy-25.png",
+      "alt": "Two 24 oz two-wick jar candles, Lemon Lavender and Vanilla Orchid, with custom labels plus label and product dimensions.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/2-wick-candles/aromatherapy-26.png",
+      "alt": "Text panel describing Large Country Candles: two-wick 24 oz glass jar candles with domed lids and up to 150 hours of burn.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "\"100% Handmade in USA\" badge with a red, white and blue American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/2-wick-candles/template-2-3-wick-candle.pdf",
+      "bytes": 2285128
+    },
+    "catalogPage": {
+      "key": "files/2-wick-candles/catalog-2023-web-17.pdf",
+      "bytes": 463481
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

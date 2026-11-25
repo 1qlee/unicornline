@@ -1,0 +1,220 @@
+{
+  "slug": "wipes-and-lotions",
+  "name": "Wipes & Lotions",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Full-color, custom-packed wipes and lotions. Popular wipes and lotions come in convenient single-use packets, each individually prepacked in a custom printed package.",
+  "notesHtml": "<p>Wipe: 6.5 x 5 in. • Packet: 2.25 x 2 in.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Package printed in USA"
+    ],
+    "materials": [
+      "Package: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on both sides"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each",
+      "Packaging: bulk"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1311 • U1338 • U1339 • U1340",
+        "3.49",
+        "2.35",
+        "1.70",
+        "1.32",
+        "1.19",
+        "1.06"
+      ],
+      [
+        "U1315 • U1331 • U1355 • U1358 • U1363",
+        "3.53",
+        "2.39",
+        "1.75",
+        "1.36",
+        "1.23",
+        "1.10"
+      ],
+      [
+        "U1330",
+        "3.77",
+        "2.64",
+        "1.99",
+        "1.60",
+        "1.47",
+        "1.35"
+      ],
+      [
+        "U1356 • U1380",
+        "3.47",
+        "2.33",
+        "1.69",
+        "1.30",
+        "1.17",
+        "1.04"
+      ],
+      [
+        "U1337 • U1362",
+        "3.76",
+        "2.63",
+        "1.98",
+        "1.59",
+        "1.46",
+        "1.34"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/wipes-and-lotions/main-lifestyle-10.png",
+    "alt": "Light blue printed envelope pouch holding single-use wipe and lotion packets, with front and back of the closed pouch.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-8.png",
+      "alt": "Wipes envelope spec image with assorted packets, the printed 3 1/2 x 2 1/2 inch package and available item numbers.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-2.png",
+      "alt": "Antimicrobial hand wipe packet beside a photo of hands using a wipe, with wipe and packet sizes.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-3.png",
+      "alt": "Insect repellent lotion pouch beside a photo of lotion being applied to an ankle, with size details.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-4.png",
+      "alt": "Lens cleaning wipe packet beside a photo of eyeglasses on a table, with wipe and packet sizes.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-5.png",
+      "alt": "Lens cleaner wipe packet for glass and plastic surfaces, with wipe and packet sizes and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-6.png",
+      "alt": "Refreshing hand wipe packet with wipe and packet sizes and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-7.png",
+      "alt": "SPF 30 sunscreen lotion pouch beside a photo of a sun drawn in sunscreen on a woman's back at the beach.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-9.png",
+      "alt": "Insect bite relief wipe packet with wipe and packet sizes and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-10.png",
+      "alt": "Pomegranate lip balm pouch with content weight, pouch size and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-11.png",
+      "alt": "Skin lotion pouch with content weight, pouch size and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-12.png",
+      "alt": "First aid and burn cream pouch with content weight, pouch size and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-13.png",
+      "alt": "Instant hand sanitizer gel pouch with content weight, pouch size and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-14.png",
+      "alt": "Alcohol prep pad packet with pad and packet sizes and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-15.png",
+      "alt": "BZK antiseptic towelette packet with wipe and packet sizes and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/wipes-and-lotions/lifestyle-wipes-16.png",
+      "alt": "Single fabric adhesive bandage with bandage and packet sizes and a short description.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/wipes-and-lotions/template-wipes-lotions.pdf",
+      "bytes": 2932978
+    },
+    "catalogPage": {
+      "key": "files/wipes-and-lotions/2023-wipes-lotions.pdf",
+      "bytes": 2570191
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

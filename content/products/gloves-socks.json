@@ -1,0 +1,159 @@
+{
+  "slug": "gloves-socks",
+  "name": "Gloves & Socks",
+  "categories": [
+    "skincare"
+  ],
+  "description": "Full-color, custom-packed K-beauty spa gloves and socks. The 100% vegan products are made for at-home self-care.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Product made in Korea",
+      "Band printed in USA"
+    ],
+    "materials": [
+      "Band: 8pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on band"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U1020",
+        "Collagen Gloves",
+        "9.10",
+        "7.88",
+        "7.46",
+        "6.83",
+        "6.44",
+        "6.32"
+      ],
+      [
+        "U1021",
+        "Shea Butter Gloves",
+        "6.10",
+        "4.88",
+        "4.46",
+        "3.83",
+        "3.44",
+        "3.32"
+      ],
+      [
+        "U1030",
+        "Collagen Socks",
+        "9.10",
+        "7.88",
+        "7.46",
+        "6.83",
+        "6.44",
+        "6.32"
+      ],
+      [
+        "U1031",
+        "Shea Butter Socks",
+        "6.10",
+        "4.88",
+        "4.46",
+        "3.83",
+        "3.44",
+        "3.32"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/gloves-socks/main-skincare-9.png",
+    "alt": "Two K-beauty spa packets, collagen gloves and shea butter socks, each wrapped with a custom printed logo band.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/gloves-socks/skincare-5.png",
+      "alt": "Collagen gloves packet with a custom printed band, shown with band and product dimensions and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-6.png",
+      "alt": "Shea butter gloves packet with a custom printed band, shown with band and product dimensions and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-7.png",
+      "alt": "Collagen socks packet with a custom printed band, shown with band and product dimensions and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-8.png",
+      "alt": "Shea butter socks packet with a custom printed band, shown with band and product dimensions and a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gloves-socks/skincare-9.png",
+      "alt": "Person resting with feet raised while wearing white moisturizing treatment socks.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gloves-socks/template-banding.pdf",
+      "bytes": 19395
+    },
+    "catalogPage": {
+      "key": "files/gloves-socks/catalog-2023-web-7.pdf",
+      "bytes": 537523
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

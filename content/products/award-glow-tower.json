@@ -1,0 +1,120 @@
+{
+  "slug": "award-glow-tower",
+  "name": "Award Glow Tower",
+  "categories": [
+    "award"
+  ],
+  "description": "A solid wood Glow Tower™ award block with an opaque resin top piece. Fluorescent acrylic is attached at a slant to create a colorful glow throughout the milky top piece. The acrylic comes in multiple colors, and each award is produced individually by hand.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art, logos and personalization",
+      "Hand-rubbed finish",
+      "Green fluorescent acrylic standard",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8330: solid wood block, fluorescent acrylic and resin"
+    ],
+    "printing": [
+      "Inkjet: full color and white on one side of the plate",
+      "Print area: 2 x 6 in."
+    ],
+    "options": [
+      "Acrylic color change: $30 (G) per order",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Inkjet, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8330",
+        "Red Oak",
+        "117.03",
+        "110.36",
+        "106.36",
+        "105.03",
+        "104.36",
+        "103.96"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-glow-tower/main-award-4.png",
+    "alt": "Two wood tower awards with slanted green glowing tops, front with a printed blue panel and plain back.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-glow-tower/award-tower-5.png",
+      "alt": "Spec sheet for the 2.5 x 10 x 2.5 in. Glow Tower award showing front, back and the Shape 01 acrylic panel.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-glow-cuboid/award-cuboid-4.png",
+      "alt": "Acrylic color chart with five swatches: orange (standard), blue, green, red and yellow.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-glow-tower/award-glow-tower.pdf",
+      "bytes": 75675
+    },
+    "catalogPage": {
+      "key": "files/award-glow-tower/catalog-2023-web-89.pdf",
+      "bytes": 337596
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

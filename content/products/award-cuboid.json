@@ -1,0 +1,140 @@
+{
+  "slug": "award-cuboid",
+  "name": "Award Cuboid™",
+  "categories": [
+    "award"
+  ],
+  "description": "A direct-printed solid wood Cuboid™ award. It is an economical and environmentally friendly option.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art, logos and personalization",
+      "Bleeds allowed on all sides",
+      "Hand-rubbed finish",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8430 ~ 8433: solid wood board"
+    ],
+    "printing": [
+      "Inkjet: full color and white on one side",
+      "Print area: 3.5 x 9.5 in."
+    ],
+    "options": [
+      "White underlay image: $5.00 (G) each",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Inkjet, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8430",
+        "Red Oak",
+        "71.67",
+        "68.34",
+        "66.34",
+        "65.67",
+        "65.34",
+        "65.14"
+      ],
+      [
+        "U8432",
+        "Cherry",
+        "76.19",
+        "72.86",
+        "70.86",
+        "70.19",
+        "69.86",
+        "69.66"
+      ],
+      [
+        "U8433",
+        "Hard Maple",
+        "76.77",
+        "73.44",
+        "71.44",
+        "70.77",
+        "70.44",
+        "70.24"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-cuboid/main-award-3.png",
+    "alt": "Two printed wood Cuboid awards with sample logos, recipient names and colorful geometric full-color graphics.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-cuboid/award-cuboid-1.png",
+      "alt": "Award Cuboid Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-cuboid/award-cuboid-2.png",
+      "alt": "Wood options chart for the Cuboid award: solid real wood blocks in Red Oak, Cherry and Hard Maple.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "\"100% Handmade in USA\" badge with a red, white and blue American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-cuboid/template-award-cuboid.pdf",
+      "bytes": 69270
+    },
+    "catalogPage": {
+      "key": "files/award-cuboid/catalog-2023-web-90.pdf",
+      "bytes": 655182
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

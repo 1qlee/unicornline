@@ -1,0 +1,239 @@
+{
+  "slug": "shelf-wobblers",
+  "name": "Shelf Wobblers",
+  "categories": [
+    "accessory"
+  ],
+  "description": "Full-color shelf wobblers on durable plastic.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard shapes",
+      "No overrun charge",
+      "One thickness",
+      "Two standard shapes",
+      "Double-sided tape pre-applied",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5360 - 5364: 10 mil PVC"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "Artwork change: $37 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5360",
+        "One side",
+        "4.33",
+        "3.19",
+        "2.81",
+        "2.63",
+        "2.52",
+        "2.44",
+        "2.39",
+        "2.35",
+        "2.29",
+        "2.22",
+        "2.18",
+        "2.14",
+        "2.12",
+        "2.09",
+        "2.09",
+        "2.08"
+      ],
+      [
+        "U5361",
+        "One side",
+        "4.89",
+        "3.75",
+        "3.38",
+        "3.19",
+        "3.08",
+        "3.01",
+        "2.95",
+        "2.91",
+        "2.86",
+        "2.78",
+        "2.75",
+        "2.71",
+        "2.68",
+        "2.66",
+        "2.65",
+        "2.65"
+      ],
+      [
+        "U5362",
+        "One side",
+        "5.09",
+        "3.95",
+        "3.58",
+        "3.40",
+        "3.28",
+        "3.21",
+        "3.16",
+        "3.12",
+        "3.06",
+        "2.99",
+        "2.95",
+        "2.91",
+        "2.88",
+        "2.86",
+        "2.86",
+        "2.85"
+      ],
+      [
+        "U5363",
+        "One side",
+        "5.45",
+        "4.31",
+        "3.94",
+        "3.76",
+        "3.65",
+        "3.57",
+        "3.52",
+        "3.48",
+        "3.43",
+        "3.35",
+        "3.31",
+        "3.28",
+        "3.25",
+        "3.23",
+        "3.22",
+        "3.22"
+      ],
+      [
+        "U5364",
+        "One side",
+        "5.68",
+        "4.55",
+        "4.18",
+        "4.00",
+        "3.89",
+        "3.81",
+        "3.76",
+        "3.72",
+        "3.67",
+        "3.59",
+        "3.55",
+        "3.52",
+        "3.49",
+        "3.47",
+        "3.46",
+        "3.46"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/shelf-wobblers/main-accessory-16.png",
+    "alt": "Shape guide of ten shelf wobbler sizes with round, oval and square heads on stems.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/shelf-wobblers/accessory-16.png",
+      "alt": "Shelf Wobblers Sizes and Shapes",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/shelf-wobblers/template-shelf-wobblers.pdf",
+      "bytes": 103059
+    },
+    "catalogPage": {
+      "key": "files/shelf-wobblers/catalog-2023-web-67.pdf",
+      "bytes": 175422
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

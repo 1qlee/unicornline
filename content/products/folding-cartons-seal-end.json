@@ -1,0 +1,420 @@
+{
+  "slug": "folding-cartons-seal-end",
+  "name": "Folding Cartons (Seal End)",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Full-color, short-run custom printed folding cartons.",
+  "notesHtml": "<p><strong>Custom folding cartons</strong>: We make fully custom folding cartons. Minimum order is 50 boxes, with no die charge and free setup. You can order any in-between size not listed in the size table. It is priced as the next larger size that fits it.</p>\n\n<p><strong>Need a larger size or quantity not listed?</strong> For larger sizes, larger quantities or thicker stock, contact the factory for a quote. We can produce folding cartons up to 40pt thick and in larger sizes than listed here. Finishes such as embossing, debossing, aqueous coating, UV coating and foil stamping can also be added.</p>",
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "No die charge on standard sizes",
+      "No overrun charge",
+      "No preset sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "U5530 - 5534: 11.4pt gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "Dieline design: $125 (G) each, sample extra",
+      "No-print sample: $40 (G) for 2 pieces per dieline",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per custom size"
+  },
+  "pricing": {
+    "note": "Digital, 16C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Sides",
+        "method": null
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "150",
+        "method": "digital"
+      },
+      {
+        "label": "200",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "300",
+        "method": "digital"
+      },
+      {
+        "label": "350",
+        "method": "digital"
+      },
+      {
+        "label": "400",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "750",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "1500",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      },
+      {
+        "label": "7500",
+        "method": "digital"
+      },
+      {
+        "label": "10000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U5530",
+        "One side",
+        "6.59",
+        "4.31",
+        "3.55",
+        "3.17",
+        "2.94",
+        "2.79",
+        "2.68",
+        "2.60",
+        "2.48",
+        "2.17",
+        "1.94",
+        "1.36",
+        "0.91",
+        "0.58",
+        "0.48",
+        "0.42"
+      ],
+      [
+        "U5531",
+        "One side",
+        "7.21",
+        "4.93",
+        "4.17",
+        "3.79",
+        "3.56",
+        "3.41",
+        "3.30",
+        "3.22",
+        "3.11",
+        "2.62",
+        "2.04",
+        "1.46",
+        "1.01",
+        "0.68",
+        "0.58",
+        "0.52"
+      ],
+      [
+        "U5532",
+        "One side",
+        "7.83",
+        "5.55",
+        "4.79",
+        "4.41",
+        "4.18",
+        "4.03",
+        "3.92",
+        "3.84",
+        "3.73",
+        "2.72",
+        "2.14",
+        "1.55",
+        "1.10",
+        "0.78",
+        "0.67",
+        "0.62"
+      ],
+      [
+        "U5533",
+        "One side",
+        "8.93",
+        "6.66",
+        "5.90",
+        "5.52",
+        "5.29",
+        "5.14",
+        "5.03",
+        "4.95",
+        "4.16",
+        "2.91",
+        "2.33",
+        "1.75",
+        "1.30",
+        "0.98",
+        "0.87",
+        "0.82"
+      ],
+      [
+        "U5534",
+        "One side",
+        "10.65",
+        "8.38",
+        "7.62",
+        "7.24",
+        "7.01",
+        "6.86",
+        "6.13",
+        "5.55",
+        "4.74",
+        "3.49",
+        "2.93",
+        "2.34",
+        "1.89",
+        "1.57",
+        "1.46",
+        "1.41"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/folding-cartons-seal-end/packaging-3.png",
+    "alt": "Folding Cartons Seal End Dimensions",
+    "width": 1200,
+    "height": 800
+  },
+  "images": [
+    {
+      "key": "images/folding-cartons-seal-end/packaging-5.png",
+      "alt": "Diagram of two blank seal-end folding cartons with open top flaps, one labeled with depth, length and width.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/folding-cartons-seal-end/packaging-6.png",
+      "alt": "Feature list for shortrun custom cartons, including easy top loading, full overlap seal end and flat shipping.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/folding-cartons-seal-end/template-folding-cartons.pdf",
+      "bytes": 99088
+    },
+    "catalogPage": {
+      "key": "files/folding-cartons-seal-end/2023-seal-end.pdf",
+      "bytes": 131122
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  },
+  "model": {
+    "type": "seal-end-carton",
+    "unit": "in.",
+    "defaultSize": {
+      "w": 2,
+      "l": 2,
+      "d": 5
+    },
+    "sizes": [
+      {"item": "U5530", "w": 1, "l": 1, "d": 1},
+      {"item": "U5530", "w": 1, "l": 1, "d": 2},
+      {"item": "U5530", "w": 1, "l": 1, "d": 3},
+      {"item": "U5530", "w": 1, "l": 1, "d": 4},
+      {"item": "U5531", "w": 1, "l": 1, "d": 5},
+      {"item": "U5531", "w": 1, "l": 1, "d": 6},
+      {"item": "U5531", "w": 1, "l": 1, "d": 7},
+      {"item": "U5532", "w": 1, "l": 1, "d": 8},
+      {"item": "U5532", "w": 1, "l": 1, "d": 9},
+      {"item": "U5532", "w": 1, "l": 1, "d": 10},
+      {"item": "U5533", "w": 1, "l": 1, "d": 11},
+      {"item": "U5533", "w": 1, "l": 1, "d": 12},
+      {"item": "U5533", "w": 1, "l": 1, "d": 13},
+      {"item": "U5533", "w": 1, "l": 1, "d": 14},
+      {"item": "U5533", "w": 1, "l": 1, "d": 15},
+      {"item": "U5530", "w": 2, "l": 1, "d": 1},
+      {"item": "U5530", "w": 2, "l": 1, "d": 2},
+      {"item": "U5531", "w": 2, "l": 1, "d": 3},
+      {"item": "U5531", "w": 2, "l": 1, "d": 4},
+      {"item": "U5533", "w": 2, "l": 1, "d": 5},
+      {"item": "U5533", "w": 2, "l": 1, "d": 6},
+      {"item": "U5533", "w": 2, "l": 1, "d": 7},
+      {"item": "U5533", "w": 2, "l": 1, "d": 8},
+      {"item": "U5533", "w": 2, "l": 1, "d": 9},
+      {"item": "U5533", "w": 2, "l": 1, "d": 10},
+      {"item": "U5534", "w": 2, "l": 1, "d": 11},
+      {"item": "U5534", "w": 2, "l": 1, "d": 12},
+      {"item": "U5534", "w": 2, "l": 1, "d": 13},
+      {"item": "U5534", "w": 2, "l": 1, "d": 14},
+      {"item": "U5534", "w": 2, "l": 1, "d": 15},
+      {"item": "U5531", "w": 2, "l": 2, "d": 1},
+      {"item": "U5531", "w": 2, "l": 2, "d": 2},
+      {"item": "U5533", "w": 2, "l": 2, "d": 3},
+      {"item": "U5533", "w": 2, "l": 2, "d": 4},
+      {"item": "U5533", "w": 2, "l": 2, "d": 5},
+      {"item": "U5533", "w": 2, "l": 2, "d": 6},
+      {"item": "U5533", "w": 2, "l": 2, "d": 7},
+      {"item": "U5533", "w": 2, "l": 2, "d": 8},
+      {"item": "U5534", "w": 2, "l": 2, "d": 9},
+      {"item": "U5534", "w": 2, "l": 2, "d": 10},
+      {"item": "U5534", "w": 2, "l": 2, "d": 11},
+      {"item": "U5534", "w": 2, "l": 2, "d": 12},
+      {"item": "U5534", "w": 2, "l": 2, "d": 13},
+      {"item": "U5534", "w": 2, "l": 2, "d": 14},
+      {"item": "U5530", "w": 3, "l": 1, "d": 1},
+      {"item": "U5530", "w": 3, "l": 1, "d": 2},
+      {"item": "U5531", "w": 3, "l": 1, "d": 3},
+      {"item": "U5531", "w": 3, "l": 1, "d": 4},
+      {"item": "U5533", "w": 3, "l": 1, "d": 5},
+      {"item": "U5533", "w": 3, "l": 1, "d": 6},
+      {"item": "U5533", "w": 3, "l": 1, "d": 7},
+      {"item": "U5533", "w": 3, "l": 1, "d": 8},
+      {"item": "U5533", "w": 3, "l": 1, "d": 9},
+      {"item": "U5533", "w": 3, "l": 1, "d": 10},
+      {"item": "U5534", "w": 3, "l": 1, "d": 11},
+      {"item": "U5534", "w": 3, "l": 1, "d": 12},
+      {"item": "U5534", "w": 3, "l": 1, "d": 13},
+      {"item": "U5534", "w": 3, "l": 1, "d": 14},
+      {"item": "U5534", "w": 3, "l": 1, "d": 15},
+      {"item": "U5532", "w": 3, "l": 2, "d": 1},
+      {"item": "U5532", "w": 3, "l": 2, "d": 2},
+      {"item": "U5533", "w": 3, "l": 2, "d": 3},
+      {"item": "U5533", "w": 3, "l": 2, "d": 4},
+      {"item": "U5533", "w": 3, "l": 2, "d": 5},
+      {"item": "U5534", "w": 3, "l": 2, "d": 6},
+      {"item": "U5534", "w": 3, "l": 2, "d": 7},
+      {"item": "U5534", "w": 3, "l": 2, "d": 8},
+      {"item": "U5534", "w": 3, "l": 2, "d": 9},
+      {"item": "U5534", "w": 3, "l": 2, "d": 10},
+      {"item": "U5534", "w": 3, "l": 2, "d": 11},
+      {"item": "U5534", "w": 3, "l": 2, "d": 12},
+      {"item": "U5534", "w": 3, "l": 2, "d": 13},
+      {"item": "U5534", "w": 3, "l": 2, "d": 14},
+      {"item": "U5534", "w": 3, "l": 3, "d": 1},
+      {"item": "U5534", "w": 3, "l": 3, "d": 2},
+      {"item": "U5534", "w": 3, "l": 3, "d": 3},
+      {"item": "U5534", "w": 3, "l": 3, "d": 4},
+      {"item": "U5534", "w": 3, "l": 3, "d": 5},
+      {"item": "U5534", "w": 3, "l": 3, "d": 6},
+      {"item": "U5530", "w": 4, "l": 1, "d": 1},
+      {"item": "U5531", "w": 4, "l": 1, "d": 2},
+      {"item": "U5532", "w": 4, "l": 1, "d": 3},
+      {"item": "U5532", "w": 4, "l": 1, "d": 4},
+      {"item": "U5533", "w": 4, "l": 1, "d": 5},
+      {"item": "U5533", "w": 4, "l": 1, "d": 6},
+      {"item": "U5533", "w": 4, "l": 1, "d": 7},
+      {"item": "U5534", "w": 4, "l": 1, "d": 8},
+      {"item": "U5534", "w": 4, "l": 1, "d": 9},
+      {"item": "U5534", "w": 4, "l": 1, "d": 10},
+      {"item": "U5534", "w": 4, "l": 1, "d": 11},
+      {"item": "U5534", "w": 4, "l": 1, "d": 12},
+      {"item": "U5534", "w": 4, "l": 1, "d": 13},
+      {"item": "U5534", "w": 4, "l": 1, "d": 14},
+      {"item": "U5534", "w": 4, "l": 1, "d": 15},
+      {"item": "U5533", "w": 4, "l": 2, "d": 1},
+      {"item": "U5533", "w": 4, "l": 2, "d": 2},
+      {"item": "U5534", "w": 4, "l": 2, "d": 3},
+      {"item": "U5534", "w": 4, "l": 2, "d": 4},
+      {"item": "U5534", "w": 4, "l": 2, "d": 5},
+      {"item": "U5534", "w": 4, "l": 2, "d": 6},
+      {"item": "U5534", "w": 4, "l": 2, "d": 7},
+      {"item": "U5534", "w": 4, "l": 2, "d": 8},
+      {"item": "U5534", "w": 4, "l": 3, "d": 1},
+      {"item": "U5534", "w": 4, "l": 3, "d": 2},
+      {"item": "U5534", "w": 4, "l": 3, "d": 3},
+      {"item": "U5534", "w": 4, "l": 3, "d": 4},
+      {"item": "U5534", "w": 4, "l": 3, "d": 5},
+      {"item": "U5534", "w": 4, "l": 3, "d": 6},
+      {"item": "U5534", "w": 4, "l": 4, "d": 1},
+      {"item": "U5534", "w": 4, "l": 4, "d": 2},
+      {"item": "U5534", "w": 4, "l": 4, "d": 3},
+      {"item": "U5534", "w": 4, "l": 4, "d": 4},
+      {"item": "U5531", "w": 5, "l": 1, "d": 1},
+      {"item": "U5532", "w": 5, "l": 1, "d": 2},
+      {"item": "U5533", "w": 5, "l": 1, "d": 3},
+      {"item": "U5533", "w": 5, "l": 1, "d": 4},
+      {"item": "U5534", "w": 5, "l": 1, "d": 5},
+      {"item": "U5534", "w": 5, "l": 1, "d": 6},
+      {"item": "U5534", "w": 5, "l": 1, "d": 7},
+      {"item": "U5534", "w": 5, "l": 1, "d": 8},
+      {"item": "U5534", "w": 5, "l": 1, "d": 9},
+      {"item": "U5534", "w": 5, "l": 1, "d": 10},
+      {"item": "U5533", "w": 5, "l": 2, "d": 1},
+      {"item": "U5533", "w": 5, "l": 2, "d": 2},
+      {"item": "U5534", "w": 5, "l": 2, "d": 3},
+      {"item": "U5534", "w": 5, "l": 2, "d": 4},
+      {"item": "U5534", "w": 5, "l": 2, "d": 5},
+      {"item": "U5534", "w": 5, "l": 2, "d": 6},
+      {"item": "U5534", "w": 5, "l": 2, "d": 7},
+      {"item": "U5534", "w": 5, "l": 2, "d": 8},
+      {"item": "U5534", "w": 5, "l": 3, "d": 1},
+      {"item": "U5534", "w": 5, "l": 3, "d": 2},
+      {"item": "U5534", "w": 5, "l": 3, "d": 3},
+      {"item": "U5534", "w": 5, "l": 3, "d": 4},
+      {"item": "U5534", "w": 5, "l": 3, "d": 5},
+      {"item": "U5534", "w": 5, "l": 3, "d": 6},
+      {"item": "U5531", "w": 6, "l": 1, "d": 1},
+      {"item": "U5532", "w": 6, "l": 1, "d": 2},
+      {"item": "U5533", "w": 6, "l": 1, "d": 3},
+      {"item": "U5533", "w": 6, "l": 1, "d": 4},
+      {"item": "U5534", "w": 6, "l": 1, "d": 5},
+      {"item": "U5534", "w": 6, "l": 1, "d": 6},
+      {"item": "U5534", "w": 6, "l": 1, "d": 7},
+      {"item": "U5534", "w": 6, "l": 1, "d": 8},
+      {"item": "U5534", "w": 6, "l": 1, "d": 9},
+      {"item": "U5534", "w": 6, "l": 1, "d": 10},
+      {"item": "U5533", "w": 6, "l": 2, "d": 1},
+      {"item": "U5533", "w": 6, "l": 2, "d": 2},
+      {"item": "U5534", "w": 6, "l": 2, "d": 3},
+      {"item": "U5534", "w": 6, "l": 2, "d": 4},
+      {"item": "U5534", "w": 6, "l": 2, "d": 5},
+      {"item": "U5534", "w": 6, "l": 2, "d": 6},
+      {"item": "U5534", "w": 6, "l": 2, "d": 7},
+      {"item": "U5534", "w": 6, "l": 2, "d": 8},
+      {"item": "U5531", "w": 7, "l": 1, "d": 1},
+      {"item": "U5532", "w": 7, "l": 1, "d": 2},
+      {"item": "U5533", "w": 7, "l": 1, "d": 3},
+      {"item": "U5533", "w": 7, "l": 1, "d": 4},
+      {"item": "U5534", "w": 7, "l": 1, "d": 5},
+      {"item": "U5534", "w": 7, "l": 1, "d": 6},
+      {"item": "U5534", "w": 7, "l": 1, "d": 7},
+      {"item": "U5534", "w": 7, "l": 1, "d": 8},
+      {"item": "U5534", "w": 7, "l": 1, "d": 9},
+      {"item": "U5534", "w": 7, "l": 1, "d": 10}
+    ]
+  }
+}

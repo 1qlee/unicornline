@@ -1,0 +1,118 @@
+{
+  "slug": "popout",
+  "name": "Popout™",
+  "categories": [
+    "display"
+  ],
+  "description": "A Popout™ display that holds customer-supplied objects in front of a custom printed background.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Simple assembly",
+      "Ask the factory about size and weight limits for the centerpiece",
+      "Made in USA"
+    ],
+    "materials": [
+      "U7260: 1mm clear plastic (popout) and 3mm EPVC (back panel) with black aluminum frame"
+    ],
+    "printing": [
+      "Digital: full color on one side of the base (EPVC)"
+    ],
+    "options": [
+      "Setup: $55 (G) per artwork or object, initial order only",
+      "Frame: 3/16 in. black aluminum frame included",
+      "Packaging: kraft corrugated box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Digital, 5C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "digital"
+      },
+      {
+        "label": "10",
+        "method": "digital"
+      },
+      {
+        "label": "25",
+        "method": "digital"
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U7260",
+        "14 x 21 in.",
+        "219.31",
+        "204.31",
+        "195.31",
+        "192.31",
+        "190.81"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/popout/main-creative-6.png",
+    "alt": "Two framed Popout wall displays with real objects, a shipping box and a ball, mounted over printed ads.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/popout/creative-popout-1.png",
+      "alt": "Popout Amazon Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/popout/creative-popout-2.png",
+      "alt": "Popout Underarmour Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/popout/creative-popout-3.png",
+      "alt": "Popout Jordan Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/popout/catalog-2023-web-83.pdf",
+      "bytes": 630124
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

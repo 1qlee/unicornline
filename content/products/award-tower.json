@@ -1,0 +1,228 @@
+{
+  "slug": "award-tower",
+  "name": "Award Tower",
+  "categories": [
+    "award"
+  ],
+  "description": "A wooden tower award with a printed plate. It is an economical and environmentally friendly option.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art, logos and personalization",
+      "Bleeds allowed on all sides",
+      "Hand-rubbed finish",
+      "2 plate decoration materials",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8200 / 8220 ~ 8223: solid wood block and 1mm clear plastic",
+      "U8210 / 8230 ~ 8233: solid wood block and 20mil aluminum"
+    ],
+    "printing": [
+      "Inkjet: full color and white on one side of the plate",
+      "Print area (U8200 / 8210): 4.5 x 7.5 in.",
+      "Print area (U8220 - 8234): 5.5 x 9 in."
+    ],
+    "options": [
+      "Custom plate shape: $25 (G) each",
+      "Packaging: individual white corrugated box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Inkjet, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Material",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8200",
+        "Plastic",
+        "Red Oak",
+        "2.5 x 2.5 x 7.5 in.",
+        "73.35",
+        "66.69",
+        "62.69",
+        "61.35",
+        "60.69",
+        "60.29"
+      ],
+      [
+        "U8210",
+        "Aluminum",
+        "Red Oak",
+        "2.5 x 2.5 x 7.5 in.",
+        "78.14",
+        "73.14",
+        "70.14",
+        "69.14",
+        "68.64",
+        "68.34"
+      ],
+      [
+        "U8220",
+        "Plastic",
+        "Red Oak",
+        "3 x 3 x 9 in.",
+        "81.18",
+        "74.52",
+        "70.52",
+        "69.18",
+        "68.52",
+        "68.12"
+      ],
+      [
+        "U8222",
+        "Plastic",
+        "Cherry",
+        "3 x 3 x 9 in.",
+        "84.63",
+        "77.97",
+        "73.97",
+        "72.63",
+        "71.97",
+        "71.57"
+      ],
+      [
+        "U8223",
+        "Plastic",
+        "Hard Maple",
+        "3 x 3 x 9 in.",
+        "84.29",
+        "77.62",
+        "73.62",
+        "72.29",
+        "71.62",
+        "71.22"
+      ],
+      [
+        "U8230",
+        "Aluminum",
+        "Red Oak",
+        "3 x 3 x 9 in.",
+        "87.27",
+        "82.27",
+        "79.27",
+        "78.27",
+        "77.77",
+        "77.47"
+      ],
+      [
+        "U8232",
+        "Aluminum",
+        "Cherry",
+        "3 x 3 x 9 in.",
+        "90.72",
+        "85.72",
+        "82.72",
+        "81.72",
+        "81.22",
+        "80.92"
+      ],
+      [
+        "U8233",
+        "Aluminum",
+        "Hard Maple",
+        "3 x 3 x 9 in.",
+        "90.38",
+        "85.38",
+        "82.38",
+        "81.38",
+        "80.88",
+        "80.58"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-tower/award-tower-1.png",
+    "alt": "Two wooden tower awards with wraparound full-color printed plates, one with a portrait photo and one with a fruit design.",
+    "width": 1200,
+    "height": 800
+  },
+  "images": [
+    {
+      "key": "images/award-tower/award-tower-1.png",
+      "alt": "Award Tower sizes: 3\" x 3\" x 9\" with aluminum plate and 2 1/2\" x 2 1/2\" x 7 1/2\" with clear plastic plate, both on red oak.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-tower/award-tower-2.png",
+      "alt": "Aluminum and Clear Plastic Plate Materials",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-tower/award-tower-3.png",
+      "alt": "Red Oak, Ash, Cherry, Soft Maple, Walnut",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-tower/award-tower-4.png",
+      "alt": "Award Tower Standard Shapes",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "\"100% Handmade in USA\" badge with a red, white and blue American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-tower/template-award-tower.pdf",
+      "bytes": 81169
+    },
+    "catalogPage": {
+      "key": "files/award-tower/catalog-2023-web-86.pdf",
+      "bytes": 607026
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

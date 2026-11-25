@@ -1,0 +1,345 @@
+{
+  "slug": "uniq-prints-dry-erase",
+  "name": "Uniq Prints™ (Dry Erase)",
+  "categories": [
+    "display"
+  ],
+  "description": "Full-color graphics printed directly on dry erase board for colorful custom boards. The smooth, clean writing surface does not ghost and erases cleanly every time.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Ready to hang",
+      "Made in USA"
+    ],
+    "materials": [
+      "U6220 - 6235: 3mm dry erase board"
+    ],
+    "printing": [
+      "Inkjet: full color on one side"
+    ],
+    "options": [
+      "Individual kraft corrugated box"
+    ],
+    "customShape": "Setup charge: $40 (G) per shape plus $0.05 (G) per linear cutting inch; no charge for round corners and circles"
+  },
+  "pricing": {
+    "note": "Inkjet, 5C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U6220",
+        "8 x 10 in.",
+        "49.47",
+        "39.47",
+        "33.47",
+        "31.47",
+        "30.47"
+      ],
+      [
+        "U6221",
+        "8 x 12 in.",
+        "51.31",
+        "41.31",
+        "35.31",
+        "33.31",
+        "32.31"
+      ],
+      [
+        "U6222",
+        "12 x 12 in.",
+        "74.44",
+        "64.44",
+        "58.44",
+        "56.44",
+        "55.44"
+      ],
+      [
+        "U6223",
+        "11 x 14 in.",
+        "77.30",
+        "67.30",
+        "61.30",
+        "59.30",
+        "58.30"
+      ],
+      [
+        "U6224",
+        "12 x 18 in.",
+        "81.51",
+        "71.51",
+        "65.51",
+        "63.51",
+        "62.51"
+      ],
+      [
+        "U6225",
+        "16 x 16 in.",
+        "89.12",
+        "79.12",
+        "73.12",
+        "71.12",
+        "70.12"
+      ],
+      [
+        "U6226",
+        "12 x 24 in.",
+        "91.91",
+        "81.91",
+        "75.91",
+        "73.91",
+        "72.91"
+      ],
+      [
+        "U6227",
+        "16 x 20 in.",
+        "94.09",
+        "84.09",
+        "78.09",
+        "76.09",
+        "75.09"
+      ],
+      [
+        "U6228",
+        "16 x 24 in.",
+        "101.84",
+        "91.84",
+        "85.84",
+        "83.84",
+        "82.84"
+      ],
+      [
+        "U6229",
+        "20 x 20 in.",
+        "102.93",
+        "92.93",
+        "86.93",
+        "84.93",
+        "83.93"
+      ],
+      [
+        "U6230",
+        "20 x 24 in.",
+        "110.98",
+        "100.98",
+        "94.98",
+        "92.98",
+        "91.98"
+      ],
+      [
+        "U6231",
+        "24 x 24 in.",
+        "155.92",
+        "145.92",
+        "139.92",
+        "137.92",
+        "136.92"
+      ],
+      [
+        "U6232",
+        "20 x 30 in.",
+        "154.08",
+        "144.08",
+        "138.08",
+        "136.08",
+        "135.08"
+      ],
+      [
+        "U6233",
+        "24 x 30 in.",
+        "166.65",
+        "156.65",
+        "150.65",
+        "148.65",
+        "147.65"
+      ],
+      [
+        "U6234",
+        "24 x 36 in.",
+        "177.39",
+        "167.39",
+        "161.39",
+        "159.39",
+        "158.39"
+      ],
+      [
+        "U6235",
+        "30 x 40 in.",
+        "201.86",
+        "191.86",
+        "185.86",
+        "183.86",
+        "182.86"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/uniq-prints-dry-erase/main-display-1.png",
+    "alt": "Square dry erase board printed with a full-color fruit border and frozen yogurt cups along the bottom.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/uniq-prints-dry-erase/display-uniqprints-1.png",
+      "alt": "Uniq Prints Dry Erase Product Sample",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/uniq-prints-dry-erase/display-uniqprints-2.png",
+      "alt": "Note that any custom size can be ordered, priced at the next larger size, with an oval close-up of the printed detail.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/uniq-prints-dry-erase/catalog-2023-web-80.pdf",
+      "bytes": 231166
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  },
+  "model": {
+    "type": "wall-panel",
+    "unit": "in.",
+    "defaultSize": {
+      "w": 0.118,
+      "l": 8,
+      "d": 10
+    },
+    "sizes": [
+      {
+        "item": "U6220",
+        "w": 0.118,
+        "l": 8,
+        "d": 10
+      },
+      {
+        "item": "U6221",
+        "w": 0.118,
+        "l": 8,
+        "d": 12
+      },
+      {
+        "item": "U6222",
+        "w": 0.118,
+        "l": 12,
+        "d": 12
+      },
+      {
+        "item": "U6223",
+        "w": 0.118,
+        "l": 11,
+        "d": 14
+      },
+      {
+        "item": "U6224",
+        "w": 0.118,
+        "l": 12,
+        "d": 18
+      },
+      {
+        "item": "U6225",
+        "w": 0.118,
+        "l": 16,
+        "d": 16
+      },
+      {
+        "item": "U6226",
+        "w": 0.118,
+        "l": 12,
+        "d": 24
+      },
+      {
+        "item": "U6227",
+        "w": 0.118,
+        "l": 16,
+        "d": 20
+      },
+      {
+        "item": "U6228",
+        "w": 0.118,
+        "l": 16,
+        "d": 24
+      },
+      {
+        "item": "U6229",
+        "w": 0.118,
+        "l": 20,
+        "d": 20
+      },
+      {
+        "item": "U6230",
+        "w": 0.118,
+        "l": 20,
+        "d": 24
+      },
+      {
+        "item": "U6231",
+        "w": 0.118,
+        "l": 24,
+        "d": 24
+      },
+      {
+        "item": "U6232",
+        "w": 0.118,
+        "l": 20,
+        "d": 30
+      },
+      {
+        "item": "U6233",
+        "w": 0.118,
+        "l": 24,
+        "d": 30
+      },
+      {
+        "item": "U6234",
+        "w": 0.118,
+        "l": 24,
+        "d": 36
+      },
+      {
+        "item": "U6235",
+        "w": 0.118,
+        "l": 30,
+        "d": 40
+      }
+    ]
+  }
+}

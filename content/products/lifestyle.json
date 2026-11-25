@@ -1,0 +1,138 @@
+{
+  "slug": "lifestyle",
+  "name": "Tyvek® Pouches",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "A durable, multi-function zipper Tyvek® pouch that is lightweight, water resistant and 100% recyclable, and protects your belongings in virtually any situation. It comes in three sizes and can be custom printed for any purpose.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Lightweight, water resistant and 100% recyclable",
+      "Three sizes",
+      "Made in USA"
+    ],
+    "materials": [
+      "Bulk, Tyvek®"
+    ],
+    "printing": [
+      "Digital: full color on two sides"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Size",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3410",
+        "11 1/4 x 8 1/2 in.",
+        "16.58",
+        "15.91",
+        "15.69",
+        "15.57",
+        "15.04",
+        "14.47"
+      ],
+      [
+        "U3411",
+        "8 1/2 x 5 1/2 in.",
+        "11.39",
+        "10.73",
+        "10.51",
+        "10.40",
+        "10.33",
+        "10.08"
+      ],
+      [
+        "U3412",
+        "5 1/2 x 5 1/2 in.",
+        "9.56",
+        "8.90",
+        "8.67",
+        "8.55",
+        "8.49",
+        "8.46"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/lifestyle/main-lifestyle-9.png",
+    "alt": "Two zippered Tyvek pouches with full-color printed designs, one large mountain scene and one small pink.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/lifestyle/lifestyle-34.png",
+      "alt": "Large 11 1/4 x 8 1/2 in. zippered Tyvek pouch printed edge to edge with a mountain campsite scene.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/lifestyle/lifestyle-35.png",
+      "alt": "Medium 8 1/2 x 5 1/2 in. and small 5 1/2 x 5 1/2 in. zippered Tyvek pouches with full-color prints.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/lifestyle/template-tyvek-pouches.pdf",
+      "bytes": 113971
+    },
+    "catalogPage": {
+      "key": "files/lifestyle/catalog-2023-web-38.pdf",
+      "bytes": 696730
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

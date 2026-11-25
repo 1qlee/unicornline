@@ -1,0 +1,258 @@
+{
+  "slug": "salts",
+  "name": "Salts",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Salts in a glass jar or tin can with a custom label, including sea salts from France, mineral salts from the Himalayas and smoked salts made in the USA.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "High-quality, food-grade, durable tin-plated steel can",
+      "Fresh packed upon receipt of order in USA"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can, custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4001G",
+        "Himalayan Pink",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4002G",
+        "Hiwa Kai",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4003G",
+        "Alaea",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4004G",
+        "Flaky",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4005G",
+        "Sel Gris",
+        "13.17",
+        "11.77",
+        "11.29",
+        "11.05",
+        "10.91",
+        "10.86"
+      ],
+      [
+        "U4006G",
+        "Alderwood",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4001T",
+        "Himalayan Pink",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U4002T",
+        "Hiwa Kai",
+        "16.59",
+        "15.18",
+        "14.70",
+        "14.47",
+        "14.33",
+        "14.28"
+      ],
+      [
+        "U4003T",
+        "Alaea",
+        "16.59",
+        "15.18",
+        "14.70",
+        "14.47",
+        "14.33",
+        "14.28"
+      ],
+      [
+        "U4004T",
+        "Flaky",
+        "16.59",
+        "15.18",
+        "14.70",
+        "14.47",
+        "14.33",
+        "14.28"
+      ],
+      [
+        "U4005T",
+        "Sel Gris",
+        "15.59",
+        "14.18",
+        "13.70",
+        "13.47",
+        "13.33",
+        "13.28"
+      ],
+      [
+        "U4006T",
+        "Alderwood",
+        "17.59",
+        "16.18",
+        "15.70",
+        "15.47",
+        "15.33",
+        "15.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [
+    "sloPnBVK6-A"
+  ],
+  "thumbnail": {
+    "key": "images/salts/main-eating-well-1.png",
+    "alt": "Gourmet salts in six custom-labeled tin cans and six glass jars on a wooden kitchen counter.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/salts/eating-well-1.png",
+      "alt": "Salt tins and glass jars with label and container dimensions for item numbers U4001T to U4006G.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/salts/eating-well-2.png",
+      "alt": "Text panel describing six gourmet salts: Himalayan pink, Hiwa Kai, Alaea, flaky, sel gris and alderwood.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/salts/eating-well-3.png",
+      "alt": "Swatches of six salts: Himalayan pink, black Hiwa Kai, red Alaea, alderwood smoked, flaky and sel gris.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Diagram of optional glass jar and tin can gift boxes with full-color \"Your Logo\" graphics and dimensions.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/salts/template-salts.zip",
+      "bytes": 608811
+    },
+    "catalogPage": {
+      "key": "files/salts/catalog-2023-web-43.pdf",
+      "bytes": 793042
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

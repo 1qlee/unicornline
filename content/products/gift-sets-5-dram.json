@@ -1,0 +1,195 @@
+{
+  "slug": "gift-sets-5-dram",
+  "name": "Gift Sets (5 dram)",
+  "categories": [
+    "gift-box"
+  ],
+  "description": "Sets of six slim glass vials with natural cork tops, packed in a custom printed gift box. Each 5/8 oz. vial holds teas, herbs, spices or seasonings.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides of label and box",
+      "Custom printed gift box for a set of six",
+      "High-quality, food-grade, durable vial with cork lid",
+      "Fresh packed upon receipt of order in USA"
+    ],
+    "materials": [
+      "Package: gift box (111# gloss cover), custom gloss label"
+    ],
+    "printing": [
+      "Digital: full color on box and label, no print on tray"
+    ],
+    "options": [
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "No charge for standard shape"
+  },
+  "pricing": {
+    "note": "Digital, 7C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "48",
+        "method": "digital"
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3540",
+        "Salts",
+        "32.74",
+        "27.71",
+        "24.73",
+        "23.69",
+        "22.62",
+        "21.44",
+        "21.04"
+      ],
+      [
+        "U3541",
+        "Infused Salts",
+        "34.74",
+        "29.71",
+        "26.73",
+        "25.69",
+        "24.62",
+        "23.44",
+        "23.04"
+      ],
+      [
+        "U3542",
+        "Spices and Herbs",
+        "30.07",
+        "25.04",
+        "22.06",
+        "21.02",
+        "19.95",
+        "18.77",
+        "18.38"
+      ],
+      [
+        "U3543",
+        "Seasonings",
+        "30.74",
+        "25.71",
+        "22.73",
+        "21.69",
+        "20.69",
+        "19.44",
+        "19.04"
+      ],
+      [
+        "U3544",
+        "Peppercorns",
+        "31.40",
+        "26.37",
+        "23.40",
+        "22.35",
+        "21.29",
+        "20.10",
+        "19.71"
+      ],
+      [
+        "U3545",
+        "Chili Peppers",
+        "30.74",
+        "25.71",
+        "22.73",
+        "21.69",
+        "20.62",
+        "19.44",
+        "19.04"
+      ],
+      [
+        "U3546",
+        "Teas",
+        "30.74",
+        "25.71",
+        "22.73",
+        "21.69",
+        "20.62",
+        "19.44",
+        "19.04"
+      ],
+      [
+        "U3547",
+        "Sprouting Seeds",
+        "33.40",
+        "28.37",
+        "25.40",
+        "24.35",
+        "23.29",
+        "22.10",
+        "21.71"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/gift-sets-5-dram/main-packaging-9.png",
+    "alt": "Six cork-topped 5 dram glass vials of peppercorns and spices with custom labels in a white tray, printed gift box behind.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/gift-sets-5-dram/gift-set-11.png",
+      "alt": "Gift set spec sheet with six labeled vials in a tray beside a floral printed box, listing label, bottle and box sizes.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/gift-sets-5-dram/gift-set-12.png",
+      "alt": "Floral printed Signature Salt Collection gift box above six labeled vials, with a list of available fillings.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gift-sets-5-dram/template-5-dram.zip",
+      "bytes": 1154532
+    },
+    "catalogPage": {
+      "key": "files/gift-sets-5-dram/catalog-2023-web-40.pdf",
+      "bytes": 432478
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

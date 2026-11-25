@@ -1,0 +1,156 @@
+{
+  "slug": "desk-mats-coasters",
+  "name": "Desk Mats / Coasters",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "Full-color custom desk mats and coasters. The simple, modern cut protects delicate surfaces from scratches, heat and moisture.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds not allowed",
+      "Antibacterial (felt naturally, PVC from coating)",
+      "Made in USA"
+    ],
+    "materials": [
+      "PVC: 32 oz. per linear yd., paper backed, mildew resistant",
+      "Felt: 3mm Merino wool felt, Oeko Tex® 100 certified Class II, EU toy safety standard EN 71, natural and renewable"
+    ],
+    "printing": [
+      "Digital: full color on front (PVC), front and back (felt)"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "10",
+        "method": "digital"
+      },
+      {
+        "label": "25",
+        "method": "digital"
+      },
+      {
+        "label": "50",
+        "method": "digital"
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3150",
+        "Desk Mat - Felt",
+        "38.20",
+        "36.73",
+        "35.31",
+        "33.96",
+        "32.97",
+        "32.01"
+      ],
+      [
+        "U3151",
+        "Desk Mat - PVC",
+        "32.38",
+        "31.14",
+        "29.94",
+        "28.79",
+        "27.95",
+        "27.13"
+      ],
+      [
+        "U3160",
+        "Coaster - Felt",
+        "35.17",
+        "33.81",
+        "32.51",
+        "31.26",
+        "30.35",
+        "29.47"
+      ],
+      [
+        "U3161",
+        "Coaster - PVC",
+        "17.93",
+        "17.24",
+        "16.57",
+        "15.94",
+        "15.47",
+        "15.02"
+      ]
+    ]
+  },
+  "videos": [
+    "8kukfdPRR2w",
+    "e0VYK2Va2_0",
+    "ahWzmySB8Ls",
+    "0bJsEwsdG3Y"
+  ],
+  "thumbnail": {
+    "key": "images/desk-mats-coasters/main-lifestyle-12.png",
+    "alt": "Gray felt desk mat with a mouse and a set of matching round, square and hexagon coasters with logo tags.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/desk-mats-coasters/lifestyle-38.png",
+      "alt": "Gray wool felt desk mat, 17 1/2 x 11 1/2 in., with a sewn-on logo tag and a computer mouse.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/desk-mats-coasters/lifestyle-39.png",
+      "alt": "Red PVC desk mat, 17 1/2 x 11 1/2 in., with a small printed logo tag on the left edge.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/desk-mats-coasters/lifestyle-40.png",
+      "alt": "Gray wool felt coasters, 4 x 4 in. sets of four, in round, square and hexagon shapes with logo tags.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/desk-mats-coasters/lifestyle-41.png",
+      "alt": "Red PVC coasters, 4 x 4 in. sets of four, in square, hexagon and round shapes with printed logos.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/desk-mats-coasters/catalog-2023-web-30.pdf",
+      "bytes": 413884
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

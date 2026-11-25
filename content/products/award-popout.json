@@ -1,0 +1,146 @@
+{
+  "slug": "award-popout",
+  "name": "Award Popout™",
+  "categories": [
+    "award"
+  ],
+  "description": "A solid real wood Cuboid™ combined with an eye-catching Popout™.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art, logos and personalization",
+      "Bleeds allowed on all sides",
+      "Hand-rubbed finish",
+      "Made in USA"
+    ],
+    "materials": [
+      "U8400 ~ 8403: 1mm clear plastic (base and encasement), solid wood block and 3mm EPVC (center Popout)"
+    ],
+    "printing": [
+      "Inkjet: full color and white on one side",
+      "Print area: 7.5 x 9.5 in. (clear encasement), 3.5 x 9.5 in. (clear base), 2 x 2 in. (center Popout)"
+    ],
+    "options": [
+      "White underlay image: $5 (G) each. Cherry is only available with underlay",
+      "Artwork change: $27 (G) each",
+      "Packaging: individual white corrugated box"
+    ],
+    "customShape": null
+  },
+  "pricing": {
+    "note": "Inkjet, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Wood",
+        "method": null
+      },
+      {
+        "label": "5",
+        "method": "inkjet"
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U8400",
+        "Red Oak",
+        "143.95",
+        "130.61",
+        "122.61",
+        "119.95",
+        "118.61",
+        "117.81"
+      ],
+      [
+        "U8402",
+        "Cherry",
+        "148.47",
+        "135.13",
+        "127.13",
+        "124.47",
+        "123.13",
+        "122.33"
+      ],
+      [
+        "U8403",
+        "Hard Maple",
+        "149.05",
+        "135.71",
+        "127.71",
+        "125.05",
+        "123.71",
+        "122.91"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/award-popout/main-award-5.png",
+    "alt": "Award Popout shown front and side: a wood block in a clear case with a printed logo popout and recipient name.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/award-popout/award-popout-1.png",
+      "alt": "Award Popouts Side by Side",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-popout/award-popout-2.png",
+      "alt": "Red Oak, Cherry, Hard Maple, Hickory, Pine, Poplar, Walnut, White Oak",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/award-popout/award-popout-3.png",
+      "alt": "Award Popout Imprint Area",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Red, white and blue \"100% Handmade in USA\" badge with a flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/award-popout/template-award-popout.pdf",
+      "bytes": 96840
+    },
+    "catalogPage": {
+      "key": "files/award-popout/catalog-2023-web-87.pdf",
+      "bytes": 367030
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

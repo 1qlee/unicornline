@@ -1,0 +1,138 @@
+{
+  "slug": "just-in-case",
+  "name": "Just in Case™",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "An assortment of everyday carry essentials focused on personal health, packaged in a durable tin case. You can modify the contents to your liking, making it a useful kit for urban dwellers.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Fresh packed upon receipt of order",
+      "High-quality, durable tin-plated steel can",
+      "Packaged in USA"
+    ],
+    "materials": [
+      "U3070-72: bulk, tin case, custom gloss label"
+    ],
+    "printing": [
+      "Digital: full color on one side"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "100",
+        "method": "digital"
+      },
+      {
+        "label": "250",
+        "method": "digital"
+      },
+      {
+        "label": "500",
+        "method": "digital"
+      },
+      {
+        "label": "1000",
+        "method": "digital"
+      },
+      {
+        "label": "2500",
+        "method": "digital"
+      },
+      {
+        "label": "5000",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3070-72",
+        "Just in Case™",
+        "13.06",
+        "11.71",
+        "11.25",
+        "11.02",
+        "10.88",
+        "10.84"
+      ]
+    ]
+  },
+  "videos": [
+    "QhidgwKs6x8"
+  ],
+  "thumbnail": {
+    "key": "images/just-in-case/main-lifestyle-4.png",
+    "alt": "Hinged metal tin kit with a custom printed logo band and a contents list on an orange side label.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/just-in-case/lifestyle-6.png",
+      "alt": "EDC tin kit with an orange printed label band; label 5 x 1 3/8 in., tin 3 11/16 x 2 9/32 x 3/4 in.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/just-in-case/lifestyle-7.png",
+      "alt": "Open EDC kit showing its 15 items, including sanitizer gels, bandages, wipes, lip balm and a nail clipper.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/just-in-case/lifestyle-8.png",
+      "alt": "First Aid tin kit with a green printed label band; label 5 x 1 3/8 in., tin 3 11/16 x 2 9/32 x 3/4 in.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/just-in-case/lifestyle-9.png",
+      "alt": "Open First Aid kit showing its 17 items, including bandages, alcohol pads, gauze and ointment.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/just-in-case/lifestyle-10.png",
+      "alt": "Women's tin kit with a pink printed label band; label 5 x 1 3/8 in., tin 3 11/16 x 2 9/32 x 3/4 in.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/just-in-case/lifestyle-11.png",
+      "alt": "Open Women's kit showing its 13 items, including bandages, a sewing kit, bobby pin and hair tie.",
+      "width": 1200,
+      "height": 800
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/just-in-case/template-just-in-case.pdf",
+      "bytes": 69119
+    },
+    "catalogPage": {
+      "key": "files/just-in-case/catalog-2023-web-25.pdf",
+      "bytes": 571223
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

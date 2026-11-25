@@ -1,0 +1,125 @@
+{
+  "slug": "gift-set-salt-pepper",
+  "name": "Salt & Pepper Set",
+  "categories": [
+    "gift-box",
+    "eating-well"
+  ],
+  "description": "A salt and pepper set in two 10 ml mini glass grinder bottles, made as a gift for cooks and chefs. Each grinder has a glass bottle, a plastic grinder and a cap that seals the container to keep the contents fresh.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Set of two 10 ml mini glass grinder bottles in a custom box",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, glass grinder set and custom gloss label",
+      "Gift box: 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on box and label"
+    ],
+    "options": [
+      "Custom shape: add $150 (G) per shape",
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "No charge for standard shape"
+  },
+  "pricing": {
+    "note": "Digital, 7C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "48",
+        "method": "digital"
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U3590",
+        "Salt and Pepper",
+        "24.48",
+        "19.45",
+        "16.43",
+        "15.40",
+        "14.47",
+        "13.91",
+        "13.64"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/gift-set-salt-pepper/main-eating-well-14.png",
+    "alt": "Mini salt and pepper grinder bottles with custom labels on a wooden table beside piles of peppercorns and pink salt.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/gift-set-salt-pepper/eating-well-42.png",
+      "alt": "Mini black pepper and Himalayan pink salt grinders with full-color custom labels, with label and bottle dimensions.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/gift-set-salt-pepper/eating-well-43.png",
+      "alt": "Salt & Pepper Mini Grinder Set info panel with a \"Your Logo\" gift box mockup and label, bottle and box dimensions.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/gift-set-salt-pepper/eating-well-44.png",
+      "alt": "Two filling options in circles: Himalayan pink salt and black peppercorns.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/gift-set-salt-pepper/template-salt-pepper.zip",
+      "bytes": 147024
+    },
+    "catalogPage": {
+      "key": "files/gift-set-salt-pepper/catalog-2023-web-42.pdf",
+      "bytes": 514579
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

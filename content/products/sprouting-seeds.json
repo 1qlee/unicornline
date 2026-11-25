@@ -1,0 +1,256 @@
+{
+  "slug": "sprouting-seeds",
+  "name": "Sprouting Seeds",
+  "categories": [
+    "eating-well"
+  ],
+  "description": "Sprouting seeds, custom packed in a glass jar or tin can. Sprouts are young plants harvested a few days after they germinate, and they generally have more concentrated nutrients than fully grown plants. They are also high in enzymes that help boost metabolism.",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "Bleeds allowed on all sides",
+      "Tamper-proof seal",
+      "Wide-mouth, easy-access glass jar with black lid",
+      "Durable, food-grade tin-plated steel can",
+      "Fresh packed in USA upon receipt of order"
+    ],
+    "materials": [
+      "Package: bulk, glass jar or tin can and custom gloss label",
+      "Gift box (option): 111# gloss cover"
+    ],
+    "printing": [
+      "Digital: full color on the label"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "Die charge: $150 (G) per shape"
+  },
+  "pricing": {
+    "note": "Digital, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "96",
+        "method": "digital"
+      },
+      {
+        "label": "240",
+        "method": "digital"
+      },
+      {
+        "label": "480",
+        "method": "digital"
+      },
+      {
+        "label": "960",
+        "method": "digital"
+      },
+      {
+        "label": "2400",
+        "method": "digital"
+      },
+      {
+        "label": "4800",
+        "method": "digital"
+      }
+    ],
+    "rows": [
+      [
+        "U4501G",
+        "Fenugreek Seeds",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U4502G",
+        "Alfalfa Seeds",
+        "16.17",
+        "14.77",
+        "14.29",
+        "14.05",
+        "13.91",
+        "13.86"
+      ],
+      [
+        "U4503G",
+        "Mung Bean Seeds",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U4504G",
+        "Broccoli Seeds",
+        "18.17",
+        "16.77",
+        "16.29",
+        "16.05",
+        "15.91",
+        "15.86"
+      ],
+      [
+        "U4505G",
+        "Daikon Radish Seeds",
+        "14.17",
+        "12.77",
+        "12.29",
+        "12.05",
+        "11.91",
+        "11.86"
+      ],
+      [
+        "U4506G",
+        "Wheat Seeds",
+        "12.17",
+        "10.77",
+        "10.29",
+        "10.05",
+        "9.91",
+        "9.86"
+      ],
+      [
+        "U3435G",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ],
+      [
+        "U4501T",
+        "Fenugreek Seeds",
+        "19.59",
+        "18.18",
+        "17.70",
+        "17.47",
+        "17.33",
+        "17.28"
+      ],
+      [
+        "U4502T",
+        "Alfalfa Seeds",
+        "19.59",
+        "18.18",
+        "17.70",
+        "17.47",
+        "17.33",
+        "17.28"
+      ],
+      [
+        "U4503T",
+        "Mung Bean Seeds",
+        "15.59",
+        "14.18",
+        "13.70",
+        "13.47",
+        "13.33",
+        "13.28"
+      ],
+      [
+        "U4504T",
+        "Broccoli Seeds",
+        "23.59",
+        "22.18",
+        "21.70",
+        "21.47",
+        "21.33",
+        "21.28"
+      ],
+      [
+        "U4505T",
+        "Daikon Radish Seeds",
+        "17.59",
+        "16.18",
+        "15.70",
+        "15.47",
+        "15.33",
+        "15.28"
+      ],
+      [
+        "U4506T",
+        "Wheat Seeds",
+        "14.59",
+        "13.18",
+        "12.70",
+        "12.47",
+        "12.33",
+        "12.28"
+      ],
+      [
+        "U3435T",
+        "Gift box (option)",
+        "5.07",
+        "3.50",
+        "2.94",
+        "2.24",
+        "1.65",
+        "1.31"
+      ]
+    ]
+  },
+  "videos": [],
+  "thumbnail": {
+    "key": "images/sprouting-seeds/main-eating-well-11.png",
+    "alt": "Sprouting seeds in six custom-labeled tin cans and six glass jars against a jar of fresh sprouts.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/sprouting-seeds/eating-well-33.png",
+      "alt": "Sprouting seed tins and glass jars with label and container dimensions for item numbers U4501T to U4506G.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/sprouting-seeds/eating-well-34.png",
+      "alt": "Text panel describing six organic sprouting seeds: fenugreek, alfalfa, mung bean, broccoli, daikon radish and wheat.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/sprouting-seeds/eating-well-35.png",
+      "alt": "Swatches of six sprouted seeds: fenugreek, alfalfa, mung bean, broccoli, daikon radish and wheat.",
+      "width": 1200,
+      "height": 801
+    },
+    {
+      "key": "images/chili-peppers/eating-well-4.png",
+      "alt": "Diagram of optional glass jar and tin can gift boxes with full-color \"Your Logo\" graphics and dimensions.",
+      "width": 1200,
+      "height": 801
+    }
+  ],
+  "documents": {
+    "template": {
+      "key": "files/sprouting-seeds/template-sprouting-seeds.zip",
+      "bytes": 7585809
+    },
+    "catalogPage": {
+      "key": "files/sprouting-seeds/catalog-2023-web-53.pdf",
+      "bytes": 912119
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}

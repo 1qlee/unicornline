@@ -1,0 +1,338 @@
+{
+  "slug": "leather-goods",
+  "name": "Leather Goods",
+  "categories": [
+    "lifestyle"
+  ],
+  "description": "A collection of handcrafted leather goods made from vegetable-tanned leather (a non-chemical process).",
+  "notesHtml": null,
+  "specs": {
+    "features": [
+      "Free setup, art and logos",
+      "No running charge",
+      "Unlined interior",
+      "Handcrafted in USA",
+      "Logo printed in USA"
+    ],
+    "materials": [
+      "Full-grain vegetable-tanned leather and solid brass hardware"
+    ],
+    "printing": [
+      "Inkjet: full color in one location"
+    ],
+    "options": [
+      "Artwork change: $67 (G) each"
+    ],
+    "customShape": "No charge for standard shape"
+  },
+  "pricing": {
+    "note": "Inkjet, 6C.",
+    "columns": [
+      {
+        "label": "Item",
+        "method": null
+      },
+      {
+        "label": "Type",
+        "method": null
+      },
+      {
+        "label": "10",
+        "method": "inkjet"
+      },
+      {
+        "label": "25",
+        "method": "inkjet"
+      },
+      {
+        "label": "50",
+        "method": "inkjet"
+      },
+      {
+        "label": "100",
+        "method": "inkjet"
+      },
+      {
+        "label": "250",
+        "method": "inkjet"
+      },
+      {
+        "label": "500",
+        "method": "inkjet"
+      }
+    ],
+    "rows": [
+      [
+        "U3110",
+        "Pencil Case",
+        "40.58",
+        "39.02",
+        "37.52",
+        "36.07",
+        "35.02",
+        "34.00"
+      ],
+      [
+        "U3111",
+        "Mouse Pad",
+        "26.65",
+        "25.63",
+        "24.64",
+        "23.69",
+        "23.00",
+        "22.33"
+      ],
+      [
+        "U3112",
+        "Earphone Holder",
+        "10.12",
+        "9.73",
+        "9.36",
+        "9.00",
+        "8.74",
+        "8.48"
+      ],
+      [
+        "U3113",
+        "Card Holder A",
+        "22.32",
+        "21.46",
+        "20.63",
+        "19.84",
+        "19.26",
+        "18.70"
+      ],
+      [
+        "U3114",
+        "Card Holder B",
+        "21.76",
+        "20.93",
+        "20.12",
+        "19.35",
+        "18.78",
+        "18.24"
+      ],
+      [
+        "U3115",
+        "Valet Tray, Large",
+        "26.45",
+        "25.43",
+        "24.45",
+        "23.51",
+        "22.83",
+        "22.16"
+      ],
+      [
+        "U3116",
+        "Valet Tray, Medium",
+        "18.97",
+        "18.24",
+        "17.54",
+        "16.86",
+        "16.37",
+        "15.89"
+      ],
+      [
+        "U3117",
+        "Valet Tray, Small",
+        "13.15",
+        "12.64",
+        "12.16",
+        "11.69",
+        "11.35",
+        "11.02"
+      ],
+      [
+        "U3119",
+        "Key Chain",
+        "10.32",
+        "9.93",
+        "9.54",
+        "9.18",
+        "8.91",
+        "8.65"
+      ],
+      [
+        "U3120",
+        "Key Holder",
+        "14.54",
+        "13.98",
+        "13.44",
+        "12.92",
+        "12.55",
+        "12.18"
+      ],
+      [
+        "U3121",
+        "Belt Bag",
+        "52.02",
+        "50.02",
+        "48.10",
+        "46.25",
+        "44.90",
+        "43.59"
+      ],
+      [
+        "U3122",
+        "Sunglasses Case",
+        "32.17",
+        "30.93",
+        "29.74",
+        "28.60",
+        "27.76",
+        "26.96"
+      ],
+      [
+        "U3123",
+        "JUUL® Case",
+        "26.55",
+        "25.53",
+        "24.55",
+        "23.60",
+        "22.91",
+        "22.25"
+      ],
+      [
+        "U3124",
+        "Pen Tray",
+        "35.31",
+        "33.95",
+        "32.64",
+        "31.39",
+        "30.47",
+        "29.59"
+      ],
+      [
+        "U3125",
+        "Pen Holder",
+        "7.64",
+        "7.35",
+        "7.07",
+        "6.80",
+        "6.60",
+        "6.41"
+      ]
+    ]
+  },
+  "videos": [
+    "8kukfdPRR2w",
+    "e0VYK2Va2_0",
+    "ahWzmySB8Ls",
+    "0bJsEwsdG3Y"
+  ],
+  "thumbnail": {
+    "key": "images/leather-goods/main-lifestyle-5.png",
+    "alt": "Assortment of about ten natural leather accessories, including trays, cases and card holders, each printed with a logo.",
+    "width": 833,
+    "height": 625
+  },
+  "images": [
+    {
+      "key": "images/leather-goods/lifestyle-15.png",
+      "alt": "Leather pencil case with button stud closure and a printed logo, 7 1/2 x 2 1/2 x 1 1/2 inches.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-16.png",
+      "alt": "Teardrop-shaped 9 x 9 inch leather mouse pad with a printed logo in the corner.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-17.png",
+      "alt": "Small pointed leather earphone holder with a button stud closure and a printed logo.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-18.png",
+      "alt": "Leather business card holder A with a two-stud button closure and a full-color printed logo on the flap.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-19.png",
+      "alt": "Leather business card holder B with a tuck-in closure and a printed logo on the curved flap.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-20.png",
+      "alt": "Large leather valet tray with snapped corners and a printed logo, 8 1/2 x 7 x 1 inches.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-21.png",
+      "alt": "Two leather valet trays with printed logos, medium 8 1/2 x 4 inches and small 4 x 4 inches, with a short description.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-22.png",
+      "alt": "Leather key chain loop and folding leather key holder, each printed with a logo, shown with sizes.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-23.png",
+      "alt": "Rectangular leather belt bag with a button stud flap and a printed logo, 8 x 3 1/2 x 1 1/8 inches.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-24.png",
+      "alt": "Leather sunglasses case with a curved flap, button stud closure and a printed logo.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-25.png",
+      "alt": "Two views of a leather vape pen case with belt loops and a button stud closure, printed with a logo.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-26.png",
+      "alt": "Oak wood pen tray holding two white pencils, with a small printed logo, 8 x 2 1/2 x 5/8 inches.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-36.png",
+      "alt": "Single oak wood pen holder printed with a logo, cradling a pink pen.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-37.png",
+      "alt": "Six oak wood pen holders, each printed with a different logo, two of them holding pens.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/leather-goods/lifestyle-48.png",
+      "alt": "Text panel listing reasons to choose vegetable tanned leather over a faded photo of leather accessories on a desk.",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "key": "images/2-wick-candles/hand-made-in-usa.png",
+      "alt": "Red, white and blue badge reading 100% Handmade in USA with an American flag ribbon.",
+      "width": 1200,
+      "height": 600
+    }
+  ],
+  "documents": {
+    "template": null,
+    "catalogPage": {
+      "key": "files/leather-goods/2023-leather.pdf",
+      "bytes": 1967216
+    },
+    "fullCatalog": {
+      "key": "files/catalogs/catalog-2023-web.pdf",
+      "bytes": 39897985
+    }
+  }
+}
