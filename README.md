@@ -35,5 +35,3 @@ Netlify runs `npm run build` and publishes `dist/` (see `netlify.toml`).
 - **Add or replace PDFs or ZIPs:** run `npm run upload:assets -- <folder> files/`. This uploads every referenced file that R2 doesn't already have.
 
 The R2 commands need credentials in `.env` (`R2_ACCOUNT_ID`, `R2_ACCESS_KEY_ID`, `R2_SECRET_ACCESS_KEY`, `R2_BUCKET`).
-
-Open content questions for the owner are tracked in `CONTENT-REVIEW.md`.
