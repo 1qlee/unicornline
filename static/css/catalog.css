@@ -155,11 +155,11 @@ h1,h2,h3,p,ul,ol{margin:0;padding:0}
 .index-lead{margin-top:var(--space-6)}
 /* The search sticks under the header like the category menu. Its bar is paper so
    the catalog scrolls out of sight beneath it, and it gains shadow-sm once stuck. */
-.index{--search-bar-height:calc(var(--space-8) + var(--size-control-lg) + var(--space-4))}
-.search-bar{position:sticky;top:var(--size-header);z-index:6;margin-bottom:var(--space-12);padding:var(--space-8) 0 var(--space-4)}
+.index{--search-bar-height:calc(var(--space-6) * 2 + var(--size-control-lg) + var(--border-hairline))}
+.search-bar{position:sticky;top:var(--size-header);z-index:6;margin:var(--space-2) 0 var(--space-12);padding:var(--space-6) 0}
 /* the paper and its shadow run the full window width, like the header's */
-.search-bar::before{content:"";position:absolute;inset:0 -100vw;z-index:-1;background:var(--paper);transition:box-shadow var(--ease-hover)}
-.search-bar.is-stuck::before{box-shadow:var(--shadow-sm)}
+.search-bar::before{content:"";position:absolute;inset:0 -100vw;z-index:-1;background:var(--paper);border-bottom:var(--border-hairline) solid transparent;transition:border-color var(--ease-hover)}
+.search-bar.is-stuck::before{border-bottom-color:var(--rule)}
 .index .cat,.index #no-results{scroll-margin-top:calc(var(--size-header) + var(--search-bar-height) + var(--space-6))}
 .search-box{position:relative;width:100%;max-width:30em;z-index:5}
 .search{display:flex;align-items:center;gap:var(--space-3);width:100%;min-height:var(--size-control-lg);box-sizing:border-box;padding:0 var(--space-4);border:var(--border-control) solid var(--ink);background:var(--paper);transition:box-shadow var(--ease-hover)}
